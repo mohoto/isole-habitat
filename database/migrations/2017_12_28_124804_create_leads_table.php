@@ -21,7 +21,6 @@ class CreateLeadsTable extends Migration
             $table->increments('id');
             $table->increments('id');
             $table->increments('id');
-            $table->increments('id');
             $table->timestamps();
         });
     }
