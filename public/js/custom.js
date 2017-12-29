@@ -104,6 +104,10 @@
         }
         return val; // return value of checked radio or undefined if none checked
     }
+    function getCheckboxVals(){
+        var checkbox = document.forms['regForm'].elements['type_chauffage'];
+
+    }
 
     function dispalyEligibilite(eligible){
         if(eligible){
@@ -116,17 +120,23 @@
 
     function testEligibilite(){
         var eligible = true;
-        var regForm = document.querySelector('#regForm');
         var formRef = document.forms['regForm'].elements['revenus_reference'];
+        var checkbox = document.forms['regForm'].elements['type_chauffage'];
         var revRef = formRef.value;
         var nbrFoyer = getRadioVals();
-        if((nbrFoyer == 1 && revRef <= 14308) || (nbrFoyer == 2 && revRef <= 20925) || (nbrFoyer == 3 && revRef <= 25166) || (nbrFoyer == 4 && revRef <= 29400) || (nbrFoyer == 5 && revRef <= 33642) || (nbrFoyer == 6 && revRef <= 37883) || (nbrFoyer == 7 && revRef <= 42124) || (nbrFoyer == 8 && revRef <= 46365) || (nbrFoyer == 9 && revRef <= 50606)){
-             eligible =  true;
-        }
-        else{
+        alert(nbrFoyer);
+        if((checkbox[2].checked === true) && (checkbox[0].checked === false) && (checkbox[1].checked === false) && (checkbox[3].checked === false) && (checkbox[4].checked === false)){
             eligible =  false;
         }
-       // alert(nbrFoyer);
+        else{
+            if((nbrFoyer == 1 && revRef <= 14308) || (nbrFoyer == 2 && revRef <= 20925) || (nbrFoyer == 3 && revRef <= 25166) || (nbrFoyer == 4 && revRef <= 29400) || (nbrFoyer == 5 && revRef <= 33642) || (nbrFoyer == 6 && revRef <= 37883) || (nbrFoyer == 7 && revRef <= 42124) || (nbrFoyer == 8 && revRef <= 46365) || (nbrFoyer == 9 && revRef <= 50606)){
+                eligible =  true;
+            }
+            else{
+                eligible =  false;
+            }
+        }
+        alert(checkbox[4].value);
         //alert(revRef);
         dispalyEligibilite(eligible);
 

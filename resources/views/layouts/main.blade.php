@@ -38,6 +38,24 @@
 
 </head>
 <body data-spy="scroll" data-target="#navbar-menu" class="@yield('pageClass')">
+
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&amp;times;</button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <h3>Modal Body</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Navbar -->
 <nav class="navbar navbar-custom navbar-expand-lg navbar-light">
     <div class="navbar-block d-flex align-items-end">
@@ -70,7 +88,7 @@
             </ul>
         </div>
         <div class="navbar-phone">
-            <a href="" class="btn btn-custom navbar-btn"><i class="fa fa-phone m-r-5"></i> <span>Me rappeler</span></a>
+            <a href="#" class="btn btn-custom navbar-btn waves-effect waves-light" data-toggle="modal" data-target="#basicModal" data-animation="fadein" data-plugin="custommodal" data-overlaySpeed="200" data-overlayColor="#36404a"><i class="fa fa-phone m-r-5"></i> <span>Me rappeler</span></a>
         </div>
     </div>
 </nav>
@@ -102,7 +120,7 @@
                     <li><a href="#">L'isolation des combles à 1 euro</a></li>
                     <li><a href="#">L'isolation des murs à 1 euro</a></li>
                     <li><a href="#">L'isolation des sols à 1 euro</a></li>
-                    <li><a href="#">Qui sommes-nous</a></li>
+                    <li><a href="#">Qui sommes-nous?</a></li>
                     <li><a href="#">Mentions légales</a></li>
                 </ul>
             </div>
@@ -150,20 +168,5 @@
 <script type="text/javascript" src="js/custom.js"></script>
 <!--common script for all pages-->
 <script src="js/jquery.app.js"></script>
-
-<script type="text/javascript">
-    $('.owl-carousel').owlCarousel({
-        loop:false,
-        margin:10,
-        nav:false,
-        autoplay: false,
-        autoplayTimeout: 4000,
-        responsive:{
-            0:{
-                items:1
-            }
-        }
-    })
-</script>
 </body>
 </html>

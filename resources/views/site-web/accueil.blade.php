@@ -260,7 +260,7 @@
         <div class="row">
             <div class="col-sm-12 mb-40">
                 <img src="{{ asset('images/mascotte.jpg') }}" class="mascotte-isole-habitat block-center mb-10" alt="illustration mascotte isole habitat ">
-                <h2 class="text-center"><span class="gras_500" data-color="vert">Isoler ma maison pour 1€:</span> Comment est-ce possible?</h2>
+                <h2 class="text-center"><span class="gras_500">Isoler ma maison pour 1€ : </span>Comment est-ce possible?</h2>
             </div>
         </div>
         <div class="row justify-content-around mb-40 mt-30">
@@ -610,57 +610,46 @@
 </section>
 <!-- end section-formulaire -->
 <section class="section" id="section-fonctionnement" data-background-color="bleue-clair">
-<div class="container-fluid">
-    <div class="row">
-        <div class="container">
-            <div class="col-md-12">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
-                    <circle class="path circle" fill="none" stroke="#8ab326" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
-                    <polyline class="path check" fill="none" stroke="#8ab326" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                </svg>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
-                    <circle class="path circle" fill="none" stroke="#ee7626" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
-                    <line class="path line" fill="none" stroke="#ee7626" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3"/>
-                    <line class="path line" fill="none" stroke="#ee7626" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2"/>
-                </svg>
-                <p class="error">Bummer!</p>
-                <p>Félicitation, vous êtes éligible à l'isolation à 1€</p>
-                <div class="steps-timeline d-flex">
-                    <div class="block-step" id="block-step1">
-                        <div class="circle-block-step" id="circle1">
-                            <i class="ion-checkmark-round"></i>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="steps-timeline d-flex">
+                        <div class="block-step" id="block-step1">
+                            <div class="circle-block-step" id="circle1">
+                                <i class="ion-checkmark-round"></i>
+                            </div>
+                            <h3 class="steps-name">Tester votre éligibilité</br>Réponse immédiate</h3>
                         </div>
-                        <h3 class="steps-name">Tester votre éligibilité</br>Réponse immédiate</h3>
-                    </div>
-                    <div class="block-step" id="block-step2">
-                        <div class="circle-block-step" id="circle2">
-                            <i class="ion-ios7-telephone"></i>
+                        <div class="block-step" id="block-step2">
+                            <div class="circle-block-step" id="circle2">
+                                <i class="ion-ios7-telephone"></i>
+                            </div>
+                            <h3 class="steps-name">On vous rapelle</br>sous 24 heures</h3>
                         </div>
-                        <h3 class="steps-name">On vous rapelle</br>sous 24 heures</h3>
-                    </div>
-                    <div class="block-step" id="block-step3">
-                        <div class="circle-block-step" id="circle3">
-                            <i class="ion-ios7-person"></i>
+                        <div class="block-step" id="block-step3">
+                            <div class="circle-block-step" id="circle3">
+                                <i class="ion-ios7-person"></i>
+                            </div>
+                            <h3 class="steps-name">On se déplace</br>pour une visite technique</h3>
                         </div>
-                        <h3 class="steps-name">On se déplace</br>pour une visite technique</h3>
-                    </div>
-                    <div class="block-step" id="block-step4">
-                        <div class="circle-block-step" id="circle4">
-                            <i class="ion-hammer"></i>
+                        <div class="block-step" id="block-step4">
+                            <div class="circle-block-step" id="circle4">
+                                <i class="ion-hammer"></i>
+                            </div>
+                            <h3 class="steps-name">Travaux sous 7 jours</br>En moins de 4 heures</h3>
                         </div>
-                        <h3 class="steps-name">Travaux sous 7 jours</br>En moins de 4 heures</h3>
-                    </div>
-                    <div class="block-step" id="block-step5">
-                        <div class="circle-block-step" id="circle5">
-                            <i class="ion-home"></i>
+                        <div class="block-step" id="block-step5">
+                            <div class="circle-block-step" id="circle5">
+                                <i class="ion-home"></i>
+                            </div>
+                            <h3 class="steps-name">Votre maison est isolée</br>Commencez à économiser</h3>
                         </div>
-                        <h3 class="steps-name">Votre maison est isolée</br>Commencez à économiser</h3>
-                    </div>
-                </div><!-- /.steps-timeline -->
+                    </div><!-- /.steps-timeline -->
+                </div>
             </div>
         </div>
     </div>
-</div>
 </section>
 <!-- end features alt -->
 <section class="section" id="section-societe">
@@ -703,7 +692,7 @@
                         <i class="icon-fantastic icon-icon-proprete"></i>
                         <div class="ml-20 align-self-center text-left">
                             <h3>Propreté et nettoyage du chantier</h3>
-                            <p>Nous nous occupons de toutes les formalités</p>
+                            <p>Nettoyage en fin de chantier et évacuation des déchets</p>
                         </div>
                     </div>
                 </div>
