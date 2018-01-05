@@ -146,7 +146,7 @@
                     </ul>
                 </div>
                 <div class="navbar-phone">
-                    <a href="#" class="btn btn-custom navbar-btn waves-effect waves-light"><i class="fa fa-phone mr-10"></i><span>01 78 56 03 03</span></a>
+                    <a href="tel:01 78 56 03 03" class="btn btn-custom navbar-btn waves-effect waves-light"><i class="fa fa-phone mr-10"></i><span>01 78 56 03 03</span></a>
                 </div>
             </div>
         </nav>
@@ -187,10 +187,10 @@
                             <div class="">
                                 <i class="ion-ios7-help-outline"></i><p class="besoin-aide">Besoin d'assistance?</p>
                             </div>
-                            <button type="button" class="btn btn-orange  btn-rounded waves-effect waves-light">
+                            <a href="tel:01 78 56 03 03" class="btn btn-orange  btn-rounded waves-effect waves-light">
                                 <i class="ion-ios7-telephone mr-10"></i>
                                 <span>01 78 56 03 03</span>
-                            </button>
+                            </a>
                             <p class="mt-10" data-color="bleue-clair" ">Lundi-vendredi  9h-19h</p>
                             <ul class="social-icons">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
