@@ -936,6 +936,65 @@ h1, h2, h3, h4{
 .navbar-light .navbar-nav .nav-link::hover {
   color: #ee7626;
 }
+@media (min-width: 576px){
+  #phoneModal .modal-dialog {
+    max-width: 600px;
+    margin: 30px auto;
+  }
+}
+#phoneModal .assistace_phone_img{
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+}
+#phoneModal .text_intro{
+  font-size: 1.2em;
+}
+#phoneModal .form-control {
+  display: block;
+  background-color: #ebeef1;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ebeef1;
+  padding: 1rem .75rem;
+}
+#phoneModal input[type="radio"] {
+  display: none;
+}
+label.civilite,
+label.type-heure {
+  background: #ffffff;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ebeef1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px 75px;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+#phoneModal label:hover {
+  background: #8ab326;
+  border-color: #8ab326;
+  color: #ffffff;
+}
+#phoneModal input[type="radio"]:checked + label {
+  background: #8ab326;
+  border-color: #8ab326;
+  color: #ffffff;
+}
+#phoneModal .modal-footer #btn_phone_modal{
+  font-size: 1.5em;
+  padding: 10px 40px;
+  cursor: pointer;
+}
 /*Page Acceuil*/
 .hero .d-flex{
     width: 100%;
@@ -991,6 +1050,9 @@ h1, h2, h3, h4{
 }
 .section#section-presentation1 h2{
     line-height: 1.5em;
+}
+.section#section-type-isolation .features-box img{
+  width: 100%;
 }
 .section#section-type-isolation .features-box {
     margin-top: 0px;
@@ -1080,7 +1142,7 @@ h1, h2, h3, h4{
   margin-bottom: 0rem;
 }
 .section#section-presentation2 .logo-materiel-iso{
-  width: 20%;
+  width: 80%;
 }
 .section#section-information{
     padding-top: 0;
@@ -1166,7 +1228,7 @@ h1, h2, h3, h4{
 }
 .section#section-fonctionnement .block-step i {
   font-size: 4em;
-  color: #8ab326;
+  color: #96b239;
   margin-top: 50%;
   transform: translateY(-50%);
 }
@@ -1235,11 +1297,19 @@ h1, h2, h3, h4{
     padding: 100px;
 }
 .section#section-zones h3{
-  font-size: 1.4em;
   text-align: center;
 }
+.section#section-zones p{
+  font-size: 1.2em;
+}
+.section#section-zones .btn-custom {
+  color: #496174 !important;
+}
+.section#section-zones .btn-custom:hover {
+  color: #ffffff !important;
+}
 .section#section-zones .image-region-intervention{
-    width: 80%;
+    width: 100%;
     display: block;
     margin:0 auto;
 }
@@ -1901,7 +1971,7 @@ h1, h2, h3, h4{
 #regForm {
 }
 #regForm h5{
-  font-size: 1.20rem;
+  font-size: 1.1rem;
 }
 
 /* Mark input boxes that gets an error on validation: */
@@ -1916,6 +1986,10 @@ input.invalid {
 }
 #regForm .tab .info-block{
   height: 100%;
+}
+.section#section-formulaire .tab-block-btn{
+  width: 50%;
+  padding: 0 15px;
 }
 .section#section-formulaire .btn {
   display: block;
@@ -2080,7 +2154,9 @@ label.type-heure {
 .section#section-formulaire .form-control {
   display: block;
   background-color: #ebeef1;
-  border: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ebeef1;
   padding: 1rem .75rem;
 }
 #info-client p{
@@ -2095,7 +2171,7 @@ label.type-heure {
 .section#section-formulaire svg {
   width: 100px;
   display: block;
-  margin: 40px auto 0;
+  margin: 0 auto;
 }
 .section#section-formulaire svg .path {
   stroke-dasharray: 1000;
@@ -2120,6 +2196,18 @@ label.type-heure {
   margin: 20px 0;
   font-size: 1.6em;
 }
+.section#section-formulaire #phoneForm .assistace_phone_img{
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+}
+.section#section-formulaire #phoneForm h4 span {
+  font-size: 0.6em;
+  margin-left: 20px;
+}
+.section#section-formulaire #phoneForm .text_intro{
+  font-size: 1.2em;
+}
 .section#section-formulaire #phoneForm p {
   margin: 20px 0;
   font-size: 1.3em;
@@ -2130,6 +2218,9 @@ label.type-heure {
 }
 .section#section-formulaire #phoneForm p.error {
   color: #D06079;
+}
+.section#section-formulaire #phoneForm h6 {
+  font-size: 1.5em;
 }
 .section#section-formulaire .btn#phoneBtn{
   display: none;
@@ -2164,5 +2255,220 @@ label.type-heure {
   }
   100% {
     stroke-dashoffset: 900;
+  }
+}
+
+
+
+.navbar-custom .navbar-nav> li {
+  position: relative;
+}
+.navbar-custom .has-submenu.active a {
+  color: #8ab326;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.navbar-custom .has-submenu.active .submenu li.active > a {
+  color: #5fbeaa; }
+
+@media (min-width: 992px) {
+
+  .navbar-custom .navbar-nav > li > ul > li.has-submenu:active > a, .navbar-custom .navbar-nav > li > ul > li.has-submenu:hover > a {
+    color: #0863b5;
+  }
+
+  .navbar-custom .navbar-nav > li.last-elements .submenu {
+    left: auto;
+    right: 0;
+  }
+
+  .navbar-custom .navbar-nav > li.last-elements .submenu > li.has-submenu .submenu {
+    left: auto;
+    right: 100%;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .navbar-custom .navbar-nav > li:hover a {
+    color: #0863b5;
+  }
+
+  .navbar-custom .navbar-nav > li:hover a i {
+    color: #5fbeaa;
+  }
+
+  .navbar-custom .navbar-nav > li .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    border: 1px solid #e7e7e7;
+    padding: 15px 0;
+    list-style: none;
+    min-width: 200px;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 10px;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar-custom .navbar-nav > li .submenu.megamenu {
+    white-space: nowrap;
+    width: auto;
+  }
+
+  .navbar-custom .navbar-nav > li .submenu.megamenu > li {
+    overflow: hidden;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .navbar-custom .navbar-nav > li .submenu > li .submenu {
+    left: 100%;
+    top: 0;
+    margin-left: 10px;
+    margin-top: -1px;
+  }
+
+  .navbar-custom .navbar-nav > li .submenu li {
+    position: relative;
+  }
+
+  .navbar-custom .navbar-nav > li .submenu li ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .navbar-custom .navbar-nav > li .submenu li a {
+    display: block;
+    padding: 8px 25px;
+    clear: both;
+    white-space: nowrap;
+    color: #8ab326;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+  }
+
+  .navbar-custom .navbar-nav > li .submenu li a:hover {
+    color: #0863b5;
+  }
+
+  .navbar-custom .navbar-nav > li .submenu li span {
+    display: block;
+    padding: 8px 25px;
+    clear: both;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #36404a;
+  }
+
+  .navbar-custom .navbar-toggle {
+    display: none;
+  }
+}
+  @media (max-width: 991px) {
+    .navbar-custom .navbar-nav > li .submenu {
+      display: none;
+      list-style: none;
+      padding-left: 20px;
+      margin: 0; }
+    .navbar-custom .navbar-nav > li .submenu li a {
+      display: block;
+      position: relative;
+      padding: 7px 20px;
+      color: #36404a; }
+    .navbar-custom .navbar-nav > li .submenu li a:hover {
+      color: #5fbeaa; }
+    .navbar-custom .navbar-nav > li .submenu li.has-submenu > a:after {
+      content: "\54";
+      font-family: "dripicons-v2" !important;
+      position: absolute;
+      right: 30px; }
+    .navbar-custom .navbar-nav > li .submenu.open {
+      display: block; }
+    .navbar-custom .navbar-nav > li .submenu .submenu {
+      display: none;
+      list-style: none; }
+    .navbar-custom .navbar-nav > li .submenu .submenu.open {
+      display: block; }
+    .navbar-custom .navbar-nav > li .submenu.megamenu > li > ul {
+      list-style: none;
+      padding-left: 0; }
+    .navbar-custom .navbar-nav > li .submenu.megamenu > li > ul > li > span {
+      display: block;
+      position: relative;
+      padding: 15px;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #36404a; }
+    .navbar-custom .navbar-nav > li.has-submenu.open > a {
+      color: #5fbeaa; }
+    .navbar-custom .navbar-header {
+      float: left; }
+  }
+@media (min-width: 768px) {
+  .navbar-custom .navbar-nav > li.has-submenu:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0; }
+
+  .navbar-custom .navbar-nav > li.has-submenu:hover > .submenu > li.has-submenu:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+    margin-left: 0;
+    margin-right: 0; }
+
+  .navbar-toggle {
+    display: block; }
+}
+
+
+/*popup me rappeler*/
+@media (min-width: 768px){
+  .popup_aide {
+    font-size: 1.1em;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    right: -72px;
+    bottom: 50%;
+    padding: 10px 20px;
+  }
+  .popup_aide {
+    position: fixed;
+    color: #ebeef1;
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    z-index: 115;
+  }
+  .popup_aide:hover{
+    color: #ffffff;
+  }
+}
+@media (max-width: 767px){
+  .popup_aide {
+    right: 10px;
+    font-size: .9em;
+    bottom: 0;
+    padding: 5px 10px;
+  }
+
+  .popup_aide {
+    position: fixed;
+    background-color: #ee7626;
+    color: #1e2830;
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    z-index: 115;
   }
 }

@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('pageClass', 'page_accueil')
 @section('content')
 <!-- HOME -->
 <section class="" id="home">
@@ -21,19 +22,19 @@
 <section class="section" id="features">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-4">
                 <div class="features-box">
                     <i class="icon-fantastic icon-icon-1-euro-1"></i>
                     <p class="">Aucun frais à avancer, 1€ seulement</p>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-4">
                 <div class="features-box">
                     <i class="icon-fantastic icon-icon-surface4"></i>
                     <p class="">Surface illimitée pour votre isolation</p>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-4">
                 <div class="features-box">
                     <i class="icon-fantastic icon-icon-percent"></i>
                     <p class="">Economie sur votre facture de chauffage</p>
@@ -66,19 +67,19 @@
         <div class="row">
             <div class="col-sm-12 col-md-4">
                 <div class="features-box">
-                    <img src="{{ asset('images/icon-iso-combles.svg') }}" alt="">
+                    <img src="{{ asset('images/icon-iso-combles.png') }}" srcset="{{ asset('images/icon-iso-combles.svg') }}" alt="illustration isolation des combles">
                     <h5 class="m-t-20">Isolation des combles</h5>
                 </div>
             </div>
             <div class="col-sm-12 col-md-4">
                 <div class="features-box">
-                    <img src="{{ asset('images/icon-iso-mur.svg') }}" alt="">
+                    <img src="{{ asset('images/icon-iso-mur.png') }}"srcset="{{ asset('images/icon-iso-mur.svg') }}" alt="">
                     <h5 class="m-t-20">Isolation des murs</h5>
                 </div>
             </div>
             <div class="col-sm-12 col-md-4">
                 <div class="features-box">
-                    <img src="{{ asset('images/icon-iso-plancher.svg') }}" alt="">
+                    <img src="{{ asset('images/icon-iso-plancher.png') }}" srcset="{{ asset('images/icon-iso-plancher.svg') }}" alt="">
                     <h5 class="m-t-20">Isolation des sols</h5>
                 </div>
             </div>
@@ -100,9 +101,6 @@
     </div> <!-- end container -->
 </section>
 <!-- end Features -->
-
-
-
 <!-- Features Alt -->
 <section class="section p-t-0" id="section-type-isolation2">
     <div class="container">
@@ -145,8 +143,6 @@
     </div> <!-- end container -->
 </section>
 <!-- end features alt -->
-
-
 <!-- Features Alt -->
 <section class="section" id="section-type-isolation3">
     <div class="container">
@@ -191,7 +187,6 @@
     </div> <!-- end container -->
 </section>
 <!-- end features alt -->
-
 <!-- Features Alt -->
 <section class="section" id="section-type-isolation4">
     <div class="container">
@@ -306,7 +301,7 @@
                 <tbody>
                 <tr>
                     <th scope="row">Vous habitez :</th>
-                    <td colspan="6">Plafond de Revenu fiscal de référence <i class="ion-ios7-information-outline"></i></td>
+                    <td colspan="6">Plafond de Revenu fiscal de référence <a href="#" class="info-revenu"><i class="ion-ios7-help-outline" data-color="orange"></i></a></td>
                 </tr>
                 <tr>
                     <th scope="row">En Ile-de-france</th>
@@ -332,282 +327,58 @@
         </div>
     </div>
 </section>
-<!-- Section-formulaire -->
-<section class="section" id="section-formulaire" data-background-color="bleue-clair">
+<section class="section" id="section-zones">
     <div class="container">
-        <h2 class="text-center">Vous pouvez aussi profiter de cette aide.</h2>
-        <h3 class="text-center text-muted">45% des foyers sont éligibles à l'isolation à 1 €</h3>
-        <div class="row justify-content-center mt-30">
-            <div class="col-sm-12 col-md-12 col-lg-8">
-                <div id="block-form">
-                    <div class="form-header text-center">
-                        <h4 class="text-white">Testez votre éligibilité</h4>
-                        <p class="" data-color="bleue-clair">Réponse immédiate - Sans aucun engagement</p>
-                    </div>
-                    <div class="form-body">
-                        <form id="regForm" action="">
-                            <!-- One "tab" for each step in the form: -->
-                            <div class="tab" id="info-maison-client">
-                                <div class="info-block d-flex flex-column justify-content-around">
-                                    <div>
-                                        <h5 class=""><span data-color="orange">1-</span>Selectionnez vos systèmes de chauffage :</h5>
-                                        <div class="row mt-20">
-                                            <div class="col block-chauffage">
-                                                <input type="checkbox" class="checkbox" name="type_chauffage" id="type-chauffage-gaz" required="required" value="Gaz">
-                                                <label for="type-chauffage-gaz" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-gaz2"></i><span>Gaz</span></label>
-                                            </div>
-                                            <div class="col block-chauffage">
-                                                <input type="checkbox" class="checkbox" name="type_chauffage" id="type-chauffage-bois" required="required" value="Bois">
-                                                <label for="type-chauffage-bois" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-bois2"></i><span>Bois</span></label>
-                                            </div>
-                                            <div class="col block-chauffage">
-                                                <input type="checkbox" class="checkbox" name="type_chauffage" id="type-chauffage-electrique" required="required" value="Electrique">
-                                                <label for="type-chauffage-electrique" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-electricite2"></i><span>Electricité</span></label>
-                                            </div>
-                                            <div class="col block-chauffage">
-                                                <input type="checkbox" class="checkbox" name="type_chauffage" id="type-chauffage-fioul" required="required" value="fioul">
-                                                <label for="type-chauffage-fioul" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-fioul"></i><span>Fioul</span></label>
-                                            </div>
-                                            <div class="col block-chauffage">
-                                                <input type="checkbox" class="checkbox" name="type_chauffage" id="type-chauffage-pompe" required="required" value="Pompe à chaleur">
-                                                <label for="type-chauffage-pompe" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-pompe"></i><span>Pompe</span></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <h5 class=""><span data-color="orange">2-</span>La surface au sol de votre maison :</h5>
-                                        <div class="row mt-20">
-                                            <div class="col block-surface">
-                                                <input type="radio" class="radio" name="type-surface" id="type-surface-1" required="required" value="type-surface-1" checked>
-                                                <label for="type-surface-1" class="type-surface"><i class="icon-fantastic icon-icon-surface4"></i><span>Moins de 70m2</span></label>
-                                            </div>
-                                            <div class="col block-surface">
-                                                <input type="radio" class="radio" name="type-surface" id="type-surface-2" required="required" value="type-surface-2">
-                                                <label for="type-surface-2" class="type-surface"><i class="icon-fantastic icon-icon-surface4"></i><span>Entre 70 et 100m2</span></label>
-                                            </div>
-                                            <div class="col block-surface">
-                                                <input type="radio" class="radio" name="type-surface" id="type-surface-3" required="required" value="type-surface-3">
-                                                <label for="type-surface-3" class="type-surface"><i class="icon-fantastic icon-icon-surface4"></i><span>Plus de 100m2</span></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <h5 class=""><span data-color="orange">3-</span>Les isolations à faire dans votre maison :</h5>
-                                        <div class="row mt-2">
-                                            <div class="col block-isolation">
-                                                <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-combles" required="required" value="Mme">
-                                                <label for="type-isolation-combles" class="type-isolation"><i class="icon-fantastic icon-isolation-combles-form"></i><span>Combles</br>perdus</span></label>
-                                            </div>
-                                            <div class="col block-isolation">
-                                                <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-mur" required="required" value="Mme">
-                                                <label for="type-isolation-mur" class="type-isolation"><i class="icon-fantastic icon-isolation-mur-form"></i><span>Garage</br>mitoyen</span></label>
-                                            </div>
-                                            <div class="col block-isolation">
-                                                <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-sol" required="required" value="Mme">
-                                                <label for="type-isolation-sol" class="type-isolation"><i class="icon-fantastic icon-isolation-garage-form"></i><span>Garage</br>R.D.C/Sous-sol</span></label>
-                                            </div>
-                                            <div class="col block-isolation">
-                                                <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-cave" required="required" value="Mme">
-                                                <label for="type-isolation-cave" class="type-isolation"><i class="icon-fantastic icon-isolation-cave-form"></i><span>Caves</br>vides-sanitaires</span></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab" id="info-situation-client">
-                                <div class="info-block d-flex flex-column justify-content-around">
-                                    <div>
-                                        <h5 class=""><span data-color="orange">4-</span>Vous êtes :</h5>
-                                        <div class="row mt-20">
-                                            <div class="col-md-6">
-                                                <input type="radio" class="radio" name="bail_client" id="client-proprietaire" required="required" value="Proprietaire" checked>
-                                                <label for="client-proprietaire" class="type-bail-client">Propriétaire</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="radio" class="radio" name="bail_client" id="client-locataire" required="required" value="locataire">
-                                                <label for="client-locataire" class="type-bail-client">Locataire</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <h5 class=""><span data-color="orange">5-</span>Nombre de personnes dans le foyer :</h5>
-                                        <div class="row mt-20">
-                                            <div class="col block-nombre-pers">
-                                                <input type="radio" class="radio" name="nombre_personne" id="nombre-personne-1" required="required" value="1" checked>
-                                                <label for="nombre-personne-1" class="nombre-personne">1</label>
-                                            </div>
-                                            <div class="col block-nombre-pers">
-                                                <input type="radio" class="radio" name="nombre_personne" id="nombre-personne-2" required="required" value="2">
-                                                <label for="nombre-personne-2" class="nombre-personne">2</label>
-                                            </div>
-                                            <div class="col block-nombre-pers">
-                                                <input type="radio" class="radio" name="nombre_personne" id="nombre-personne-3" required="required" value="3">
-                                                <label for="nombre-personne-3" class="nombre-personne">3</label>
-                                            </div>
-                                            <div class="col block-nombre-pers">
-                                                <input type="radio" class="radio" name="nombre_personne" id="nombre-personne-4" required="required" value="4">
-                                                <label for="nombre-personne-4" class="nombre-personne">4</label>
-                                            </div>
-                                            <div class="col block-nombre-pers">
-                                                <input type="radio" class="radio" name="nombre_personne" id="nombre-personne-5" required="required" value="5">
-                                                <label for="nombre-personne-5" class="nombre-personne">5</label>
-                                            </div>
-                                            <div class="col block-nombre-pers">
-                                                <input type="radio" class="radio" name="nombre_personne" id="nombre-personne-6" required="required" value="6">
-                                                <label for="nombre-personne-6" class="nombre-personne">6</label>
-                                            </div>
-                                            <div class="col block-nombre-pers">
-                                                <input type="radio" class="radio" name="nombre_personne" id="nombre-personne-7" required="required" value="7">
-                                                <label for="nombre-personne-7" class="nombre-personne">7</label>
-                                            </div>
-                                            <div class="col block-nombre-pers">
-                                                <input type="radio" class="radio" name="nombre_personne" id="nombre-personne-8" required="required" value="8">
-                                                <label for="nombre-personne-8" class="nombre-personne">8</label>
-                                            </div>
-                                            <div class="col block-nombre-pers">
-                                                <input type="radio" class="radio" name="nombre_personne" id="nombre-personne-9" required="required" value="9">
-                                                <label for="nombre-personne-9" class="nombre-personne">9</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <h5 class=""><span data-color="orange">6-</span>Votre revenu fiscal de référence:</h5>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="revenus_reference" Placeholder="19 650€">
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <h5 class=""><span data-color="orange">7-</span>Votre code postal:</h5>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="code_postal" Placeholder="Code postal">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab" id="info-client">
-                                <div class="info-block d-flex flex-column justify-content-around">
-                                    <p>Pour savoir si vous pouvez bénéficier de l'isolation de votre maison pour 1€, merci de compléter les informations ci-dessous.</p>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <input type="radio" class="radio" name="civilite" id="civ_Mme" required="required" value="Mme" checked>
-                                            <label for="civ_Mme" class="civilite">Madame</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="radio" class="radio" name="civilite" id="civ_M" required="required" value="M">
-                                            <label for="civ_M" class="civilite">Monsieur</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" Placeholder="Nom">
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" Placeholder="Prénom">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" Placeholder="N°, rue, av, bd ">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" Placeholder="Tel">
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" Placeholder="email">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        <form id="phoneForm">
-                            <div class="tab">
-                                <div class="info-resultat" id="info-resultat-ok">
-                                    <div class="info-block d-flex flex-column justify-content-around">
-                                        <div>
-                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
-                                                <circle class="path circle" fill="none" stroke="#8ab326" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
-                                                <polyline class="path check" fill="none" stroke="#8ab326" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                            </svg>
-                                            <h5><span class="gras_700">Félicitation</span>, vous êtes éligible à l'isolation à 1€</h5>
-                                            <p class="text-center" data-color="orange">Profitez du savoir-faire d'experts pour l'isolation de votre maison.</p>
-                                            <p></p>
-                                        </div>
-                                        <div>
-                                            <h5 class="text-center">Selectionnez vos disponibilités</h5>
-                                            <div class="row mt-20">
-                                                <div class="col-6 block-heure">
-                                                    <input type="radio" class="radio" name="type-heure" id="type-heure-1" required="required" value="type-heure-1" checked>
-                                                    <label for="type-heure-1" class="type-heure"><i class="ion-clock mr-20"></i><span>Entre 9h et 12h</span></label>
-                                                </div>
-                                                <div class="col-6 block-heure">
-                                                    <input type="radio" class="radio" name="type-heure" id="type-heure-2" required="required" value="type-heure-2">
-                                                    <label for="type-heure-2" class="type-heure"><i class="ion-clock"></i><span>Entre 12h et 14h</span></label>
-                                                </div>
-                                                <div class="col-6 block-heure mt-10">
-                                                    <input type="radio" class="radio" name="type-heure" id="type-heure-3" required="required" value="type-heure-3">
-                                                    <label for="type-heure-3" class="type-heure"><i class="ion-clock"></i><span>Entre 14h et 18h</span></label>
-                                                </div>
-                                                <div class="col-6 block-heure mt-10">
-                                                    <input type="radio" class="radio" name="type-heure" id="type-heure-4" required="required" value="type-heure-4">
-                                                    <label for="type-heure-4" class="type-heure"><i class="ion-clock"></i><span>Entre 18h et 20h</span></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="info-resultat" id="info-resultat-none">
-                                    <div class="info-block d-flex flex-column justify-content-around">
-                                        <div>
-                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
-                                                <circle class="path circle" fill="none" stroke="#ee7626" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
-                                                <line class="path line" fill="none" stroke="#ee7626" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3"/>
-                                                <line class="path line" fill="none" stroke="#ee7626" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2"/>
-                                            </svg>
-                                            <h5>Désolé, vous n'êtes pas éligible à l'isolation à 1€</h5>
-                                            <P>Vos revenus dépassent le plafond de revenus définit par l'ADEME. Vous pouvez cependant bénéficier de la <span class="gras_500" data-color="orange">Prime Energie</span>, déduite directement sur votre facture, pour vos travaux de rénovation thermique.</P>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        <div class="row mt-20">
-                            <div class="col tab-block-btn">
-                                <button type="button " id="prevBtn" class="btn btn-rounded btn-orange">Précédent</button>
-                            </div>
-                            <div class="col tab-block-btn">
-                                <button type="button" id="nextBtn" class="btn btn-rounded btn-orange">Suivant</button>
-                            </div>
-                            <div class="col tab-block-btn">
-                                <button type="button" id="phoneBtn" class="btn btn-rounded btn-orange">Me rappeler</button>
-                            </div>
-                        </div>
-                        <!-- Circles which indicates the steps of the form: -->
-                        {{--<div style="text-align:center;margin-top:40px;">
-                            <span class="step"></span>
-                            <span class="step"></span>
-                            <span class="step"></span>
-                            <span class="step"></span>
-                        </div>--}}
-                    </div>
-                </div>
+        <div class="row align-items-center">
+            <div class="col-sm-12 col-md-6">
+                <h2 class="gras_700 text-center" data-color="vert">Zone H1</h2>
+                <img src="{{ asset('images/carte-isolation-france.jpg') }}" class="image-region-intervention" alt="carte isolation de la région hauts-de-France">
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h3 class="text-left mb-40">Les régions concernées :</h3>
+                <p><span class="gras_500" data-color="orange">L'Etat a définit 3 zones climatiques(H1, H2, H3)</span> pour les opérations d'aides mises en place pour réduire la consommation d'énergie.</p>
+                <p>Votre maison se situe en <span data-color="vert">zone H1</span>, vous pouvez avoir droit à cette aide de l'Etat à travers le dispositif des Certificats d’économies d’énergie.</p>
+                <p>Vous habitez dans <span class="gras_500" data-color="orange">les Hauts-de-France</span>, en <span class="gras_500" data-color="orange">Normandie</span>, en <span class="gras_500" data-color="orange">Ile-de-france</span>, dans le <span class="gras_500" data-color="orange">Grand-Est</span>, en <span class="gras_500" data-color="orange">Centre Val-de-Loire</span>, en <span class="gras_500" data-color="orange">Bourgogne-Franche-Comté</span>, en <span class="gras_500" data-color="orange">Auvergne-Rhones-Alpes</span>, vous pouvez bénificier de l'isolation de votre maison pour 1€, sous conditions d'éligibilité.</p>
+                <p class="mt-40">Cependant, <span class="gras_500" data-color="orange">ce dispositif risque d'être étendu à d'autres régions</span> de France. <span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">Habitat </span> vous propose de vous tenir informé des dispositions qui seront prises pour bénificier de l'isolation à 1€ dans votre région.</p>
+                <a href="" class="btn btn-custom mt-30">Je veux rester informé</a>
             </div>
         </div>
+        {{--<div class="row">
+            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-center">
+                <h3 data-color="orange">Région Hauts-de-France :</h3>
+                <img src="{{ asset('images/region-haut-de-france.svg') }}" class="image-region-intervention" alt="carte isolation de la région hauts-de-France">
+                <div class="info-bureau block-center">
+                    <i class="ion-ios7-location-outline bureau-name-icon"></i><p class="bureau-name">Agence de LYS-LEZ-LANNOY</p>
+                    <p class="bureau-adress">20 rue de Bapaume</p>
+                    <p class="bureau-adress">59390 Lys-lez-Lanoy</p>
+                    <p class="bureau-phone"><i class="ion-ios7-telephone-outline bureau-phone-icon"></i>03 74 56 00 00</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-center">
+                <h3 data-color="orange">Région Ile-de-France :</h3>
+                <img src="{{ asset('images/region-ile-de-france.svg') }}" class="image-region-intervention" alt="carte isolation de la région hauts-de-France">
+                <div class="info-bureau">
+                    <i class="ion-ios7-location-outline bureau-name-icon"></i><p class="bureau-name">Agence de BOBIGNY</p>
+                    <p class="bureau-adress">28 rue de Eugène Varlin</p>
+                    <p class="bureau-adress">93000 Bobigny</p>
+                    <p class="bureau-phone"><i class="ion-ios7-telephone-outline bureau-phone-icon"></i>01 78 56 03 03</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-center">
+                <h3 data-color="orange">Département de La Haute-Loire :</h3>
+                <img src="{{ asset('images/departement-haute-loire.svg') }}" class="image-region-intervention" alt="carte isolation de la région hauts-de-France">
+                <div class="info-bureau">
+                    <i class="ion-ios7-location-outline bureau-name-icon"></i><p class="bureau-name"></i>Agence du PUY-EN-VELAY</p>
+                    <p class="bureau-adress">2Zone d'activité du taulhac</p>
+                    <p class="bureau-adress">43000 Le-Puy-en-Velay</p>
+                    <p class="bureau-phone"><i class="ion-ios7-telephone-outline bureau-phone-icon"></i>04 71 71 03 03</p>
+                </div>
+            </div>
+        </div>--}}
     </div>
 </section>
+<!-- Section-formulaire -->
+@include('site-web.layouts.formulaire')
 <!-- end section-formulaire -->
 <section class="section" id="section-fonctionnement" data-background-color="bleue-clair">
     <div class="container-fluid">
@@ -684,8 +455,8 @@
                     <div class="features-box d-flex">
                         <i class="icon-fantastic icon-icon-4-heures2"></i>
                         <div class="ml-20 align-self-center text-left">
-                            <h3>Des travaux en moins de 4 heures</h3>
-                            <p>Nous nous occupons de toutes les formalités</p>
+                            <h3>Votre isolation en moins de 4 heures</h3>
+                            <p>Des travaux rapides et sans contraintes</p>
                         </div>
                     </div>
                     <div class="features-box d-flex">
@@ -712,43 +483,6 @@
         </div>
     </div>
 </section>
-<section class="section" id="section-zones">
-    <div class="container">
-        <h2 class="text-center mb-40">Nos zones d'intervention :</h2>
-        <div class="row">
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-center">
-                <h3 data-color="orange">Région Hauts-de-France :</h3>
-                <img src="{{ asset('images/region-haut-de-france.svg') }}" class="image-region-intervention" alt="carte isolation de la région hauts-de-France">
-                <div class="info-bureau block-center">
-                    <i class="ion-ios7-location-outline bureau-name-icon"></i><p class="bureau-name">Agence de LYS-LEZ-LANNOY</p>
-                    <p class="bureau-adress">20 rue de Bapaume</p>
-                    <p class="bureau-adress">59390 Lys-lez-Lanoy</p>
-                    <p class="bureau-phone"><i class="ion-ios7-telephone-outline bureau-phone-icon"></i>03 74 56 00 00</p>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-center">
-                <h3 data-color="orange">Région Ile-de-France :</h3>
-                <img src="{{ asset('images/region-ile-de-france.svg') }}" class="image-region-intervention" alt="carte isolation de la région hauts-de-France">
-                <div class="info-bureau">
-                    <i class="ion-ios7-location-outline bureau-name-icon"></i><p class="bureau-name">Agence de BOBIGNY</p>
-                    <p class="bureau-adress">28 rue de Eugène Varlin</p>
-                    <p class="bureau-adress">93000 Bobigny</p>
-                    <p class="bureau-phone"><i class="ion-ios7-telephone-outline bureau-phone-icon"></i>01 78 56 03 03</p>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-center">
-                <h3 data-color="orange">Département de La Haute-Loire :</h3>
-                <img src="{{ asset('images/departement-haute-loire.svg') }}" class="image-region-intervention" alt="carte isolation de la région hauts-de-France">
-                <div class="info-bureau">
-                    <i class="ion-ios7-location-outline bureau-name-icon"></i><p class="bureau-name"></i>Agence du PUY-EN-VELAY</p>
-                    <p class="bureau-adress">2Zone d'activité du taulhac</p>
-                    <p class="bureau-adress">43000 Le-Puy-en-Velay</p>
-                    <p class="bureau-phone"><i class="ion-ios7-telephone-outline bureau-phone-icon"></i>04 71 71 03 03</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
 <!-- Testimonials section -->
 <section class="section bg-img-1" id="section-testimonials">
     <div class="bg-overlay"></div>
@@ -830,8 +564,6 @@
                         play = '<div class="play"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>';
 //                    return thumb.replace("ID", id) + play;
                     return thumb + play;
-                    //return alert(thumb_src);
-
                 }
 
                 function labnolIframe() {
@@ -841,10 +573,9 @@
                     alert(this.parentNode);
                     this.parentNode.replaceChild(iframe, this);
                     var logo = document.getElementsByClassName("yt-uix-sessionlink");
-                    for (i = 0; i < logo.length; i++) {
-                        logo[i].style.display= "none";
-                    }
-
+//                    for (i = 0; i < logo.length; i++) {
+//                        logo[i].style.display= "none";
+//                    }
                 }
 
             </script>
@@ -860,15 +591,15 @@
                 <h4 class="mt-20 mb-30" data-color="orange">Partager notre programme</h4>
                 <img src="{{ asset('images/programme-isolation6.png') }}" alt="carte isolation de la région hauts-de-France">
                 <div class="mt-30">
-                    <button type="button" role="button" class="btn btn-facebook waves-effect waves-light">
+                    <button type="button" role="button" target="_blank" class="btn btn-facebook waves-effect waves-light share_facebook">
                     <i class="fa fa-facebook m-r-5"></i> Facebook
                     </button>
 
-                    <button type="button" role="button" class="btn btn-twitter waves-effect waves-light">
+                    <button type="button" role="button" class="btn btn-twitter waves-effect waves-light share_twitter">
                     <i class="fa fa-twitter m-r-5"></i> Twitter
                     </button>
 
-                    <button type="button" class="btn btn-googleplus waves-effect waves-light">
+                    <button type="button" class="btn btn-googleplus waves-effect waves-light share_gplus">
                         <i class="fa fa-google-plus m-r-5"></i> Google+
                     </button>
                 </div>
@@ -884,11 +615,21 @@
             </div>
         </div>
         <div class="row">
+            <div class="col">
             <img src="{{ asset('images/knauf.svg') }}" class="logo-materiel-iso" alt="logo-knauf-isolation">
+            </div>
+            <div class="col">
             <img src="{{ asset('images/isover.svg') }}" class="logo-materiel-iso" alt="logo-isover-isolation">
+            </div>
+            <div class="col">
             <img src="{{ asset('images/ursa.svg') }}" class="logo-materiel-iso" alt="logo-ursa-isolation">
+            </div>
+            <div class="col">
             <img src="{{ asset('images/saint-gobin.svg') }}" class="logo-materiel-iso" alt="logo-saint-gobin-isolation">
+            </div>
+            <div class="col">
             <img src="{{ asset('images/rockwool.svg') }}" class="logo-materiel-iso" alt="logo-rockwool-isolation">
+            </div>
         </div>
     </div>
 </section>
