@@ -11,24 +11,22 @@
         });
         /*Popup "besoin de conseils"*/
         $('#btn_phone_modal').click(function () {
-            var valid = true;
-            var x = document.querySelector('#phoneForm');
+            var x = document.querySelector('#phoneFormModal');
             var y = x.getElementsByTagName('input');
             for(var i = 0; i < y.length; i++){
-                if(y[i].value == "" ){
-                    valid = false;
+                if(y[i].value == " "){
                     y[i].style.borderColor = "#ee7626";
+                }else{
+                    $('#phoneModal').modal('hide');
+                    swal({
+                        text: '<h5 data-color="orange">Votre demande a été prise en compte</h5>' +
+                        '<p>Un conseiller isolation vous rappellera rapidement.</p>',
+                        timer: 3000,
+                        showConfirmButton: false
+                    });
                 }
             }
-            if(valid  === true) {
-                $('#phoneModal').modal('hide');
-                swal({
-                    text: '<h5 data-color="orange">Votre demande a été prise en compte</h5>' +
-                    '<p>Un conseiller vous rappellera rapidement.</p>',
-                    timer: 3000,
-                    showConfirmButton: false
-                });
-            }
+
         });
 
         $('.btn-formulaire').click(function (e) {
@@ -136,6 +134,10 @@
             nextButton.classList.remove('btn-orange');
             nextButton.classList.add('btn-vert');
             nextButton.innerHTML = "Suivant";
+            var check = document.querySelectorAll('.checkbox')
+            for(var i=0; i<check.length; i++){
+                check[i].checked = false;
+            }
         }
         showTab(currentTab);
         function showTab(n){
@@ -167,27 +169,13 @@
             }
 
         }
-        function validateForm(){
-            var valid = true;
+        var prev = document.querySelector('#prevBtn');
+        prev.addEventListener('click', function(){
             var x = document.querySelectorAll('.tab');
-            var z = x[currentTab].querySelectorAll('.checkbox');
-            var y = x[currentTab].getElementsByTagName('input');
-            for(var i = 0; i < y.length; i++){
-                if(y[i].value == "" ){
-                    valid = false;
-                    y[i].style.borderColor = "#ee7626";
-                }
-            }
-            // var z = x[currentTab].querySelectorAll('.checkbox');
-            // for(var j=0; j < z.length; i++){
-            //     if(!z[j].checked){
-            //         valid = false;
-            //         z[j].style.border = "2px solid #ee7626";
-            //     }
-            // }
-            return valid;
-        }
-
+            x[currentTab].style.display =  "none";
+            currentTab -= 1;
+            showTab(currentTab);
+        });
         var next = document.getElementById('nextBtn');
         next.addEventListener('click', function(){
             // if(validateForm() === true){
@@ -198,28 +186,35 @@
             // }
             var x = document.querySelectorAll('.tab');
             x[currentTab].style.display =  "none";
-            if(currentTab == x.length-1){
-                swal({
-                    text: '<h5 data-color="orange">Votre demande a été prise en compte</h5>' +
-                    '<p>Un conseiller vous rappellera rapidement.</p>',
-                    timer: 3000,
-                    showConfirmButton: false
-                });
-                currentTab = 0;
-                showTab(currentTab);
-            }else{
-                currentTab += 1;
-                showTab(currentTab);
-            }
-        });
-        var prev = document.querySelector('#prevBtn');
-        prev.addEventListener('click', function(){
-            var x = document.querySelectorAll('.tab');
-            x[currentTab].style.display =  "none";
-            currentTab -= 1;
-            showTab(currentTab);
+            validateForm();
+            alert(validateForm());
+                if (currentTab == x.length - 1) {
+                    swal({
+                        text: '<h5 data-color="orange">Votre demande a été prise en compte</h5>' +
+                        '<p>Un conseiller isolation vous rappellera rapidement.</p>',
+                        timer: 3000,
+                        showConfirmButton: false
+                    });
+                    currentTab = 0;
+                    showTab(currentTab);
+                } else {
+                    currentTab += 1;
+                    showTab(currentTab);
+                }
         });
 
+        function validateForm(){
+            var valid = true;
+            var x = document.querySelectorAll('.tab');
+            var y = x[currentTab].getElementsByTagName('input');
+            for(var i = 0; i < y.length; i++){
+                if(y[i].value == " " ){
+                    valid = false;
+                    this.style.borderColor = "#ee7626";
+                }
+            }
+            return valid;
+        }
         function getRadioVals(){
             var radios = document.forms['regForm'].elements['nombre_personne'];
             // loop through list of radio buttons
@@ -232,14 +227,14 @@
             }
             return val; // return value of checked radio or undefined if none checked
         }
-        function getCheckboxVals(){
-            var checkbox = document.forms['regForm'].elements['type_chauffage'];
-            for(var i=0; i<checkbox.length; i++){
-                if(!checkbox[i].cheked){
-                    checkbox[i].style.border = "2px solid #ee7626";
+        function validateCheckbox(){
+            var z = x[currentTab].querySelectorAll('.checkbox');
+                for(var j=0; j < z.length; i++){
+                    if(!z[j].checked){
+                        valid = false;
+                        z[j].style.border = "2px solid #ee7626";
+                     }
                 }
-            }
-
         }
 
         function dispalyEligibilite(eligible){

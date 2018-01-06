@@ -202,9 +202,9 @@
             </div>
             <div class="col-md-5">
                 <div style="position: relative";>
-                    <img src="{{ asset('images/isolation-combles-soufflage.jpg') }}" alt="img" class="img-fluid rounded">
+                    <img src="{{ asset('images/technique-isolation-plafond.jpg') }}" alt="img" class="img-fluid rounded">
                     <div class="bg-overlay">
-                        <h4>Isolation des plafond avec panneaux de polystyrène</h4>
+                        <h4>Isolation des plafond avec panneaux de laine de verre</h4>
                         <table class="table">
                             <thead>
                             <tr>
@@ -337,9 +337,9 @@
             <div class="col-sm-12 col-md-6">
                 <h3 class="text-left mb-40">Les régions concernées :</h3>
                 <p><span class="gras_500" data-color="orange">L'Etat a définit 3 zones climatiques(H1, H2, H3)</span> pour les opérations d'aides mises en place pour réduire la consommation d'énergie.</p>
-                <p>Votre maison se situe en <span data-color="vert">zone H1</span>, vous pouvez avoir droit à cette aide de l'Etat à travers le dispositif des Certificats d’économies d’énergie.</p>
+                <p>Votre maison se situe en <span data-color="vert">zone H1</span>, vous pouvez avoir droit à une aide de l'Etat à travers le dispositif des Certificats d’économies d’énergie. C'est ce que nous vous proposons avec notre programme d'isolation à 1€.</p>
                 <p>Vous habitez dans <span class="gras_500" data-color="orange">les Hauts-de-France</span>, en <span class="gras_500" data-color="orange">Normandie</span>, en <span class="gras_500" data-color="orange">Ile-de-france</span>, dans le <span class="gras_500" data-color="orange">Grand-Est</span>, en <span class="gras_500" data-color="orange">Centre Val-de-Loire</span>, en <span class="gras_500" data-color="orange">Bourgogne-Franche-Comté</span>, en <span class="gras_500" data-color="orange">Auvergne-Rhones-Alpes</span>, vous pouvez bénificier de l'isolation de votre maison pour 1€, sous conditions d'éligibilité.</p>
-                <p class="mt-40">Cependant, <span class="gras_500" data-color="orange">ce dispositif risque d'être étendu à d'autres régions</span> de France. <span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">Habitat </span> vous propose de vous tenir informé des dispositions qui seront prises pour bénificier de l'isolation à 1€ dans votre région.</p>
+                <p class="mt-40"><span class="gras_500" data-color="orange">Ce dispositif risque d'être étendu à d'autres régions</span> de France. <span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">Habitat </span> vous propose de vous tenir informé des dispositions qui seront prises pour bénificier de l'isolation à 1€ dans votre région.</p>
                 <a href="" class="btn btn-custom mt-30">Je veux rester informé</a>
             </div>
         </div>
