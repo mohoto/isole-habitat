@@ -224,7 +224,7 @@
                                                 <circle class="path circle" fill="none" stroke="#8ab326" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
                                                 <polyline class="path check" fill="none" stroke="#8ab326" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
                                             </svg>
-                                            <h5><span class="gras_700">Félicitation</span>, vous êtes éligible à l'isolation à 1€</h5>
+                                            <h5><span class="gras_700">Félicitation</span>, vous êtes éligible à l'isolation pour 1€</h5>
                                         </div>
                                         <div>
                                             <div class="d-flex align-items-start">
