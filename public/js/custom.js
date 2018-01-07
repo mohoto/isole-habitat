@@ -186,8 +186,7 @@
             // }
             var x = document.querySelectorAll('.tab');
             x[currentTab].style.display =  "none";
-            validateForm();
-            alert(validateForm());
+            //validateForm();
                 if (currentTab == x.length - 1) {
                     swal({
                         text: '<h5 data-color="orange">Votre demande a été prise en compte</h5>' +
