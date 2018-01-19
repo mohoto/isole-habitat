@@ -570,7 +570,6 @@
                     var iframe = document.createElement("iframe");
                     var embed = "https://www.youtube.com/embed/ID?rel=0&modestbranding=1&autohide=0&showinfo=0&autoplay=1&controls=2";
                     iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
-                    alert(this.parentNode);
                     this.parentNode.replaceChild(iframe, this);
                     var logo = document.getElementsByClassName("yt-uix-sessionlink");
 //                    for (i = 0; i < logo.length; i++) {
