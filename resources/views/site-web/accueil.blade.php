@@ -286,7 +286,7 @@
     </div>
     <div class="row justify-content-center mt-40">
         <div class="col-sm-12 col-md-7">
-            <table class="table">
+            <table class="table table-bordered">
                 <thead class="thead-inverse">
                 <tr>
                     <th>Nombre de personnes</br>dans le foyer</th>
@@ -449,21 +449,21 @@
                         <i class="icon-fantastic icon-icon-facture"></i>
                         <div class="ml-20 align-self-center text-left">
                             <h3>Aucun démarche à faire</h3>
-                            <p>Nous nous occupons de toutes les formalités</p>
+                            <p>Nous nous occupons de toutes les formalités.</p>
                         </div>
                     </div>
                     <div class="features-box d-flex">
                         <i class="icon-fantastic icon-icon-4-heures2"></i>
                         <div class="ml-20 align-self-center text-left">
                             <h3>Votre isolation en moins de 4 heures</h3>
-                            <p>Des travaux rapides et sans contraintes</p>
+                            <p>Des travaux rapides, pas de perte de temps pour vous.</p>
                         </div>
                     </div>
                     <div class="features-box d-flex">
                         <i class="icon-fantastic icon-icon-proprete"></i>
                         <div class="ml-20 align-self-center text-left">
                             <h3>Propreté et nettoyage du chantier</h3>
-                            <p>Nettoyage en fin de chantier et évacuation des déchets</p>
+                            <p>Nettoyage en fin de chantier et évacuation des déchets.</p>
                         </div>
                     </div>
                 </div>

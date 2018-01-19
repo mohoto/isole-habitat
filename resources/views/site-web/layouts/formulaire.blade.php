@@ -232,14 +232,14 @@
                                                     <img src="{{ asset('images/assistance-telephonique.jpg') }}" class="assistace_phone_img rounded-circle" alt="Demande assistace telephonique isole habitat">
                                                 </div>
                                                 <div class="ml-20">
-                                                    <p class="">Profitez de conseils d'experts pour l'isolation de votre maison pour 1€ symbolique.</p>
-                                                    <h4 class="" data-color="orange"><i class="ion-ios7-telephone mr-10"></i>Nous vous rappelons<span class="text-muted">en moins de 24 heures</span></h4>
+                                                    <p class="descrip">Profitez de conseils d'experts pour l'isolation de votre maison pour 1€ symbolique.</p>
+                                                    <h6 class="" data-color="orange"><i class="ion-ios7-telephone mr-10"></i>Nous vous rappelons<span class="text-muted"> en moins de 24 heures</span></h6>
                                                 </div>
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="mt-30">
-                                                <h5 class="text-center">Selectionnez vos disponibilités:</h5>
+                                            <div>
+                                                <p class="text-center">Selectionnez vos disponibilités:</p>
                                                 <div class="row mt-20">
                                                     <div class="col-3 block-heure">
                                                         <input type="radio" class="radio" name="heure_rappel" id="type-heure-1" required="required" value="type-heure-1" checked>

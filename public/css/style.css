@@ -1198,7 +1198,7 @@ label.type-heure {
   font-size: 1.6em;
   color: #ee7626;
 }
-.section#section-formulairet h2{
+.section#section-formulaire h2{
     margin-bottom: 20px;
 }
 .section#section-formulaire h3{
@@ -1966,14 +1966,18 @@ label.type-heure {
 }
 #block-form .form-body{
   background-color: #ffffff;
-  padding: 50px 40px 20px 40px;
+  padding: 30px 40px 20px 40px;
 }
 #regForm {
 }
 #regForm h5{
   font-size: 1.1rem;
+  color: #868e96;
+  margin-top: 10px;
 }
-
+#regForm h5 span{
+  color: #ee7626;
+}
 /* Mark input boxes that gets an error on validation: */
 input.invalid {
   background-color: #ffdddd;
@@ -1982,7 +1986,7 @@ input.invalid {
 /* Hide all steps by default: */
 #block-form .form-body .tab {
   display: none;
-  height: 500px;
+  height: 420px;
 }
 #regForm .tab .info-block{
   height: 100%;
@@ -2030,6 +2034,9 @@ input.invalid {
 #info-maison-client .row{
     /*border-bottom: 1px solid #ee7626;*/
 }
+#info-maison-client label{
+  margin-bottom: 0;
+}
 .block-chauffage,
 .block-isolation{
   text-align: center;
@@ -2074,10 +2081,10 @@ input.invalid {
   display: block !important;
 }
 .block-chauffage label.type-chauffage i{
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .block-isolation label.type-isolation i{
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 .block-chauffage label.type-chauffage:hover,
 .block-isolation label.type-isolation:hover,
@@ -2167,6 +2174,7 @@ label.type-heure {
 
 .section#section-formulaire .tab .info-resultat{
   display: none;
+  padding-top: 20px;
 }
 .section#section-formulaire svg {
   width: 100px;
@@ -2208,7 +2216,7 @@ label.type-heure {
 .section#section-formulaire #phoneForm .text_intro{
   font-size: 1.2em;
 }
-.section#section-formulaire #phoneForm p {
+.section#section-formulaire #phoneForm p.descrip {
   margin: 20px 0;
   font-size: 1.3em;
   line-height: 1.3;
