@@ -627,7 +627,7 @@
             <img src="{{ asset('images/saint-gobin.svg') }}" class="logo-materiel-iso" alt="logo-saint-gobin-isolation">
             </div>
             <div class="col">
-            <img src="{{ asset('images/rockwool.svg') }}" class="logo-materiel-iso" alt="logo-rockwool-isolation">
+            <img src="{{ asset('images/rockwool2.svg') }}" class="logo-materiel-iso" alt="logo-rockwool-isolation">
             </div>
         </div>
     </div>
