@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ app()->getLocale() }}"  prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+        <meta property="og:url"           content="https://www.isole-habitat.fr" />
         <meta property="og:type"          content="website" />
-        <meta property="og:title"         content="Your Website Title" />
-        <meta property="og:description"   content="Your description" />
-        <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+        <meta property="og:title"         content="Isoler votre maison pour 1€" />
+        <meta property="og:description"   content="Profiter du programme d'isolation à 1€ et économisez jusqu'à 30% sur votre facture de chauffage" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:image"         content="{{ asset('images/image-resaux-sociaux.jpg') }}" />
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@isolehabitat">
+        <meta name="twitter:title" content="Isoler votre maison pour 1€">
+        <meta name="twitter:description" content="Profiter du programme d'isolation à 1€ et économisez jusqu'à 30% sur votre facture de chauffage">
+        <meta name="twitter:image" content="https://www.radiantmediaplayer.com/images/poster-rmp-showcase.jpg">
+        <meta name="twitter:image:width" content="640">
+        <meta name="twitter:image:height" content="360">
+
 
         <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -82,19 +92,19 @@
                                 <h5 class="text-center">Selectionnez vos disponibilités:</h5>
                                 <div class="row mt-20">
                                     <div class="col-3 block-heure">
-                                        <input type="radio" class="radio" name="modal_heure_rappel" id="modal_type_heure-1" required="required" value="type-heure-1" checked>
+                                        <input type="radio" class="radio" name="heure_rappel_modal" id="modal_type_heure-1" required="required" value="type-heure-modal-1" checked>
                                         <label for="modal_type_heure-1" class="type-heure">9h-12h</label>
                                     </div>
                                     <div class="col-3 block-heure">
-                                        <input type="radio" class="radio" name="modal_heure_rappel" id="modal_type_heure-2" required="required" value="type-heure-2">
+                                        <input type="radio" class="radio" name="heure_rappel_modal" id="modal_type_heure-2" required="required" value="type-heure-modal-2">
                                         <label for="modal_type_heure-2" class="type-heure">12h-14h</label>
                                     </div>
                                     <div class="col-3 block-heure">
-                                        <input type="radio" class="radio" name="modal_heure_rappel" id="modal_type_heure-3" required="required" value="type-heure-3">
+                                        <input type="radio" class="radio" name="heure_rappel_modal" id="modal_type_heure-3" required="required" value="type-heure-modal-3">
                                         <label for="modal_type_heure-3" class="type-heure">14h-18h</label>
                                     </div>
                                     <div class="col-3 block-heure">
-                                        <input type="radio" class="radio" name="modal_heure_rappel" id="modal_type_heure-4" required="required" value="type-heure-4">
+                                        <input type="radio" class="radio" name="heure_rappel_modal" id="modal_type_heure-4" required="required" value="type-heure-modal-4">
                                         <label for="modal_type_heure-4" class="type-heure">18h-20h</label>
                                     </div>
                                 </div>

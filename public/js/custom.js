@@ -1,34 +1,5 @@
 (function($) {
     $(document).ready(function(){
-        /*Onglet "besoin de conseils"*/
-        $('.popup_aide').css("display","none");
-        $(window).scroll(function(){
-            if($(this).scrollTop()>200){
-                $('.popup_aide').fadeIn();
-            }else{
-                $('.popup_aide').fadeOut();
-            }
-        });
-        /*Popup "besoin de conseils"*/
-        $('#btn_phone_modal').click(function () {
-            var x = document.querySelector('#phoneFormModal');
-            var y = x.getElementsByTagName('input');
-            for(var i = 0; i < y.length; i++){
-                if(y[i].value == " "){
-                    y[i].style.borderColor = "#ee7626";
-                }else{
-                    $('#phoneModal').modal('hide');
-                    swal({
-                        text: '<h5 data-color="orange">Votre demande a été prise en compte</h5>' +
-                        '<p>Un conseiller isolation vous rappellera rapidement.</p>',
-                        timer: 3000,
-                        showConfirmButton: false
-                    });
-                }
-            }
-
-        });
-
         $('.btn-formulaire').click(function (e) {
             e.preventDefault();
             /*$('#section-formulaire').slideDown();*/
@@ -39,9 +10,70 @@
             }, speed);
             return false;
         });
+        /*Onglet "besoin de conseils"*/
+        $('.popup_aide').css("display","none");
+        $(window).scroll(function(){
+            if($(this).scrollTop()>200){
+                $('.popup_aide').fadeIn();
+            }else{
+                $('.popup_aide').fadeOut();
+            }
+        });
+        /*Popup "besoin de conseils"*/
+        function getHourValModal(){
+            var val;
+            var heure_modal = document.forms['phoneFormModal'].elements['heure_rappel_modal'];
+            for(var i=0; i<heure_modal.length; i++){
+                if (heure_modal[i].checked){
+                    val = heure_modal[i].value;
+                    break;
+                }
+            }
+            if(val == 'type-heure-modal-1'){
+                val = '9h-12h';
+            }else if(val == 'type-heure-modal-2'){
+                val = '12h-14h';
+            }else if(val == 'type-heure-modal-3'){
+                val = '14h-18h';
+            }else if(val == 'type-heure-modal-4'){
+                val = '18h-20h';
+            }
+            return val;
+        }
+        $('#btn_phone_modal').click(function () {
+            var x = document.querySelector('#phoneFormModal');
+            var valHeure;
+            valHeure = getHourValModal;
+            /*var y = x.getElementsByTagName('input');
+            for (var i = 0; i < y.length; i++) {
+                if (y[i].value == "") {
+                    y[i].style.borderColor = "#ee7626";
+                } else {*/
+                    $('#phoneModal').modal('hide');
+                    swal({
+                        text: '<h5 data-color="orange">Votre demande a été prise en compte</h5>' +
+                        '<p>Un conseiller isolation vous rappellera rapidement' +
+                        '<p><strong data-color="orange">Entre ' + valHeure + '</strong></p>',
+                        timer: 3000,
+                        showConfirmButton: false
+                    });
+                /*}
+            }*/
+        });
+        function validateForm(){
+            var valid = true;
+            var x = document.querySelectorAll('.tab');
+            var y = document.getElementsByTagName('input');
+            for(var i = 0; i < y.length; i++){
+                if(y[i].value == "" ){
+                    valid = false;
+                }
+            }
+            return valid;
+        }
 
         /*input chiffre format*/
-        var $form = $( "#regForm" );
+        var $form = $( "#eligibleForm" );
         var $inputRevenu = $('#revenus_reference');
 
         $inputRevenu.on( "keyup", function( event ) {
@@ -177,29 +209,60 @@
             showTab(currentTab);
         });
         var next = document.getElementById('nextBtn');
-        next.addEventListener('click', function(){
-            // if(validateForm() === true){
-            //     var x = document.querySelectorAll('.tab');
-            //     x[currentTab].style.display =  "none";
-            //     currentTab += 1;
-            //     showTab(currentTab);
-            // }
+        next.addEventListener('click', function() {
             var x = document.querySelectorAll('.tab');
-            x[currentTab].style.display =  "none";
-            //validateForm();
-                if (currentTab == x.length - 1) {
-                    swal({
-                        text: '<h5 data-color="orange">Votre demande a été prise en compte</h5>' +
-                        '<p>Un conseiller isolation vous rappellera rapidement.</p>',
-                        timer: 3000,
-                        showConfirmButton: false
-                    });
-                    currentTab = 0;
-                    showTab(currentTab);
-                } else {
+            if(currentTab == 0) {
+                if (validateCheckboxChauf() && validateCheckboxIso()) {
+                    x[currentTab].style.display = "none";
                     currentTab += 1;
                     showTab(currentTab);
+                } else if(validateCheckboxChauf() === false){
+                    swal({
+                        text: '<h5 data-color="orange">Faîtes un choix:</h5>' +
+                        '<p>Selectionnez votre ou vos systèmes de chauffage</p>',
+                        timer: 1500,
+                        showConfirmButton: false
+                    });
+                } else if(validateCheckboxIso() === false){
+                    swal({
+                        text: '<h5 data-color="orange">Faîtes un choix:</h5>' +
+                        "<p>Selectionnez les types d'isolations à faire dans votre maison</p>",
+                        timer: 1500,
+                        showConfirmButton: false
+                    });
                 }
+            }else if (currentTab == x.length - 1) {
+                var valHeure;
+                valHeure = getHourValEligible();
+
+                $('#phoneModal').modal('hide');
+                swal({
+                    text: '<h5 data-color="orange">Votre demande a été prise en compte</h5>' +
+                    '<p>Un conseiller isolation vous rappellera rapidement</br> Entre ' + valHeure + '</p>',
+                    timer: 3000,
+                    showConfirmButton: false
+                });
+                    x[currentTab].style.display = "none";
+                    currentTab = 0;
+                    showTab(currentTab);
+                    document.querySelector('#info-resultat-ok').style.display =  "none";
+                    document.querySelector('#info-resultat-none').style.display =  "none";
+            }else {
+               // if (validateForm()) {
+                    x[currentTab].style.display = "none";
+                    currentTab += 1;
+                    showTab(currentTab);
+                //}
+                /*else {
+                    var y = x[currentTab].getElementsByTagName('input');
+                    for (var i = 0; i < y.length; i++) {
+                        if (y[i].value == "") {
+                            y[i].style.borderColor = "#ee7626";
+                        }
+                    }
+                }*/
+
+            }
         });
 
         function validateForm(){
@@ -207,15 +270,15 @@
             var x = document.querySelectorAll('.tab');
             var y = x[currentTab].getElementsByTagName('input');
             for(var i = 0; i < y.length; i++){
-                if(y[i].value == " " ){
+                if(y[i].value == "" ){
                     valid = false;
-                    this.style.borderColor = "#ee7626";
                 }
             }
             return valid;
         }
         function getRadioVals(){
-            var radios = document.forms['regForm'].elements['nombre_personne'];
+            var val;
+            var radios = document.forms['eligibleForm'].elements['nombre_personne'];
             // loop through list of radio buttons
             for (var i=0; i<radios.length; i++) {
                 if ( radios[i].checked ) { // radio checked?
@@ -226,16 +289,48 @@
             }
             return val; // return value of checked radio or undefined if none checked
         }
-        function validateCheckbox(){
-            var z = x[currentTab].querySelectorAll('.checkbox');
-                for(var j=0; j < z.length; i++){
-                    if(!z[j].checked){
-                        valid = false;
-                        z[j].style.border = "2px solid #ee7626";
-                     }
+        function getHourValEligible(){
+            var val;
+            var heure_eligible = document.forms['eligibleForm'].elements['heure_rappel'];
+            for(var i=0; i<heure_eligible.length; i++){
+                if (heure_eligible[i].checked){
+                    val = heure_eligible[i].value;
+                    break;
                 }
+            }
+            if(val == 'type-heure-1'){
+                val = '9h-12h';
+            }else if(val == 'type-heure-2'){
+                val = '12h-14h';
+            }else if(val == 'type-heure-3'){
+                val = '14h-18h';
+            }else if(val == 'type-heure-4'){
+                val = '18h-20h';
+            }
+            return val;
         }
-
+        function validateCheckboxChauf(){
+            valid = false;
+            var x = document.querySelectorAll('.tab');
+            var z = x[currentTab].querySelectorAll('.checkbox');
+            for(var j=0; j<z.length; j++){
+                if(z[j].name == 'type_chauffage' && z[j].checked == true){
+                    valid = true;
+                }
+            }
+            return valid;
+        }
+        function validateCheckboxIso(){
+            valid = false;
+            var x = document.querySelectorAll('.tab');
+            var z = x[currentTab].querySelectorAll('.checkbox');
+            for(var j=0; j<z.length; j++){
+                if(z[j].name == 'type_isolation' && z[j].checked == true){
+                    valid = true;
+                }
+            }
+            return valid;
+        }
         function dispalyEligibilite(eligible){
             if(eligible){
                 document.querySelector('#info-resultat-ok').style.display =  "block";
@@ -247,9 +342,9 @@
 
         function testEligibilite(){
             var eligible = true;
-            var formRef = document.forms['regForm'].elements['revenus_reference'];
-            var checkbox = document.forms['regForm'].elements['type_chauffage'];
-            var codePostal = document.forms['regForm'].elements['code_postal'];
+            var formRef = document.forms['eligibleForm'].elements['revenus_reference'];
+            var checkbox = document.forms['eligibleForm'].elements['type_chauffage'];
+            var codePostal = document.forms['eligibleForm'].elements['code_postal'];
             var PostalDept = codePostal.value.substr(0, 2);
             var formRevRef = formRef.value;
             var revRef = formRevRef.replace(/[($)\s\._\-]+/g, '');
@@ -278,15 +373,6 @@
             dispalyEligibilite(eligible);
 
         }
-
-
-
-
-
-
-
-
-
 
         /*Partage Réseaux sociaux*/
         var popupCenter = function(url, pageTitle, windowFeatures){

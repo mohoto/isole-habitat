@@ -27,13 +27,13 @@
                         <p class="" data-color="bleue-clair">Réponse immédiate - Sans aucun engagement</p>
                     </div>
                     <div class="form-body">
-                        <form id="regForm" action="">
+                        <form id="eligibleForm" action="">
                             <!-- One "tab" for each step in the form: -->
                             <div class="tab" id="info-maison-client">
                                 <div class="info-block d-flex flex-column justify-content-around">
                                     <div>
-                                        <h5 class=""><span data-color="orange">1-</span>Selectionnez votre ou vos systèmes de chauffage :</h5>
-                                        <div class="row mt-20">
+                                        <p class="titre_input"><span>1-</span>Selectionnez votre ou vos systèmes de chauffage :</p>
+                                        <div class="row block-checkbox">
                                             <div class="col block-chauffage">
                                                 <input type="checkbox" class="checkbox" name="type_chauffage" id="type-chauffage-gaz" required="required" value="Gaz">
                                                 <label for="type-chauffage-gaz" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-gaz2"></i><span>Gaz</span></label>
@@ -57,8 +57,8 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <h5 class=""><span data-color="orange">2-</span>La surface au sol de votre maison :</h5>
-                                        <div class="row mt-20">
+                                        <p class="titre_input"><span>2-</span>La surface au sol de votre maison :</p>
+                                        <div class="row">
                                             <div class="col block-surface">
                                                 <input type="radio" class="radio" name="type_surface" id="type-surface-1" required="required" value="type-surface-1" checked>
                                                 <label for="type-surface-1" class="type-surface"><i class="icon-fantastic icon-icon-surface4"></i><span>Moins de 70m2</span></label>
@@ -74,8 +74,8 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <h5 class=""><span data-color="orange">3-</span>Les isolations à faire dans votre maison :</h5>
-                                        <div class="row mt-2">
+                                        <p class="titre_input"><span>3-</span>Les isolations à faire dans votre maison :</p>
+                                        <div class="row block-checkbox">
                                             <div class="col block-isolation">
                                                 <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-combles" required="required" value="Mme">
                                                 <label for="type-isolation-combles" class="type-isolation"><i class="icon-fantastic icon-isolation-combles-form"></i><span>Combles</br>perdus</span></label>
@@ -99,8 +99,8 @@
                             <div class="tab" id="info-situation-client">
                                 <div class="info-block d-flex flex-column justify-content-around">
                                     <div>
-                                        <h5 class=""><span data-color="orange">4-</span>Vous êtes :</h5>
-                                        <div class="row mt-20">
+                                        <p class="titre_input"><span>4-</span>Vous êtes :</p>
+                                        <div class="row">
                                             <div class="col-md-6">
                                                 <input type="radio" class="radio" name="type_bail" id="client-proprietaire" required="required" value="Proprietaire" checked>
                                                 <label for="client-proprietaire" class="type-bail-client">Propriétaire</label>
@@ -112,8 +112,8 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <h5 class=""><span data-color="orange">5-</span>Nombre de personnes dans le foyer <a href="#" class="info-foyer"><i class="ion-ios7-help-outline" data-color="orange"></i></a>:</h5>
-                                        <div class="row mt-20">
+                                        <p class="titre_input"><span>5-</span>Nombre de personnes dans le foyer <a href="#" class="info-foyer"><i class="ion-ios7-help-outline" data-color="orange"></i></a>:</p>
+                                        <div class="row">
                                             <div class="col block-nombre-pers">
                                                 <input type="radio" class="radio" name="nombre_personne" id="nombre-personne-1" required="required" value="1" checked>
                                                 <label for="nombre-personne-1" class="nombre-personne">1</label>
@@ -154,13 +154,13 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-6">
-                                            <h5 class=""><span data-color="orange">6-</span>Votre revenu fiscal de référence <a href="#" class="info-revenu"><i class="ion-ios7-help-outline" data-color="orange"></i></a>:</h5>
+                                            <p class="titre_input"><span>6-</span>Votre revenu fiscal de référence <a href="#" class="info-revenu"><i class="ion-ios7-help-outline" data-color="orange"></i></a>:</p>
                                             <div class="form-group">
                                                 <input type="text" class="form-control" id="revenus_reference" name="revenus_reference" Placeholder="19 650€">
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            <h5 class=""><span data-color="orange">7-</span>Votre code postal:</h5>
+                                            <p class="titre_input"><span>7-</span>Votre code postal:</p>
                                             <div class="form-group">
                                                 <input type="text" class="form-control" name="code_postal" maxlength="5" Placeholder="Code postal">
                                             </div>
@@ -189,7 +189,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" name="prenom" Placeholder="Prénom">
+                                                <input type="text" class="form-control telephone_input" name="telephone" maxlength="14" Placeholder="N° Telephone">
                                             </div>
                                         </div>
                                     </div>
@@ -197,18 +197,6 @@
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <input type="text" class="form-control" name="rue" Placeholder="N°, rue, av, bd ">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control telephone_input" name="telephone" maxlength="14" Placeholder="N° Telephone">
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" name="email" Placeholder="email">
                                             </div>
                                         </div>
                                     </div>
@@ -220,7 +208,7 @@
                                 <div class="info-resultat" id="info-resultat-ok">
                                     <div class="info-block d-flex flex-column justify-content-around">
                                         <div>
-                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                            <svg id="eligible-ok" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
                                                 <circle class="path circle" fill="none" stroke="#8ab326" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
                                                 <polyline class="path check" fill="none" stroke="#8ab326" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
                                             </svg>
@@ -232,31 +220,8 @@
                                                     <img src="{{ asset('images/assistance-telephonique.jpg') }}" class="assistace_phone_img rounded-circle" alt="Demande assistace telephonique isole habitat">
                                                 </div>
                                                 <div class="ml-20">
-                                                    <p class="descrip">Profitez de conseils d'experts pour l'isolation de votre maison pour 1€ symbolique.</p>
+                                                    <p class="descrip_ok">Profitez de conseils d'experts pour l'isolation de votre maison pour 1€ symbolique.</p>
                                                     <h6 class="" data-color="orange"><i class="ion-ios7-telephone mr-10"></i>Nous vous rappelons<span class="text-muted"> en moins de 24 heures</span></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div>
-                                                <p class="text-center">Selectionnez vos disponibilités:</p>
-                                                <div class="row mt-20">
-                                                    <div class="col-3 block-heure">
-                                                        <input type="radio" class="radio" name="heure_rappel" id="type-heure-1" required="required" value="type-heure-1" checked>
-                                                        <label for="type-heure-1" class="type-heure">9h-12h</label>
-                                                    </div>
-                                                    <div class="col-3 block-heure">
-                                                        <input type="radio" class="radio" name="heure_rappel" id="type-heure-2" required="required" value="type-heure-2">
-                                                        <label for="type-heure-2" class="type-heure">12h-14h</label>
-                                                    </div>
-                                                    <div class="col-3 block-heure">
-                                                        <input type="radio" class="radio" name="heure_rappel" id="type-heure-3" required="required" value="type-heure-3">
-                                                        <label for="type-heure-3" class="type-heure">14h-18h</label>
-                                                    </div>
-                                                    <div class="col-3 block-heure">
-                                                        <input type="radio" class="radio" name="heure_rappel" id="type-heure-4" required="required" value="type-heure-4">
-                                                        <label for="type-heure-4" class="type-heure">18h-20h</label>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -265,13 +230,47 @@
                                 <div class="info-resultat" id="info-resultat-none">
                                     <div class="info-block d-flex flex-column justify-content-around">
                                         <div>
-                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                            <svg id="eligible-none" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
                                                 <circle class="path circle" fill="none" stroke="#ee7626" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
                                                 <line class="path line" fill="none" stroke="#ee7626" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3"/>
                                                 <line class="path line" fill="none" stroke="#ee7626" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2"/>
                                             </svg>
-                                            <h5>Désolé, vous n'êtes pas éligible à l'isolation à 1€</h5>
-                                            <P>Vos revenus dépassent le plafond de revenus définit par l'ADEME. Vous pouvez cependant bénéficier de la <span class="gras_500" data-color="orange">Prime Energie</span>, déduite directement sur votre facture, pour vos travaux de rénovation thermique.</P>
+                                            <h5>vous n'êtes pas éligible à l'isolation à 1€</h5>
+                                            <P>Vos revenus dépassent le plafond de revenus définit par l'ADEME. <span class="gras_500">Vous pouvez cependant bénéficier</span> de la <span class="gras_500" data-color="orange">Prime Energie</span>, déduite directement sur votre facture, pour vos travaux d'isolation.</P>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex align-items-start">
+                                                <div>
+                                                    <img src="{{ asset('images/assistance-telephonique.jpg') }}" class="assistace_phone_img rounded-circle" alt="Demande assistace telephonique isole habitat">
+                                                </div>
+                                                <div class="ml-20">
+                                                    <p class="descrip_none">Profitez de <span class="gras_500">conseils d'experts</span> pour l'isolation de votre maison. Nous nous engageons à vous établir <span class="gras_700" data-color="orange">un devis gratuitement</span>  et <span class="gras_700" data-color="orange">sans aucun engagement</span>.</p>
+                                                    <h6 data-color="orange"><i class="ion-ios7-telephone mr-10"></i>Nous vous rappelons</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="text-center">Selectionnez vos disponibilités:</p>
+                                        <div class="row mt-20">
+                                            <div class="col-3 block-heure">
+                                                <input type="radio" class="radio" name="heure_rappel" id="type-heure-1" required="required" value="type-heure-1" checked>
+                                                <label for="type-heure-1" class="type-heure">9h-12h</label>
+                                            </div>
+                                            <div class="col-3 block-heure">
+                                                <input type="radio" class="radio" name="heure_rappel" id="type-heure-2" required="required" value="type-heure-2">
+                                                <label for="type-heure-2" class="type-heure">12h-14h</label>
+                                            </div>
+                                            <div class="col-3 block-heure">
+                                                <input type="radio" class="radio" name="heure_rappel" id="type-heure-3" required="required" value="type-heure-3">
+                                                <label for="type-heure-3" class="type-heure">14h-18h</label>
+                                            </div>
+                                            <div class="col-3 block-heure">
+                                                <input type="radio" class="radio" name="heure_rappel" id="type-heure-4" required="required" value="type-heure-4">
+                                                <label for="type-heure-4" class="type-heure">18h-20h</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

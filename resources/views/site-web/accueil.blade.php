@@ -332,7 +332,7 @@
         <div class="row align-items-center">
             <div class="col-sm-12 col-md-6">
                 <h2 class="gras_700 text-center" data-color="vert">Zone H1</h2>
-                <img src="{{ asset('images/carte-isolation-france.jpg') }}" class="image-region-intervention" alt="carte isolation de la région hauts-de-France">
+                <img src="{{ asset('images/carte-france-isolation.svg') }}" class="image-region-intervention" alt="carte isolation de la région hauts-de-France">
             </div>
             <div class="col-sm-12 col-md-6">
                 <h3 class="text-left mb-40">Les régions concernées :</h3>
