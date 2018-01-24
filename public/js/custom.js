@@ -39,11 +39,12 @@
                 val = '18h-20h';
             }
             return val;
+            alert(val);
         }
         $('#btn_phone_modal').click(function () {
             var x = document.querySelector('#phoneFormModal');
             var valHeure;
-            valHeure = getHourValModal;
+            valHeure = getHourValModal();
             /*var y = x.getElementsByTagName('input');
             for (var i = 0; i < y.length; i++) {
                 if (y[i].value == "") {
