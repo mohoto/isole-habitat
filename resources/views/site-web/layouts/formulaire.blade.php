@@ -80,10 +80,10 @@
                                                 <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-combles" required="required" value="Mme">
                                                 <label for="type-isolation-combles" class="type-isolation"><i class="icon-fantastic icon-isolation-combles-form"></i><span>Combles</br>perdus</span></label>
                                             </div>
-                                            <div class="col block-isolation">
+                                            {{--<div class="col block-isolation">
                                                 <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-mur" required="required" value="Mme">
                                                 <label for="type-isolation-mur" class="type-isolation"><i class="icon-fantastic icon-isolation-mur-form"></i><span>Garage</br>mitoyen</span></label>
-                                            </div>
+                                            </div>--}}
                                             <div class="col block-isolation">
                                                 <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-sol" required="required" value="Mme">
                                                 <label for="type-isolation-sol" class="type-isolation"><i class="icon-fantastic icon-isolation-garage-form"></i><span>Garage</br>R.D.C/Sous-sol</span></label>
@@ -154,7 +154,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-6">
-                                            <p class="titre_input"><span>6-</span>Votre revenu fiscal de référence <a href="#" class="info-revenu"><i class="ion-ios7-help-outline" data-color="orange"></i></a>:</p>
+                                            <p class="titre_input"><span>6-</span>Votre revenu fiscal de référence <a href="#" class="info-revenu"><i class="ion-ios7-help-outline" data-color="orange"></i></a> :</p>
                                             <div class="form-group">
                                                 <input type="text" class="form-control" id="revenus_reference" name="revenus_reference" Placeholder="19 650€">
                                             </div>
@@ -189,7 +189,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control telephone_input" name="telephone" maxlength="14" Placeholder="N° Telephone">
+                                                <input type="text" class="form-control telephone_input" name="telephone" maxlength="14" Placeholder="N° Mobile ou Fixe">
                                             </div>
                                         </div>
                                     </div>

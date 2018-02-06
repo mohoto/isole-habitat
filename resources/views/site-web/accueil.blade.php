@@ -87,7 +87,7 @@
         <div class="row justify-content-center mt-30">
             <div class="col col-md-auto">
                 <div id="rect-orange"></div>
-                <p>Garage, cave, vide-sanitaire (mitoyen, en rez-de-chaussée, ou en sous-sol)</p>
+                <p>Garage(mitoyen, en rez-de-chaussée, ou en sous-sol), caves, vide-sanitaire</p>
             </div>
             <div class="col col-md-auto">
                 <div id="rect-bleue"></div>
@@ -108,7 +108,7 @@
             <div class="col-md-5">
                 <div class="feat-description">
                     <h4 data-color="bleue">L'isolation de vos combles perdus</h4>
-                    <p class="text-muted">Vous avez des combles que vous n'utilisez pas :</p>
+                    <p class="gras_500">Vous avez des combles que vous n'utilisez pas :</p>
                     <p class="text-muted">L'isolation des combles <span class="gras_500">empêche les pertes de chaleur en hiver</span> et permet de <span class="gras_500">garder la fraîcheur en été</span>. Deux techniques sont utilisées pour isoler vos combles perdus : la projection de  <span class="gras_500">laine de verre(ou de roche)</span> à souffler ou la pose de <span class="gras_500">rouleaux de laine de verre</span>, sur toute la surface des combles.</p>
                     <a href="" class="btn btn-custom">Isolation des combles</a>
                 </div>
@@ -178,7 +178,7 @@
             <div class="col-md-5">
                 <div class="feat-description">
                     <h4 data-color="bleue">L'isolation des murs</h4>
-                    <p class="text-muted">Vous avez un garage ou un atelier mitoyen à votre habitation :</p>
+                    <p class="gras_500">Vous avez un garage ou un atelier mitoyen à votre habitation :</p>
                     <p class="text-muted">L'isolation thermique des murs permet de <span class="gras_500">réduire les échanges thermiques</span> entre l'intérieur et l'extérieur des pièces à vivre de votre maison. Elle consiste à poser des <span class="gras_500">panneaux ou  rouleaux de laine de verre</span> sur le mur (du garage ou de l'atelier) touchant les pièces à vivre de votre maison.</p>
                     <a href="" class="btn btn-custom">Isolation des murs</a>
                 </div>
@@ -194,8 +194,8 @@
             <div class="col-md-5">
                 <div class="feat-description">
                     <h4 data-color="bleue">L'isolation des sols</h4>
-                    <p class="text-muted">Vous avez un garage en rez-de-chaussée ou en sous-sol, des caves ou des vides-sanitaires :</p>
-                    <p class="text-muted">En isolant le plafond de votre garage, de votre cave et de vos vides-sanitaires, <span class="gras_500">vous isolez avant tout le sol de vos pièces à vivre</span> et vous évitez les déperdictions thermiques à travers le sol.
+                    <p class="gras_500">Vous avez un garage en rez-de-chaussée ou en sous-sol, des caves ou un vide-sanitaire :</p>
+                    <p class="text-muted">En isolant le plafond de votre garage, de votre cave et de votre vide-sanitaire, <span class="gras_500">vous isolez avant tout le sol de vos pièces à vivre</span> et vous évitez les déperditions thermiques à travers le sol.
                         Cette isolation est réalisée en posant des <span class="gras_500">panneaux de polystyrène ou de laine de verre</span> sur le plafond du garage, des caves ou du vide-sanitaire.</p>
                     <a href="" class="btn btn-custom">Isolation des sols</a>
                 </div>
@@ -250,27 +250,41 @@
         </div>
     </div>
 </section>
-<section class="section" id="section-questions">
+<section class="section section-questions mt-40" id="section-questions1">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 mb-40">
                 <img src="{{ asset('images/mascotte.jpg') }}" class="mascotte-isole-habitat block-center mb-10" alt="illustration mascotte isole habitat ">
-                <h2 class="text-center"><span class="gras_500">Isoler ma maison pour 1€ : </span>Comment est-ce possible?</h2>
+                <h2 class="text-center" data-color="vert"><span class="gras_500">Isoler ma maison pour 1€ : </span>Comment est-ce possible?</h2>
             </div>
         </div>
         <div class="row justify-content-around mb-40 mt-30">
             <div class="col-md-5 col-sm-12 block-question-title">
                 <h3 class="">Pourquoi est-il nécessaire d'isoler ma maison ?</h3>
+                <p>Plus de 45% des logements en France sont en <span class="gras_500" data-color="orange">Plus de 30% des logements français sont en précarité énergétique</span>. Les ménages qui vivent dans ces logements ont des consommations d’énergie importantes.</p>
                 <p>Les parois mal isolées laissent passer <span class="gras_500" data-color="orange">le froid en hiver</span> et <span class="gras_500" data-color="orange">la chaleur en été</span>. 30% de l'air ambiant de votre maison s'échappe par la toiture, 25% par les murs et 10% par le sol.</p>
                 <p class="">En isolant votre maison, vous <span class="gras_500" data-color="orange">consommez moins d'énergie</span> pour vous chauffer <span class="gras_500" data-color="orange">en hiver</span> et vous évitez la <span class="gras_500" data-color="orange">chaleur inconfortable</span> l'été.</p>
                 <p>En consommant moins d'énergie, vous <span class="gras_500" data-color="orange">économisez sur votre facture</span> de chauffage.</p>
             </div>
             <div class="col-md-5 col-sm-12 block-question-title">
                 <h3 class="">Qui paye pour mes travaux d'isolation ?</h3>
-                <p><span class="gras_500" data-color="orange">Ce sont les fourniseurs d'énergie</span> : Toal, Elf, EDG, Poweo.., qui financent vos travaux d'isolation. <span class="gras_500" data-color="orange">L'Etat</span>, par le biais de la loi "POPE"(loi de Programmation fixant les Orientations de la Politique Energétique), <span class="gras_500" data-color="orange">oblige ces fournisseurs d'énergie à financer intégralement certains travaux d'isolation</span> dans les foyers en précarité énergétique, sous peine d'amendes.</span>
+                <p><span class="gras_500" data-color="orange">Ce sont les fourniseurs d'énergie</span> : Toal, Elf, EDG, Poweo.., qui financent vos travaux d'isolation.</p>
+                <p><span class="gras_500" data-color="orange">L'Etat</span>, par le biais de la loi "POPE"(Loi n° 2005-781 du 13 juillet 2005, loi de Programmation fixant les Orientations de la Politique Energétique), <span class="gras_500" data-color="orange">oblige ces fournisseurs d'énergie à financer certains travaux d'isolation, à travers le dispositif des certificats d’économies d’énergie (CEE)</span>, dans les foyers en précarité énergétique, sous peine d'amendes.</p>
                 <p><span class="gras_500" data-color="orange">Les travaux réalisés</span> avec le programme d'isolation à 1€ rentrent dans ce dispositif et <span class="gras_500" data-color="orange">sont intégralement financés</span> et sans <span class="gras_500" data-color="orange">aucun frais à avancer</span>.</p>
             </div>
         </div>
+    </div>
+</section>
+<section class="section" id="section-questions-cee" data-background-color="bleue-clair">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <p>Le dispositif des certificats d’économies d’énergie (CEE) constitue l'un des principaux instruments de la politique de maîtrise de la demande énergétique.</p>
+            <p>Le dispositif des CEE, créé en 2006 repose sur une obligation de réalisation d’économies d’énergie imposée par les pouvoirs publics aux vendeurs d’énergie. Ceux-ci doivent ainsi promouvoir activement l’efficacité énergétique auprès des consommateurs d’énergie : ménages, collectivités territoriales ou professionnels. Le 1er janvier 2018, le dispositif est entré dans sa 4ème période d’obligation pour une durée de 3 ans.</p>
+        </div>
+    </div>
+</section>
+<section class="section section-questions" id="section-questions2">
+    <div class="container">
         <div class="row justify-content-around mt-40">
             <div class="col-md-5 col-sm-12 block-question-title">
                 <h3 class="">Je suis locataire : est-ce que je peux en bénéficier ?</h3>
@@ -283,47 +297,47 @@
                 <p><i class="fa fa-check mr-10" aria-hidden="true" data-color="vert"></i>Ne pas dépasser le plafond de revenus définit par l'ADEME*</p>
             </div>
         </div>
-    </div>
-    <div class="row justify-content-center mt-40">
-        <div class="col-sm-12 col-md-7">
-            <table class="table table-bordered">
-                <thead class="thead-inverse">
-                <tr>
-                    <th>Nombre de personnes</br>dans le foyer</th>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>Par personne</br> supl.</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">Vous habitez :</th>
-                    <td colspan="6">Plafond de Revenu fiscal de référence <a href="#" class="info-revenu"><i class="ion-ios7-help-outline" data-color="orange"></i></a></td>
-                </tr>
-                <tr>
-                    <th scope="row">En Ile-de-france</th>
-                    <td>19 803 €</td>
-                    <td>29 066 €</td>
-                    <td>34 906 €</td>
-                    <td>40 758 €</td>
-                    <td>46 630 €</td>
-                    <td>+ 5860 €</td>
-                </tr>
-                <tr>
-                    <th scope="row">Dans les autres régions</th>
-                    <td>14 308 €</td>
-                    <td>20 925 €</td>
-                    <td>25 166 €</td>
-                    <td>29 400 €</td>
-                    <td>33 642 €</td>
-                    <td>+ 4241 €</td>
-                </tr>
-                </tbody>
-            </table>
-            <p class="text-muted text-center">*Agence De l'Environnement et de la Maitrise de l'Energie</p>
+        <div class="row justify-content-center mt-40">
+            <div class="col-sm-12 col-md-9">
+                <table class="table table-bordered">
+                    <thead class="thead-inverse">
+                    <tr>
+                        <th>Nombre de personnes</br>dans le foyer</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>Par personne</br> suppl.</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Vous habitez :</th>
+                        <td colspan="6">Plafond de Revenu fiscal de référence <a href="#" class="info-revenu"><i class="ion-ios7-help-outline" data-color="orange"></i></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">En Ile-de-france</th>
+                        <td>19 803 €</td>
+                        <td>29 066 €</td>
+                        <td>34 906 €</td>
+                        <td>40 758 €</td>
+                        <td>46 630 €</td>
+                        <td>+ 5860 €</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dans les autres régions</th>
+                        <td>14 308 €</td>
+                        <td>20 925 €</td>
+                        <td>25 166 €</td>
+                        <td>29 400 €</td>
+                        <td>33 642 €</td>
+                        <td>+ 4241 €</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p class="text-muted text-center">*Agence De l'Environnement et de la Maitrise de l'Energie</p>
+            </div>
         </div>
     </div>
 </section>
@@ -332,14 +346,13 @@
         <div class="row align-items-center">
             <div class="col-sm-12 col-md-6">
                 <h2 class="gras_700 text-center" data-color="vert">Zone H1</h2>
-                <img src="{{ asset('images/carte-france-isolation.svg') }}" class="image-region-intervention" alt="carte isolation de la région hauts-de-France">
+                <img src="{{ asset('images/carte-france-isolation2.svg') }}" class="image-region-intervention" alt="Carte des zones de France éligibles à lisolation pour 1€ ">
             </div>
             <div class="col-sm-12 col-md-6">
                 <h3 class="text-left mb-40">Les régions concernées :</h3>
-                <p><span class="gras_500" data-color="orange">L'Etat a définit 3 zones climatiques(H1, H2, H3)</span> pour les opérations d'aides mises en place pour réduire la consommation d'énergie.</p>
-                <p>Votre maison se situe en <span data-color="vert">zone H1</span>, vous pouvez avoir droit à une aide de l'Etat à travers le dispositif des Certificats d’économies d’énergie. C'est ce que nous vous proposons avec notre programme d'isolation à 1€.</p>
-                <p>Vous habitez dans <span class="gras_500" data-color="orange">les Hauts-de-France</span>, en <span class="gras_500" data-color="orange">Normandie</span>, en <span class="gras_500" data-color="orange">Ile-de-france</span>, dans le <span class="gras_500" data-color="orange">Grand-Est</span>, en <span class="gras_500" data-color="orange">Centre Val-de-Loire</span>, en <span class="gras_500" data-color="orange">Bourgogne-Franche-Comté</span>, en <span class="gras_500" data-color="orange">Auvergne-Rhones-Alpes</span>, vous pouvez bénificier de l'isolation de votre maison pour 1€, sous conditions d'éligibilité.</p>
-                <p class="mt-40"><span class="gras_500" data-color="orange">Ce dispositif risque d'être étendu à d'autres régions</span> de France. <span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">Habitat </span> vous propose de vous tenir informé des dispositions qui seront prises pour bénificier de l'isolation à 1€ dans votre région.</p>
+                <p><span class="gras_500" data-color="vert">L'Etat a définit 3 zones climatiques(H1, H2, H3)</span> pour les opérations d'aides mises en place pour réduire la consommation d'énergie.</p>
+                <p>Vous habitez en  <span class="gras_500" data-color="vert">zone H1</span>, dans la région des <span class="gras_500" data-color="vert">Hauts-de-France</span>, en <span class="gras_500" data-color="vert">Normandie</span>, en <span class="gras_500" data-color="vert">Ile-de-France</span>, dans le <span class="gras_500" data-color="vert">Grand-Est</span>, en <span class="gras_500" data-color="vert">Centre Val-de-Loire</span>, en <span class="gras_500" data-color="vert">Bourgogne-Franche-Comté</span>, en <span class="gras_500" data-color="vert">Auvergne-Rhones-Alpes</span>, vous pouvez bénificier de l'isolation de votre maison pour 1€, sous conditions d'éligibilité.</p>
+                <p class="mt-40"><span class="gras_500" data-color="vert">Ce dispositif risque d'être étendu à d'autres régions</span> de France. Nous vous proposons de vous tenir informé des dispositions qui seront prises pour bénificier de l'isolation à 1€ dans votre région.</p>
                 <a href="" class="btn btn-custom mt-30">Je veux rester informé</a>
             </div>
         </div>
@@ -433,7 +446,7 @@
                     <img src="{{ asset('images/Qualibat-RGE.jpg') }}" alt="">
                     <div id="text-label" class="ml-40 align-self-end">
                         <h2 class="mb-30" data-color="bleue">Le label <span class="gras_700" data-color="vert">RGE Qualibat </span>: Un gage de <span class="gras_500">qualité :</span></h2>
-                        <p><span class="gras_500">Le label RGE("Reconnu Garant de l'environnement")</span> est un signe de qualité délivré à une entreprise qui remplit certains critères lors de la réalisation de travaux d'économie d'énergie dans les logements(isolation thermique, installation d'équipement utilisant des énergies renouvelables...).</p>
+                        <p><span class="gras_500">Le label RGE(Reconnu Garant de l'environnement)</span> est un signe de qualité délivré à une entreprise qui remplit certains critères lors de la réalisation de travaux d'économie d'énergie dans les logements(isolation thermique, installation d'équipement utilisant des énergies renouvelables...).</p>
                         <p class="gras_500">Le label RGE vous donne la garantie que cette entreprise est reconnu par l'état.</p>
                         <p class="gras_500">Faire appel à une entreprise RGE pour faire des travaux chez vous, vous donne droit à l'attribution de certains aides publiques.</p>
                     </div>
@@ -588,7 +601,7 @@
                 <h2 data-color="vert">Participer à l'amélioration des habitats</h2>
                 <h3>Faîtes profiter votre famille et vos amis de l'isolation à 1€</h3>
                 <h4 class="mt-20 mb-30" data-color="orange">Partager notre programme</h4>
-                <img src="{{ asset('images/programme-isolation6.png') }}" alt="carte isolation de la région hauts-de-France">
+                <img src="{{ asset('images/programme-isolation6.png') }}" alt="Programme isolation à 1€">
                 <div class="mt-30">
                     <button type="button" role="button" target="_blank" class="btn btn-facebook waves-effect waves-light share_facebook">
                     <i class="fa fa-facebook m-r-5"></i> Facebook

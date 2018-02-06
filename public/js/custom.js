@@ -397,11 +397,12 @@
             popupCenter(shareUrl , "partager sur Twitter");
         });
         var btnFacebook = document.querySelector('.share_facebook');
-        btnTwitter.addEventListener('click', function(e){
+        btnFacebook.addEventListener('click', function(e){
             var twitterText = "Isolez votre maison pour 1€";
             var url = "http://www.monett-test.fr";
-            var shareUrl = "https://twitter.com/intent/tweet?text=" + twitterText + "&url=" + encodeURIComponent(url) + "";
-            popupCenter(shareUrl , "partager sur Twitter");
+            //var shareUrl = "https://twitter.com/intent/tweet?text=" + twitterText + "&url=" + encodeURIComponent(url) + "";
+            var shareUrl = "https://www.facebook.com/sharer/sharer.php?u=SixtLocationDeVoitureParisBoulevardSebastopol";
+            popupCenter(shareUrl , "partager sur Facebook");
         });
 
         /*Sweet Alert*/

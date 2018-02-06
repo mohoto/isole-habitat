@@ -1166,38 +1166,43 @@ label.type-heure {
   font-family: "foco", sans-serif;
   font-size: 1.2em;
 }
-.section#section-questions{
+.section.section-questions{
+  padding-top: 0;
   padding-bottom: 0;
 }
-.section#section-questions .mascotte-isole-habitat{
+.section.section-questions .mascotte-isole-habitat{
   width: 100px;
 }
-.section#section-questions .block-question-title h3 {
+.section.section-questions .block-question-title h3 {
   color:#8ab326;
   margin-bottom: 20px;
 }
-.section#section-questions .block-question-title p {
+.section.section-questions .block-question-title p {
   font-size: 1.2em;
 }
-.section#section-questions .thead-inverse th {
+.section.section-questions .thead-inverse th {
   color: #fff;
   background-color: #8ab326;
 }
-.section#section-questions .table thead th {
+.section.section-questions .table thead th {
   vertical-align: middle;
 }
-.section#section-questions .table>thead>tr>th:not(:first-child):not(:last-child) {
+.section.section-questions .table>thead>tr>th:not(:first-child):not(:last-child) {
   font-size: 1.8em;
 }
-.section#section-questions .table>thead>tr>th:not(:first-child) {
+.section.section-questions .table>thead>tr>th:not(:first-child) {
   text-align: center;
 }
-.section#section-questions .table>tbody>tr>td:not(:first-child) {
+.section.section-questions .table>tbody>tr>td:not(:first-child) {
   text-align: center;
 }
-.section#section-questions .table>tbody>tr>td i{
+.section.section-questions .table>tbody>tr>td i{
   font-size: 1.6em;
   color: #ee7626;
+  font-weight: bold;
+}
+.section#section-questions-cee{
+
 }
 .section#section-formulaire h2{
     margin-bottom: 20px;
@@ -1205,6 +1210,10 @@ label.type-heure {
 .section#section-formulaire h3{
   font-size: 1.6em;
   margin-bottom: 0px;
+}
+.section#section-formulaire i.ion-ios7-help-outline{
+  color: #ee7626;
+  font-weight: bold;
 }
 .section#section-fonctionnement .circle-block-step{
   display: block;
