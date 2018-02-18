@@ -14,3 +14,19 @@
 Route::get('/', array('as' => 'site-web.accueil', function () {
     return view('site-web.accueil');
 }));
+
+Route::get('/qui-sommes-nous', array('as' => 'site-web.societe', function(){
+    return view('site-web.qui-sommes-nous');
+}));
+
+Route::get('/isolation-des-combles', array('as' =>'site-web.isolation-combles', function(){
+    return view('site-web.isolation-combles');
+}));
+
+Route::get('isolation-des-murs', array('as' => 'site-web.isolation-murs', function(){
+    return view('site-web.isolation-murs');
+}));
+
+Route::get('isolation-des-sols', array('as' => 'site-web.isolation-sols', function(){
+    return view('site-web.isolation-sols');
+}));

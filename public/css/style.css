@@ -1001,7 +1001,7 @@ label.type-heure {
 }
 .hero .part1{
     width: 50%;
-    background: url("../images/presentation-isolation-1-euro-4.jpg");
+    background: url("../images/presentation-isolation-1-euro-5.jpg");
     min-height: 300px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1053,7 +1053,7 @@ label.type-heure {
     line-height: 1.5em;
 }
 .section#section-type-isolation .features-box img{
-  width: 100%;
+  width: 60%;
 }
 .section#section-type-isolation .features-box {
     margin-top: 0px;
@@ -1169,6 +1169,40 @@ label.type-heure {
 .section.section-questions{
   padding-top: 0;
   padding-bottom: 0;
+}
+.section#section-questions-cee{
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.section#section-questions-cee .block-cee{
+  position: relative;
+  background-color: #ebeef1;
+  padding: 20px 40px;
+  -webkit-border-radius: .50rem!important;
+  -moz-border-radius: .50rem!important;
+  border-radius: .50rem!important;
+}
+.section#section-questions-cee .block-cee p{
+  font-size: 1.2em;
+}
+.section#section-questions-cee .block-cee p.text-source{
+  margin-bottom: 0;
+}
+.section#section-questions-cee .block-cee a{
+  color: #8ab326;
+}
+.section#section-questions-cee .block-cee a:hover{
+  color: #ee7626;
+}
+.section#section-questions-cee .mascotte-cee{
+  position: absolute;
+  width: 100px;
+  top: -14%;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  transform: translateX(50%);
 }
 .section.section-questions .mascotte-isole-habitat{
   width: 100px;
@@ -1319,7 +1353,7 @@ label.type-heure {
   color: #ffffff !important;
 }
 .section#section-zones .image-region-intervention{
-    width: 100%;
+    width: 80%;
     display: block;
     margin:0 auto;
 }
@@ -1955,7 +1989,7 @@ label.type-heure {
   position: relative;
   padding: 20px 0px 5px 0px;
   /*border-bottom: 6px solid #ee7626;*/
-  background: #ee7626;
+  background: #8ab326;
   margin: 0 150px;
   /*-webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
   clip-path: polygon(50% 100%, 0 0, 100% 0);*/
@@ -1967,7 +2001,7 @@ label.type-heure {
   height: 0px;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-top: 30px solid #ee7626;
+  border-top: 30px solid #8ab326;
   bottom: -30px;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -2503,4 +2537,41 @@ label.type-heure {
     border-radius: 5px 5px 0 0;
     z-index: 115;
   }
+}
+
+/*Page Qui-sommes-nous?*/
+.qui_sommes_nous p{
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+/*Page Isolation-combles*/
+.description-isolation .part1-2,
+.description-isolation .part2-2{
+  width: 50%;
+}
+.isolation-combles .bg-img-combles {
+  background: url(../images/isolation-combles/isolation-combles-illustration.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 60%;
+}
+.isolation-combles .bg-overlay{
+  background-color: rgba(8, 99, 181, 0.25);
+}
+.isolation-combles p{
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+.isolation-combles .part1,
+.isolation-combles .part2{
+   width: 50%;
+}
+.isolation-combles .part2{
+  background-color: #8ab326;
+}
+.isolation-combles .img-hero{
+  width: 100%;
+}
+.isolation-combles .hero-pourcentage{
+  width: 90px;
 }

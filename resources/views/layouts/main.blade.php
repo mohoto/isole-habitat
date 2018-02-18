@@ -21,7 +21,7 @@
 
         <link rel="shortcut icon" href="images/favicon.ico">
 
-        <title>UBold | Bootstrap Landing Template</title>
+        <title>Isole-habitat | Isolation de votre maison pour 1€</title>
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
@@ -129,14 +129,14 @@
                 <div class="collapse navbar-collapse align-items-end" id="navbarsMenu">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#home">Accueil</a>
+                            <a class="nav-link" href="{{ route('site-web.accueil') }}">Accueil</a>
                         </li>
                         <li class="nav-item has-submenu">
                             <a class="nav-link" href="#features">Les travaux d'isolation</a>
                             <ul class="submenu">
-                                <li><a href="#">L'isolation des combles à 1 euro</a></li>
-                                <li><a href="#">L'isolation des murs à 1 euro</a></li>
-                                <li><a href="#">L'isolation des sols à 1 euro</a></li>
+                                <li><a href="{{ route('site-web.isolation-combles') }}">L'isolation des combles</a></li>
+                                {{--<li><a href="{{ route('site-web.isolation-murs') }}">L'isolation des murs</a></li>--}}
+                                <li><a href="{{ route('site-web.isolation-sols') }}">L'isolation des caves et garages</a></li>
                             </ul>
                             {{--<ul class="submenu">
                                 <li><a href="tables-basic.html">Basic Tables</a></li>
@@ -145,7 +145,7 @@
                             </ul>--}}
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Qui sommes-nous?</a>
+                            <a class="nav-link" href="{{ route('site-web.societe') }}">Qui sommes-nous?</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#clients">Des questions?</a>
@@ -175,19 +175,70 @@
             <div class="olark-button-text" data-reactid=".0.3.2">Des conseils?</div>
         </button>--}}
         @yield('content')
+        <section class="section" id="section-social-share">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col col-sm-auto text-center">
+                        <h2 data-color="vert">Participer à l'amélioration des habitats</h2>
+                        <h3>Faîtes profiter votre famille et vos amis de l'isolation à 1€</h3>
+                        <h4 class="mt-20 mb-30" data-color="orange">Partager notre programme</h4>
+                        <img src="{{ asset('images/programme-isolation6.png') }}" alt="Programme isolation à 1€">
+                        <div class="mt-30">
+                            <button type="button" role="button" target="_blank" class="btn btn-facebook waves-effect waves-light share_facebook">
+                                <i class="fa fa-facebook m-r-5"></i> Facebook
+                            </button>
+
+                            <button type="button" role="button" class="btn btn-twitter waves-effect waves-light share_twitter">
+                                <i class="fa fa-twitter m-r-5"></i> Twitter
+                            </button>
+
+                            <button type="button" class="btn btn-googleplus waves-effect waves-light share_gplus">
+                                <i class="fa fa-google-plus m-r-5"></i> Google+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section-presentation2" data-background-color="">
+            <div class="container">
+                <div class="row align-items-end justify-content-center mb-40">
+                    <div class="">
+                        <h2 class="text-center ml-10"><span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">HABITAT </span>utilise des matériaux d'isolation <span class="gras_500" data-color="vert">écocologiques et certifiés.</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="{{ asset('images/knauf.svg') }}" class="logo-materiel-iso" alt="logo-knauf-isolation">
+                    </div>
+                    <div class="col">
+                        <img src="{{ asset('images/isover.svg') }}" class="logo-materiel-iso" alt="logo-isover-isolation">
+                    </div>
+                    <div class="col">
+                        <img src="{{ asset('images/ursa.svg') }}" class="logo-materiel-iso" alt="logo-ursa-isolation">
+                    </div>
+                    <div class="col">
+                        <img src="{{ asset('images/saint-gobin.svg') }}" class="logo-materiel-iso" alt="logo-saint-gobin-isolation">
+                    </div>
+                    <div class="col">
+                        <img src="{{ asset('images/rockwool2.svg') }}" class="logo-materiel-iso" alt="logo-rockwool-isolation">
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- FOOTER -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <img id="logo-footer" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat">
-                        <p data-color="bleue-clair">Isole Habitat est une marque déposée du groupe R.S.I (Rénovation Sécurité Intérieur). Société experte dans le domaine du Batiment.</p>
+                        <p data-color="bleue-clair">Isole Habitat est une marque déposée du groupe PRESTA HABITAT, société experte dans l'isolation des habitats et la transition énergétique.</p>
                     </div>
                     <div class="col-md-4">
                         <ul class="liens-footer">
-                            <li><a href="#">L'isolation des combles à 1 euro</a></li>
-                            <li><a href="#">L'isolation des murs à 1 euro</a></li>
-                            <li><a href="#">L'isolation des sols à 1 euro</a></li>
+                            <li><a href="#">L'isolation des combles</a></li>
+                            {{--<li><a href="#">L'isolation des murs</a></li>--}}
+                            <li><a href="#">L'isolation des sols</a></li>
                             <li><a href="#">Qui sommes-nous?</a></li>
                             <li><a href="#">Mentions légales</a></li>
                         </ul>
@@ -201,7 +252,7 @@
                                 <i class="ion-ios7-telephone mr-10"></i>
                                 <span>01 78 56 03 03</span>
                             </a>
-                            <p class="mt-10" data-color="bleue-clair" ">Lundi-vendredi  9h-19h</p>
+                            <p class="mt-10" data-color="bleue-clair" ">Lundi-vendredi  9h-21h</p>
                             <ul class="social-icons">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -210,7 +261,7 @@
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <p class="text-muted copyright">© 2018. Tous droits réservés R.S.I.</p>
+                        <p class="text-muted copyright">© 2018. Tous droits réservés Presta Habitat.</p>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->

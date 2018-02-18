@@ -60,34 +60,34 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h2 class="title mb-40" data-color="vert">Les types d'isolation auquels vous avez droit :</h2>
-                <h3 class="mt-20" data-color="bleue">Avec l’isolation à 1€, vous pouvez cumuler ces 3 types d’isolation</h3>
+                <h3 class="mt-20" data-color="bleue">Avec l’isolation à 1€, vous pouvez cumuler ces 2 types d’isolation</h3>
                 <h4 class="mt-20" data-color="orange">Surface illimitée!</h4>
             </div>
         </div> <!-- end row -->
         <div class="row">
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-6">
                 <div class="features-box">
                     <img src="{{ asset('images/icon-iso-combles.png') }}" srcset="{{ asset('images/icon-iso-combles.svg') }}" alt="illustration isolation des combles">
                     <h5 class="m-t-20">Isolation des combles</h5>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4">
+            {{--<div class="col-sm-12 col-md-4">
                 <div class="features-box">
                     <img src="{{ asset('images/icon-iso-mur.png') }}"srcset="{{ asset('images/icon-iso-mur.svg') }}" alt="">
                     <h5 class="m-t-20">Isolation des murs</h5>
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
+            </div>--}}
+            <div class="col-sm-12 col-md-6">
                 <div class="features-box">
                     <img src="{{ asset('images/icon-iso-plancher.png') }}" srcset="{{ asset('images/icon-iso-plancher.svg') }}" alt="">
-                    <h5 class="m-t-20">Isolation des sols</h5>
+                    <h5 class="m-t-20">Isolation des caves et garages</h5>
                 </div>
             </div>
         </div> <!-- end row -->
         <div class="row justify-content-center mt-30">
             <div class="col col-md-auto">
                 <div id="rect-orange"></div>
-                <p>Garage(mitoyen, en rez-de-chaussée, ou en sous-sol), caves, vide-sanitaire</p>
+                <p>Garage(en rez-de-chaussée ou en sous-sol), caves</p>
             </div>
             <div class="col col-md-auto">
                 <div id="rect-bleue"></div>
@@ -110,12 +110,12 @@
                     <h4 data-color="bleue">L'isolation de vos combles perdus</h4>
                     <p class="gras_500">Vous avez des combles que vous n'utilisez pas :</p>
                     <p class="text-muted">L'isolation des combles <span class="gras_500">empêche les pertes de chaleur en hiver</span> et permet de <span class="gras_500">garder la fraîcheur en été</span>. Deux techniques sont utilisées pour isoler vos combles perdus : la projection de  <span class="gras_500">laine de verre(ou de roche)</span> à souffler ou la pose de <span class="gras_500">rouleaux de laine de verre</span>, sur toute la surface des combles.</p>
-                    <a href="" class="btn btn-custom">Isolation des combles</a>
+                    <a href="{{ route('site-web.isolation-combles') }}" class="btn btn-custom">Isolation des combles</a>
                 </div>
             </div>
             <div class="col-md-5 flex-first">
                 <div style="position: relative";>
-                    <img src="{{ asset('images/isolation-combles-soufflage.jpg') }}" alt="img" class="img-fluid rounded">
+                    <img src="{{ asset('images/isolation-combles-soufflage.jpg') }}" alt="illustration projection de laine à souffler pour l'isolation des combles" class="img-fluid rounded">
                     <div class="bg-overlay">
                         <h4>Isolation des combles par soufflage de laine de verre</h4>
                         <table class="table">
@@ -130,7 +130,7 @@
                             <tr>
                                 <td>28 à 35 cm</td>
                                 <td>
-                                    <span>jusqu'à</span> -30%
+                                    <span>jusqu'à</span> -25%
                                 </td>
                                 <td><span>jusqu'à</span> 25%</td>
                             </tr>
@@ -144,7 +144,7 @@
 </section>
 <!-- end features alt -->
 <!-- Features Alt -->
-<section class="section" id="section-type-isolation3">
+{{--<section class="section" id="section-type-isolation3">
     <div class="container">
         <div class="row justify-content-around align-items-end">
             <div class="col-md-5">
@@ -180,26 +180,17 @@
                     <h4 data-color="bleue">L'isolation des murs</h4>
                     <p class="gras_500">Vous avez un garage ou un atelier mitoyen à votre habitation :</p>
                     <p class="text-muted">L'isolation thermique des murs permet de <span class="gras_500">réduire les échanges thermiques</span> entre l'intérieur et l'extérieur des pièces à vivre de votre maison. Elle consiste à poser des <span class="gras_500">panneaux ou  rouleaux de laine de verre</span> sur le mur (du garage ou de l'atelier) touchant les pièces à vivre de votre maison.</p>
-                    <a href="" class="btn btn-custom">Isolation des murs</a>
+                    <a href="{{ route('site-web.isolation-murs') }}" class="btn btn-custom">Isolation des murs</a>
                 </div>
             </div>
         </div><!-- end row -->
     </div> <!-- end container -->
-</section>
+</section>--}}
 <!-- end features alt -->
 <!-- Features Alt -->
 <section class="section" id="section-type-isolation4">
     <div class="container">
         <div class="row justify-content-around align-items-end">
-            <div class="col-md-5">
-                <div class="feat-description">
-                    <h4 data-color="bleue">L'isolation des sols</h4>
-                    <p class="gras_500">Vous avez un garage en rez-de-chaussée ou en sous-sol, des caves ou un vide-sanitaire :</p>
-                    <p class="text-muted">En isolant le plafond de votre garage, de votre cave et de votre vide-sanitaire, <span class="gras_500">vous isolez avant tout le sol de vos pièces à vivre</span> et vous évitez les déperditions thermiques à travers le sol.
-                        Cette isolation est réalisée en posant des <span class="gras_500">panneaux de polystyrène ou de laine de verre</span> sur le plafond du garage, des caves ou du vide-sanitaire.</p>
-                    <a href="" class="btn btn-custom">Isolation des sols</a>
-                </div>
-            </div>
             <div class="col-md-5">
                 <div style="position: relative";>
                     <img src="{{ asset('images/technique-isolation-plafond.jpg') }}" alt="img" class="img-fluid rounded">
@@ -224,6 +215,15 @@
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="feat-description">
+                    <h4 data-color="bleue">L'isolation des caves et garages</h4>
+                    <p class="gras_500">Vous avez un garage en rez-de-chaussée, en sous-sol ou des caves :</p>
+                    <p class="text-muted">En isolant le plafond de votre garage ou de votre cave, <span class="gras_500">vous isolez avant tout le sol de vos pièces à vivre</span> et vous évitez les déperditions thermiques à travers le sol.
+                        Cette isolation est réalisée en posant des <span class="gras_500">panneaux de polystyrène ou de laine de verre</span> sur le plafond du garage ou des caves.</p>
+                    <a href="{{ route('site-web.isolation-sols') }}" class="btn btn-custom">Isolation des sols</a>
                 </div>
             </div>
         </div><!-- end row -->
@@ -255,7 +255,7 @@
         <div class="row">
             <div class="col-sm-12 mb-40">
                 <img src="{{ asset('images/mascotte.jpg') }}" class="mascotte-isole-habitat block-center mb-10" alt="illustration mascotte isole habitat ">
-                <h2 class="text-center" data-color="vert"><span class="gras_500">Isoler ma maison pour 1€ : </span>Comment est-ce possible?</h2>
+                <h2 class="text-center gras_500" data-color="vert">Isoler ma maison pour 1€ : Comment est-ce possible?</h2>
             </div>
         </div>
         <div class="row justify-content-around mb-40 mt-30">
@@ -275,13 +275,17 @@
         </div>
     </div>
 </section>
-<section class="section" id="section-questions-cee" data-background-color="bleue-clair">
+<section class="section" id="section-questions-cee">
     <div class="row justify-content-center">
-        <div class="col-lg-8">
+        <div class="col-lg-8 block-cee">
+            <h3 class="text-center mb-20">Les certificats d'économie d'énergie(CEE)</h3>
             <p>Le dispositif des certificats d’économies d’énergie (CEE) constitue l'un des principaux instruments de la politique de maîtrise de la demande énergétique.</p>
             <p>Le dispositif des CEE, créé en 2006 repose sur une obligation de réalisation d’économies d’énergie imposée par les pouvoirs publics aux vendeurs d’énergie. Ceux-ci doivent ainsi promouvoir activement l’efficacité énergétique auprès des consommateurs d’énergie : ménages, collectivités territoriales ou professionnels. Le 1er janvier 2018, le dispositif est entré dans sa 4ème période d’obligation pour une durée de 3 ans.</p>
+            <p class="text-muted text-source">source : Ministère de la Transition écologique et solidaire - </p>
+            <a href="https://www.ecologique-solidaire.gouv.fr/dispositif-des-certificats-deconomies-denergie" target="_blank">https://www.ecologique-solidaire.gouv.fr/dispositif-des-certificats-deconomies-denergie</a>
         </div>
     </div>
+    <img src="{{ asset('images/mascotte-cee.png') }}" class="mascotte-cee" alt="illustration des certificats d'économie d'énergie">
 </section>
 <section class="section section-questions" id="section-questions2">
     <div class="container">
@@ -350,9 +354,9 @@
             </div>
             <div class="col-sm-12 col-md-6">
                 <h3 class="text-left mb-40">Les régions concernées :</h3>
-                <p><span class="gras_500" data-color="vert">L'Etat a définit 3 zones climatiques(H1, H2, H3)</span> pour les opérations d'aides mises en place pour réduire la consommation d'énergie.</p>
+                <p><span class="gras_500">L'Etat a définit 3 zones climatiques(H1, H2, H3)</span> pour les opérations d'aides mises en place pour réduire la consommation d'énergie.</p>
                 <p>Vous habitez en  <span class="gras_500" data-color="vert">zone H1</span>, dans la région des <span class="gras_500" data-color="vert">Hauts-de-France</span>, en <span class="gras_500" data-color="vert">Normandie</span>, en <span class="gras_500" data-color="vert">Ile-de-France</span>, dans le <span class="gras_500" data-color="vert">Grand-Est</span>, en <span class="gras_500" data-color="vert">Centre Val-de-Loire</span>, en <span class="gras_500" data-color="vert">Bourgogne-Franche-Comté</span>, en <span class="gras_500" data-color="vert">Auvergne-Rhones-Alpes</span>, vous pouvez bénificier de l'isolation de votre maison pour 1€, sous conditions d'éligibilité.</p>
-                <p class="mt-40"><span class="gras_500" data-color="vert">Ce dispositif risque d'être étendu à d'autres régions</span> de France. Nous vous proposons de vous tenir informé des dispositions qui seront prises pour bénificier de l'isolation à 1€ dans votre région.</p>
+                <p class="mt-40"><span class="gras_500" data-color="vert">Ce dispositif va être étendu à d'autres régions</span> de France. Nous vous proposons de vous tenir informé des dispositions qui seront prises pour bénificier de l'isolation à 1€ dans votre région.</p>
                 <a href="" class="btn btn-custom mt-30">Je veux rester informé</a>
             </div>
         </div>
@@ -447,7 +451,7 @@
                     <div id="text-label" class="ml-40 align-self-end">
                         <h2 class="mb-30" data-color="bleue">Le label <span class="gras_700" data-color="vert">RGE Qualibat </span>: Un gage de <span class="gras_500">qualité :</span></h2>
                         <p><span class="gras_500">Le label RGE(Reconnu Garant de l'environnement)</span> est un signe de qualité délivré à une entreprise qui remplit certains critères lors de la réalisation de travaux d'économie d'énergie dans les logements(isolation thermique, installation d'équipement utilisant des énergies renouvelables...).</p>
-                        <p class="gras_500">Le label RGE vous donne la garantie que cette entreprise est reconnu par l'état.</p>
+                        <p class="gras_500">Le label RGE vous donne la garantie que cette entreprise est reconnue par l'état.</p>
                         <p class="gras_500">Faire appel à une entreprise RGE pour faire des travaux chez vous, vous donne droit à l'attribution de certains aides publiques.</p>
                     </div>
                 </div>
@@ -486,12 +490,12 @@
 </section>
 <section class="section" id="section-presentation5" data-background-color="bleue-clair">
     <div class="container">
-        <div class="row align-items-end justify-content-center">
-            <div class="col col-sm-4 col-md-auto" id="">
+        <div class="row justify-content-center">
+           {{-- <div class="col col-sm-4 col-md-auto" id="">
                 <img src="{{ asset('images/20_ans_experience.svg') }}" class="logo-experience-iso" alt="illustration 20 ans d'expérience">
-            </div>
-            <div class="col col-sm-12 col-md-10">
-                <h3 class="text-left mb-40"><span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">Habitat </span>est une marque déposée du groupe R.S.I (Rénovation Sécurité Intérieur) : <span class="gras_500">société experte dans le domaine du Batiment.</span></h3>
+            </div>--}}
+            <div class="col col-sm-12 col-md-12">
+                <h3 class="text-left mt-30 mb-30"><span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">HABITAT </span>est une marque déposée du groupe PRESTA HABITAT : <span class="gras_500">société experte dans l'isolation des habitats et les énergies renouvelables.</span></h3>
             </div>
         </div>
     </div>
@@ -591,57 +595,6 @@
                 }
 
             </script>
-        </div>
-    </div>
-</section>
-<section class="section" id="section-social-share">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col col-sm-auto text-center">
-                <h2 data-color="vert">Participer à l'amélioration des habitats</h2>
-                <h3>Faîtes profiter votre famille et vos amis de l'isolation à 1€</h3>
-                <h4 class="mt-20 mb-30" data-color="orange">Partager notre programme</h4>
-                <img src="{{ asset('images/programme-isolation6.png') }}" alt="Programme isolation à 1€">
-                <div class="mt-30">
-                    <button type="button" role="button" target="_blank" class="btn btn-facebook waves-effect waves-light share_facebook">
-                    <i class="fa fa-facebook m-r-5"></i> Facebook
-                    </button>
-
-                    <button type="button" role="button" class="btn btn-twitter waves-effect waves-light share_twitter">
-                    <i class="fa fa-twitter m-r-5"></i> Twitter
-                    </button>
-
-                    <button type="button" class="btn btn-googleplus waves-effect waves-light share_gplus">
-                        <i class="fa fa-google-plus m-r-5"></i> Google+
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section" id="section-presentation2" data-background-color="">
-    <div class="container">
-        <div class="row align-items-end justify-content-center mb-40">
-            <div class="">
-                <h2 class="text-center ml-10"><span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">Habitat </span>utilise des matériaux d'isolation <span class="gras_500" data-color="vert">écocologiques et certifiés.</span></h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-            <img src="{{ asset('images/knauf.svg') }}" class="logo-materiel-iso" alt="logo-knauf-isolation">
-            </div>
-            <div class="col">
-            <img src="{{ asset('images/isover.svg') }}" class="logo-materiel-iso" alt="logo-isover-isolation">
-            </div>
-            <div class="col">
-            <img src="{{ asset('images/ursa.svg') }}" class="logo-materiel-iso" alt="logo-ursa-isolation">
-            </div>
-            <div class="col">
-            <img src="{{ asset('images/saint-gobin.svg') }}" class="logo-materiel-iso" alt="logo-saint-gobin-isolation">
-            </div>
-            <div class="col">
-            <img src="{{ asset('images/rockwool2.svg') }}" class="logo-materiel-iso" alt="logo-rockwool-isolation">
-            </div>
         </div>
     </div>
 </section>

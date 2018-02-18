@@ -221,14 +221,14 @@
                     swal({
                         text: '<h5 data-color="orange">Faîtes un choix:</h5>' +
                         '<p>Selectionnez votre ou vos systèmes de chauffage</p>',
-                        timer: 1500,
+                        timer: 2000,
                         showConfirmButton: false
                     });
                 } else if(validateCheckboxIso() === false){
                     swal({
                         text: '<h5 data-color="orange">Faîtes un choix:</h5>' +
                         "<p>Selectionnez les types d'isolations à faire dans votre maison</p>",
-                        timer: 1500,
+                        timer: 2000,
                         showConfirmButton: false
                     });
                 }
@@ -392,16 +392,15 @@
         var btnTwitter = document.querySelector('.share_twitter');
         btnTwitter.addEventListener('click', function(e){
             var twitterText = "Isolez votre maison pour 1€";
-            var url = "http://www.monett-test.fr";
-            var shareUrl = "https://twitter.com/intent/tweet?text=" + twitterText + "&url=" + encodeURIComponent(url) + "";
+            var url = "http://www.isole-habitat.fr";
+            var shareUrl = "https://twitter.com/intent/tweet?text=" + twitterText + "&url=" + encodeURIComponent(url);
             popupCenter(shareUrl , "partager sur Twitter");
         });
         var btnFacebook = document.querySelector('.share_facebook');
         btnFacebook.addEventListener('click', function(e){
             var twitterText = "Isolez votre maison pour 1€";
-            var url = "http://www.monett-test.fr";
-            //var shareUrl = "https://twitter.com/intent/tweet?text=" + twitterText + "&url=" + encodeURIComponent(url) + "";
-            var shareUrl = "https://www.facebook.com/sharer/sharer.php?u=SixtLocationDeVoitureParisBoulevardSebastopol";
+            var url = "http://www.isole-habitat.fr";
+            var shareUrl = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(url);
             popupCenter(shareUrl , "partager sur Facebook");
         });
 

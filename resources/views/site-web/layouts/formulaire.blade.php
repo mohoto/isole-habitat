@@ -80,10 +80,10 @@
                                                 <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-combles" required="required" value="Mme">
                                                 <label for="type-isolation-combles" class="type-isolation"><i class="icon-fantastic icon-isolation-combles-form"></i><span>Combles</br>perdus</span></label>
                                             </div>
-                                            {{--<div class="col block-isolation">
+                                            <div class="col block-isolation">
                                                 <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-mur" required="required" value="Mme">
                                                 <label for="type-isolation-mur" class="type-isolation"><i class="icon-fantastic icon-isolation-mur-form"></i><span>Garage</br>mitoyen</span></label>
-                                            </div>--}}
+                                            </div>
                                             <div class="col block-isolation">
                                                 <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-sol" required="required" value="Mme">
                                                 <label for="type-isolation-sol" class="type-isolation"><i class="icon-fantastic icon-isolation-garage-form"></i><span>Garage</br>R.D.C/Sous-sol</span></label>
