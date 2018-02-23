@@ -1,5 +1,5 @@
 <section class="section" id="section-formulaire" data-background-color="bleue-clair">
-    <div class="modal fade" id="revenuModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    {{--<div class="modal fade" id="revenuModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -15,12 +15,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>--}}
     <div class="container">
         <h2 class="text-center">Vous pouvez aussi profiter de cette aide.</h2>
         <h3 class="text-center text-muted">45% des foyers sont éligibles à l'isolation à 1 €</h3>
         <div class="row justify-content-center mt-30">
-            <div class="col-sm-12 col-md-12 col-lg-8">
+            {{--<div class="col-sm-12 col-md-12 col-lg-8">
                 <div id="block-form">
                     <div class="form-header text-center">
                         <h4 class="text-white">Testez votre éligibilité</h4>
@@ -278,14 +278,55 @@
                         </form>
                         <div class="row mt-20">
                             <div class="tab-block-btn" id="tab-block-prev">
-                                <button type="button " id="prevBtn" class="btn btn-rounded btn-orange">Précédent</button>
+                                <button type="button " id="prevBtn" class="btn btn-rounded btn-formulaire btn-orange">Précédent</button>
                             </div>
                             <div class="tab-block-btn" id="tab-block-next">
-                                <button type="button" id="nextBtn" class="btn btn-rounded btn-vert">Suivant</button>
+                                <button type="button" id="nextBtn" class="btn btn-rounded btn-formulaire btn-vert">Suivant</button>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>--}}
+            <a href="tel:01 76 50 88 50" class="btn btn-rounded btn-custom2"><i class="fa fa-phone mr-10"></i><span>01 78 56 03 03</span></a>
+        </div>
+    </div>
+</section>
+<section class="section" id="section-fonctionnement" data-background-color="bleue-clair">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="steps-timeline d-flex">
+                    <div class="block-step" id="block-step1">
+                        <div class="circle-block-step" id="circle1">
+                            <i class="ion-checkmark-round"></i>
+                        </div>
+                        <h3 class="steps-name">Tester votre éligibilité</br>Réponse immédiate</h3>
+                    </div>
+                    <div class="block-step" id="block-step2">
+                        <div class="circle-block-step" id="circle2">
+                            <i class="ion-ios7-telephone"></i>
+                        </div>
+                        <h3 class="steps-name">On vous rapelle</br>sous 24 heures</h3>
+                    </div>
+                    <div class="block-step" id="block-step3">
+                        <div class="circle-block-step" id="circle3">
+                            <i class="ion-ios7-person"></i>
+                        </div>
+                        <h3 class="steps-name">On se déplace</br>pour une visite technique</h3>
+                    </div>
+                    <div class="block-step" id="block-step4">
+                        <div class="circle-block-step" id="circle4">
+                            <i class="ion-hammer"></i>
+                        </div>
+                        <h3 class="steps-name">Travaux sous 7 jours</br>En moins de 4 heures</h3>
+                    </div>
+                    <div class="block-step" id="block-step5">
+                        <div class="circle-block-step" id="circle5">
+                            <i class="ion-home"></i>
+                        </div>
+                        <h3 class="steps-name">Votre maison est isolée</br>Commencez à économiser</h3>
+                    </div>
+                </div><!-- /.steps-timeline -->
             </div>
         </div>
     </div>

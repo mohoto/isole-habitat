@@ -222,15 +222,6 @@ a:hover,a:focus,.a:active {
   border-top: 1px solid #E6EDF3;
 }
 
-.bg-overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  background-color: rgba(8, 99, 181, 0.85);
-  /*background-color: rgba(93, 156, 236, 0.9);*/
-}
-
 .m-t-20 {
   margin-top: 20px;
 }
@@ -256,11 +247,7 @@ a:hover,a:focus,.a:active {
 }
 
 /* Background Images */
-.bg-img-1 {
-  background: url("../images/fond-famille.jpg") no-repeat;
-  background-size: cover;
-  position: relative;
-}
+
 
 /*======= 3.Buttons ======= */
 .btn {
@@ -931,7 +918,7 @@ h1, h2, h3, h4{
     color: #ee7626;
 }
 .navbar-light .navbar-nav li a {
-  font-size: 1.3em;
+  font-size: 1.6em;
 }
 .navbar-light .navbar-nav .nav-link::hover {
   color: #ee7626;
@@ -1183,6 +1170,10 @@ label.type-heure {
   -moz-border-radius: .50rem!important;
   border-radius: .50rem!important;
 }
+.section#section-questions-cee .block-cee h4{
+  font-size: 1.4em;
+  line-height: 1.4em;
+}
 .section#section-questions-cee .block-cee p{
   font-size: 1.2em;
 }
@@ -1198,7 +1189,7 @@ label.type-heure {
 .section#section-questions-cee .mascotte-cee{
   position: absolute;
   width: 100px;
-  top: -14%;
+  top: -15%;
   right: 50%;
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
@@ -1378,6 +1369,18 @@ label.type-heure {
   font-size: 2em;
   color: #ee7626;
   margin-right: 0.5em;
+}
+.section#section-testimonials {
+  background: url(../images/background-image-testimonials2.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.section#section-testimonials .bg-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(8, 99, 181, 0.90);
 }
 .section#section-testimonials p.testimonial-content{
   font-size: 1.2em;
@@ -2043,7 +2046,7 @@ input.invalid {
   width: 50%;
   padding: 0 15px;
 }
-.section#section-formulaire .btn {
+.section#section-formulaire .btn-formulaire {
   display: block;
   width: 100%;
   font-size: 1.4em;
@@ -2052,6 +2055,16 @@ input.invalid {
 }
 .section#section-formulaire .btn:hover {
   opacity: 0.8;
+}
+/*bn-custom-tel*/
+.section#section-formulaire .btn.btn-custom2 {
+  background-color: #96b239;
+  color: #ffffff;
+  font-size: 2.5em;
+  padding: 15px 30px;
+}
+.section#section-formulaire .btn.btn-custom2:hover {
+
 }
 
 
@@ -2506,9 +2519,9 @@ label.type-heure {
     font-size: 1.1em;
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg);
-    right: -72px;
+    right: -70px;
     bottom: 50%;
-    padding: 10px 20px;
+    padding: 15px 20px;
   }
   .popup_aide {
     position: fixed;
@@ -2544,6 +2557,16 @@ label.type-heure {
   font-size: 1.2em;
   line-height: 1.8;
 }
+.qui_sommes_nous .features-box i {
+  color: #8ab326;
+  font-size: 70px;
+}
+.qui_sommes_nous .features-box h3 {
+  font-size: 1.5em;
+}
+.qui_sommes_nous .features-box p {
+  margin-top: 0;
+}
 /*Page Isolation-combles*/
 .description-isolation .part1-2,
 .description-isolation .part2-2{
@@ -2562,16 +2585,44 @@ label.type-heure {
   font-size: 1.2em;
   line-height: 1.8;
 }
+.section.description-isolation{
+  padding-top: 0px;
+}
 .isolation-combles .part1,
 .isolation-combles .part2{
    width: 50%;
 }
 .isolation-combles .part2{
-  background-color: #8ab326;
+
 }
 .isolation-combles .img-hero{
   width: 100%;
+  -webkit-border-radius: .50rem!important;;
+  -moz-border-radius: .50rem!important;;
+  border-radius: .50rem!important;;
 }
 .isolation-combles .hero-pourcentage{
-  width: 90px;
+  width: 80px;
 }
+.isolation-combles ul.choix_isolant_liste{
+  list-style: none;
+  -webkit-padding-start: 0px;
+}
+.isolation-combles ul.choix_isolant_liste li{
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+.isolation-combles ul.choix_isolant_liste li:before{
+  content: "\f00c";
+  font: normal normal normal 14px/1 FontAwesome;
+  color: #8ab326;
+  display: inline-block;
+  margin-right: 1%;
+}
+.section.description-isolation .img-type-isolant{
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+/*Media queries*/

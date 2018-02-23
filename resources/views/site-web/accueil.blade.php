@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('pageTitle', 'isolez votre maison pour 1 euro')
 @section('pageClass', 'page_accueil')
 @section('content')
 <!-- HOME -->
@@ -11,7 +12,8 @@
                    <h1 class="mb-20" data-color="bleue">ISOLER VOTRE MAISON POUR 1€</h1>
                     <p class=" sub-title mt-10 mb-30" data-color="vert">Un programme pour lutter contre la précarité énergétique</p>
                     <p>Comme 200 000 foyers en France, profitez de cette aide.</p>
-                    <a href="#" class="btn btn-rounded btn-vert btn-formulaire">Tester votre éligibilité</a>
+                    {{--<a href="#" class="btn btn-rounded btn-vert btn-formulaire">Tester votre éligibilité</a>--}}
+                    <a href="{{ url('/formulaire-tel') }}" class="btn btn-rounded btn-vert">Tester votre éligibilité</a>
                 </div>
             </div>
         </div>
@@ -48,7 +50,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-center">Vous êtes propriétaire ou locataire d'une maison individuelle, </span><span class="gras_500" data-color="orange">vous pouvez vous aussi profiter de lisolation à 1 euro</span> : <span class="gras_500">Une aide</span> mise en place pour soutenir <span class="gras_500">les foyers modestes</span>*.</h2>
+                <h2 class="text-center">Vous êtes propriétaire ou locataire d'une maison individuelle, </span><span class="gras_500" data-color="orange">vous pouvez vous aussi profiter de lisolation à 1 euro</span> : <span class="gras_500">Une aide</span> mise en place pour soutenir <span class="gras_500">les foyers mal isolés</span>*.</h2>
                 <p class="text-center">*Sous conditions d'éligibilité.</p>
             </div>
         </div>
@@ -64,11 +66,11 @@
                 <h4 class="mt-20" data-color="orange">Surface illimitée!</h4>
             </div>
         </div> <!-- end row -->
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
+        <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-6">
                 <div class="features-box">
                     <img src="{{ asset('images/icon-iso-combles.png') }}" srcset="{{ asset('images/icon-iso-combles.svg') }}" alt="illustration isolation des combles">
-                    <h5 class="m-t-20">Isolation des combles</h5>
+                    <h5 class="m-t-20">Isolation des combles perdus</h5>
                 </div>
             </div>
             {{--<div class="col-sm-12 col-md-4">
@@ -77,17 +79,17 @@
                     <h5 class="m-t-20">Isolation des murs</h5>
                 </div>
             </div>--}}
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-6 col-md-6">
                 <div class="features-box">
                     <img src="{{ asset('images/icon-iso-plancher.png') }}" srcset="{{ asset('images/icon-iso-plancher.svg') }}" alt="">
                     <h5 class="m-t-20">Isolation des caves et garages</h5>
                 </div>
             </div>
         </div> <!-- end row -->
-        <div class="row justify-content-center mt-30">
+        <div class="row justify-content-around mt-30">
             <div class="col col-md-auto">
                 <div id="rect-orange"></div>
-                <p>Garage(en rez-de-chaussée ou en sous-sol), caves</p>
+                <p>Garage (en rez-de-chaussée ou en sous-sol), caves</p>
             </div>
             <div class="col col-md-auto">
                 <div id="rect-bleue"></div>
@@ -109,7 +111,7 @@
                 <div class="feat-description">
                     <h4 data-color="bleue">L'isolation de vos combles perdus</h4>
                     <p class="gras_500">Vous avez des combles que vous n'utilisez pas :</p>
-                    <p class="text-muted">L'isolation des combles <span class="gras_500">empêche les pertes de chaleur en hiver</span> et permet de <span class="gras_500">garder la fraîcheur en été</span>. Deux techniques sont utilisées pour isoler vos combles perdus : la projection de  <span class="gras_500">laine de verre(ou de roche)</span> à souffler ou la pose de <span class="gras_500">rouleaux de laine de verre</span>, sur toute la surface des combles.</p>
+                    <p class="text-muted">L'isolation des combles <span class="gras_500">empêche les pertes de chaleur en hiver</span> et permet de <span class="gras_500">garder la fraîcheur en été</span>. Deux techniques sont utilisées pour isoler vos combles perdus : la projection de  <span class="gras_500">laine de verre (ou de roche)</span> à souffler ou la pose de <span class="gras_500">rouleaux de laine de verre</span>, sur toute la surface des combles.</p>
                     <a href="{{ route('site-web.isolation-combles') }}" class="btn btn-custom">Isolation des combles</a>
                 </div>
             </div>
@@ -132,7 +134,7 @@
                                 <td>
                                     <span>jusqu'à</span> -25%
                                 </td>
-                                <td><span>jusqu'à</span> 25%</td>
+                                <td><span>jusqu'à</span> 20%</td>
                             </tr>
                             </tbody>
                         </table>
@@ -220,7 +222,7 @@
             <div class="col-md-5">
                 <div class="feat-description">
                     <h4 data-color="bleue">L'isolation des caves et garages</h4>
-                    <p class="gras_500">Vous avez un garage en rez-de-chaussée, en sous-sol ou des caves :</p>
+                    <p class="gras_500">Vous avez un garage en rez-de-chaussée ou en sous-sol, des caves :</p>
                     <p class="text-muted">En isolant le plafond de votre garage ou de votre cave, <span class="gras_500">vous isolez avant tout le sol de vos pièces à vivre</span> et vous évitez les déperditions thermiques à travers le sol.
                         Cette isolation est réalisée en posant des <span class="gras_500">panneaux de polystyrène ou de laine de verre</span> sur le plafond du garage ou des caves.</p>
                     <a href="{{ route('site-web.isolation-sols') }}" class="btn btn-custom">Isolation des sols</a>
@@ -235,7 +237,7 @@
             <div class="col-md-4 block-information" data-background-color="vert">
                 <h3><i class="ion-ios7-plus-outline"></i> D'ECOLOGIE</h3>
                 <img src="{{ asset('images/icon-ecologie.svg') }}" alt="img" class="img-fluid rounded">
-                <p class="text-center" data-color="blanc">Réduit les dépenses d'énergétiques</p>
+                <p class="text-center" data-color="blanc">Réduit les dépenses énergétiques</p>
             </div>
             <div class="col-md-4 block-information" data-background-color="orange">
                 <h3><i class="ion-ios7-plus-outline"></i> DE CONFORT</h3>
@@ -269,7 +271,7 @@
             <div class="col-md-5 col-sm-12 block-question-title">
                 <h3 class="">Qui paye pour mes travaux d'isolation ?</h3>
                 <p><span class="gras_500" data-color="orange">Ce sont les fourniseurs d'énergie</span> : Toal, Elf, EDG, Poweo.., qui financent vos travaux d'isolation.</p>
-                <p><span class="gras_500" data-color="orange">L'Etat</span>, par le biais de la loi "POPE"(Loi n° 2005-781 du 13 juillet 2005, loi de Programmation fixant les Orientations de la Politique Energétique), <span class="gras_500" data-color="orange">oblige ces fournisseurs d'énergie à financer certains travaux d'isolation, à travers le dispositif des certificats d’économies d’énergie (CEE)</span>, dans les foyers en précarité énergétique, sous peine d'amendes.</p>
+                <p><span class="gras_500" data-color="orange">L'État</span>, par le biais de la loi "POPE"(Loi n° 2005-781 du 13 juillet 2005, loi de Programmation fixant les Orientations de la Politique Energétique), <span class="gras_500" data-color="orange">oblige ces fournisseurs d'énergie à financer certains travaux d'isolation, à travers le dispositif des certificats d’économies d’énergie (CEE)</span>, dans les foyers en précarité énergétique, sous peine d'amendes.</p>
                 <p><span class="gras_500" data-color="orange">Les travaux réalisés</span> avec le programme d'isolation à 1€ rentrent dans ce dispositif et <span class="gras_500" data-color="orange">sont intégralement financés</span> et sans <span class="gras_500" data-color="orange">aucun frais à avancer</span>.</p>
             </div>
         </div>
@@ -278,9 +280,9 @@
 <section class="section" id="section-questions-cee">
     <div class="row justify-content-center">
         <div class="col-lg-8 block-cee">
-            <h3 class="text-center mb-20">Les certificats d'économie d'énergie(CEE)</h3>
-            <p>Le dispositif des certificats d’économies d’énergie (CEE) constitue l'un des principaux instruments de la politique de maîtrise de la demande énergétique.</p>
-            <p>Le dispositif des CEE, créé en 2006 repose sur une obligation de réalisation d’économies d’énergie imposée par les pouvoirs publics aux vendeurs d’énergie. Ceux-ci doivent ainsi promouvoir activement l’efficacité énergétique auprès des consommateurs d’énergie : ménages, collectivités territoriales ou professionnels. Le 1er janvier 2018, le dispositif est entré dans sa 4ème période d’obligation pour une durée de 3 ans.</p>
+            <h4 class="text-center mb-20" data-color="vert">Un programme en accord avec le dispositif des certificats d’économie d’énergie (CEE) mis en place par le <span class="gras_500">Ministère de la Transition Écologique et Solidaire</span>.</h4>
+            {{--<p>Le dispositif des certificats d’économies d’énergie (CEE) constitue l'un des principaux instruments de la politique de maîtrise de la demande énergétique.</p>--}}
+            <p>Le dispositif des certificats d’économies d’énergie (CEE), créé en 2006 repose sur <span class="gras_500">une obligation de réalisation d’économies d’énergie imposée par les pouvoirs publics aux vendeurs d’énergie</span>. Ceux-ci doivent ainsi promouvoir activement l’efficacité énergétique auprès des consommateurs d’énergie : ménages, collectivités territoriales ou professionnels. Le 1er janvier 2018, le dispositif est entré dans sa 4ème période d’obligation.</p>
             <p class="text-muted text-source">source : Ministère de la Transition écologique et solidaire - </p>
             <a href="https://www.ecologique-solidaire.gouv.fr/dispositif-des-certificats-deconomies-denergie" target="_blank">https://www.ecologique-solidaire.gouv.fr/dispositif-des-certificats-deconomies-denergie</a>
         </div>
@@ -292,7 +294,7 @@
         <div class="row justify-content-around mt-40">
             <div class="col-md-5 col-sm-12 block-question-title">
                 <h3 class="">Je suis locataire : est-ce que je peux en bénéficier ?</h3>
-                <p>Bien sûr, ce dispositif permet <span class="gras_500" data-color="orange">aux locataires et aux propriétaires</span> d'isoler leur maison. Même si vous avez déjà profité d'autres subventions de l'Etat(crédit d'impôt, aides de l'Anah, prime rénovation...), vous pouvez prétendre à l'isolation à 1 euro. <span class="gras_500" data-color="orange">Cette aide est cumulable avec tous les autres travaux d’aménagement</span> pour réduire la consomation énergétique.</p>
+                <p>Bien sûr, ce dispositif permet <span class="gras_500" data-color="orange">aux locataires et aux propriétaires</span> d'isoler leur maison. Même si vous avez déjà profité d'autres subventions de l'État(crédit d'impôt, aides de l'Anah, prime rénovation...), vous pouvez prétendre à l'isolation à 1 euro. <span class="gras_500" data-color="orange">Cette aide est cumulable avec tous les autres travaux d’aménagement</span> pour réduire la consomation énergétique.</p>
             </div>
             <div class="col-md-5 col-sm-12 block-question-title">
                 <h3 class="">Comment je peux profiter de cette aide ?</h3>
@@ -354,10 +356,10 @@
             </div>
             <div class="col-sm-12 col-md-6">
                 <h3 class="text-left mb-40">Les régions concernées :</h3>
-                <p><span class="gras_500">L'Etat a définit 3 zones climatiques(H1, H2, H3)</span> pour les opérations d'aides mises en place pour réduire la consommation d'énergie.</p>
+                <p><span class="gras_500">L'État a définit 3 zones climatiques(H1, H2, H3)</span> pour les opérations d'aides mises en place pour réduire la consommation d'énergie.</p>
                 <p>Vous habitez en  <span class="gras_500" data-color="vert">zone H1</span>, dans la région des <span class="gras_500" data-color="vert">Hauts-de-France</span>, en <span class="gras_500" data-color="vert">Normandie</span>, en <span class="gras_500" data-color="vert">Ile-de-France</span>, dans le <span class="gras_500" data-color="vert">Grand-Est</span>, en <span class="gras_500" data-color="vert">Centre Val-de-Loire</span>, en <span class="gras_500" data-color="vert">Bourgogne-Franche-Comté</span>, en <span class="gras_500" data-color="vert">Auvergne-Rhones-Alpes</span>, vous pouvez bénificier de l'isolation de votre maison pour 1€, sous conditions d'éligibilité.</p>
-                <p class="mt-40"><span class="gras_500" data-color="vert">Ce dispositif va être étendu à d'autres régions</span> de France. Nous vous proposons de vous tenir informé des dispositions qui seront prises pour bénificier de l'isolation à 1€ dans votre région.</p>
-                <a href="" class="btn btn-custom mt-30">Je veux rester informé</a>
+                {{--<p class="mt-40"><span class="gras_500" data-color="vert">Ce dispositif va être étendu à d'autres régions</span> de France. Nous vous proposons de vous tenir informé des dispositions qui seront prises pour bénificier de l'isolation à 1€ dans votre région.</p>
+                <a href="" class="btn btn-custom mt-30">Je veux rester informé</a>--}}
             </div>
         </div>
         {{--<div class="row">
@@ -397,48 +399,6 @@
 <!-- Section-formulaire -->
 @include('site-web.layouts.formulaire')
 <!-- end section-formulaire -->
-<section class="section" id="section-fonctionnement" data-background-color="bleue-clair">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="container">
-                <div class="col-md-12">
-                    <div class="steps-timeline d-flex">
-                        <div class="block-step" id="block-step1">
-                            <div class="circle-block-step" id="circle1">
-                                <i class="ion-checkmark-round"></i>
-                            </div>
-                            <h3 class="steps-name">Tester votre éligibilité</br>Réponse immédiate</h3>
-                        </div>
-                        <div class="block-step" id="block-step2">
-                            <div class="circle-block-step" id="circle2">
-                                <i class="ion-ios7-telephone"></i>
-                            </div>
-                            <h3 class="steps-name">On vous rapelle</br>sous 24 heures</h3>
-                        </div>
-                        <div class="block-step" id="block-step3">
-                            <div class="circle-block-step" id="circle3">
-                                <i class="ion-ios7-person"></i>
-                            </div>
-                            <h3 class="steps-name">On se déplace</br>pour une visite technique</h3>
-                        </div>
-                        <div class="block-step" id="block-step4">
-                            <div class="circle-block-step" id="circle4">
-                                <i class="ion-hammer"></i>
-                            </div>
-                            <h3 class="steps-name">Travaux sous 7 jours</br>En moins de 4 heures</h3>
-                        </div>
-                        <div class="block-step" id="block-step5">
-                            <div class="circle-block-step" id="circle5">
-                                <i class="ion-home"></i>
-                            </div>
-                            <h3 class="steps-name">Votre maison est isolée</br>Commencez à économiser</h3>
-                        </div>
-                    </div><!-- /.steps-timeline -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <!-- end features alt -->
 <section class="section" id="section-societe">
     <div class="container">
@@ -462,7 +422,7 @@
             </div>
             <div class="col-sm-12 col-md-6 mb-30">
                 <div id="presentation-societe2">
-                    <div class="features-box d-flex align-self-end">
+                    <div class="features-box d-flex">
                         <i class="icon-fantastic icon-icon-facture"></i>
                         <div class="ml-20 align-self-center text-left">
                             <h3>Aucun démarche à faire</h3>
@@ -495,13 +455,13 @@
                 <img src="{{ asset('images/20_ans_experience.svg') }}" class="logo-experience-iso" alt="illustration 20 ans d'expérience">
             </div>--}}
             <div class="col col-sm-12 col-md-12">
-                <h3 class="text-left mt-30 mb-30"><span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">HABITAT </span>est une marque déposée du groupe PRESTA HABITAT : <span class="gras_500">société experte dans l'isolation des habitats et les énergies renouvelables.</span></h3>
+                <h3 class="text-left mt-30 mb-30"><span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">HABITAT </span>est un service du groupe PRESTA HABITAT : <span class="gras_500">société experte dans l'isolation des habitats et des énergies renouvelables.</span></h3>
             </div>
         </div>
     </div>
 </section>
 <!-- Testimonials section -->
-<section class="section bg-img-1" id="section-testimonials">
+<section class="section" id="section-testimonials">
     <div class="bg-overlay"></div>
     <div class="container">
         <div class="row align-self-stretch">
@@ -510,7 +470,7 @@
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
-                <p class="testimonial-content mb-auto">J'ai fait le test. Un conseiller m'a rappelé le lendemain pour m'expliquer la suite. Un technicien est venu pour prendre les mesures. <span class="gras_500">1 semaine après, ils sont passé pour poser l' isolation</span>. Ils m'ont donné tout de suite ma facture avec juste 1€ symbolique à payer <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                <p class="testimonial-content mb-auto">J'ai fait le test. Un conseiller m'a rappelé le lendemain pour m'expliquer la suite. Un technicien est venu pour prendre les mesures. <span class="gras_500">1 semaine après, ils sont passé pour poser l' isolation</span>. Ils m'ont donné tout de suite ma facture avec juste 1€ symbolique à payer. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                 <div class="info-testimonial">
                     <img src="{{ asset('images/photo-temoignage1.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
                     <div class="info-testimonial-client">
@@ -521,7 +481,7 @@
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
-                <p class="testimonial-content mb-auto">Des amis nous ont parlé de ce programme. <span class="gras_500">Même si mes revenus sont correctes, j'étais éligible</span>. On a isolé nos combles et la cave. On a diminué le chauffage dans la maison et il fait toujours aussi bon à l'intérieur. On attend de voir la prochaine facture de chauffage <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                <p class="testimonial-content mb-auto">Des amis nous ont parlé de ce programme. <span class="gras_500">Même si mes revenus sont correctes, j'étais éligible</span>. On a isolé nos combles et la cave. On a diminué le chauffage dans la maison et il fait toujours aussi bon à l'intérieur. On attend de voir la prochaine facture de chauffage. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                 <div class="info-testimonial">
                     <img src="{{ asset('images/photo-temoignage2.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
                     <div class="info-testimonial-client">
@@ -532,7 +492,7 @@
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
-                <p class="testimonial-content mb-auto">Il fait froid dans notre grande maison l'hiver et on a un grenier que l'on n'utilise plus. Les ouvriers étaient très sympathiques, ils nous ont expliqué ce qu'ils allaient faire. <span class="gras_500">Les travaux ont duré 3 heures et on a rien eu à faire</span>. ils ont pris le temps de tout nettoyer avant de partir <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                <p class="testimonial-content mb-auto">Il fait froid dans notre grande maison l'hiver, ça revient vraiment cher pour la chauffer entièrement. Les ouvriers nous ont expliqué ce qu'ils allaient faire. <span class="gras_500">Les travaux ont duré 4 heures et on a rien eu à faire</span>. ils ont pris le temps de tout nettoyer avant de partir. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                 <div class="info-testimonial">
                     <img src="{{ asset('images/photo-temoignage3.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
                     <div class="info-testimonial-client">

@@ -29,7 +29,7 @@
                     break;
                 }
             }
-            if(val == 'type-heure-modal-1'){
+            /*if(val == 'type-heure-modal-1'){
                 val = '9h-12h';
             }else if(val == 'type-heure-modal-2'){
                 val = '12h-14h';
@@ -37,9 +37,8 @@
                 val = '14h-18h';
             }else if(val == 'type-heure-modal-4'){
                 val = '18h-20h';
-            }
+            }*/
             return val;
-            alert(val);
         }
         $('#btn_phone_modal').click(function () {
             var x = document.querySelector('#phoneFormModal');
@@ -90,16 +89,12 @@
             if ( $.inArray( event.keyCode, [38,40,37,39] ) !== -1 ) {
                 return;
             }
-
-
             var $this = $(this);
-
             // Get the value.
             var input = $this.val();
 
             var input = input.replace(/[\D\s\._\-]+/g, "");
             input = input ? parseInt( input, 10 ) : 0;
-
             $this.val( function() {
                 return ( input === 0 ) ? "" : input.toLocaleString( "fr-FR" );
             } );
@@ -441,7 +436,14 @@
 
 
 
+    var facebookShare = document.querySelector('[data-js="facebook-share"]');
 
+    facebookShare.onclick = function(e) {
+        e.preventDefault();
+        var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup', 'height=350,width=600');
+        if(facebookWindow.focus) { facebookWindow.focus(); }
+        return false;
+    }
 
 
 })(jQuery);

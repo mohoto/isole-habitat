@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}"  prefix="og: http://ogp.me/ns#">
     <head>
+        <title>Isole habitat : @yield('pageTitle')</title>
+        <meta name="description" content="">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:url"           content="https://www.isole-habitat.fr" />
@@ -64,27 +66,28 @@
                             <p class="text-center">En moins de 24 heures</p>
                         </div>
                     </div>
-                    <div class="modal-body">
-                        <form id="phoneFormModal">
+                    <form id="" method="post" action="{{ route('site-web.formulaire-rappel') }}" novalidate>
+                        {{ csrf_field() }}
+                        <div class="modal-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="radio" class="radio" name="modal_civilite" id="civ_Mme" required="required" value="Mme" checked>
+                                    <input type="radio" class="radio" name="rappel_civilite" id="civ_Mme" required="required" value="Madame" checked>
                                     <label for="civ_Mme" class="civilite">Madame</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="radio" class="radio" name="modal_civilite" id="civ_M" required="required" value="M">
+                                    <input type="radio" class="radio" name="rappel_civilite" id="civ_M" required="required" value="Monsieur">
                                     <label for="civ_M" class="civilite">Monsieur</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="modal_nom" Placeholder="Nom">
+                                        <input type="text" class="form-control" name="rappel_nom" Placeholder="Nom">
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control telephone_input" name="modal_telephone" maxlength="14" Placeholder="N° Mobile ou Fixe">
+                                        <input type="text" class="form-control telephone_input" name="rappel_telephone" maxlength="14" Placeholder="N° Mobile ou Fixe">
                                     </div>
                                 </div>
                             </div>
@@ -92,29 +95,30 @@
                                 <h5 class="text-center">Selectionnez vos disponibilités:</h5>
                                 <div class="row mt-20">
                                     <div class="col-3 block-heure">
-                                        <input type="radio" class="radio" name="heure_rappel_modal" id="modal_type_heure-1" required="required" value="type-heure-modal-1" checked>
+                                        <input type="radio" class="radio" name="rappel_heure_modal" id="modal_type_heure-1" required="required" value="9h-12h" checked>
                                         <label for="modal_type_heure-1" class="type-heure">9h-12h</label>
                                     </div>
                                     <div class="col-3 block-heure">
-                                        <input type="radio" class="radio" name="heure_rappel_modal" id="modal_type_heure-2" required="required" value="type-heure-modal-2">
+                                        <input type="radio" class="radio" name="rappel_heure_modal" id="modal_type_heure-2" required="required" value="12h-14h">
                                         <label for="modal_type_heure-2" class="type-heure">12h-14h</label>
                                     </div>
                                     <div class="col-3 block-heure">
-                                        <input type="radio" class="radio" name="heure_rappel_modal" id="modal_type_heure-3" required="required" value="type-heure-modal-3">
+                                        <input type="radio" class="radio" name="rappel_heure_modal" id="modal_type_heure-3" required="required" value="14h-18h">
                                         <label for="modal_type_heure-3" class="type-heure">14h-18h</label>
                                     </div>
                                     <div class="col-3 block-heure">
-                                        <input type="radio" class="radio" name="heure_rappel_modal" id="modal_type_heure-4" required="required" value="type-heure-modal-4">
+                                        <input type="radio" class="radio" name="rappel_heure_modal" id="modal_type_heure-4" required="required" value="18-20h">
                                         <label for="modal_type_heure-4" class="type-heure">18h-20h</label>
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" id="btn_phone_modal" class="btn btn-rounded btn-orange">Me rappeler</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-                    </div>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" id="btn_phone_modal" class="btn btn-rounded btn-orange" value="Me rappeler">
+                            {{--<button type="submit" id="btn_phone_modal" class="btn btn-rounded btn-orange">Me rappeler</button>--}}
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -138,42 +142,18 @@
                                 {{--<li><a href="{{ route('site-web.isolation-murs') }}">L'isolation des murs</a></li>--}}
                                 <li><a href="{{ route('site-web.isolation-sols') }}">L'isolation des caves et garages</a></li>
                             </ul>
-                            {{--<ul class="submenu">
-                                <li><a href="tables-basic.html">Basic Tables</a></li>
-                                <li><a href="tables-datatable.html">Data Table</a></li>
-                                <li><a href="tables-editable.html">Editable Table</a></li>
-                            </ul>--}}
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('site-web.societe') }}">Qui sommes-nous?</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#clients">Des questions?</a>
-                        </li>
-                        {{--<li class="nav-item">
-                            <a href="" class="btn btn-custom navbar-btn"><i class="fa fa-phone m-r-5"></i> <span>01 45 67 78 00</span> </a>
-                        </li>--}}
                     </ul>
                 </div>
                 <div class="navbar-phone">
-                    <a href="tel:01 78 56 03 03" class="btn btn-custom navbar-btn waves-effect waves-light"><i class="fa fa-phone mr-10"></i><span>01 78 56 03 03</span></a>
+                    <a href="tel:01 76 50 88 50" class="btn btn-custom navbar-btn waves-effect waves-light"><i class="fa fa-phone mr-10"></i><span>01 78 56 03 03</span></a>
                 </div>
             </div>
         </nav>
         <!-- End navbar-custom -->
-        {{--<button class="olark-launch-button olark-size-md" tabindex="0" role="button" aria-hidden="false" data-reactid=".0.3">
-            <svg x="0px" y="0px" viewBox="0 0 27 21.9" aria-label="three small dots to indicate that an agent is available to chat" role="img" data-reactid=".0.3.0">
-                <title data-reactid=".0.3.0.0">Chat Icon </title>
-                <desc data-reactid=".0.3.0.1">three small dots to indicate that an agent is available to chat</desc>
-                <path fill="#ffffff" d="M23.2,0L2.6,1.7C1,1.9,0,3.2,0,4.9v8c0,1.6,0.8,3,2.4,3.1l5.3,0.5c0,0,1,1.6,0.3,3.2C7.2,21.3,6,21.9,6,21.9 c4.2,0,6.6-3.1,7.8-4.9l9.4,0.7c1.8,0.2,3.8-1.3,3.8-3.1V3.1C27,1.3,25-0.1,23.2,0z M6.4,10.1c-0.9,0-1.7-0.7-1.7-1.7 c0-0.9,0.7-1.7,1.7-1.7C7.3,6.8,8,7.5,8,8.5C8,9.4,7.3,10.1,6.4,10.1z M13.2,10.1c-0.9,0-1.7-0.7-1.7-1.7c0-0.9,0.7-1.7,1.7-1.7 c0.9,0,1.7,0.7,1.7,1.7C14.8,9.4,14.1,10.1,13.2,10.1z M19.9,10.1c-0.9,0-1.7-0.7-1.7-1.7c0-0.9,0.7-1.7,1.7-1.7 c0.9,0,1.7,0.7,1.7,1.7C21.6,9.4,20.9,10.1,19.9,10.1z" data-reactid=".0.3.0.2">
-                </path>
-            </svg>
-            <div class="olark-notification-badge olark-hidden" data-reactid=".0.3.1">
-                <div class="olark-notification-badge-text" data-reactid=".0.3.1.0">0
-                </div>
-            </div>
-            <div class="olark-button-text" data-reactid=".0.3.2">Des conseils?</div>
-        </button>--}}
         @yield('content')
         <section class="section" id="section-social-share">
             <div class="container">
@@ -225,6 +205,7 @@
                     </div>
                 </div>
             </div>
+            <span class="facebook-share" data-js="facebook-share">Share on Facebook</span>
         </section>
         <!-- FOOTER -->
         <footer class="footer">
@@ -232,13 +213,13 @@
                 <div class="row">
                     <div class="col-md-4">
                         <img id="logo-footer" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat">
-                        <p data-color="bleue-clair">Isole Habitat est une marque déposée du groupe PRESTA HABITAT, société experte dans l'isolation des habitats et la transition énergétique.</p>
+                        <p data-color="bleue-clair">Isole Habitat est un service du groupe PRESTA HABITAT, société experte dans l'isolation des habitats et la transition énergétique.</p>
                     </div>
                     <div class="col-md-4">
                         <ul class="liens-footer">
                             <li><a href="#">L'isolation des combles</a></li>
                             {{--<li><a href="#">L'isolation des murs</a></li>--}}
-                            <li><a href="#">L'isolation des sols</a></li>
+                            <li><a href="#">L'isolation des caves et garges</a></li>
                             <li><a href="#">Qui sommes-nous?</a></li>
                             <li><a href="#">Mentions légales</a></li>
                         </ul>
