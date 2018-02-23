@@ -394,7 +394,7 @@
         var btnFacebook = document.querySelector('.share_facebook');
         btnFacebook.addEventListener('click', function(e){
             var twitterText = "Isolez votre maison pour 1€";
-            var url = "http://www.isole-habitat.fr";
+            var url = document.url;
             var shareUrl = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(url);
             popupCenter(shareUrl , "partager sur Facebook");
         });
