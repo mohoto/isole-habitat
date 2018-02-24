@@ -66,7 +66,7 @@
                             <p class="text-center">En moins de 24 heures</p>
                         </div>
                     </div>
-                    <form id="" method="post" action="{{ route('site-web.formulaire-rappel') }}" novalidate>
+                    <form id="phoneFormModal" method="post" action="" novalidate>
                         {{ csrf_field() }}
                         <div class="modal-body">
                             <div class="row">
@@ -114,8 +114,8 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <input type="submit" id="btn_phone_modal" class="btn btn-rounded btn-orange" value="Me rappeler">
-                            {{--<button type="submit" id="btn_phone_modal" class="btn btn-rounded btn-orange">Me rappeler</button>--}}
+                            {{--<input type="submit" id="btn_phone_modal" class="btn btn-rounded btn-orange" value="Me rappeler">--}}
+                            <button type="button" id="btn_phone_modal" class="btn btn-rounded btn-orange">Me rappeler</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
                         </div>
                     </form>
@@ -140,7 +140,7 @@
                             <ul class="submenu">
                                 <li><a href="{{ route('site-web.isolation-combles') }}">L'isolation des combles</a></li>
                                 {{--<li><a href="{{ route('site-web.isolation-murs') }}">L'isolation des murs</a></li>--}}
-                                <li><a href="{{ route('site-web.isolation-sols') }}">L'isolation des caves et garages</a></li>
+                                {{--<li><a href="{{ route('site-web.isolation-sols') }}">L'isolation des caves et garages</a></li>--}}
                             </ul>
                         </li>
                         <li class="nav-item">

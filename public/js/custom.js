@@ -42,14 +42,21 @@
         }
         $('#btn_phone_modal').click(function () {
             var x = document.querySelector('#phoneFormModal');
-            var valHeure;
-            valHeure = getHourValModal();
-            /*var y = x.getElementsByTagName('input');
-            for (var i = 0; i < y.length; i++) {
-                if (y[i].value == "") {
-                    y[i].style.borderColor = "#ee7626";
-                } else {*/
+            //var data = x.serializeArray();
+            var data = $('#phoneFormModal').serializeArray();
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                type:'post',
+                url: '/isolation/public/formulaire-rappel',
+                data: data,
+                success: function() {
                     $('#phoneModal').modal('hide');
+                    alert('enregistré');
+                    //alert(response.nonClient);
                     swal({
                         text: '<h5 data-color="orange">Votre demande a été prise en compte</h5>' +
                         '<p>Un conseiller isolation vous rappellera rapidement' +
@@ -57,6 +64,26 @@
                         timer: 3000,
                         showConfirmButton: false
                     });
+                },
+                error: function(){
+                    alert('pas enregistré');
+                }
+            });
+            //var valHeure;
+            //valHeure = getHourValModal();
+            /*var y = x.getElementsByTagName('input');
+            for (var i = 0; i < y.length; i++) {
+                if (y[i].value == "") {
+                    y[i].style.borderColor = "#ee7626";
+                } else {*/
+                    /*$('#phoneModal').modal('hide');
+                    swal({
+                        text: '<h5 data-color="orange">Votre demande a été prise en compte</h5>' +
+                        '<p>Un conseiller isolation vous rappellera rapidement' +
+                        '<p><strong data-color="orange">Entre ' + valHeure + '</strong></p>',
+                        timer: 3000,
+                        showConfirmButton: false
+                    });*/
                 /*}
             }*/
         });
