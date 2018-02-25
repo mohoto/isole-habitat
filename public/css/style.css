@@ -1612,6 +1612,9 @@ label.type-heure {
   padding: 8px 24px !important;
   font-size: 1.6em;
 }
+.footer .btn-rounded a{
+  color: #ffffff;
+}
 .copyright {
   margin: 10px 0 0 0;
 }

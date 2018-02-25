@@ -149,7 +149,7 @@
                     </ul>
                 </div>
                 <div class="navbar-phone">
-                    <button class="btn btn-custom navbar-btn waves-effect waves-light"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></button></button>
+                    <button class="btn btn-custom navbar-btn waves-effect waves-light"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></button>
                 </div>
             </div>
         </nav>
@@ -226,10 +226,7 @@
                             <div class="">
                                 <i class="ion-ios7-help-outline"></i><p class="besoin-aide">Besoin d'assistance?</p>
                             </div>
-                            <a href="tel:01 78 56 03 03" class="btn btn-orange  btn-rounded waves-effect waves-light">
-                                <i class="ion-ios7-telephone mr-10"></i>
-                                <span>01 78 56 03 03</span>
-                            </a>
+                            <button class="btn btn-orange btn-rounded"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></button>
                             <p class="mt-10" data-color="bleue-clair" ">Lundi-vendredi   9h-20h</p>
                             {{--<ul class="social-icons">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
