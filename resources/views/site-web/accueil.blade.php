@@ -13,9 +13,9 @@
                 <div class="part2 text-center">
                    <h1 class="mb-20" data-color="bleue">ISOLER VOTRE MAISON POUR 1€</h1>
                     <p class=" sub-title mt-10 mb-30" data-color="vert">Un programme pour lutter contre la précarité énergétique</p>
-                    <p>Comme 200 000 foyers en France, profitez de cette aide.</p>
+                    <p>Comme 300 000 foyers en France, profitez de cette aide.</p>
                     {{--<a href="#" class="btn btn-rounded btn-vert btn-formulaire">Tester votre éligibilité</a>--}}
-                    <a href="#section-formulaire" class="btn btn-rounded btn-vert btn-formulaire">Tester votre éligibilité</a>
+                    <a href="#section-formulaire" class="btn btn-rounded btn-vert btn-formulaire">Testez votre éligibilité</a>
                 </div>
             </div>
         </div>
