@@ -306,6 +306,9 @@ a:hover,a:focus,.a:active {
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
+.btn-custom a{
+  color: #0863b5 !important;
+}
 
 .btn-custom:hover {
   background-color: #ee7626 !important;
@@ -2065,9 +2068,11 @@ input.invalid {
   padding: 15px 30px;
 }
 .section#section-formulaire .btn.btn-custom2:hover {
-
+  background-color: #96b239;
 }
-
+.section#section-formulaire .btn.btn-custom2 a{
+  color: #ffffff;
+}
 
 /* Make circles that indicate the steps of the form: */
 .step {

@@ -114,7 +114,7 @@
                     <h4 data-color="bleue">L'isolation de vos combles perdus</h4>
                     <p class="gras_500">Vous avez des combles que vous n'utilisez pas:</p>
                     <p class="text-muted">L'isolation des combles <span class="gras_500">empêche les pertes de chaleur en hiver</span> et permet de <span class="gras_500">garder la fraîcheur en été</span>. Deux techniques sont utilisées pour isoler vos combles perdus : la projection de  <span class="gras_500">laine de verre (ou de roche)</span> à souffler ou la pose de <span class="gras_500">rouleaux de laine de verre</span>, sur toute la surface des combles.</p>
-                    <a href="{{ route('site-web.isolation-combles') }}" class="btn btn-custom">Isolation des combles</a>
+                    {{--<a href="{{ route('site-web.isolation-combles') }}" class="btn btn-custom">Isolation des combles</a>--}}
                 </div>
             </div>
             <div class="col-md-5 flex-first">
@@ -227,7 +227,7 @@
                     <p class="gras_500">Vous avez un garage en rez-de-chaussée ou en sous-sol, des caves:</p>
                     <p class="text-muted">En isolant le plafond de votre garage ou de votre cave, <span class="gras_500">vous isolez avant tout le sol de vos pièces à vivre</span> et vous évitez les déperditions thermiques à travers le sol.
                         Cette isolation est réalisée en posant des <span class="gras_500">panneaux de polystyrène ou de laine de verre</span> sur le plafond du garage ou des caves.</p>
-                    <a href="{{ route('site-web.isolation-sols') }}" class="btn btn-custom">Isolation des sols</a>
+                    {{--<a href="{{ route('site-web.isolation-sols') }}" class="btn btn-custom">Isolation des sols</a>--}}
                 </div>
             </div>
         </div><!-- end row -->

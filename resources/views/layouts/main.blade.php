@@ -149,7 +149,7 @@
                     </ul>
                 </div>
                 <div class="navbar-phone">
-                    <a href="tel:01 76 50 88 50" class="btn btn-custom navbar-btn waves-effect waves-light"><i class="fa fa-phone mr-10"></i><span>01 76 50 88 50</span></a>
+                    <button class="btn btn-custom navbar-btn waves-effect waves-light"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></button></button>
                 </div>
             </div>
         </nav>
