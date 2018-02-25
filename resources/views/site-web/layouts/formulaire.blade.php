@@ -287,7 +287,7 @@
                     </div>
                 </div>
             </div>--}}
-            <a href="tel:01 76 50 88 50" class="btn btn-rounded btn-custom2"><i class="fa fa-phone mr-10"></i><span>01 78 56 03 03</span></a>
+            <a href="tel:01 76 50 88 50" class="btn btn-rounded btn-custom2"><i class="fa fa-phone mr-10"></i><span>01 76 50 88 50</span></a>
         </div>
     </div>
 </section>

@@ -24,12 +24,12 @@ class FormController extends Controller
         //$clientRappel->telephone = '078789887';
         //$clientRappel->heure_rappel = '9h-12h';
         $clientRappel->save();
-        $nomClient = $clientRappel->nom;
+        //$nomClient = $clientRappel->nom;
         /*return response()->json([
 
             'nonClient'=> $nomClient
         ]);*/
-        //return redirect('/');
+        return redirect('/');
         //echo 'Salut';
     }
 

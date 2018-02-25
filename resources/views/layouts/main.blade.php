@@ -16,7 +16,7 @@
         <meta name="twitter:site" content="@isolehabitat">
         <meta name="twitter:title" content="Isoler votre maison pour 1€">
         <meta name="twitter:description" content="Profiter du programme d'isolation à 1€ et économisez jusqu'à 30% sur votre facture de chauffage. Isolations des combles, garages et caves.">
-        <meta name="twitter:image" content="https://www.radiantmediaplayer.com/images/poster-rmp-showcase.jpg">
+        <meta name="twitter:image" content="{{ asset('images/image-resaux-sociaux2.png') }}">
         <meta name="twitter:image:width" content="640">
         <meta name="twitter:image:height" content="360">
 
@@ -70,11 +70,11 @@
                         {{ csrf_field() }}
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-6">
                                     <input type="radio" class="radio" name="rappel_civilite" id="civ_Mme" required="required" value="Madame" checked>
                                     <label for="civ_Mme" class="civilite">Madame</label>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-6">
                                     <input type="radio" class="radio" name="rappel_civilite" id="civ_M" required="required" value="Monsieur">
                                     <label for="civ_M" class="civilite">Monsieur</label>
                                 </div>
@@ -115,14 +115,14 @@
                         </div>
                         <div class="modal-footer">
                             {{--<input type="submit" id="btn_phone_modal" class="btn btn-rounded btn-orange" value="Me rappeler">--}}
-                            <button type="button" id="btn_phone_modal" class="btn btn-rounded btn-orange">Me rappeler</button>
+                            <button type="submit" id="btn_phone_modal" class="btn btn-rounded btn-orange">Me rappeler</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn btn-orange popup_aide" data-toggle="modal" data-target="#phoneModal" data-animation="fadein" data-plugin="custommodal" data-overlaySpeed="200" data-overlayColor="#36404a">Besoin de conseils <i class="ion-help"></i></a>
+        {{--<a href="#" class="btn btn-orange popup_aide" data-toggle="modal" data-target="#phoneModal" data-animation="fadein" data-plugin="custommodal" data-overlaySpeed="200" data-overlayColor="#36404a">Besoin de conseils <i class="ion-help"></i></a>--}}
         <!-- Navbar -->
         <nav class="navbar navbar-custom navbar-expand-lg navbar-light">
             <div class="navbar-block d-flex align-items-end">
@@ -149,33 +149,31 @@
                     </ul>
                 </div>
                 <div class="navbar-phone">
-                    <a href="tel:01 76 50 88 50" class="btn btn-custom navbar-btn waves-effect waves-light"><i class="fa fa-phone mr-10"></i><span>01 78 56 03 03</span></a>
+                    <a href="tel:01 76 50 88 50" class="btn btn-custom navbar-btn waves-effect waves-light"><i class="fa fa-phone mr-10"></i><span>01 76 50 88 50</span></a>
                 </div>
             </div>
         </nav>
         <!-- End navbar-custom -->
         @yield('content')
         <section class="section" id="section-social-share">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col col-sm-auto text-center">
-                        <h2 data-color="vert">Participer à l'amélioration des habitats</h2>
-                        <h3>Faîtes profiter votre famille et vos amis de l'isolation à 1€</h3>
-                        <h4 class="mt-20 mb-30" data-color="orange">Partager notre programme</h4>
-                        <img src="{{ asset('images/programme-isolation6.png') }}" alt="Programme isolation à 1€">
-                        <div class="mt-30">
-                            <button type="button" role="button" target="_blank" class="btn btn-facebook waves-effect waves-light share_facebook">
-                                <i class="fa fa-facebook m-r-5"></i> Facebook
-                            </button>
+            <div class="row justify-content-center">
+                <div class="text-center">
+                    <h2 data-color="vert">Participer à l'amélioration des habitats</h2>
+                    <h3>Faîtes profiter votre famille et vos amis de l'isolation à 1€</h3>
+                    <h4 class="mt-20 mb-30" data-color="orange">Partager notre programme</h4>
+                    <img src="{{ asset('images/programme-isolation6.png') }}" alt="Programme isolation à 1€">
+                    <div class="mt-30">
+                        <button type="button" role="button" target="_blank" id="share_facebook" class="btn btn-facebook waves-effect waves-light share_facebook">
+                            <i class="fa fa-facebook m-r-5"></i> Facebook
+                        </button>
 
-                            <button type="button" role="button" class="btn btn-twitter waves-effect waves-light share_twitter">
-                                <i class="fa fa-twitter m-r-5"></i> Twitter
-                            </button>
+                        <button type="button" role="button" class="btn btn-twitter waves-effect waves-light share_twitter">
+                            <i class="fa fa-twitter m-r-5"></i> Twitter
+                        </button>
 
-                            <button type="button" class="btn btn-googleplus waves-effect waves-light share_gplus">
-                                <i class="fa fa-google-plus m-r-5"></i> Google+
-                            </button>
-                        </div>
+                        {{--<button type="button" class="btn btn-googleplus waves-effect waves-light share_gplus">
+                            <i class="fa fa-google-plus m-r-5"></i> Google+
+                        </button>--}}
                     </div>
                 </div>
             </div>
@@ -205,7 +203,6 @@
                     </div>
                 </div>
             </div>
-            <span class="facebook-share" data-js="facebook-share">Share on Facebook</span>
         </section>
         <!-- FOOTER -->
         <footer class="footer">
@@ -221,7 +218,7 @@
                             {{--<li><a href="#">L'isolation des murs</a></li>--}}
                             <li><a href="#">L'isolation des caves et garges</a></li>
                             <li><a href="#">Qui sommes-nous?</a></li>
-                            <li><a href="#">Mentions légales</a></li>
+                            {{--<li><a href="#">Mentions légales</a></li>--}}
                         </ul>
                     </div>
                     <div class="col-md-4">
@@ -233,12 +230,12 @@
                                 <i class="ion-ios7-telephone mr-10"></i>
                                 <span>01 78 56 03 03</span>
                             </a>
-                            <p class="mt-10" data-color="bleue-clair" ">Lundi-vendredi  9h-21h</p>
-                            <ul class="social-icons">
+                            <p class="mt-10" data-color="bleue-clair" ">Lundi-vendredi   9h-20h</p>
+                            {{--<ul class="social-icons">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            </ul>
+                            </ul>--}}
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -267,7 +264,7 @@
         <!-- Sweet alert -->
         <script type="text/javascript" src="plugins/sweet-alert2/sweetalert2.min.js"></script>
         <!-- My custom-->
-        <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript" src="js/custom2.js"></script>
         <!--common script for all pages-->
         <script src="js/jquery.app.js"></script>
     </body>

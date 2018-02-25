@@ -987,23 +987,24 @@ label.type-heure {
     width: 100%;
 }
 .hero .part1{
-    width: 50%;
+   /* width: 50%;*/
     background: url("../images/presentation-isolation-1-euro-5.jpg");
     min-height: 300px;
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
+    margin-top: 20px;
 }
 .hero .part2{
-    width: 50%;
-  padding-top: 50px;
+    /*width: 50%;*/
+    margin-top: 50px;
 }
 .hero h1{
     font-size: 2.5em;
 }
 
 .hero h1{
-    width: 100%;
+    font-size: 2.5em;
 }
 .hero p{
     font-size: 1.5em;
@@ -1259,7 +1260,7 @@ label.type-heure {
   position: relative;
   width: 20%;
   text-align: center;
-  padding: 0 20px;
+  padding: 0;
 }
 .section#section-fonctionnement .block-step i {
   font-size: 4em;
@@ -2626,3 +2627,69 @@ label.type-heure {
 }
 
 /*Media queries*/
+@media (max-width: 767px) {
+  .hero .part1 {
+    width: 100%;
+  }
+
+  /*.hero .part2 {
+    width: 100%;
+    padding-top: 50px;
+  }*/
+  .hero h1 {
+    font-size: 2.2em;
+  }
+  .hero p {
+    font-size: 1.3em;
+  }
+  .section#section-type-isolation .features-box img {
+    width: 100%;
+  }
+
+  .section#section-questions-cee .mascotte-cee {
+    top: -13%;
+  }
+
+  .section#section-zones h3 {
+    text-align: center;
+  }
+
+  .section#section-testimonials p.testimonial-content {
+    margin-bottom: 30px;
+  }
+
+  .section#section-social-share{
+    padding: 50px 20px;
+  }
+  /*Formulaire*/
+  .section#section-fonctionnement .block-step {
+    width: 100%;
+  }
+  .section#section-fonctionnement .block-step:before {
+    display:none;
+  }
+  .steps-timeline{
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -mozalign-items: center;
+    align-items: center;
+
+  }
+
+  .section#section-fonctionnement .block-step .steps-name {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 2em;
+    line-height: 1.4em;
+  }
+
+  .section#section-societe .societe-part2 #presentation-societe {
+    background: url(../images/ouvrier-isolation.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    padding: 200px;
+  }
+}

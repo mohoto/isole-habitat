@@ -42,7 +42,7 @@
         }
         $('#btn_phone_modal').click(function () {
             var x = document.querySelector('#phoneFormModal');
-            //var data = x.serializeArray();
+            valHeure = getHourValModal();
             var data = $('#phoneFormModal').serializeArray();
             $.ajaxSetup({
                 headers: {
@@ -57,36 +57,18 @@
                     $('#phoneModal').modal('hide');
                     alert('enregistré');
                     //alert(response.nonClient);
-                    swal({
-                        text: '<h5 data-color="orange">Votre demande a été prise en compte</h5>' +
-                        '<p>Un conseiller isolation vous rappellera rapidement' +
-                        '<p><strong data-color="orange">Entre ' + valHeure + '</strong></p>',
+                    /*swal({
+                        text: "<h5 data-color='orange'>Votre demande a été prise en compte</h5>" +
+                        "<p>Un conseiller isolation vous rappellera rapidement" +
+                        "<p><strong data-color="orange">Entre " + valHeure + "</strong></p>",
                         timer: 3000,
                         showConfirmButton: false
-                    });
+                    });*/
                 },
                 error: function(){
                     alert('pas enregistré');
                 }
             });
-            //var valHeure;
-            //valHeure = getHourValModal();
-            /*var y = x.getElementsByTagName('input');
-            for (var i = 0; i < y.length; i++) {
-                if (y[i].value == "") {
-                    y[i].style.borderColor = "#ee7626";
-                } else {*/
-                    /*$('#phoneModal').modal('hide');
-                    swal({
-                        text: '<h5 data-color="orange">Votre demande a été prise en compte</h5>' +
-                        '<p>Un conseiller isolation vous rappellera rapidement' +
-                        '<p><strong data-color="orange">Entre ' + valHeure + '</strong></p>',
-                        timer: 3000,
-                        showConfirmButton: false
-                    });*/
-                /*}
-            }*/
-        });
         function validateForm(){
             var valid = true;
             var x = document.querySelectorAll('.tab');
@@ -411,19 +393,19 @@
             var strWindowFeatures = windowFeatures ? windowFeatures : "scrollbar=yes, height=" + popupHeight + ", width=" + popupWidth + ", top=" + popupTop + ", left=" + popupLeft + "";
             window.open(url, pageTitle, strWindowFeatures);
         };
-        var btnTwitter = document.querySelector('.share_twitter');
+        /*var btnTwitter = document.querySelector('.share_twitter');
         btnTwitter.addEventListener('click', function(e){
             var twitterText = "Isolez votre maison pour 1€";
             var url = "http://www.isole-habitat.fr";
             var shareUrl = "https://twitter.com/intent/tweet?text=" + twitterText + "&url=" + encodeURIComponent(url);
             popupCenter(shareUrl , "partager sur Twitter");
-        });
-        var btnFacebook = document.querySelector('.share_facebook');
+        });*/
+        var btnFacebook = document.querySelector('#share_facebook');
         btnFacebook.addEventListener('click', function(e){
-            var twitterText = "Isolez votre maison pour 1€";
-            var url = document.url;
-            var shareUrl = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(url);
-            popupCenter(shareUrl , "partager sur Facebook");
+            //var url = document.url;
+            //var shareUrl = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(document.URL);
+            //popupCenter(shareUrl , "partager sur Facebook");
+            alert('coucou');
         });
 
         /*Sweet Alert*/
@@ -459,19 +441,19 @@
         //         return ( valInput === 0 ) ? "" : valInput.toLocaleString( "en-US" );
         //     } );
         // });
-    });
 
 
 
-    var facebookShare = document.querySelector('[data-js="facebook-share"]');
+
+    /*var facebookShare = document.querySelector('[data-js="facebook-share"]');
 
     facebookShare.onclick = function(e) {
         e.preventDefault();
         var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup', 'height=350,width=600');
         if(facebookWindow.focus) { facebookWindow.focus(); }
         return false;
-    }
-
+    }*/
+    });
 
 })(jQuery);
 

@@ -5,15 +5,17 @@
 <!-- HOME -->
 <section class="" id="home">
     <div class="container">
-        <div class="row hero mt-50 mb-40">
-            <div class="d-flex flex-row">
+        <div class="row hero mt-50 mb-40 justify-content-center">
+            <div class="col-sm-12 col-md-6">
                 <div class="part1"></div>
+            </div>
+            <div class="col-sm-12 col-md-6">
                 <div class="part2 text-center">
                    <h1 class="mb-20" data-color="bleue">ISOLER VOTRE MAISON POUR 1€</h1>
                     <p class=" sub-title mt-10 mb-30" data-color="vert">Un programme pour lutter contre la précarité énergétique</p>
                     <p>Comme 200 000 foyers en France, profitez de cette aide.</p>
                     {{--<a href="#" class="btn btn-rounded btn-vert btn-formulaire">Tester votre éligibilité</a>--}}
-                    <a href="{{ url('/formulaire-tel') }}" class="btn btn-rounded btn-vert">Tester votre éligibilité</a>
+                    <a href="#section-formulaire" class="btn btn-rounded btn-vert btn-formulaire">Tester votre éligibilité</a>
                 </div>
             </div>
         </div>
@@ -87,15 +89,15 @@
             </div>
         </div> <!-- end row -->
         <div class="row justify-content-around mt-30">
-            <div class="col col-md-auto">
+            <div class="col col-sm-12 col-md-auto">
                 <div id="rect-orange"></div>
                 <p>Garage (en rez-de-chaussée ou en sous-sol), caves</p>
             </div>
-            <div class="col col-md-auto">
+            <div class="col col-sm-12 col-md-auto">
                 <div id="rect-bleue"></div>
                 <p>Pièces à vivre</p>
             </div>
-            <div class="col col-md-auto">
+            <div class="col col-sm-12 col-md-auto">
                 <div id="rect-vert"></div>
                 <p>Surface isolée</p>
             </div>
@@ -110,7 +112,7 @@
             <div class="col-md-5">
                 <div class="feat-description">
                     <h4 data-color="bleue">L'isolation de vos combles perdus</h4>
-                    <p class="gras_500">Vous avez des combles que vous n'utilisez pas :</p>
+                    <p class="gras_500">Vous avez des combles que vous n'utilisez pas:</p>
                     <p class="text-muted">L'isolation des combles <span class="gras_500">empêche les pertes de chaleur en hiver</span> et permet de <span class="gras_500">garder la fraîcheur en été</span>. Deux techniques sont utilisées pour isoler vos combles perdus : la projection de  <span class="gras_500">laine de verre (ou de roche)</span> à souffler ou la pose de <span class="gras_500">rouleaux de laine de verre</span>, sur toute la surface des combles.</p>
                     <a href="{{ route('site-web.isolation-combles') }}" class="btn btn-custom">Isolation des combles</a>
                 </div>
@@ -193,7 +195,7 @@
 <section class="section" id="section-type-isolation4">
     <div class="container">
         <div class="row justify-content-around align-items-end">
-            <div class="col-md-5">
+            <div class="col-md-5 order-2">
                 <div style="position: relative";>
                     <img src="{{ asset('images/technique-isolation-plafond.jpg') }}" alt="img" class="img-fluid rounded">
                     <div class="bg-overlay">
@@ -219,10 +221,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 order-1">
                 <div class="feat-description">
                     <h4 data-color="bleue">L'isolation des caves et garages</h4>
-                    <p class="gras_500">Vous avez un garage en rez-de-chaussée ou en sous-sol, des caves :</p>
+                    <p class="gras_500">Vous avez un garage en rez-de-chaussée ou en sous-sol, des caves:</p>
                     <p class="text-muted">En isolant le plafond de votre garage ou de votre cave, <span class="gras_500">vous isolez avant tout le sol de vos pièces à vivre</span> et vous évitez les déperditions thermiques à travers le sol.
                         Cette isolation est réalisée en posant des <span class="gras_500">panneaux de polystyrène ou de laine de verre</span> sur le plafond du garage ou des caves.</p>
                     <a href="{{ route('site-web.isolation-sols') }}" class="btn btn-custom">Isolation des sols</a>
@@ -355,7 +357,7 @@
                 <img src="{{ asset('images/carte-france-isolation2.svg') }}" class="image-region-intervention" alt="Carte des zones de France éligibles à lisolation pour 1€ ">
             </div>
             <div class="col-sm-12 col-md-6">
-                <h3 class="text-left mb-40">Les régions concernées :</h3>
+                <h3 class="mb-40">Les régions concernées :</h3>
                 <p><span class="gras_500">L'État a définit 3 zones climatiques(H1, H2, H3)</span> pour les opérations d'aides mises en place pour réduire la consommation d'énergie.</p>
                 <p>Vous habitez en  <span class="gras_500" data-color="vert">zone H1</span>, dans la région des <span class="gras_500" data-color="vert">Hauts-de-France</span>, en <span class="gras_500" data-color="vert">Normandie</span>, en <span class="gras_500" data-color="vert">Ile-de-France</span>, dans le <span class="gras_500" data-color="vert">Grand-Est</span>, en <span class="gras_500" data-color="vert">Centre Val-de-Loire</span>, en <span class="gras_500" data-color="vert">Bourgogne-Franche-Comté</span>, en <span class="gras_500" data-color="vert">Auvergne-Rhones-Alpes</span>, vous pouvez bénificier de l'isolation de votre maison pour 1€, sous conditions d'éligibilité.</p>
                 {{--<p class="mt-40"><span class="gras_500" data-color="vert">Ce dispositif va être étendu à d'autres régions</span> de France. Nous vous proposons de vous tenir informé des dispositions qui seront prises pour bénificier de l'isolation à 1€ dans votre région.</p>
@@ -406,7 +408,7 @@
         <p class="text-center sub-title-logo mb-30">Des professionnels qualifiés</p>
         <div class="row societe-part1 justify-content-center mb-30">
             <div class="col-sm-12 col-md-10">
-                <div class="d-flex flex-sm-column align-items-end flex-md-row">
+                <div class="d-flex flex-sm-column align-items-sm-center flex-md-row align-items-md-end">
                     <img src="{{ asset('images/Qualibat-RGE.jpg') }}" alt="">
                     <div id="text-label" class="ml-40 align-self-end">
                         <h2 class="mb-30" data-color="bleue">Le label <span class="gras_700" data-color="vert">RGE Qualibat </span>: Un gage de <span class="gras_500">qualité :</span></h2>
@@ -418,9 +420,9 @@
             </div>
         </div>
         <div class="row societe-part2 justify-content-center">
-            <div class="col-sm-12 col-md-6" id="presentation-societe">
+            <div class="col-sm-12 col-md-6 order-sm-2 order-md-1" id="presentation-societe">
             </div>
-            <div class="col-sm-12 col-md-6 mb-30">
+            <div class="col-sm-12 col-md-6 order-sm-1 order-md-2 mb-30">
                 <div id="presentation-societe2">
                     <div class="features-box d-flex">
                         <i class="icon-fantastic icon-icon-facture"></i>
@@ -470,7 +472,7 @@
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
-                <p class="testimonial-content mb-auto">J'ai fait le test. Un conseiller m'a rappelé le lendemain pour m'expliquer la suite. Un technicien est venu pour prendre les mesures. <span class="gras_500">1 semaine après, ils sont passé pour poser l' isolation</span>. Ils m'ont donné tout de suite ma facture avec juste 1€ symbolique à payer. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                <p class="testimonial-content">J'ai fait le test. Un conseiller m'a rappelé le lendemain pour m'expliquer la suite. Un technicien est venu pour prendre les mesures. <span class="gras_500">1 semaine après, ils sont passé pour poser l' isolation</span>. Ils m'ont donné tout de suite ma facture avec juste 1€ symbolique à payer. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                 <div class="info-testimonial">
                     <img src="{{ asset('images/photo-temoignage1.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
                     <div class="info-testimonial-client">
@@ -481,7 +483,7 @@
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
-                <p class="testimonial-content mb-auto">Des amis nous ont parlé de ce programme. <span class="gras_500">Même si mes revenus sont correctes, j'étais éligible</span>. On a isolé nos combles et la cave. On a diminué le chauffage dans la maison et il fait toujours aussi bon à l'intérieur. On attend de voir la prochaine facture de chauffage. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                <p class="testimonial-content">Des amis nous ont parlé de ce programme. <span class="gras_500">Même si mes revenus sont correctes, j'étais éligible</span>. On a isolé nos combles et la cave. On a diminué le chauffage dans la maison et il fait toujours aussi bon à l'intérieur. On attend de voir la prochaine facture de chauffage. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                 <div class="info-testimonial">
                     <img src="{{ asset('images/photo-temoignage2.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
                     <div class="info-testimonial-client">
@@ -492,7 +494,7 @@
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
-                <p class="testimonial-content mb-auto">Il fait froid dans notre grande maison l'hiver, ça revient vraiment cher pour la chauffer entièrement. Les ouvriers nous ont expliqué ce qu'ils allaient faire. <span class="gras_500">Les travaux ont duré 4 heures et on a rien eu à faire</span>. ils ont pris le temps de tout nettoyer avant de partir. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                <p class="testimonial-content">Il fait froid dans notre grande maison l'hiver, ça revient vraiment cher pour la chauffer entièrement. Les ouvriers nous ont expliqué ce qu'ils allaient faire. <span class="gras_500">Les travaux ont duré 4 heures et on a rien eu à faire</span>. ils ont pris le temps de tout nettoyer avant de partir. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                 <div class="info-testimonial">
                     <img src="{{ asset('images/photo-temoignage3.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
                     <div class="info-testimonial-client">
