@@ -89,15 +89,15 @@
             </div>
         </div> <!-- end row -->
         <div class="row justify-content-around mt-30">
-            <div class="col col-sm-12 col-md-auto">
+            <div class="col-xs-12 col-md-auto">
                 <div id="rect-orange"></div>
                 <p>Garage (en rez-de-chaussée ou en sous-sol), caves</p>
             </div>
-            <div class="col col-sm-12 col-md-auto">
+            <div class="col-xs-12 col-md-auto">
                 <div id="rect-bleue"></div>
                 <p>Pièces à vivre</p>
             </div>
-            <div class="col col-sm-12 col-md-auto">
+            <div class="col-xs-12 col-md-auto">
                 <div id="rect-vert"></div>
                 <p>Surface isolée</p>
             </div>
@@ -306,7 +306,7 @@
             </div>
         </div>
         <div class="row justify-content-center mt-40">
-            <div class="col-sm-12 col-md-9">
+            <div class="col-xs-12 col-md-9">
                 <table class="table table-bordered">
                     <thead class="thead-inverse">
                     <tr>
@@ -401,7 +401,7 @@
 <section class="section" id="section-zones">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-sm-12 col-md-6">
+            <div class="col-xs-12 col-md-6">
                 <h2 class="gras_700 text-center" data-color="vert">Zone H1</h2>
                 <img src="{{ asset('images/carte-france-isolation2.svg') }}" class="image-region-intervention" alt="Carte des zones de France éligibles à lisolation pour 1€ ">
             </div>
@@ -456,8 +456,8 @@
         <img id="logo" class="block-center"src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat">
         <p class="text-center sub-title-logo mb-30">Des professionnels qualifiés</p>
         <div class="row societe-part1 justify-content-center mb-30">
-            <div class="col-sm-12 col-md-10">
-                <div class="d-flex flex-sm-column align-items-sm-center flex-md-row align-items-md-end">
+            <div class="col-xs-12 col-md-10">
+                <div class="d-flex flex-xs-column align-items-xs-center flex-md-row align-items-md-end">
                     <img src="{{ asset('images/Qualibat-RGE.jpg') }}" alt="">
                     <div id="text-label" class="ml-40 align-self-end">
                         <h2 class="mb-30" data-color="bleue">Le label <span class="gras_700" data-color="vert">RGE Qualibat </span>: Un gage de <span class="gras_500">qualité :</span></h2>
@@ -469,9 +469,9 @@
             </div>
         </div>
         <div class="row societe-part2 justify-content-center">
-            <div class="col-sm-12 col-md-6 order-sm-2 order-md-1" id="presentation-societe">
+            <div class="col-sm-12 col-md-6 order-xs-2 order-md-1" id="presentation-societe">
             </div>
-            <div class="col-sm-12 col-md-6 order-sm-1 order-md-2 mb-30">
+            <div class="col-sm-12 col-md-6 order-xs-1 order-md-2 mb-30">
                 <div id="presentation-societe2">
                     <div class="features-box d-flex">
                         <i class="icon-fantastic icon-icon-facture"></i>
