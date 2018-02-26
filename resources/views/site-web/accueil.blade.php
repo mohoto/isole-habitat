@@ -344,9 +344,58 @@
                     </tr>
                     </tbody>
                 </table>
-                <p class="text-muted text-center">*Agence De l'Environnement et de la Maitrise de l'Energie</p>
             </div>
         </div>
+        {{--<div class="row justify-content-center mt-40">
+            <div class="col-sm-12 col-md-8">
+                <table class="table table-bordered table-responsive">
+                    <thead class="">
+                    <tr>
+                        <th>Nombre de personnes</br>dans le foyer</th>
+                        <th colspan="2">Plafond de Revenu fiscal de référence <a href="#" class="info-revenu"><i class="ion-ios7-help-outline" data-color="orange"></i></a></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td>Pour l'Ile-de-France</td>
+                        <td>Pour les autres régions</td>
+                    </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>19 803 €</td>
+                            <td>14 308 €</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>29 066 €</td>
+                            <td>20 925 €</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>34 906 €</td>
+                            <td>25 166 €</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>40 758 €</td>
+                            <td>29 400 €</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>46 630 €</td>
+                            <td>33 642 €</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Par personne suppl.</th>
+                            <td>+ 5860 €</td>
+                            <td>+ 4241 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-muted text-center">*Agence De l'Environnement et de la Maitrise de l'Energie</p>
+            </div>
+        </div>--}}
     </div>
 </section>
 <section class="section" id="section-zones">
@@ -472,7 +521,7 @@
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
-                <p class="testimonial-content">J'ai fait le test. Un conseiller m'a rappelé le lendemain pour m'expliquer la suite. Un technicien est venu pour prendre les mesures. <span class="gras_500">1 semaine après, ils sont passé pour poser l' isolation</span>. Ils m'ont donné tout de suite ma facture avec juste 1€ symbolique à payer. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                <p class="testimonial-content">J'ai fait le test, un conseiller m'a rappelé le lendemain pour m'expliquer la suite. Un technicien est venu pour prendre les mesures. <span class="gras_500">1 semaine après, ils sont passé pour poser l'isolation</span>. Ils m'ont donné tout de suite ma facture avec juste 1€ symbolique à payer. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                 <div class="info-testimonial">
                     <img src="{{ asset('images/photo-temoignage1.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
                     <div class="info-testimonial-client">
@@ -483,7 +532,7 @@
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
-                <p class="testimonial-content">Des amis nous ont parlé de ce programme. <span class="gras_500">Même si mes revenus sont correctes, j'étais éligible</span>. On a isolé nos combles et la cave. On a diminué le chauffage dans la maison et il fait toujours aussi bon à l'intérieur. On attend de voir la prochaine facture de chauffage. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                <p class="testimonial-content">Des amis nous ont parlé de ce programme. <span class="gras_500">Même si mes revenus sont corrects, j'étais éligible</span>. On a isolé nos combles et la cave. On a diminué le chauffage dans la maison et il fait toujours aussi bon à l'intérieur. On attend de voir la prochaine facture de chauffage. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                 <div class="info-testimonial">
                     <img src="{{ asset('images/photo-temoignage2.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
                     <div class="info-testimonial-client">

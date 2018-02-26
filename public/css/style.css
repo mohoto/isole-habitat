@@ -1230,6 +1230,30 @@ label.type-heure {
   color: #ee7626;
   font-weight: bold;
 }
+
+.section.section-questions .table.table-responsive thead th {
+  vertical-align: middle;
+}
+.section.section-questions .table.table-responsive>thead>tr>th:not(:first-child):not(:last-child) {
+  font-size: 1.8em;
+}
+.section.section-questions .table.table-responsive>thead>tr>th:not(:first-child) {
+  text-align: center;
+}
+.section.section-questions .table.table-responsive>tbody>tr>td:not(:first-child) {
+  text-align: center;
+}
+.section.section-questions .table.table-responsive>thead>tr>th {
+  color: #fff;
+  background-color: #8ab326;
+}
+.section.section-questions .table.table-responsive>thead>tr>th i{
+  font-size: 1.6em;
+  color: #ee7626;
+  font-weight: bold;
+}
+
+
 .section#section-questions-cee{
 
 }
