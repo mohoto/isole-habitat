@@ -457,7 +457,7 @@
         <p class="text-center sub-title-logo mb-30">Des professionnels qualifiés</p>
         <div class="row societe-part1 justify-content-center mb-30">
             <div class="col-xs-12 col-md-10">
-                <div class="d-flex flex-xs-column align-items-xs-center flex-md-row align-items-md-end">
+                <div class="d-flex flex-xs-column align-items-xs-center flex-sm-column align-items-sm-center flex-md-row align-items-md-end">
                     <img src="{{ asset('images/Qualibat-RGE.jpg') }}" alt="">
                     <div id="text-label" class="ml-40 align-self-end">
                         <h2 class="mb-30" data-color="bleue">Le label <span class="gras_700" data-color="vert">RGE Qualibat </span>: Un gage de <span class="gras_500">qualité :</span></h2>
@@ -469,9 +469,9 @@
             </div>
         </div>
         <div class="row societe-part2 justify-content-center">
-            <div class="col-sm-12 col-md-6 order-xs-2 order-md-1" id="presentation-societe">
+            <div class="col-sm-12 col-md-6 order-xs-2 order-sm-2 order-md-1" id="presentation-societe">
             </div>
-            <div class="col-sm-12 col-md-6 order-xs-1 order-md-2 mb-30">
+            <div class="col-sm-12 col-md-6 order-xs-1 order-sm-1 order-md-2 mb-30">
                 <div id="presentation-societe2">
                     <div class="features-box d-flex">
                         <i class="icon-fantastic icon-icon-facture"></i>

@@ -2679,7 +2679,7 @@ label.type-heure {
   }
 
   .section#section-questions-cee .mascotte-cee {
-    top: -13%;
+    top: -7%;
   }
 
   .section#section-zones h3 {
@@ -2723,5 +2723,9 @@ label.type-heure {
     background-size: contain;
     background-position: center bottom;
     padding: 200px;
+  }
+
+  .section#section-questions-cee .mascotte-cee {
+    display:none;
   }
 }
