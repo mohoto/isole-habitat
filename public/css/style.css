@@ -446,7 +446,13 @@ a:hover,a:focus,.a:active {
     padding-left: 0.9rem;
 }
 }
-
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: auto;
+  -webkit-flex-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
 .navbar-toggle .icon-bar {
   background-color: #ffffff;
 }
@@ -2374,6 +2380,7 @@ label.type-heure {
 
 .navbar-custom .navbar-nav> li {
   position: relative;
+  margin-top: auto;
 }
 .navbar-custom .has-submenu.active a {
   color: #8ab326;
@@ -2726,6 +2733,10 @@ label.type-heure {
   }
 
   .section#section-questions-cee .mascotte-cee {
+    display:none;
+  }
+
+  .navbar-custom .btn-custom {
     display:none;
   }
 }

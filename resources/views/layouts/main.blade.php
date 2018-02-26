@@ -42,7 +42,7 @@
         <link href="plugins/sweet-alert2/sweetalert2.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <script type="text/javascript" src="js/modernizr.min.js"></script>
 
 
@@ -124,7 +124,7 @@
         </div>
         {{--<a href="#" class="btn btn-orange popup_aide" data-toggle="modal" data-target="#phoneModal" data-animation="fadein" data-plugin="custommodal" data-overlaySpeed="200" data-overlayColor="#36404a">Besoin de conseils <i class="ion-help"></i></a>--}}
         <!-- Navbar -->
-        <nav class="navbar navbar-custom navbar-expand-lg navbar-light">
+        {{--<nav class="navbar navbar-custom navbar-expand-lg navbar-light">
             <div class="navbar-block d-flex align-items-end">
                 <a class="navbar-brand logo" href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsMenu" aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -139,8 +139,8 @@
                             <a class="nav-link" href="#features">Les travaux d'isolation</a>
                             <ul class="submenu">
                                 <li><a href="{{ route('site-web.isolation-combles') }}">L'isolation des combles</a></li>
-                                {{--<li><a href="{{ route('site-web.isolation-murs') }}">L'isolation des murs</a></li>--}}
-                                {{--<li><a href="{{ route('site-web.isolation-sols') }}">L'isolation des caves et garages</a></li>--}}
+                                --}}{{--<li><a href="{{ route('site-web.isolation-murs') }}">L'isolation des murs</a></li>--}}{{--
+                                --}}{{--<li><a href="{{ route('site-web.isolation-sols') }}">L'isolation des caves et garages</a></li>--}}{{--
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -150,6 +150,32 @@
                 </div>
                 <div class="navbar-phone">
                     <button class="btn btn-custom navbar-btn waves-effect waves-light"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></button>
+                </div>
+            </div>
+        </nav>--}}
+        <nav class="navbar navbar-custom navbar-expand-lg navbar-light">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <a class="navbar-brand logo" href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsMenu" aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarsMenu">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{{ route('site-web.accueil') }}">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('site-web.isolation-combles') }}">L'isolation des combles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('site-web.societe') }}">Qui sommes-nous?</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn btn-custom navbar-btn waves-effect waves-light"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
