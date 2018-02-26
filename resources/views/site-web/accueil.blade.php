@@ -476,7 +476,7 @@
                     <div class="features-box d-flex">
                         <i class="icon-fantastic icon-icon-facture"></i>
                         <div class="ml-20 align-self-center text-left">
-                            <h3>Aucun démarche à faire</h3>
+                            <h3>Aucune démarche à faire</h3>
                             <p>Nous nous occupons de toutes les formalités.</p>
                         </div>
                     </div>
