@@ -469,9 +469,9 @@
             </div>
         </div>
         <div class="row societe-part2 justify-content-center">
-            <div class="col-xl-12 order-2 col-sm-12 col-md-6 order-sm-2 order-md-1" id="presentation-societe">
+            <div class="order-2 col-sm-12 col-md-6 order-sm-2 order-md-1" id="presentation-societe">
             </div>
-            <div class="col-sm-12 col-md-6 order-1 order-sm-1 order-md-2 mb-30">
+            <div class="col-md-6 order-1 order-sm-1 order-md-2 mb-30">
                 <div id="presentation-societe2">
                     <div class="features-box d-flex">
                         <i class="icon-fantastic icon-icon-facture"></i>
