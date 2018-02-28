@@ -9,6 +9,10 @@
                 <h1 class="text-center mt-50 mb-50">Qui sommes-nous?</h1>
                 <h2 class="text-center mb-30" data-color="vert">Notre mission</h2>
                 <p>Lutter contre la précarité énergétique dans les logements mal isolés et promouvoir les programmes d’aide mis en place par l’Etat pour l’amélioration des habitats.</p>
+                <p>En France, on estime que 5,6 millions de ménages sont en situation de précarité énergétique. Le prix des énergie ne cessent d'augmenter et le budget consacré à la consommation d'énergie ne cesse d'augmenter.</p>
+                <p class="gras_500">Une mauvaise isolation est l'un des facteur les plus important de la «précarité énergétique».</p>
+                <p>les Français consacrent en moyenne 14% de leur budget pour se chauffer</p>
+                <p>87 % des ménages en situation de précarité énergétique sont dans le parc privé et plus d'un million des propriétaires en situation de précarité énergétique résident en maisons individuelles</p>
             </div>
         </div>
         <div class="row justify-content-center mt-30 mb-50">
@@ -16,7 +20,7 @@
                 <h2 class="text-center mb-30" data-color="vert">Des spécialistes de l'isolation</h2>
                 <p><span class="gras_500" data-color="vert">Isole </span><span class="text-habitat gras_500" data-color="orange">HABITAT </span> est un service du groupe PRESTA HABITAT, société experte dans l'isolation des habitats et la transition énergétique. Nous comptons un réseau d’entreprises spécialisées dans l’isolation des logements.</p>
                 <p><span class="gras_500">Nous nous occupons de toutes les formalités</span> pour que vous puissiez bénéficier de l'isolation pour 1€ symbolique, nous mandatons ensuite une entreprise partenaire <span class="gras_500" data-color="vert"> RGE </span>pour vos travaux d’isolation.</p>
-                <p><span class="gras_500" data-color="vert">Le label RGE</span> vous donne la garantie que cette entreprise est reconnu par l’Etat.</p>
+                <p><span class="gras_500" data-color="vert">Le label RGE</span> vous donne la garantie que cette entreprise est reconnue par l’Etat.</p>
             </div>
         </div>
         <div class="row justify-content-center mt-30 mb-50">
@@ -27,7 +31,7 @@
                 <img src="{{ asset('images/visite-technique-isolation.jpg') }}" alt="illustration visite technique isolation à 1€" class="img-fluid rounded">
             </div>
             <div class="col-sm-12 col-md-5">
-            <p>Un de nos technicien se déplace chez vous pour déterminer vos besoins en isolation : en effet, chaque maison est différente et nécessite une isolation adaptée. Il vous renseignera sur les types d'isolations auquelles vous avez droit et sur le type d'isolant à poser dans votre maison.</p>
+            <p>Un de nos technicien se déplace chez vous pour déterminer vos besoins en isolation : en effet, chaque maison est différente et nécessite une isolation adaptée. Il vous renseignera sur les types d'isolations auxquels vous avez droit et sur le type d'isolant à poser dans votre maison.</p>
                 <p><span class="gras_500">Aucun frais ne vous sera demandé pour cette pré-viste</span>, ce processus fait partie intégrante de notre programme d'isolation pour 1€ symbolique.</p>
             </div>
         </div>

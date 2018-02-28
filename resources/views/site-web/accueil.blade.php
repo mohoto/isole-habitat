@@ -63,7 +63,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2 class="title mb-40" data-color="vert">Les types d'isolation auquels vous avez droit :</h2>
+                <h2 class="title mb-40" data-color="vert">Les types d'isolation auxquels vous avez droit :</h2>
                 <h3 class="mt-20" data-color="bleue">Avec l’isolation à 1€, vous pouvez cumuler ces 2 types d’isolation</h3>
                 <h4 class="mt-20" data-color="orange">Surface illimitée!</h4>
             </div>

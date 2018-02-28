@@ -66,10 +66,8 @@
         }
 
         /*Popup "besoin de conseils"  avec submit "rappel"*/
-         //$('#btn_phone_modal').click(function () {
-         $('#phoneFormModal').submit(function () {
+        $('#btn_phone_modal').click(function () {
             var x = document.querySelector('#phoneFormModal');
-            //valHeure = getHourValModal();
             var data = $('#phoneFormModal').serializeArray();
             $.ajaxSetup({
                 headers: {
@@ -80,15 +78,18 @@
                 type:'post',
                 url: '/isolation/public/formulaire-rappel',
                 data: data,
-                success: function() {
-                    $('#phoneModal').modal('hide');
+                success: function(response) {
+                    //$('#phoneModal').modal('hide');
                     alert('enregistré');
+                    alert(response);
+                    //alert(response.nonClient);
                     /*swal({
-                        text: "<h5 data-color='orange'>Votre demande a été prise en compte.</h5>" +
-                              "<h6>Un conseiller vous rappelera sous 24 heures.</h6>",
-                        timer: 3000,
-                        showConfirmButton: false
-                    });*/
+                     text: "<h5 data-color='orange'>Votre demande a été prise en compte</h5>" +
+                     "<p>Un conseiller isolation vous rappellera rapidement" +
+                     "<p><strong data-color="orange">Entre " + valHeure + "</strong></p>",
+                     timer: 3000,
+                     showConfirmButton: false
+                     });*/
                 },
                 error: function(){
                     alert('pas enregistré');
@@ -207,6 +208,10 @@
         /*************************************************/
         /*************************************************/
 
+        /*$('.popup_aide').click(function (e) {
+            e.preventDefault();
+            toastr.info('Are you the 6 fingered man?');
+        });*/
 
 
 

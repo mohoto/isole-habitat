@@ -306,7 +306,7 @@
                         <div class="circle-block-step" id="circle1">
                             <i class="ion-checkmark-round"></i>
                         </div>
-                        <h3 class="steps-name">Tester votre éligibilité</br>Réponse immédiate</h3>
+                        <h3 class="steps-name">Testez votre éligibilité</br>Réponse immédiate</h3>
                     </div>
                     <div class="block-step" id="block-step2">
                         <div class="circle-block-step" id="circle2">

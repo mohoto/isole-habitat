@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}"  prefix="og: http://ogp.me/ns#">
     <head>
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
         <title>Isole habitat : @yield('pageTitle')</title>
         <meta name="description" content="">
         <meta charset="utf-8">
@@ -39,6 +40,9 @@
         <!-- Icon CSS -->
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/icons.css" rel="stylesheet">
+        <!-- Toastr CSS -->
+        <link href="css/toastr.css" rel="stylesheet">
+        <!-- SweetAlert2 CSS -->
         <link href="plugins/sweet-alert2/sweetalert2.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
@@ -66,9 +70,21 @@
                             <p class="text-center">En moins de 24 heures</p>
                         </div>
                     </div>
-                    <form id="phoneFormModal" method="post" action="" novalidate>
-                        {{ csrf_field() }}
+                        {{--@if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif--}}
+                        {{--@foreach($errors->all() as $error)
+                            toastr.info('Are you the 6 fingered man?')
+                        @endforeach--}}
+                    <form id="phoneFormModal">
                         <div class="modal-body">
+                            {{ csrf_field() }}
                             <div class="row">
                                 <div class="col-6">
                                     <input type="radio" class="radio" name="rappel_civilite" id="civ_Mme" required="required" value="Madame" checked>
@@ -123,6 +139,7 @@
             </div>
         </div>
         {{--<a href="#" class="btn btn-orange popup_aide" data-toggle="modal" data-target="#phoneModal" data-animation="fadein" data-plugin="custommodal" data-overlaySpeed="200" data-overlayColor="#36404a">Besoin de conseils <i class="ion-help"></i></a>--}}
+        {{--<a href="#" class="btn btn-orange popup_aide">Besoin de conseils <i class="ion-help"></i></a>--}}
         <!-- Navbar -->
         {{--<nav class="navbar navbar-custom navbar-expand-lg navbar-light">
             <div class="navbar-block d-flex align-items-end">
@@ -240,10 +257,10 @@
                     </div>
                     <div class="col-md-4">
                         <ul class="liens-footer">
-                            <li><a href="#">L'isolation des combles</a></li>
+                            <li><a href="{{ route('site-web.isolation-combles') }}">L'isolation des combles</a></li>
                             {{--<li><a href="#">L'isolation des murs</a></li>--}}
-                            <li><a href="#">L'isolation des caves et garges</a></li>
-                            <li><a href="#">Qui sommes-nous?</a></li>
+                            {{--<li><a href="#">L'isolation des caves et garges</a></li>--}}
+                            <li><a href="{{ route('site-web.societe') }}">Qui sommes-nous?</a></li>
                             {{--<li><a href="#">Mentions légales</a></li>--}}
                         </ul>
                     </div>
@@ -284,6 +301,8 @@
 
         <!-- Owl Carousel -->
         <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <!-- Toastr -->
+        <script type="text/javascript" src="js/toastr.min.js"></script>
         <!-- Sweet alert -->
         <script type="text/javascript" src="plugins/sweet-alert2/sweetalert2.min.js"></script>
         <!-- My custom-->
