@@ -78,14 +78,6 @@
                             </ul>
                         </div>
                     </div>
-                    {{--@if (count($errors) > 0)
-                        @foreach ($errors->all() as $error)
-                            <div class="alert alert-danger">{{ $error }}</div>
-                        @endforeach
-                    @endif--}}
-                    {{--@foreach($errors->all() as $error)
-                            toastr.info('Are you the 6 fingered man?')
-                        @endforeach--}}
                     <form id="phoneFormModal">
                         <div class="modal-body">
                             {{ csrf_field() }}
@@ -142,8 +134,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btn btn-orange popup_aide" data-toggle="modal" data-target="#phoneModal" data-animation="fadein" data-plugin="custommodal" data-overlaySpeed="200" data-overlayColor="#36404a">Besoin de conseils <i class="ion-help"></i></a>
-        {{--<a href="{{ url('formulaire-tel') }}" class="btn btn-orange popup_aide">Besoin de conseils <i class="ion-help"></i></a>--}}
+        {{--<a href="#" class="btn btn-orange popup_aide" data-toggle="modal" data-target="#phoneModal" data-animation="fadein" data-plugin="custommodal" data-overlaySpeed="200" data-overlayColor="#36404a">Besoin de conseils <i class="ion-help"></i></a>--}}
         <!-- Navbar -->
         {{--<nav class="navbar navbar-custom navbar-expand-lg navbar-light">
             <div class="navbar-block d-flex align-items-end">
