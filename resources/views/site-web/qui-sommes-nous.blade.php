@@ -11,7 +11,7 @@
                 <p>Lutter contre la précarité énergétique dans les logements mal isolés et promouvoir les programmes d’aide mis en place par l’Etat pour l’amélioration des habitats.</p>
                 <p>En France, on estime que 5,6 millions de ménages sont en situation de précarité énergétique. Le prix des énergie ne cessent d'augmenter et le budget consacré à la consommation d'énergie ne cesse d'augmenter.</p>
                 <p class="gras_500">Une mauvaise isolation est l'un des facteur les plus important de la «précarité énergétique».</p>
-                <p>Les Français consacrent en moyenne 14% de leur budget pour se chauffe.r</p>
+                <p>Les Français consacrent en moyenne 14% de leur budget pour se chauffer.</p>
                 <p>87 % des ménages en situation de précarité énergétique sont dans le parc privé et plus d'un million des propriétaires en situation de précarité énergétique résident en maisons individuelles.</p>
             </div>
         </div>
