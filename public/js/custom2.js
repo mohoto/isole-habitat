@@ -2,6 +2,9 @@
 
     $(document).ready(function(){
 
+
+
+
         /*Sweet Alert*/
         $('.info-revenu').click(function (e) {
             e.preventDefault();
@@ -30,7 +33,6 @@
         /******** Scroll animate to btn*******/
         $('.btn-formulaire').click(function (e) {
             e.preventDefault();
-            /*$('#section-formulaire').slideDown();*/
             var id = '#section-formulaire';
             var speed = 750;
             $('html,body').animate({
@@ -78,23 +80,75 @@
                 type:'post',
                 url: '/isolation/public/formulaire-rappel',
                 data: data,
-                success: function(response) {
-                    //$('#phoneModal').modal('hide');
-                    alert('enregistré');
-                    alert(response);
-                    //alert(response.nonClient);
-                    /*swal({
-                     text: "<h5 data-color='orange'>Votre demande a été prise en compte</h5>" +
-                     "<p>Un conseiller isolation vous rappellera rapidement" +
-                     "<p><strong data-color="orange">Entre " + valHeure + "</strong></p>",
-                     timer: 3000,
-                     showConfirmButton: false
-                     });*/
-                },
-                error: function(){
-                    alert('pas enregistré');
-                }
-            });
+                dataType: 'JSON'
+            })
+            .done(function(response){
+                $('#phoneModal').modal('hide');
+                swal({
+                    text: "<h4 class='mt-40 mb-20' data-color='orange'>Votre demande a été prise en compte</h4><p>Un conseiller isolation vous rappellera rapidement</p><p><strong data-color='orange'>Entre " + response.heureRappel + "</strong></p>",
+                    timer: 3000,
+                    showConfirmButton: false
+                });
+            })
+            .fail(function(data) {
+                $.each(data.responseJSON, function(index, val) {
+                     var input = $("input[name='" + index + "']");
+                         input.addClass('active');
+                         setTimeout(function(){
+                             input.removeClass('active');
+                         }, 3000);
+                    $.notify({
+                        // options
+                        icon: 'glyphicon glyphicon-warning-sign',
+                        message: 'Turning standard Bootstrap alerts into "notify" like notifications'
+                    },{
+                        // settings
+                        element: 'body',
+                        position: null,
+                        type: "danger",
+                        allow_dismiss: false,
+                        newest_on_top: false,
+                        showProgressbar: false,
+                        placement: {
+                            from: "top",
+                            align: "center"
+                        },
+                        offset: 100,
+                        spacing: 20,
+                        z_index: 1061,
+                        delay: 500,
+                        timer: 1000,
+                        url_target: '_blank',
+                        mouse_over: null,
+                        animate: {
+                            enter: 'animated fadeInDown',
+                            exit: 'animated fadeOutUp'
+                        },
+                        onShow: function(){
+                            setTimeout(function(){
+                                // enable click after 1 second
+                                $('#btn_phone_modal').prop('disabled',false);
+                            },5000);
+                        },
+                        onShown: null,
+                        onClose: null,
+                        onClosed: null,
+                        icon_type: 'class',
+                        template: '<div data-notify="container" class="col-xs-10 col-sm-3 alert alert-{0}" role="alert" data-background-color="orange">' +
+                        '<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
+                        '<span data-notify="icon"></span> ' +
+                        '<span data-notify="title">{1}</span> ' +
+                        '<span class="text-white mt-20 mb-20" data-notify="message">'+ val + '</span>' +
+                        '<div class="progress" data-notify="progressbar">' +
+                        '<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
+                        '</div>' +
+                        '<a href="{3}" target="{4}" data-notify="url"></a>' +
+                        '</div>'
+                    });
+                });
+
+            })
+
         });
         /*************************************************/
         /*************************************************/
@@ -208,10 +262,6 @@
         /*************************************************/
         /*************************************************/
 
-        /*$('.popup_aide').click(function (e) {
-            e.preventDefault();
-            toastr.info('Are you the 6 fingered man?');
-        });*/
 
 
 

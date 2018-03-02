@@ -3,7 +3,15 @@
 @section('pageClass', 'page_accueil')
 @section('content')
 
-   {{-- <form action="{{ route('site-web.inscription') }}" method="post" class="p-y-3 p-x-2" novalidate>
+   {{--<form action="{{ route('site-web.formulaire-rappel') }}" method="post" class="p-y-3 p-x-2" novalidate>
+       @if (count($errors) > 0)
+           @foreach ($errors->all() as $error)
+               <div class="alert alert-danger">{{ $error }}</div>
+           @endforeach
+       @endif
+       --}}{{--@if(Session::has('success'))
+           toastr.success("{{ Session::get('success') }}")
+       @endif--}}{{--
         {{ csrf_field() }}
         <input type="text" name="rappel_civilite" class="form-control" placeholder="civilité" value="{{ old('rappel_civilite') }}">
         <input type="text" name="rappel_nom" class="form-control" placeholder="nom" value="{{ old('rappel_nom') }}">

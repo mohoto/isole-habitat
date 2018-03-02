@@ -34,6 +34,9 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Owl Carousel CSS -->
+        <link href="css/animate.css" rel="stylesheet">
+
+        <!-- Owl Carousel CSS -->
         <link href="css/owl.carousel.css" rel="stylesheet">
         <link href="css/owl.theme.default.min.css" rel="stylesheet">
 
@@ -41,7 +44,7 @@
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/icons.css" rel="stylesheet">
         <!-- Toastr CSS -->
-        <link href="css/toastr.css" rel="stylesheet">
+        <link href="plugins/toastr/toastr.css" rel="stylesheet">
         <!-- SweetAlert2 CSS -->
         <link href="plugins/sweet-alert2/sweetalert2.min.css" rel="stylesheet">
 
@@ -69,17 +72,18 @@
                             <h4 class="text-center" data-color="orange"><i class="ion-ios7-telephone mr-10"></i>Nous vous rappelons</h4>
                             <p class="text-center">En moins de 24 heures</p>
                         </div>
+                        <div class="alert alert-danger" style="display: none">
+                            <ul class="erreur-list">
+
+                            </ul>
+                        </div>
                     </div>
-                        {{--@if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif--}}
-                        {{--@foreach($errors->all() as $error)
+                    {{--@if (count($errors) > 0)
+                        @foreach ($errors->all() as $error)
+                            <div class="alert alert-danger">{{ $error }}</div>
+                        @endforeach
+                    @endif--}}
+                    {{--@foreach($errors->all() as $error)
                             toastr.info('Are you the 6 fingered man?')
                         @endforeach--}}
                     <form id="phoneFormModal">
@@ -131,15 +135,15 @@
                         </div>
                         <div class="modal-footer">
                             {{--<input type="submit" id="btn_phone_modal" class="btn btn-rounded btn-orange" value="Me rappeler">--}}
-                            <button type="submit" id="btn_phone_modal" class="btn btn-rounded btn-orange">Me rappeler</button>
+                            <button type="button" id="btn_phone_modal" class="btn btn-rounded btn-orange">Me rappeler</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        {{--<a href="#" class="btn btn-orange popup_aide" data-toggle="modal" data-target="#phoneModal" data-animation="fadein" data-plugin="custommodal" data-overlaySpeed="200" data-overlayColor="#36404a">Besoin de conseils <i class="ion-help"></i></a>--}}
-        {{--<a href="#" class="btn btn-orange popup_aide">Besoin de conseils <i class="ion-help"></i></a>--}}
+        <a href="#" class="btn btn-orange popup_aide" data-toggle="modal" data-target="#phoneModal" data-animation="fadein" data-plugin="custommodal" data-overlaySpeed="200" data-overlayColor="#36404a">Besoin de conseils <i class="ion-help"></i></a>
+        {{--<a href="{{ url('formulaire-tel') }}" class="btn btn-orange popup_aide">Besoin de conseils <i class="ion-help"></i></a>--}}
         <!-- Navbar -->
         {{--<nav class="navbar navbar-custom navbar-expand-lg navbar-light">
             <div class="navbar-block d-flex align-items-end">
@@ -302,9 +306,11 @@
         <!-- Owl Carousel -->
         <script type="text/javascript" src="js/owl.carousel.min.js"></script>
         <!-- Toastr -->
-        <script type="text/javascript" src="js/toastr.min.js"></script>
+        <script type="text/javascript" src="plugins/toastr/toastr.min.js"></script>
         <!-- Sweet alert -->
         <script type="text/javascript" src="plugins/sweet-alert2/sweetalert2.min.js"></script>
+        <!-- Notification -->
+        <script type="text/javascript" src="plugins/bootstrap-notify-master/bootstrap-notify.min.js"></script>
         <!-- My custom-->
         <script type="text/javascript" src="js/custom2.js"></script>
         <!--common script for all pages-->

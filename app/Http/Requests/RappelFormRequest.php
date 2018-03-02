@@ -24,15 +24,15 @@ class RappelFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'nom'=>'required',
-            'telephone'=>'required|min:11',
+            'rappel_nom'=>'required',
+            'rappel_telephone'=>'required|min:14',
         ];
     }
     public function messages(){
         return [
-            'nom.required'=>'Veuillez indiqué votre nom',
-            'telephone.required'=>'Veuillez indiquer votre numero de telephone',
-            'telephone.min'=>'Le numero de telephone n\'est pas valide',
+            'rappel_nom.required'=>'Veuillez indiquer votre nom',
+            'rappel_telephone.required'=>'Veuillez indiquer votre numero de telephone',
+            'rappel_telephone.min'=>'Le numero de telephone n\'est pas valide',
         ];
 
     }

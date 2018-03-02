@@ -954,6 +954,9 @@ h1, h2, h3, h4{
   border-color: #ebeef1;
   padding: 1rem .75rem;
 }
+#phoneModal .form-control.active {
+  border-color: #ee7626;
+}
 #phoneModal input[type="radio"] {
   display: none;
 }

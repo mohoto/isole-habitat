@@ -30,7 +30,9 @@ Route::get('isolation-des-murs', array('as' => 'site-web.isolation-murs', functi
 Route::get('isolation-des-sols', array('as' => 'site-web.isolation-sols', function(){
     return view('site-web.isolation-sols');
 }));
+Route::get('formulaire-tel', 'FormController@storeRappel');
 
 Route::post('formulaire-rappel', [
+        'as' => 'site-web.formulaire-rappel',
         'uses' =>'FormController@saveRappel'
 ]);
