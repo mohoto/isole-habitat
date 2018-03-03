@@ -33,7 +33,7 @@
             <div class="col-sm-12 col-md-10">
                 <h2 class="text-center mb-50" data-color="vert">Vous avez des combles que vous n'utilisez pas :</h2>
                 <p>Savez-vous que <span class="gras_500">30% des déperdition de chaleur se font par la toiture</span>. C'est pourquoi, isoler vos combles est une nécessité pour éviter que l'air ambiant chauffé en hiver s'échappe de vos pièces à vivre.  En été, la toiture est la surface de la maison la plus exposée à l’ensoleillement.</p>
-                <p>Pour <span class="gras_500">réaliser des économies d’énergie</span>, avoir un <span class="gras_500">confort thermique ,et même accoustique en toutes saisons</span>, la pose d'un isolant thermique performant dans vos combles est indispensable.</p>
+                <p>Pour <span class="gras_500">réaliser des économies d’énergie</span>, avoir un <span class="gras_500">confort thermique et même accoustique en toutes saisons</span>, la pose d'un isolant thermique performant dans vos combles est indispensable.</p>
                 <p><span class="gras_500">Vos combles ne doivent pas être aménagés</span> pour pouvoir profiter du programme d'isolation pour 1€.</p>
             </div>
             <div class="col-sm-12 col-md-10">

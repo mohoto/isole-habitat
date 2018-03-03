@@ -1,4 +1,4 @@
-<section class="section pt-20 pb-0" id="section-formulaire" data-background-color="bleue-clair">
+<section class="section pt-0 pb-0" id="section-formulaire" data-background-color="bleue-clair">
     {{--<div class="modal fade" id="revenuModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -17,14 +17,14 @@
         </div>
     </div>--}}
     <div class="container">
-        <h2 class="text-center">Vous pouvez aussi profiter de cette aide.</h2>
-        <h3 class="text-center text-muted">45% des foyers sont éligibles à l'isolation à 1 €</h3>
-        {{--<div class="row justify-content-center mt-30">
+        {{--<p class="text-center text-muted">45% des foyers sont éligibles à l'isolation à 1 €</p>--}}
+        <div class="row justify-content-center">
             <div class="col-sm-12 col-md-12 col-lg-8">
-                <div id="block-form">
+                {{--<div id="block-form">
                     <div class="form-header text-center">
-                        <h4 class="text-white">Testez votre éligibilité</h4>
-                        <p class="" data-color="bleue-clair">Réponse immédiate - Sans aucun engagement</p>
+                        <h2 class="text-center gras_500">Vous pouvez aussi profiter de cette aide.</h2>
+                        <h4 class="" data-color="orange">Testez votre éligibilité</h4>
+                        <p class="" data-color="">Réponse immédiate - Sans aucun engagement</p>
                     </div>
                     <div class="form-body">
                         <form id="eligibleForm" action="">
@@ -156,7 +156,7 @@
                                         <div class="col-6">
                                             <p class="titre_input"><span>6-</span>Votre revenu fiscal de référence <a href="#" class="info-revenu"><i class="ion-ios7-help-outline" data-color="orange"></i></a> :</p>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="revenus_reference" name="revenus_reference" Placeholder="19 650€">
+                                                <input type="text" class="form-control" id="revenus_reference" name="revenus_reference" maxlength="6" Placeholder="19 650€">
                                             </div>
                                         </div>
                                         <div class="col-6">
@@ -278,21 +278,21 @@
                         </form>
                         <div class="row mt-20">
                             <div class="tab-block-btn" id="tab-block-prev">
-                                <button type="button " id="prevBtn" class="btn btn-rounded btn-formulaire btn-orange">Précédent</button>
+                                <button type="button" id="prevBtn" class="btn btn-rounded btn-formulaire btn-orange">Précédent</button>
                             </div>
                             <div class="tab-block-btn" id="tab-block-next">
                                 <button type="button" id="nextBtn" class="btn btn-rounded btn-formulaire btn-vert">Suivant</button>
                             </div>
                         </div>
-                    </div>
+                    </div>--}}
                 </div>
             </div>
-        </div>--}}
+        </div>
         <div class="row justify-content-center mt-30">
             <div>
                 <h4 class="text-center mb-20">Appelez-nous:</h4>
                 <button class="btn btn-rounded btn-custom2"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></button>
-                <h5 class="text-center mt-10" data-color="orange">Réponse immédiate</h5>
+                <h5 class="text-center mt-10" data-color="orange">Réponse immédiate.</h5>
             </div>
         </div>
     </div>

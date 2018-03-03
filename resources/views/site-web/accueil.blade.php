@@ -15,7 +15,7 @@
                     <p class=" sub-title mt-10 mb-30" data-color="vert">Un programme pour lutter contre la précarité énergétique</p>
                     <p>Comme 300 000 foyers en France, profitez de cette aide.</p>
                     {{--<a href="#" class="btn btn-rounded btn-vert btn-formulaire">Tester votre éligibilité</a>--}}
-                    <a href="#section-formulaire" class="btn btn-rounded btn-vert btn-formulaire">Testez votre éligibilité</a>
+                    <a href="#section-formulaire" id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire">Testez votre éligibilité</a>
                 </div>
             </div>
         </div>
@@ -248,7 +248,7 @@
             </div>
             <div class="col-md-4 block-information" data-background-color="bleue">
                 <h3><i class="ion-ios7-plus-outline"></i> D'ECONOMIE</h3>
-                <img src="{{ asset('images/icon-economie.svg') }}" alt="img" class="img-fluid rounded">
+                <img src="{{ asset('images/icon-economie.svg') }}" alt="illustration économie sur facture de chauffage" class="img-fluid rounded">
                 <p class="text-center" data-color="blanc">D'économie sur votre facture de chauffage</p>
             </div>
         </div>
@@ -273,7 +273,7 @@
             <div class="col-md-5 col-sm-12 block-question-title">
                 <h3 class="">Qui paye pour mes travaux d'isolation ?</h3>
                 <p><span class="gras_500" data-color="orange">Ce sont les fourniseurs d'énergie</span> : Total, Elf, EDF, Poweo.., qui financent vos travaux d'isolation.</p>
-                <p><span class="gras_500" data-color="orange">L'État</span>, par le biais de la loi "POPE"(Loi n° 2005-781 du 13 juillet 2005, loi de Programmation fixant les Orientations de la Politique Energétique), <span class="gras_500" data-color="orange">oblige ces fournisseurs d'énergie à financer certains travaux d'isolation, à travers le dispositif des certificats d’économies d’énergie (CEE)</span>, dans les foyers en précarité énergétique, sous peine d'amendes.</p>
+                <p><span class="gras_500" data-color="orange">L'État</span>, par le biais de la loi "POPE" (Loi n° 2005-781 du 13 juillet 2005, loi de Programmation fixant les Orientations de la Politique Energétique), <span class="gras_500" data-color="orange">oblige ces fournisseurs d'énergie à financer certains travaux d'isolation, à travers le dispositif des certificats d’économies d’énergie (CEE)</span>, dans les foyers en précarité énergétique, sous peine d'amendes.</p>
                 <p><span class="gras_500" data-color="orange">Les travaux réalisés</span> avec le programme d'isolation à 1€ rentrent dans ce dispositif et <span class="gras_500" data-color="orange">sont intégralement financés</span> et sans <span class="gras_500" data-color="orange">aucun frais à avancer</span>.</p>
             </div>
         </div>
@@ -296,7 +296,7 @@
         <div class="row justify-content-around mt-40">
             <div class="col-md-5 col-sm-12 block-question-title">
                 <h3 class="">Je suis locataire : est-ce que je peux en bénéficier ?</h3>
-                <p>Bien sûr, ce dispositif permet <span class="gras_500" data-color="orange">aux locataires et aux propriétaires</span> d'isoler leur maison. Même si vous avez déjà profité d'autres subventions de l'État(crédit d'impôt, aides de l'Anah, prime rénovation...), vous pouvez prétendre à l'isolation à 1 euro. <span class="gras_500" data-color="orange">Cette aide est cumulable avec tous les autres travaux d’aménagement</span> pour réduire la consomation énergétique.</p>
+                <p>Bien sûr, ce dispositif permet <span class="gras_500" data-color="orange">aux locataires et aux propriétaires</span> d'isoler leur maison. Même si vous avez déjà profité d'autres subventions de l'État (crédit d'impôt, aides de l'Anah, prime rénovation...), vous pouvez prétendre à l'isolation à 1 euro. <span class="gras_500" data-color="orange">Cette aide est cumulable avec tous les autres travaux d’aménagement</span> pour réduire la consomation énergétique.</p>
             </div>
             <div class="col-md-5 col-sm-12 block-question-title">
                 <h3 class="">Comment je peux profiter de cette aide ?</h3>
@@ -403,7 +403,7 @@
         <div class="row align-items-center">
             <div class="col-xs-12 col-md-6">
                 <h2 class="gras_700 text-center" data-color="vert">Zone H1</h2>
-                <img src="{{ asset('images/carte-france-isolation2.svg') }}" class="image-region-intervention" alt="Carte des zones de France éligibles à lisolation pour 1€ ">
+                <img src="{{ asset('images/carte-france-isolation3.svg') }}" class="image-region-intervention" alt="Carte des zones de France éligibles à lisolation pour 1€ ">
             </div>
             <div class="col-sm-12 col-md-6">
                 <h3 class="mb-40">Les régions concernées :</h3>
@@ -447,17 +447,39 @@
         </div>--}}
     </div>
 </section>
-{{--<section class="section pb-0" id="section-precarite-energetique" data-background-color="bleue-clair">
+<section class="section pb-0" id="section-precarite-energetique" data-background-color="bleue-clair">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <h2 class="gras_700 text-center mb-30" data-color="orange">La précarité énergétique</h2>
-                <h3 class="">Une personne est en <span class="gras_500">"précarité énergétique"</span> lorsque celle-si consacre <span class="gras_500">plus de 10% de ses revenus aux dépenses d’énergie</span> dans le logement.</h3>
-                <h4 class="text-center gras_500" data-color="orange">Une mauvaise isolation est l'un des facteurs les plus important de la «précarité énergétique».</h4>
+                <h3 class="">Un menage est en <span class="gras_500">«précarité énergétique»</span> lorsque celui-ci consacre <span class="gras_500">plus de 10% de ses revenus aux dépenses d’énergie</span> dans le logement.</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="features-box">
+                        <img src="{{ asset('images/icon-porcentage-precarite1.svg') }}" alt="illustration économie sur facture de chauffage" class="">
+                        <p class="m-t-20">Des ménages sont dans le parc privé.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="features-box">
+                        <img src="{{ asset('images/icon-porcentage-precarite2.svg') }}" alt="illustration économie sur facture de chauffage" class="">
+                        <p class="m-t-20">Sont propriétaires-occupants.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="features-box">
+                        <img src="{{ asset('images/icon-porcentage-precarite3.svg') }}" alt="illustration économie sur facture de chauffage" class="">
+                        <p class="m-t-20">Ont plus de 60 ans.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                    <h4 class="text-center gras_500" data-color="orange">Une mauvaise isolation est l'un des facteurs les plus importants de la «précarité énergétique».</h4>
+                </div>
             </div>
         </div>
     </div>
-</section>--}}
+</section>
 <!-- Section-formulaire -->
 @include('site-web.layouts.formulaire')
 <!-- end section-formulaire -->
@@ -572,7 +594,7 @@
         <div class="row align-items-end mt-40">
             <div class="col-sm-12 col-md-4" id="">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
-                <p class="mb-0"><span class="gras_500">C'est 1 euro</span>. 24 heures après avoir rempli le document en ligne, j'ai eu la réponse, ça prend 5 minutes. C'est juste quand la personne m'a appelé au vu des documents que j'avais déjà rempli en fait en ligne qu'elle m'a dit : <span class="gras_500">Vous êtes éligible</span>... <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                <p class="mb-0"><span class="gras_500">C'est 1 euro</span>. 24 heures après avoir rempli le document en ligne, j'ai eu la réponse, ça prend 5 minutes. C'est juste quand la personne m'a appelé, au vu des documents que j'avais déjà rempli en fait en ligne, qu'elle m'a dit : <span class="gras_500">Vous êtes éligible</span>... <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
             </div>
             <div class="col-sm-12 col-md-4" id="">
                 <div class="youtube-player embed-responsive embed-responsive-16by9" data-id="w8X4JjIJo5U"></div>

@@ -1432,6 +1432,12 @@ label.type-heure {
   text-align: justify;
 
 }
+.section#section-precarite-energetique img{
+  width: 150px;
+}
+.section#section-precarite-energetique .features-box p{
+  font-size: 1.2em;
+}
 .section#section-testimonials {
   background: url(../images/background-image-testimonials2.jpg) no-repeat;
   background-size: cover;
@@ -1929,11 +1935,8 @@ label.type-heure {
 #block-form .form-header{
   position: relative;
   padding: 20px 0px 5px 0px;
-  /*border-bottom: 6px solid #ee7626;*/
-  background: #8ab326;
-  margin: 0 150px;
-  /*-webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
-  clip-path: polygon(50% 100%, 0 0, 100% 0);*/
+  border-bottom: 6px solid #496174;
+  /*margin: 0 150px;*/
 }
 #block-form .form-header::after{
   position: absolute;
@@ -1942,7 +1945,7 @@ label.type-heure {
   height: 0px;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-top: 30px solid #8ab326;
+  border-top: 30px solid #496174;
   bottom: -30px;
   left: 50%;
   -webkit-transform: translateX(-50%);

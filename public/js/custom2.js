@@ -31,7 +31,7 @@
         /*************************************************/
         /*************************************************/
         /******** Scroll animate to btn*******/
-        $('.btn-formulaire').click(function (e) {
+        $('#btn-section-formulaire').click(function (e) {
             e.preventDefault();
             var id = '#section-formulaire';
             var speed = 750;
