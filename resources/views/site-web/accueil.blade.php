@@ -447,17 +447,17 @@
         </div>--}}
     </div>
 </section>
-<section class="section" id="section-precarite-energetique" data-background-color="bleue-clair">
+{{--<section class="section pb-0" id="section-precarite-energetique" data-background-color="bleue-clair">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <h2 class="gras_700 text-center mb-30" data-color="orange">La précarité énergétique</h2>
-                <h3 class="">Une personne est en "précarité énergétique lorsque celle-si consacre plus de 10% de ses revenus aux dépenses d’énergie dans le logement.</h3>
+                <h3 class="">Une personne est en <span class="gras_500">"précarité énergétique"</span> lorsque celle-si consacre <span class="gras_500">plus de 10% de ses revenus aux dépenses d’énergie</span> dans le logement.</h3>
                 <h4 class="text-center gras_500" data-color="orange">Une mauvaise isolation est l'un des facteurs les plus important de la «précarité énergétique».</h4>
             </div>
         </div>
     </div>
-</section>
+</section>--}}
 <!-- Section-formulaire -->
 @include('site-web.layouts.formulaire')
 <!-- end section-formulaire -->

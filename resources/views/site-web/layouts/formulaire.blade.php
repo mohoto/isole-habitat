@@ -1,4 +1,4 @@
-<section class="section" id="section-formulaire" data-background-color="bleue-clair">
+<section class="section pt-20 pb-0" id="section-formulaire" data-background-color="bleue-clair">
     {{--<div class="modal fade" id="revenuModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -19,7 +19,7 @@
     <div class="container">
         <h2 class="text-center">Vous pouvez aussi profiter de cette aide.</h2>
         <h3 class="text-center text-muted">45% des foyers sont éligibles à l'isolation à 1 €</h3>
-        <div class="row justify-content-center mt-30">
+        {{--<div class="row justify-content-center mt-30">
             <div class="col-sm-12 col-md-12 col-lg-8">
                 <div id="block-form">
                     <div class="form-header text-center">
@@ -80,17 +80,17 @@
                                                 <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-combles" required="required" value="Mme">
                                                 <label for="type-isolation-combles" class="type-isolation"><i class="icon-fantastic icon-isolation-combles-form"></i><span>Combles</br>perdus</span></label>
                                             </div>
-                                            <div class="col block-isolation">
+                                            --}}{{--<div class="col block-isolation">
                                                 <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-mur" required="required" value="Mme">
                                                 <label for="type-isolation-mur" class="type-isolation"><i class="icon-fantastic icon-isolation-mur-form"></i><span>Garage</br>mitoyen</span></label>
-                                            </div>
+                                            </div>--}}{{--
                                             <div class="col block-isolation">
                                                 <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-sol" required="required" value="Mme">
                                                 <label for="type-isolation-sol" class="type-isolation"><i class="icon-fantastic icon-isolation-garage-form"></i><span>Garage</br>R.D.C/Sous-sol</span></label>
                                             </div>
                                             <div class="col block-isolation">
                                                 <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-cave" required="required" value="Mme">
-                                                <label for="type-isolation-cave" class="type-isolation"><i class="icon-fantastic icon-isolation-cave-form"></i><span>Caves</br>vides-sanitaires</span></label>
+                                                <label for="type-isolation-cave" class="type-isolation"><i class="icon-fantastic icon-isolation-cave-form"></i><span>Caves</br>buanderie/sous-sols</span></label>
                                             </div>
                                         </div>
                                     </div>
@@ -287,7 +287,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>--}}
         <div class="row justify-content-center mt-30">
             <div>
                 <h4 class="text-center mb-20">Appelez-nous:</h4>
