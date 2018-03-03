@@ -265,7 +265,7 @@
         <div class="row justify-content-around mb-40 mt-30">
             <div class="col-md-5 col-sm-12 block-question-title">
                 <h3 class="">Pourquoi est-il nécessaire d'isoler ma maison ?</h3>
-                <p>Plus de 45% des logements en France sont en <span class="gras_500" data-color="orange">Plus de 30% des logements français sont en précarité énergétique</span>. Les ménages qui vivent dans ces logements ont des consommations d’énergie importantes.</p>
+                <p><span class="gras_500" data-color="orange">Plus de 30% des logements français sont en précarité énergétique</span>. Les ménages qui vivent dans ces logements ont des consommations d’énergie importantes.</p>
                 <p>Les parois mal isolées laissent passer <span class="gras_500" data-color="orange">le froid en hiver</span> et <span class="gras_500" data-color="orange">la chaleur en été</span>. 30% de l'air ambiant de votre maison s'échappe par la toiture, 25% par les murs et 10% par le sol.</p>
                 <p class="">En isolant votre maison, vous <span class="gras_500" data-color="orange">consommez moins d'énergie</span> pour vous chauffer <span class="gras_500" data-color="orange">en hiver</span> et vous évitez la <span class="gras_500" data-color="orange">chaleur inconfortable</span> l'été.</p>
                 <p>En consommant moins d'énergie, vous <span class="gras_500" data-color="orange">économisez sur votre facture</span> de chauffage.</p>
@@ -447,6 +447,17 @@
         </div>--}}
     </div>
 </section>
+{{--<section class="section" id="section-precarite-energetique" data-background-color="bleue-clair">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h2 class="gras_700 text-center mb-30" data-color="orange">La précarité énergétique</h2>
+                <h3 class="">Une personne est en "précarité énergétique lorsque celle-si consacre plus de 10% de ses revenus aux dépenses d’énergie dans le logement.</h3>
+                <h4 class="text-center gras_500" data-color="orange">Une mauvaise isolation est l'un des facteurs les plus important de la «précarité énergétique».</h4>
+            </div>
+        </div>
+    </div>
+</section>--}}
 <!-- Section-formulaire -->
 @include('site-web.layouts.formulaire')
 <!-- end section-formulaire -->
