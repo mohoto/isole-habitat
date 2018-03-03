@@ -272,7 +272,7 @@
             </div>
             <div class="col-md-5 col-sm-12 block-question-title">
                 <h3 class="">Qui paye pour mes travaux d'isolation ?</h3>
-                <p><span class="gras_500" data-color="orange">Ce sont les fourniseurs d'énergie</span> : Toal, Elf, EDG, Poweo.., qui financent vos travaux d'isolation.</p>
+                <p><span class="gras_500" data-color="orange">Ce sont les fourniseurs d'énergie</span> : Total, Elf, EDF, Poweo.., qui financent vos travaux d'isolation.</p>
                 <p><span class="gras_500" data-color="orange">L'État</span>, par le biais de la loi "POPE"(Loi n° 2005-781 du 13 juillet 2005, loi de Programmation fixant les Orientations de la Politique Energétique), <span class="gras_500" data-color="orange">oblige ces fournisseurs d'énergie à financer certains travaux d'isolation, à travers le dispositif des certificats d’économies d’énergie (CEE)</span>, dans les foyers en précarité énergétique, sous peine d'amendes.</p>
                 <p><span class="gras_500" data-color="orange">Les travaux réalisés</span> avec le programme d'isolation à 1€ rentrent dans ce dispositif et <span class="gras_500" data-color="orange">sont intégralement financés</span> et sans <span class="gras_500" data-color="orange">aucun frais à avancer</span>.</p>
             </div>
@@ -447,7 +447,7 @@
         </div>--}}
     </div>
 </section>
-{{--<section class="section" id="section-precarite-energetique" data-background-color="bleue-clair">
+<section class="section" id="section-precarite-energetique" data-background-color="bleue-clair">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-12">
@@ -457,7 +457,7 @@
             </div>
         </div>
     </div>
-</section>--}}
+</section>
 <!-- Section-formulaire -->
 @include('site-web.layouts.formulaire')
 <!-- end section-formulaire -->

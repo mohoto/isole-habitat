@@ -20,7 +20,7 @@
         <h2 class="text-center">Vous pouvez aussi profiter de cette aide.</h2>
         <h3 class="text-center text-muted">45% des foyers sont éligibles à l'isolation à 1 €</h3>
         <div class="row justify-content-center mt-30">
-            {{--<div class="col-sm-12 col-md-12 col-lg-8">
+            <div class="col-sm-12 col-md-12 col-lg-8">
                 <div id="block-form">
                     <div class="form-header text-center">
                         <h4 class="text-white">Testez votre éligibilité</h4>
@@ -286,7 +286,7 @@
                         </div>
                     </div>
                 </div>
-            </div>--}}
+            </div>
         </div>
         <div class="row justify-content-center mt-30">
             <div>
