@@ -20,13 +20,13 @@
         {{--<p class="text-center text-muted">45% des foyers sont éligibles à l'isolation à 1 €</p>--}}
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-12 col-lg-8">
-                {{--<div id="block-form">
+                <div id="block-form">
                     <div class="form-header text-center">
-                        <h2 class="text-center gras_500">Vous pouvez aussi profiter de cette aide.</h2>
+                        <h2 class="text-center text-white gras_500">Vous pouvez aussi profiter de cette aide.</h2>
                         <h4 class="" data-color="orange">Testez votre éligibilité</h4>
-                        <p class="" data-color="">Réponse immédiate - Sans aucun engagement</p>
+                        <p class="text-white">Réponse immédiate - Sans aucun engagement</p>
                     </div>
-                    <div class="form-body">
+                    {{--<div class="form-body">
                         <form id="eligibleForm" action="">
                             <!-- One "tab" for each step in the form: -->
                             <div class="tab" id="info-maison-client">
@@ -35,16 +35,16 @@
                                         <p class="titre_input"><span>1-</span>Selectionnez votre ou vos systèmes de chauffage :</p>
                                         <div class="row block-checkbox">
                                             <div class="col block-chauffage">
+                                                <input type="checkbox" class="checkbox" name="type_chauffage" id="type-chauffage-electrique" required="required" value="Electrique">
+                                                <label for="type-chauffage-electrique" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-electricite2"></i><span>Electricité</span></label>
+                                            </div>
+                                            <div class="col block-chauffage">
                                                 <input type="checkbox" class="checkbox" name="type_chauffage" id="type-chauffage-gaz" required="required" value="Gaz">
                                                 <label for="type-chauffage-gaz" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-gaz2"></i><span>Gaz</span></label>
                                             </div>
                                             <div class="col block-chauffage">
                                                 <input type="checkbox" class="checkbox" name="type_chauffage" id="type-chauffage-bois" required="required" value="Bois">
                                                 <label for="type-chauffage-bois" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-bois2"></i><span>Bois</span></label>
-                                            </div>
-                                            <div class="col block-chauffage">
-                                                <input type="checkbox" class="checkbox" name="type_chauffage" id="type-chauffage-electrique" required="required" value="Electrique">
-                                                <label for="type-chauffage-electrique" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-electricite2"></i><span>Electricité</span></label>
                                             </div>
                                             <div class="col block-chauffage">
                                                 <input type="checkbox" class="checkbox" name="type_chauffage" id="type-chauffage-fioul" required="required" value="fioul">
@@ -184,7 +184,7 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" name="nom" Placeholder="Nom">
+                                                <input type="text" class="form-control" name="nom" Placeholder="Nom et prénom">
                                             </div>
                                         </div>
                                         <div class="col-6">
@@ -278,7 +278,7 @@
                         </form>
                         <div class="row mt-20">
                             <div class="tab-block-btn" id="tab-block-prev">
-                                <button type="button" id="prevBtn" class="btn btn-rounded btn-formulaire btn-orange">Précédent</button>
+                                <button type="button" id="prevBtn" class="btn btn-rounded btn-formulaire btn-default2">Précédent</button>
                             </div>
                             <div class="tab-block-btn" id="tab-block-next">
                                 <button type="button" id="nextBtn" class="btn btn-rounded btn-formulaire btn-vert">Suivant</button>

@@ -36,3 +36,10 @@ Route::post('formulaire-rappel', [
         'as' => 'site-web.formulaire-rappel',
         'uses' =>'FormController@saveRappel'
 ]);
+
+Route::get('get-location-from-ip',function(){
+    //$ip= \Request::ip();
+    $ip= '78.227.102.12';
+    $data = \Location::get($ip);
+    echo $data.cityName;
+});

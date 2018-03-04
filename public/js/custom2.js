@@ -85,7 +85,7 @@
             .done(function(response){
                 $('#phoneModal').modal('hide');
                 swal({
-                    text: "<h4 class='mt-40 mb-20' data-color='orange'>Votre demande a été prise en compte</h4><p>Un conseiller isolation vous rappellera rapidement</p><p><strong data-color='orange'>Entre " + response.heureRappel + "</strong></p>",
+                    text: "<h4 class='mt-20 mb-20' data-color='orange'>Votre demande a été prise en compte</h4><p>Un conseiller isolation vous rappellera rapidement</p><p><strong data-color='orange'>Entre " + response.heureRappel + "</strong></p>",
                     timer: 3000,
                     showConfirmButton: false
                 });

@@ -72,11 +72,6 @@
                             <h4 class="text-center" data-color="orange"><i class="ion-ios7-telephone mr-10"></i>Nous vous rappelons</h4>
                             <p class="text-center">En moins de 24 heures</p>
                         </div>
-                        <div class="alert alert-danger" style="display: none">
-                            <ul class="erreur-list">
-
-                            </ul>
-                        </div>
                     </div>
                     <form id="phoneFormModal">
                         <div class="modal-body">
@@ -94,7 +89,7 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="rappel_nom" Placeholder="Nom">
+                                        <input type="text" class="form-control" name="rappel_nom" Placeholder="Nom et prénom">
                                     </div>
                                 </div>
                                 <div class="col-6">

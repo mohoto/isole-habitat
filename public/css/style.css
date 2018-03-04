@@ -833,6 +833,11 @@ h1, h2, h3, h4{
   background-color: #ee7626;
   border-color: #ee7626;
 }
+.btn-default2 {
+  color: #496174;
+  border-color: #496174;
+
+}
 .btn-vert {
     color: #fff;
     background-color: #96b239;
@@ -1189,7 +1194,6 @@ label.type-heure {
   padding-bottom: 0;
 }
 .section#section-questions-cee{
-  position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -1220,7 +1224,7 @@ label.type-heure {
 .section#section-questions-cee .mascotte-cee{
   position: absolute;
   width: 100px;
-  top: -15%;
+  top: -68px;
   right: 50%;
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
@@ -1935,10 +1939,11 @@ label.type-heure {
 #block-form .form-header{
   position: relative;
   padding: 20px 0px 5px 0px;
-  border-bottom: 6px solid #496174;
+  background-color: #496174;
+  /*border-bottom: 6px solid #496174;*/
   /*margin: 0 150px;*/
 }
-#block-form .form-header::after{
+/*#block-form .form-header::after{
   position: absolute;
   content:'';
   width: 0px;
@@ -1951,7 +1956,7 @@ label.type-heure {
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   transform: translateX(-50%);
-}
+}*/
 #block-form .form-header p{
   font-size: 1.1em;
 }
@@ -2135,9 +2140,9 @@ label.type-bail-client,
 label.civilite,
 label.type-heure {
   background: #ffffff;
-  border-width: 3px;
+  border-width: 0.5px;
   border-style: solid;
-  border-color: #ebeef1;
+  border-color: #496174;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -2178,7 +2183,6 @@ label.type-heure {
 
 .section#section-formulaire .tab .info-resultat{
   display: none;
-  padding-top: 20px;
 }
 .section#section-formulaire svg#eligible-ok{
   width: 100px;

@@ -280,16 +280,16 @@
     </div>
 </section>
 <section class="section" id="section-questions-cee">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style="position: relative">
         <div class="col-lg-8 block-cee">
             <h4 class="text-center mb-20" data-color="vert">Un programme en accord avec le dispositif des certificats d’économie d’énergie (CEE) mis en place par le <span class="gras_500">Ministère de la Transition Écologique et Solidaire</span>.</h4>
             {{--<p>Le dispositif des certificats d’économies d’énergie (CEE) constitue l'un des principaux instruments de la politique de maîtrise de la demande énergétique.</p>--}}
             <p>Le dispositif des certificats d’économies d’énergie (CEE), créé en 2006 repose sur <span class="gras_500">une obligation de réalisation d’économies d’énergie imposée par les pouvoirs publics aux vendeurs d’énergie</span>. Ceux-ci doivent ainsi promouvoir activement l’efficacité énergétique auprès des consommateurs d’énergie : ménages, collectivités territoriales ou professionnels. Le 1er janvier 2018, le dispositif est entré dans sa 4ème période d’obligation.</p>
             <p class="text-muted text-source">source : Ministère de la Transition écologique et solidaire - </p>
             <a href="https://www.ecologique-solidaire.gouv.fr/dispositif-des-certificats-deconomies-denergie" target="_blank">https://www.ecologique-solidaire.gouv.fr/dispositif-des-certificats-deconomies-denergie</a>
+            <img src="{{ asset('images/mascotte-cee.png') }}" class="mascotte-cee" alt="illustration des certificats d'économie d'énergie">
         </div>
     </div>
-    <img src="{{ asset('images/mascotte-cee.png') }}" class="mascotte-cee" alt="illustration des certificats d'économie d'énergie">
 </section>
 <section class="section section-questions" id="section-questions2">
     <div class="container">
@@ -447,7 +447,7 @@
         </div>--}}
     </div>
 </section>
-<section class="section pb-0" id="section-precarite-energetique" data-background-color="bleue-clair">
+<section class="section pb-20" id="section-precarite-energetique" data-background-color="bleue-clair">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-12">
@@ -590,7 +590,7 @@
 </section>
 <section class="section" id="section-videos">
     <div class="container">
-        <h2 class="text-center mb-40" data-color="bleue">Les reportages sur l'isolation à 1€</h2>
+        <h2 class="text-center mb-40">Les reportages sur l'isolation à 1€</h2>
         <div class="row align-items-end mt-40">
             <div class="col-sm-12 col-md-4" id="">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
