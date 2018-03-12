@@ -840,8 +840,8 @@ h1, h2, h3, h4{
 }
 .btn-vert {
     color: #fff;
-    background-color: #96b239;
-    border-color: #96b239;
+    background-color: #8ab326;
+    border-color: #8ab326;
 }
 .btn-rounded{
     -webkit-border-radius: 50px;
@@ -1933,6 +1933,7 @@ label.type-heure {
 .section#section-formulaire{
 }
 #block-form {
+  position: relative;
   margin: 10px auto;
   width: 100%;
 }
@@ -1962,17 +1963,17 @@ label.type-heure {
 }
 #block-form .form-body{
   background-color: #ffffff;
-  padding: 30px 40px 20px 40px;
+  padding: 10px 40px 20px 40px;
 }
 #regForm {
 }
-#eligibleForm .titre_input{
+#block-form .titre_input{
   font-size: 1.2em;
   color: #868e96;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#eligibleForm .titre_input span{
+#block-form .titre_input span{
   color: #ee7626;
 }
 /* Mark input boxes that gets an error on validation: */
@@ -1985,7 +1986,7 @@ input.invalid {
   display: none;
   height: 400px;
 }
-#eligibleForm .tab .info-block{
+#section-formulaire .tab .info-block{
   height: 100%;
 }
 .section#section-formulaire .tab-block-btn{
@@ -2055,7 +2056,7 @@ input.invalid {
   padding-left: 5px !important;
   padding-right: 5px !important;
 }
-.block-chauffage input[type="checkbox"],
+
 .block-isolation input[type="checkbox"]{
   display: none;
 }
@@ -2106,6 +2107,7 @@ input.invalid {
 .block-heure{
   text-align: center;
 }
+.block-chauffage input[type="radio"],
 .block-surface input[type="radio"],
 .block-heure input[type="radio"]{
   display: none;
@@ -2180,17 +2182,16 @@ label.type-heure {
   line-height: 1.3;
 }
 
-
 .section#section-formulaire .tab .info-resultat{
   display: none;
 }
 .section#section-formulaire svg#eligible-ok{
-  width: 100px;
+  width: 80px;
   display: block;
   margin: 0 auto;
 }
 .section#section-formulaire svg#eligible-none {
-  width: 50px;
+  width: 80px;
   display: block;
   margin: 0 auto;
 }
@@ -2250,6 +2251,49 @@ label.type-heure {
 }
 .section#section-formulaire .btn#phoneBtn{
   display: none;
+}
+.section#section-formulaire .loader#loaderEligible {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 16px solid #496174;
+  border-radius: 50%;
+  border-top: 16px solid #8ab326;
+  border-bottom: 16px solid #8ab326;
+  width: 120px;
+  height: 120px;
+  margin-left: -60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.section#section-formulaire .spinner-form .fa{
+  font-size: 10em;
+  color: #8ab326;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.fa-spin {
+  -webkit-animation: fa-spin 1s infinite linear;
+  animation: fa-spin 1s infinite linear;
 }
 @-webkit-keyframes dash {
   0% {

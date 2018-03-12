@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('site-web.layouts.main')
 @section('pageTitle', 'isolez votre maison pour 1 euro')
 @section('pageClass', 'page_accueil')
 @section('content')

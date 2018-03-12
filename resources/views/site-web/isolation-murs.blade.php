@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('site-web.layouts.main')
 @section('pageClass', 'isolation-combles')
 @section('content')
     <!-- HOME -->

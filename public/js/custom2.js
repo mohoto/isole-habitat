@@ -2,8 +2,7 @@
 
     $(document).ready(function(){
 
-
-
+        /*Nav*/
 
         /*Sweet Alert*/
         $('.info-revenu').click(function (e) {
@@ -33,7 +32,7 @@
         /******** Scroll animate to btn*******/
         $('#btn-section-formulaire').click(function (e) {
             e.preventDefault();
-            var id = '#section-formulaire';
+            var id = '#block-form';
             var speed = 750;
             $('html,body').animate({
                 scrollTop: $(id).offset().top
@@ -67,89 +66,7 @@
             return val;
         }
 
-        /*Popup "besoin de conseils"  avec submit "rappel"*/
-        $('#btn_phone_modal').click(function () {
-            var x = document.querySelector('#phoneFormModal');
-            var data = $('#phoneFormModal').serializeArray();
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
-            $.ajax({
-                type:'post',
-                url: '/isolation/public/formulaire-rappel',
-                data: data,
-                dataType: 'JSON'
-            })
-            .done(function(response){
-                $('#phoneModal').modal('hide');
-                swal({
-                    text: "<h4 class='mt-20 mb-20' data-color='orange'>Votre demande a été prise en compte</h4><p>Un conseiller isolation vous rappellera rapidement</p><p><strong data-color='orange'>Entre " + response.heureRappel + "</strong></p>",
-                    timer: 3000,
-                    showConfirmButton: false
-                });
-            })
-            .fail(function(data) {
-                $.each(data.responseJSON, function(index, val) {
-                     var input = $("input[name='" + index + "']");
-                         input.addClass('active');
-                         setTimeout(function(){
-                             input.removeClass('active');
-                         }, 3000);
-                    $.notify({
-                        // options
-                        icon: 'glyphicon glyphicon-warning-sign',
-                        message: 'Turning standard Bootstrap alerts into "notify" like notifications'
-                    },{
-                        // settings
-                        element: 'body',
-                        position: null,
-                        type: "danger",
-                        allow_dismiss: false,
-                        newest_on_top: false,
-                        showProgressbar: false,
-                        placement: {
-                            from: "top",
-                            align: "center"
-                        },
-                        offset: 100,
-                        spacing: 20,
-                        z_index: 1061,
-                        delay: 500,
-                        timer: 1000,
-                        url_target: '_blank',
-                        mouse_over: null,
-                        animate: {
-                            enter: 'animated fadeInDown',
-                            exit: 'animated fadeOutUp'
-                        },
-                        onShow: function(){
-                            setTimeout(function(){
-                                // enable click after 1 second
-                                $('#btn_phone_modal').prop('disabled',false);
-                            },5000);
-                        },
-                        onShown: null,
-                        onClose: null,
-                        onClosed: null,
-                        icon_type: 'class',
-                        template: '<div data-notify="container" class="col-xs-10 col-sm-3 alert alert-{0}" role="alert" data-background-color="orange">' +
-                        '<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
-                        '<span data-notify="icon"></span> ' +
-                        '<span data-notify="title">{1}</span> ' +
-                        '<span class="text-white mt-20 mb-20" data-notify="message">'+ val + '</span>' +
-                        '<div class="progress" data-notify="progressbar">' +
-                        '<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
-                        '</div>' +
-                        '<a href="{3}" target="{4}" data-notify="url"></a>' +
-                        '</div>'
-                    });
-                });
 
-            })
-
-        });
         /*************************************************/
         /*************************************************/
 
@@ -185,7 +102,7 @@
         /**********************/
         /**********************/
         /*input chiffre format*/
-        var $form = $( "#eligibleForm" );
+      /*  var $form = $( "#eligibleForm" );
         var $inputRevenu = $('#revenus_reference');
 
         $inputRevenu.on( "keyup", function( event ) {
@@ -213,11 +130,11 @@
         });
 
 
-        /**
+        /!**
          * ==================================
          * When Form Submitted
          * ==================================
-         */
+         *!/
         $form.on( "submit", function( event ) {
 
             var $this = $( this );
@@ -230,7 +147,7 @@
             console.log( arr );
 
             event.preventDefault();
-        });
+        });*/
 
         /*input nombre telephone*/
         var $inputPhone = $('.telephone_input');
@@ -261,117 +178,6 @@
         });
         /*************************************************/
         /*************************************************/
-        /*****Wizard function*******/
-        var currentTab = 0;
-        var prevButton = document.querySelector('#prevBtn');
-        var nextButton = document.querySelector('#nextBtn');
-        var tabBlock = document.querySelector('#tab-block-next');
-        function initTab(){
-            currentTab = 0;
-            tabBlock.style.width = "100%";
-            nextButton.style.width = "50%";
-            prevButton.style.display = "none";
-            nextButton.classList.remove('btn-orange');
-            nextButton.classList.add('btn-vert');
-            nextButton.innerHTML = "Suivant";
-            var check = document.querySelectorAll('.checkbox')
-            for(var i=0; i<check.length; i++){
-                check[i].checked = false;
-            }
-        }
-        showTab(currentTab);
-        function showTab(n){
-            var x = document.querySelectorAll('.tab');
-            x[n].style.display = "block";
-            if(n == 0) {
-                initTab();
-            }
-            else if(n == (x.length-2)) {
-                tabBlock.style.width = "50%";
-                nextButton.style.width = "100%";
-                prevButton.style.display = "block";
-                nextButton.innerHTML = "Tester maintenant";
-                nextButton.addEventListener('click', testEligibilite);
-            }
-            else if(n == (x.length-1)) {
-                tabBlock.style.width = "100%";
-                nextButton.style.width = "50%";
-                prevButton.style.display = "none";
-                nextButton.classList.remove('btn-vert');
-                nextButton.classList.add('btn-orange');
-                nextButton.innerHTML = "Me rappeler";
-            }
-            else {
-                nextButton.innerHTML = "Suivant";
-                tabBlock.style.width = "50%";
-                nextButton.style.width = "100%";
-                prevButton.style.display = "block";
-            }
-
-        }
-        var prev = document.querySelector('#prevBtn');
-        prev.addEventListener('click', function(){
-            var x = document.querySelectorAll('.tab');
-            x[currentTab].style.display =  "none";
-            currentTab -= 1;
-            showTab(currentTab);
-        });
-        var next = document.getElementById('nextBtn');
-        next.addEventListener('click', function() {
-            var x = document.querySelectorAll('.tab');
-            if(currentTab == 0) {
-                if (validateCheckboxChauf() && validateCheckboxIso()) {
-                    x[currentTab].style.display = "none";
-                    currentTab += 1;
-                    showTab(currentTab);
-                } else if(validateCheckboxChauf() === false){
-                    swal({
-                        text: '<h5 data-color="orange">Faîtes un choix:</h5>' +
-                        '<p>Selectionnez votre ou vos systèmes de chauffage</p>',
-                        timer: 2000,
-                        showConfirmButton: false
-                    });
-                } else if(validateCheckboxIso() === false){
-                    swal({
-                        text: '<h5 data-color="orange">Faîtes un choix:</h5>' +
-                        "<p>Selectionnez les types d'isolations à faire dans votre maison</p>",
-                        timer: 2000,
-                        showConfirmButton: false
-                    });
-                }
-            }else if (currentTab == x.length - 1) {
-                var valHeure;
-                valHeure = getHourValEligible();
-
-                $('#phoneModal').modal('hide');
-                swal({
-                    text: '<h5 data-color="orange">Votre demande a été prise en compte</h5>' +
-                    '<p>Un conseiller isolation vous rappellera rapidement</br> Entre ' + valHeure + '</p>',
-                    timer: 3000,
-                    showConfirmButton: false
-                });
-                x[currentTab].style.display = "none";
-                currentTab = 0;
-                showTab(currentTab);
-                document.querySelector('#info-resultat-ok').style.display =  "none";
-                document.querySelector('#info-resultat-none').style.display =  "none";
-            }else {
-                // if (validateForm()) {
-                x[currentTab].style.display = "none";
-                currentTab += 1;
-                showTab(currentTab);
-                //}
-                /*else {
-                 var y = x[currentTab].getElementsByTagName('input');
-                 for (var i = 0; i < y.length; i++) {
-                 if (y[i].value == "") {
-                 y[i].style.borderColor = "#ee7626";
-                 }
-                 }
-                 }*/
-
-            }
-        });
 
         function validateForm(){
             var valid = true;
@@ -397,8 +203,8 @@
             }
             return val; // return value of checked radio or undefined if none checked
         }
-        function getHourValEligible(){
-            var val;
+        function checkRadioBox(){
+            var valid = true;
             var heure_eligible = document.forms['eligibleForm'].elements['heure_rappel'];
             for(var i=0; i<heure_eligible.length; i++){
                 if (heure_eligible[i].checked){
@@ -406,25 +212,18 @@
                     break;
                 }
             }
-            if(val == 'type-heure-1'){
-                val = '9h-12h';
-            }else if(val == 'type-heure-2'){
-                val = '12h-14h';
-            }else if(val == 'type-heure-3'){
-                val = '14h-18h';
-            }else if(val == 'type-heure-4'){
-                val = '18h-20h';
-            }
-            return val;
+            return valid;
         }
         function validateCheckboxChauf(){
-            valid = false;
-            var x = document.querySelectorAll('.tab');
-            var z = x[currentTab].querySelectorAll('.checkbox');
-            for(var j=0; j<z.length; j++){
-                if(z[j].name == 'type_chauffage' && z[j].checked == true){
+            var valid = false;
+            var radios = document.forms['eligibleForm'].elements['type_chauffage'];
+            // loop through list of radio buttons
+            for (var i=0; i<radios.length; i++) {
+                if ( radios[i].checked ) { // radio checked?
+                    break; // and break out of for loop
                     valid = true;
                 }
+
             }
             return valid;
         }
@@ -469,7 +268,7 @@
                         eligible =  false;
                     }
                 }else{
-                    if((nbrFoyer == 1 && revRef <= 14308) || (nbrFoyer == 2 && revRef <= 20925) || (nbrFoyer == 3 && revRef <= 25166) || (nbrFoyer == 4 && revRef <= 29400) || (nbrFoyer == 5 && revRef <= 33642) || (nbrFoyer == 6 && revRef <= 37883) || (nbrFoyer == 7 && revRef <= 42124) || (nbrFoyer == 8 && revRef <= 46365) || (nbrFoyer == 9 && revRef <= 50606)){
+                    if((nbrFoyer == 1 && revRef <= 14308) || (nbrFoyer == 2 && revRef <= 20925) || (nbrFoyer == 3 && revRef <= 25166) || (nbrFoyer == 4 && revRef <= 29400) || (nbrFoyer == 5 && revRef <= 33652) || (nbrFoyer == 6 && revRef <= 37893) || (nbrFoyer == 7 && revRef <= 42134) || (nbrFoyer == 8 && revRef <= 46375) || (nbrFoyer == 9 && revRef <= 50616)){
                         eligible =  true;
                     }
                     else{

@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('site-web.layouts.main')
 @section('pageTitle', 'isole habitat - isolation des combles')
 @section('pageClass', 'isolation-combles')
 @section('content')

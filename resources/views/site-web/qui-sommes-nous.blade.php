@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('site-web.layouts.main')
 @section('pageTitle', 'isole habitat - qui_sommes_nous')
 @section('pageClass', 'qui_sommes_nous')
 @section('content')
