@@ -366,7 +366,7 @@ class FormController extends Controller
         $clientForm->telephone_fixe = $telephone_fixe;
         $clientForm->telephone_mobile = $telephone_mobile;
         $clientForm->codePostal = $request->code_postal;
-        //$clientForm->departement = $departement;
+        $clientForm->departement = $departement;
         $clientForm->rue = $request->rue;
         $clientForm->revenu_fiscal = $revenu;
         $clientForm->nombre_personne = $request->nombre_personne;

@@ -16,7 +16,7 @@ class PreVisiteController extends Controller
         $clientPrevisite->rue = $request->rue;
         $clientPrevisite->codePostal = $request->code_postal;
         $clientPrevisite->ville = $request->ville;
-        //$clientPrevisite->departement = $request->departement;
+        $clientPrevisite->departement = $request->departement;
         $clientPrevisite->revenu_fiscal = $request->revenu_fiscal;
         $clientPrevisite->nombre_personne = $request->nombre_personne;
         $clientPrevisite->type_bail = $request->type_bail;
