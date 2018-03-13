@@ -306,13 +306,6 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center mt-30">
-            <div>
-                <h4 class="text-center mb-20">Appelez-nous:</h4>
-                <button class="btn btn-rounded btn-custom2"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></button>
-                <h5 class="text-center mt-10" data-color="orange">Réponse immédiate.</h5>
-            </div>
-        </div>
     </div>
 </section>
 <section class="section" id="section-fonctionnement" data-background-color="bleue-clair">

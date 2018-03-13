@@ -18,23 +18,26 @@
                                     @endif
                                     <h5 class="text-dark">{{ strtoupper($clientform->codePostal) }} {{ strtoupper($clientform->ville) }}</h5>
                                     <h5 data-color="orange"><i class="fa fa-phone"></i> {{ $clientform->telephone_fixe }} {{ $clientform->telephone_mobile }}</h5>
-                                    <?php $heurerappel = ($clientform->heure_rappel = null) ?  'Demande de rappel entre :' : 'Pas de demande de rappel' ;?>
-                                    <h5 data-color="orange"><small>{{ $heurerappel }} {{ $clientform->heure_rappel }}</small></h5>
+                                    @if($clientform->heure_rappel != null)
+                                        <h6 data-color="orange">Demande de rappel entre : {{ $clientform->heure_rappel }}</h6>
+                                    @else
+                                        <h6 data-color="orange">Pas de demande de rappel</h6>
+                                    @endif
                                     <p class="">{{ $clientform->dateFormatted()}}</p>
                                     @if($clientform->isolation_combles)
-                                    <h5 class="text-dark">101 : Isolation des combles</h5>
+                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" data-color="vert"></i>101 : Isolation des combles</h5>
                                     @else
-                                        <h5 class="text-dark">&nbsp</h5>
+                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" style="color: transparent"></i>101 : Isolation des combles</h5>
                                     @endif
                                     @if($clientform->isolation_garage)
-                                    <h5 class="text-dark">103 : Isolation du garage</h5>
+                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" data-color="vert"></i>103 : Isolation du garage</h5>
                                     @else
-                                        <h5 class="text-dark">&nbsp</h5>
+                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" style="color: transparent"></i>103 : Isolation du garage</h5>
                                     @endif
                                     @if($clientform->isolation_caves)
-                                    <h5 class="text-dark">103 : Isolation des caves</h5>
+                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" data-color="vert"></i>103 : Isolation des caves</h5>
                                     @else
-                                        <h4 class="text-dark">&nbsp</h4>
+                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" style="color: transparent"></i>103 : Isolation des caves</h5>
                                     @endif
                                     <div class="contact-action">
                                         <a class="btn btn-success btn-sm" data-toggle="collapse" href="#collapse-{{ $clientform->id }}" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="md md-mode-edit"></i></a>
@@ -96,13 +99,13 @@
                                                 <div class="form-group col-md-6">
                                                     <label class="">Numero telephone fixe</label>
                                                     <div class="">
-                                                        <input type="text" class="form-control" name="telephone_fixe" value="{{ $clientform->telephone_fixe }}">
+                                                        <input type="text" class="form-control telephone_input" name="telephone_fixe" maxlength="14" value="{{ $clientform->telephone_fixe }}">
                                                     </div>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label class="">Numero telephone mobile</label>
                                                     <div class="">
-                                                        <input type="text" class="form-control" name="telephone_mobile" value="{{ $clientform->telephone_mobile }}">
+                                                        <input type="text" class="form-control telephone_input" name="telephone_mobile" maxlength="14" value="{{ $clientform->telephone_mobile }}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -220,15 +223,13 @@
                                                     <div class="col-md-6">
                                                         <h5>Cave voutée</h5>
                                                         <div class="switchery-demo">
-                                                            <div class="">
-                                                                <input type="checkbox" class="switch-caves" name="cave_voutee" value="1">
-                                                            </div>
+                                                            <input type="checkbox" class="switch-caves" name="cave_voutee" value="1">
                                                         </div>
                                                     </div>
                                                     <div class="form-group col-6">
                                                         <label class="">Surface m2</label>
                                                         <div class="">
-                                                            <input type="text" name="isolation_voutee_surface" class="form-control" value="">
+                                                            <input  class="isolation_voutee_surface" type="text" name="isolation_voutee_surface" class="form-control" value="" hidden>
                                                         </div>
                                                     </div>
                                                 </div>

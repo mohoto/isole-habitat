@@ -149,9 +149,6 @@
                     </li>
                     <li class="has-submenu sub-navigation-menu">
                         <a href="{{ route('crm.lead-previsite') }}"><i class="fa fa-calculator"></i>Pré-viste à faire</a>
-                        <ul class="submenu">
-                            <li><a href="#">Buttons</a></li>
-                        </ul>
                     </li>
                     <li class="has-submenusub-navigation-menu">
                         <a href="#"><i class="fa fa-calendar-check-o"></i>Chantier validée</a>
@@ -197,6 +194,7 @@
 <!-- App js -->
 <script src="{{ asset('isolation-crm/js/jquery.core.js')}}"></script>
 <script src="{{ asset('isolation-crm/js/jquery.app.js')}}"></script>
+<script src="{{ asset('isolation-crm/js/custom-crm.js')}}"></script>
 <script>
     var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
 
@@ -218,11 +216,19 @@
     elems.forEach(function(html) {
         var switchery = new Switchery(html, { color: '#8ab326', jackColor: '#ffffff' });
     });
-   /* var changeCheckbox = document.querySelector('.js-check-change');
+    var changeCheckbox = document.querySelectorAll('.switch-caves');
+    var input = document.querySelectorAll('.isolation_voutee_surface');
+    for(var i=0; i<changeCheckbox.length; i++){
+        changeCheckbox[i].onchange = function() {
+            alert(this.checked);
+            if(this.checked){
+                input.removeAttribute('hidden');
+            }else{
+                input.setAttribute('hidden');
+            }
+        };
+    }
 
-    changeCheckbox.onchange = function() {
-        alert(changeCheckbox.checked);
-    };*/
 </script>
 
 </body>

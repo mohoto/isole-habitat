@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <?php $villeRequest = Request::get('ville');?>
             @if($villeRequest)
-                <h3 class="text-white m-b-30">Les previsites à faire à {{ $villeRequest }} :</h3>
+                <h3 class="text-white m-b-30">Pre-visites à {{ $villeRequest }} :</h3>
             @endif
             <div class="row">
                 @foreach($clientVisites as $clientVisite)
@@ -21,22 +21,22 @@
                                         <span class="label label-danger">{{ $clientVisite->situation_eligible}}</span>
                                     @endif
                                     <h5 class="text-dark">{{ strtoupper($clientVisite->codePostal) }} <a class="text-dark" href="{{ route('crm.lead-previsite', ['ville' => $clientVisite->ville]) }}"> {{ strtoupper($clientVisite->ville) }}</a></h5>
-                                    <h5 data-color="orange"><i class="fa fa-phone"></i> {{ $clientVisite->telephone_fixe }} {{ $clientVisite->telephone_mobile }}</h5>
+                                    <h5 data-color="orange"><i class="fa fa-phone"></i> {{ $clientVisite->telephone_fixe }}<span class="m-l-15">{{ $clientVisite->telephone_mobile }}</span></h5>
                                     <p class="">{{ $clientVisite->dateFormatted()}}</p>
                                     @if($clientVisite->isolation_combles)
-                                        <h5 class="text-dark">101 : Isolation des combles</h5>
+                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" data-color="vert"></i>101 : Isolation des combles</h5>
                                     @else
-                                        <h5 class="text-dark">&nbsp</h5>
+                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" style="color: transparent"></i>101 : Isolation des combles</h5>
                                     @endif
                                     @if($clientVisite->isolation_garage)
-                                        <h5 class="text-dark">103 : Isolation du garage</h5>
+                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" data-color="vert"></i>103 : Isolation du garage</h5>
                                     @else
-                                        <h5 class="text-dark">&nbsp</h5>
+                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" style="color: transparent"></i>103 : Isolation du garage</h5>
                                     @endif
                                     @if($clientVisite->isolation_caves)
-                                        <h5 class="text-dark">103 : Isolation des caves</h5>
+                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" data-color="vert"></i>103 : Isolation des caves</h5>
                                     @else
-                                        <h5 class="text-dark">&nbsp</h5>
+                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" style="color: transparent"></i>103 : Isolation des caves</h5>
                                     @endif
                                     <div class="contact-action">
                                         <a class="btn btn-success btn-sm" data-toggle="collapse" href="#collapse-{{ $clientVisite->id }}" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="md md-mode-edit"></i></a>
@@ -97,13 +97,13 @@
                                                 <div class="form-group col-md-6">
                                                     <label class="">Numero telephone fixe</label>
                                                     <div class="">
-                                                        <input type="text" class="form-control" name="telephone_fixe" value="{{ $clientVisite->telephone_fixe }}">
+                                                        <input type="text" class="form-control telephone_input" name="telephone_fixe" maxlength="14" value="{{ $clientVisite->telephone_fixe }}">
                                                     </div>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label class="">Numero telephone mobile</label>
                                                     <div class="">
-                                                        <input type="text" class="form-control" name="telephone_mobile" value="{{ $clientVisite->telephone_mobile }}">
+                                                        <input type="text" class="form-control telephone_input" name="telephone_mobile" maxlength="14" value="{{ $clientVisite->telephone_mobile }}">
                                                     </div>
                                                 </div>
                                             </div>
