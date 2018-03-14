@@ -10,7 +10,7 @@
                                 <div class="member-info">
                                     <h4 class="m-t-10 m-b-5">{{ ucfirst($clientRappel->civilite) }}<b> {{ strtoupper($clientRappel->nom) }}</b></h4>
                                     <h5 data-color="orange"><i class="fa fa-phone"></i> {{ $clientRappel->telephone }}</h5>
-                                    <h5 class="text-dark">{{ strtoupper($clientVisite->codePostal) }} {{ strtoupper($clientVisite->ville) }}</h5>
+                                    <h5 class="text-dark">{{ strtoupper($clientRappel->codePostal) }} {{ strtoupper($clientRappel->ville) }}</h5>
                                     <h5 data-color="orange">Rappeler entre : {{ $clientRappel->heure_rappel }}</h5>
                                     <span class="label label-warning">{{ $clientRappel->dateFormatted()}}</span>
                                     <div class="contact-action">
