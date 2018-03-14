@@ -57,6 +57,8 @@ class RappelWebController extends Controller
         $clientRappel->nom = $request->rappel_nom;
         $clientRappel->telephone = $request->rappel_telephone;
         $clientRappel->heure_rappel = $request->rappel_heure_modal;
+        $clientRappel->heure_rappel = $request->ville;
+        $clientRappel->heure_rappel = $request->ville;
         $clientRappel->save();
 
         return response()->json([

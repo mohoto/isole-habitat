@@ -38,12 +38,12 @@ Route::post('rappel-web', [
 ]);
 
 
-/*Route::get('get-location-from-ip',function(){
-    //$ip= \Request::ip();
-    $ip= '78.227.102.12';
+Route::get('get-location-from-ip',function(){
+    $ip= \Request::ip();
+    //$ip= '78.227.102.12';
     $data = \Location::get($ip);
     dd($data);
-});*/
+});
 
 /*Route::get('get-location-from-ip', 'FormController@getLocation');
 

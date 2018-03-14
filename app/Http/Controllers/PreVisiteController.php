@@ -9,6 +9,8 @@ use Illuminate\Http\Request;
 class PreVisiteController extends Controller
 {
     public function saveFromWebForm(Request $request){
+
+        $departement = substr($request->code_postal, 0, 2);
         $clientPrevisite = new Previsite();
         $clientPrevisite->civilite = $request->civilite;
         $clientPrevisite->nom = $request->nom;
@@ -16,7 +18,7 @@ class PreVisiteController extends Controller
         $clientPrevisite->rue = $request->rue;
         $clientPrevisite->codePostal = $request->code_postal;
         $clientPrevisite->ville = $request->ville;
-        $clientPrevisite->departement = $request->departement;
+        $clientPrevisite->departement = $departement;
         $clientPrevisite->revenu_fiscal = $request->revenu_fiscal;
         $clientPrevisite->nombre_personne = $request->nombre_personne;
         $clientPrevisite->type_bail = $request->type_bail;
