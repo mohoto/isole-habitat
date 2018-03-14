@@ -19,7 +19,7 @@
     <div class="container-fluid">
         {{--<p class="text-center text-muted">45% des foyers sont éligibles à l'isolation à 1 €</p>--}}
         <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-12">
+            <div class="col-sm-12 col-md-12 mb-20">
                 <h4 class="text-center gras_500 mb-30" data-color="orange">Une mauvaise isolation est l'un des facteurs les plus importants de la «précarité énergétique».</h4>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-7">
