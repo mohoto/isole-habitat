@@ -52,13 +52,18 @@ class RappelWebController extends Controller
             return response($validate->errors(), 401);
         }
 
+        $ip= \Request::ip();
+        $data = \Location::get($ip);
+        $ville = $data->cityName;
+        $codePostal = $data->zipCode;
+
         $clientRappel = new ClientRappel();
         $clientRappel->civilite = $request->rappel_civilite;
         $clientRappel->nom = $request->rappel_nom;
         $clientRappel->telephone = $request->rappel_telephone;
         $clientRappel->heure_rappel = $request->rappel_heure_modal;
-        $clientRappel->heure_rappel = $request->ville;
-        $clientRappel->heure_rappel = $request->ville;
+        $clientRappel->ville = $ville;
+        $clientRappel->codePostal = $codePostal;
         $clientRappel->save();
 
         return response()->json([
