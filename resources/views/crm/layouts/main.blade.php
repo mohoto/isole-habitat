@@ -39,7 +39,7 @@
                 </a>
             </div>
             <!-- End Logo container-->
-            <div class="menu-extras topbar-custom">
+            {{--<div class="menu-extras topbar-custom">
                 <ul class="list-inline float-right mb-0">
                     <li class="menu-item list-inline-item">
                         <!-- Mobile menu toggle-->
@@ -109,7 +109,7 @@
                         </div>
                     </li>
                 </ul>
-            </div>
+            </div>--}}
             <!-- end menu-extras -->
             <div class="clearfix"></div>
         </div> <!-- end container -->
