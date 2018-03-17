@@ -153,24 +153,9 @@
                     <div id="head-mobile"></div>
                     <div class="button"></div>
                     <ul>
-                        <li class='active'><a href='#'>ACCUEIL</a></li>
-                        <li><a href='{{ route('site-web.isolation-combles') }}'>L'ISOLATION DES COMBLES</a></li>
-                        <li><a href='{{ route('site-web.societe') }}'>QUI SOMMES-NOUS?</a>
-                            <ul>
-                                <li><a href='#'>Product 1</a>
-                                    <ul>
-                                        <li><a href='#'>Sub Product</a></li>
-                                        <li><a href='#'>Sub Product</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href='#'>Product 2</a>
-                                    <ul>
-                                        <li><a href='#'>Sub Product</a></li>
-                                        <li><a href='#'>Sub Product</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                        <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{ route('site-web.accueil') }}">ACCUEIL</a></li>
+                        <li class="{{ Request::is('isolation-des-combles') ? 'active' : '' }}"><a href="{{ route('site-web.isolation-combles') }}">L'ISOLATION DES COMBLES</a></li>
+                        <li class="{{ Request::is('qui-sommes-nous') ? 'active' : '' }}"><a href="{{ route('site-web.societe') }}">QUI SOMMES-NOUS?</a></li>
                         <li id="phone-link"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></li>
                     </ul>
                 </div>
