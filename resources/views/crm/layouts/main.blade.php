@@ -121,6 +121,9 @@
                 <!-- Navigation Menu-->
                 <ul class="navigation-menu d-flex">
                     <li class="has-submenu sub-navigation-menu">
+                        <a href="{{ route('crm.lead-web') }}"><i class="fa fa-dashboard"></i>Administration</a>
+                    </li>
+                    <li class="has-submenu sub-navigation-menu">
                         <a href="{{ route('crm.lead-web') }}"><i class="fa fa-wpforms"></i>Formulaire web</a>
                     </li>
                     <li class="has-submenu sub-navigation-menu">
@@ -128,24 +131,6 @@
                     </li>
                     <li class="has-submenu sub-navigation-menu">
                         <a href="{{ route('crm.lead-demarchage') }}"><i class="fa fa-user-circle-o"></i>Clients Démarchage</a>
-                    </li>
-                    <li class="has-submenusub-navigation-menu">
-                        <a href="#"><i class="fa fa-headphones"></i>Clients Call</a>
-                        <ul class="submenu">
-                            <li class="has-submenu">
-                                <a href="#">Tables</a>
-                                <ul class="submenu">
-                                    <li><a href="tables-basic.html">Basic Tables</a></li>
-                                    <li><a href="tables-datatable.html">Data Table</a></li>
-                                    <li><a href="tables-editable.html">Editable Table</a></li>
-                                    <li><a href="tables-responsive.html">Responsive Table</a></li>
-                                    <li><a href="tables-foo-tables.html">FooTable</a></li>
-                                    <li><a href="tables-bootstrap.html">Bootstrap Tables</a></li>
-                                    <li><a href="tables-tablesaw.html">Tablesaw Tables</a></li>
-                                    <li><a href="tables-jsgrid.html">JsGrid Tables</a></li>
-                                </ul>
-                            </li>
-                        </ul>
                     </li>
                     <li class="has-submenu sub-navigation-menu">
                         <a href="{{ route('crm.lead-previsite') }}"><i class="fa fa-calculator"></i>Pré-viste à faire</a>

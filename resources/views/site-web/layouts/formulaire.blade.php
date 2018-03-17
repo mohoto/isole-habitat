@@ -1,26 +1,9 @@
 <section class="section pt-0 pb-0" id="section-formulaire" data-background-color="bleue-clair">
-    {{--<div class="modal fade" id="revenuModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&amp;times;</button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                </div>
-                <div class="modal-body">
-                    <h3>Modal Body</h3>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>--}}
     <div class="container-fluid">
         {{--<p class="text-center text-muted">45% des foyers sont éligibles à l'isolation à 1 €</p>--}}
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-12 mb-20">
-                <h4 class="text-center gras_500 mb-30" data-color="orange">Une mauvaise isolation est l'un des facteurs les plus importants de la «précarité énergétique».</h4>
+                <h4 class="text-center gras_500 mb-30 mt-30" data-color="orange">Une mauvaise isolation est l'un des facteurs les plus importants de la «précarité énergétique».</h4>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-7">
                 <div id="block-form">
@@ -39,23 +22,23 @@
                                     <div>
                                         <p class="titre_input"><span>1-</span>Selectionnez votre ou vos systèmes de chauffage :</p>
                                         <div class="row block-checkbox">
-                                            <div class="col block-chauffage">
+                                            <div class="col-md col-xs-12 block-chauffage">
                                                 <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-electrique" value="Electrique">
                                                 <label for="type-chauffage-electrique" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-electricite2"></i><span>Electricité</span></label>
                                             </div>
-                                            <div class="col block-chauffage">
+                                            <div class="col-md col-xs-12 block-chauffage">
                                                 <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-gaz" value="Gaz">
                                                 <label for="type-chauffage-gaz" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-gaz2"></i><span>Gaz</span></label>
                                             </div>
-                                            <div class="col block-chauffage">
+                                            <div class="col-md col-xs-12 block-chauffage">
                                                 <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-bois" value="Bois">
                                                 <label for="type-chauffage-bois" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-bois2"></i><span>Bois</span></label>
                                             </div>
-                                            <div class="col block-chauffage">
+                                            <div class="col-md col-xs-12 block-chauffage">
                                                 <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-fioul" value="Fioul">
                                                 <label for="type-chauffage-fioul" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-fioul"></i><span>Fioul</span></label>
                                             </div>
-                                            <div class="col block-chauffage">
+                                            <div class="col-md col-xs-12 block-chauffage">
                                                 <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-pompe" value="Pompe à chaleur">
                                                 <label for="type-chauffage-pompe" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-pompe"></i><span>Pompe</span></label>
                                             </div>
@@ -64,15 +47,15 @@
                                     <div>
                                         <p class="titre_input"><span>2-</span>La surface au sol de votre maison :</p>
                                         <div class="row">
-                                            <div class="col block-surface">
+                                            <div class="col-md col-xs-12 block-surface">
                                                 <input type="radio" class="radio" name="type_surface" id="type-surface-1" value="Moins de 70m2" checked>
                                                 <label for="type-surface-1" class="type-surface"><i class="icon-fantastic icon-icon-surface4"></i><span>Moins de 70m2</span></label>
                                             </div>
-                                            <div class="col block-surface">
+                                            <div class="col-md col-xs-12 block-surface">
                                                 <input type="radio" class="radio" name="type_surface" id="type-surface-2" value="Entre 70 et 100m2">
                                                 <label for="type-surface-2" class="type-surface"><i class="icon-fantastic icon-icon-surface4"></i><span>Entre 70 et 100m2</span></label>
                                             </div>
-                                            <div class="col block-surface">
+                                            <div class="col-md col-xs-12 block-surface">
                                                 <input type="radio" class="radio" name="type_surface" id="type-surface-3" value="Plus de 100m2">
                                                 <label for="type-surface-3" class="type-surface"><i class="icon-fantastic icon-icon-surface4"></i><span>Plus de 100m2</span></label>
                                             </div>
@@ -81,7 +64,7 @@
                                     <div>
                                         <p class="titre_input"><span>3-</span>Les isolations à faire dans votre maison :</p>
                                         <div class="row block-checkbox">
-                                            <div class="col block-isolation">
+                                            <div class="col-md col-xs-12 block-isolation">
                                                 <input type="checkbox" class="checkbox" name="isolation_combles" id="type-isolation-combles" value="1">
                                                 <label for="type-isolation-combles" class="type-isolation"><i class="icon-fantastic icon-isolation-combles-form"></i><span>Combles</br>perdus</span></label>
                                             </div>
@@ -89,11 +72,11 @@
                                                 <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-mur" required="required" value="Mme">
                                                 <label for="type-isolation-mur" class="type-isolation"><i class="icon-fantastic icon-isolation-mur-form"></i><span>Garage</br>mitoyen</span></label>
                                             </div>--}}
-                                            <div class="col block-isolation">
+                                            <div class="col-md col-xs-12 block-isolation">
                                                 <input type="checkbox" class="checkbox" name="isolation_garage" id="type-isolation-garage" value="1">
                                                 <label for="type-isolation-garage" class="type-isolation"><i class="icon-fantastic icon-isolation-garage-form"></i><span>Garage</br>R.D.C/Sous-sol</span></label>
                                             </div>
-                                            <div class="col block-isolation">
+                                            <div class="col-md col-xs-12 block-isolation">
                                                 <input type="checkbox" class="checkbox" name="isolation_caves" id="type-isolation-cave" value="1">
                                                 <label for="type-isolation-cave" class="type-isolation"><i class="icon-fantastic icon-isolation-cave-form"></i><span>Caves</br>buanderie/sous-sols</span></label>
                                             </div>
@@ -106,11 +89,11 @@
                                     <div>
                                         <p class="titre_input"><span>4-</span>Vous êtes :</p>
                                         <div class="row">
-                                            <div class="col-6">
+                                            <div class="col-md-6 col-xs-6">
                                                 <input type="radio" class="radio" name="type_bail" id="client-proprietaire" value="proprietaire" checked>
                                                 <label for="client-proprietaire" class="type-bail-client">Propriétaire</label>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-md-6 col-xs-6">
                                                 <input type="radio" class="radio" name="type_bail" id="client-locataire" value="locataire">
                                                 <label for="client-locataire" class="type-bail-client">Locataire</label>
                                             </div>
@@ -159,13 +142,13 @@
                                     </div>
                                     <div>
                                         <div class="row">
-                                            <div class="col-6">
+                                            <div class="col-md-6 col-xs-12">
                                                 <p class="titre_input"><span>6-</span>Votre revenu fiscal de référence <a href="#" class="info-revenu"><i class="ion-ios7-help-outline" data-color="orange"></i></a> :</p>
                                                 <div class="form-group">
-                                                    <input type="number" class="form-control" id="revenus_reference" name="revenus_reference" maxlength="6" Placeholder="19 650€">
+                                                    <input type="text" class="form-control" id="revenus_reference" name="revenus_reference" maxlength="6" Placeholder="19 650€">
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-md-6 col-xs-12">
                                                 <p class="titre_input"><span>7-</span>Votre code postal:</p>
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" name="code_postal" maxlength="5" Placeholder="Code postal">
@@ -180,11 +163,11 @@
                                     <p>Pour savoir si vous pouvez bénéficier de l'isolation de votre maison pour 1€, merci de compléter les informations ci-dessous.</p>
                                     <div>
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 col-xs-12">
                                                 <input type="radio" class="radio" name="civilite" id="civ_monsieur" value="monsieur" checked>
                                                 <label for="civ_monsieur" class="civilite">Monsieur</label>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 col-xs-12">
                                                 <input type="radio" class="radio" name="civilite" id="civ_madame" value="madame">
                                                 <label for="civ_madame" class="civilite">Madame</label>
                                             </div>
@@ -192,12 +175,12 @@
                                     </div>
                                     <div>
                                         <div class="row">
-                                            <div class="col-6">
+                                            <div class="col-md-6 col-xs-12">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" name="nom" Placeholder="Nom">
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-md-6 col-xs-12">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control telephone_input" name="telephone" maxlength="14" Placeholder="N° Mobile ou Fixe">
                                                 </div>
@@ -226,7 +209,7 @@
                                             <h5>Vous êtes éligible au programme d'isolation pour 1€</h5>
                                         </div>
                                         <div>
-                                            <div class="d-flex align-items-start">
+                                            <div class="d-flex flex-column align-items-center align-items-md-start flex-md-row">
                                                 <div>
                                                     <img src="{{ asset('images/assistance-telephonique.jpg') }}" class="assistace_phone_img rounded-circle" alt="Demande assistace telephonique isole habitat">
                                                 </div>
@@ -250,7 +233,7 @@
                                             <P>Vos revenus dépassent le plafond de revenus définit par l'ADEME. <span class="gras_500">Vous pouvez cependant bénéficier</span> de la <span class="gras_500" data-color="orange">Prime Energie</span>, déduite directement sur votre facture, pour vos travaux d'isolation.</P>
                                         </div>
                                         <div>
-                                            <div class="d-flex align-items-start">
+                                            <div class="d-flex flex-column align-items-center align-items-md-start flex-md-row">
                                                 <div>
                                                     <img src="{{ asset('images/assistance-telephonique.jpg') }}" class="assistace_phone_img rounded-circle" alt="Demande assistace telephonique isole habitat">
                                                 </div>
@@ -268,19 +251,19 @@
                                             {{ csrf_field() }}
                                             <p class="text-center">Selectionnez vos disponibilités:</p>
                                             <div class="row mt-20">
-                                                <div class="col-3 block-heure">
+                                                <div class="col-6 col-md-4 block-heure">
                                                     <input type="radio" class="radio" name="heure_rappel" id="type_heure-1" value="9h-12h" checked>
                                                     <label for="type_heure-1" class="type-heure">9h-12h</label>
                                                 </div>
-                                                <div class="col-3 block-heure">
+                                                <div class="col-6 col-md-4 block-heure">
                                                     <input type="radio" class="radio" name="heure_rappel" id="type_heure-2" value="12h-14h">
                                                     <label for="type_heure-2" class="type-heure">12h-14h</label>
                                                 </div>
-                                                <div class="col-3 block-heure">
+                                                <div class="col-6 col-md-4 block-heure">
                                                     <input type="radio" class="radio" name="heure_rappel" id="type_heure-3" value="14h-18h">
                                                     <label for="type_heure-3" class="type-heure">14h-18h</label>
                                                 </div>
-                                                <div class="col-3 block-heure">
+                                                <div class="col-6 col-md-4 block-heure">
                                                     <input type="radio" class="radio" name="heure_rappel" id="type_heure-4" value="18-20h">
                                                     <label for="type_heure-4" class="type-heure">18h-20h</label>
                                                 </div>
@@ -289,11 +272,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mt-20">
-                                <div class="tab-block-btn" id="tab-block-prev">
+                            <div class="row mt-20 justify-content-center">
+                                <div class="tab-block-btn col-xs-12 col-md-6" id="tab-block-prev">
                                     <button type="button" id="prevBtn" class="btn btn-rounded btn-formulaire btn-default2">Précédent</button>
                                 </div>
-                                <div class="tab-block-btn" id="tab-block-next">
+                                <div class="tab-block-btn col-xs-12 col-md-6" id="tab-block-next">
                                     <button type="button" id="nextBtn" class="btn btn-rounded btn-formulaire btn-vert" data-id="">Suivant</button>
                                 </div>
                             </div>
@@ -369,19 +352,18 @@
         var currentTab = 0;
         var prevButton = document.querySelector('#prevBtn');
         var nextButton = document.querySelector('#nextBtn');
-        var tabBlock = document.querySelector('#tab-block-next');
+        var tabBlockNext = document.querySelector('#tab-block-next');
+        var tabBlockPrev = document.querySelector('#tab-block-prev');
         function initTab(){
             currentTab = 0;
-            tabBlock.style.width = "100%";
-            nextButton.style.width = "50%";
-            prevButton.style.display = "none";
+            //tabBlock.style.width = "100%";
+            tabBlockPrev.style.display = "none";
+            //nextButton.style.width = "50%";
+            //prevButton.style.display = "none";
             nextButton.classList.remove('btn-orange');
             nextButton.classList.add('btn-vert');
             nextButton.innerHTML = "Suivant";
-            var check = document.querySelectorAll('.checkbox')
-            for(var i=0; i<check.length; i++){
-                check[i].checked = false;
-            }
+
         }
         showTab(currentTab);
         function showTab(n){
@@ -391,25 +373,29 @@
                 initTab();
             }
             else if(n == (x.length-2)) {
-                tabBlock.style.width = "50%";
-                nextButton.style.width = "100%";
-                prevButton.style.display = "block";
+                tabBlockPrev.style.display = "block";
+                tabBlockNext.classList.remove('col-md-12');
+                tabBlockNext.classList.add('col-md-6');
                 nextButton.innerHTML = "Tester maintenant";
 //nextButton.addEventListener('click', testEligibilite);
             }
             else if(n == (x.length-1)) {
-             tabBlock.style.width = "100%";
-             nextButton.style.width = "50%";
-             prevButton.style.display = "none";
-             nextButton.classList.remove('btn-vert');
-             nextButton.classList.add('btn-orange');
-             nextButton.innerHTML = "Me rappeler";
+                tabBlockPrev.style.display = "none";
+                tabBlockNext.classList.remove('col-md-6');
+                tabBlockNext.classList.add('col-md-12');
+                nextButton.innerHTML = "Suivant";
+                nextButton.classList.remove('btn-vert');
+                nextButton.classList.add('btn-orange');
+                nextButton.innerHTML = "Me rappeler";
              }
             else {
+                tabBlockPrev.style.display = "block";
+                tabBlockNext.classList.remove('col-md-12');
+                tabBlockNext.classList.add('col-md-6');
                 nextButton.innerHTML = "Suivant";
-                tabBlock.style.width = "50%";
-                nextButton.style.width = "100%";
-                prevButton.style.display = "block";
+                //tabBlock.style.width = "50%";
+                //nextButton.style.width = "100%";
+                //prevButton.style.display = "block";
             }
 
         }

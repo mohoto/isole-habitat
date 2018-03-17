@@ -19,8 +19,12 @@ class CreateClientRappelTable extends Migration
             $table->string('nom');
             $table->string('ville')->nullable();
             $table->string('codePostal')->nullable();
-            $table->string('telephone');
+            $table->string('departement')->nullable();
+            $table->string('telephone_mobile')->nullable();
+            $table->string('telephone_fixe')->nullable();
             $table->string('heure_rappel');
+            $table->boolean('traité')->default(0)->nullable();
+            $table->boolean('abondonné')->default(0)->nullable();
             $table->timestamps();
         });
     }

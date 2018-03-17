@@ -34,6 +34,8 @@ class CreateClientFormsTable extends Migration
             $table->boolean('isolation_caves')->default(0)->nullable();
             $table->boolean('cave voutée')->nullable();
             $table->string('heure_rappel')->nullable();
+            $table->boolean('traité')->default(0)->nullable();
+            $table->boolean('abondonné')->default(0)->nullable();
             $table->timestamps();
         });
     }

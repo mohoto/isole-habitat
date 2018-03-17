@@ -440,12 +440,11 @@ a:hover,a:focus,.a:active {
   color: #ffffff;
 }
 
-@media (min-width: 992px) {
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.9rem;
     padding-left: 0.9rem;
 }
-}
+
 .navbar-collapse {
   -ms-flex-preferred-size: 100%;
   flex-basis: auto;
@@ -952,7 +951,7 @@ h1, h2, h3, h4{
 .navbar-light .navbar-nav li a {
   font-size: 1.6em;
 }
-.navbar-light .navbar-nav .nav-link::hover {
+.navbar-light .navbar-nav .nav-link:hover {
   color: #ee7626;
 }
 @media (min-width: 576px){
@@ -1984,13 +1983,13 @@ input.invalid {
 /* Hide all steps by default: */
 #block-form .form-body .tab {
   display: none;
-  height: 400px;
+  height: 100%;
 }
 #section-formulaire .tab .info-block{
   height: 100%;
 }
 .section#section-formulaire .tab-block-btn{
-  width: 50%;
+  /*width: 50%;*/
   padding: 0 15px;
 }
 .section#section-formulaire .btn-formulaire {
@@ -2016,7 +2015,9 @@ input.invalid {
 .section#section-formulaire .btn.btn-custom2 a{
   color: #ffffff;
 }
-
+.section#section-formulaire #info-situation-client .form-group {
+   margin-bottom: 0;
+}
 /* Make circles that indicate the steps of the form: */
 .step {
   height: 15px;
@@ -2051,12 +2052,6 @@ input.invalid {
 .block-isolation{
   text-align: center;
 }
-
-.block-isolation{
-  padding-left: 5px !important;
-  padding-right: 5px !important;
-}
-
 .block-isolation input[type="checkbox"]{
   display: none;
 }
@@ -2130,9 +2125,6 @@ input.invalid {
 }
 
 
-
-
-
 #info-situation-client input[type="radio"],
 #info-client input[type="radio"]{
   display: none;
@@ -2148,7 +2140,7 @@ label.type-heure {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  padding: 10px 75px;
+  padding: 10px 0;
   font-size: 1rem;
   text-align: center;
   width: 100%;
@@ -2344,6 +2336,14 @@ label.type-heure {
 
 @media (min-width: 992px) {
 
+  #block-form #eligibForm .tab{
+    height: 420px;
+  }
+  /********Page "isolation-combles"*********/
+  .isolation-combles .block-materiel{
+    margin-left: 50px;
+  }
+  /********page "isolation-combles" End******/
   .navbar-custom .navbar-nav > li > ul > li.has-submenu:active > a, .navbar-custom .navbar-nav > li > ul > li.has-submenu:hover > a {
     color: #0863b5;
   }
@@ -2526,23 +2526,6 @@ label.type-heure {
     color: #ffffff;
   }
 }
-@media (max-width: 767px){
-  .popup_aide {
-    right: 10px;
-    font-size: .9em;
-    bottom: 0;
-    padding: 5px 10px;
-  }
-
-  .popup_aide {
-    position: fixed;
-    background-color: #ee7626;
-    color: #1e2830;
-    border: 0;
-    border-radius: 5px 5px 0 0;
-    z-index: 115;
-  }
-}
 
 /*Page Qui-sommes-nous?*/
 .qui_sommes_nous p{
@@ -2618,9 +2601,40 @@ label.type-heure {
 }
 
 /*Media queries*/
-@media (max-width: 767px) {
+@media (max-width: 1024px ) {
   .hero .part1 {
     width: 100%;
+  }
+
+  /*.hero .part2 {
+    width: 100%;
+    padding-top: 50px;
+  }*/
+  .hero h1 {
+    font-size: 2.2em;
+  }
+  .hero p {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 767px) {
+  .popup_aide {
+    left: 10px;
+    font-size: 1.5em;
+    bottom: 0;
+    padding: 10px 10px;
+  }
+
+  .popup_aide {
+    position: fixed;
+    background-color: #ee7626;
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    z-index: 115;
+  }
+  .hero .part1 {
+    width: 100%;
+    min-height: 200px;
   }
 
   /*.hero .part2 {
@@ -2636,15 +2650,16 @@ label.type-heure {
   .section#section-type-isolation .features-box img {
     width: 100%;
   }
-
-  .section#section-questions-cee .mascotte-cee {
-    top: -7%;
+  .section#section-type-isolation2 .table, .section#section-type-isolation3 .table, .section#section-type-isolation4 .table {
+    margin-top: 0;
   }
 
   .section#section-zones h3 {
     text-align: center;
   }
-
+  .section#section-societe .societe-part1 img {
+    margin-bottom: 20px;
+  }
   .section#section-testimonials p.testimonial-content {
     margin-bottom: 30px;
   }
@@ -2652,7 +2667,30 @@ label.type-heure {
   .section#section-social-share{
     padding: 50px 20px;
   }
-  /*Formulaire*/
+  /**********Formulaire*********/
+  #block-form .form-body {
+    background-color: #ffffff;
+    padding: 10px 20px 20px 20px;
+  }
+  #block-form .form-body .tab {
+    /*height: 1200px;*/
+  }
+  #info-maison-client label {
+    margin-bottom: 10px;
+  }
+  .form-body input[type="checkbox"] + label,
+  .form-body input[type="radio"] + label {
+    background: #ebeef1;
+    border-color: #ebeef1;
+  }
+  .section#section-formulaire .btn-formulaire#prevBtn{
+    margin-bottom: 10px;
+    background: transparent;
+  }
+  label.type-bail-client, label.civilite {
+    padding: 15px 0;
+  }
+  /********formulaire end****/
   .section#section-fonctionnement .block-step {
     width: 100%;
   }
@@ -2683,12 +2721,28 @@ label.type-heure {
     background-position: center bottom;
     padding: 200px;
   }
-
-  .section#section-questions-cee .mascotte-cee {
-    display:none;
+  .section#section-testimonials{
+    background: none !important;
+  }
+  .section#section-testimonials .testimonial-block{
+    margin-bottom: 30px;
+  }
+  .section#section-testimonials p.testimonial-content {
+    margin-bottom: 10px;
   }
 
   .navbar-custom .btn-custom {
     display:none;
   }
+
+  /********Page "isolation-combles"******/
+  .isolation-combles h1{
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  .qui_sommes_nous .img-fluid,
+  .isolation-combles .img-fluid{
+    margin-bottom: 20px;
+  }
+  /********Page "isolation-combles" End******/
 }

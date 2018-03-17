@@ -46,6 +46,8 @@ class CreatePrevisitesTable extends Migration
             $table->text('commentaires')->nullable();
             $table->string('source_isolation')->nullable();
             $table->string('nom_technicien')->nullable();
+            $table->boolean('traité')->default(0)->nullable();
+            $table->boolean('abondonné')->default(0)->nullable();
             $table->timestamps();
         });
     }

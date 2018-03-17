@@ -56,6 +56,22 @@ class RappelWebController extends Controller
         $data = \Location::get($ip);
         $ville = $data->cityName;
         $codePostal = $data->zipCode;
+        $departement = substr($codePostal, 0, 2);
+
+        $telephone = $request->telephone;
+        $telephoneSubs = substr($request->telephone, 0, 2);
+        if($telephoneSubs == 06){
+            $telephone_mobile= $telephone;
+            $telephone_fixe = '';
+        }
+        elseif($telephoneSubs == 07){
+            $telephone_mobile = $telephone;
+            $telephone_fixe = '';
+        }
+        else{
+            $telephone_fixe = $telephone;
+            $telephone_mobile = '';
+        }
 
         $clientRappel = new ClientRappel();
         $clientRappel->civilite = $request->rappel_civilite;
@@ -64,6 +80,7 @@ class RappelWebController extends Controller
         $clientRappel->heure_rappel = $request->rappel_heure_modal;
         $clientRappel->ville = $ville;
         $clientRappel->codePostal = $codePostal;
+        $clientRappel->departement = $departement;
         $clientRappel->save();
 
         return response()->json([

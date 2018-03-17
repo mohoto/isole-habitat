@@ -243,10 +243,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group col-md-12">
-                                                    <input type="text" class="form-control" name="isolation_source" value="lead-web" hidden>
-                                                </div>
-                                                <div class="form-group col-md-12">
-                                                    <input type="text" class="form-control" name="departement" value="{{ $clientform->departement }}" hidden>
+                                                    <input type="text" class="form-control" name="source_isolation" value="lead-formulaire-web" hidden>
                                                 </div>
                                             </div>
                                             <div class="row">

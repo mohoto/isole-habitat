@@ -547,7 +547,7 @@
             <div class="col-sm-12 text-center">
                 <h2 class="text-white mb-40">Ils ont profité de l'isolation à 1€</h2>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column">
+            <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column testimonial-block">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
                 <p class="testimonial-content">J'ai fait le test, un conseiller m'a rappelé le lendemain pour m'expliquer la suite. Un technicien est venu pour prendre les mesures. <span class="gras_500">1 semaine après, ils sont passé pour poser l'isolation</span>. Ils m'ont donné tout de suite ma facture avec juste 1€ symbolique à payer. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                 <div class="info-testimonial">
@@ -558,7 +558,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column">
+            <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column testimonial-block">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
                 <p class="testimonial-content">Des amis nous ont parlé de ce programme. <span class="gras_500">Même si mes revenus sont corrects, j'étais éligible</span>. On a isolé nos combles et la cave. On a diminué le chauffage dans la maison et il fait toujours aussi bon à l'intérieur. On attend de voir la prochaine facture de chauffage. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                 <div class="info-testimonial">
@@ -569,7 +569,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column">
+            <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column testimonial-block">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
                 <p class="testimonial-content">Il fait froid dans notre grande maison l'hiver, ça revient vraiment cher pour la chauffer entièrement. Les ouvriers nous ont expliqué ce qu'ils allaient faire. <span class="gras_500">Les travaux ont duré 4 heures et on a rien eu à faire</span>. ils ont pris le temps de tout nettoyer avant de partir. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                 <div class="info-testimonial">

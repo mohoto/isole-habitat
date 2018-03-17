@@ -77,22 +77,22 @@
                         <div class="modal-body">
                             {{ csrf_field() }}
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-xs-12 col-md-6">
                                     <input type="radio" class="radio" name="rappel_civilite" id="civ_M" required="required" value="monsieur" checked>
                                     <label for="civ_M" class="civilite">Monsieur</label>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-xs-12 col-md-6">
                                     <input type="radio" class="radio" name="rappel_civilite" id="civ_Mme" required="required" value="madame">
                                     <label for="civ_Mme" class="civilite">Madame</label>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-xs-12 col-md-6">
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="rappel_nom" Placeholder="Nom">
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-xs-12 col-md-6">
                                     <div class="form-group">
                                         <input type="text" class="form-control telephone_input" name="rappel_telephone" maxlength="14" Placeholder="N° Mobile ou Fixe">
                                     </div>
@@ -101,19 +101,19 @@
                             <div class="mt-30">
                                 <h5 class="text-center">Selectionnez vos disponibilités:</h5>
                                 <div class="row mt-20">
-                                    <div class="col-3 block-heure">
+                                    <div class="col-6 col-md-3 block-heure">
                                         <input type="radio" class="radio" name="rappel_heure_modal" id="modal_type_heure-1" value="9h-12h" checked>
                                         <label for="modal_type_heure-1" class="type-heure">9h-12h</label>
                                     </div>
-                                    <div class="col-3 block-heure">
+                                    <div class="col-6 col-md-3 block-heure">
                                         <input type="radio" class="radio" name="rappel_heure_modal" id="modal_type_heure-2" value="12h-14h">
                                         <label for="modal_type_heure-2" class="type-heure">12h-14h</label>
                                     </div>
-                                    <div class="col-3 block-heure">
+                                    <div class="col-6 col-md-3 block-heure">
                                         <input type="radio" class="radio" name="rappel_heure_modal" id="modal_type_heure-3" value="14h-18h">
                                         <label for="modal_type_heure-3" class="type-heure">14h-18h</label>
                                     </div>
-                                    <div class="col-3 block-heure">
+                                    <div class="col-6 col-md-3 block-heure">
                                         <input type="radio" class="radio" name="rappel_heure_modal" id="modal_type_heure-4" value="18-20h">
                                         <label for="modal_type_heure-4" class="type-heure">18h-20h</label>
                                     </div>

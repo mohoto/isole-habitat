@@ -19,16 +19,14 @@ class PreVisiteController extends Controller
         $clientPrevisite->codePostal = $request->code_postal;
         $clientPrevisite->ville = $request->ville;
         $clientPrevisite->departement = $departement;
+        $clientPrevisite->telephone_fixe = $request->telephone_fixe;
+        $clientPrevisite->telephone_mobile = $request->telephone_mobile;
+        $clientPrevisite->email = $request->email;
         $clientPrevisite->revenu_fiscal = $request->revenu_fiscal;
         $clientPrevisite->nombre_personne = $request->nombre_personne;
         $clientPrevisite->type_bail = $request->type_bail;
         $clientPrevisite->chauffage = $request->type_chauffage;
         $clientPrevisite->surface_maison = $request->type_surface;
-
-
-        $clientPrevisite->telephone_fixe = $request->telephone_fixe;
-        $clientPrevisite->telephone_mobile = $request->telephone_mobile;
-        $clientPrevisite->email = $request->email;
         $clientPrevisite->isolation_combles = $request->isolation_combles;
         $clientPrevisite->isolation_combles_surface = $request->isolation_combles_surface;
         $clientPrevisite->isolation_combles_accee = $request->isolation_combles_accee;
@@ -40,6 +38,7 @@ class PreVisiteController extends Controller
         $clientPrevisite->cave_voutee = $request->cave_voutee;
         $clientPrevisite->isolation_voutee_surface = $request->isolation_voutee_surface;
         $clientPrevisite->commentaires = $request->commentaires;
+        $clientPrevisite->source_isolation = $request->source_isolation;
 
         $clientPrevisite->save();
         return redirect()->back();
