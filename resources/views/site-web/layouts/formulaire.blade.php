@@ -251,19 +251,19 @@
                                             {{ csrf_field() }}
                                             <p class="text-center">Selectionnez vos disponibilités:</p>
                                             <div class="row mt-20">
-                                                <div class="col-6 col-md-4 block-heure">
+                                                <div class="col-6 col-md-3 block-heure">
                                                     <input type="radio" class="radio" name="heure_rappel" id="type_heure-1" value="9h-12h" checked>
                                                     <label for="type_heure-1" class="type-heure">9h-12h</label>
                                                 </div>
-                                                <div class="col-6 col-md-4 block-heure">
+                                                <div class="col-6 col-md-3 block-heure">
                                                     <input type="radio" class="radio" name="heure_rappel" id="type_heure-2" value="12h-14h">
                                                     <label for="type_heure-2" class="type-heure">12h-14h</label>
                                                 </div>
-                                                <div class="col-6 col-md-4 block-heure">
+                                                <div class="col-6 col-md-3 block-heure">
                                                     <input type="radio" class="radio" name="heure_rappel" id="type_heure-3" value="14h-18h">
                                                     <label for="type_heure-3" class="type-heure">14h-18h</label>
                                                 </div>
-                                                <div class="col-6 col-md-4 block-heure">
+                                                <div class="col-6 col-md-3 block-heure">
                                                     <input type="radio" class="radio" name="heure_rappel" id="type_heure-4" value="18-20h">
                                                     <label for="type_heure-4" class="type-heure">18h-20h</label>
                                                 </div>

@@ -254,3 +254,10 @@
     </div>
     <!-- end wrapper -->
 @endsection
+@section('javascript')
+    <script>
+        @if(Session::has('success'))
+        toastr.info('Are you the 6 fingered man?');
+        @endif
+    </script>
+@endsection

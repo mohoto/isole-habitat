@@ -15,6 +15,7 @@
     <!-- App css -->
     <link href="{{ asset('isolation-crm/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('isolation-crm/plugins/switchery/css/switchery.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('isolation-crm/plugins/toastr/toastr.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('isolation-crm/css/icons.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('isolation-crm/css/style.css')}}" rel="stylesheet" type="text/css" />
 
@@ -175,6 +176,8 @@
 <script src="{{ asset('isolation-crm/plugins/custombox/js/legacy.min.js')}}"></script>
 <!-- switchery radio custom -->
 <script src="{{ asset('isolation-crm/plugins/switchery/js/switchery.min.js')}}"></script>
+<!-- toastr -->
+<script src="{{ asset('isolation-crm/plugins/toastr/toastr.js')}}"></script>
 
 <!-- App js -->
 <script src="{{ asset('isolation-crm/js/jquery.core.js')}}"></script>
@@ -215,6 +218,6 @@
     }
 
 </script>
-
+@yield('javascript')
 </body>
 </html>

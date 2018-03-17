@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Previsite;
 use App\ClientForm;
+use Illuminate\Support\Facades\Session;
 
 use Illuminate\Http\Request;
 
@@ -41,6 +42,7 @@ class PreVisiteController extends Controller
         $clientPrevisite->source_isolation = $request->source_isolation;
 
         $clientPrevisite->save();
+        Session::flash('suceess', 'Client enregistré pour une pré-visite');
         return redirect()->back();
 
     }
