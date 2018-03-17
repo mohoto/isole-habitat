@@ -76,7 +76,8 @@ class RappelWebController extends Controller
         $clientRappel = new ClientRappel();
         $clientRappel->civilite = $request->rappel_civilite;
         $clientRappel->nom = $request->rappel_nom;
-        $clientRappel->telephone = $request->rappel_telephone;
+        $clientRappel->telephone_fixe = $telephone_fixe;
+        $clientRappel->telephone_mobile = $telephone_mobile;
         $clientRappel->heure_rappel = $request->rappel_heure_modal;
         $clientRappel->ville = $ville;
         $clientRappel->codePostal = $codePostal;
