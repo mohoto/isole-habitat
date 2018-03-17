@@ -58,8 +58,8 @@ class RappelWebController extends Controller
         $codePostal = $data->zipCode;
         $departement = substr($codePostal, 0, 2);
 
-        $telephone = $request->telephone;
-        $telephoneSubs = substr($request->telephone, 0, 2);
+        $telephone = $request->rappel_telephone;
+        $telephoneSubs = substr($telephone, 0, 2);
         if($telephoneSubs == 06){
             $telephone_mobile= $telephone;
             $telephone_fixe = '';

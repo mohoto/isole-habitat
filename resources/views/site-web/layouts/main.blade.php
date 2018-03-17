@@ -62,6 +62,120 @@
 
     </head>
     <body data-spy="scroll" data-target="#navbar-menu" class="@yield('pageClass')">
+        <!-- Navbar -->
+        {{--<nav class="navbar navbar-custom navbar-expand-lg navbar-light">
+            <div class="navbar-block d-flex align-items-end">
+                <a class="navbar-brand logo" href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsMenu" aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-items-end" id="navbarsMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ route('site-web.accueil') }}">Accueil</a>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a class="nav-link" href="#features">Les travaux d'isolation</a>
+                            <ul class="submenu">
+                                <li><a href="{{ route('site-web.isolation-combles') }}">L'isolation des combles</a></li>
+                                --}}{{--<li><a href="{{ route('site-web.isolation-murs') }}">L'isolation des murs</a></li>--}}{{--
+                                --}}{{--<li><a href="{{ route('site-web.isolation-sols') }}">L'isolation des caves et garages</a></li>--}}{{--
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('site-web.societe') }}">Qui sommes-nous?</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-phone">
+                    <button class="btn btn-custom navbar-btn waves-effect waves-light"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></button>
+                </div>
+            </div>
+        </nav>--}}
+            {{--<nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Brand</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="{{ route('site-web.accueil') }}">Accueil<span class="sr-only">(current)</span></a></li>
+                            <li><a href="{{ route('site-web.isolation-combles') }}">L'isolation des combles</a></li>
+                            <li><a href="{{ route('site-web.societe') }}">Qui-sommes-nous?</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>--}}
+        <header>
+            <nav id='cssmenu'>
+                <div class="container-nav d-flex justify-content-around">
+                    <div class="logo"><a href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a></div>
+                    <div id="head-mobile"></div>
+                    <div class="button"></div>
+                    <ul>
+                        <li class='active'><a href='#'>ACCUEIL</a></li>
+                        <li><a href='{{ route('site-web.isolation-combles') }}'>L'ISOLATION DES COMBLES</a></li>
+                        <li><a href='{{ route('site-web.societe') }}'>QUI SOMMES-NOUS?</a>
+                            <ul>
+                                <li><a href='#'>Product 1</a>
+                                    <ul>
+                                        <li><a href='#'>Sub Product</a></li>
+                                        <li><a href='#'>Sub Product</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href='#'>Product 2</a>
+                                    <ul>
+                                        <li><a href='#'>Sub Product</a></li>
+                                        <li><a href='#'>Sub Product</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="phone-link"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         <div class="modal fade" id="phoneModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -130,37 +244,8 @@
             </div>
         </div>
         <a href="#" class="btn btn-orange popup_aide" data-toggle="modal" data-target="#phoneModal" data-animation="fadein" data-plugin="custommodal" data-overlaySpeed="200" data-overlayColor="#36404a">Besoin de conseils <i class="ion-help"></i></a>
-        <!-- Navbar -->
+
         {{--<nav class="navbar navbar-custom navbar-expand-lg navbar-light">
-            <div class="navbar-block d-flex align-items-end">
-                <a class="navbar-brand logo" href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsMenu" aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse align-items-end" id="navbarsMenu">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{ route('site-web.accueil') }}">Accueil</a>
-                        </li>
-                        <li class="nav-item has-submenu">
-                            <a class="nav-link" href="#features">Les travaux d'isolation</a>
-                            <ul class="submenu">
-                                <li><a href="{{ route('site-web.isolation-combles') }}">L'isolation des combles</a></li>
-                                --}}{{--<li><a href="{{ route('site-web.isolation-murs') }}">L'isolation des murs</a></li>--}}{{--
-                                --}}{{--<li><a href="{{ route('site-web.isolation-sols') }}">L'isolation des caves et garages</a></li>--}}{{--
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('site-web.societe') }}">Qui sommes-nous?</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-phone">
-                    <button class="btn btn-custom navbar-btn waves-effect waves-light"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></button>
-                </div>
-            </div>
-        </nav>--}}
-        <nav class="navbar navbar-custom navbar-expand-lg navbar-light">
             <div class="container">
                 <div class="row d-flex justify-content-center">
                     <a class="navbar-brand logo" href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a>
@@ -185,7 +270,7 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav>--}}
         <!-- End navbar-custom -->
         @yield('content')
         <section class="section" id="section-social-share">

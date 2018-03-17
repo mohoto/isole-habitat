@@ -20,7 +20,7 @@
                             <div class="tab" id="info-maison-client">
                                 <div class="info-block d-flex flex-column justify-content-around">
                                     <div>
-                                        <p class="titre_input"><span>1-</span>Selectionnez votre ou vos systèmes de chauffage :</p>
+                                        <p class="titre_input"><span>1-</span>Selectionnez votre système de chauffage :</p>
                                         <div class="row block-checkbox">
                                             <div class="col-md col-xs-12 block-chauffage">
                                                 <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-electrique" value="Electrique">
