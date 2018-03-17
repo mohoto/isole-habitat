@@ -2361,7 +2361,7 @@ label.type-heure {
     padding-top: 50px;
   }*/
   .hero h1 {
-    font-size: 2.2em;
+    font-size: 2em;
   }
   .hero p {
     font-size: 1.3em;
@@ -2370,7 +2370,7 @@ label.type-heure {
     width: 100%;
   }
   .section#section-type-isolation2 .table, .section#section-type-isolation3 .table, .section#section-type-isolation4 .table {
-    margin-top: 80px;
+    margin-top: 40px;
   }
 
   .section#section-zones h3 {
@@ -2390,6 +2390,9 @@ label.type-heure {
   #block-form .form-body {
     background-color: #ffffff;
     padding: 10px 20px 20px 20px;
+  }
+  #block-form .form-header {
+    padding: 20px 10px 5px 10px;
   }
   #block-form .form-body .tab {
     /*height: 1200px;*/
