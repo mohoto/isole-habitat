@@ -273,10 +273,10 @@
                                 </div>
                             </div>
                             <div class="row mt-20 justify-content-center">
-                                <div class="tab-block-btn col-xs-12 col-md-6 order-2" id="tab-block-prev">
+                                <div class="tab-block-btn col-xs-12 col-md-6 order-2 order-md-1" id="tab-block-prev">
                                     <button type="button" id="prevBtn" class="btn btn-rounded btn-formulaire btn-default2">Précédent</button>
                                 </div>
-                                <div class="tab-block-btn col-xs-12 col-md-6 order-1" id="tab-block-next">
+                                <div class="tab-block-btn col-xs-12 col-md-6 order-md-2" id="tab-block-next">
                                     <button type="button" id="nextBtn" class="btn btn-rounded btn-formulaire btn-vert" data-id="">Suivant</button>
                                 </div>
                             </div>
