@@ -64,7 +64,7 @@
                                     <div>
                                         <p class="titre_input"><span>3-</span>Les isolations à faire dans votre maison :</p>
                                         <div class="row block-checkbox">
-                                            <div class="col-md col-xs-12 block-isolation">
+                                            <div class="col-4 block-isolation">
                                                 <input type="checkbox" class="checkbox" name="isolation_combles" id="type-isolation-combles" value="1">
                                                 <label for="type-isolation-combles" class="type-isolation"><i class="icon-fantastic icon-isolation-combles-form"></i><span>Combles</br>perdus</span></label>
                                             </div>
@@ -72,13 +72,13 @@
                                                 <input type="checkbox" class="checkbox" name="type_isolation" id="type-isolation-mur" required="required" value="Mme">
                                                 <label for="type-isolation-mur" class="type-isolation"><i class="icon-fantastic icon-isolation-mur-form"></i><span>Garage</br>mitoyen</span></label>
                                             </div>--}}
-                                            <div class="col-md col-xs-12 block-isolation">
+                                            <div class="col-4 block-isolation">
                                                 <input type="checkbox" class="checkbox" name="isolation_garage" id="type-isolation-garage" value="1">
                                                 <label for="type-isolation-garage" class="type-isolation"><i class="icon-fantastic icon-isolation-garage-form"></i><span>Garage</br>R.D.C/Sous-sol</span></label>
                                             </div>
-                                            <div class="col-md col-xs-12 block-isolation">
+                                            <div class="col-4 block-isolation">
                                                 <input type="checkbox" class="checkbox" name="isolation_caves" id="type-isolation-cave" value="1">
-                                                <label for="type-isolation-cave" class="type-isolation"><i class="icon-fantastic icon-isolation-cave-form"></i><span>Caves</br>buanderie/sous-sols</span></label>
+                                                <label for="type-isolation-cave" class="type-isolation"><i class="icon-fantastic icon-isolation-cave-form"></i><span>Caves</br>sous-sols</span></label>
                                             </div>
                                         </div>
                                     </div>
@@ -273,10 +273,10 @@
                                 </div>
                             </div>
                             <div class="row mt-20 justify-content-center">
-                                <div class="tab-block-btn col-xs-12 col-md-6" id="tab-block-prev">
+                                <div class="tab-block-btn col-xs-12 col-md-6 order-2" id="tab-block-prev">
                                     <button type="button" id="prevBtn" class="btn btn-rounded btn-formulaire btn-default2">Précédent</button>
                                 </div>
-                                <div class="tab-block-btn col-xs-12 col-md-6" id="tab-block-next">
+                                <div class="tab-block-btn col-xs-12 col-md-6 order-1" id="tab-block-next">
                                     <button type="button" id="nextBtn" class="btn btn-rounded btn-formulaire btn-vert" data-id="">Suivant</button>
                                 </div>
                             </div>

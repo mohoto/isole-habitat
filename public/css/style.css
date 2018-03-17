@@ -2370,7 +2370,7 @@ label.type-heure {
     width: 100%;
   }
   .section#section-type-isolation2 .table, .section#section-type-isolation3 .table, .section#section-type-isolation4 .table {
-    margin-top: 0;
+    margin-top: 80px;
   }
 
   .section#section-zones h3 {
@@ -2403,8 +2403,10 @@ label.type-heure {
     border-color: #ebeef1;
   }
   .section#section-formulaire .btn-formulaire#prevBtn{
+      background: transparent;
+  }
+  .section#section-formulaire .btn-formulaire#nextBtn{
     margin-bottom: 10px;
-    background: transparent;
   }
   label.type-bail-client, label.civilite {
     padding: 15px 0;
