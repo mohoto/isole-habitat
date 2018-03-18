@@ -20,8 +20,8 @@ $.notify.addStyle("metro", {
         },
         custom: {
             "color": "#fafafa !important",
-            "background-color": "#5fbeaa",
-            "border": "1px solid #5fbeaa"
+            "background-color": "#8ab326",
+            "border": "1px solid #8ab326"
         },
         success: {
             "color": "#fafafa !important",

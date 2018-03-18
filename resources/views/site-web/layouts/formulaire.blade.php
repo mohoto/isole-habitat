@@ -74,7 +74,7 @@
                                             </div>--}}
                                             <div class="col-4 block-isolation">
                                                 <input type="checkbox" class="checkbox" name="isolation_garage" id="type-isolation-garage" value="1">
-                                                <label for="type-isolation-garage" class="type-isolation"><i class="icon-fantastic icon-isolation-garage-form"></i><span>Garage</br>R.D.C/Sous-sol</span></label>
+                                                <label for="type-isolation-garage" class="type-isolation"><i class="icon-fantastic icon-isolation-garage-form"></i><span>Garage</br>atelier</span></label>
                                             </div>
                                             <div class="col-4 block-isolation">
                                                 <input type="checkbox" class="checkbox" name="isolation_caves" id="type-isolation-cave" value="1">

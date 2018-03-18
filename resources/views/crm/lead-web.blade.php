@@ -269,3 +269,11 @@
     </div>
     <!-- end wrapper -->
 @endsection
+@section('javascript')
+    <script>
+        @if(Session::has('success'))
+        $.Notification.notify('success','top center','Opération enregistré', '{{ Session::get('success') }}');
+        @endif
+
+    </script>
+@endsection

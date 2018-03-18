@@ -42,7 +42,7 @@ class PreVisiteController extends Controller
         $clientPrevisite->source_isolation = $request->source_isolation;
 
         $clientPrevisite->save();
-        Session::flash('suceess', 'Client enregistré pour une pré-visite');
+        Session::flash('success', 'Client enregistré pour une pré-visite');
         return redirect()->back();
 
     }

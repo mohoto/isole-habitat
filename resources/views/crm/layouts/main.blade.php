@@ -16,6 +16,7 @@
     <link href="{{ asset('isolation-crm/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('isolation-crm/plugins/switchery/css/switchery.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('isolation-crm/plugins/toastr/toastr.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('isolation-crm/plugins/notifications/notification.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('isolation-crm/css/icons.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('isolation-crm/css/style.css')}}" rel="stylesheet" type="text/css" />
 
@@ -178,6 +179,9 @@
 <script src="{{ asset('isolation-crm/plugins/switchery/js/switchery.min.js')}}"></script>
 <!-- toastr -->
 <script src="{{ asset('isolation-crm/plugins/toastr/toastr.js')}}"></script>
+<!-- notify -->
+<script src="{{ asset('isolation-crm/plugins/notifyjs/js/notify.js')}}"></script>
+<script src="{{ asset('isolation-crm/plugins/notifications/notify-metro.js')}}"></script>
 
 <!-- App js -->
 <script src="{{ asset('isolation-crm/js/jquery.core.js')}}"></script>

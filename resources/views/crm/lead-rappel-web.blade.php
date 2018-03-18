@@ -257,7 +257,7 @@
 @section('javascript')
     <script>
         @if(Session::has('success'))
-        toastr.info('Are you the 6 fingered man?');
+        $.Notification.notify('success','top center','Opération enregistré', '{{ Session::get('success') }}');
         @endif
     </script>
 @endsection
