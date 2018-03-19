@@ -1131,6 +1131,9 @@ label.type-heure {
   color: #fff;
   background-color: #8ab326;
 }
+.section.section-questions .table-phone{
+    display: none;
+}
 .section.section-questions .table thead th {
   vertical-align: middle;
 }
@@ -1155,13 +1158,18 @@ label.type-heure {
 .section.section-questions .table.table-responsive>thead>tr>th:not(:first-child):not(:last-child) {
   font-size: 1.8em;
 }
-.section.section-questions .table.table-responsive>thead>tr>th:not(:first-child) {
+.section.section-questions .table.table-responsive>thead>tr>th{
   text-align: center;
 }
-.section.section-questions .table.table-responsive>tbody>tr>td:not(:first-child) {
-  text-align: center;
+.section.section-questions .table.table-responsive>tbody>tr>td:not(:first-child){
+    text-align: center;
 }
-.section.section-questions .table.table-responsive>thead>tr>th {
+.section.section-questions .table.table-responsive>tbody>tr>th{
+  text-align: center;
+    background-color: #8ab326;
+    color: #ffffff;
+}
+.section.section-questions .table.table-responsive>thead>tr>th:first-child {
   color: #fff;
   background-color: #8ab326;
 }
@@ -2372,7 +2380,12 @@ label.type-heure {
   .section#section-type-isolation2 .table, .section#section-type-isolation3 .table, .section#section-type-isolation4 .table {
     margin-top: 40px;
   }
-
+  .section.section-questions .table-desktop{
+      display: none;
+  }
+  .section.section-questions .table-phone{
+    display: block;
+  }
   .section#section-zones h3 {
     text-align: center;
   }

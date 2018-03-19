@@ -305,7 +305,7 @@
                 <p><i class="fa fa-check mr-10" aria-hidden="true" data-color="vert"></i>Ne pas dépasser le plafond de revenus définit par l'ADEME*</p>
             </div>
         </div>
-        <div class="row justify-content-center mt-40">
+        <div class="row justify-content-center mt-40 table-desktop">
             <div class="col-xs-12 col-md-9">
                 <table class="table table-bordered">
                     <thead class="thead-inverse">
@@ -344,10 +344,11 @@
                     </tr>
                     </tbody>
                 </table>
+                <p class="text-muted text-center">*Agence De l'Environnement et de la Maitrise de l'Energie</p>
             </div>
         </div>
-        {{--<div class="row justify-content-center mt-40">
-            <div class="col-sm-12 col-md-8">
+        <div class="row justify-content-center mt-40 table-phone">
+            <div class="col-12 hidden-md-up">
                 <table class="table table-bordered table-responsive">
                     <thead class="">
                     <tr>
@@ -357,9 +358,9 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td></td>
-                        <td>Pour l'Ile-de-France</td>
-                        <td>Pour les autres régions</td>
+                        <th scope="row"></th>
+                        <td>En Ile-de-France</td>
+                        <td>Dans les autres régions</td>
                     </tr>
                         <tr>
                             <th scope="row">1</th>
@@ -395,7 +396,7 @@
                 </table>
                 <p class="text-muted text-center">*Agence De l'Environnement et de la Maitrise de l'Energie</p>
             </div>
-        </div>--}}
+        </div>
     </div>
 </section>
 <section class="section" id="section-zones">
