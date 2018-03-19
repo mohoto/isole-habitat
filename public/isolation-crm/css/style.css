@@ -6131,3 +6131,16 @@ label.nombre-personne, label.type-bail-client, label.civilite, label.type-heure 
   border-color: #8ab326;
   color: #ffffff;
 }
+
+
+/*********Page connexion********/
+body.connexionPage,
+body.inscriptionPage{
+  background: #303841;
+}
+.connexionPage .logo{
+  width: 150px;
+  margin: 0 auto;
+}
+/*********Page connexion End********/
+

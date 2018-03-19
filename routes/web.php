@@ -37,23 +37,6 @@ Route::post('rappel-web', [
         'uses' =>'RappelWebController@store'
 ]);
 
-
-Route::get('get-location-from-ip',function(){
-    $ip= \Request::ip();
-    //$ip= '78.227.102.12';
-    $data = \Location::get($ip);
-    dd($data);
-});
-
-/*Route::get('get-location-from-ip', 'FormController@getLocation');
-
-Route::get('get-ville', function(){
-    $data = Vicopo::http(92220);
-    //echo $data[0]->city;
-    print_r($data);
-
-});*/
-
 Route::post('formulaire-eligibilite' , [
     'as' => 'site-web.formulaire-eligibilite',
     'uses' =>'FormController@saveForm'
@@ -69,37 +52,52 @@ Route::post('formulaire-eligibilite-rappel/{id}' , [
 //Route::post('test-revenu', 'FormController@testRevenu');
 
 /*crm routes*/
-Route::group(['prefix' =>'crm'], function(){
-    Route::get('/', [
-        'as' => 'crm.accueil',
-        function () {
-        return view('crm.accueil');
-    }]);
+Route::group(['prefix' =>'crm'], function() {
+    Route::group(['middleware' => 'guest'], function () {
+        Route::get('/' , 'AuthController@getLogin');
+        Route::post('/' , 'AuthController@postLogin');
 
-    Route::get('/lead-rappel-web', [
-        'as' => 'crm.lead-rappel-web',
-        'uses' => 'RappelWebController@index'
-    ]);
-    Route::get('/lead-web', [
-        'as' => 'crm.lead-web',
-        'uses' => 'FormController@displayForm'
-    ]);
-    Route::get('/lead-demarchage', [
-        'as' => 'crm.lead-demarchage',
-        'uses' => 'ClientDemarchageController@index'
-    ]);
-    Route::get('/lead-previsite', [
-        'as' => 'crm.lead-previsite',
-        'uses' => 'PreVisiteController@displayVisite'
-    ]);
-    Route::get('/lead-previsite/recherche-ville/{ville}', [
-        'as' => 'crm.search-ville',
-        'uses' => 'PreVisiteController@searchVille'
-    ]);
+        Route::get('inscription', 'AuthController@getRegister');
+        Route::post('inscription', 'AuthController@postRegister');
+    });
 
+    Route::group(['middleware' => 'auth'], function () {
 
-    Route::post('/lead-web/accepter', [
-        'as' => 'crm.previsite-accepter',
-        'uses' => 'PreVisiteController@saveFromWebForm'
-    ]);
+        Route::get('admin/accueil', [
+            'as' => 'crm.admin.accueil',
+            function () {
+                return view('crm.admin.accueil');
+        }]);
+
+        Route::get('/lead-rappel-web', [
+            'as' => 'crm.lead-rappel-web',
+            'uses' => 'RappelWebController@index'
+        ]);
+        Route::get('/lead-web', [
+            'as' => 'crm.lead-web',
+            'uses' => 'FormController@displayForm'
+        ]);
+        Route::get('/lead-demarchage', [
+            'as' => 'crm.lead-demarchage',
+            'uses' => 'ClientDemarchageController@index'
+        ]);
+        Route::get('/lead-previsite', [
+            'as' => 'crm.lead-previsite',
+            'uses' => 'PreVisiteController@displayVisite'
+        ]);
+        Route::post('/lead-web/accepter', [
+            'as' => 'crm.previsite-accepter',
+            'uses' => 'PreVisiteController@saveFromWebForm'
+        ]);
+        Route::get('/lead-previsite/recherche-ville/{ville}', [
+            'as' => 'crm.search-ville',
+            'uses' => 'PreVisiteController@searchVille'
+        ]);
+        Route::get('/deconnexion', [
+            'as' => 'crm.deconnexion',
+            'uses'=>'AuthController@logOut'
+        ]);
+    });
+
 });
+

@@ -374,24 +374,17 @@
             }
             else if(n == (x.length-2)) {
                 tabBlockPrev.style.display = "block";
-                tabBlockNext.classList.remove('col-md-12');
-                tabBlockNext.classList.add('col-md-6');
                 nextButton.innerHTML = "Tester maintenant";
 //nextButton.addEventListener('click', testEligibilite);
             }
             else if(n == (x.length-1)) {
                 tabBlockPrev.style.display = "none";
-                tabBlockNext.classList.remove('col-md-6');
-                tabBlockNext.classList.add('col-md-12');
-                nextButton.innerHTML = "Suivant";
                 nextButton.classList.remove('btn-vert');
                 nextButton.classList.add('btn-orange');
                 nextButton.innerHTML = "Me rappeler";
              }
             else {
                 tabBlockPrev.style.display = "block";
-                tabBlockNext.classList.remove('col-md-12');
-                tabBlockNext.classList.add('col-md-6');
                 nextButton.innerHTML = "Suivant";
                 //tabBlock.style.width = "50%";
                 //nextButton.style.width = "100%";

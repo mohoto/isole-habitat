@@ -1,4 +1,7 @@
 @extends('crm.layouts.main')
+@section('navigation')
+    @include('crm.layouts.navigation')
+@endsection
 @section('content')
     <div class="wrapper">
         <div class="container-fluid">
