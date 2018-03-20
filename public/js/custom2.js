@@ -139,13 +139,14 @@
 
         var btnFacebook = document.querySelector('.share_facebook');
         btnFacebook.addEventListener('click', function(e){
-            var shareUrl = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(document.URL);
+            var url = "http://www.isole-habitat.fr";
+            var shareUrl = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(url);
             popupCenter(shareUrl , "partager sur Facebook");
         });
         var btnTwitter = document.querySelector('.share_twitter');
         btnTwitter.addEventListener('click', function(e){
             var url = "http://www.isole-habitat.fr";
-            var shareUrl = "https://twitter.com/share?url=" + encodeURIComponent(document.URL);
+            var shareUrl = "https://twitter.com/share?url=" + encodeURIComponent(url);
             popupCenter(shareUrl , "partager sur Twitter");
         });
         /*************************************************/
