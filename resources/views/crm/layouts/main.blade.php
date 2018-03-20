@@ -16,7 +16,10 @@
     <link href="{{ asset('isolation-crm/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('isolation-crm/plugins/switchery/css/switchery.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('isolation-crm/plugins/toastr/toastr.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('isolation-crm/plugins/select2/css/select2.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('isolation-crm/plugins/notifications/notification.css')}}" rel="stylesheet" type="text/css" />
+    <!-- SweetAlert2 CSS -->
+    <link href="{{ asset('isolation-crm/plugins/sweet-alert2/sweetalert2.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{ asset('isolation-crm/css/icons.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('isolation-crm/css/style.css')}}" rel="stylesheet" type="text/css" />
 
@@ -54,10 +57,14 @@
 <script src="{{ asset('isolation-crm/plugins/switchery/js/switchery.min.js')}}"></script>
 <!-- toastr -->
 <script src="{{ asset('isolation-crm/plugins/toastr/toastr.js')}}"></script>
+<!-- Select input-->
+<script src="{{ asset('isolation-crm/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{ asset('isolation-crm/plugins/select2/js/select2.full.min.js')}}"></script>
 <!-- notify -->
 <script src="{{ asset('isolation-crm/plugins/notifyjs/js/notify.js')}}"></script>
 <script src="{{ asset('isolation-crm/plugins/notifications/notify-metro.js')}}"></script>
-
+<!-- Sweet alert -->
+<script src="{{ asset('isolation-crm/plugins/sweet-alert2/sweetalert2.min.js')}}"></script>
 <!-- App js -->
 <script src="{{ asset('isolation-crm/js/jquery.core.js')}}"></script>
 <script src="{{ asset('isolation-crm/js/jquery.app.js')}}"></script>

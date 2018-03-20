@@ -7,6 +7,7 @@
         <div class="container-fluid">
             <div class="row">
                 @foreach($clientforms as $clientform)
+                    @if(($clientform->abondonne !==1) && ($clientform->traite !==1))
                     <div class="col-sm-6 col-lg-6">
                         <div class="card-box">
                             <div class="contact-card">
@@ -44,7 +45,7 @@
                                     @endif
                                     <div class="contact-action">
                                         <a class="btn btn-success btn-sm" data-toggle="collapse" href="#collapse-{{ $clientform->id }}" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="md md-mode-edit"></i></a>
-                                        <a href="#" class="btn btn-danger btn-sm"><i class="md md-close"></i></a>
+                                        <a href="#" class="btn btn-danger btn-sm lead-web-drop"><i class="md md-close"></i></a>
                                     </div>
                                 </div>
                                 <div class="collapse" id="collapse-{{ $clientform->id }}">
@@ -248,6 +249,9 @@
                                                 <div class="form-group col-md-12">
                                                     <input type="text" class="form-control" name="source_isolation" value="lead-formulaire-web" hidden>
                                                 </div>
+                                                <div class="form-group col-md-12">
+                                                    <input type="text" class="form-control" name="situation" value="{{ $clientform->situation }}" hidden>
+                                                </div>
                                             </div>
                                             <div class="row">
                                                 <div class="form-group col-md-12">
@@ -266,6 +270,7 @@
                             </div>
                         </div>
                     </div> <!-- end col -->
+                    @endif
                 @endforeach
             </div>
         </div> <!-- end container -->
@@ -275,7 +280,14 @@
 @section('javascript')
     <script>
         @if(Session::has('success'))
-        $.Notification.notify('success','top center','Opération enregistré', '{{ Session::get('success') }}');
+        {{--$.Notification.notify('success','top center','Opération enregistré', '{{ Session::get('success') }}');--}}
+            swal({
+            position: 'top-end',
+            type: 'success',
+            title: '{{Session::get('success')}}',
+            showConfirmButton: false,
+            timer: 2000
+        })
         @endif
 
     </script>

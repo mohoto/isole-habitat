@@ -27,7 +27,8 @@
 <!-- notify -->
 <script src="{{ asset('isolation-crm/plugins/notifyjs/js/notify.js')}}"></script>
 <script src="{{ asset('isolation-crm/plugins/notifications/notify-metro.js')}}"></script>
-
+<!-- Sweet alert -->
+<script src="{{ asset('isolation-crm/plugins/sweet-alert2/sweetalert2.min.js')}}"></script>
 <!-- App js -->
 <script src="{{ asset('isolation-crm/js/jquery.core.js')}}"></script>
 <script src="{{ asset('isolation-crm/js/jquery.app.js')}}"></script>

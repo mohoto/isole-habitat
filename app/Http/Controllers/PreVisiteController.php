@@ -25,6 +25,7 @@ class PreVisiteController extends Controller
         $clientPrevisite->email = $request->email;
         $clientPrevisite->revenu_fiscal = $request->revenu_fiscal;
         $clientPrevisite->nombre_personne = $request->nombre_personne;
+        $clientPrevisite->situation_eligible = $request->situation;
         $clientPrevisite->type_bail = $request->type_bail;
         $clientPrevisite->chauffage = $request->type_chauffage;
         $clientPrevisite->surface_maison = $request->type_surface;

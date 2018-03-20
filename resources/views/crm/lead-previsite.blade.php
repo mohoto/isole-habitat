@@ -234,6 +234,9 @@
                                                 <div class="form-group col-md-12">
                                                     <input type="text" class="form-control" name="isolation_source" value="lead-web" hidden>
                                                 </div>
+                                                <div class="form-group col-md-12">
+                                                    <input type="text" class="form-control" name="situation" value="{{ $clientVisite->situation_eligible }}" hidden>
+                                                </div>
                                             </div>
                                             <div class="row">
                                                 <div class="form-group col-md-12">

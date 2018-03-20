@@ -16,10 +16,22 @@ class AuthController extends Controller
     }
     public function postRegister(RegisterRequest $request){
         $user = new User();
-        $user->email = 'babi@gmail.com';
         $user->name = $request->name;
+        $user->email = $request->email;
+        $fonction = $request->fonction;
+        if($fonction == 'admin'){
+            $user->is_admin = 1;
+        }
+        if($fonction == 'secretaire'){
+            $user->is_secretaire = 1;
+        }
+        if($fonction == 'commercial'){
+            $user->is_commercial = 1;
+        }
+        if($fonction == 'technicien'){
+            $user->is_technicien = 1;
+        }
         $user->password = bcrypt($request->password);
-        $user->is_secretaire = 1;
         $user->save();
         Auth::login($user);
         return redirect('crm/admin/accueil');
