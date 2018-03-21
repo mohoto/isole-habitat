@@ -11,7 +11,7 @@
         <meta property="og:title"         content="Isoler votre maison pour 1€" />
         <meta property="og:description"   content="Profiter du programme d'isolation à 1€ et économisez jusqu'à 30% sur votre facture de chauffage. Isolations des combles, garages et caves." />
         <meta property="og:locale"        content="fr_FR" />
-        <meta property="og:image"         content="{{ asset('image-partage-reseaux-sociaux-facebook2.png') }}" />
+        <meta property="og:image"         content="{{ asset('image-partage-reseaux-sociaux-facebook3.png') }}" />
 
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@isolehabitat">
