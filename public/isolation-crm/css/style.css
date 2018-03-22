@@ -6132,6 +6132,24 @@ label.nombre-personne, label.type-bail-client, label.civilite, label.type-heure 
   color: #ffffff;
 }
 
+.member-info .departement{
+}
+.member-info .departement a{
+  font-size: 1.5em;
+  padding: 8px 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #ee7626;
+}
+.card-body .rendez-vous{
+  background-color: #414d59;
+}
+
+/*Clock picker*/
+.popover .popover-title{
+  color: #ee7626;
+}
 
 /*********Page connexion********/
 body.connexionPage,
@@ -6142,5 +6160,6 @@ body.inscriptionPage{
   width: 150px;
   margin: 0 auto;
 }
+
 /*********Page connexion End********/
 

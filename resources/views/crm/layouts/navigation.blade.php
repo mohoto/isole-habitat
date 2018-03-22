@@ -9,7 +9,7 @@
                 <!--UBold-->
                 <!--</a>-->
                 <!-- Image Logo -->
-                <a href="{{ route('crm.admin.accueil') }}" class="logo">
+                <a href="{{ route('crm.accueil') }}" class="logo">
                     <img src="{{ asset('isolation-crm/images/Isole-Habitat-logo.svg')}}" alt="" class="logo-lg">
                     <img src="{{ asset('isolation-crm/images/logo_sm.png')}}" alt="" height="24" class="logo-sm">
                 </a>
@@ -28,6 +28,7 @@
                     </a>
                     <!-- End mobile menu toggle-->
                 </li>
+                <li class="list-inline-item">Bonjour {{ Auth::user()->name }}</li>
                 <li class="list-inline-item dropdown notification-list">
                     <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
                        aria-haspopup="false" aria-expanded="false">
@@ -61,28 +62,9 @@
                     </div>
                 </li>
                 <li class="list-inline-item dropdown notification-list">
-                    <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
-                       aria-haspopup="false" aria-expanded="false">
-                        <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
+                    <a class="text-dark" href="{{ route('crm.deconnexion') }}" class="dropdown-item notify-item">
+                        <i class="fa fa-sign-out"></i> <span>Déconnexion</span>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <i class="zmdi zmdi-account-circle"></i> <span>Profile</span>
-                        </a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <i class="zmdi zmdi-settings"></i> <span>Settings</span>
-                        </a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item notify-item">
-                            <i class="zmdi zmdi-lock-open"></i> <span>Lock Screen</span>
-                        </a>
-                        <!-- item-->
-                        <a href="{{ route('crm.deconnexion') }}" class="dropdown-item notify-item">
-                            <i class="zmdi zmdi-power"></i> <span>Logout</span>
-                        </a>
-                    </div>
                 </li>
             </ul>
         </div>
@@ -98,7 +80,7 @@
                 <ul class="navigation-menu d-flex">
                     @if(Auth::user()->is_admin === 1)
                     <li class="has-submenu sub-navigation-menu">
-                        <a href="{{ route('crm.lead-web') }}"><i class="fa fa-dashboard"></i>Administration</a>
+                        <a href="{{ route('crm.admin.administration') }}"><i class="fa fa-dashboard"></i>Administration</a>
                     </li>
                     @endif
                     <li class="has-submenu sub-navigation-menu">

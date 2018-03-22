@@ -384,10 +384,6 @@ class FormController extends Controller
 
         $clientForm->save();
         return response()->json([
-            'situation' => $situation,
-            'nombre' => $nbrFoyer,
-            'departement' => $departement,
-            'revenu' => $revenu,
             'id' => $clientForm->id,
         ]);
 
@@ -404,11 +400,18 @@ class FormController extends Controller
 
     }
 
-    public function displayForm()
+    public function displayForm(Request $request)
     {
-        $clientforms = ClientForm::orderby('id', 'desc')->get();
+        if($ville = $request->get('ville')){
+            $clientforms = ClientForm::where('ville', $ville)->get();
+        }
+        elseif($departement = $request->get('departement')){
+            $clientforms = ClientForm::where('departement', $departement)->get();
+        }
+        else{
+            $clientforms = ClientForm::orderby('id', 'desc')->get();
+        }
         return view('crm.lead-web', compact('clientforms'));
-
     }
 
 

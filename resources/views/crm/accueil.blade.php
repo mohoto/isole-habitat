@@ -26,9 +26,9 @@
             <div class="row">
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="widget-panel widget-style-2 card-box">
-                        <i class="md md-attach-money text-primary"></i>
-                        <h2 class="m-0 counter font-600">50568</h2>
-                        <div class="text-muted m-t-5">Total Revenue</div>
+                        <i class="fa fa-wpforms text-primary"></i>
+                        <h2 class="m-0 counter font-600">{{ App\ClientForm::count() }}</h2>
+                        <div class="text-muted m-t-5">Formulaire web</div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">

@@ -54,7 +54,10 @@ Route::post('formulaire-eligibilite-rappel/{id}' , [
 /*crm routes*/
 Route::group(['prefix' =>'crm'], function() {
     Route::group(['middleware' => 'guest'], function () {
-        Route::get('/' , 'AuthController@getLogin');
+        Route::get('/' , [
+            'as' =>'login',
+            'uses' =>'AuthController@getLogin'
+        ]);
         Route::post('/' , 'AuthController@postLogin');
 
         Route::get('inscription', 'AuthController@getRegister');
@@ -63,12 +66,11 @@ Route::group(['prefix' =>'crm'], function() {
 
     Route::group(['middleware' => 'auth'], function () {
 
-        Route::get('admin/accueil', [
-            'as' => 'crm.admin.accueil',
+        Route::get('accueil', [
+            'as' => 'crm.accueil',
             function () {
-                return view('crm.admin.accueil');
+                return view('crm.accueil');
         }]);
-
         Route::get('/lead-rappel-web', [
             'as' => 'crm.lead-rappel-web',
             'uses' => 'RappelWebController@index'
@@ -79,7 +81,7 @@ Route::group(['prefix' =>'crm'], function() {
         ]);
         Route::get('/lead-demarchage', [
             'as' => 'crm.lead-demarchage',
-            'uses' => 'ClientDemarchageController@index'
+            'uses' => 'DemarchageController@index'
         ]);
         Route::get('/lead-previsite', [
             'as' => 'crm.lead-previsite',
@@ -89,15 +91,21 @@ Route::group(['prefix' =>'crm'], function() {
             'as' => 'crm.previsite-accepter',
             'uses' => 'PreVisiteController@saveFromWebForm'
         ]);
-        Route::get('/lead-previsite/recherche-ville/{ville}', [
-            'as' => 'crm.search-ville',
-            'uses' => 'PreVisiteController@searchVille'
-        ]);
         Route::get('/deconnexion', [
             'as' => 'crm.deconnexion',
             'uses'=>'AuthController@logOut'
         ]);
     });
 
+    Route::group(['middleware' => ['auth', 'admin']], function () {
+
+        Route::get('admin/administration', [
+            'as' => 'crm.admin.administration',
+            function () {
+                return view('crm.admin.administration');
+        }]);
+    });
+
 });
+
 

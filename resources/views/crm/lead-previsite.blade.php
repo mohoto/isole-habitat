@@ -9,12 +9,19 @@
             @if($villeRequest)
                 <h3 class="text-white m-b-30">Pre-visites à {{ $villeRequest }} :</h3>
             @endif
+                <?php $departementRequest = Request::get('departement');?>
+                @if($departementRequest)
+                    <h3 class="text-white m-b-30">Clients dans le {{ $departementRequest }} :</h3>
+                @endif
             <div class="row">
                 @foreach($clientVisites as $clientVisite)
                     <div class="col-sm-6 col-lg-6">
                         <div class="card-box">
                             <div class="contact-card">
                                 <div class="member-info">
+                                    <div class="departement">
+                                        <a class="text-dark" href="{{ route('crm.lead-previsite', ['departement' => $clientVisite->departement]) }}"> {{ $clientVisite->departement }}</a>
+                                    </div>
                                     <h4 class="m-t-20 m-b-20">{{ ucfirst($clientVisite->civilite) }}<b> {{ strtoupper($clientVisite->nom) }} {{ ucfirst($clientVisite->prenom) }}</b></h4>
                                     @if( $clientVisite->situation_eligible == 'grand-précaire')
                                         <span class="label label-success">{{ $clientVisite->situation_eligible}}</span>
@@ -238,11 +245,36 @@
                                                     <input type="text" class="form-control" name="situation" value="{{ $clientVisite->situation_eligible }}" hidden>
                                                 </div>
                                             </div>
+                                            <h5 class="m-b-20" data-color="orange">Commentaires:</h5>
                                             <div class="row">
                                                 <div class="form-group col-md-12">
                                                     <label>Commentaires</label>
                                                     <div class="">
                                                         <textarea class="form-control" rows="5" name="commentaires">{{ $clientVisite->commentaires }}</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row m-b-20 bordered-row">
+                                                <div class="col-md-12">
+                                                <h5 class="m-b-20 text-center" data-color="orange">Rendez-vous pour une pré-visite:</h5>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label class="text-white">Jour</label>
+                                                    <div>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control datepicker" placeholder="jour/mois/année" name="rdv_jour">
+                                                            <span class="input-group-addon b-0" data-background-color="vert"><i class="md md-event-note text-dark"></i></span>
+                                                        </div><!-- input-group -->
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label class="text-white">Heure</label>
+                                                    <div>
+                                                        <div class="input-group clockpicker" data-placement="top" data-align="top" data-autoclose="true">
+                                                            <input type="text" class="form-control" value="13:14" name="rdv_heure">
+                                                            <span class="input-group-addon" data-background-color="vert"> <span class="md md-access-time" data-color="blanc"></span> </span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -265,4 +297,35 @@
         </div> <!-- end container -->
     </div>
     <!-- end wrapper -->
+@endsection
+@section('javascript')
+    <script>
+        @if(Session::has('success'))
+        {{--$.Notification.notify('success','top center','Opération enregistré', '{{ Session::get('success') }}');--}}
+            swal({
+            position: 'top-end',
+            type: 'success',
+            title: '{{Session::get('success')}}',
+            showConfirmButton: false,
+            timer: 2000
+        });
+        @endif
+        $(document).ready(function(){
+
+
+            $('.datepicker').datepicker({
+                format: "dd/mm/yyyy",
+                weekStart: 1,
+                todayBtn: true,
+                language: "fr",
+                daysOfWeekDisabled: "0,6",
+                calendarWeeks: true,
+                autoclose: true,
+                todayHighlight: true
+            });
+
+            //Clock Picker
+            //$('.clockpicker').clockpicker();
+        });
+    </script>
 @endsection

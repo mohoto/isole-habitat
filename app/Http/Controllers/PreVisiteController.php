@@ -53,6 +53,9 @@ class PreVisiteController extends Controller
         if($ville = $request->get('ville')){
             $clientVisites = Previsite::where('ville', $ville)->get();
         }
+        elseif($departement = $request->get('departement')){
+            $clientVisites = Previsite::where('departement', $departement)->get();
+        }
         else{
             $clientVisites = Previsite::orderBy('id', 'asc')->get();
         }

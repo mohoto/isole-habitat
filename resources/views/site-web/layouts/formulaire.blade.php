@@ -247,7 +247,7 @@
                                 </div>
                                 <div>
                                     <div>
-                                        <div id="eligibRappel" role="form">
+                                        <form id="eligibRappel" role="form">
                                             {{ csrf_field() }}
                                             <p class="text-center">Selectionnez vos disponibilités:</p>
                                             <div class="row mt-20">
@@ -268,7 +268,7 @@
                                                     <label for="type_heure-4" class="type-heure">18h-20h</label>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

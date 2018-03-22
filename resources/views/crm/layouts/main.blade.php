@@ -20,10 +20,31 @@
     <link href="{{ asset('isolation-crm/plugins/notifications/notification.css')}}" rel="stylesheet" type="text/css" />
     <!-- SweetAlert2 CSS -->
     <link href="{{ asset('isolation-crm/plugins/sweet-alert2/sweetalert2.min.css')}}" rel="stylesheet" type="text/css">
+    <!-- DatePicker et TimePicker -->
+    <link href="{{ asset('isolation-crm/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('isolation-crm/plugins/clockpicker/css/bootstrap-clockpicker.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{ asset('isolation-crm/css/icons.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('isolation-crm/css/style.css')}}" rel="stylesheet" type="text/css" />
 
     <script src="{{ asset('isolation-crm/js/modernizr.min.js')}}"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '198213837448906');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=198213837448906&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Facebook Pixel Code -->
+
 
 </head>
 <body class="@yield('pageClass')">
@@ -65,6 +86,10 @@
 <script src="{{ asset('isolation-crm/plugins/notifications/notify-metro.js')}}"></script>
 <!-- Sweet alert -->
 <script src="{{ asset('isolation-crm/plugins/sweet-alert2/sweetalert2.min.js')}}"></script>
+<!-- DatePiccker et TimePicker -->
+<script src="{{ asset('isolation-crm/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
+<script src="{{ asset('isolation-crm/plugins/bootstrap-datepicker/js/locale/bootstrap-datepicker.fr.js')}}"></script>
+<script src="{{ asset('isolation-crm/plugins/clockpicker/js/bootstrap-clockpicker.min.js')}}"></script>
 <!-- App js -->
 <script src="{{ asset('isolation-crm/js/jquery.core.js')}}"></script>
 <script src="{{ asset('isolation-crm/js/jquery.app.js')}}"></script>

@@ -5,6 +5,14 @@
 @section('content')
     <div class="wrapper m-t-40">
         <div class="container-fluid">
+            <?php $villeRequest = Request::get('ville');?>
+            @if($villeRequest)
+                <h3 class="text-white m-b-30">Clients Formulaire Web à {{ $villeRequest }} :</h3>
+            @endif
+            <?php $departementRequest = Request::get('departement');?>
+            @if($departementRequest)
+                <h3 class="text-white m-b-30">Clients Formulaire Web dans le {{ $departementRequest }} :</h3>
+            @endif
             <div class="row">
                 @foreach($clientforms as $clientform)
                     @if(($clientform->abondonne !==1) && ($clientform->traite !==1))
@@ -12,6 +20,9 @@
                         <div class="card-box">
                             <div class="contact-card">
                                 <div class="member-info">
+                                    <div class="departement">
+                                        <a class="text-dark" href="{{ route('crm.lead-web', ['departement' => $clientform->departement]) }}"> {{ $clientform->departement }}</a>
+                                    </div>
                                     <h4 class="m-t-20 m-b-20">{{ ucfirst($clientform->civilite) }}<b> {{ strtoupper($clientform->nom) }}</b></h4>
                                     @if( $clientform->situation == 'grand-précaire')
                                         <span class="label label-success">{{ $clientform->situation}}</span>
@@ -20,7 +31,7 @@
                                     @elseif( $clientform->situation == 'classique')
                                         <span class="label label-danger">{{ $clientform->situation}}</span>
                                     @endif
-                                    <h5 class="text-dark">{{ strtoupper($clientform->codePostal) }} {{ strtoupper($clientform->ville) }}</h5>
+                                    <h5 class="text-dark">{{ strtoupper($clientform->codePostal) }} <a class="text-dark" href="{{ route('crm.lead-web', ['ville' => $clientform->ville]) }}"> {{ strtoupper($clientform->ville) }}</a></h5>
                                     <h5 data-color="orange"><i class="fa fa-phone"></i> {{ $clientform->telephone_fixe }} {{ $clientform->telephone_mobile }}</h5>
                                     @if($clientform->heure_rappel != null)
                                         <h6 data-color="orange">Demande de rappel entre : {{ $clientform->heure_rappel }}</h6>
@@ -287,7 +298,7 @@
             title: '{{Session::get('success')}}',
             showConfirmButton: false,
             timer: 2000
-        })
+        });
         @endif
 
     </script>

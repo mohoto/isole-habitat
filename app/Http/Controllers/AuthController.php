@@ -34,14 +34,14 @@ class AuthController extends Controller
         $user->password = bcrypt($request->password);
         $user->save();
         Auth::login($user);
-        return redirect('crm/admin/accueil');
+        return redirect('crm/accueil');
     }
     public function getLogin(){
-        return view('crm.connexion');
+        return view('crm.auth.login');
     }
     public function postLogin(LoginRequest $request){
         if(Auth::attempt(['name'=>$request->name, 'password'=>$request->password], $request->remember)){
-            return redirect()->intended('crm/admin/accueil');
+            return redirect()->intended('crm/accueil');
         }
         else{
             return redirect('crm')->withErrors('Identifiants erronés')->withInput();
