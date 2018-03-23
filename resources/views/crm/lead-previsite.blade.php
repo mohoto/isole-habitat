@@ -11,7 +11,7 @@
             @endif
                 <?php $departementRequest = Request::get('departement');?>
                 @if($departementRequest)
-                    <h3 class="text-white m-b-30">Clients dans le {{ $departementRequest }} :</h3>
+                    <h3 class="text-white m-b-30">Pre-visites dans le {{ $departementRequest }} :</h3>
                 @endif
             <div class="row">
                 @foreach($clientVisites as $clientVisite)

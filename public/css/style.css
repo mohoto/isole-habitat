@@ -1404,6 +1404,9 @@ label.type-heure {
     color: #8ab326;
     font-size: 5em;
 }
+.section#section-videos .block-video i:hover{
+    color: #ee7626;
+}
 .section#section-videos .modal-dialog {
     max-width: 800px;
     margin: 30px auto;
