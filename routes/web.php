@@ -79,6 +79,10 @@ Route::group(['prefix' =>'crm'], function() {
             'as' => 'crm.lead-web',
             'uses' => 'FormController@displayForm'
         ]);
+        Route::get('/lead-web/supprimer/{id}', [
+            'as' => 'crm.lead-web.supprimer',
+            'uses' => 'FormController@cancelFormWeb'
+        ]);
         Route::get('/lead-demarchage', [
             'as' => 'crm.lead-demarchage',
             'uses' => 'DemarchageController@index'
@@ -87,7 +91,7 @@ Route::group(['prefix' =>'crm'], function() {
             'as' => 'crm.lead-previsite',
             'uses' => 'PreVisiteController@displayVisite'
         ]);
-        Route::post('/lead-web/accepter', [
+        Route::get('/lead-web/accepter/{id}', [
             'as' => 'crm.previsite-accepter',
             'uses' => 'PreVisiteController@saveFromWebForm'
         ]);
@@ -104,6 +108,16 @@ Route::group(['prefix' =>'crm'], function() {
             function () {
                 return view('crm.admin.administration');
         }]);
+        Route::get('admin/chantier-validee', [
+            'as' => 'crm.admin.chantier-validee',
+            function () {
+                return view('crm.admin.administration');
+            }]);
+        Route::get('admin/pose-validee', [
+            'as' => 'crm.admin.pose-validee',
+            function () {
+                return view('crm.admin.pose-validee');
+            }]);
     });
 
 });

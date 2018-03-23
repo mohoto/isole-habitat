@@ -592,7 +592,19 @@
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
                 <p class="mb-0"><span class="gras_500">C'est 1 euro</span>. 24 heures après avoir rempli le document en ligne, j'ai eu la réponse, ça prend 5 minutes. C'est juste quand la personne m'a appelé, au vu des documents que j'avais déjà rempli en fait en ligne, qu'elle m'a dit : <span class="gras_500">Vous êtes éligible</span>... <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
             </div>
-            <div class="col-sm-12 col-md-4" id="">
+            <div class="col-sm-12 col-md-4 block-video" id="">
+                <img src="{{ asset('images/reportage-isolation-w8X4JjIJo5U.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur TF1" />
+                <div class="block-video-single d-flex justify-content-center align-items-center">
+                    <a class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/w8X4JjIJo5U" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 block-video" id="">
+                <img src="{{ asset('images/reportage-isolation-VSaZSj5-yFw.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur W9" />
+                <div class="block-video-single d-flex justify-content-center align-items-center">
+                    <a class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/VSaZSj5-yFw" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            {{--<div class="col-sm-12 col-md-4" id="">
                 <div class="youtube-player embed-responsive embed-responsive-16by9" data-id="w8X4JjIJo5U"></div>
             </div>
             <div class="col-sm-12 col-md-4" id="">
@@ -634,10 +646,51 @@
 //                    }
                 }
 
-            </script>
+            </script>--}}
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog reportage-video" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always">></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+@endsection
+@section('javascript')
+    <script>
+        $(document).ready(function() {
+
+            // Gets the video src from the data-src on each button
+            var $videoSrc;
+            $('.video-btn').click(function() {
+                $videoSrc = $(this).data( "src" );
+            });
+            console.log($videoSrc);
+            // when the modal is opened autoplay it
+            $('#myModal').on('shown.bs.modal', function (e) {
+            // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+                $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" );
+            });
+            // stop playing the youtube video when I close the modal
+            $('#myModal').on('hide.bs.modal', function (e) {
+                // a poor man's stop video
+                $("#video").attr('src',$videoSrc);
+            });
+
+        });
+
+    </script>
 @endsection
 
 

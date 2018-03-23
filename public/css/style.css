@@ -315,6 +315,7 @@ a:hover,a:focus,.a:active {
   color: #ffffff !important;
 }
 
+/*
 .video-btn {
   color: #ffffff !important;
   letter-spacing: 1px;
@@ -334,6 +335,7 @@ a:hover,a:focus,.a:active {
   padding-left: 3px;
   margin-left: -12px;
 }
+*/
 
 /*======= 4.Dropdown ======= */
 .dropdown-menu {
@@ -1385,13 +1387,50 @@ label.type-heure {
   font-size: 1.25em;
   line-height: 1.5;
 }
-.section#section-videos i{
-  color: #8ab326;
+.section#section-videos .block-video{
+    position: relative;
 }
-.youtube-player {
+.section#section-videos .block-video img{
+    width: 100%;
+}
+.section#section-videos .block-video .block-video-single{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.section#section-videos .block-video i{
+    color: #8ab326;
+    font-size: 5em;
+}
+.section#section-videos .modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+.section#section-videos .video-btn{
+
+}
+
+
+.section#section-videos .modal-body {
+    position:relative;
+    padding:0px;
+}
+.section#section-videos .close {
+    position:absolute;
+    right:-30px;
+    top:0;
+    z-index:999;
+    font-size:2rem;
+    font-weight: normal;
+    color:#fff;
+    opacity:1;
+}
+/*.youtube-player {
   position: relative;
   padding-bottom: 56.23%;
-  /* Use 75% for 4:3 videos */
+  !* Use 75% for 4:3 videos *!
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -1465,7 +1504,7 @@ label.type-heure {
   right: 16px;
   z-index: 25;
   opacity: .9;
-}
+}*/
 .section#section-social-share .block-social-share{
   width: 30em;
   height: 30em;

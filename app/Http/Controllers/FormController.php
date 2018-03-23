@@ -414,6 +414,12 @@ class FormController extends Controller
         return view('crm.lead-web', compact('clientforms'));
     }
 
+    public function cancelFormWeb($id){
+        $clientLead = ClientForm::find($id);
+        $clientLead->lead_abondonne = 1;
+        $clientLead->save();
+        return redirect()->back();
+    }
 
 
 

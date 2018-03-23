@@ -15,7 +15,7 @@
             @endif
             <div class="row">
                 @foreach($clientforms as $clientform)
-                    @if(($clientform->abondonne !==1) && ($clientform->traite !==1))
+                    @if(($clientform->lead_abondonne !==1) && ($clientform->lead_traite !==1))
                     <div class="col-sm-6 col-lg-6">
                         <div class="card-box">
                             <div class="contact-card">
@@ -56,12 +56,12 @@
                                     @endif
                                     <div class="contact-action">
                                         <a class="btn btn-success btn-sm" data-toggle="collapse" href="#collapse-{{ $clientform->id }}" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="md md-mode-edit"></i></a>
-                                        <a href="#" class="btn btn-danger btn-sm lead-web-drop"><i class="md md-close"></i></a>
+                                        <a href="{{ route('crm.lead-web.supprimer', ['id' => $clientform->id]) }}" class="btn btn-danger btn-sm lead-web-drop"><i class="md md-close"></i></a>
                                     </div>
                                 </div>
                                 <div class="collapse" id="collapse-{{ $clientform->id }}">
                                     <div class="card card-body">
-                                        <form id="formLeadWeb{{ $clientform->id }}" method="post" action="{{ route('crm.previsite-accepter') }}">
+                                        <form id="formLeadWeb{{ $clientform->id }}" method="get" action="{{ route('crm.previsite-accepter', ['id' => $clientform->id]) }}">
                                             {{ csrf_field() }}
                                             <h5 class="m-b-20" data-color="orange"><span class="">1</span> - Identité du client:</h5>
                                             <div class="row">

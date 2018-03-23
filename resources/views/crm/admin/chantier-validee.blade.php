@@ -9,10 +9,10 @@
             @if($villeRequest)
                 <h3 class="text-white m-b-30">Pre-visites à {{ $villeRequest }} :</h3>
             @endif
-                <?php $departementRequest = Request::get('departement');?>
-                @if($departementRequest)
-                    <h3 class="text-white m-b-30">Clients dans le {{ $departementRequest }} :</h3>
-                @endif
+            <?php $departementRequest = Request::get('departement');?>
+            @if($departementRequest)
+                <h3 class="text-white m-b-30">Clients dans le {{ $departementRequest }} :</h3>
+            @endif
             <div class="row">
                 @foreach($clientVisites as $clientVisite)
                     <div class="col-sm-6 col-lg-6">
@@ -254,9 +254,10 @@
                                                     </div>
                                                 </div>
                                             </div>
+
                                             <div class="row m-b-20 bordered-row">
                                                 <div class="col-md-12">
-                                                <h5 class="m-b-20 text-center" data-color="orange">Rendez-vous pour une pré-visite:</h5>
+                                                    <h5 class="m-b-20 text-center" data-color="orange">Rendez-vous pour une pré-visite:</h5>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label class="text-white">Jour</label>

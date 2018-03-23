@@ -9,7 +9,11 @@ use Illuminate\Http\Request;
 
 class PreVisiteController extends Controller
 {
-    public function saveFromWebForm(Request $request){
+    public function saveFromWebForm(Request $request, $id){
+
+        $clientLead = ClientForm::find($id);
+        $clientLead->lead_traite = 1;
+        $clientLead->save();
 
         $departement = substr($request->code_postal, 0, 2);
         $clientPrevisite = new Previsite();
