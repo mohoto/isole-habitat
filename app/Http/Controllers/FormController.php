@@ -385,6 +385,7 @@ class FormController extends Controller
         $clientForm->save();
         return response()->json([
             'id' => $clientForm->id,
+            'situation' => $clientForm->situation,
         ]);
 
     }

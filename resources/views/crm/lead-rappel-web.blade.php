@@ -34,7 +34,7 @@
                                 </div>
                                 <div class="collapse" id="collapse-{{ $clientRappel->id }}">
                                     <div class="card card-body">
-                                        <form id="formLeadWeb{{ $clientRappel->id }}" method="post" action="{{ route('crm.previsite-accepter') }}">
+                                        <form id="formLeadWeb{{ $clientRappel->id }}" method="post" action="{{ route('crm.previsite-accepter', ['id' => $clientRappel->id]) }}">
                                             {{ csrf_field() }}
                                             <h5 class="m-b-20" data-color="orange"><span class="">1</span> - Identité du client:</h5>
                                             <div class="row">

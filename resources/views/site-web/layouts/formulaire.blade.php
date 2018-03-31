@@ -13,8 +13,8 @@
                         <p class="text-white">Réponse immédiate - Sans aucun engagement</p>
                     </div>
                     {{--<form id="eligibForm" role="form" method="post" action="formulaire-eligibilite">--}}
-                    <form id="eligibForm">
-                        <div class="form-body">
+                    <div class="form-body">
+                        <form id="eligibForm">
                             {{ csrf_field() }}
                             <!-- One "tab" for each step in the form: -->
                             <div class="tab" id="info-maison-client">
@@ -198,6 +198,7 @@
                                     </div>
                                 </div>
                             </div>
+                        </form>
                             <div class="tab" id="phoneForm">
                                 <div class="info-resultat" id="info-resultat-ok">
                                     <div class="info-block d-flex flex-column justify-content-around">
@@ -281,7 +282,6 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
                     {{--<div class="spinner-form">
                         <i class="fa fa-spin fa-circle-o-notch"></i>
                     </div>--}}
