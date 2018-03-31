@@ -477,6 +477,7 @@
     </div>
 </section>
 <!-- Section-formulaire -->
+@include('site-web.layouts.formulaire')
 <!-- end section-formulaire -->
 <!-- end features alt -->
 <section class="section" id="section-societe">
