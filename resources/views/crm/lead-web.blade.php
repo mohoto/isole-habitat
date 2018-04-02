@@ -40,23 +40,24 @@
                                     @endif
                                     <p class="">{{ $clientform->dateFormatted()}}</p>
                                     @if($clientform->isolation_combles)
-                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" data-color="vert"></i>101 : Isolation des combles</h5>
+                                        <h5 class="text-dark"><i class="far fa-check-square m-r-5" data-color="vert"></i>101 : Isolation des combles</h5>
                                     @else
-                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" style="color: transparent"></i>101 : Isolation des combles</h5>
+                                        <h5 class="text-dark"><i class="far fa-check-square m-r-5" style="color: transparent"></i>101 : Isolation des combles</h5>
                                     @endif
                                     @if($clientform->isolation_garage)
-                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" data-color="vert"></i>103 : Isolation du garage</h5>
+                                        <h5 class="text-dark"><i class="far fa-check-square m-r-5" data-color="vert"></i>103 : Isolation du garage</h5>
                                     @else
-                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" style="color: transparent"></i>103 : Isolation du garage</h5>
+                                        <h5 class="text-dark"><i class="far fa-check-square m-r-5" style="color: transparent"></i>103 : Isolation du garage</h5>
                                     @endif
                                     @if($clientform->isolation_caves)
-                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" data-color="vert"></i>103 : Isolation des caves</h5>
+                                        <h5 class="text-dark"><i class="far fa-check-square m-r-5" data-color="vert"></i>103 : Isolation des caves</h5>
                                     @else
-                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" style="color: transparent"></i>103 : Isolation des caves</h5>
+                                        <h5 class="text-dark"><i class="far fa-check-square m-r-5" style="color: transparent"></i>103 : Isolation des caves</h5>
                                     @endif
                                     <div class="contact-action">
                                         <a class="btn btn-success btn-sm" data-toggle="collapse" href="#collapse-{{ $clientform->id }}" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="md md-mode-edit"></i></a>
-                                        <a href="{{ route('crm.lead-web.supprimer', ['id' => $clientform->id]) }}" class="btn btn-danger btn-sm lead-web-drop"><i class="md md-close"></i></a>
+                                        <button class="btn btn-danger btn-sm lead-web-drop" data-toggle="modal" data-target="#confirmCancel-{{ $clientform->id }}"><i class="md md-close"></i></button>
+
                                     </div>
                                 </div>
                                 <div class="collapse" id="collapse-{{ $clientform->id }}">
@@ -282,6 +283,26 @@
                         </div>
                     </div> <!-- end col -->
                     @endif
+                    <!-- Modal Confirm cancel-->
+                        <div class="modal confirmCancelModal" id="confirmCancel-{{ $clientform->id }}" tabindex="-1" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="modal-body text-center">
+                                        <i class="far fa-question-circle fa-3x text-danger"></i>
+                                        <h4 class="text-white text-center">Êtes-vous sûr de vouloir supprimer ce client?</h4>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer d-flex justify-content-center">
+                                        <a href="{{ route('crm.lead-web.supprimer', ['id' => $clientform->id]) }}" class="btn btn-success">Supprimer</a>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 @endforeach
             </div>
         </div> <!-- end container -->

@@ -34,19 +34,19 @@
                                     <h5 data-color="orange"><i class="fa fa-phone"></i> {{ $clientVisite->telephone_fixe }}<span class="m-l-15">{{ $clientVisite->telephone_mobile }}</span></h5>
                                     <p class="">{{ $clientVisite->dateFormatted()}}</p>
                                     @if($clientVisite->isolation_combles)
-                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" data-color="vert"></i>101 : Isolation des combles</h5>
+                                        <h5 class="text-dark"><i class="far fa-check-square m-r-5" data-color="vert"></i>101 : Isolation des combles</h5>
                                     @else
-                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" style="color: transparent"></i>101 : Isolation des combles</h5>
+                                        <h5 class="text-dark"><i class="far fa-check-square m-r-5" style="color: transparent"></i>101 : Isolation des combles</h5>
                                     @endif
                                     @if($clientVisite->isolation_garage)
-                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" data-color="vert"></i>103 : Isolation du garage</h5>
+                                        <h5 class="text-dark"><i class="far fa-check-square m-r-5" data-color="vert"></i>103 : Isolation du garage</h5>
                                     @else
-                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" style="color: transparent"></i>103 : Isolation du garage</h5>
+                                        <h5 class="text-dark"><i class="far fa-check-square m-r-5" style="color: transparent"></i>103 : Isolation du garage</h5>
                                     @endif
                                     @if($clientVisite->isolation_caves)
-                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" data-color="vert"></i>103 : Isolation des caves</h5>
+                                        <h5 class="text-dark"><i class="far fa-check-square m-r-5" data-color="vert"></i>103 : Isolation des caves</h5>
                                     @else
-                                        <h5 class="text-dark"><i class="fa fa-check-square-o m-r-5" style="color: transparent"></i>103 : Isolation des caves</h5>
+                                        <h5 class="text-dark"><i class="far fa-check-square m-r-5" style="color: transparent"></i>103 : Isolation des caves</h5>
                                     @endif
                                     <div class="contact-action">
                                         <a class="btn btn-success btn-sm" data-toggle="collapse" href="#collapse-{{ $clientVisite->id }}" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="md md-mode-edit"></i></a>

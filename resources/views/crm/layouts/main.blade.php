@@ -24,8 +24,8 @@
     <link href="{{ asset('isolation-crm/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{ asset('isolation-crm/plugins/clockpicker/css/bootstrap-clockpicker.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{ asset('isolation-crm/css/icons.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('isolation-crm/css/fontawesome-all.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('isolation-crm/css/style.css')}}" rel="stylesheet" type="text/css" />
-
     <script src="{{ asset('isolation-crm/js/modernizr.min.js')}}"></script>
 </head>
 <body class="@yield('pageClass')">

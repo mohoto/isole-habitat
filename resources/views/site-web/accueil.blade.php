@@ -592,7 +592,7 @@
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
                 <p class="mb-0"><span class="gras_500">C'est 1 euro</span>. 24 heures après avoir rempli le document en ligne, j'ai eu la réponse, ça prend 5 minutes. C'est juste quand la personne m'a appelé, au vu des documents que j'avais déjà rempli en fait en ligne, qu'elle m'a dit : <span class="gras_500">Vous êtes éligible</span>... <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
             </div>
-            <div class="col-sm-12 col-md-4 block-video" id="">
+            <div class="col-sm-12 col-md-4 block-video mb-5 mb-md-0" id="">
                 <img src="{{ asset('images/reportage-isolation-w8X4JjIJo5U.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur TF1" />
                 <div class="block-video-single d-flex justify-content-center align-items-center">
                     <a class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/w8X4JjIJo5U" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>

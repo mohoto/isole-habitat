@@ -63,7 +63,7 @@
                 </li>
                 <li class="list-inline-item dropdown notification-list">
                     <a class="text-dark" href="{{ route('crm.deconnexion') }}" class="dropdown-item notify-item">
-                        <i class="fa fa-sign-out"></i> <span>Déconnexion</span>
+                        <i class="fas fa-sign-out-alt"></i> <span>Déconnexion</span>
                     </a>
                 </li>
             </ul>
@@ -80,26 +80,23 @@
                 <ul class="navigation-menu d-flex">
                     @if(Auth::user()->is_admin === 1)
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/admin/administration') ? 'active' : ''}}">
-                        <a href="{{ route('crm.admin.administration') }}"><i class="fa fa-dashboard"></i>Administration</a>
+                        <a href="{{ route('crm.admin.administration') }}"><i class="fas fa-tachometer-alt"></i>Administration</a>
                     </li>
                     @endif
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/lead-web') ? 'active' : ''}}">
-                        <a href="{{ route('crm.lead-web') }}"><i class="fa fa-wpforms"></i>Formulaire web</a>
+                        <a href="{{ route('crm.lead-web') }}"><i class="fab fa-wpforms"></i>Formulaire web</a>
                     </li>
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/lead-rappel-web') ? 'active' : ''}}">
                         <a href="{{ route('crm.lead-rappel-web') }}"><i class="fa fa-volume-control-phone"></i>Rappel Tel web</a>
                     </li>
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/lead-demarchage') ? 'active' : ''}}">
-                        <a href="{{ route('crm.lead-demarchage') }}"><i class="fa fa-user-circle-o"></i>Démarchage</a>
+                        <a href="{{ route('crm.lead-demarchage') }}"><i class="fas fa-users"></i>Démarchage</a>
                     </li>
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/lead-previsite') ? 'active' : ''}}">
                         <a href="{{ route('crm.lead-previsite') }}"><i class="fa fa-calculator"></i>Pré-viste à faire</a>
                     </li>
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/admin/chantier-validee') ? 'active' : ''}}">
                         <a href="{{ route('crm.admin.chantier-validee') }}"><i class="fa fa-calendar-check-o"></i>Chantier validée</a>
-                        <ul class="submenu">
-                            <li><a href="ui-buttons.html">Buttons</a></li>
-                        </ul>
                     </li>
                     @if(Auth::user()->is_admin === 1)
                         <li class="sub-navigation-menu {{ Request::is('crm/admin/pose-validee') ? 'active' : ''}}">
