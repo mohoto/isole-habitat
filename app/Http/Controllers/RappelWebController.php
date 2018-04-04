@@ -131,6 +131,12 @@ class RappelWebController extends Controller
      */
     public function destroy($id)
     {
-        //
+
+    }
+    public function cancelRappelWeb($id){
+        $clientLead = ClientRappel::find($id);
+        $clientLead->lead_abondonne = 1;
+        $clientLead->save();
+        return redirect()->back();
     }
 }

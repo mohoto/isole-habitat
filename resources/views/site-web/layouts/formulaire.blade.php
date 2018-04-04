@@ -334,20 +334,6 @@
 
 @section('javascript')
     <script>
-        function checkRadioBox(){
-            var valid = true;
-            var heure_eligible = document.forms['eligibleForm'].elements['heure_rappel'];
-            for(var i=0; i<heure_eligible.length; i++){
-                if (heure_eligible[i].checked){
-                    val = heure_eligible[i].value;
-                    break;
-                }else{
-                    alert('selectionnez un système de chauffage');
-                    valid = false;
-                }
-            }
-            return valid;
-        }
         /*****Wizard function*******/
         var currentTab = 0;
         var prevButton = document.querySelector('#prevBtn');
@@ -400,6 +386,94 @@
             showTab(currentTab);
         });
 
+        function validateCheckboxIso(){
+            var valid = false;
+            var x = document.querySelectorAll('.tab');
+            var z = x[currentTab].querySelectorAll('.checkbox');
+            for(var j=0; j<z.length; j++){
+                if(z[j].checked == true){
+                    valid = true;
+                }
+            }
+            return valid;
+        }
+        function validateRadioChauffage(){
+            var valid = false;
+            var z = document.forms['eligibForm'].elements['type_chauffage'];
+            // loop through list of radio buttons
+            for (var i=0; i<z.length; i++) {
+                if (z[i].checked == true) { // radio checked?
+                    valid = true;
+                    break; // and break out of for loop
+                }
+
+            }
+            return valid;
+        }
+        function validateInputForm(){
+            var valid = true;
+            var x = document.querySelectorAll('.tab');
+            var y = x[currentTab].getElementsByTagName('input');
+            for(var i = 0; i < y.length; i++){
+                if(y[i].value == "" ){
+                    valid = false;
+                }
+            }
+            return valid;
+        }
+        function displayErrorInput(message){
+            $.notify({
+                // options
+                icon: 'glyphicon glyphicon-warning-sign',
+                message: 'Turning standard Bootstrap alerts into "notify" like notifications'
+
+            },{
+                // settings
+                element: 'body',
+                position: null,
+                type: "danger",
+                allow_dismiss: false,
+                newest_on_top: false,
+                showProgressbar: false,
+                placement: {
+                    from: "top",
+                    align: "center"
+                },
+                offset: 100,
+                spacing: 20,
+                z_index: 1061,
+                delay: 500,
+                timer: 1000,
+                url_target: '_blank',
+                mouse_over: null,
+                animate: {
+                    enter: 'animated fadeInDown',
+                    exit: 'animated fadeOutUp'
+                },
+                onShow: function(){
+                    setTimeout(function(){
+                        // enable click after 1 second
+                        $('#btn_phone_modal').prop('disabled',false);
+                    },5000);
+                },
+                onShown: null,
+                onClose: null,
+                onClosed: null,
+                icon_type: 'class',
+                template: '<div data-notify="container" class="col-xs-10 col-sm-3 alert alert-{0}" role="alert" data-background-color="orange">' +
+                '<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
+                '<span data-notify="icon"></span> ' +
+                '<span data-notify="title">{1}</span> ' +
+                '<span class="text-white mt-20 mb-20" data-notify="message">'+ message + '</span>' +
+                '<div class="progress" data-notify="progressbar">' +
+                '<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
+                '</div>' +
+                '<a href="{3}" target="{4}" data-notify="url"></a>' +
+                '</div>'
+            });
+        }
+
+
         var next = document.getElementById('nextBtn');
         next.addEventListener('click', function() {
             var x = document.querySelectorAll('.tab');
@@ -407,45 +481,61 @@
                 /*if(checkRadioBox() && checkCheckBox()){
 
                 }*/
-                x[currentTab].style.display = "none";
-                currentTab += 1;
-                showTab(currentTab);
+                var checkboxResult = validateCheckboxIso();
+                var radioResult = validateRadioChauffage();
+                if(radioResult == false){
+                    displayErrorInput('Selectionner le système de chauffage dans votre maison');
+                }
+                else if(checkboxResult == false){
+                    displayErrorInput('Selectionner le ou les types d\'isolation à faire dans votre maison.');
+                }
+                else{
+                    x[currentTab].style.display = "none";
+                    currentTab += 1;
+                    showTab(currentTab);
+                }
             }
             else if(currentTab == x.length - 2){
-                 var data = $('#eligibForm').serializeArray();
-                 $.ajaxSetup({
-                     headers: {
-                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                     }
-                 });
-                 $.ajax({
-                     type: 'post',
-                     url: '{{ route('site-web.formulaire-eligibilite') }}',
-                     data: data,
-                     dataType: 'JSON',
-                     success: function(response){
-                         x[currentTab].style.display =  "none";
-                         currentTab += 1;
-                         showTab(currentTab);
-                         $('.info-resultat').css('opacity', '0');
-                         $('.tab-block-btn').css('opacity', '0');
-                         $('#eligibRappel').css('opacity', '0');
-                         $('#loaderEligible').css('display', 'block');
-                         setTimeout(function(){
-                             $('#loaderEligible').fadeOut(500);
-                             $('.info-resultat').css('opacity', '1');
-                             $('.tab-block-btn').css('opacity', '1');
-                             $('#eligibRappel').css('opacity', '1');
-                             if(response.situation == 'grand-précaire'){
-                                 $('#info-resultat-ok').css('display', 'block');
-                                 nextButton.setAttribute('data-id', response.id);
-                             }else{
-                                 $('#info-resultat-none').css('display', 'block');
-                             }
-                         },2000)
-                     }
-                });
-             }
+                var inputResult = validateInputForm();
+                if(inputResult == false){
+                    displayErrorInput('Veuillez remplir tous les champs');
+                }
+                else{
+                    var data = $('#eligibForm').serializeArray();
+                    $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                    });
+                    $.ajax({
+                        type: 'post',
+                        url: '{{ route('site-web.formulaire-eligibilite') }}',
+                        data: data,
+                        dataType: 'JSON',
+                        success: function(response){
+                            x[currentTab].style.display =  "none";
+                            currentTab += 1;
+                            showTab(currentTab);
+                            $('.info-resultat').css('opacity', '0');
+                            $('.tab-block-btn').css('opacity', '0');
+                            $('#eligibRappel').css('opacity', '0');
+                            $('#loaderEligible').css('display', 'block');
+                            setTimeout(function(){
+                                $('#loaderEligible').fadeOut(500);
+                                $('.info-resultat').css('opacity', '1');
+                                $('.tab-block-btn').css('opacity', '1');
+                                $('#eligibRappel').css('opacity', '1');
+                                if(response.situation == 'grand-précaire'){
+                                    $('#info-resultat-ok').css('display', 'block');
+                                    nextButton.setAttribute('data-id', response.id);
+                                }else{
+                                    $('#info-resultat-none').css('display', 'block');
+                                }
+                            },2000)
+                        }
+                    });
+                }
+            }
             else if (currentTab == x.length - 1) {
                 //x[currentTab].style.display = "none";
                 //currentTab = 0;
@@ -485,9 +575,15 @@
                  });
             }
              else{
-                x[currentTab].style.display = "none";
-                currentTab += 1;
-                showTab(currentTab);
+                var inputResult = validateInputForm();
+                if(inputResult == false){
+                    displayErrorInput('Veuillez remplir tous les champs');
+                }
+                else{
+                    x[currentTab].style.display = "none";
+                    currentTab += 1;
+                    showTab(currentTab);
+                }
              }
         });
     </script>

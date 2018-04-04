@@ -75,6 +75,14 @@ Route::group(['prefix' =>'crm'], function() {
             'as' => 'crm.lead-rappel-web',
             'uses' => 'RappelWebController@index'
         ]);
+        Route::get('/lead-rappel-web/accepter/{id}', [
+            'as' => 'crm.lead-rappel-web-accepter',
+            'uses' => 'PreVisiteController@saveRappelWeb'
+        ]);
+        Route::get('/lead-rappel-web/supprimer/{id}', [
+            'as' => 'crm.lead-rappel-web.supprimer',
+            'uses' => 'RappelWebController@cancelRappelWeb'
+        ]);
         Route::get('/lead-web', [
             'as' => 'crm.lead-web',
             'uses' => 'FormController@displayForm'
@@ -92,7 +100,7 @@ Route::group(['prefix' =>'crm'], function() {
             'uses' => 'PreVisiteController@displayVisite'
         ]);
         Route::get('/lead-web/accepter/{id}', [
-            'as' => 'crm.previsite-accepter',
+            'as' => 'crm.lead-web-accepter',
             'uses' => 'PreVisiteController@saveFromWebForm'
         ]);
         Route::get('/deconnexion', [

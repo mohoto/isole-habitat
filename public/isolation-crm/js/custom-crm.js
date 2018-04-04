@@ -32,10 +32,10 @@
         /***************Clock Picker***********************/
 
         /*******Modal animation***************/
-        $('#confirmCancel').on('show.bs.modal', function (e) {
+        $('.confirmCancelModal').on('show.bs.modal', function (e) {
             $('.modal .modal-dialog').attr('class', 'modal-dialog zoomIn animated');
         });
-        $('#confirmCancel').on('hidden.bs.modal', function (e) {
+        $('.confirmCancelModal').on('hidden.bs.modal', function (e) {
             $('.modal .modal-dialog').attr('class','modal-dialog zoomOut animated');
         });
         /************************************/

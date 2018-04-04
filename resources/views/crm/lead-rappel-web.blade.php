@@ -7,6 +7,7 @@
         <div class="container-fluid">
             <div class="row">
                 @foreach($clientRappels as $clientRappel)
+                    @if(($clientRappel->lead_abondonne !==1) && ($clientRappel->lead_traite !==1))
                     <div class="col-sm-6 col-lg-6">
                         <div class="card-box">
                             <div class="contact-card">
@@ -29,12 +30,12 @@
                                     <p class="">{{ $clientRappel->dateFormatted()}}</p>
                                     <div class="contact-action">
                                         <a class="btn btn-success btn-sm" data-toggle="collapse" href="#collapse-{{ $clientRappel->id }}" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="md md-mode-edit"></i></a>
-                                        <a href="#" class="btn btn-danger btn-sm"><i class="md md-close"></i></a>
+                                        <button class="btn btn-danger btn-sm lead-web-drop" data-toggle="modal" data-target="#confirmCancel-{{ $clientRappel->id }}"><i class="md md-close"></i></button>
                                     </div>
                                 </div>
                                 <div class="collapse" id="collapse-{{ $clientRappel->id }}">
                                     <div class="card card-body">
-                                        <form id="formLeadWeb{{ $clientRappel->id }}" method="post" action="{{ route('crm.previsite-accepter', ['id' => $clientRappel->id]) }}">
+                                        <form id="formLeadWeb{{ $clientRappel->id }}" method="get" action="{{ route('crm.lead-rappel-web-accepter', ['id' => $clientRappel->id]) }}">
                                             {{ csrf_field() }}
                                             <h5 class="m-b-20" data-color="orange"><span class="">1</span> - Identité du client:</h5>
                                             <div class="row">
@@ -251,6 +252,27 @@
                             </div>
                         </div>
                     </div> <!-- end col -->
+                @endif
+                    <!-- Modal Confirm cancel-->
+                    <div class="modal confirmCancelModal" id="confirmCancel-{{ $clientRappel->id }}" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body text-center">
+                                    <i class="far fa-question-circle fa-3x text-danger"></i>
+                                    <h4 class="text-white text-center">Êtes-vous sûr de vouloir supprimer ce client?</h4>
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer d-flex justify-content-center">
+                                    <a href="{{ route('crm.lead-rappel-web.supprimer', ['id' => $clientRappel->id]) }}" class="btn btn-success">Supprimer</a>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 @endforeach
             </div>
         </div> <!-- end container -->

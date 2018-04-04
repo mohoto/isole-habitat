@@ -69,18 +69,31 @@
                     alert('pas enregistré');
                 }
             });
-        function validateForm(){
-            var valid = true;
-            var x = document.querySelectorAll('.tab');
-            var y = document.getElementsByTagName('input');
-            for(var i = 0; i < y.length; i++){
-                if(y[i].value == "" ){
-                    valid = false;
+            /***Validation inputs formulaire***/
+            function validateInput(){
+                var valid = true;
+                var x = document.querySelectorAll('.tab');
+                var y = x.getElementsByTagName('input');
+                for(var i = 0; i < y.length; i++){
+                    if(y[i].value == "" ){
+                        valid = false;
+                    }
+                }
+                return valid;
+            }
+
+            /***Validation inputs formulaire***/
+            function validateRadio(){
+                var x = document.querySelectorAll('.tab');
+                var y = x.getElementsByTagName('input[type="radio"]');
+                //var heure_modal = document.forms['phoneFormModal'].elements['heure_rappel_modal'];
+                for(var i=0; i<y.length; i++){
+                    if (heure_modal[i].checked){
+                        alert('radio input ok');
+                    }
                 }
             }
-            return valid;
-        }
-
+            /**********************************************/
         /*input chiffre format*/
         var $form = $( "#eligibleForm" );
         var $inputRevenu = $('#revenus_reference');
@@ -269,18 +282,6 @@
 
             }
         });
-
-        function validateForm(){
-            var valid = true;
-            var x = document.querySelectorAll('.tab');
-            var y = x[currentTab].getElementsByTagName('input');
-            for(var i = 0; i < y.length; i++){
-                if(y[i].value == "" ){
-                    valid = false;
-                }
-            }
-            return valid;
-        }
         function getRadioVals(){
             var val;
             var radios = document.forms['eligibleForm'].elements['nombre_personne'];
@@ -313,28 +314,6 @@
                 val = '18h-20h';
             }
             return val;
-        }
-        function validateCheckboxChauf(){
-            valid = false;
-            var x = document.querySelectorAll('.tab');
-            var z = x[currentTab].querySelectorAll('.checkbox');
-            for(var j=0; j<z.length; j++){
-                if(z[j].name == 'type_chauffage' && z[j].checked == true){
-                    valid = true;
-                }
-            }
-            return valid;
-        }
-        function validateCheckboxIso(){
-            valid = false;
-            var x = document.querySelectorAll('.tab');
-            var z = x[currentTab].querySelectorAll('.checkbox');
-            for(var j=0; j<z.length; j++){
-                if(z[j].name == 'type_isolation' && z[j].checked == true){
-                    valid = true;
-                }
-            }
-            return valid;
         }
         function dispalyEligibilite(eligible){
             if(eligible){
