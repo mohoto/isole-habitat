@@ -525,9 +525,9 @@
                                 $('.info-resultat').css('opacity', '1');
                                 $('.tab-block-btn').css('opacity', '1');
                                 $('#eligibRappel').css('opacity', '1');
+                                nextButton.setAttribute('data-id', response.id);
                                 if(response.situation == 'grand-précaire'){
                                     $('#info-resultat-ok').css('display', 'block');
-                                    nextButton.setAttribute('data-id', response.id);
                                 }else{
                                     $('#info-resultat-none').css('display', 'block');
                                 }

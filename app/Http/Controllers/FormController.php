@@ -152,6 +152,7 @@ class FormController extends Controller
                             }else{
                                 $situation = 'classique';
                             }
+                        }else{
                             if ($revenu <= 14308) {
                                 $situation = 'grand-précaire';
                             } elseif (($revenu > 14308) && ($revenu <= 18342)) {
@@ -159,8 +160,6 @@ class FormController extends Controller
                             } else {
                                 $situation = 'classique';
                             }
-                        }else{
-
                         }
                         break;
 
