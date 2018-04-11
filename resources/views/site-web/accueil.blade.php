@@ -595,7 +595,7 @@
             <div class="col-sm-12 col-md-4 block-video mb-5 mb-md-0" id="">
                 <img src="{{ asset('images/reportage-isolation-w8X4JjIJo5U.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur TF1" />
                 <div class="block-video-single d-flex justify-content-center align-items-center">
-                    <a class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/w8X4JjIJo5U" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+                    <a class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/V0aypHKpYXs" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="col-sm-12 col-md-4 block-video" id="">

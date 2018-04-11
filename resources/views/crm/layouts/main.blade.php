@@ -96,18 +96,19 @@
     elems.forEach(function(html) {
         var switchery = new Switchery(html, { color: '#8ab326', jackColor: '#ffffff' });
     });
-    var changeCheckbox = document.querySelectorAll('.switch-caves');
-    var input = document.querySelectorAll('.isolation_voutee_surface');
+    /*var changeCheckbox = document.querySelectorAll('.switch-caves');
+    var input_voutee = document.querySelectorAll('.iso-caves-voutee');
     for(var i=0; i<changeCheckbox.length; i++){
         changeCheckbox[i].onchange = function() {
             alert(this.checked);
-            if(this.checked){
-                input.removeAttribute('hidden');
-            }else{
-                input.setAttribute('hidden');
+            if(this.checked == true){
+                input_voutee.style.display = "block";
+            }
+            else {
+                input_voutee.style.display = "none";
             }
         };
-    }
+    }*/
 
 </script>
 @yield('javascript')

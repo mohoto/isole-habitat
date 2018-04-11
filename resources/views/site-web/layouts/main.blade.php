@@ -12,12 +12,14 @@
         <meta property="og:description"   content="Profiter du programme d'isolation à 1€ et économisez jusqu'à 30% sur votre facture de chauffage. Isolations des combles, garages et caves." />
         <meta property="og:locale"        content="fr_FR" />
         <meta property="og:image"         content="{{ asset('image-partage-reseaux-sociaux-facebook3.png') }}" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
 
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@isolehabitat">
         <meta name="twitter:title" content="Isoler votre maison pour 1€">
         <meta name="twitter:description" content="Profiter du programme d'isolation à 1€ et économisez jusqu'à 30% sur votre facture de chauffage. Isolations des combles, garages et caves.">
-        <meta name="twitter:image" content="{{ asset('image-partage-reseaux-sociaux.png') }}">
+        <meta name="twitter:image" content="{{ asset('image-partage-reseaux-sociaux-facebook3.png') }}">
         <meta name="twitter:image:width" content="640">
         <meta name="twitter:image:height" content="360">
 

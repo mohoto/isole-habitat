@@ -46,6 +46,8 @@ class PreVisiteController extends Controller
         $clientPrevisite->isolation_voutee_surface = $request->isolation_voutee_surface;
         $clientPrevisite->commentaires = $request->commentaires;
         $clientPrevisite->source_isolation = $request->source_isolation;
+        $clientPrevisite->rdv_jour = $request->rdv_jour;
+        $clientPrevisite->rdv_heure = $request->rdv_heure;
 
         $clientPrevisite->save();
         Session::flash('success', 'Client enregistré pour une pré-visite');
@@ -88,6 +90,8 @@ class PreVisiteController extends Controller
         $clientPrevisite->isolation_voutee_surface = $request->isolation_voutee_surface;
         $clientPrevisite->commentaires = $request->commentaires;
         $clientPrevisite->source_isolation = $request->source_isolation;
+        $clientPrevisite->rdv_jour = $request->rdv_jour;
+        $clientPrevisite->rdv_heure = $request->rdv_heure;
 
         $clientPrevisite->save();
         Session::flash('success', 'Client enregistré pour une pré-visite');

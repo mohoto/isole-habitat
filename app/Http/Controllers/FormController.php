@@ -6,6 +6,7 @@ use App\ClientForm;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Vicopo\Vicopo;
+use Nexmo\Laravel\Facade\Nexmo;
 Use Illuminate\Contracts\Session\Session;
 class FormController extends Controller
 {
@@ -382,6 +383,19 @@ class FormController extends Controller
         $clientForm->situation = $situation;
 
         $clientForm->save();
+        /*if($situation == 'grand-précaire'){
+            Nexmo::message()->send([
+            'to'   => '+33762071832',
+            'from' => '+33762071836',
+            'text' => 'Nouvelle demande d\'éligibilité : ' .
+                       ucfirst($situation) . "\n" .
+                       ucfirst($request->civilite) . ' ' . strtoupper($request->nom) . "\n" .
+                       $request->rue . "\n" .
+                       $request->code_postal . ' ' . strtoupper($request->ville)  . "\n" .
+                       $telephone_fixe . "\n" .
+                       $telephone_mobile . "."
+            ]);
+        }*/
         return response()->json([
             'id' => $clientForm->id,
             'situation' => $clientForm->situation,
@@ -407,6 +421,9 @@ class FormController extends Controller
         }
         elseif($departement = $request->get('departement')){
             $clientforms = ClientForm::where('departement', $departement)->get();
+        }
+        elseif($heure_rappel = $request->get('heure_rappel')){
+            $clientforms = ClientForm::where('heure_rappel', $heure_rappel)->get();
         }
         else{
             $clientforms = ClientForm::orderby('id', 'desc')->get();
@@ -460,5 +477,6 @@ class FormController extends Controller
         }
         //return view('site-web.test-revenu', ['telephone' => $telephoneSubs, 'telephone_mobile' => $telephone_mobile]);
     }
+
 
 }

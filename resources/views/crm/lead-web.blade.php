@@ -13,6 +13,10 @@
             @if($departementRequest)
                 <h3 class="text-white m-b-30">Clients Formulaire Web dans le {{ $departementRequest }} :</h3>
             @endif
+                <?php $heureRappelRequest = Request::get('heure_rappel');?>
+                @if($heureRappelRequest)
+                    <h3 class="text-white m-b-30">Demande de rappel entre {{ $heureRappelRequest }} :</h3>
+                @endif
             <div class="row">
                 @foreach($clientforms as $clientform)
                     @if(($clientform->lead_abondonne !==1) && ($clientform->lead_traite !==1))
@@ -34,7 +38,7 @@
                                     <h5 class="text-dark">{{ strtoupper($clientform->codePostal) }} <a class="text-dark" href="{{ route('crm.lead-web', ['ville' => $clientform->ville]) }}"> {{ strtoupper($clientform->ville) }}</a></h5>
                                     <h5 data-color="orange"><i class="fa fa-phone"></i> {{ $clientform->telephone_fixe }} {{ $clientform->telephone_mobile }}</h5>
                                     @if($clientform->heure_rappel != null)
-                                        <h6 data-color="orange">Demande de rappel entre : {{ $clientform->heure_rappel }}</h6>
+                                        <h6 data-color="orange">Demande de rappel entre : <a href="{{ route('crm.lead-web', ['heure_rappel' => $clientform->heure_rappel]) }}" data-color="orange">{{ $clientform->heure_rappel }}</a></h6>
                                     @else
                                         <h6 data-color="orange">Pas de demande de rappel</h6>
                                     @endif
@@ -239,13 +243,15 @@
                                                     <div class="col-md-6">
                                                         <h5>Cave voutée</h5>
                                                         <div class="switchery-demo">
-                                                            <input type="checkbox" class="switch-caves" name="cave_voutee" value="1">
+                                                            <div class="">
+                                                                <input type="checkbox" class="switch-caves" name="cave_voutee" value="1">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-group col-6">
                                                         <label class="">Surface m2</label>
                                                         <div class="">
-                                                            <input  class="isolation_voutee_surface" type="text" name="isolation_voutee_surface" class="form-control" value="" hidden>
+                                                            <input type="text" name="isolation_voutee_surface" class="form-control" value="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -270,6 +276,29 @@
                                                     <label>Commentaires</label>
                                                     <div class="">
                                                         <textarea class="form-control" rows="5" name="commentaires"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row m-b-20 bordered-row">
+                                                <div class="col-md-12">
+                                                    <h5 class="m-b-20 text-center" data-color="orange">Rendez-vous pour la pré-visite:</h5>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label class="text-white">Jour</label>
+                                                    <div>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control datepicker" placeholder="jour/mois/année" name="rdv_jour">
+                                                            <span class="input-group-addon b-0" data-background-color="vert"><i class="md md-event-note text-dark"></i></span>
+                                                        </div><!-- input-group -->
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label class="text-white">Heure</label>
+                                                    <div>
+                                                        <div class="input-group clockpicker" data-placement="top" data-align="top" data-autoclose="true">
+                                                            <input type="text" class="form-control" value="13:14" name="rdv_heure">
+                                                            <span class="input-group-addon" data-background-color="vert"> <span class="md md-access-time" data-color="blanc"></span> </span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -322,5 +351,22 @@
         });
         @endif
 
+        $(document).ready(function(){
+
+
+            $('.datepicker').datepicker({
+                format: "dd/mm/yyyy",
+                weekStart: 1,
+                todayBtn: true,
+                language: "fr",
+                daysOfWeekDisabled: "0,6",
+                calendarWeeks: true,
+                autoclose: true,
+                todayHighlight: true,
+            });
+
+            //Clock Picker
+            $('.clockpicker').clockpicker();
+        });
     </script>
 @endsection

@@ -10,6 +10,16 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('laravel-version', function()
+{
+    $laravel = app();
+    return "Your Laravel version is ".$laravel::VERSION;
+});
+
+Route::get('/message', array(
+    'as' => 'site-web.message',
+    'uses' => 'FormController@sendMessage'
+));
 
 Route::get('/', array('as' => 'site-web.accueil', function () {
     return view('site-web.accueil');
@@ -119,7 +129,7 @@ Route::group(['prefix' =>'crm'], function() {
         Route::get('admin/chantier-validee', [
             'as' => 'crm.admin.chantier-validee',
             function () {
-                return view('crm.admin.administration');
+                return view('crm.admin.achantier-validee');
             }]);
         Route::get('admin/pose-validee', [
             'as' => 'crm.admin.pose-validee',

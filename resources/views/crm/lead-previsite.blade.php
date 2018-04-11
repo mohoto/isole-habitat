@@ -22,6 +22,7 @@
                                     <div class="departement">
                                         <a class="text-dark" href="{{ route('crm.lead-previsite', ['departement' => $clientVisite->departement]) }}"> {{ $clientVisite->departement }}</a>
                                     </div>
+                                    <h5 class="">Prévisite le : {{ $clientVisite->rdv_jour}} à {{ $clientVisite->rdv_heure}}</h5>
                                     <h4 class="m-t-20 m-b-20">{{ ucfirst($clientVisite->civilite) }}<b> {{ strtoupper($clientVisite->nom) }} {{ ucfirst($clientVisite->prenom) }}</b></h4>
                                     @if( $clientVisite->situation_eligible == 'grand-précaire')
                                         <span class="label label-success">{{ $clientVisite->situation_eligible}}</span>
@@ -32,7 +33,6 @@
                                     @endif
                                     <h5 class="text-dark">{{ strtoupper($clientVisite->codePostal) }} <a class="text-dark" href="{{ route('crm.lead-previsite', ['ville' => $clientVisite->ville]) }}"> {{ strtoupper($clientVisite->ville) }}</a></h5>
                                     <h5 data-color="orange"><i class="fa fa-phone"></i> {{ $clientVisite->telephone_fixe }}<span class="m-l-15">{{ $clientVisite->telephone_mobile }}</span></h5>
-                                    <p class="">{{ $clientVisite->dateFormatted()}}</p>
                                     @if($clientVisite->isolation_combles)
                                         <h5 class="text-dark"><i class="far fa-check-square m-r-5" data-color="vert"></i>101 : Isolation des combles</h5>
                                     @else
@@ -256,7 +256,7 @@
                                             </div>
                                             <div class="row m-b-20 bordered-row">
                                                 <div class="col-md-12">
-                                                <h5 class="m-b-20 text-center" data-color="orange">Rendez-vous pour une pré-visite:</h5>
+                                                <h5 class="m-b-20 text-center" data-color="orange">Rendez-vous pour la pose:</h5>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label class="text-white">Jour</label>
