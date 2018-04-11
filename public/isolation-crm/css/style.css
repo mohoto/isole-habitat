@@ -1194,7 +1194,10 @@ select[multiple] {
   margin-bottom: 0;
   margin-top: 0;
   font-weight: 600; }
-
+#topnav .navbar-custom {
+  background-color: #ebeef1;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
 #topnav {
   position: fixed;
   right: 0;
@@ -1291,9 +1294,7 @@ select[multiple] {
   color: rgba(54, 64, 74, 0.8); }
 #topnav .app-search input:-ms-input-placeholder {
   color: rgba(54, 64, 74, 0.8); }
-#topnav .navbar-custom {
-  background-color: #414d59;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+
 #topnav .navbar-toggle {
   border: 0;
   position: relative;
@@ -1349,7 +1350,7 @@ select[multiple] {
   position: relative; }
 #topnav .navigation-menu > li > a {
   display: block;
-  color: rgba(255, 255, 255, 0.7);
+  color: #36404a;
   font-weight: 500;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
