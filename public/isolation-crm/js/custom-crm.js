@@ -1,4 +1,25 @@
 (function($) {
+
+    function launchIntoFullscreen(element) {
+        if(element.requestFullscreen) {
+            element.requestFullscreen();
+        } else if(element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+        } else if(element.webkitRequestFullscreen) {
+            element.webkitRequestFullscreen();
+        } else if(element.msRequestFullscreen) {
+            element.msRequestFullscreen();
+        }
+    }
+     $("#btn-fullscreen").click(function(){
+        // Launch fullscreen for browsers that support it!
+         launchIntoFullscreen(document.documentElement); // the whole page
+     });
+
+
+
+})(window.jQuery);
+(function($) {
     $(document).ready(function(){
         /*input nombre telephone*/
         var $inputPhone = $('.telephone_input');

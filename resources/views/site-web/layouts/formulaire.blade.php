@@ -361,6 +361,7 @@
             else if(n == (x.length-2)) {
                 tabBlockPrev.style.display = "block";
                 nextButton.innerHTML = "Tester maintenant";
+                nextButton.setAttribute('id', 'btn-submit-eligible');
 //nextButton.addEventListener('click', testEligibilite);
             }
             else if(n == (x.length-1)) {

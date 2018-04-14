@@ -29,6 +29,11 @@
                     <!-- End mobile menu toggle-->
                 </li>
                 <li class="list-inline-item">Bonjour {{ Auth::user()->name }}</li>
+                <li class="list-inline-item ">
+                    <a class="nav-link waves-light waves-effect" href="#" id="btn-fullscreen">
+                        <i class="dripicons-expand noti-icon text-dark"></i>
+                    </a>
+                </li>
                 <li class="list-inline-item dropdown notification-list">
                     <a class="text-dark" href="{{ route('crm.deconnexion') }}" class="dropdown-item notify-item">
                         <i class="fas fa-sign-out-alt"></i> <span>Déconnexion</span>
@@ -68,7 +73,7 @@
                     </li>
                     @if(Auth::user()->is_admin === 1)
                         <li class="sub-navigation-menu {{ Request::is('crm/admin/pose-validee') ? 'active' : ''}}">
-                            <a href="{{ route('crm.admin.pose-validee') }}"><i class="fa  fa-wrench"></i>Pose validéé</a>
+                            <a href="{{ route('crm.admin.pose-validee') }}"><i class="fas fa-check-circle"></i>Pose validéé</a>
                         </li>
                     @endif
                 </ul>
