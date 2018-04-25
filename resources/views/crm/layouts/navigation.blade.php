@@ -63,7 +63,7 @@
                         <a href="{{ route('crm.lead-rappel-web') }}"><i class="fa fa-volume-control-phone"></i>Rappel Tel web</a>
                     </li>
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/lead-demarchage') ? 'active' : ''}}">
-                        <a href="{{ route('crm.lead-demarchage') }}"><i class="fas fa-users"></i>Démarchage</a>
+                        <a href="{{ route('crm.lead-demarchage') }}"><i class="fas fa-users"></i>Parrainage</a>
                     </li>
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/lead-previsite') ? 'active' : ''}}">
                         <a href="{{ route('crm.lead-previsite') }}"><i class="fa fa-calculator"></i>Pré-viste à faire</a>

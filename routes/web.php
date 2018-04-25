@@ -117,6 +117,7 @@ Route::group(['prefix' =>'crm'], function() {
             'as' => 'crm.deconnexion',
             'uses'=>'AuthController@logOut'
         ]);
+        Route::get('/events', 'EventController@index');
     });
 
     Route::group(['middleware' => ['auth', 'admin']], function () {

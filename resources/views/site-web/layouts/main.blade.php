@@ -2,7 +2,7 @@
 <html lang="{{ app()->getLocale() }}"  prefix="og: http://ogp.me/ns#">
     <head>
         <meta name="csrf-token" content="{{ csrf_token() }}" />
-        <title>Isole habitat : @yield('pageTitle')</title>
+        <title>Isole habitat : Isolation des logement - @yield('pageTitle')</title>
         <meta name="description" content="">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">

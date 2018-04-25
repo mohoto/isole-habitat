@@ -2,7 +2,7 @@
 <html lang="{{ app()->getLocale() }}">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>@yield('title')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
     <meta content="Coderthemes" name="author" />
@@ -23,10 +23,13 @@
     <!-- DatePicker et TimePicker -->
     <link href="{{ asset('isolation-crm/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{ asset('isolation-crm/plugins/clockpicker/css/bootstrap-clockpicker.min.css')}}" rel="stylesheet" type="text/css">
+    <!-- Full Calendar -->
+    <link href="{{ asset('isolation-crm/plugins/fullcalendar/css/fullcalendar.min.css')}}" rel="stylesheet" />
     <link href="{{ asset('isolation-crm/css/icons.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('isolation-crm/css/fontawesome-all.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('isolation-crm/css/style.css')}}" rel="stylesheet" type="text/css" />
     <script src="{{ asset('isolation-crm/js/modernizr.min.js')}}"></script>
+
 </head>
 <body class="@yield('pageClass')">
 @yield('navigation')
@@ -51,7 +54,6 @@
 <script src="{{ asset('isolation-crm/js/waves.js')}}"></script>
 <script src="{{ asset('isolation-crm/js/jquery.slimscroll.js')}}"></script>
 <script src="{{ asset('isolation-crm/js/jquery.scrollTo.min.js')}}"></script>
-
 <!-- Modal-Effect -->
 <script src="{{ asset('isolation-crm/plugins/custombox/js/custombox.min.js')}}"></script>
 <script src="{{ asset('isolation-crm/plugins/custombox/js/legacy.min.js')}}"></script>
@@ -71,6 +73,13 @@
 <script src="{{ asset('isolation-crm/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
 <script src="{{ asset('isolation-crm/plugins/bootstrap-datepicker/js/locale/bootstrap-datepicker.fr.js')}}"></script>
 <script src="{{ asset('isolation-crm/plugins/clockpicker/js/bootstrap-clockpicker.min.js')}}"></script>
+
+<script src="{{ asset('isolation-crm/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
+<!-- Full-calendar -->
+<script src="{{ asset('isolation-crm/plugins/moment/moment.js')}}"></script>
+<script src="{{ asset('isolation-crm/plugins/fullcalendar/js/fullcalendar.min.js')}}"></script>
+<script src="{{ asset('isolation-crm//plugins/fullcalendar/js/jquery.fullcalendar.js')}}"></script>
+<script src="{{ asset('isolation-crm/plugins/fullcalendar/js/locale-all.js')}}"></script>
 <!-- App js -->
 <script src="{{ asset('isolation-crm/js/jquery.core.js')}}"></script>
 <script src="{{ asset('isolation-crm/js/jquery.app.js')}}"></script>
