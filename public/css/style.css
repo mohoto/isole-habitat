@@ -685,11 +685,17 @@ input.input-subscribe:-ms-input-placeholder {
 h1, h2, h3, h4{
     font-weight: 400;
 }
+.gras_700{
+  font-weight: 700;
+}
+.gras_600{
+  font-weight: 600;
+}
 .gras_500{
     font-weight: 500;
 }
-.gras_700{
-  font-weight: 700;
+.gras_400{
+  font-weight: 400;
 }
 .gras_300{
   font-weight: 300;
@@ -930,13 +936,18 @@ label.type-heure {
 .hero h1{
     font-size: 2.5em;
 }
+.hero h2{
+  font-size: 1.5em;
+}
 .hero p{
-    font-size: 1.5em;
+    font-size: 1.2em;
+}
+.hero p#slogan-dispositif-hero{
+  font-size: 1.2em;
 }
 .hero .btn {
     font-size: 1.5em;
     padding: 15px 30px;
-    margin-top: 30px;
 }
 .hero .btn:hover {
     color: #ffffff;
@@ -960,6 +971,9 @@ label.type-heure {
     color: #0863b5;
     font-size: 1.2em;
     margin-top: 10px;
+}
+.section#features .slogan-disqpositif{
+  font-size: 1.2em;
 }
 .section#section-presentation1 h2{
     line-height: 1.5em;

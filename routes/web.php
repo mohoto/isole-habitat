@@ -101,9 +101,9 @@ Route::group(['prefix' =>'crm'], function() {
             'as' => 'crm.lead-web.supprimer',
             'uses' => 'FormController@cancelFormWeb'
         ]);
-        Route::get('/lead-demarchage', [
-            'as' => 'crm.lead-demarchage',
-            'uses' => 'DemarchageController@index'
+        Route::get('/appel-telephonique', [
+            'as' => 'crm.appel-telephonique',
+            'uses' => 'AppelTelephoniqueController@index'
         ]);
         Route::get('/lead-previsite', [
             'as' => 'crm.lead-previsite',

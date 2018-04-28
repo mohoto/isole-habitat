@@ -11,7 +11,7 @@
                         <div class="contact-card">
                             <div class="" id="block-client">
                                 <div class="card card-body">
-                                    <form id="formLeadDemarchage" method="post"  action="{{ route('crm.previsite-accepter') }}">
+                                    <form id="formLeadDemarchage" method="post"  action="">
                                         <h5 class="m-b-20" data-color="orange"><span class="">1</span> - Identité du client:</h5>
                                         <div class="row">
                                             <div class="col-6 type_civilite">

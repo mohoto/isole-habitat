@@ -28,14 +28,21 @@
                     </a>
                     <!-- End mobile menu toggle-->
                 </li>
+                @if(Auth::user()->is_admin === 1)
+                    <li class="list-inline-item">
+                        <a class="text-dark" href="{{ route('crm.admin.administration') }}">
+                            <i class="fas fa-tachometer-alt"></i><span>Déconnexion</span>
+                        </a>
+                    </li>
+                @endif
                 <li class="list-inline-item">Bonjour {{ Auth::user()->name }}</li>
                 <li class="list-inline-item ">
                     <a class="nav-link waves-light waves-effect" href="#" id="btn-fullscreen">
                         <i class="dripicons-expand noti-icon text-dark"></i>
                     </a>
                 </li>
-                <li class="list-inline-item dropdown notification-list">
-                    <a class="text-dark" href="{{ route('crm.deconnexion') }}" class="dropdown-item notify-item">
+                <li class="list-inline-item">
+                    <a class="text-dark" href="{{ route('crm.deconnexion') }}">
                         <i class="fas fa-sign-out-alt"></i> <span>Déconnexion</span>
                     </a>
                 </li>
@@ -51,19 +58,17 @@
             <div id="navigation">
                 <!-- Navigation Menu-->
                 <ul class="navigation-menu d-flex">
-                    @if(Auth::user()->is_admin === 1)
-                    <li class="has-submenu sub-navigation-menu {{ Request::is('crm/admin/administration') ? 'active' : ''}}">
-                        <a href="{{ route('crm.admin.administration') }}"><i class="fas fa-tachometer-alt"></i>Administration</a>
-                    </li>
-                    @endif
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/lead-web') ? 'active' : ''}}">
                         <a href="{{ route('crm.lead-web') }}"><i class="fab fa-wpforms"></i>Formulaire web</a>
                     </li>
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/lead-rappel-web') ? 'active' : ''}}">
                         <a href="{{ route('crm.lead-rappel-web') }}"><i class="fa fa-volume-control-phone"></i>Rappel Tel web</a>
                     </li>
-                    <li class="has-submenu sub-navigation-menu {{ Request::is('crm/lead-demarchage') ? 'active' : ''}}">
-                        <a href="{{ route('crm.lead-demarchage') }}"><i class="fas fa-users"></i>Parrainage</a>
+                    <li class="has-submenu sub-navigation-menu {{ Request::is('crm/appel-telephonique') ? 'active' : ''}}">
+                        <a href="{{ route('crm.appel-telephonique') }}"><i class="fas fa-users"></i>Parrainage</a>
+                    </li>
+                    <li class="has-submenu sub-navigation-menu {{ Request::is('crm/appel-telephonique') ? 'active' : ''}}">
+                        <a href="{{ route('crm.appel-telephonique') }}"><i class="fas fa-phone"></i>Appel Tel</a>
                     </li>
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/lead-previsite') ? 'active' : ''}}">
                         <a href="{{ route('crm.lead-previsite') }}"><i class="fa fa-calculator"></i>Pré-viste à faire</a>
