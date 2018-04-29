@@ -1036,6 +1036,7 @@ label.type-heure {
 .section#section-type-isolation4 .table th{
   font-weight: 200;
   border-top: none !important;
+  padding: .25rem !important;;
 }
 .section#section-type-isolation2 .table thead th,
 .section#section-type-isolation3 .table thead th,
