@@ -47,17 +47,17 @@
                                     <div>
                                         <p class="titre_input"><span>2-</span>La surface au sol de votre maison :</p>
                                         <div class="row">
-                                            <div class="col-md col-xs-12 block-surface">
+                                            <div class="col-4 block-surface">
                                                 <input type="radio" class="radio" name="type_surface" id="type-surface-1" value="Moins de 70m2" checked>
-                                                <label for="type-surface-1" class="type-surface"><i class="icon-fantastic icon-icon-surface4"></i><span>Moins de 70m2</span></label>
+                                                <label for="type-surface-1" class="type-surface"><i class="icon-fantastic icon-icon-surface4"></i><span>- 70m2</span></label>
                                             </div>
-                                            <div class="col-md col-xs-12 block-surface">
+                                            <div class="col-4 block-surface">
                                                 <input type="radio" class="radio" name="type_surface" id="type-surface-2" value="Entre 70 et 100m2">
-                                                <label for="type-surface-2" class="type-surface"><i class="icon-fantastic icon-icon-surface4"></i><span>Entre 70 et 100m2</span></label>
+                                                <label for="type-surface-2" class="type-surface"><i class="icon-fantastic icon-icon-surface4"></i><span>70 à 100m2</span></label>
                                             </div>
-                                            <div class="col-md col-xs-12 block-surface">
+                                            <div class="col-4 block-surface">
                                                 <input type="radio" class="radio" name="type_surface" id="type-surface-3" value="Plus de 100m2">
-                                                <label for="type-surface-3" class="type-surface"><i class="icon-fantastic icon-icon-surface4"></i><span>Plus de 100m2</span></label>
+                                                <label for="type-surface-3" class="type-surface"><i class="icon-fantastic icon-icon-surface4"></i><span>+ 100m2</span></label>
                                             </div>
                                         </div>
                                     </div>
@@ -274,7 +274,7 @@
                                 </div>
                             </div>
                             <div class="row mt-20 justify-content-center">
-                                <div class="tab-block-btn col-xs-12 col-md-6 order-2 order-md-1" id="tab-block-prev">
+                                <div class="tab-block-btn col-xs-12 col-md-6 order-2 order-md-1 col-xs-mt-10" id="tab-block-prev">
                                     <button type="button" id="prevBtn" class="btn btn-rounded btn-formulaire btn-default2">Précédent</button>
                                 </div>
                                 <div class="tab-block-btn col-xs-12 col-md-6 order-md-2" id="tab-block-next">
@@ -477,6 +477,11 @@
 
         var next = document.getElementById('nextBtn');
         next.addEventListener('click', function() {
+            var id = '#eligibForm';
+            var speed = 750;
+            $('html,body').animate({
+                scrollTop: $(id).offset().top
+            }, speed);
             var x = document.querySelectorAll('.tab');
             if(currentTab == 0){
                 /*if(checkRadioBox() && checkCheckBox()){
@@ -488,7 +493,7 @@
                     displayErrorInput('Selectionner le système de chauffage dans votre maison');
                 }
                 else if(checkboxResult == false){
-                    displayErrorInput('Selectionner le ou les types d\'isolation à faire dans votre maison.');
+                    displayErrorInput('Selectionner le ou les types d\'isolations à faire dans votre maison.');
                 }
                 else{
                     x[currentTab].style.display = "none";

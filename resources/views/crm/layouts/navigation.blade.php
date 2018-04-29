@@ -28,19 +28,19 @@
                     </a>
                     <!-- End mobile menu toggle-->
                 </li>
-                @if(Auth::user()->is_admin === 1)
-                    <li class="list-inline-item">
-                        <a class="text-dark" href="{{ route('crm.admin.administration') }}">
-                            <i class="fas fa-tachometer-alt"></i><span>Déconnexion</span>
-                        </a>
-                    </li>
-                @endif
                 <li class="list-inline-item">Bonjour {{ Auth::user()->name }}</li>
-                <li class="list-inline-item ">
+                <li class="list-inline-item ml-30">
                     <a class="nav-link waves-light waves-effect" href="#" id="btn-fullscreen">
                         <i class="dripicons-expand noti-icon text-dark"></i>
                     </a>
                 </li>
+                @if(Auth::user()->is_admin === 1)
+                    <li class="list-inline-item ml-30">
+                        <a class="text-dark" href="{{ route('crm.admin.administration') }}">
+                            <i class="fas fa-tachometer-alt mr-10"></i><span>Administration</span>
+                        </a>
+                    </li>
+                @endif
                 <li class="list-inline-item">
                     <a class="text-dark" href="{{ route('crm.deconnexion') }}">
                         <i class="fas fa-sign-out-alt"></i> <span>Déconnexion</span>
