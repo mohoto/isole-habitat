@@ -383,7 +383,7 @@ class FormController extends Controller
         $clientForm->situation = $situation;
 
         $clientForm->save();
-        /*if($situation == 'grand-précaire'){
+        if($situation == 'grand-précaire'){
             Nexmo::message()->send([
             'to'   => '+33762071832',
             'from' => '+33762071836',
@@ -395,7 +395,7 @@ class FormController extends Controller
                        $telephone_fixe . "\n" .
                        $telephone_mobile . "."
             ]);
-        }*/
+        }
         return response()->json([
             'id' => $clientForm->id,
             'situation' => $clientForm->situation,

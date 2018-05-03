@@ -597,7 +597,7 @@
                             <div class="block-video">
                                 <img src="{{ asset('images/reportage-isolation-1euro-TF1.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur M6" />
                                 <div class="block-video-single d-flex justify-content-center align-items-center">
-                                    <a id="video-btn-digital1" data-toggle="modal" data-src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.webm" data-target="#myModalVideo1"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+                                    <a id="video-btn-digital1" class="video-btn" data-toggle="modal" data-src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.webm" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -617,7 +617,7 @@
                             <div class="block-video">
                                 <img src="{{ asset('images/reportage-isolation-1euro-m6.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur M6" />
                                 <div class="block-video-single d-flex justify-content-center align-items-center">
-                                    <a id="video-btn-digital2" data-toggle="modal" data-src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.webm" data-target="#myModalVideo2"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+                                    <a id="video-btn-digital2" class="video-btn" data-toggle="modal" data-src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.webm" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -637,7 +637,7 @@
                             <div class="block-video">
                                 <img src="{{ asset('images/reportage-isolation-1euro-w9.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur W9" />
                                 <div class="block-video-single d-flex justify-content-center align-items-center">
-                                    <a id="video-btn-digital3" data-toggle="modal" data-src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.webm" data-target="#myModalVideo3"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+                                    <a id="video-btn-digital3" class="video-btn" data-toggle="modal" data-src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.webm" data-target="#myModa"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -698,8 +698,8 @@
             </script>--}}
         </div>
     </div>
-    <!-- Modal -->
-    {{--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal Youtube Videos-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog reportage-video" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -713,11 +713,11 @@
                 </div>
             </div>
         </div>
-    </div>--}}
+    </div>
 
 
 
-    <div class="ModalVideo modal fade" id="myModalVideo1" tabindex="-1" role="dialog" aria-labelledby="ModalLabelVideo1" aria-hidden="true">
+    {{--<div class="ModalVideo modal fade" id="myModalVideo1" tabindex="-1" role="dialog" aria-labelledby="ModalLabelVideo1" aria-hidden="true">
         <div class="modal-dialog reportage-video" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -727,7 +727,8 @@
                     <!-- 16:9 aspect ratio -->
                     <div class="embed-responsive embed-responsive-16by9">
                         <video id="video-reportage1" class="video-reportage" width="320" height="240" controls>
-                            <source src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.mp4" type="video/mp4">
+                            <source src="{{ asset('images/videos/site-web-video1.mp4') }}" type="video/mp4">
+                            <source src="{{ asset('images/videos/site-web-video1.mp4') }}" type="video/webm">
                         </video>
                     </div>
                 </div>
@@ -744,7 +745,8 @@
                     <!-- 16:9 aspect ratio -->
                     <div class="embed-responsive embed-responsive-16by9">
                         <video id="video-reportage2" class="video-reportage" width="320" height="240" controls>
-                            <source src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.mp4" type="video/mp4">
+                            <source src="{{ asset('images/videos/site-web-video2.mp4') }}" type="video/mp4">
+                            <source src="{{ asset('images/videos/site-web-video2.mp4') }}" type="video/webm">
                         </video>
                     </div>
                 </div>
@@ -761,13 +763,14 @@
                     <!-- 16:9 aspect ratio -->
                     <div class="embed-responsive embed-responsive-16by9">
                         <video id="video-reportage1" class="video-reportage" width="320" height="240" controls>
-                            <source src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video2.mp4" type="video/mp4">
+                            <source src="{{ asset('images/videos/site-web-video3.mp4') }}" type="video/mp4">
+                            <source src="{{ asset('images/videos/site-web-video3.mp4') }}" type="video/webm">
                         </video>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div>--}}
 </section>
 @endsection
 @section('javascript')

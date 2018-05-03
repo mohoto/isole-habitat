@@ -50,28 +50,7 @@
     };
 
     $(document).ready(function(){
-        /*******Video modal ***********/
-            var vid1 = document.querySelector("#video-reportage1");
-            var vid2 = document.querySelector("#video-reportage2");
-            // when the modal is opened autoplay it
-            $('#myModalVideo1').on('show.bs.modal', function (e) {
-                vid1.autoplay = true;
-                vid1.load();
-            });
-            // stop playing the youtube video when I close the modal
-            $('#myModalVideo1').on('hide.bs.modal', function (e) {
-                vid1.pause();
-            });
-            //$('#myModalVideo1').modal('hide');
-            // when the modal is opened autoplay it
-            $('#myModalVideo2').on('show.bs.modal', function (e) {
-                vid2.autoplay = true;
-                vid2.load();
-            });
-            // stop playing the youtube video when I close the modal
-            $('#myModalVideo2').on('hide.bs.modal', function (e) {
-                vid2.pause();
-            });
+
 
         /*******Video modal Youtube***********/
         // Gets the video src from the data-src on each button
@@ -272,8 +251,47 @@
         /*************************************************/
         /*************************************************/
 
-
-
     });
+
+    /*******Video modal ***********/
+    /*var vid1 = document.querySelector("#video-reportage1");
+    var vid2 = document.querySelector("#video-reportage2");
+    // when the modal is opened autoplay it
+    $('#myModalVideo1').on('show.bs.modal', function (e) {
+        vid1.autoplay = true;
+        vid1.load();
+    });
+    // stop playing the youtube video when I close the modal
+    $('#myModalVideo1').on('hide.bs.modal', function (e) {
+        vid1.pause();
+    });
+    //$('#myModalVideo1').modal('hide');
+    // when the modal is opened autoplay it
+    $('#myModalVideo2').on('show.bs.modal', function (e) {
+        vid2.autoplay = true;
+        vid2.load();
+    });
+    // stop playing the youtube video when I close the modal
+    $('#myModalVideo2').on('hide.bs.modal', function (e) {
+        vid2.pause();
+    });*/
+
+    /*******Video modal Youtube***********/
+    // Gets the video src from the data-src on each button
+    var $videoSrc;
+     $('.video-btn').click(function() {
+     $videoSrc = $(this).data( "src" );
+     });
+     console.log($videoSrc);
+     // when the modal is opened autoplay it
+     $('#myModal').on('shown.bs.modal', function (e) {
+     // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+     $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" );
+     });
+     // stop playing the youtube video when I close the modal
+     $('#myModal').on('hide.bs.modal', function (e) {
+     // a poor man's stop video
+     $("#video").attr('src',$videoSrc);
+     });
 
 })(jQuery);
