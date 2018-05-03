@@ -58,10 +58,10 @@
                 <!-- Navigation Menu-->
                 <ul class="navigation-menu d-flex">
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/lead-web') ? 'active' : ''}}">
-                        <a href="{{ route('crm.lead-web') }}"><i class="fab fa-wpforms"></i>Formulaires web</a>
+                        <a href="{{ route('crm.lead-web') }}"><i class="far fa-address-book"></i>Formulaires web</a>
                     </li>
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/lead-rappel-web') ? 'active' : ''}}">
-                        <a href="{{ route('crm.lead-rappel-web') }}"><i class="fa fa-volume-control-phone"></i>Rappels Tel web</a>
+                        <a href="{{ route('crm.lead-rappel-web') }}"><i class="fa fa-volume-control-phone"></i>Demandes rappel</a>
                     </li>
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/appel-telephonique') ? 'active' : ''}}">
                         <a href="{{ route('crm.appel-telephonique') }}"><i class="fas fa-phone"></i>Appels Tel</a>

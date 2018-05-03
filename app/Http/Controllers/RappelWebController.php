@@ -55,7 +55,8 @@ class RappelWebController extends Controller
         $ip= \Request::ip();
         $data = \Location::get($ip);
         $ville = $data->cityName;
-        $codePostal = $data->zipCode;
+        //$codePostal = $data->zipCode;
+        $codePostal = '92220';
         $departement = substr($codePostal, 0, 2);
 
         $telephone = $request->rappel_telephone;

@@ -388,11 +388,11 @@ class FormController extends Controller
             'to'   => '+33762071832',
             'from' => '+33762071836',
             'text' => 'Nouvelle demande d\'éligibilité : ' .
-                       ucfirst($situation) . "\n" .
-                       ucfirst($request->civilite) . ' ' . strtoupper($request->nom) . "\n" .
-                       $request->rue . "\n" .
-                       $request->code_postal . ' ' . strtoupper($request->ville)  . "\n" .
-                       $telephone_fixe . "\n" .
+                       ucfirst($situation) . " - " .
+                       ucfirst($request->civilite) . ' ' . strtoupper($request->nom) . " - " .
+                       $request->rue . " - " .
+                       $request->code_postal . ' ' . strtoupper($request->ville)  . " - " .
+                       $telephone_fixe . " - " .
                        $telephone_mobile . "."
             ]);
         }
@@ -423,7 +423,7 @@ class FormController extends Controller
             $clientforms = ClientForm::orderby('id', 'asc')->where('departement', $departement)->get();
         }
         elseif($heure_rappel = $request->get('heure_rappel')){
-            $clientforms = ClientForm::orderby('id', 'asc')->where('heure_rappel', $heure_rappel)->get();
+            $clientforms = ClientForm::where('heure_rappel', $heure_rappel)->get();
         }
         else{
             $clientforms = ClientForm::orderby('id', 'asc')->get();
