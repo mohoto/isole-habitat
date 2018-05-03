@@ -272,7 +272,7 @@
                                                 </div>
                                             </div>
                                             <div class="row justify-content-center">
-                                                <button type="submit" class="btn btn-success waves-effect waves-light">Planifier le chantier 2</button>
+                                                <button type="submit" class="btn btn-success waves-effect waves-light">Planifier le chantier</button>
                                             </div>
                                         </form>
                                     </div>
