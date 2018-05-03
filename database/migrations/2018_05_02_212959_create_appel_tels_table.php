@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateClientRappelTable extends Migration
+class CreateAppelTelsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateClientRappelTable extends Migration
      */
     public function up()
     {
-        Schema::create('rappelWeb', function (Blueprint $table) {
+        Schema::create('appel_tels', function (Blueprint $table) {
             $table->increments('id');
             $table->string('civilite');
             $table->string('nom');
@@ -54,7 +54,6 @@ class CreateClientRappelTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rappelWeb');
+        Schema::dropIfExists('appel_tels');
     }
 }
-

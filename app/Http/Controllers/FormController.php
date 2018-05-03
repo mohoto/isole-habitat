@@ -417,16 +417,16 @@ class FormController extends Controller
     public function displayForm(Request $request)
     {
         if($ville = $request->get('ville')){
-            $clientforms = ClientForm::where('ville', $ville)->get();
+            $clientforms = ClientForm::orderby('id', 'asc')->where('ville', $ville)->get();
         }
         elseif($departement = $request->get('departement')){
-            $clientforms = ClientForm::where('departement', $departement)->get();
+            $clientforms = ClientForm::orderby('id', 'asc')->where('departement', $departement)->get();
         }
         elseif($heure_rappel = $request->get('heure_rappel')){
-            $clientforms = ClientForm::where('heure_rappel', $heure_rappel)->get();
+            $clientforms = ClientForm::orderby('id', 'asc')->where('heure_rappel', $heure_rappel)->get();
         }
         else{
-            $clientforms = ClientForm::orderby('id', 'desc')->get();
+            $clientforms = ClientForm::orderby('id', 'asc')->get();
         }
         return view('crm.lead-web', compact('clientforms'));
     }

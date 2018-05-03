@@ -1355,8 +1355,8 @@ select[multiple] {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   line-height: 20px;
-  padding-left: 25px;
-  padding-right: 25px; }
+  padding-left: 5px;
+  padding-right: 5px; }
 #topnav .navigation-menu > li > a:hover {
   color: #5fbeaa; }
 #topnav .navigation-menu > li > a:focus {
@@ -6317,6 +6317,9 @@ label.nombre-personne, label.type-bail-client, label.civilite, label.type-heure 
 body.connexionPage,
 body.inscriptionPage{
   background: #303841;
+}
+.inscriptionPage .logo{
+  width: 100px;
 }
 .connexionPage .logo{
   width: 150px;

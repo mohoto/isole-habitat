@@ -11,7 +11,6 @@
                 <!-- Image Logo -->
                 <a href="{{ route('crm.accueil') }}" class="logo">
                     <img src="{{ asset('isolation-crm/images/Isole-Habitat-logo.svg')}}" alt="" class="logo-lg">
-                    <img src="{{ asset('isolation-crm/images/logo_sm.png')}}" alt="" height="24" class="logo-sm">
                 </a>
             </div>
             <!-- End Logo container-->
@@ -28,7 +27,7 @@
                     </a>
                     <!-- End mobile menu toggle-->
                 </li>
-                <li class="list-inline-item">Bonjour {{ Auth::user()->name }}</li>
+                <li class="list-inline-item">Bonjour {{ ucfirst(Auth::user()->name) }}</li>
                 <li class="list-inline-item ml-30">
                     <a class="nav-link waves-light waves-effect" href="#" id="btn-fullscreen">
                         <i class="dripicons-expand noti-icon text-dark"></i>
@@ -59,28 +58,26 @@
                 <!-- Navigation Menu-->
                 <ul class="navigation-menu d-flex">
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/lead-web') ? 'active' : ''}}">
-                        <a href="{{ route('crm.lead-web') }}"><i class="fab fa-wpforms"></i>Formulaire web</a>
+                        <a href="{{ route('crm.lead-web') }}"><i class="fab fa-wpforms"></i>Formulaires web</a>
                     </li>
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/lead-rappel-web') ? 'active' : ''}}">
-                        <a href="{{ route('crm.lead-rappel-web') }}"><i class="fa fa-volume-control-phone"></i>Rappel Tel web</a>
+                        <a href="{{ route('crm.lead-rappel-web') }}"><i class="fa fa-volume-control-phone"></i>Rappels Tel web</a>
                     </li>
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/appel-telephonique') ? 'active' : ''}}">
-                        <a href="{{ route('crm.appel-telephonique') }}"><i class="fas fa-users"></i>Parrainage</a>
+                        <a href="{{ route('crm.appel-telephonique') }}"><i class="fas fa-phone"></i>Appels Tel</a>
                     </li>
-                    <li class="has-submenu sub-navigation-menu {{ Request::is('crm/appel-telephonique') ? 'active' : ''}}">
-                        <a href="{{ route('crm.appel-telephonique') }}"><i class="fas fa-phone"></i>Appel Tel</a>
+                    <li class="has-submenu sub-navigation-menu {{ Request::is('crm/previsite') ? 'active' : ''}}">
+                        <a href="{{ route('crm.previsite') }}"><i class="fa fa-calculator"></i>Pré-vistes à faire</a>
                     </li>
-                    <li class="has-submenu sub-navigation-menu {{ Request::is('crm/lead-previsite') ? 'active' : ''}}">
-                        <a href="{{ route('crm.lead-previsite') }}"><i class="fa fa-calculator"></i>Pré-viste à faire</a>
+                    <li class="has-submenu sub-navigation-menu {{ Request::is('crm/previsite-valide') ? 'active' : ''}}">
+                        <a href="{{ route('crm.previsite-valide') }}"><i class="far fa-calendar-plus"></i>Pré-visites validées</a>
                     </li>
-                    <li class="has-submenu sub-navigation-menu {{ Request::is('crm/admin/chantier-validee') ? 'active' : ''}}">
-                        <a href="{{ route('crm.admin.chantier-validee') }}"><i class="fa fa-calendar-check-o"></i>Chantier validée</a>
+                    <li class="has-submenu sub-navigation-menu {{ Request::is('crm/chantier-valide') ? 'active' : ''}}">
+                        <a href="{{ route('crm.chantier-valide') }}"><i class="fa fa-calendar-check-o"></i>Poses à faire</a>
                     </li>
-                    @if(Auth::user()->is_admin === 1)
-                        <li class="sub-navigation-menu {{ Request::is('crm/admin/pose-validee') ? 'active' : ''}}">
-                            <a href="{{ route('crm.admin.pose-validee') }}"><i class="fas fa-check-circle"></i>Pose validéé</a>
-                        </li>
-                    @endif
+                    <li class="sub-navigation-menu {{ Request::is('crm/pose-valide') ? 'active' : ''}}">
+                        <a href="{{ route('crm.pose-valide') }}"><i class="fas fa-check-circle"></i>Poses validéés</a>
+                    </li>
                 </ul>
                 <!-- End navigation menu -->
             </div> <!-- end #navigation -->

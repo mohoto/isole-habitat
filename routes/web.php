@@ -87,7 +87,7 @@ Route::group(['prefix' =>'crm'], function() {
         ]);
         Route::get('/lead-rappel-web/accepter/{id}', [
             'as' => 'crm.lead-rappel-web-accepter',
-            'uses' => 'PreVisiteController@saveRappelWeb'
+            'uses' => 'PoseController@saveRappelWeb'
         ]);
         Route::get('/lead-rappel-web/supprimer/{id}', [
             'as' => 'crm.lead-rappel-web.supprimer',
@@ -101,17 +101,41 @@ Route::group(['prefix' =>'crm'], function() {
             'as' => 'crm.lead-web.supprimer',
             'uses' => 'FormController@cancelFormWeb'
         ]);
+        Route::get('/lead-web/accepter/{id}', [
+            'as' => 'crm.lead-web-accepter',
+            'uses' => 'PoseController@saveFromWebForm'
+        ]);
         Route::get('/appel-telephonique', [
             'as' => 'crm.appel-telephonique',
             'uses' => 'AppelTelephoniqueController@index'
         ]);
-        Route::get('/lead-previsite', [
-            'as' => 'crm.lead-previsite',
-            'uses' => 'PreVisiteController@displayVisite'
+        Route::get('/previsite', [
+            'as' => 'crm.previsite',
+            'uses' => 'PoseController@displayPrevisite'
         ]);
-        Route::get('/lead-web/accepter/{id}', [
-            'as' => 'crm.lead-web-accepter',
-            'uses' => 'PreVisiteController@saveFromWebForm'
+        Route::get('/previsite/accepter/{id}', [
+            'as' => 'crm.previsite-accepter',
+            'uses' => 'PoseController@savePrevisite'
+        ]);
+        Route::get('/previsite-valide', [
+            'as' => 'crm.previsite-valide',
+            'uses' => 'PoseController@displayPrevisiteValide'
+        ]);
+        Route::get('/previsite-valide/accepter/{id}', [
+            'as' => 'crm.previsite-valide-accepter',
+            'uses' => 'PoseController@savePrevisiteValide'
+        ]);
+        Route::get('/chantier-valide', [
+            'as' => 'crm.chantier-valide',
+            'uses' => 'PoseController@displayChantier'
+        ]);
+        Route::get('/chantier-valide/accepter/{id}', [
+            'as' => 'crm.chantier-valide-accepter',
+            'uses' => 'PoseController@saveChantierValide'
+        ]);
+        Route::get('/pose-valide', [
+            'as' => 'crm.pose-valide',
+            'uses' => 'PoseController@displayPosevalide'
         ]);
         Route::get('/deconnexion', [
             'as' => 'crm.deconnexion',
@@ -127,16 +151,6 @@ Route::group(['prefix' =>'crm'], function() {
             function () {
                 return view('crm.admin.administration');
         }]);
-        Route::get('admin/chantier-validee', [
-            'as' => 'crm.admin.chantier-validee',
-            function () {
-                return view('crm.admin.achantier-validee');
-            }]);
-        Route::get('admin/pose-validee', [
-            'as' => 'crm.admin.pose-validee',
-            function () {
-                return view('crm.admin.pose-validee');
-            }]);
     });
 
 });

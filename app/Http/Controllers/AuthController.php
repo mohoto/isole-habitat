@@ -12,7 +12,7 @@ class AuthController extends Controller
 {
 
     public function getRegister(){
-        return view('crm.register');
+        return view('crm.auth.register');
     }
     public function postRegister(RegisterRequest $request){
         $user = new User();

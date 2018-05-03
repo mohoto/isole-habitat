@@ -587,22 +587,70 @@
 </section>
 <section class="section" id="section-videos">
     <div class="container">
-        <h2 class="text-center mb-40">Les reportages sur l'isolation à 1€</h2>
-        <div class="row align-items-end mt-40">
-            <div class="col-sm-12 col-md-4" id="">
-                <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
-                <p class="mb-0"><span class="gras_500">C'est 1 euro</span>. 24 heures après avoir rempli le document en ligne, j'ai eu la réponse, ça prend 5 minutes. C'est juste quand la personne m'a appelé, au vu des documents que j'avais déjà rempli en fait en ligne, qu'elle m'a dit : <span class="gras_500">Vous êtes éligible</span>... <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
-            </div>
-            <div class="col-sm-12 col-md-4 block-video mb-5 mb-md-0" id="">
-                <img src="{{ asset('images/reportage-isolation-w8X4JjIJo5U.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur TF1" />
-                <div class="block-video-single d-flex justify-content-center align-items-center">
-                    <a class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/V0aypHKpYXs" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 block-video" id="">
-                <img src="{{ asset('images/reportage-isolation-VSaZSj5-yFw.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur W9" />
-                <div class="block-video-single d-flex justify-content-center align-items-center">
-                    <a class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/VSaZSj5-yFw" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+        <h2 class="text-center mb-40 gras_700">Les reportages sur l'isolation à 1€</h2>
+        <div class="row align-items-stretch row-eq-height mt-40">
+            <div class="col-md-12">
+                <div class="card-deck">
+                    <div class="card">
+                        <!-- Card image -->
+                        <div class="view overlay">
+                            <div class="block-video">
+                                <img src="{{ asset('images/reportage-isolation-1euro-TF1.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur M6" />
+                                <div class="block-video-single d-flex justify-content-center align-items-center">
+                                    <a id="video-btn-digital1" data-toggle="modal" data-src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.webm" data-target="#myModalVideo1"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card content -->
+                        <div class="card-body white-text rounded-bottom" data-background-color="bleue-clair">
+                            <!-- Title -->
+                            <img class="logo-chaine" src="{{ asset('images/TF1-logo.png') }}" alt="illustration logo M6" />
+                            <hr class="hr-light">
+                            <!-- Text -->
+                            <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
+                            <p class="mb-0">Même pas 24 heures après avoir rempli le document en ligne, <span class="gras_500">j'ai eu la réponse, ça prend 5 minutes</span>... <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <!-- Card image -->
+                        <div class="view overlay">
+                            <div class="block-video">
+                                <img src="{{ asset('images/reportage-isolation-1euro-m6.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur M6" />
+                                <div class="block-video-single d-flex justify-content-center align-items-center">
+                                    <a id="video-btn-digital2" data-toggle="modal" data-src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.webm" data-target="#myModalVideo2"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card content -->
+                        <div class="card-body white-text rounded-bottom" data-background-color="bleue-clair">
+                            <!-- Title -->
+                            <img class="logo-chaine" src="{{ asset('images/m6-logo.png') }}" alt="illustration logo M6" />
+                            <hr class="hr-light">
+                            <!-- Text -->
+                            <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
+                            <p class="mb-0">Des années que Josette et Stanislas en rêvait : <span class="gras_500">isoler leurs combles</span>, 73 m² sans piocher dans leur bas de laine.<span class="gras_500"> Pour 1 euro, c'est désormais chose faite</span>... <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <!-- Card image -->
+                        <div class="view overlay">
+                            <div class="block-video">
+                                <img src="{{ asset('images/reportage-isolation-1euro-w9.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur W9" />
+                                <div class="block-video-single d-flex justify-content-center align-items-center">
+                                    <a id="video-btn-digital3" data-toggle="modal" data-src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.webm" data-target="#myModalVideo3"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card content -->
+                        <div class="card-body white-text rounded-bottom" data-background-color="bleue-clair">
+                            <!-- Title -->
+                            <img class="logo-chaine" src="{{ asset('images/W9-logo.png') }}" alt="illustration logo W9" />
+                            <hr class="hr-light">
+                            <!-- Text -->
+                            <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
+                            <p class="mb-0">Marina est secrétaire et son mari ouvrier, en principe <span class="gras_500">les travaux qui vont être réalisés</span> aujourd’hui, <span class="gras_500">ils n'auraient pas pu se les offrir</span>… <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                        </div>
+                    </div>
                 </div>
             </div>
             {{--<div class="col-sm-12 col-md-4" id="">
@@ -651,7 +699,7 @@
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    {{--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog reportage-video" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -665,31 +713,70 @@
                 </div>
             </div>
         </div>
+    </div>--}}
+
+
+
+    <div class="ModalVideo modal fade" id="myModalVideo1" tabindex="-1" role="dialog" aria-labelledby="ModalLabelVideo1" aria-hidden="true">
+        <div class="modal-dialog reportage-video" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video id="video-reportage1" class="video-reportage" width="320" height="240" controls>
+                            <source src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ModalVideo modal fade" id="myModalVideo2" tabindex="-1" role="dialog" aria-labelledby="ModalLabelVideo2" aria-hidden="true">
+        <div class="modal-dialog reportage-video" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video id="video-reportage2" class="video-reportage" width="320" height="240" controls>
+                            <source src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ModalVideo modal fade" id="myModalVideo3" tabindex="-1" role="dialog" aria-labelledby="ModalLabelVideo3" aria-hidden="true">
+        <div class="modal-dialog reportage-video" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video id="video-reportage1" class="video-reportage" width="320" height="240" controls>
+                            <source src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 @endsection
 @section('javascript')
     <script>
-        $(document).ready(function() {
+        (function ($) {
+            $(document).ready(function() {
 
-            // Gets the video src from the data-src on each button
-            var $videoSrc;
-            $('.video-btn').click(function() {
-                $videoSrc = $(this).data( "src" );
             });
-            console.log($videoSrc);
-            // when the modal is opened autoplay it
-            $('#myModal').on('shown.bs.modal', function (e) {
-            // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-                $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" );
-            });
-            // stop playing the youtube video when I close the modal
-            $('#myModal').on('hide.bs.modal', function (e) {
-                // a poor man's stop video
-                $("#video").attr('src',$videoSrc);
-            });
-
-        });
+        })(jQuery);
 
     </script>
 @endsection

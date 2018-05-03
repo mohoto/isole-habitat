@@ -50,9 +50,32 @@
     };
 
     $(document).ready(function(){
-        /*******Video modal***********/
+        /*******Video modal ***********/
+            var vid1 = document.querySelector("#video-reportage1");
+            var vid2 = document.querySelector("#video-reportage2");
+            // when the modal is opened autoplay it
+            $('#myModalVideo1').on('show.bs.modal', function (e) {
+                vid1.autoplay = true;
+                vid1.load();
+            });
+            // stop playing the youtube video when I close the modal
+            $('#myModalVideo1').on('hide.bs.modal', function (e) {
+                vid1.pause();
+            });
+            //$('#myModalVideo1').modal('hide');
+            // when the modal is opened autoplay it
+            $('#myModalVideo2').on('show.bs.modal', function (e) {
+                vid2.autoplay = true;
+                vid2.load();
+            });
+            // stop playing the youtube video when I close the modal
+            $('#myModalVideo2').on('hide.bs.modal', function (e) {
+                vid2.pause();
+            });
+
+        /*******Video modal Youtube***********/
         // Gets the video src from the data-src on each button
-        var $videoSrc;
+        /*var $videoSrc;
         $('.video-btn').click(function() {
             $videoSrc = $(this).data( "src" );
         });
@@ -66,7 +89,7 @@
         $('#myModal').on('hide.bs.modal', function (e) {
             // a poor man's stop video
             $("#video").attr('src',$videoSrc);
-        });
+        });*/
 
         /*Nav*/
         $("#cssmenu").menumaker({

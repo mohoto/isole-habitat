@@ -26,30 +26,30 @@
             <div class="row">
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="widget-panel widget-style-2 card-box">
-                        <i class="fa fa-wpforms text-primary"></i>
+                        <i class="fab fa-wpforms text-primary"></i>
                         <h2 class="m-0 counter font-600">{{ App\ClientForm::count() }}</h2>
-                        <div class="text-muted m-t-5">Formulaire web</div>
+                        <div class="text-muted m-t-5">Formulaires web</div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="widget-panel widget-style-2 card-box">
-                        <i class="md md-add-shopping-cart text-pink"></i>
+                        <i class="fas fa-phone text-pink"></i>
                         <h2 class="m-0 counter font-600">1256</h2>
-                        <div class="text-muted m-t-5">Sales</div>
+                        <div class="text-muted m-t-5">Appels Telephoniques</div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="widget-panel widget-style-2 card-box">
-                        <i class="md md-store-mall-directory text-info"></i>
+                        <i class="fa fa-calendar-check-o text-info"></i>
                         <h2 class="m-0 counter font-600">18</h2>
-                        <div class="text-muted m-t-5">Stores</div>
+                        <div class="text-muted m-t-5">Chantiers validés</div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="widget-panel widget-style-2 card-box">
-                        <i class="md md-account-child text-custom"></i>
+                        <i class="fas fa-check-circle text-custom"></i>
                         <h2 class="m-0 counter font-600">8564</h2>
-                        <div class="text-muted m-t-5">Users</div>
+                        <div class="text-muted m-t-5">Poses validés</div>
                     </div>
                 </div>
             </div>

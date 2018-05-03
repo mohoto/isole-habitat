@@ -287,7 +287,7 @@
                                                     <label class="text-white">Jour</label>
                                                     <div>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control datepicker" placeholder="jour/mois/année" name="rdv_jour">
+                                                            <input type="text" class="form-control datepicker" placeholder="jour/mois/année" name="rdv_jour_previsite">
                                                             <span class="input-group-addon b-0" data-background-color="vert"><i class="md md-event-note text-dark"></i></span>
                                                         </div><!-- input-group -->
                                                     </div>
@@ -296,14 +296,14 @@
                                                     <label class="text-white">Heure</label>
                                                     <div>
                                                         <div class="input-group clockpicker" data-placement="top" data-align="top" data-autoclose="true">
-                                                            <input type="text" class="form-control" value="13:14" name="rdv_heure">
+                                                            <input type="text" class="form-control" value="13:14" name="rdv_heure_previsite">
                                                             <span class="input-group-addon" data-background-color="vert"> <span class="md md-access-time" data-color="blanc"></span> </span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row justify-content-center">
-                                                <button type="submit" class="btn btn-success waves-effect waves-light">Pré-visite</button>
+                                                <button type="submit" class="btn btn-success waves-effect waves-light">Planifier la Pré-visite</button>
                                             </div>
                                         </form>
                                     </div>

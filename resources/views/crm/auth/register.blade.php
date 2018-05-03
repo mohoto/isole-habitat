@@ -6,7 +6,7 @@
 <div class="wrapper-page">
     <div class="card-box">
         <div class="panel-heading">
-            <h3 class="text-center"> Sign Up to <strong class="text-custom">UBold</strong> </h3>
+            <img src="{{ asset('isolation-crm/images/Isole-Habitat-logo.svg')}}" alt="" class="logo block-center">
         </div>
         @if (count($errors) > 0)
             @foreach ($errors->all() as $error)
@@ -26,7 +26,7 @@
                         <input class="form-control" type="email" name="email" placeholder="Email">
                     </div>
                 </div>
-                <div class="btn-group bootstrap-select">
+                <div class="btn-group bootstrap-select mb-20">
                     <select class="selectpicker" data-style="btn-success btn-custom" name="fonction">
                         <option value="admin">Admin</option>
                         <option value="secretaire">Secretaire</option>
