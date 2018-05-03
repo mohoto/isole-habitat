@@ -597,7 +597,7 @@
                             <div class="block-video">
                                 <img src="{{ asset('images/reportage-isolation-1euro-TF1.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur M6" />
                                 <div class="block-video-single d-flex justify-content-center align-items-center">
-                                    <a id="video-btn-digital1" class="video-btn" data-toggle="modal" data-src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.webm" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+                                    <a id="video-btn-digital1" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/BDnXLSGpr3A" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -617,7 +617,7 @@
                             <div class="block-video">
                                 <img src="{{ asset('images/reportage-isolation-1euro-m6.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur M6" />
                                 <div class="block-video-single d-flex justify-content-center align-items-center">
-                                    <a id="video-btn-digital2" class="video-btn" data-toggle="modal" data-src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.webm" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+                                    <a id="video-btn-digital2" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/AD2uWiN3LFY" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -637,7 +637,7 @@
                             <div class="block-video">
                                 <img src="{{ asset('images/reportage-isolation-1euro-w9.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur W9" />
                                 <div class="block-video-single d-flex justify-content-center align-items-center">
-                                    <a id="video-btn-digital3" class="video-btn" data-toggle="modal" data-src="https://isole-habitat.ams3.digitaloceanspaces.com/site-web-video1.webm" data-target="#myModa"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+                                    <a id="video-btn-digital3" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/paUoYl4RRDw" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -704,11 +704,11 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <i class="fa fa-times-circle"></i>
                     </button>
                     <!-- 16:9 aspect ratio -->
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always">></iframe>
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allowfullscreen>></iframe>
                     </div>
                 </div>
             </div>
