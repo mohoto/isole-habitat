@@ -335,262 +335,264 @@
 @section('javascript')
     <script>
         /*****Wizard function*******/
-        var currentTab = 0;
-        var prevButton = document.querySelector('#prevBtn');
-        var nextButton = document.querySelector('#nextBtn');
-        var tabBlockNext = document.querySelector('#tab-block-next');
-        var tabBlockPrev = document.querySelector('#tab-block-prev');
-        function initTab(){
-            currentTab = 0;
-            //tabBlock.style.width = "100%";
-            tabBlockPrev.style.display = "none";
-            //nextButton.style.width = "50%";
-            //prevButton.style.display = "none";
-            nextButton.classList.remove('btn-orange');
-            nextButton.classList.add('btn-vert');
-            nextButton.innerHTML = "Suivant";
-
-        }
-        showTab(currentTab);
-        function showTab(n){
-            var x = document.querySelectorAll('.tab');
-            x[n].style.display = "block";
-            if(n == 0) {
-                initTab();
-            }
-            else if(n == (x.length-2)) {
-                tabBlockPrev.style.display = "block";
-                nextButton.innerHTML = "Tester maintenant";
-                nextButton.setAttribute('id', 'btn-submit-eligible');
-//nextButton.addEventListener('click', testEligibilite);
-            }
-            else if(n == (x.length-1)) {
+        $(document).ready(function(){
+            var currentTab = 0;
+            var prevButton = document.querySelector('#prevBtn');
+            var nextButton = document.querySelector('#nextBtn');
+            var tabBlockNext = document.querySelector('#tab-block-next');
+            var tabBlockPrev = document.querySelector('#tab-block-prev');
+            function initTab(){
+                currentTab = 0;
+                //tabBlock.style.width = "100%";
                 tabBlockPrev.style.display = "none";
-                nextButton.classList.remove('btn-vert');
-                nextButton.classList.add('btn-orange');
-                nextButton.innerHTML = "Me rappeler";
-             }
-            else {
-                tabBlockPrev.style.display = "block";
+                //nextButton.style.width = "50%";
+                //prevButton.style.display = "none";
+                nextButton.classList.remove('btn-orange');
+                nextButton.classList.add('btn-vert');
                 nextButton.innerHTML = "Suivant";
-                //tabBlock.style.width = "50%";
-                //nextButton.style.width = "100%";
-                //prevButton.style.display = "block";
-            }
 
-        }
-        var prev = document.querySelector('#prevBtn');
-        prev.addEventListener('click', function(){
-            var x = document.querySelectorAll('.tab');
-            x[currentTab].style.display =  "none";
-            currentTab -= 1;
+            }
             showTab(currentTab);
-        });
-
-        function validateCheckboxIso(){
-            var valid = false;
-            var x = document.querySelectorAll('.tab');
-            var z = x[currentTab].querySelectorAll('.checkbox');
-            for(var j=0; j<z.length; j++){
-                if(z[j].checked == true){
-                    valid = true;
+            function showTab(n){
+                var x = document.querySelectorAll('.tab');
+                x[n].style.display = "block";
+                if(n == 0) {
+                    initTab();
                 }
-            }
-            return valid;
-        }
-        function validateRadioChauffage(){
-            var valid = false;
-            var z = document.forms['eligibForm'].elements['type_chauffage'];
-            // loop through list of radio buttons
-            for (var i=0; i<z.length; i++) {
-                if (z[i].checked == true) { // radio checked?
-                    valid = true;
-                    break; // and break out of for loop
+                else if(n == (x.length-2)) {
+                    tabBlockPrev.style.display = "block";
+                    nextButton.innerHTML = "Tester maintenant";
+                    nextButton.setAttribute('id', 'btn-submit-eligible');
+        //nextButton.addEventListener('click', testEligibilite);
                 }
-
-            }
-            return valid;
-        }
-        function validateInputForm(){
-            var valid = true;
-            var x = document.querySelectorAll('.tab');
-            var y = x[currentTab].getElementsByTagName('input');
-            for(var i = 0; i < y.length; i++){
-                if(y[i].value == "" ){
-                    valid = false;
-                }
-            }
-            return valid;
-        }
-        function displayErrorInput(message){
-            $.notify({
-                // options
-                icon: 'glyphicon glyphicon-warning-sign',
-                message: 'Turning standard Bootstrap alerts into "notify" like notifications'
-
-            },{
-                // settings
-                element: 'body',
-                position: null,
-                type: "danger",
-                allow_dismiss: false,
-                newest_on_top: false,
-                showProgressbar: false,
-                placement: {
-                    from: "top",
-                    align: "center"
-                },
-                offset: 100,
-                spacing: 20,
-                z_index: 1061,
-                delay: 500,
-                timer: 1000,
-                url_target: '_blank',
-                mouse_over: null,
-                animate: {
-                    enter: 'animated fadeInDown',
-                    exit: 'animated fadeOutUp'
-                },
-                onShow: function(){
-                    setTimeout(function(){
-                        // enable click after 1 second
-                        $('#btn_phone_modal').prop('disabled',false);
-                    },5000);
-                },
-                onShown: null,
-                onClose: null,
-                onClosed: null,
-                icon_type: 'class',
-                template: '<div data-notify="container" class="col-xs-10 col-sm-3 alert alert-{0}" role="alert" data-background-color="orange">' +
-                '<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
-                '<span data-notify="icon"></span> ' +
-                '<span data-notify="title">{1}</span> ' +
-                '<span class="text-white mt-20 mb-20" data-notify="message">'+ message + '</span>' +
-                '<div class="progress" data-notify="progressbar">' +
-                '<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
-                '</div>' +
-                '<a href="{3}" target="{4}" data-notify="url"></a>' +
-                '</div>'
-            });
-        }
-
-
-        var next = document.getElementById('nextBtn');
-        next.addEventListener('click', function() {
-            var id = '#eligibForm';
-            var speed = 750;
-            $('html,body').animate({
-                scrollTop: $(id).offset().top
-            }, speed);
-            var x = document.querySelectorAll('.tab');
-            if(currentTab == 0){
-                /*if(checkRadioBox() && checkCheckBox()){
-
-                }*/
-                var checkboxResult = validateCheckboxIso();
-                var radioResult = validateRadioChauffage();
-                if(radioResult == false){
-                    displayErrorInput('Selectionner le système de chauffage dans votre maison');
-                }
-                else if(checkboxResult == false){
-                    displayErrorInput('Selectionner le ou les types d\'isolations à faire dans votre maison.');
-                }
-                else{
-                    x[currentTab].style.display = "none";
-                    currentTab += 1;
-                    showTab(currentTab);
-                }
-            }
-            else if(currentTab == x.length - 2){
-                var inputResult = validateInputForm();
-                if(inputResult == false){
-                    displayErrorInput('Veuillez remplir tous les champs');
-                }
-                else{
-                    var data = $('#eligibForm').serializeArray();
-                    $.ajaxSetup({
-                        headers: {
-                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                        }
-                    });
-                    $.ajax({
-                        type: 'post',
-                        url: '{{ route('site-web.formulaire-eligibilite') }}',
-                        data: data,
-                        dataType: 'JSON',
-                        success: function(response){
-                            x[currentTab].style.display =  "none";
-                            currentTab += 1;
-                            showTab(currentTab);
-                            $('.info-resultat').css('opacity', '0');
-                            $('.tab-block-btn').css('opacity', '0');
-                            $('#eligibRappel').css('opacity', '0');
-                            $('#loaderEligible').css('display', 'block');
-                            setTimeout(function(){
-                                $('#loaderEligible').fadeOut(500);
-                                $('.info-resultat').css('opacity', '1');
-                                $('.tab-block-btn').css('opacity', '1');
-                                $('#eligibRappel').css('opacity', '1');
-                                nextButton.setAttribute('data-id', response.id);
-                                if(response.situation == 'grand-précaire'){
-                                    $('#info-resultat-ok').css('display', 'block');
-                                }else{
-                                    $('#info-resultat-none').css('display', 'block');
-                                }
-                            },2000)
-                        }
-                    });
-                }
-            }
-            else if (currentTab == x.length - 1) {
-                //x[currentTab].style.display = "none";
-                //currentTab = 0;
-                //showTab(currentTab);
-                //document.querySelector('#info-resultat-ok').style.display = "none";
-                //document.querySelector('#info-resultat-none').style.display = "none";
-                 function getHourValEligible(){
-                     var val;
-                     var heure_eligible = $('input[name= "heure_rappel"]');
-                     for(var i=0; i<heure_eligible.length; i++){
-                         if (heure_eligible[i].checked){
-                             val = heure_eligible[i].value;
-                             break;
-                         }
-                     }
-                     return val;
+                else if(n == (x.length-1)) {
+                    tabBlockPrev.style.display = "none";
+                    nextButton.classList.remove('btn-vert');
+                    nextButton.classList.add('btn-orange');
+                    nextButton.innerHTML = "Me rappeler";
                  }
-                 var heure_rappel = getHourValEligible();
-                 var idUrl = nextButton.getAttribute('data-id');
-                 $.ajaxSetup({
-                     headers: {
-                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                     }
-                 });
-                 $.ajax({
-                     type: 'post',
-                     url: "formulaire-eligibilite-rappel/" + idUrl,
-                     data: {heure_rappel: heure_rappel},
-                     dataType: 'JSON',
-                     success: function(response){
-                         swal({
-                             text: "<h4 class='mt-20 mb-20' data-color='orange'>Votre demande a été prise en compte</h4><p>Un conseiller isolation vous rappellera rapidement</p><p><strong data-color='orange'>Entre " + response.heureRappel + "</strong></p>",
-                             timer: 3000,
-                             showConfirmButton: false
-                         });
-                     }
-                 });
+                else {
+                    tabBlockPrev.style.display = "block";
+                    nextButton.innerHTML = "Suivant";
+                    //tabBlock.style.width = "50%";
+                    //nextButton.style.width = "100%";
+                    //prevButton.style.display = "block";
+                }
+
             }
-             else{
-                var inputResult = validateInputForm();
-                if(inputResult == false){
-                    displayErrorInput('Veuillez remplir tous les champs');
+            var prev = document.querySelector('#prevBtn');
+            prev.addEventListener('click', function(){
+                var x = document.querySelectorAll('.tab');
+                x[currentTab].style.display =  "none";
+                currentTab -= 1;
+                showTab(currentTab);
+            });
+
+            function validateCheckboxIso(){
+                var valid = false;
+                var x = document.querySelectorAll('.tab');
+                var z = x[currentTab].querySelectorAll('.checkbox');
+                for(var j=0; j<z.length; j++){
+                    if(z[j].checked == true){
+                        valid = true;
+                    }
                 }
-                else{
-                    x[currentTab].style.display = "none";
-                    currentTab += 1;
-                    showTab(currentTab);
+                return valid;
+            }
+            function validateRadioChauffage(){
+                var valid = false;
+                var z = document.forms['eligibForm'].elements['type_chauffage'];
+                // loop through list of radio buttons
+                for (var i=0; i<z.length; i++) {
+                    if (z[i].checked == true) { // radio checked?
+                        valid = true;
+                        break; // and break out of for loop
+                    }
+
                 }
-             }
+                return valid;
+            }
+            function validateInputForm(){
+                var valid = true;
+                var x = document.querySelectorAll('.tab');
+                var y = x[currentTab].getElementsByTagName('input');
+                for(var i = 0; i < y.length; i++){
+                    if(y[i].value == "" ){
+                        valid = false;
+                    }
+                }
+                return valid;
+            }
+            function displayErrorInput(message){
+                $.notify({
+                    // options
+                    icon: 'glyphicon glyphicon-warning-sign',
+                    message: 'Turning standard Bootstrap alerts into "notify" like notifications'
+
+                },{
+                    // settings
+                    element: 'body',
+                    position: null,
+                    type: "danger",
+                    allow_dismiss: false,
+                    newest_on_top: false,
+                    showProgressbar: false,
+                    placement: {
+                        from: "top",
+                        align: "center"
+                    },
+                    offset: 100,
+                    spacing: 20,
+                    z_index: 1061,
+                    delay: 500,
+                    timer: 1000,
+                    url_target: '_blank',
+                    mouse_over: null,
+                    animate: {
+                        enter: 'animated fadeInDown',
+                        exit: 'animated fadeOutUp'
+                    },
+                    onShow: function(){
+                        setTimeout(function(){
+                            // enable click after 1 second
+                            $('#btn_phone_modal').prop('disabled',false);
+                        },5000);
+                    },
+                    onShown: null,
+                    onClose: null,
+                    onClosed: null,
+                    icon_type: 'class',
+                    template: '<div data-notify="container" class="col-xs-10 col-sm-3 alert alert-{0}" role="alert" data-background-color="orange">' +
+                    '<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
+                    '<span data-notify="icon"></span> ' +
+                    '<span data-notify="title">{1}</span> ' +
+                    '<span class="text-white mt-20 mb-20" data-notify="message">'+ message + '</span>' +
+                    '<div class="progress" data-notify="progressbar">' +
+                    '<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
+                    '</div>' +
+                    '<a href="{3}" target="{4}" data-notify="url"></a>' +
+                    '</div>'
+                });
+            }
+
+
+            var next = document.getElementById('nextBtn');
+            next.addEventListener('click', function() {
+                var id = '#eligibForm';
+                var speed = 750;
+                $('html,body').animate({
+                    scrollTop: $(id).offset().top
+                }, speed);
+                var x = document.querySelectorAll('.tab');
+                if(currentTab == 0){
+                    /*if(checkRadioBox() && checkCheckBox()){
+
+                    }*/
+                    var checkboxResult = validateCheckboxIso();
+                    var radioResult = validateRadioChauffage();
+                    if(radioResult == false){
+                        displayErrorInput('Selectionner le système de chauffage dans votre maison');
+                    }
+                    else if(checkboxResult == false){
+                        displayErrorInput('Selectionner le ou les types d\'isolations à faire dans votre maison.');
+                    }
+                    else{
+                        x[currentTab].style.display = "none";
+                        currentTab += 1;
+                        showTab(currentTab);
+                    }
+                }
+                else if(currentTab == x.length - 2){
+                    var inputResult = validateInputForm();
+                    if(inputResult == false){
+                        displayErrorInput('Veuillez remplir tous les champs');
+                    }
+                    else{
+                        var data = $('#eligibForm').serializeArray();
+                        $.ajaxSetup({
+                            headers: {
+                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                            }
+                        });
+                        $.ajax({
+                            type: 'post',
+                            url: '{{ route('site-web.formulaire-eligibilite') }}',
+                            data: data,
+                            dataType: 'JSON',
+                            success: function(response){
+                                x[currentTab].style.display =  "none";
+                                currentTab += 1;
+                                showTab(currentTab);
+                                $('.info-resultat').css('opacity', '0');
+                                $('.tab-block-btn').css('opacity', '0');
+                                $('#eligibRappel').css('opacity', '0');
+                                $('#loaderEligible').css('display', 'block');
+                                setTimeout(function(){
+                                    $('#loaderEligible').fadeOut(500);
+                                    $('.info-resultat').css('opacity', '1');
+                                    $('.tab-block-btn').css('opacity', '1');
+                                    $('#eligibRappel').css('opacity', '1');
+                                    nextButton.setAttribute('data-id', response.id);
+                                    if(response.situation == 'grand-précaire'){
+                                        $('#info-resultat-ok').css('display', 'block');
+                                    }else{
+                                        $('#info-resultat-none').css('display', 'block');
+                                    }
+                                },2000)
+                            }
+                        });
+                    }
+                }
+                else if (currentTab == x.length - 1) {
+                    //x[currentTab].style.display = "none";
+                    //currentTab = 0;
+                    //showTab(currentTab);
+                    //document.querySelector('#info-resultat-ok').style.display = "none";
+                    //document.querySelector('#info-resultat-none').style.display = "none";
+                     function getHourValEligible(){
+                         var val;
+                         var heure_eligible = $('input[name= "heure_rappel"]');
+                         for(var i=0; i<heure_eligible.length; i++){
+                             if (heure_eligible[i].checked){
+                                 val = heure_eligible[i].value;
+                                 break;
+                             }
+                         }
+                         return val;
+                     }
+                     var heure_rappel = getHourValEligible();
+                     var idUrl = nextButton.getAttribute('data-id');
+                     $.ajaxSetup({
+                         headers: {
+                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                         }
+                     });
+                     $.ajax({
+                         type: 'post',
+                         url: "formulaire-eligibilite-rappel/" + idUrl,
+                         data: {heure_rappel: heure_rappel},
+                         dataType: 'JSON',
+                         success: function(response){
+                             swal({
+                                 text: "<h4 class='mt-20 mb-20' data-color='orange'>Votre demande a été prise en compte</h4><p>Un conseiller isolation vous rappellera rapidement</p><p><strong data-color='orange'>Entre " + response.heureRappel + "</strong></p>",
+                                 timer: 3000,
+                                 showConfirmButton: false
+                             });
+                         }
+                     });
+                }
+                 else{
+                    var inputResult = validateInputForm();
+                    if(inputResult == false){
+                        displayErrorInput('Veuillez remplir tous les champs');
+                    }
+                    else{
+                        x[currentTab].style.display = "none";
+                        currentTab += 1;
+                        showTab(currentTab);
+                    }
+                 }
+            });
         });
     </script>
 @endsection
