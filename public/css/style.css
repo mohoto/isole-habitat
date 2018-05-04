@@ -2915,6 +2915,15 @@ nav {
   .col-xs-mt-10{
     margin-top: 10px;
   }
+  .col-xs-mt-20{
+    margin-top: 20px;
+  }
+  .col-xs-mt-30{
+    margin-top: 30px;
+  }
+  .col-xs-mt-40{
+    margin-top: 40px;
+  }
   /*Section Type-isolation*/
   .section#section-type-isolation2 .bg-overlay, .section#section-type-isolation3 .bg-overlay, .section#section-type-isolation4 .bg-overlay {
     margin-top: 20px;

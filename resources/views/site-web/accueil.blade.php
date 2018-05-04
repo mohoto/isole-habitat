@@ -611,7 +611,7 @@
                             <p class="mb-0">Même pas 24 heures après avoir rempli le document en ligne, <span class="gras_500">j'ai eu la réponse, ça prend 5 minutes</span>... <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card col-xs-mt-40">
                         <!-- Card image -->
                         <div class="view overlay">
                             <div class="block-video">
@@ -631,7 +631,7 @@
                             <p class="mb-0">Des années que Josette et Stanislas en rêvait : <span class="gras_500">isoler leurs combles</span>, 73 m² sans piocher dans leur bas de laine.<span class="gras_500"> Pour 1 euro, c'est désormais chose faite</span>... <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card col-xs-mt-40">
                         <!-- Card image -->
                         <div class="view overlay">
                             <div class="block-video">
