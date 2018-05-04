@@ -624,7 +624,7 @@
                         <!-- Card content -->
                         <div class="card-body white-text rounded-bottom" data-background-color="bleue-clair">
                             <!-- Title -->
-                            <img class="logo-chaine" src="{{ asset('images/m6-logo.png') }}" alt="illustration logo M6" />
+                            <img class="logo-chaine" src="{{ asset('images/m6-logo2.png') }}" alt="illustration logo M6" />
                             <hr class="hr-light">
                             <!-- Text -->
                             <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
