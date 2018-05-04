@@ -2351,8 +2351,15 @@ label.type-heure {
   .hero h1 {
     font-size: 2em;
   }
+  .hero h2 {
+    font-size: 1.2em;
+  }
   .hero p {
-    font-size: 1.3em;
+    font-size: 1em;
+  }
+  .hero p#slogan-dispositif-hero {
+    font-size: 1.2em;
+    margin-top: 20px;
   }
   .section#section-type-isolation .features-box img {
     width: 100%;
