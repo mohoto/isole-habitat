@@ -16,7 +16,7 @@
                     <p class="text-center" id="slogan-dispositif-hero">En accord avec le dispositif CEE mis en place par le </br><span class="gras_500">Ministère de la Transition Écologique et Solidaire</span>.</p>
                     <p class="mt-50">Comme 300 000 foyers en France, profitez de cette aide.</p>
                     {{--<a href="#" class="btn btn-rounded btn-vert btn-formulaire">Tester votre éligibilité</a>--}}
-                    <a href="#block-form" id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire">Testez votre éligibilité</a>
+                    <a href="#block-form" id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire mt-20">Testez votre éligibilité</a>
                 </div>
             </div>
         </div>
