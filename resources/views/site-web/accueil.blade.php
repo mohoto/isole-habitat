@@ -10,7 +10,7 @@
                 <div class="part1"></div>
             </div>
             <div class="col-sm-12 col-md-6">
-                <div class="part2 text-center">
+                <div class="part2 text-center mb-0">
                    <h1 class="mb-20" data-color="bleue">ISOLEZ VOTRE MAISON POUR 1€</h1>
                     <h2 class=" sub-title mt-10 mb-10" data-color="vert">Un programme pour lutter contre la précarité énergétique</h2>
                     <p class="text-center" id="slogan-dispositif-hero">En accord avec le dispositif CEE mis en place par le </br><span class="gras_500">Ministère de la Transition Écologique et Solidaire</span>.</p>
