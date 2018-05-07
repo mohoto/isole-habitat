@@ -1017,7 +1017,7 @@ label.type-heure {
   width: 100%;
   top: 0;
   border-radius: .50rem!important;
-  background-color: rgba(8, 99, 181, 0.5);
+  background-color: rgba(8, 99, 181, 0.3);
   padding: 20px 30px;
 }
 .section#section-type-isolation2 .bg-overlay h4,

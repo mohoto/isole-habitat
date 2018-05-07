@@ -198,9 +198,9 @@
         <div class="row justify-content-around align-items-end">
             <div class="col-md-5 order-2">
                 <div style="position: relative";>
-                    <img src="{{ asset('images/technique-isolation-plafond.jpg') }}" alt="img" class="img-fluid rounded">
+                    <img src="{{ asset('images/isolation-garage.jpg') }}" alt="img" class="img-fluid rounded">
                     <div class="bg-overlay">
-                        <h4>Isolation des plafond avec panneaux de laine de verre</h4>
+                        <h4>Isolation du plafond de garage avec panneaux de polystyrène</h4>
                         <table class="table">
                             <thead>
                             <tr>
