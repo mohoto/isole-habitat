@@ -950,6 +950,22 @@ label.type-heure {
     background-color: #ee7626;
     border-color: #ee7626;
 }
+.section#section-presentation1 {
+  position: relative;
+  padding-bottom: 0px;
+}
+.section#section-presentation1::after {
+  content: '';
+  position:absolute;
+  bottom: -80px;
+  left: 50%;
+  margin-left: -80px;
+  width:0;
+  height:0;
+  border-top: 80px solid #ebeef1;
+  border-right: 80px solid transparent;
+  border-left: 80px solid transparent;
+}
 .section#features{
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1197,7 +1213,8 @@ label.type-heure {
 
 }
 .section#section-formulaire h2{
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 1.9em;
 }
 .section#section-formulaire h3{
   font-size: 1.6em;
@@ -1212,7 +1229,7 @@ label.type-heure {
   position: relative;
   width: 6em;
   height: 6em;
-  background: #ebeef1;
+  background: #ffffff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -1811,6 +1828,8 @@ label.type-heure {
   position: relative;
   margin: 10px auto;
   width: 100%;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
 #block-form .form-header{
   position: relative;
@@ -1838,12 +1857,13 @@ label.type-heure {
 }
 #block-form .form-body{
   background-color: #ffffff;
-  padding: 10px 40px 20px 40px;
+  padding: 0 20px 10px 20px;
+}
 }
 #regForm {
 }
 #block-form .titre_input{
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #868e96;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -1942,7 +1962,7 @@ input.invalid {
   -webkit-transition: all ease 0.2s;
   -moz-transition: all ease 0.2s;
   transition: all ease 0.2s;
-  padding: 10px 0;
+  padding: 10px 0 0 0 ;
   display: block !important;
 }
 .block-heure label.type-heure{
@@ -2201,7 +2221,7 @@ label.type-heure {
 @media (min-width: 992px) {
 
   #block-form #eligibForm .tab{
-    height: 420px;
+    height: 400px;
   }
   /********Page "isolation-combles"*********/
   .isolation-combles .block-materiel{
@@ -2324,7 +2344,7 @@ label.type-heure {
     font-size: 1.3em;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .popup_aide {
     left: 10px;
     font-size: 1.2em;
@@ -2938,3 +2958,4 @@ nav {
   /***********************************************/
 
 }
+

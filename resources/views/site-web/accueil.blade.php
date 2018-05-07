@@ -59,6 +59,40 @@
         </div>
     </div>
 </section>
+<!-- Section-formulaire -->
+@include('site-web.layouts.formulaire')
+<!-- end section-formulaire -->
+<section class="section pb-0" id="section-precarite-energetique" data-background-color="bleue-clair">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-12">
+            <h2 class="gras_700 text-center mb-30" data-color="orange">La précarité énergétique</h2>
+            <h3 class="">Un menage est en <span class="gras_500">«précarité énergétique»</span> lorsque celui-ci consacre <span class="gras_500">plus de 10% de ses revenus aux dépenses d’énergie</span> dans le logement.</h3>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="features-box">
+                <img src="{{ asset('images/icon-porcentage-precarite1.svg') }}" alt="illustration économie sur facture de chauffage" class="">
+                <p class="m-t-20">Des ménages sont dans le parc privé.</p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="features-box">
+                <img src="{{ asset('images/icon-porcentage-precarite2.svg') }}" alt="illustration économie sur facture de chauffage" class="">
+                <p class="m-t-20">Sont propriétaires-occupants.</p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="features-box">
+                <img src="{{ asset('images/icon-porcentage-precarite3.svg') }}" alt="illustration économie sur facture de chauffage" class="">
+                <p class="m-t-20">Ont plus de 60 ans.</p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 mb-20">
+            <h4 class="text-center gras_500 mb-30 mt-30" data-color="orange">Une mauvaise isolation est l'un des facteurs les plus importants de la «précarité énergétique».</h4>
+        </div>
+    </div>
+</div>
+</section>
 <!-- Features -->
 <section class="section mb-40" id="section-type-isolation">
     <div class="container">
@@ -449,37 +483,6 @@
         </div>--}}
     </div>
 </section>
-<section class="section pb-0" id="section-precarite-energetique" data-background-color="bleue-clair">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <h2 class="gras_700 text-center mb-30" data-color="orange">La précarité énergétique</h2>
-                <h3 class="">Un menage est en <span class="gras_500">«précarité énergétique»</span> lorsque celui-ci consacre <span class="gras_500">plus de 10% de ses revenus aux dépenses d’énergie</span> dans le logement.</h3>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="features-box">
-                    <img src="{{ asset('images/icon-porcentage-precarite1.svg') }}" alt="illustration économie sur facture de chauffage" class="">
-                    <p class="m-t-20">Des ménages sont dans le parc privé.</p>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="features-box">
-                    <img src="{{ asset('images/icon-porcentage-precarite2.svg') }}" alt="illustration économie sur facture de chauffage" class="">
-                    <p class="m-t-20">Sont propriétaires-occupants.</p>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="features-box">
-                    <img src="{{ asset('images/icon-porcentage-precarite3.svg') }}" alt="illustration économie sur facture de chauffage" class="">
-                    <p class="m-t-20">Ont plus de 60 ans.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Section-formulaire -->
-@include('site-web.layouts.formulaire')
-<!-- end section-formulaire -->
 <!-- end features alt -->
 <section class="section" id="section-societe">
     <div class="container">
