@@ -965,6 +965,7 @@ label.type-heure {
   border-top: 80px solid #ebeef1;
   border-right: 80px solid transparent;
   border-left: 80px solid transparent;
+  z-index: 1;
 }
 .section#features{
     padding-top: 0px;
@@ -1212,73 +1213,7 @@ label.type-heure {
 .section#section-questions-cee{
 
 }
-.section#section-formulaire h2{
-  margin-bottom: 20px;
-  font-size: 1.9em;
-}
-.section#section-formulaire h3{
-  font-size: 1.6em;
-  margin-bottom: 0px;
-}
-.section#section-formulaire i.ion-ios7-help-outline{
-  color: #ee7626;
-  font-weight: bold;
-}
-.section#section-fonctionnement .circle-block-step{
-  display: block;
-  position: relative;
-  width: 6em;
-  height: 6em;
-  background: #ffffff;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border: 4px solid #496174;
-  margin: 0 auto 5px auto;
-}
-.section#section-fonctionnement svg{
-  width: 6em;
-}
-.section#section-fonctionnement .block-step  {
-  position: relative;
-  width: 20%;
-  text-align: center;
-  padding: 0;
-}
-.section#section-fonctionnement .block-step i {
-  font-size: 4em;
-  color: #96b239;
-  margin-top: 50%;
-  transform: translateY(-50%);
-}
-.section#section-fonctionnement .block-step:before {
-  content: '';
-  width: 100%;
-  height: 5px;
-  background: #496174;
-  position: absolute;
-}
-.section#section-fonctionnement .block-step:before {
-  top: 3em;
-}
-.section#section-fonctionnement .block-step:last-child:before {
-  content: none;
-}
-.section#section-fonctionnement .block-step .steps-name{
-  margin-top: 30px;
-  font-size: 1em;
-  line-height: 1.4em;
-}
-.section#section-fonctionnement .btn{
-  font-size: 1.5em;
-  padding: 15px 30px;
-  margin-top: 5px;
-}
-.section#section-fonctionnement .btn:hover{
-  color: #ffffff;
-  background-color: #8ab326;
-  border-color: #8ab326;
-}
+
 .section#section-societe{
   padding-bottom: 0;
 }
@@ -1823,6 +1758,88 @@ label.type-heure {
 
 /**************Wizard****************/
 .section#section-formulaire{
+  background: url('../images/fond-formulaire.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.section#section-formulaire .bg-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  /*background-color: rgba(8, 99, 181, 0.8);*/
+  background-color: rgba(48, 62, 70, 0.8);
+}
+.section#section-formulaire h2{
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+.section#section-formulaire h3{
+  font-size: 1.6em;
+  margin-bottom: 0px;
+}
+.section#section-formulaire i.ion-ios7-help-outline{
+  color: #ee7626;
+  font-weight: bold;
+}
+#section-fonctionnement .circle-block-step{
+  display: block;
+  position: relative;
+  width: 6em;
+  height: 6em;
+  background: #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  margin: 0 auto 5px auto;
+}
+#section-fonctionnement svg{
+  width: 6em;
+}
+#section-fonctionnement .block-step  {
+  position: relative;
+  width: 20%;
+  text-align: center;
+  padding: 0;
+}
+#section-fonctionnement .block-step i {
+  font-size: 4em;
+  color: #96b239;
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+#section-fonctionnement .block-step:before {
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: #ffffff;
+  position: absolute;
+}
+#section-fonctionnement .block-step:before {
+  top: 3em;
+}
+#section-fonctionnement .block-step:last-child:before {
+  content: none;
+}
+#section-fonctionnement .block-step .steps-name{
+  margin-top: 30px;
+  font-size: 1em;
+  line-height: 1.4em;
+  color: #ffffff
+}
+#section-fonctionnement .btn{
+  font-size: 1.5em;
+  padding: 15px 30px;
+  margin-top: 5px;
+}
+#section-fonctionnement .btn:hover{
+  color: #ffffff;
+  background-color: #8ab326;
+  border-color: #8ab326;
 }
 #block-form {
   position: relative;
@@ -1834,7 +1851,7 @@ label.type-heure {
 #block-form .form-header{
   position: relative;
   padding: 20px 0px 5px 0px;
-  background-color: #496174;
+  background-color: #8ab326;
   /*border-bottom: 6px solid #496174;*/
   /*margin: 0 150px;*/
 }
@@ -2435,10 +2452,10 @@ label.type-heure {
     padding: 15px 0;
   }
   /********formulaire end****/
-  .section#section-fonctionnement .block-step {
+  #section-fonctionnement .block-step {
     width: 100%;
   }
-  .section#section-fonctionnement .block-step:before {
+  #section-fonctionnement .block-step:before {
     display:none;
   }
   .steps-timeline{
@@ -2451,7 +2468,7 @@ label.type-heure {
 
   }
 
-  .section#section-fonctionnement .block-step .steps-name {
+  #section-fonctionnement .block-step .steps-name {
     margin-top: 0;
     margin-bottom: 40px;
     font-size: 2em;

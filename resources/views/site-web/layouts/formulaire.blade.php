@@ -1,13 +1,13 @@
-<section class="section pt-50 pb-0" id="section-formulaire">
+<section class="section pt-50 pb-40" id="section-formulaire">
+    <div class="bg-overlay"></div>
     <div class="container-fluid">
         {{--<p class="text-center text-muted">45% des foyers sont éligibles à l'isolation à 1 €</p>--}}
         <div class="row justify-content-center mt-30">
             <div class="col-sm-12 col-md-6 col-lg-6">
                 <div id="block-form">
                     <div class="form-header text-center">
-                        <h2 class="text-center text-white gras_500">Vous pouvez aussi profiter de cette aide.</h2>
-                        <h4 class="" data-color="orange">Testez votre éligibilité</h4>
-                        <p class="text-white">Réponse immédiate - Sans aucun engagement</p>
+                        <h2 class="text-white">Testez votre éligibilité</h2>
+                        <p class="">Réponse immédiate - Sans aucun engagement</p>
                     </div>
                     {{--<form id="eligibForm" role="form" method="post" action="formulaire-eligibilite">--}}
                     <div class="form-body">
@@ -286,11 +286,7 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="section" id="section-fonctionnement">
-    <div class="container-fluid">
-        <div class="row">
+        <div class="row mt-50" id="section-fonctionnement">
             <div class="col-md-12">
                 <div class="steps-timeline d-flex">
                     <div class="block-step" id="block-step1">
