@@ -391,7 +391,7 @@
                                                 <p class=" text-center">Nous vous rappelerons très rapidement.</p>
                                                 <h4 class="text-center mt-20 mb-30" data-color="vert">Participer à l'amélioration des habitats</h4>
                                                 <h5 class="text-center text-partage gras_500" >Faîtes profiter votre famille et vos amis de l'isolation à 1€, ils vous remercieront!</h5>
-                                                <h5 class="text-center mt-20">Partagez notre programme</h5>
+                                                <h5 class="text-center mt-20" data-color="vert">Partagez notre programme</h5>
                                                 <button type="button" role="button" target="_blank" id="share_facebook2" class="btn btn-facebook waves-effect waves-light share_facebook">
                                                     <i class="fa fa-facebook m-r-5"></i> Facebook
                                                 </button>
