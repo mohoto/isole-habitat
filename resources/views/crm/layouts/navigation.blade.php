@@ -73,7 +73,7 @@
                         <a href="{{ route('crm.previsite-valide') }}"><i class="far fa-calendar-plus"></i>Pré-visites validées</a>
                     </li>
                     <li class="has-submenu sub-navigation-menu {{ Request::is('crm/chantier-valide') ? 'active' : ''}}">
-                        <a href="{{ route('crm.chantier-valide') }}"><i class="fa fa-calendar-check-o"></i>Poses à faire</a>
+                        <a href="{{ route('crm.chantier-valide') }}"><i class="fa fa-calendar-check-o"></i>Poses en attente</a>
                     </li>
                     <li class="sub-navigation-menu {{ Request::is('crm/pose-valide') ? 'active' : ''}}">
                         <a href="{{ route('crm.pose-valide') }}"><i class="fas fa-check-circle"></i>Poses validéés</a>
