@@ -109,7 +109,7 @@
                                         </div>
                                         <div class="col-4 mt-20">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
-                                                <input type="radio"  name="type_chauffage" id="type-chauffage-pompe" value="pompe à chaleur">
+                                                <input type="radio"  name="type_chauffage" id="type-chauffage-autre" value="autres">
                                                 <div class="icon">
                                                     <i class="fas fa-question"></i>
                                                 </div>
@@ -408,7 +408,7 @@
                                                 <h5 class="text-center mt-20" id="text-cause-none" data-color="orange"></h5>
                                                 <h5 class="text-center text-partage gras_500 mt-40" data-color="vert">Faîtes quand même profiter votre famille et vos amis de l'isolation à 1€, ils vous remercieront!</h5>
                                                 <h5 class="text-center mt-20">Partagez notre programme</h5>
-                                                <button type="button" role="button" target="_blank" id="share_facebook3" class="btn btn-facebook waves-effect waves-light share_facebook">
+                                                <button type="button" role="button" target="" id="share_facebook3" class="btn btn-facebook waves-effect waves-light share_facebook">
                                                     <i class="fa fa-facebook m-r-5"></i> Facebook
                                                 </button>
                                             </div>
