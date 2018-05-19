@@ -459,9 +459,11 @@
                                 <!-- Text -->
                                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="vert"></i>
                                 <p class="testimonial-content">J’ai isolé mes combles début mai pendant les jours de grandes chaleurs. Agréablement surprise de sentir <span class="gras_500">l’air beaucoup plus frais et respirable à l’intérieur</span> de la maison. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
-                                <div class="info-testimonial">
-                                    <img src="{{ asset('images/photo-temoignage1.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
-                                    <div class="info-testimonial-client">
+                                <div class="info-testimonial d-flex align-items-end">
+                                    <div>
+                                        <img src="{{ asset('images/photo-temoignage4.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
+                                    </div>
+                                    <div class="info-testimonial-client ml-10">
                                         <p class="testimonial-name">Laurence</p>
                                         <p class="testimonial-dept">Lognes(77)</p>
                                     </div>
@@ -474,9 +476,11 @@
                                 <!-- Text -->
                                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="vert"></i>
                                 <p class="testimonial-content">Je ne connaissais pas du tout et j'avoue j'étais un peu sceptique au départ, mais c’est réel et sans arnaque. <span class="gras_500">J’ai donné une pièce de 1€ une fois la pose finie</span>. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
-                                <div class="info-testimonial">
-                                    <img src="{{ asset('images/photo-temoignage2.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
-                                    <div class="info-testimonial-client">
+                                <div class="info-testimonial d-flex align-items-end">
+                                    <div>
+                                        <img src="{{ asset('images/photo-temoignage5.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
+                                    </div>
+                                    <div class="info-testimonial-client ml-10">
                                         <p class="testimonial-name">Salah</p>
                                         <p class="testimonial-dept">Stains(93)</p>
                                     </div>
@@ -488,11 +492,13 @@
                             <div class="card-body white-text rounded-bottom">
                                 <!-- Text -->
                                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="vert"></i>
-                                <p class="testimonial-content">Une pose rapide et l’amabilité en plus. <span class="gras_500">Avoir une isolation pour rien, pourquoi ne pas en profiter!</span> Je recommande vraiment. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
-                                <div class="info-testimonial">
-                                    <img src="{{ asset('images/photo-temoignage3.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
-                                    <div class="info-testimonial-client">
-                                        <p class="testimonial-name">Danielle & Alain</p>
+                                <p class="testimonial-content">Une pose rapide et le service en plus. <span class="gras_500">Avoir une isolation sans rien payer, pourquoi ne pas en profiter!</span> Je recommande vraiment. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                                <div class="info-testimonial d-flex align-items-end">
+                                    <div>
+                                    <img src="{{ asset('images/photo-temoignage6.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
+                                    </div>
+                                    <div class="info-testimonial-client ml-10">
+                                        <p class="testimonial-name">Yves</p>
                                         <p class="testimonial-dept">Brunoy(91)</p>
                                     </div>
                                 </div>
