@@ -471,7 +471,7 @@
 
             var next = document.getElementById('nextBtn');
             next.addEventListener('click', function() {
-                var id = '#eligibForm';
+                var id = '#block-form';
                 var speed = 750;
                 $('html,body').animate({
                     scrollTop: $(id).offset().top

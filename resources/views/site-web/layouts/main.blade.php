@@ -29,31 +29,34 @@
         <title>Isole-habitat | Isolation de votre maison pour 1€</title>
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.typekit.net/nar0gtx.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/nar0gtx.css') }}">
 
         <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
         <!-- Owl Carousel CSS -->
-        <link href="css/animate.css" rel="stylesheet">
+        <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
 
         <!-- Owl Carousel CSS -->
-        <link href="css/owl.carousel.css" rel="stylesheet">
-        <link href="css/owl.theme.default.min.css" rel="stylesheet">
+        <link href="{{ asset('css/owl.carousel.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/owl.theme.default.min.css') }}" rel="stylesheet">
 
         <!-- Icon CSS -->
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/icons.css" rel="stylesheet">
-        <!-- Toastr CSS -->
-        <link href="plugins/toastr/toastr.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="{{ ('css/icons.css') }}" rel="stylesheet">
+        <!-- Toastr CSSasset -->
+        <link href="{{ asset('plugins/toastr/toastr.css') }}" rel="stylesheet">
         <!-- SweetAlert2 CSS -->
-        <link href="plugins/sweet-alert2/sweetalert2.min.css" rel="stylesheet">
-
+        <link href="{{ asset('plugins/sweet-alert2/sweetalert2.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('isolation-crm/css/icons.css')}}" rel="stylesheet" type="text/css" />
+        <!-- Wizard CSS -->
+        <link href="{{ asset('plugins/wizard/assets/css/material-bootstrap-wizard.css') }}" rel="stylesheet" />
         <!-- Custom styles for this template -->
-        <link href="css/style.css" rel="stylesheet">
-        <script type="text/javascript" src="js/modernizr.min.js"></script>
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
+        <!-- CSS Just for demo purpose, don't include it in your project -->
+        <script type="text/javascript" src="{{ asset('js/modernizr.min.js') }}"></script>
 
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
@@ -62,14 +65,14 @@
         <script src="js/respond.min.js"></script>
         <![endif]-->
         <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        {{--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-N97HNP2');</script>
+            })(window,document,'script','dataLayer','GTM-N97HNP2');</script>--}}
         <!-- End Google Tag Manager -->
     </head>
-    <body data-spy="scroll" data-target="#navbar-menu" class="@yield('pageClass')">
+    <body  class="@yield('pageClass')">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N97HNP2"
                       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -89,14 +92,22 @@
                     </ul>
                 </div>
             </nav>
+            <div class="container-fluid" id="ribbon-formulaire">
+                <div class="row justify-content-md-center align-items-md-center">
+                    <h4 class="gras_300" data-color="blanc"><span data-color="orange">Votre intérieur frais et agréable en été :</span> Profitez de votre isolation pour 1€</h4>
+                    <a href="#" id="btn-formulaire-ribbon" class="btn btn-rounded btn-vert btn-formulaire ml-20">Testez votre éligibilité</a>
+                </div>
+            </div>
         </header>
+
+
         <div class="modal fade" id="phoneModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <img src="{{ asset('images/assistance-telephonique.jpg') }}" class="assistace_phone_img rounded-circle" alt="Demande assistace telephonique isole habitat">
                         <div>
-                            <p class="text-center gras_500 text_intro">Besoins de conseils pour l'isolation de votre maison et pour pouvoir bénéficier du programme à 1€?</p>
+                            <p class="text-center gras_500 text_intro">Besoin de conseils pour l'isolation de votre maison et pour pouvoir bénéficier du programme à 1€?</p>
                             <h4 class="text-center" data-color="orange"><i class="ion-ios7-telephone mr-10"></i>Nous vous rappelons</h4>
                             <p class="text-center">En moins de 24 heures</p>
                         </div>
@@ -157,7 +168,14 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btn btn-orange popup_aide" data-toggle="modal" data-target="#phoneModal" data-animation="fadein" data-plugin="custommodal" data-overlaySpeed="200" data-overlayColor="#36404a">Besoin de conseils <i class="ion-help"></i></a>
+    {{--<a href="#" class="btn btn-orange popup_aide" data-toggle="modal" data-target="#phoneModal" data-animation="fadein" data-plugin="custommodal" data-overlaySpeed="200" data-overlayColor="#36404a">Besoin de conseils <i class="ion-help"></i></a>--}}
+    <!--Formulaire éligibilité overlay-->
+    {{--<div class="image-container set-full-height" style="background-image: url('plugins/wizard/assets/img/wizard-city.jpg')">
+        <a href="" class="close-overlay">&times;</a>--}}
+    @include('site-web.layouts.formulaire-overlay')
+    {{--</div>--}}
+    <!--End Formulaire éligibilité overlay-->
+    <div class="wrapper-content">
         @yield('content')
         <section class="section" id="section-social-share">
             <div class="row justify-content-center">
@@ -171,9 +189,9 @@
                             <i class="fa fa-facebook m-r-5"></i> Facebook
                         </button>
 
-                        <button type="button" role="button" class="btn btn-twitter waves-effect waves-light share_twitter">
+                        {{--<button type="button" role="button" class="btn btn-twitter waves-effect waves-light share_twitter">
                             <i class="fa fa-twitter m-r-5"></i> Twitter
-                        </button>
+                        </button>--}}
 
                         {{--<button type="button" class="btn btn-googleplus waves-effect waves-light share_gplus">
                             <i class="fa fa-google-plus m-r-5"></i> Google+
@@ -222,13 +240,12 @@
                             {{--<li><a href="#">L'isolation des murs</a></li>--}}
                             {{--<li><a href="#">L'isolation des caves et garges</a></li>--}}
                             <li><a href="{{ route('site-web.societe') }}">Qui sommes-nous?</a></li>
-                            {{--<li><a href="#">Mentions légales</a></li>--}}
                         </ul>
                     </div>
                     <div class="col-md-4">
                         <div class="d-flex flex-column align-items-center">
                             <div class="">
-                                <i class="ion-ios7-help-outline"></i><p class="besoin-aide">Besoin d'assistance?</p>
+                                <i class="ion-ios7-help-outline"></i><p class="besoin-aide">Besoin de conseils?</p>
                             </div>
                             <button class="btn btn-orange btn-rounded"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></button>
                             <p class="mt-10" data-color="bleue-clair" ">Lundi-vendredi   9h-20h</p>
@@ -246,32 +263,39 @@
             </div> <!-- end container -->
         </footer>
         <!-- End Footer -->
-
+    </div>
 
         <!-- Back to top -->
         <a href="#" class="back-to-top" id="back-to-top"> <i class="fa fa-angle-up"></i> </a>
 
 
         <!-- js placed at the end of the document so the pages load faster -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/popper.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <!--  Plugin for the Wizard -->
+    <script src="{{ asset('plugins/wizard/assets/js/jquery.bootstrap.js') }}" type="text/javascript"></script>
+    <!--  Plugin for the Wizard -->
+    <script src="{{ asset('plugins/wizard/assets/js/material-bootstrap-wizard.js') }}"></script>
+    <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+    <script src="{{ asset('plugins/wizard/assets/js/jquery.validate.min.js') }}"></script>
 
         <!-- Jquery easing -->
-        <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+        <script type="text/javascript" src="{{ asset('js/jquery.easing.1.3.min.js') }}"></script>
 
         <!-- Owl Carousel -->
-        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
         <!-- Toastr -->
-        <script type="text/javascript" src="plugins/toastr/toastr.min.js"></script>
+        <script type="text/javascript" src="{{ asset('plugins/toastr/toastr.min.js') }}"></script>
         <!-- Sweet alert -->
-        <script type="text/javascript" src="plugins/sweet-alert2/sweetalert2.min.js"></script>
+        <script type="text/javascript" src="{{ asset('plugins/sweet-alert2/sweetalert2.min.js') }}"></script>
         <!-- Notification -->
-        <script type="text/javascript" src="plugins/bootstrap-notify-master/bootstrap-notify.min.js"></script>
+        <script type="text/javascript" src="{{ asset('plugins/bootstrap-notify-master/bootstrap-notify.min.js') }}"></script>
+        <!--  Plugin for the Wizard -->
         <!-- My custom-->
-        <script type="text/javascript" src="js/custom2.js"></script>
+        <script type="text/javascript" src="{{ asset('js/custom2.js') }}"></script>
         <!--common script for all pages-->
-        <script src="js/jquery.app.js"></script>
+        <script src="{{ asset('js/jquery.app.js') }}"></script>
     <script>
             /*Popup "besoin de conseils"  avec submit "rappel"*/
             $('#btn_phone_modal').click(function () {
@@ -358,6 +382,9 @@
                     });
                 })
             });
+
+
+
 
     </script>
     @yield('javascript')

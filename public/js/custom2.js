@@ -1,3 +1,11 @@
+
+
+
+    /*$('.close-overlay').click(function(e){
+        e.preventDefault();
+        overlay.style.left = "-3000px";
+        //body.classList.remove("noScroll");
+    });*/
 (function($) {
 
     $.fn.menumaker = function(options) {
@@ -50,6 +58,49 @@
     };
 
     $(document).ready(function(){
+        /*Onglet "besoin de conseils"*/
+        $(window).scroll(function(){
+            if($(this).scrollTop()>400){
+                $('.popup_aide').fadeIn();
+            }else{
+                $('.popup_aide').fadeOut();
+            }
+        });
+        /*Ribbon Formulaire*/
+        $('#ribbon-formulaire').css("display","none");
+        $(window).scroll(function(){
+            if($(this).scrollTop()>400){
+                $('#ribbon-formulaire').css("display","block");
+            }else{
+                $('#ribbon-formulaire').css("display","none");
+            }
+        });
+        $('.btn-formulaire').click(function(e){
+            e.preventDefault();
+            $('#myModalFullscreen').modal({
+                keyboard: false
+            });
+        });
+        /*************************************************/
+        //open/close lateral navigation
+        var overlay = document.querySelector("#section-overlay");
+        var btnFormulaire = document.querySelectorAll('.btn-formulaire');
+        for(var i=0; i< btnFormulaire.length; i++){
+            btnFormulaire[i].addEventListener('click', function(e){
+                e.preventDefault();
+                overlay.style.left = "0px";
+                document.body.classList.add("noScroll");
+            });
+
+        }
+        var closeOverlay = document.querySelector('#close-overlay');
+        closeOverlay.addEventListener('click', function(e){
+            e.preventDefault();
+            overlay.style.left = "-3000px";
+            document.body.classList.remove("noScroll");
+            $('#wizard-card-test').show();
+            $('#wizard-card-test2').hide();
+        });
 
 
         /*******Video modal Youtube***********/
@@ -101,7 +152,7 @@
         /*************************************************/
         /*************************************************/
         /******** Scroll animate to btn*******/
-        $('#btn-section-formulaire').click(function (e) {
+        /*$('.btn-formulaire').click(function (e) {
             e.preventDefault();
             var id = '#block-form';
             var speed = 750;
@@ -109,17 +160,9 @@
                 scrollTop: $(id).offset().top
             }, speed);
             return false;
-        });
-        /*Onglet "besoin de conseils"*/
-        $('.popup_aide').css("display","none");
-        $(window).scroll(function(){
-            if($(this).scrollTop()>400){
-                $('.popup_aide').fadeIn();
-            }else{
-                $('.popup_aide').fadeOut();
-            }
-        });
-        /*************************************************/
+        });*/
+
+
         /*************************************************/
 
         /*************************************************/
@@ -162,12 +205,12 @@
             var shareUrl = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(url);
             popupCenter(shareUrl , "partager sur Facebook");
         });
-        var btnTwitter = document.querySelector('.share_twitter');
+        /*var btnTwitter = document.querySelector('.share_twitter');
         btnTwitter.addEventListener('click', function(e){
             var url = "http://www.isole-habitat.fr";
             var shareUrl = "https://twitter.com/share?url=" + encodeURIComponent(url);
             popupCenter(shareUrl , "partager sur Twitter");
-        });
+        });*/
         /*************************************************/
         /*************************************************/
 
@@ -221,33 +264,7 @@
             event.preventDefault();
         });*/
 
-        /*input nombre telephone*/
-        var $inputPhone = $('.telephone_input');
-        $inputPhone.on("keyup", function(event){
-            // When user select text in the document, also abort.
-            var selection = window.getSelection().toString();
-            if ( selection !== '' ) {
-                return;
-            }
 
-            // When the arrow keys are pressed, abort.
-            if ( $.inArray( event.keyCode, [38,40,37,39] ) !== -1 ) {
-                return;
-            }
-            var $this = $(this);
-            var input = $this.val();
-            input = input.replace(/[\W\s\._\-]+/g, '');
-            var split = 2;
-            var chunk = [];
-            for (var i = 0, len = input.length; i < len; i += split) {
-                chunk.push( input.substr( i, split ) );
-            }
-
-
-            $this.val(function() {
-                return chunk.join(" ").toUpperCase();
-            });
-        });
         /*************************************************/
         /*************************************************/
 
@@ -282,7 +299,6 @@
      $('.video-btn').click(function() {
      $videoSrc = $(this).data( "src" );
      });
-     console.log($videoSrc);
      // when the modal is opened autoplay it
      $('#myModal').on('shown.bs.modal', function (e) {
      // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get

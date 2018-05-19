@@ -5,18 +5,20 @@
 <!-- HOME -->
 <section class="" id="home">
     <div class="container">
-        <div class="row hero mt-50 mb-40 justify-content-center">
+        <div class="row hero mt-50 mb-40 justify-content-center align-items-end">
             <div class="col-sm-12 col-md-6">
                 <div class="part1"></div>
             </div>
             <div class="col-sm-12 col-md-6">
                 <div class="part2 text-center mb-0">
-                   <h1 class="mb-20" data-color="bleue">ISOLEZ VOTRE MAISON POUR 1€</h1>
-                    <h2 class=" sub-title mt-10 mb-10" data-color="vert">Un programme pour lutter contre la précarité énergétique</h2>
-                    <p class="text-center" id="slogan-dispositif-hero">En accord avec le dispositif CEE mis en place par le </br><span class="gras_500">Ministère de la Transition Écologique et Solidaire</span>.</p>
-                    <p class="mt-50">Comme 300 000 foyers en France, profitez de cette aide.</p>
+                    <h1 class="mb-10" data-color="vert">ISOLEZ VOTRE MAISON POUR 1€</h1>
+                    <h2 class="mb-40 text-habitat" data-color="orange">Votre intérieur frais et agréable en été.</h2>
+                    <img src="{{ asset('images/1euro-isolation.png') }}" alt="illustration 1 euro pour l'isolation." />
+                    {{--<h2 class=" sub-title mt-10" data-color="vert">Un programme pour lutter contre la précarité énergétique</h2>--}}
+                    <h3 class="text-center mt-10">Dispositif CEE mis en place par l'Etat.</h3>
+                    {{--<p class="">300 000 foyers ont déjà profité de cette aide.</p>--}}
                     {{--<a href="#" class="btn btn-rounded btn-vert btn-formulaire">Tester votre éligibilité</a>--}}
-                    <a href="#block-form" id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire mt-20">Testez votre éligibilité</a>
+                    <a href="#" id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire">Testez votre éligibilité</a>
                 </div>
             </div>
         </div>
@@ -30,7 +32,7 @@
             <div class="col-sm-4">
                 <div class="features-box">
                     <i class="icon-fantastic icon-icon-1-euro-1"></i>
-                    <p class="">Aucun frais à avancer, 1€ seulement</p>
+                    <p class="">Aucun frais à avancer, 1€ après travaux</p>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -49,7 +51,7 @@
     </div> <!-- end container -->
 </section>
 <!-- end Features -->
-<section class="section" id="section-presentation1" data-background-color="bleue-clair">
+<section class="section pt-20" id="section-presentation1" data-background-color="bleue-clair">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -59,201 +61,67 @@
         </div>
     </div>
 </section>
-<!-- Section-formulaire -->
-@include('site-web.layouts.formulaire')
-<!-- end section-formulaire -->
-<!-- Features -->
-<section class="section mb-40" id="section-type-isolation">
+<section class="section" id="section-presentation-video">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2 class="title mb-40" data-color="vert">Les types d'isolation auxquels vous avez droit :</h2>
-                <h3 class="mt-20" data-color="bleue">Avec l’isolation à 1€, vous pouvez cumuler ces 2 types d’isolation</h3>
-                <h4 class="mt-20" data-color="orange">Surface illimitée!</h4>
+        <div class="row justify-content-center align-items-end">
+            <div class="col-md-5">
+                <h4 class="">L'isolation à 1 euro : <span class="gras_500">une réalité peu connue</span>.</h4>
+                <p>Peu de ménages savent qu'ils peuvent bénéficier de l'isolation de leur maison pour 1€ symbolique. Et pourtant, ce programme repose sur <span data-color="orange">une obligation de réalisation d’économies d’énergie imposée par l'Etat aux vendeurs d’énergie</span>.</p>
+                <p>Le 1er janvier 2018, le dispositif est entré dans sa 4ème période d’obligation.</p>
             </div>
-        </div> <!-- end row -->
-        <div class="row justify-content-center">
-            <div class="col-sm-6 col-md-6">
-                <div class="features-box">
-                    <img src="{{ asset('images/icon-iso-combles.png') }}" srcset="{{ asset('images/icon-iso-combles.svg') }}" alt="illustration isolation des combles">
-                    <h5 class="m-t-20">Isolation des combles perdus</h5>
+            <div class="col-md-5">
+                <div class="block-video">
+                    <img src="{{ asset('images/temoignage-video-isolation-1-euro.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur M6" />
+                    <a id="video-btn-digital4" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/AD2uWiN3LFY" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
                 </div>
-            </div>
-            {{--<div class="col-sm-12 col-md-4">
-                <div class="features-box">
-                    <img src="{{ asset('images/icon-iso-mur.png') }}"srcset="{{ asset('images/icon-iso-mur.svg') }}" alt="">
-                    <h5 class="m-t-20">Isolation des murs</h5>
-                </div>
-            </div>--}}
-            <div class="col-sm-6 col-md-6">
-                <div class="features-box">
-                    <img src="{{ asset('images/icon-iso-plancher.png') }}" srcset="{{ asset('images/icon-iso-plancher.svg') }}" alt="">
-                    <h5 class="m-t-20">Isolation des caves et garages</h5>
-                </div>
-            </div>
-        </div> <!-- end row -->
-        <div class="row justify-content-around mt-30">
-            <div class="col-xs-12 col-md-auto">
-                <div id="rect-orange"></div>
-                <p>Garage (en rez-de-chaussée ou en sous-sol), caves</p>
-            </div>
-            <div class="col-xs-12 col-md-auto">
-                <div id="rect-bleue"></div>
-                <p>Pièces à vivre</p>
-            </div>
-            <div class="col-xs-12 col-md-auto">
-                <div id="rect-vert"></div>
-                <p>Surface isolée</p>
             </div>
         </div>
-    </div> <!-- end container -->
+    </div>
 </section>
-<!-- end Features -->
-<!-- Features Alt -->
-<section class="section p-t-0" id="section-type-isolation2">
+<!-- Section-formulaire -->
+{{--@include('site-web.layouts.formulaire')--}}
+<!-- end section-formulaire -->
+<section class="section" id="section-explication" data-background-color="bleue-clair">
     <div class="container">
-        <div class="row justify-content-around align-items-end">
-            <div class="col-md-5">
-                <div class="feat-description">
-                    <h4 data-color="bleue">L'isolation de vos combles perdus</h4>
-                    <p class="gras_500">Vous avez des combles que vous n'utilisez pas:</p>
-                    <p class="text-muted">L'isolation des combles <span class="gras_500">empêche les pertes de chaleur en hiver</span> et permet de <span class="gras_500">garder la fraîcheur en été</span>. Deux techniques sont utilisées pour isoler vos combles perdus : la projection de  <span class="gras_500">laine de verre (ou de roche)</span> à souffler ou la pose de <span class="gras_500">rouleaux de laine de verre</span>, sur toute la surface des combles.</p>
-                    {{--<a href="{{ route('site-web.isolation-combles') }}" class="btn btn-custom">Isolation des combles</a>--}}
-                </div>
-            </div>
-            <div class="col-md-5 flex-first">
-                <div style="position: relative";>
-                    <img src="{{ asset('images/isolation-combles-soufflage.jpg') }}" alt="illustration projection de laine à souffler pour l'isolation des combles" class="img-fluid rounded">
-                    <div class="bg-overlay">
-                        <h4>Isolation des combles par soufflage de laine de verre</h4>
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th scope="col">Epaisseur de l'isolant</th>
-                                <th scope="col">Déperdition thermique</th>
-                                <th scope="col">Economie sur votre facture de chauffage</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>28 à 35 cm</td>
-                                <td>
-                                    <span>jusqu'à</span> -25%
-                                </td>
-                                <td><span>jusqu'à</span> 20%</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div><!-- end row -->
-    </div> <!-- end container -->
-</section>
-<!-- end features alt -->
-<!-- Features Alt -->
-{{--<section class="section" id="section-type-isolation3">
-    <div class="container">
-        <div class="row justify-content-around align-items-end">
-            <div class="col-md-5">
-                <div style="position: relative";>
-                    <img src="{{ asset('images/technique-isolation-mur.jpg') }}" alt="img" class="img-fluid rounded">
-                    <div class="bg-overlay">
-                        <div style="position: relative";>
-                            <h4>Isolation des murs avec panneaux de laine de verre</h4>
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Epaisseur de l'isolant</th>
-                                    <th scope="col">Déperdition thermique</th>
-                                    <th scope="col">Economie sur votre facture de chauffage</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>12 à 14 cm</td>
-                                    <td>
-                                        <span>jusqu'à</span> -25%
-                                    </td>
-                                    <td><span>jusqu'à</span> 20%</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="feat-description">
-                    <h4 data-color="bleue">L'isolation des murs</h4>
-                    <p class="gras_500">Vous avez un garage ou un atelier mitoyen à votre habitation :</p>
-                    <p class="text-muted">L'isolation thermique des murs permet de <span class="gras_500">réduire les échanges thermiques</span> entre l'intérieur et l'extérieur des pièces à vivre de votre maison. Elle consiste à poser des <span class="gras_500">panneaux ou  rouleaux de laine de verre</span> sur le mur (du garage ou de l'atelier) touchant les pièces à vivre de votre maison.</p>
-                    <a href="{{ route('site-web.isolation-murs') }}" class="btn btn-custom">Isolation des murs</a>
-                </div>
-            </div>
-        </div><!-- end row -->
-    </div> <!-- end container -->
-</section>--}}
-<!-- end features alt -->
-<!-- Features Alt -->
-<section class="section" id="section-type-isolation4">
-    <div class="container">
-        <div class="row justify-content-around align-items-end">
-            <div class="col-md-5 order-2">
-                <div style="position: relative";>
-                    <img src="{{ asset('images/isolation-garage.jpg') }}" alt="img" class="img-fluid rounded">
-                    <div class="bg-overlay">
-                        <h4>Isolation du plafond de garage avec panneaux de polystyrène</h4>
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th scope="col">Epaisseur de l'isolant</th>
-                                <th scope="col">Déperdition thermique</th>
-                                <th scope="col">Economie sur votre facture de chauffage</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>10 à 12 cm</td>
-                                <td>
-                                    <span>jusqu'à</span> -15%
-                                </td>
-                                <td><span>jusqu'à</span> 10%</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5 order-1">
-                <div class="feat-description">
-                    <h4 data-color="bleue">L'isolation des caves et garages</h4>
-                    <p class="gras_500">Vous avez un garage en rez-de-chaussée ou en sous-sol, des caves:</p>
-                    <p class="text-muted">En isolant le plafond de votre garage ou de votre cave, <span class="gras_500">vous isolez avant tout le sol de vos pièces à vivre</span> et vous évitez les déperditions thermiques à travers le sol.
-                        Cette isolation est réalisée en posant des <span class="gras_500">panneaux de polystyrène ou de laine de verre</span> sur le plafond du garage ou des caves.</p>
-                    {{--<a href="{{ route('site-web.isolation-sols') }}" class="btn btn-custom">Isolation des sols</a>--}}
-                </div>
-            </div>
-        </div><!-- end row -->
-    </div> <!-- end container -->
-</section>
-<section class="section" id="section-information" data-background-color="bleue-clair">
-    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4 block-information" data-background-color="vert">
-                <h3><i class="ion-ios7-plus-outline"></i> D'ECOLOGIE</h3>
-                <img src="{{ asset('images/icon-ecologie.svg') }}" alt="img" class="img-fluid rounded">
-                <p class="text-center" data-color="blanc">Réduit les dépenses énergétiques</p>
+            <div class="col-md-12">
+                <h2 class="text-center gras_500 mt-40 mb-50"><span data-color="vert">L'isolation de votre maison : </span>Des avantages en toutes saisons.</h2>
+                <div class="d-flex flex-md-row flex-column mt-50">
+                    <div class="block-explication">
+                        <h3 class="text-center">Votre maison <span class="gras_500" data-color="rouge">sans</span> isolation</h3>
+                        <img src="{{ asset('images/maison-sans-isolation.png') }}" class="img-responsive" alt="illustraion d'une maison sans l'isolation thermique">
+                        <ul class="list-non-benefit">
+                            <li><i class="far fa-times-circle"></i><span class="gras_500">En été :</span> La chaleur extérieur rentre dans votre habitation</li>
+                            <li><i class="far fa-times-circle"></i><span class="gras_500">En été :</span> L’air frais s’échappe vers l’extérieur</li>
+                            <li class="mt-20"><i class="far fa-times-circle"></i><span class="gras_500">En hiver :</span> La chaleur s’échappe par la toiture et le sol</li>
+                            <li><i class="far fa-times-circle"></i><span class="gras_500">En hiver :</span> Vous consommez plus d’énergie pour vous chauffer</li>
+                        </ul>
+                    </div>
+                    <div class="block-explication">
+                        <h3 class="text-center">Votre maison <span class="gras_500" data-color="vert">avec</span> isolation</h3>
+                        <img src="{{ asset('images/maison-avec-isolation.png') }}" class="img-responsive" alt="illustraion d'une maison avec l'isolation thermique">
+                        <ul class="list-benefit">
+                            <li><i class="fas fa-check"></i><span class="gras_500">En été :</span> Empêche la chaleur de rentrer à l’intérieur</li>
+                            <li><i class="fas fa-check"></i><span class="gras_500">En été :</span> Garde la fraîcheur à l’intérieur de votre maison</li>
+                            <li class="mt-20"><i class="fas fa-check"></i><span class="gras_500">En hiver :</span> Garde la chaleur à l’intérieur de votre maison</li>
+                            <li><i class="fas fa-check"></i><span class="gras_500">En hiver :</span> Vous économisez sur vos factures de chauffage</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 block-information" data-background-color="orange">
-                <h3><i class="ion-ios7-plus-outline"></i> DE CONFORT</h3>
-                <img src="{{ asset('images/icon-confort.svg') }}" alt="img" class="img-fluid rounded">
-                <p class="text-center" data-color="blanc">Bien-être dans votre maison</p>
-            </div>
-            <div class="col-md-4 block-information" data-background-color="bleue">
-                <h3><i class="ion-ios7-plus-outline"></i> D'ECONOMIE</h3>
-                <img src="{{ asset('images/icon-economie.svg') }}" alt="illustration économie sur facture de chauffage" class="img-fluid rounded">
-                <p class="text-center" data-color="blanc">D'économie sur votre facture de chauffage</p>
+        </div>
+        <div class="row mt-50">
+            <div class="col-md-12">
+                <h3 class="text-center  mb-30"><span class="gras_500" data-color="vert">Testez votre éligibilité</span> et profitez de l'isolation de votre maison pour 1€</h3>
+                <div class="d-flex justify-content-center">
+                    <ul class="list-benefit-total">
+                        <li><i class="fas fa-arrow-right"></i>Test sans aucun engagement</li>
+                        <li><i class="fas fa-arrow-right"></i>Une réponse immédiate</li>
+                        <li><i class="fas fa-arrow-right"></i>Aucun frais à avancer pour votre isolation</li>
+                        <li><i class="fas fa-arrow-right"></i>Pour 1€ symbolique</li>
+                        <li><i class="fas fa-arrow-right"></i>Dispositif CEE validé par l'Etat</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -366,36 +234,36 @@
                         <td>En Ile-de-France</td>
                         <td>Dans les autres régions</td>
                     </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>19 803 €</td>
-                            <td>14 308 €</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>29 066 €</td>
-                            <td>20 925 €</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>34 906 €</td>
-                            <td>25 166 €</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>40 758 €</td>
-                            <td>29 400 €</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>46 630 €</td>
-                            <td>33 642 €</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Par personne suppl.</th>
-                            <td>+ 5860 €</td>
-                            <td>+ 4241 €</td>
-                        </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>19 803 €</td>
+                        <td>14 308 €</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>29 066 €</td>
+                        <td>20 925 €</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>34 906 €</td>
+                        <td>25 166 €</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>40 758 €</td>
+                        <td>29 400 €</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>46 630 €</td>
+                        <td>33 642 €</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Par personne suppl.</th>
+                        <td>+ 5860 €</td>
+                        <td>+ 4241 €</td>
+                    </tr>
                     </tbody>
                 </table>
                 <p class="text-muted text-center">*Agence De l'Environnement et de la Maitrise de l'Energie</p>
@@ -451,6 +319,201 @@
             </div>
         </div>--}}
     </div>
+</section>
+<section class="section" id="section-information" data-background-color="bleue-clair">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 block-information" data-background-color="vert">
+                <h3><i class="ion-ios7-plus-outline"></i> D'ECOLOGIE</h3>
+                <img src="{{ asset('images/icon-ecologie.svg') }}" alt="img" class="img-fluid rounded">
+                <p class="text-center" data-color="blanc">Réduit les dépenses énergétiques</p>
+            </div>
+            <div class="col-md-4 block-information" data-background-color="orange">
+                <h3><i class="ion-ios7-plus-outline"></i> DE CONFORT</h3>
+                <img src="{{ asset('images/icon-confort.svg') }}" alt="img" class="img-fluid rounded">
+                <p class="text-center" data-color="blanc">Bien-être dans votre maison</p>
+            </div>
+            <div class="col-md-4 block-information" data-background-color="bleue">
+                <h3><i class="ion-ios7-plus-outline"></i> D'ECONOMIE</h3>
+                <img src="{{ asset('images/icon-economie.svg') }}" alt="illustration économie sur facture de chauffage" class="img-fluid rounded">
+                <p class="text-center" data-color="blanc">D'économie sur votre facture de chauffage</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Features -->
+<section class="section" id="section-type-isolation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="title mb-40" data-color="vert">Les types d'isolation auxquels vous avez droit :</h2>
+                <h3 class="mt-20" data-color="bleue">Avec l’isolation à 1€, vous pouvez cumuler ces 2 types d’isolation</h3>
+                <h4 class="mt-20" data-color="orange">Surface illimitée!</h4>
+            </div>
+        </div> <!-- end row -->
+        <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-6">
+                <div class="features-box">
+                    <img src="{{ asset('images/icon-iso-combles.png') }}" srcset="{{ asset('images/icon-iso-combles.svg') }}" alt="illustration isolation des combles">
+                    <h5 class="m-t-20">Isolation des combles perdus</h5>
+                </div>
+            </div>
+            {{--<div class="col-sm-12 col-md-4">
+                <div class="features-box">
+                    <img src="{{ asset('images/icon-iso-mur.png') }}"srcset="{{ asset('images/icon-iso-mur.svg') }}" alt="">
+                    <h5 class="m-t-20">Isolation des murs</h5>
+                </div>
+            </div>--}}
+            <div class="col-sm-6 col-md-6">
+                <div class="features-box">
+                    <img src="{{ asset('images/icon-iso-plancher.png') }}" srcset="{{ asset('images/icon-iso-plancher.svg') }}" alt="">
+                    <h5 class="m-t-20">Isolation des caves et garages</h5>
+                </div>
+            </div>
+        </div> <!-- end row -->
+        <div class="row justify-content-around mt-30">
+            <div class="col-xs-12 col-md-auto">
+                <div id="rect-orange"></div>
+                <p>Garage (en rez-de-chaussée ou en sous-sol), caves</p>
+            </div>
+            <div class="col-xs-12 col-md-auto">
+                <div id="rect-bleue"></div>
+                <p>Pièces à vivre</p>
+            </div>
+            <div class="col-xs-12 col-md-auto">
+                <div id="rect-vert"></div>
+                <p>Surface isolée</p>
+            </div>
+        </div>
+    </div> <!-- end container -->
+</section>
+<!-- end Features -->
+<section class="section p-t-0" id="section-type-isolation2">
+    <div class="container">
+        <div class="row justify-content-around align-items-end">
+            <div class="col-md-5">
+                <div class="feat-description">
+                    <h4 data-color="bleue">L'isolation de vos combles perdus</h4>
+                    <p class="gras_500">Vous avez des combles que vous n'utilisez pas:</p>
+                    <p class="text-muted">L'isolation des combles <span class="gras_500">empêche les pertes de chaleur en hiver</span> et permet de <span class="gras_500">garder la fraîcheur en été</span>. Deux techniques sont utilisées pour isoler vos combles perdus : la projection de  <span class="gras_500">laine de verre (ou de roche)</span> à souffler ou la pose de <span class="gras_500">rouleaux de laine de verre</span>, sur toute la surface des combles.</p>
+                    {{--<a href="{{ route('site-web.isolation-combles') }}" class="btn btn-custom">Isolation des combles</a>--}}
+                </div>
+            </div>
+            <div class="col-md-5 flex-first">
+                <div style="position: relative";>
+                    <img src="{{ asset('images/isolation-combles-soufflage.jpg') }}" alt="illustration projection de laine à souffler pour l'isolation des combles" class="img-fluid rounded">
+                    <div class="bg-overlay">
+                        <h4>Isolation des combles par soufflage de laine de verre</h4>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Epaisseur de l'isolant</th>
+                                <th scope="col">Déperdition thermique</th>
+                                <th scope="col">Economie sur votre facture de chauffage</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>28 à 35 cm</td>
+                                <td>
+                                    <span>jusqu'à</span> -25%
+                                </td>
+                                <td><span>jusqu'à</span> 20%</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div> <!-- end container -->
+</section>
+<!-- end features alt -->
+<!-- Features Alt -->
+{{--<section class="section" id="section-type-isolation3">
+    <div class="container">
+        <div class="row justify-content-around align-items-end">
+            <div class="col-md-5">
+                <div style="position: relative";>
+                    <img src="{{ asset('images/technique-isolation-mur.jpg') }}" alt="img" class="img-fluid rounded">
+                    <div class="bg-overlay">
+                        <div style="position: relative";>
+                            <h4>Isolation des murs avec panneaux de laine de verre</h4>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Epaisseur de l'isolant</th>
+                                    <th scope="col">Déperdition thermique</th>
+                                    <th scope="col">Economie sur votre facture de chauffage</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>12 à 14 cm</td>
+                                    <td>
+                                        <span>jusqu'à</span> -25%
+                                    </td>
+                                    <td><span>jusqu'à</span> 20%</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="feat-description">
+                    <h4 data-color="bleue">L'isolation des murs</h4>
+                    <p class="gras_500">Vous avez un garage ou un atelier mitoyen à votre habitation :</p>
+                    <p class="text-muted">L'isolation thermique des murs permet de <span class="gras_500">réduire les échanges thermiques</span> entre l'intérieur et l'extérieur des pièces à vivre de votre maison. Elle consiste à poser des <span class="gras_500">panneaux ou  rouleaux de laine de verre</span> sur le mur (du garage ou de l'atelier) touchant les pièces à vivre de votre maison.</p>
+                    <a href="{{ route('site-web.isolation-murs') }}" class="btn btn-custom">Isolation des murs</a>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div> <!-- end container -->
+</section>--}}
+<!-- end features alt -->
+<!-- Features Alt -->
+<section class="section pt-10" id="section-type-isolation4">
+    <div class="container">
+        <div class="row justify-content-around align-items-end">
+            <div class="col-md-5 order-2">
+                <div style="position: relative";>
+                    <img src="{{ asset('images/isolation-garage.jpg') }}" alt="img" class="img-fluid rounded">
+                    <div class="bg-overlay">
+                        <h4>Isolation du plafond de garage avec panneaux de polystyrène</h4>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Epaisseur de l'isolant</th>
+                                <th scope="col">Déperdition thermique</th>
+                                <th scope="col">Economie sur votre facture de chauffage</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>10 à 12 cm</td>
+                                <td>
+                                    <span>jusqu'à</span> -15%
+                                </td>
+                                <td><span>jusqu'à</span> 10%</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 order-1">
+                <div class="feat-description">
+                    <h4 data-color="bleue">L'isolation des caves et garages</h4>
+                    <p class="gras_500">Vous avez un garage en rez-de-chaussée ou en sous-sol, des caves:</p>
+                    <p class="text-muted">En isolant le plafond de votre garage ou de votre cave, <span class="gras_500">vous isolez avant tout le sol de vos pièces à vivre</span> et vous évitez les déperditions thermiques à travers le sol.
+                        Cette isolation est réalisée en posant des <span class="gras_500">panneaux de polystyrène ou de laine de verre</span> sur le plafond du garage ou des caves.</p>
+                    {{--<a href="{{ route('site-web.isolation-sols') }}" class="btn btn-custom">Isolation des sols</a>--}}
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div> <!-- end container -->
 </section>
 <section class="section pb-0" id="section-precarite-energetique" data-background-color="bleue-clair">
     <div class="container">
@@ -565,7 +628,7 @@
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column testimonial-block">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
-                <p class="testimonial-content">Des amis nous ont parlé de ce programme. <span class="gras_500">Même si mes revenus sont corrects, j'étais éligible</span>. On a isolé nos combles et la cave. On a diminué le chauffage dans la maison et il fait toujours aussi bon à l'intérieur. On attend de voir la prochaine facture de chauffage. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                <p class="testimonial-content">Des amis nous ont parlé de l'isolation à 1€. <span class="gras_500"></span> On a isolé nos combles et le garage. Cet hiver, On a diminué le chauffage dans la maison et il faisait toujours aussi bon à l'intérieur. On attend de voir ce que donne l'isolation en été. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                 <div class="info-testimonial">
                     <img src="{{ asset('images/photo-temoignage2.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
                     <div class="info-testimonial-client">
@@ -591,7 +654,7 @@
 <section class="section" id="section-videos">
     <div class="container">
         <h2 class="text-center mb-40 gras_700">Les reportages sur l'isolation à 1€</h2>
-        <div class="row align-items-stretch row-eq-height mt-40">
+        <div class="row mt-40">
             <div class="col-md-12">
                 <div class="card-deck">
                     <div class="card">
@@ -780,6 +843,19 @@
     <script>
         (function ($) {
             $(document).ready(function() {
+                    var overlay = document.querySelector("#section-overlay");
+                    overlay.style.left = "0px";
+                    var body = document.getElementsByTagName('body');
+                    document.body.classList.add("noScroll");
+
+                var closeOverlay = document.querySelector('#close-overlay');
+                closeOverlay.addEventListener('click', function(e){
+                    e.preventDefault();
+                    overlay.style.left = "-3000px";
+                    document.body.classList.remove("noScroll");
+                    $('#wizard-card-test').show();
+                    $('#wizard-card-test2').hide();
+                });
 
             });
         })(jQuery);

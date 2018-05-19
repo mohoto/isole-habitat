@@ -1,5 +1,5 @@
 <?php
-
+use Phelium\Component\GeoApiFr;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +16,16 @@ Route::get('laravel-version', function()
     return "Your Laravel version is ".$laravel::VERSION;
 });
 
+Route::get('ville', function(){
+    $GeoApiFr = new GeoApiFr;
+    $datas = $GeoApiFr
+        ->communes()
+        ->fields(array('departement', 'codeDepartement', 'region', 'nom'))
+        ->search('codePostal', 92220);
+    print_r($datas);
+    echo $ville = $datas['datas'][0]['nom'];
+});
+
 Route::get('/message', array(
     'as' => 'site-web.message',
     'uses' => 'FormController@sendMessage'
@@ -23,6 +33,9 @@ Route::get('/message', array(
 
 Route::get('/', array('as' => 'site-web.accueil', function () {
     return view('site-web.accueil');
+}));
+Route::get('/wizard', array('as' => 'site-web.wizard', function () {
+    return view('site-web.wizard');
 }));
 
 Route::get('qui-sommes-nous', array('as' => 'site-web.societe', function(){

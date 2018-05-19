@@ -17,6 +17,7 @@ class CreateClientFormsTable extends Migration
             $table->increments('id');
             $table->string('civilite');
             $table->string('nom');
+            $table->string('type_habitation')->nullable();
             $table->string('prenom')->nullable();
             $table->string('telephone_mobile')->nullable();
             $table->string('telephone_fixe')->nullable();
@@ -24,15 +25,15 @@ class CreateClientFormsTable extends Migration
             $table->string('ville');
             $table->string('codePostal');
             $table->string('departement');
-            $table->string('rue');
-            $table->integer('revenu_fiscal');
+            $table->string('rue')->nullable();
+            $table->string('revenu_fiscal');
             $table->string('numero_declarant_avis')->nullable();
             $table->string('reference_avis_fiscal')->nullable();
             $table->tinyInteger('nombre_personne');
             $table->string('type_bail')->default('propriétaire');
             $table->string('chauffage');
             $table->string('situation');
-            $table->string('surface_maison');
+            $table->string('surface_maison')->nullable();
             $table->boolean('isolation_combles')->default(0)->nullable();
             $table->boolean('isolation_garage')->default(0)->nullable();
             $table->boolean('isolation_caves')->default(0)->nullable();
