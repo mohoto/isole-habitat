@@ -475,7 +475,7 @@
                             <div class="card-body white-text rounded-bottom">
                                 <!-- Text -->
                                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="vert"></i>
-                                <p class="testimonial-content">Je ne connaissais pas du tout et j'avoue j'étais un peu sceptique au départ, mais c’est réel et sans arnaque. <span class="gras_500">J’ai donné une pièce de 1€ une fois la pose finie</span>. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                                <p class="testimonial-content">Je ne connaissais pas du tout et j'avoue que j'étais un peu sceptique au départ, mais c’est réel et sans arnaque. <span class="gras_500">J’ai donné une pièce de 1€ une fois la pose finie</span>. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                                 <div class="info-testimonial d-flex align-items-end">
                                     <div>
                                         <img src="{{ asset('images/photo-temoignage5.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
