@@ -199,8 +199,9 @@
             window.open(url, pageTitle, strWindowFeatures);
         };
 
-        var btnFacebook = document.querySelector('.share_facebook');
-        btnFacebook.addEventListener('click', function(e){
+        var btnFacebook = document.querySelectorAll('.share_facebook');
+        for(var i=0; i< btnFacebook.length;i++)
+        btnFacebook[i].addEventListener('click', function(e){
             var url = "http://www.isole-habitat.fr";
             var shareUrl = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(url);
             popupCenter(shareUrl , "partager sur Facebook");

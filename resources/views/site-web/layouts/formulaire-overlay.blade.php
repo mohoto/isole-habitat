@@ -408,7 +408,7 @@
                                                 <h5 class="text-center mt-20" id="text-cause-none" data-color="orange"></h5>
                                                 <h5 class="text-center text-partage gras_500 mt-40" data-color="vert">Faîtes quand même profiter votre famille et vos amis de l'isolation à 1€, ils vous remercieront!</h5>
                                                 <h5 class="text-center mt-20">Partagez notre programme</h5>
-                                                <button type="button" role="button" target="" id="share_facebook3" class="btn btn-facebook waves-effect waves-light share_facebook">
+                                                <button type="button" role="button" target="_blank" id="share_facebook3" class="btn btn-facebook waves-effect waves-light share_facebook">
                                                     <i class="fa fa-facebook m-r-5"></i> Facebook
                                                 </button>
                                             </div>
