@@ -157,23 +157,23 @@
                                             <h5 class="m-b-20" data-color="orange"><span class="">3</span> - Système de chauffage :</h5>
                                             <div class="row m-b-20 block-checkbox">
                                                 <div class="col block-chauffage">
-                                                    <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-electrique{{ $clientform->id }}" value="Electrique" {{ $clientform->chauffage == 'Electique' ? 'checked' : '' }}>
+                                                    <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-electrique{{ $clientform->id }}" value="Electrique" {{ $clientform->chauffage == 'electique' ? 'checked' : '' }}>
                                                     <label for="type-chauffage-electrique{{ $clientform->id }}" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-electricite2"></i><span>Electricité</span></label>
                                                 </div>
                                                 <div class="col block-chauffage">
-                                                    <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-gaz{{ $clientform->id }}" value="Gaz" {{ $clientform->chauffage == 'Gaz' ? 'checked' : '' }}>
+                                                    <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-gaz{{ $clientform->id }}" value="Gaz" {{ $clientform->chauffage == 'gaz' ? 'checked' : '' }}>
                                                     <label for="type-chauffage-gaz{{ $clientform->id }}" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-gaz2"></i><span>Gaz</span></label>
                                                 </div>
                                                 <div class="col block-chauffage">
-                                                    <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-bois{{ $clientform->id }}" value="Bois" {{ $clientform->chauffage == 'Bois' ? 'checked' : '' }}>
+                                                    <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-bois{{ $clientform->id }}" value="Bois" {{ $clientform->chauffage == 'bois' ? 'checked' : '' }}>
                                                     <label for="type-chauffage-bois{{ $clientform->id }}" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-bois2"></i><span>Bois</span></label>
                                                 </div>
                                                 <div class="col block-chauffage">
-                                                    <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-fioul{{ $clientform->id }}" value="Fioul" {{ $clientform->chauffage == 'Fioul' ? 'checked' : '' }}>
+                                                    <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-fioul{{ $clientform->id }}" value="Fioul" {{ $clientform->chauffage == 'fioul' ? 'checked' : '' }}>
                                                     <label for="type-chauffage-fioul{{ $clientform->id }}" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-fioul"></i><span>Fioul</span></label>
                                                 </div>
                                                 <div class="col block-chauffage">
-                                                    <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-pompe{{ $clientform->id }}" value="Pompe à chaleur" {{ $clientform->chauffage == 'Pompe à chaleur' ? 'checked' : '' }}>
+                                                    <input type="radio" class="radio" name="type_chauffage" id="type-chauffage-pompe{{ $clientform->id }}" value="Pompe à chaleur" {{ $clientform->chauffage == 'pompe à chaleur' ? 'checked' : '' }}>
                                                     <label for="type-chauffage-pompe{{ $clientform->id }}" class="type-chauffage"><i class="icon-fantastic icon-icon-chauffage-pompe"></i><span>Pompe</span></label>
                                                 </div>
                                             </div>

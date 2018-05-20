@@ -6,7 +6,7 @@
     <div class="wrapper">
         <div class="container-fluid">
 
-            <!-- Page-Title -->
+            {{--<!-- Page-Title -->
             <div class="row">
                 <div class="col-sm-12">
                     <div class="page-title-box">
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <!-- end page title end breadcrumb -->
-
+--}}
 
             <div class="row">
                 <div class="col-md-6 col-lg-6 col-xl-3">
