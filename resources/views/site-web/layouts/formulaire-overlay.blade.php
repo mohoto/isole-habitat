@@ -225,7 +225,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row justify-content-center col-xs-mt-30">
+                                    <div class="row justify-content-center col-xs-mt-10">
                                         <div class="col-xs-12">
                                             <h4 class="info-text">Quel est votre code postal?</h4>
                                         </div>
