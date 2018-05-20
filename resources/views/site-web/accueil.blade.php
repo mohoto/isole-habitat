@@ -12,7 +12,7 @@
             <div class="col-sm-12 col-md-6">
                 <div class="part2 text-center mb-0">
                     <h1 class="mb-10" data-color="vert">ISOLEZ VOTRE MAISON POUR 1€</h1>
-                    <h2 class="mb-40 text-habitat" data-color="orange">Votre intérieur frais et agréable en été.</h2>
+                    <h2 class="mb-40 text-habitat"><span data-color="bleue">Frais en été </span><i class="fab fa-superpowers" data-color="vert"></i><span data-color="orange"> Chaud en hiver</span></h2>
                     <img src="{{ asset('images/1euro-isolation.png') }}" alt="illustration 1 euro pour l'isolation." />
                     {{--<h2 class=" sub-title mt-10" data-color="vert">Un programme pour lutter contre la précarité énergétique</h2>--}}
                     <h3 class="text-center mt-10">Dispositif CEE mis en place par l'Etat.</h3>
