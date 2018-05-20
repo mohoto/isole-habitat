@@ -267,7 +267,7 @@ class FormController extends Controller
                             ucfirst($situation) . " - " .
                             ucfirst($request->civilite) . ' ' . strtoupper($request->nom) . " - " .
                             $request->rue . " - " .
-                            $request->code_postal . ' ' . strtoupper($request->ville)  . " - " .
+                            $request->code_postal . ' ' . strtoupper($ville)  . " - " .
                             $telephone_fixe . " - " .
                             $telephone_mobile . "."
                     ]);
