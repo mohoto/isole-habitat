@@ -468,7 +468,7 @@ $(document).ready(function(){
                 event.stopPropagation();
             }
             else if(radioResult2 == false){
-                displayErrorInput('Précisez "Propriétaire" ou "Locataire"');
+                displayErrorInput('Précisez si vous êtes "Propriétaire" ou "Locataire"');
                 event.stopPropagation();
             }
             else if(validateInputForm("nom")  == false){
