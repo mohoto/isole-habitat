@@ -182,7 +182,7 @@
                 <div class="text-center">
                     <h2 data-color="vert">Participez à l'amélioration des habitats</h2>
                     <h3>Faîtes profiter votre famille et vos amis de l'isolation à 1€</h3>
-                    <h4 class="mt-20 mb-30" data-color="orange">Partager notre programme</h4>
+                    <h4 class="mt-20 mb-30" data-color="orange">Partagez notre programme</h4>
                     <img src="{{ asset('images/programme-isolation6.png') }}" alt="Programme isolation à 1€">
                     <div class="mt-30">
                         <button type="button" role="button" target="_blank" id="share_facebook10" class="btn btn-facebook  waves-effect waves-light share_facebook">
