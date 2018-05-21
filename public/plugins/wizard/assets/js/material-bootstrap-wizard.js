@@ -145,6 +145,8 @@ $(document).ready(function(){
         'previousSelector': '.btn-previous',
 
         onNext: function(tab, navigation, index) {
+            mobile_device = $(document).width() < 600;
+
         	/*var $valid = $('#eligibForm').valid();
         	if(!$valid) {
         		$validator.focusInvalid();
@@ -153,45 +155,79 @@ $(document).ready(function(){
             if(index == 1){
                 var typeRadio = 'type_habitation';
                 var radioResult = validateRadio(typeRadio);
+
                 if(radioResult == false){
-                    displayErrorInput("Selectionez votre type d'habitation");
-                    return false;
+                    if(mobile_device){
+                        return false;
+                    }
+                    else{
+                        displayErrorInput("Selectionez votre type d'habitation");
+                        return false;
+                    }
+
                 }
             }
             if(index == 2){
                 var typeRadio = 'type_chauffage';
                 var radioResult = validateRadio(typeRadio);
                  if(radioResult == false){
-                    displayErrorInput('Selectionnez le système de chauffage dans votre maison');
-                    return false;
+                     if(mobile_device){
+                         return false;
+                     }
+                     else{
+                         displayErrorInput('Selectionnez le système de chauffage dans votre maison');
+                         return false;
+                     }
                  }
             }
             if(index == 3){
                 var tab = 'isolation';
                 var checkResult = validateCheckbox(tab);
                 if(checkResult == false){
-                    displayErrorInput('Selectionnez les isolations à faire chez vous');
-                    return false;
+                    if(mobile_device){
+                        return false;
+                    }
+                    else {
+                        displayErrorInput('Selectionnez les isolations à faire chez vous');
+                        return false;
+                    }
                 }
             }
             if(index == 4){
                 var typeRadio = 'nombre_personne';
                 var radioResult = validateRadio(typeRadio);
                 if(radioResult == false){
-                    displayErrorInput('Selectionnez le nombre de personnes dans votre foyer');
-                    return false;
+                    if(mobile_device){
+                        return false;
+                    }
+                    else {
+                        displayErrorInput('Selectionnez le nombre de personnes dans votre foyer');
+                        return false;
+                    }
                 }
                 if(validateInputForm("code_postal")  == false){
-                    displayErrorInput('Entrez votre code postal');
-                    return false;
+                    if(mobile_device){
+                        return false;
+                    }
+                    else{
+                        displayErrorInput('Entrez votre code postal');
+                        return false;
+                    }
+
                 }
             }
             if(index == 5){
                 var typeRadio = 'revenus_reference';
                 var radioResult = validateRadio(typeRadio);
                 if(radioResult == false){
-                    displayErrorInput('Préciser votre revenu fiscal');
-                    return false;
+                    if(mobile_device){
+                        return false;
+                    }
+                    else{
+                        displayErrorInput('Préciser votre revenu fiscal');
+                        return false;
+                    }
+
                 }
             }
         },
@@ -464,20 +500,40 @@ $(document).ready(function(){
             var tab = 'infos';
             var radioResult2 = validateRadio(typeRadio2);
             if(radioResult == false){
-                displayErrorInput('Selectionnez "Monsieur" ou "Madame"');
-                event.stopPropagation();
+                if(mobile_device){
+                    return false;
+                }
+                else{
+                    displayErrorInput('Selectionnez "Monsieur" ou "Madame"');
+                    event.stopPropagation();
+                }
             }
             else if(radioResult2 == false){
-                displayErrorInput('Précisez si vous êtes "Propriétaire" ou "Locataire"');
-                event.stopPropagation();
+                if(mobile_device){
+                    return false;
+                }
+                else{
+                    displayErrorInput('Précisez si vous êtes "Propriétaire" ou "Locataire"');
+                    event.stopPropagation();
+                }
             }
             else if(validateInputForm("nom")  == false){
-                displayErrorInput('Entrez votre nom');
-                return false;
+                if(mobile_device){
+                    return false;
+                }
+                else{
+                    displayErrorInput('Entrez votre nom');
+                    return false;
+                }
             }
             else if(validateInputForm("telephone")  == false){
-                displayErrorInput('Entrez votre numero de telephone');
-                return false;
+                if(mobile_device){
+                    return false;
+                }
+                else{
+                    displayErrorInput('Entrez votre numero de telephone');
+                    return false;
+                }
             }
             else{
                 var data = $('#eligibForm').serializeArray();
