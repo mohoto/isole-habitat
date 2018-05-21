@@ -29,11 +29,9 @@
                             <div class="tab-content">
                                 <div class="tab-pane" id="habitation">
                                     <div class="row justify-content-center">
-                                        <div class="col-xs-12">
-                                            <h4 class="info-text">Quelle est votre type d'habitation?</h4>
-                                        </div>
+                                        <h4 class="info-text">Quelle est votre type d'habitation?</h4>
                                     </div>
-                                    <div class="row justify-content-md-center mt-40">
+                                    <div class="row justify-content-md-center row_type_habitation mt-md-40">
                                         <div class="col-xs-12 col-md-4">
                                             <div class="choice type_habitation" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <input type="radio" class="type_habitation" name="type_habitation" value="maison">
@@ -43,7 +41,7 @@
                                                 <h6>Maison</h6>
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-md-4 col-xs-mt-20">
+                                        <div class="col-xs-12 col-md-4">
                                             <div class="choice type_habitation" id="btn-maison" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
                                                 <input type="radio" class="type_habitation" name="type_habitation" value="appartement">
                                                 <div class="icon">
@@ -58,10 +56,10 @@
                                     <div class="row justify-content-center">
                                         <div class="">
                                             <h4 class="info-text mb-10">Quel est votre système de chauffage?</h4>
-                                            <p class="text-center" data-color="bleue-site">Selectionnez "Bois" si vous utilisez une cheminée pour vous chauffer.</p>
+                                            <p class="text-center info-bois" data-color="bleue-site">Selectionnez "Bois" si vous utilisez une cheminée pour vous chauffer.</p>
                                         </div>
                                     </div>
-                                    <div class="row block-chauffage-row justify-content-md-center col-xs-mt-40">
+                                    <div class="row block-chauffage-row justify-content-md-center">
                                         <div class="col-4">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <input type="radio" name="type_chauffage" id="type-chauffage-electrique" value="electrique">
@@ -89,7 +87,7 @@
                                                 <h6>Bois</h6>
                                             </div>
                                         </div>
-                                        <div class="col-4 mt-20">
+                                        <div class="col-4">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
                                                 <input type="radio" name="type_chauffage" id="type-chauffage-fioul" value="fioul">
                                                 <div class="icon">
@@ -98,7 +96,7 @@
                                                 <h6>Fioul</h6>
                                             </div>
                                         </div>
-                                        <div class="col-4 mt-20">
+                                        <div class="col-4">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
                                                 <input type="radio"  name="type_chauffage" id="type-chauffage-pompe" value="pompe à chaleur">
                                                 <div class="icon">
@@ -107,7 +105,7 @@
                                                 <h6>Pompe</h6>
                                             </div>
                                         </div>
-                                        <div class="col-4 mt-20">
+                                        <div class="col-4">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
                                                 <input type="radio"  name="type_chauffage" id="type-chauffage-autre" value="autres">
                                                 <div class="icon">
@@ -120,12 +118,12 @@
                                 </div>
                                 <div class="tab-pane" id="isolation">
                                     <div class="row justify-content-center">
-                                        <div class="col-xs-12">
+                                        <div>
                                             <h4 class="info-text mb-10">Quelles sont les isolations à faire chez vous?</h4>
                                             <p class="text-center sub-title">Vous pouvez choisir plusieurs types d'isolation.</p>
                                         </div>
                                     </div>
-                                    <div class="row justify-content-around mt-30 mt-40">
+                                    <div class="row justify-content-around col-xs-mt-30">
                                         <div class="col-4">
                                             <div class="choice type_isolation" data-toggle="wizard-checkbox">
                                                 <input type="checkbox" class="checkbox" name="isolation_combles" value="1">
@@ -149,7 +147,7 @@
                                                 <input type="checkbox" class="checkbox" name="isolation_caves" value="1">
                                                 <div class="card card-checkboxes card-hover-effect">
                                                     <i class="icon-fantastic icon-isolation-cave-form"></i>
-                                                    <p>Caves/sous-sols</p>
+                                                    <p>Caves<span class="text-suppl">/sous-sols</span></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -159,8 +157,8 @@
                                     <div class="row justify-content-center">
                                         <h4 class="info-text">Nombre total de personnes dans votre foyer?</h4>
                                     </div>
-                                    <div class="row block-personne-row d-flex justify-content-center col-xs-mt-40">
-                                        <div class="item_nb_personne col-3">
+                                    <div class="row row-block-personne justify-content-center">
+                                        <div class="item_nb_personne col-3 col-md">
                                             <div class="choice nombre-personne" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <input type="radio" name="nombre_personne" value="1">
                                                 <div class="icon">
@@ -225,13 +223,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row justify-content-center col-xs-mt-10">
+                                    <div class="row justify-content-center">
                                         <div class="col-xs-12">
                                             <h4 class="info-text">Quel est votre code postal?</h4>
                                         </div>
                                     </div>
                                     <div class="row justify-content-around">
-                                        <div class="col-sm-12 col-md-3">
+                                        <div class="col-xs-12 col-sm-6 col-md-3">
                                             <div class="form-group label-floating">
                                                 <label class="control-label">Code postal</label>
                                                 <input type="text" class="form-control" id="code_postal" minlength="5" maxlength="5" name="code_postal">
@@ -243,7 +241,7 @@
                                     <div class="row justify-content-center">
                                         <div class="">
                                             <h4 class="info-text">Quel est votre revenu fiscal de référence?</h4>
-                                            <p class="text-center mb-0" data-color="bleue-site">Comment connaître votre revenu fiscal de référence</p>
+                                            <p class="text-center info-revenu-text mb-0" data-color="bleue-site">Comment connaître votre revenu fiscal de référence</p>
                                             <p class="text-center"><a href="#" class="info-revenu"><i class="ion-ios7-help-outline" data-color="vert"></i></a></p>
                                         </div>
                                     </div>
@@ -267,7 +265,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane" id="informations">
-                                    <div class="row justify-content-around justify-content-md-center mt-20">
+                                    <div class="row justify-content-around justify-content-md-center mt-md-30">
                                         <div class="col-6">
                                             <div class="choice civilite" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <input type="radio" name="civilite" value="madame">
@@ -287,32 +285,36 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row justify-content-around justify-content-md-center mt-50">
+                                    <div class="row justify-content-around justify-content-md-center mt-md-10 mb-md-10">
                                         <div class="col-6">
                                             <div class="choice type_bail" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
-                                                <input type="radio"  name="type_bail" value="propriétaire">
-                                                <div class="icon">
-                                                    <h4>Propriétaire</h4>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="type_bail" value="propriétaire">
+                                                        Propriétaire
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="choice type_bail" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
-                                                <input type="radio"  name="type_bail" value="locataire">
-                                                <div class="icon">
-                                                    <h4>Locataire</h4>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="type_bail" value="locataire">
+                                                        Locataire
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row justify-content-around mt-20">
+                                    <div class="row justify-content-around">
                                         <div class="col-xs-12 col-md-5">
                                             <div class="form-group label-floating">
                                                 <label class="control-label">Nom</label>
                                                 <input type="text" class="form-control" name="nom">
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-md-5 col-xs-mt-40">
+                                        <div class="col-xs-12 col-md-5">
                                             <div class="form-group label-floating">
                                                 <label class="control-label">Telephone</label>
                                                 <input type="text" class="form-control telephone_input" name="telephone" minlength="14" maxlength="14">
@@ -339,41 +341,41 @@
                                                     {{ csrf_field() }}
                                                     <h6 class="text-center text-muted mt-0">Selectionnez vos disponibilités:</h6>
                                                     <div class="block-eligibRappel">
-                                                        <div class="row justify-content-around">
-                                                            <div class="col-xs-3">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-3">
                                                                 <div class="choice type_heure_rappel" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                                     <input type="radio" name="heure_rappel" id="type_heure-1" value="9h-12h">
-                                                                    <div class="icon">
+                                                                    <div class="">
                                                                         <i class="icon-fantastic icon-icon-matin"></i>
                                                                     </div>
                                                                     <p class="text-heure">9h-12h</p>
                                                                     <h6>Matin</h6>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-xs-3">
+                                                            <div class="col-3">
                                                                 <div class="choice type_heure_rappel" id="btn-maison" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
                                                                     <input type="radio" name="heure_rappel" id="type_heure-2" value="12h-14h">
-                                                                    <div class="icon">
+                                                                    <div class="">
                                                                         <i class="icon-fantastic icon-icon-midi"></i>
                                                                     </div>
                                                                     <p class="text-heure">12h-15h</p>
                                                                     <h6>Midi</h6>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-xs-3">
+                                                            <div class="col-3">
                                                                 <div class="choice type_heure_rappel" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                                     <input type="radio" name="heure_rappel" id="type_heure-3" value="14h-18h">
-                                                                    <div class="icon">
+                                                                    <div class="">
                                                                         <i class="icon-fantastic icon-icon-apres-midi"></i>
                                                                     </div>
                                                                     <p class="text-heure">15h-18h</p>
                                                                     <h6>Après-midi</h6>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-xs-3">
+                                                            <div class="col-3">
                                                                 <div class="choice type_heure_rappel" id="btn-maison" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
                                                                     <input type="radio" name="heure_rappel" id="type_heure-4" value="16h-1!h">
-                                                                    <div class="icon">
+                                                                    <div class="">
                                                                         <i class="icon-fantastic icon-icon-soir"></i>
                                                                     </div>
                                                                     <p class="text-heure">18h-21h</p>

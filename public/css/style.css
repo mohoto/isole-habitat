@@ -1038,7 +1038,7 @@ label.type-heure {
 }
 .section#section-explication .block-explication img{
   display: block;
-  width: 400px;
+  width: 300px;
   margin: 40px auto;
 }
 .section#section-explication .block-explication .list-non-benefit,
@@ -3223,7 +3223,7 @@ nav {
   padding: 15px 0 15px;
 }
 .wizard-card .tab-content {
-  min-height: 320px;
+  /*min-height: 320px;*/
   padding: 10px 15px;
 }
 .wizard-card .wizard-footer{
@@ -3234,9 +3234,9 @@ nav {
 .wizard-card .wizard-footer .block-button{
   position: relative;;
 }
-.wizard-card h4 {
-  font-size: 1.6em;
-  line-height: 1.6em;
+.wizard-card .info-text {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
 }
 .wizard-card .info-text {
   text-align: center;
@@ -3267,17 +3267,17 @@ nav {
   color: #8ab326;
 }*/
 .wizard-card .choice.type_habitation h6{
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #999999;
-  line-height: 1.4;
+  line-height: 1.4rem;
 }
 .wizard-card .choice.type_habitation i {
-  font-size: 50px;
-  line-height: 100px;
+  font-size: 4rem;
+  line-height: 7rem;
 }
 .wizard-card .choice.type_habitation .icon {
-  height: 110px;
-  width: 110px;
+  height: 8rem;
+  width: 8rem;
   border-radius: 50%;
   color: #999999;
   margin: 0 auto 10px;
@@ -3288,21 +3288,21 @@ nav {
 .wizard-card .choice.actived h6 {
   color: #8ab326;
 }
-.wizard-card .block-chauffage-row,
+/*.wizard-card .block-chauffage-row,
 .wizard-card .block-personne-row{
   padding: 0 30px;
-}
+}*/
 .wizard-card .choice.type-chauffage h6{
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #999999;
 }
 .wizard-card .choice.type-chauffage i {
-  font-size: 40px;
-  line-height: 80px;
+  font-size: 3.2rem;
+  line-height: 5.2rem;
 }
 .wizard-card .choice.type-chauffage .icon {
-  height: 80px;
-  width: 80px;
+  height: 5rem;
+  width: 5rem;
   border-radius: 0;
   color: #999999;
   margin: 0 auto 5px;
@@ -3351,27 +3351,25 @@ nav {
   transform: translateY(-10px);
 }
 
-.wizard-card #situation{
-  padding: 0 2em;
-}
-.wizard-card .item_nb_personne{
+/*.wizard-card .item_nb_personne{
   -webkit-flex-basis: auto;
   flex-basis: auto;
   -webkit-flex-grow: 1;
   flex-grow: 1;
-}
+}*/
+
 .wizard-card .choice.nombre-personne h6{
-  font-size: 3em;
+  font-size: 2.2rem;
   color: #999999;
-  line-height: 1.2;
+  line-height: 2.2rem;
 }
 .wizard-card .choice.nombre-personne i {
   font-size: 40px;
   line-height: 80px;
 }
 .wizard-card .choice.nombre-personne .icon {
-  height: 60px;
-  width: 60px;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   color: #999999;
   margin: 0 auto 20px;
@@ -3396,8 +3394,8 @@ nav {
 
 .wizard-card .choice.type_isolation i {
   color: #999999;
-  font-size: 80px;
-  line-height: 70px;
+  font-size: 5rem;
+  line-height: 5rem;
 }
 .wizard-card .choice.type_isolation.actived i {
   color: #8ab326;
@@ -3418,7 +3416,7 @@ nav {
 }
 
 .wizard-card .choice.revenus_reference h6{
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #999999;
   border: 4px solid #CCCCCC;
   padding: 30px 40px;
@@ -3449,32 +3447,17 @@ nav {
   border: 4px solid #8ab326;
   color: #8ab326;
 }
-.wizard-card .choice.type_bail h6{
-  font-size: 2em;
-  color: #999999;
-  line-height: 1.4;
-}
-.wizard-card .choice.type_bail i {
-  font-size: 40px;
-  line-height: 80px;
-}
-.wizard-card .choice.type_bail .icon {
-  height: 50px;
-  width: 160px;
-  border-radius: 0;
-  color: #999999;
-  margin: 0 auto 10px;
-  border: 4px solid #F3F2EE;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-}
+
 .wizard-card .choice.actived h6 {
   color: #8ab326;
 }
 .wizard-card input.form-control{
-  font-size: 2.5em;
+  font-size: 2rem;
   text-align: center;
   color: #999999;
+  height: 60px;
+  padding: 0px 0;
+  line-height: 2rem;
 }
 .wizard-card #code_postal_block input.form-control{
   font-size: 3em;
@@ -3509,6 +3492,34 @@ nav {
   border: 4px solid #F3F2EE;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
+}
+.wizard-card .choice.type_bail .radio label .circle {
+  border: 1px solid rgba(0,0,0, .54);
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}
+.wizard-card .choice.type_bail .radio label .check {
+  height: 30px;
+  width: 30px;
+}
+.radio label .check:after {
+  left: -9px;
+  top: -9px;
+  height: 50px;
+  width: 50px;
+}
+.wizard-card .choice.type_bail .radio label {
+  font-size: 22px;
+  line-height: 1.42857;
+  color: #999999;
+  font-weight: 400;
+}
+.wizard-card .choice.type_bail .radio label span {
+  left: 0;
+}
+.wizard-card .form-group{
+  padding-bottom: 0;
 }
 /*Input label*/
 .wizard-card .form-group.label-floating label.control-label, .form-group.label-placeholder label.control-label {
@@ -3744,14 +3755,10 @@ nav {
 .wizard-card .choice.type_heure_rappel {
   margin-top: 10px;
 }
-.wizard-card .choice.type_heure_rappel .icon {
-  height: 90px;
-  width:  90px;
-  border: none;
-}
 .wizard-card .choice.type_heure_rappel i {
   font-size: 90px;
   line-height: 80px;
+  color: #999999;
 }
 .wizard-card .choice.type_heure_rappel .text-heure{
   margin-bottom: 0;
@@ -3760,10 +3767,16 @@ nav {
   font-size: 1.3em;
   color: #999999;
 }
-.wizard-card .choice.type_heure_rappel:hover h6 {
+.wizard-card .choice.type_heure_rappel:hover p {
   color: #8ab326;;
 }
-.wizard-card .choice.type_heure_rappel.actived h6 {
+.wizard-card .choice.type_heure_rappel.actived p {
+  color: #8ab326;;
+}
+.wizard-card .choice.type_heure_rappel:hover i {
+  color: #8ab326;;
+}
+.wizard-card .choice.type_heure_rappel.actived i {
   color: #8ab326;;
 }
 .wizard-card .btn.btn-facebook {
@@ -3779,7 +3792,7 @@ nav {
 }
 .section-overlay .benefit-block{
   width: 50%;
-  padding: 0 50px;
+  padding: 0 10%;
   color: #CCCCCC;
   font-size: 1.5em;
   line-height: 1.4em;
@@ -3814,6 +3827,9 @@ nav {
 
 /************Media Queries pour Overlay*******************/
 @media (max-width: 768px) {
+   a#back-to-top.back-to-top{
+    display: none;
+  }
   #ribbon-formulaire {
     display: none;
     position: fixed;
@@ -3847,6 +3863,9 @@ nav {
     width: 100%;
     height: 100vh;
   }
+  .wizard-card.card .card-checkboxes .text-suppl{
+    display: none
+  }
   .wizard-card .progress-bar {
     height: 1rem;
     line-height: 1rem;
@@ -3854,12 +3873,8 @@ nav {
     background-color: #8ab326;
     transition: width .6s ease;
   }
-
-  .wizard-card .choice.revenus_reference h6 {
-    font-size: 1.5em;
-    color: #999999;
-    border: 4px solid #CCCCCC;
-    padding: 40px;
+  .wizard-card .choice.type_heure_rappel h6{
+    display: none;
   }
   .section-overlay .benefit-block:first-child {
     border-right: 0;
@@ -3875,4 +3890,285 @@ nav {
     margin-bottom: 20px;
   }
 }
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  /*.wizard-card .wizard-header {
+    text-align: center;
+    padding: 45px 0 0;
+  }
+  .wizard-card .wizard-footer {
+    bottom: 10px;
+  }
+  .wizard-card h4{
+    font-size: 1.2em;
+  }
+  .wizard-card .choice.type_habitation .icon {
+    height: 80px;
+    width: 80px;
+  }
+  .wizard-card .choice.type_habitation i {
+    font-size: 40px;
+    line-height: 70px;
+  }
+  .wizard-card .choice.type-chauffage h6 {
+    font-size: 0.8em;
+  }
+  .wizard-card .choice.type-chauffage .icon {
+    height: 60px;
+    width: 60px;
+  }
+  .wizard-card .choice.type-chauffage i {
+    line-height: 60px;
+  }
+  .wizard-card #situation {
+    padding: 0 0;
+  }
+  .wizard-card .info-text {
+    margin: 0 0 0;
+  }
+  .wizard-card h4 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  .info-revenu-text{
+    display: none;
+  }
+  .wizard-card .choice.revenus_reference h6 {
+    padding: 10px 40px;
+  }
+  .wizard-card .choice.type_bail .icon {
+    height: 50px;
+    width: 120px;
+  }
+  .wizard-card .choice.type_bail h4 {
+    line-height: 2.2em;
+  }
+  .wizard-card .choice.civilite .icon {
+    height: 30px;
+    width: 30px;
+    margin: 0 auto 0;
+  }
+  .wizard-card .choice.civilite i {
+    display: none
+  }*/
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /*.wizard-card .choice .type_habitation{
+    margin-top: 30px;
+  }
+  .wizard-card .choice.revenus_reference h6 {
+    font-size: 1.5em;
+    color: #999999;
+    border: 4px solid #CCCCCC;
+    padding: 40px;
+  }*/
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /*.wizard-card .choice .type_habitation{
+    margin-top: 30px;
+  }*/
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  /*.wizard-card .choice .type_habitation{
+    margin-top: 30px;
+  }*/
+  .mt-md-10{
+    margin-top: 10px;
+  }
+  .mt-md-20{
+    margin-top: 20px;
+  }
+  .mt-md-30{
+    margin-top: 30px;
+  }
+  .mt-md-40{
+    margin-top: 40px;
+  }
+  .mt-md-50{
+    margin-top: 50px;
+  }
+  .mb-md-10{
+    margin-bottom: 10px;
+  }
+  .mb-md-20{
+    margin-bottom: 20px;
+  }
+  .mb-md-30{
+    margin-bottom: 30px;
+  }
+  .mb-md-40{
+    margin-bottom: 40px;
+  }
+  .mb-md-50{
+    margin-bottom: 50px;
+  }
+}
+
+
 /***********************************************/
+/*iphone 4 et 5*/
+@media (max-width: 370px){
+
+  .wizard-card .wizard-header{
+    padding: 15px 0 0;
+  }
+  .wizard-card .wizard-title {
+    font-size: 1.4rem;
+  }
+  .wizard-card .info-text{
+    font-size: 1.25rem;
+  }
+  .wizard-card .choice.type_habitation .icon{
+    height: 6rem;
+    width: 6rem;
+  }
+  .wizard-card .choice.type_habitation i {
+    font-size: 3rem;
+    line-height: 6rem;
+  }
+  .wizard-card .choice.type_habitation h6{
+    font-size: 1.2rem;
+  }
+  .wizard-card #energie .info-bois{
+    display: none;
+  }
+  .wizard-card .choice.type-chauffage h6{
+    font-size: 1rem;
+  }
+  .wizard-card .choice.type_isolation i{
+    font-size: 4rem;
+  }
+  .wizard-card .choice.nombre-personne .icon {
+    height: 3rem;
+    width: 3rem;
+  }
+  .wizard-card .choice.nombre-personne h6{
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+  .wizard-card #situation .form-group{
+    margin: 0;
+  }
+  .wizard-card #situation .form-group label{
+    display: none;
+  }
+  .wizard-card #revenu .info-revenu-text{
+    display: none;
+  }
+  .wizard-card .choice.revenus_reference h6{
+    padding: 5px 40px;
+  }
+  .wizard-card .choice.civilite .icon {
+    height: 30px;
+    width: 30px;
+    margin: 0 auto 0;
+  }
+  .wizard-card .choice.civilite i {
+    display: none
+  }
+  .wizard-card .choice.type_bail .icon {
+    height: 50px;
+    width: 120px;
+  }
+  .wizard-card .choice.type_bail h4 {
+    line-height: 2.2em;
+  }
+  .section-overlay .info-resultat svg{
+    width: 60px;
+  }
+  .section-overlay .info-resultat h4{
+    font-size: 1.2rem;
+  }
+  .section-overlay .info-resultat h5{
+    font-size: 1rem;
+  }
+  .section-overlay .info-resultat h6{
+    font-size: 1rem;
+  }
+  .wizard-card .choice.type_heure_rappel i{
+    font-size: 50px;
+  }
+  .wizard-card .choice.type_heure_rappel p{
+    font-size: 12px;
+  }
+
+  .section-overlay .info-resultat #text-cause-none{
+    font-size: 1rem;
+  }
+
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .wizard-card .choice.type_heure_rappel i{
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card.wizard-card{
+    width: 70%;
+  }
+}
+/*iphone 4 et 5 (hauteur)*/
+@media (min-height: 480px) and (max-height: 568px){
+  .wizard-card .choice.type-chauffage{
+    margin-top: 2vh;
+  }
+  .wizard-card .choice.type_isolation{
+    margin-top: 4vh;
+  }
+  .wizard-card .choice.civilite {
+    margin-bottom: 4vh;
+  }
+}
+/*iphone 6 (hauteur)*/
+@media (min-height: 568px) and (max-height: 736px){
+  .wizard-card .choice.type_habitation{
+    margin-top: 5vh;
+  }
+  .wizard-card .choice.type-chauffage{
+    margin-top: 3vh;
+  }
+  .wizard-card .choice.type_isolation{
+    margin-top: 10vh;
+  }
+  .wizard-card .row-block-personne{
+    margin-top: 2vh;
+  }
+  .wizard-card .choice.civilite {
+    margin-bottom: 6vh;
+  }
+  .section-overlay .info-resultat svg{
+    width: 100px;
+  }
+}
+/*iPad (hauteur)*/
+@media (min-height: 737px){
+  .wizard-card .choice.type_habitation{
+    margin-top: 5vh;
+  }
+  .wizard-card .choice.type-chauffage{
+    margin-top: 3vh;
+  }
+  .wizard-card .choice.type_isolation{
+    margin-top: 10vh;
+  }
+  .wizard-card .row-block-personne{
+    margin-top: 5vh;
+  }
+  .wizard-card .choice.civilite {
+    margin-bottom: 6vh;
+  }
+}
