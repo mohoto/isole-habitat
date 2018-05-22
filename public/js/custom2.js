@@ -75,12 +75,7 @@
                 $('#ribbon-formulaire').css("display","none");
             }
         });
-        $('.btn-formulaire').click(function(e){
-            e.preventDefault();
-            $('#myModalFullscreen').modal({
-                keyboard: false
-            });
-        });
+
         /*************************************************/
         //open/close lateral navigation
         var overlay = document.querySelector("#section-overlay");

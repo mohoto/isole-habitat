@@ -20,10 +20,11 @@ Route::get('ville', function(){
     $GeoApiFr = new GeoApiFr;
     $datas = $GeoApiFr
         ->communes()
-        ->fields(array('departement', 'codeDepartement', 'region', 'nom'))
-        ->search('codePostal', 92220);
+        ->fields(array('departement', 'region', 'nom'))
+        ->search('codeDepartement', 77);
     print_r($datas);
-    echo $ville = $datas['datas'][0]['nom'];
+    //print_r($datas['datas'][0]);
+    //echo $ville = $datas['datas'][0]['nom'];
 });
 
 Route::get('/message', array(
