@@ -167,7 +167,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item_nb_personne col-3">
+                                        <div class="item_nb_personne col-3 col-md">
                                             <div class="choice nombre-personne" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <input type="radio" name="nombre_personne" value="2">
                                                 <div class="icon">
@@ -175,7 +175,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item_nb_personne col-3">
+                                        <div class="item_nb_personne col-3 col-md">
                                             <div class="choice nombre-personne" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <input type="radio" name="nombre_personne" value="3">
                                                 <div class="icon">
@@ -183,7 +183,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item_nb_personne col-3">
+                                        <div class="item_nb_personne col-3 col-md">
                                             <div class="choice nombre-personne" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <input type="radio" name="nombre_personne" value="4">
                                                 <div class="icon">
@@ -191,7 +191,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item_nb_personne col-3">
+                                        <div class="item_nb_personne col-3 col-md">
                                             <div class="choice nombre-personne" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <input type="radio" name="nombre_personne" value="5">
                                                 <div class="icon">
@@ -199,7 +199,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item_nb_personne col-3">
+                                        <div class="item_nb_personne col-3 col-md">
                                             <div class="choice nombre-personne" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <input type="radio" name="nombre_personne" value="6">
                                                 <div class="icon">
@@ -207,7 +207,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item_nb_personne col-3">
+                                        <div class="item_nb_personne col-3 col-md">
                                             <div class="choice nombre-personne" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <input type="radio" name="nombre_personne" value="7">
                                                 <div class="icon">
@@ -215,7 +215,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item_nb_personne col-3">
+                                        <div class="item_nb_personne col-3 col-md">
                                             <div class="choice nombre-personne" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <input type="radio" name="nombre_personne" value="8">
                                                 <div class="icon">
