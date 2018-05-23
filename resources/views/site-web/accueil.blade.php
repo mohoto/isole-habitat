@@ -18,7 +18,7 @@
                     <h3 class="text-center mt-10">Dispositif CEE mis en place par l'Etat.</h3>
                     {{--<p class="">300 000 foyers ont déjà profité de cette aide.</p>--}}
                     {{--<a href="#" class="btn btn-rounded btn-vert btn-formulaire">Tester votre éligibilité</a>--}}
-                    <a href="#" id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire">Testez votre éligibilité</a>
+                    <button id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire">Testez votre éligibilité</button>
                 </div>
             </div>
         </div>

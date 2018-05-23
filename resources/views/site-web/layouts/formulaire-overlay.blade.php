@@ -11,7 +11,8 @@
                             {{ csrf_field() }}
                             <div class="wizard-header">
                                 <h3 class="wizard-title">Testez votre éligibilité</h3>
-                                <p class="" data-color="vert">Dispositif CEE mis en place par l'Etat</p>
+                                <p class="mb-0">Sans engagement - Réponse immédiate</p>
+                                <p class="mb-0" data-color="vert">Dispositif CEE mis en place par l'Etat</p>
                             </div>
                             <div class="wizard-navigation">
                                 <ul>
