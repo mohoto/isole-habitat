@@ -13,12 +13,15 @@
                 <div class="part2 text-center mb-0">
                     <h1 class="mb-10" data-color="vert">ISOLEZ VOTRE MAISON POUR 1€</h1>
                     <h2 class="mb-40 text-habitat"><span data-color="bleue">Frais en été </span><i class="fab fa-superpowers" data-color="vert"></i><span data-color="orange"> Chaud en hiver</span></h2>
-                    <img src="{{ asset('images/1euro-isolation.png') }}" alt="illustration 1 euro pour l'isolation." />
+                    {{--<img src="{{ asset('images/1euro-isolation.png') }}" alt="illustration 1 euro pour l'isolation." />--}}
                     {{--<h2 class=" sub-title mt-10" data-color="vert">Un programme pour lutter contre la précarité énergétique</h2>--}}
                     <h3 class="text-center mt-10">Dispositif CEE mis en place par l'Etat.</h3>
+                    <p class="mb-10">Loi sur la transition énergétique.</p>
+                    <p data-color="vert">1€ symbolique après travaux.</p>
                     {{--<p class="">300 000 foyers ont déjà profité de cette aide.</p>--}}
                     {{--<a href="#" class="btn btn-rounded btn-vert btn-formulaire">Tester votre éligibilité</a>--}}
-                    <button id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire">Testez votre éligibilité</button>
+                    <button id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire mt-50">Testez votre éligibilité</button>
+                    <p class="slogan-btn-formulaire text-muted">Réponse immédiate - sans aucun engagement</p>
                 </div>
             </div>
         </div>

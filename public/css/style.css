@@ -779,6 +779,12 @@ h1, h2, h3, h4{
   background-color: #ee7626;
   border-color: #ee7626;
 }
+.mt-0 {
+  margin-top: 0;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
 .mt-10{
     margin-top: 10px;
 }
@@ -985,6 +991,9 @@ label.type-heure {
 .hero .btn {
     font-size: 1.5em;
     padding: 15px 30px;
+}
+.hero  .slogan-btn-formulaire {
+  font-size: 1em;
 }
 .section#section-presentation1 {
   position: relative;
