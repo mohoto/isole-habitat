@@ -2475,10 +2475,7 @@ label.type-heure {
     padding-top: 50px;
   }*/
   .hero h1 {
-    font-size: 2em;
-  }
-  .hero h2 {
-    font-size: 1.2em;
+    font-size: 1.8em;
   }
   .hero p {
     font-size: 1em;
@@ -4030,7 +4027,9 @@ nav {
 /***********************************************/
 /*iphone 4 et 5*/
 @media (max-width: 370px){
-
+  .hero h2 {
+    font-size: 1.5em;
+  }
   .wizard-card .wizard-header{
     padding: 15px 0 0;
   }
@@ -4120,6 +4119,10 @@ nav {
 
 }
 @media (min-width: 375px) and (max-width: 768px) {
+
+  .hero h2 {
+    font-size: 1.8em;
+  }
   .wizard-card .choice.type_heure_rappel i{
     font-size: 70px;
   }
