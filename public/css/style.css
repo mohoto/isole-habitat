@@ -191,6 +191,7 @@ a:hover,a:focus,.a:active {
   z-index: 1955;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
   border-radius: 3px;
   background-color: #496174;
 }
@@ -280,6 +281,9 @@ a:hover,a:focus,.a:active {
 
 /*======= 3.Buttons ======= */
 .btn {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
   border-radius: 2px;
   padding: 8px 16px;
   outline: none !important;
@@ -296,6 +300,9 @@ a:hover,a:focus,.a:active {
   background-color: #ffffff;
   border: 2px solid rgba(255, 255, 255, 0.75) !important;
   color: #5d9cec !important;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
   border-radius: 50px;
   font-weight: 500;
   text-transform: uppercase;
@@ -752,7 +759,10 @@ h1, h2, h3, h4{
 .btn-primary {
   color: #fff;
   background-color: #0863b5;
-  border-color: #0863b5;
+  -webkit-border-color: #8ab326;
+  -moz-border-color: #8ab326;
+  -ms-border-color: #8ab326;
+  border-color: #8ab326;
 }
 .btn-orange {
   color: #fff;
@@ -3413,10 +3423,16 @@ nav {
   color: #8ab326;
 }
 .wizard-card[data-color="vert"] .choice.actived .icon {
+  -webkit-border-color: #8ab326;
+  -moz-border-color: #8ab326;
+  -ms-border-color: #8ab326;
   border-color: #8ab326;
   color: #8ab326;
 }
 .wizard-card[data-color="vert"] .choice.actived.type_bail .icon {
+  -webkit-border-color: #8ab326;
+  -moz-border-color: #8ab326;
+  -ms-border-color: #8ab326;
   border-color: #8ab326;
   color: #8ab326;
 }
@@ -3432,6 +3448,9 @@ nav {
   line-height: 80px;
 }
 .wizard-card[data-color="vert"] .choice.type_bail:hover .icon {
+  -webkit-border-color: #F3F2EE;
+  -moz-border-color: #F3F2EE;
+  -ms-border-color: #F3F2EE;
   border-color: #F3F2EE;
   color: #8ab326;
 }
@@ -3446,6 +3465,9 @@ nav {
   -webkit-transition: all 0.2s;
 }
 .wizard-card[data-color="vert"] .choice.revenus_reference:hover .icon h6{
+  -webkit-border-color: #8ab326;
+  -moz-border-color: #8ab326;
+  -ms-border-color: #8ab326;
   border-color: #8ab326;
   color: #8ab326;
 }
