@@ -113,5 +113,4 @@
         </div>
     </div>
 </section>
-    @include('site-web.layouts.formulaire')
 @endsection
