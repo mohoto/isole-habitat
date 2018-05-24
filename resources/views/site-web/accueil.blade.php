@@ -845,7 +845,7 @@
 @section('javascript')
     <script>
         (function ($) {
-            /*$(document).ready(function() {
+            $(document).ready(function() {
                     var overlay = document.querySelector("#section-overlay");
                     overlay.style.left = "0px";
                     var body = document.getElementsByTagName('body');
@@ -860,7 +860,7 @@
                     $('#wizard-card-test2').hide();
                 });
 
-            });*/
+            });
         })(jQuery);
 
     </script>
