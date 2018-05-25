@@ -147,15 +147,15 @@
         /*************************************************/
         /*************************************************/
         /******** Scroll animate to btn*******/
-        /*$('.btn-formulaire').click(function (e) {
+        $('.btn-navigation').click(function (e) {
             e.preventDefault();
-            var id = '#block-form';
+            var id = $(this).attr("href");
             var speed = 750;
             $('html,body').animate({
                 scrollTop: $(id).offset().top
             }, speed);
             return false;
-        });*/
+        });
 
 
         /*************************************************/

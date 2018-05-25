@@ -85,9 +85,11 @@
                     <div id="head-mobile"></div>
                     <div class="button"></div>
                     <ul>
-                        <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{ route('site-web.accueil') }}">ACCUEIL</a></li>
+                        {{--<li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{ route('site-web.accueil') }}">ACCUEIL</a></li>
                         <li class="{{ Request::is('isolation-des-combles') ? 'active' : '' }}"><a href="{{ route('site-web.isolation-combles') }}">L'ISOLATION DES COMBLES</a></li>
-                        <li class="{{ Request::is('qui-sommes-nous') ? 'active' : '' }}"><a href="{{ route('site-web.societe') }}">QUI SOMMES-NOUS?</a></li>
+                        <li class="{{ Request::is('qui-sommes-nous') ? 'active' : '' }}"><a href="{{ route('site-web.societe') }}">QUI SOMMES-NOUS?</a></li>--}}
+                        <li><a class="btn-navigation" href="#section-questions1">Comment en profiter?</a></li>
+                        <li><a class="btn-navigation" href="#section-videos">Vu à la TV</a></li>
                         <li id="phone-link"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></li>
                     </ul>
                 </div>

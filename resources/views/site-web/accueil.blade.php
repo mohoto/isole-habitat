@@ -279,7 +279,7 @@
         <div class="row align-items-center">
             <div class="col-xs-12 col-md-6">
                 <h2 class="gras_700 text-center" data-color="vert">Zone H1</h2>
-                <img src="{{ asset('images/carte-france-isolation3.svg') }}" class="image-region-intervention" alt="Carte des zones de France éligibles à lisolation pour 1€ ">
+                <img src="{{ asset('images/carte-france-isolation.png') }}" class="image-region-intervention" alt="Carte des zones de France éligibles à lisolation pour 1€ ">
             </div>
             <div class="col-sm-12 col-md-6">
                 <h3 class="mb-40">Les régions concernées :</h3>
