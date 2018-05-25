@@ -233,8 +233,9 @@ $(document).ready(function(){
         },
 
         onInit : function(tab, navigation, index){
+            /*********Elevé pour mettre progress-bar seulement*******/
             //check number of tabs and fill the entire row
-            var $total = navigation.find('li').length;
+            /*var $total = navigation.find('li').length;
             var $wizard = navigation.closest('.wizard-card');
 
             $first_li = navigation.find('li:first-child a').html();
@@ -243,8 +244,10 @@ $(document).ready(function(){
 
             refreshAnimation($wizard, index);
 
-            $('.moving-tab').css('transition','transform 0s');
+            $('.moving-tab').css('transition','transform 0s');*/
+            /*********Fin Elevé pour mettre progress-bar seulement*******/
             //$('.tab-pane#bail').css('display', 'none');
+            $('.wizard-navigation').css('display', 'none');
 
        },
 
@@ -652,7 +655,8 @@ $(window).resize(function(){
 });
 
 function refreshAnimation($wizard, index){
-    $('.wizard-card .progress-bar').css('display', 'none');
+    /*********Elevé pour mettre progress-bar seulement*******/
+    /*$('.wizard-card .progress-bar').css('display', 'none');
     $total = $wizard.find('.nav li').length;
     $li_width = 100/$total;
 
@@ -669,9 +673,9 @@ function refreshAnimation($wizard, index){
         var $percent = ($current/$total) * 100;
         $('.wizard-card .progress-bar').css({width:$percent+'%'});
         $('.wizard-card .wizard-navigation').css('display', 'none');
-        /*move_distance = $wizard.width() / 2;
+        /!*move_distance = $wizard.width() / 2;
         index_temp = index % 2;
-        $li_width = 50;*/
+        $li_width = 50;*!/
 
     }
 
@@ -698,7 +702,14 @@ function refreshAnimation($wizard, index){
         'transform':'translate3d(' + move_distance + 'px, ' + vertical_level +  'px, 0)',
         'transition': 'all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1)'
 
-    });
+    });*/
+    /*********Fin Elevé pour mettre progress-bar seulement*******/
+    /*********Ajout pour mettre progress-bar seulement*******/
+    $total = $wizard.find('.nav li').length;
+    var $current = index+1;
+    var $percent = ($current/$total) * 100;
+    $('.wizard-card .progress-bar').css({width:$percent+'%'});
+    /*********Fin Ajout pour mettre progress-bar seulement*******/
 }
 
 materialDesign = {

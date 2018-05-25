@@ -3224,6 +3224,13 @@ nav {
   width: 55%;
   height: 550px
 }
+.wizard-card .progress-bar {
+  height: 1rem;
+  line-height: 1rem;
+  color: #fff;
+  background-color: #8ab326;
+  transition: width .6s ease;
+}
 .wizard-card .btn.btn-fill.btn-next,
 .wizard-card .btn.btn-fill.btn-finish {
   margin-right: 20px;
