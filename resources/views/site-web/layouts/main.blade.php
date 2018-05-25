@@ -49,7 +49,9 @@
         <link href="{{ asset('plugins/toastr/toastr.css') }}" rel="stylesheet">
         <!-- SweetAlert2 CSS -->
         <link href="{{ asset('plugins/sweet-alert2/sweetalert2.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('isolation-crm/css/icons.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('isolation-crm/css/icons.css') }}" rel="stylesheet" type="text/css" />
+        <!-- Select CSS -->
+        <link href="{{ asset('isolation-crm/plugins/bootstrap-select/css/bootstrap-select.min.css') }}" rel="stylesheet">
         <!-- Wizard CSS -->
         <link href="{{ asset('plugins/wizard/assets/css/material-bootstrap-wizard.css') }}" rel="stylesheet" />
         <!-- Custom styles for this template -->
@@ -275,13 +277,6 @@
         <script src="{{ asset('js/jquery.min.js') }}"></script>
         <script src="{{ asset('js/popper.min.js') }}"></script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <!--  Plugin for the Wizard -->
-    <script src="{{ asset('plugins/wizard/assets/js/jquery.bootstrap.js') }}" type="text/javascript"></script>
-    <!--  Plugin for the Wizard -->
-    <script src="{{ asset('plugins/wizard/assets/js/material-bootstrap-wizard.js') }}"></script>
-    <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
-    <script src="{{ asset('plugins/wizard/assets/js/jquery.validate.min.js') }}"></script>
-
         <!-- Jquery easing -->
         <script type="text/javascript" src="{{ asset('js/jquery.easing.1.3.min.js') }}"></script>
 
@@ -292,8 +287,14 @@
         <!-- Sweet alert -->
         <script type="text/javascript" src="{{ asset('plugins/sweet-alert2/sweetalert2.min.js') }}"></script>
         <!-- Notification -->
-        <script type="text/javascript" src="{{ asset('plugins/bootstrap-notify-master/bootstrap-notify.min.js') }}"></script>
         <!--  Plugin for the Wizard -->
+        <script src="{{ asset('plugins/wizard/assets/js/jquery.bootstrap.js') }}" type="text/javascript"></script>
+        <!--  Plugin for the Wizard -->
+        <script src="{{ asset('plugins/wizard/assets/js/material-bootstrap-wizard.js') }}"></script>
+        <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+        <script src="{{ asset('plugins/wizard/assets/js/jquery.validate.min.js') }}"></script>
+        <!-- Select -->
+        <script src="{{ asset('isolation-crm/plugins/bootstrap-select/js/bootstrap-select.min.js') }}"></script>
         <!-- My custom-->
         <script type="text/javascript" src="{{ asset('js/custom2.js') }}"></script>
         <!--common script for all pages-->

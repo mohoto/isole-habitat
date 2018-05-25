@@ -58,7 +58,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-center">Vous êtes propriétaire ou locataire d'une maison individuelle, </span><span class="gras_500" data-color="orange">vous pouvez vous aussi profiter de lisolation à 1 euro</span> : <span class="gras_500">Une aide</span> mise en place pour soutenir <span class="gras_500">les foyers mal isolés</span>*.</h2>
+                <h2 class="text-center">Vous êtes propriétaire ou locataire d'une maison individuelle, </span><span class="gras_500" data-color="vert">vous pouvez vous aussi profiter de lisolation à 1 euro</span> : <span class="gras_500">Une aide</span> mise en place pour soutenir <span class="gras_500">les foyers mal isolés</span>*.</h2>
                 <p class="text-center">*Sous conditions d'éligibilité.</p>
             </div>
         </div>
@@ -78,6 +78,13 @@
                     <a id="video-btn-digital4" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/AD2uWiN3LFY" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
                 </div>
             </div>
+            {{--<div class="col-md-6">
+                <select class="selectpicker">
+                    <option>Mustard</option>
+                    <option>Ketchup</option>
+                    <option>Relish</option>
+                </select>
+            </div>--}}
         </div>
     </div>
 </section>
@@ -860,9 +867,13 @@
                     $('#wizard-card-test2').hide();
                 });
 
+                $('.selectpicker').selectpicker({
+
+                });
+
+
             });
         })(jQuery);
-
     </script>
 @endsection
 
