@@ -20,7 +20,7 @@
                     <p data-color="vert">1€ symbolique après travaux.</p>
                     {{--<p class="">300 000 foyers ont déjà profité de cette aide.</p>--}}
                     {{--<a href="#" class="btn btn-rounded btn-vert btn-formulaire">Tester votre éligibilité</a>--}}
-                    <a href="#" id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire mt-50">Testez votre éligibilité</a>
+                    <a href="#" id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire mt-30">Testez votre éligibilité</a>
                     <p class="slogan-btn-formulaire text-muted">Réponse immédiate - sans aucun engagement</p>
                 </div>
             </div>
