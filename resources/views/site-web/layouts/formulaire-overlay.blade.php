@@ -297,7 +297,7 @@
                                                 <h6>Monsieur</h6>
                                             </div>
                                         </div>--}}
-                                        <div class="col-sm-5">
+                                        <div class="col-6 col-sm-5">
                                             <div class="choice civilite" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <div class="radio">
                                                     <label>
@@ -307,7 +307,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-5">
+                                        <div class="col-6 col-sm-5">
                                             <div class="choice civilite" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <div class="radio">
                                                     <label>
@@ -319,7 +319,7 @@
                                         </div>
                                     </div>
                                     <div class="row justify-content-around mt-md-10 mb-md-10">
-                                        <div class="col-sm-5">
+                                        <div class="col-6 col-sm-5">
                                             <div class="choice type_bail" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <div class="radio">
                                                     <label>
@@ -329,7 +329,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-5">
+                                        <div class="col-6 col-sm-5">
                                             <div class="choice type_bail" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <div class="radio">
                                                     <label>
