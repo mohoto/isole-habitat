@@ -50,10 +50,10 @@
         <!-- SweetAlert2 CSS -->
         <link href="{{ asset('plugins/sweet-alert2/sweetalert2.min.css') }}" rel="stylesheet">
         <link href="{{ asset('isolation-crm/css/icons.css') }}" rel="stylesheet" type="text/css" />
-        <!-- Select CSS -->
-        <link href="{{ asset('isolation-crm/plugins/bootstrap-select/css/bootstrap-select.min.css') }}" rel="stylesheet">
         <!-- Wizard CSS -->
         <link href="{{ asset('plugins/wizard/assets/css/material-bootstrap-wizard.css') }}" rel="stylesheet" />
+        <!-- Select CSS -->
+        <link href="{{ asset('isolation-crm/plugins/bootstrap-select/css/bootstrap-select.min.css') }}" rel="stylesheet">
         <!-- Custom styles for this template -->
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
@@ -71,7 +71,8 @@
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-N97HNP2');</script>
+            })(window,document,'script','dataLayer','GTM-N97HNP2');
+        </script>
         <!-- End Google Tag Manager -->
     </head>
     <body  class="@yield('pageClass')">

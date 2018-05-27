@@ -64,6 +64,21 @@ $(document).ready(function(){
         return valid;
     }
 
+    function validateSelect(type){
+        var valid = false;
+        var z = document.forms['eligibForm'].elements[type];
+        var option = z.children;
+        // loop through list of radio buttons
+        for (var i=0; i<option.length; i++) {
+            if (option[i].selected == true) { // radio checked?
+                valid = true;
+                break; // and break out of for loop
+            }
+
+        }
+        return valid;
+    }
+
 
     function validateCheckbox(tab){
         var valid = false;
@@ -195,7 +210,7 @@ $(document).ready(function(){
             }
             if(index == 4){
                 var typeRadio = 'nombre_personne';
-                var radioResult = validateRadio(typeRadio);
+                var radioResult = validateSelect(typeRadio);
                 if(radioResult == false){
                     if(mobile_device){
                         return false;
@@ -287,13 +302,27 @@ $(document).ready(function(){
                     revenu_fiscal[j].innerText = " ";
                 }
 
-                var getNbrPersonne = function (){
+                /*var getNbrPersonne = function (){
                     var nombre_personne;
                     var x = document.forms['eligibForm'].elements['nombre_personne'];
                     // loop through list of radio buttons
                     for (var i=0; i<x.length; i++) {
                         if (x[i].checked == true) { // radio checked?
                             nombre_personne = x[i].value;
+                            break; // and break out of for loop
+                        }
+
+                    }
+                    return nombre_personne;
+                };*/
+                var getNbrPersonne = function (){
+                    var nombre_personne;
+                    var x = document.forms['eligibForm'].elements['nombre_personne'];
+                    var option = x.children;
+                    // loop through list of radio buttons
+                    for (var i=0; i<option.length; i++) {
+                        if (option[i].selected == true) { // radio checked?
+                            nombre_personne = option[i].value;
                             break; // and break out of for loop
                         }
 

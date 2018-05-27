@@ -32,7 +32,7 @@
                                     <div class="row justify-content-center">
                                         <h4 class="info-text">Quelle est votre type d'habitation?</h4>
                                     </div>
-                                    <div class="row justify-content-md-center row_type_habitation mt-md-40">
+                                    <div class="row justify-content-md-center row_type_habitation mt-md-30">
                                         <div class="col-xs-12 col-md-4">
                                             <div class="choice type_habitation" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <input type="radio" class="type_habitation" name="type_habitation" value="maison">
@@ -158,8 +158,20 @@
                                     <div class="row justify-content-center">
                                         <h4 class="info-text">Nombre total de personnes dans votre foyer?</h4>
                                     </div>
-                                    <div class="row row-block-personne justify-content-center">
-                                        <div class="item_nb_personne col-3 col-md">
+                                    <div class="row row-block-personne justify-content-center mt-30">
+                                        <div class="col-12 col-sm-4">
+                                            <select class="selectpicker" name="nombre_personne">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                            </select>
+                                        </div>
+                                        {{--<div class="item_nb_personne col-3 col-md">
                                             <div class="choice nombre-personne" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <input type="radio" name="nombre_personne" value="1">
                                                 <div class="icon">
@@ -222,9 +234,9 @@
                                                     <h6>8</h6>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>--}}
                                     </div>
-                                    <div class="row justify-content-center">
+                                    <div class="row justify-content-center mt-30">
                                         <div class="col-xs-12">
                                             <h4 class="info-text">Quel est votre code postal?</h4>
                                         </div>
@@ -266,8 +278,8 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane" id="informations">
-                                    <div class="row justify-content-around justify-content-md-center mt-md-30">
-                                        <div class="col-6">
+                                    <div class="row justify-content-around mt-md-30">
+                                        {{--<div class="col-6">
                                             <div class="choice civilite" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <input type="radio" name="civilite" value="madame">
                                                 <div class="icon">
@@ -284,10 +296,30 @@
                                                 </div>
                                                 <h6>Monsieur</h6>
                                             </div>
+                                        </div>--}}
+                                        <div class="col-sm-5">
+                                            <div class="choice civilite" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="civilite" value="monsieur">
+                                                        Madame
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="choice civilite" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="civilite" value="monsieur">
+                                                        Monsieur
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="row justify-content-around justify-content-md-center mt-md-10 mb-md-10">
-                                        <div class="col-6">
+                                    <div class="row justify-content-around mt-md-10 mb-md-10">
+                                        <div class="col-sm-5">
                                             <div class="choice type_bail" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <div class="radio">
                                                     <label>
@@ -297,7 +329,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-5">
                                             <div class="choice type_bail" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <div class="radio">
                                                     <label>

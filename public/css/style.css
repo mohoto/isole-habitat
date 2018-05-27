@@ -375,7 +375,7 @@ a:hover,a:focus,.a:active {
 */
 
 /*======= 4.Dropdown ======= */
-.dropdown-menu {
+/*.dropdown-menu {
   box-shadow: none;
   padding: 4px;
   border-radius: 4px !important;
@@ -427,7 +427,7 @@ a:hover,a:focus,.a:active {
     transform: scale(1);
     opacity: 1;
   }
-}
+}*/
 
 
 .logo {
@@ -885,6 +885,29 @@ h1, h2, h3, h4{
     margin: 30px auto;
   }
 }
+/*Select*/
+.bootstrap-select.show > .dropdown-menu > .dropdown-menu {
+  display: block;
+}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%;
+  border: 2px solid #CCCCCC;
+}
+.bootstrap-select.show > .dropdown-menu > .dropdown-menu li a{
+  display: block;
+  width: 100%;
+  padding-left: 1.5em;
+  color : #999999;
+}
+.bootstrap-select.show > .dropdown-menu > .dropdown-menu li a:hover{
+  background-color: #8ab326;
+  color: #ffffff;
+}
+.bootstrap-select .btn {
+  font-size: 18px;
+  background-color: #ffffff;
+}
+/***********/
 #phoneModal .assistace_phone_img{
   display: block;
   width: 100px;
@@ -2345,6 +2368,12 @@ label.type-heure {
     margin-left: 50px;
   }
   /********page "isolation-combles" End******/
+  /****Overlay formulaire*****/
+  .bootstrap-select.show > .dropdown-menu > .dropdown-menu li a{
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+  }
+  /**************************/
 }
 
 
@@ -3202,7 +3231,7 @@ nav {
   left: 0;
   bottom:0;
   /*background-color: rgba(0, 0, 0, 0.85);*/
-  background-color: rgba(48, 62, 70, 0.85);
+  background-color: rgba(48, 62, 70, 0.75);
   /*background-color: rgba(8, 99, 181, 0.85);*/
 }
 .section-overlay #close-overlay {
@@ -3242,6 +3271,8 @@ nav {
 }
 .wizard-card .btn.btn-fill.btn-previous{
   margin-left: 20px;
+  background-color: #999999;
+  color: #ffffff;
 }
 .wizard-card #eligibForm{
   position: relative;
@@ -3256,7 +3287,7 @@ nav {
 }
 .wizard-card .wizard-footer{
   position: absolute;
-  bottom:0;
+  bottom: 5px;
   width: 100%;
 }
 .wizard-card .wizard-footer .block-button{
@@ -3512,7 +3543,7 @@ nav {
   width: 100%;
 }
 /*************************/
-.wizard-card .choice.civilite h6{
+/*.wizard-card .choice.civilite h6{
   font-size: 1.2em;
   color: #999999;
 }
@@ -3532,14 +3563,20 @@ nav {
   border: 4px solid #F3F2EE;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
+}*/
+.wizard-card .choice.type_bail,
+.wizard-card .choice.civilite{
+  text-align: left;
 }
-.wizard-card .choice.type_bail .radio label .circle {
+.wizard-card .choice.type_bail .radio label .circle,
+.wizard-card .choice.civilite .radio label .circle{
   border: 1px solid rgba(0,0,0, .54);
   height: 30px;
   width: 30px;
   border-radius: 100%;
 }
-.wizard-card .choice.type_bail .radio label .check {
+.wizard-card .choice.type_bail .radio label .check,
+.wizard-card .choice.civilite .radio label .check{
   height: 30px;
   width: 30px;
 }
@@ -3549,13 +3586,15 @@ nav {
   height: 50px;
   width: 50px;
 }
-.wizard-card .choice.type_bail .radio label {
+.wizard-card .choice.type_bail .radio label,
+.wizard-card .choice.civilite .radio label{
   font-size: 22px;
   line-height: 1.42857;
   color: #999999;
   font-weight: 400;
 }
-.wizard-card .choice.type_bail .radio label span {
+.wizard-card .choice.type_bail .radio label span,
+.wizard-card .choice.civilite .radio label span{
   left: 0;
 }
 .wizard-card .form-group{

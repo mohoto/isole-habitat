@@ -78,13 +78,6 @@
                     <a id="video-btn-digital4" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/AD2uWiN3LFY" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
                 </div>
             </div>
-            {{--<div class="col-md-6">
-                <select class="selectpicker">
-                    <option>Mustard</option>
-                    <option>Ketchup</option>
-                    <option>Relish</option>
-                </select>
-            </div>--}}
         </div>
     </div>
 </section>

@@ -132,7 +132,7 @@
                                             <h5 class="m-b-20" data-color="orange"><span class="">2</span> - Situation :</h5>
                                             <div class="row m-b-20">
                                                 <div class="col-md-6 type_bail">
-                                                    <input type="radio" class="radio" name="type_bail" id="client-proprietaire{{ $clientform->id }}" value="proprietaire" {{ $clientform->type_bail == 'proprietaire' ? 'checked' : '' }} >
+                                                    <input type="radio" class="radio" name="type_bail" id="client-proprietaire{{ $clientform->id }}" value="proprietaire" {{ $clientform->type_bail == 'propriétaire' ? 'checked' : '' }} >
                                                     <label for="client-proprietaire{{ $clientform->id }}" class="type-bail-client">Propriétaire</label>
                                                 </div>
                                                 <div class="col-md-6 type_bail">
