@@ -3941,6 +3941,7 @@ nav {
   .card.wizard-card{
     width: 100%;
     height: 100vh;
+    max-height: 100vh;
   }
   .wizard-card.card .card-checkboxes .text-suppl{
     display: none
