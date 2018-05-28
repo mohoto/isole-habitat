@@ -3,6 +3,29 @@
 @section('pageClass', 'page_accueil')
 @section('content')
 <!-- HOME -->
+<header>
+    <nav id='cssmenu'>
+        <div class="container-nav d-flex justify-content-around">
+            <div class="logo"><a href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a></div>
+            <div id="head-mobile"></div>
+            <div class="button"></div>
+            <ul>
+                {{--<li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{ route('site-web.accueil') }}">ACCUEIL</a></li>
+                <li class="{{ Request::is('isolation-des-combles') ? 'active' : '' }}"><a href="{{ route('site-web.isolation-combles') }}">L'ISOLATION DES COMBLES</a></li>
+                <li class="{{ Request::is('qui-sommes-nous') ? 'active' : '' }}"><a href="{{ route('site-web.societe') }}">QUI SOMMES-NOUS?</a></li>--}}
+                <li><a class="btn-navigation" href="#section-questions1">Comment en profiter?</a></li>
+                <li><a class="btn-navigation" href="#section-videos">Vu à la TV</a></li>
+                <li id="phone-link"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid" id="ribbon-formulaire">
+        <div class="row justify-content-md-center align-items-md-center">
+            <h4 class="gras_300" data-color="blanc"><span data-color="orange">Votre intérieur frais et agréable en été :</span> Profitez de votre isolation pour 1€</h4>
+            <a href="#" id="btn-formulaire-ribbon" class="btn btn-rounded btn-vert btn-formulaire ml-20">Testez votre éligibilité</a>
+        </div>
+    </div>
+</header>
 <section class="" id="home">
     <div class="container">
         <div class="row hero mt-50 mb-40 justify-content-center align-items-end">

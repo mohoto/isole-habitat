@@ -2,13 +2,23 @@
 @section('pageTitle', 'isolation des combles')
 @section('pageClass', 'isolation-combles')
 @section('content')
+    <nav id='cssmenu'>
+        <div class="container-nav d-flex justify-content-center">
+            <div class="logo"><a href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a></div>
+            <div id="head-mobile"></div>
+            <div class="button"></div>
+        </div>
+    </nav>
 <section>
     <div class="container">
         <div class="row justify-content-center mt-50 mb-50">
             <div class="col-sm-12">
                 <h1 class="text-center mb-50">Politique de confidentialité</h1>
-                <h2 class="mb-20">1.Collecte de l’information</h2>
-                <p>Nous recueillons des informations lorsque vous vous inscrivez sur notre site, lorsque vous vous connectez à votre compte, faites un achat, participez à un concours, et / ou lorsque vous vous déconnectez. Les informations recueillies incluent votre nom, votre adresse e-mail, numéro de téléphone, et / ou carte de crédit.</p>
+                <p>La protection de votre confidentialité nous tient à coeur. isole-habitat.fr s'engage à protéger la confidentialité, la sécurité et l'exactitude des renseignements personnels qu'ils recueillent, utilisent ou communiquent conformément à la législation applicable. La présente politique de protection de la confidentialité ( la « politique de protection de la confidentialité » ) constitue un énoncé des principes et des lignes directrices concernant la protection des renseignements personnels des individus qui sont nos clients, nos fournisseurs de services et d'autres individus (« vous ») (à l'exception de notre personnel, dont les renseignements personnels sont recueillis, utilisés et communiqués conformément à notre politique de protection de la confidentialité à l'intention du personnel).</p>
+                <h2 class="mb-20 mt-30">1.Collecte de l’information</h2>
+                <p>Nous recueillons vos renseignements personnels aux fins indiquées ci-dessous :</p>
+                <p>a - Afin de fournir le produit, service ou renseignement que vous avez demandé : Si vous êtes un client de l'un de nos services, nous utilisons votre nom et votre adresse (adresse postale et adresse de courrier électronique) afin de livrer le produit, service ou renseignement que vous avez demandé</p>
+                <p>b - Vous envoyer des renseignements : De temps à autre, nous pouvons vous envoyer de plus amples renseignements concernant nos produits et services.</p>
                 <p>En outre, nous recevons et enregistrons automatiquement des informations à partir de votre ordinateur et navigateur, y compris votre adresse IP, vos logiciels et votre matériel, et la page que vous demandez.</p>
                 <h2 class="mb-20">2. Utilisation des informations</h2>
                 <p>Toutes les informations que nous recueillons auprès de vous peuvent être utilisées pour :</p>
