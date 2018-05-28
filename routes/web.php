@@ -43,7 +43,7 @@ Route::get('qui-sommes-nous', array('as' => 'site-web.societe', function(){
     return view('site-web.qui-sommes-nous');
 }));
 
-Route::get('politique-de-confidentialité', array('as' => 'site-web.policy', function(){
+Route::get('politique-de-confidentialite', array('as' => 'site-web.policy', function(){
     return view('site-web.politique-de-confidentialité');
 }));
 
