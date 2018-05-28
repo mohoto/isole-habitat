@@ -245,6 +245,7 @@
                             {{--<li><a href="#">L'isolation des murs</a></li>--}}
                             {{--<li><a href="#">L'isolation des caves et garges</a></li>--}}
                             <li><a href="{{ route('site-web.societe') }}">Qui sommes-nous?</a></li>
+                            <li><a href="{{ route('site-web.policy') }}">Politique de confidentialité</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">

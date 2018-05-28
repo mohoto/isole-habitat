@@ -43,6 +43,10 @@ Route::get('qui-sommes-nous', array('as' => 'site-web.societe', function(){
     return view('site-web.qui-sommes-nous');
 }));
 
+Route::get('politique-de-confidentialité', array('as' => 'site-web.policy', function(){
+    return view('site-web.politique-de-confidentialité');
+}));
+
 Route::get('isolation-des-combles', array('as' =>'site-web.isolation-combles', function(){
     return view('site-web.isolation-combles');
 }));
