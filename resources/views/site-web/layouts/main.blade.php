@@ -255,6 +255,7 @@
         <script src="{{ asset('js/jquery.min.js') }}"></script>
         <script src="{{ asset('js/popper.min.js') }}"></script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/fastclick.min.js') }}"></script>
         <!-- Jquery easing -->
         <script type="text/javascript" src="{{ asset('js/jquery.easing.1.3.min.js') }}"></script>
 
@@ -364,10 +365,12 @@
                 })
             });
 
+            FastClick.attach(document.body);
 
 
 
     </script>
+
     @yield('javascript')
     </body>
 </html>

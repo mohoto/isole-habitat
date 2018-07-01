@@ -1,6 +1,6 @@
 @extends('site-web.layouts.main')
-@section('pageTitle', 'isolation des combles')
-@section('pageClass', 'isolation-combles')
+@section('pageTitle', 'Politique de confidentialité')
+@section('pageClass', 'politique-confidentialite')
 @section('content')
     <nav id='cssmenu'>
         <div class="container-nav d-flex justify-content-center">

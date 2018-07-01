@@ -8,6 +8,7 @@
     });*/
 (function($) {
 
+
     $.fn.menumaker = function(options) {
         var cssmenu = $(this), settings = $.extend({
             format: "dropdown",
