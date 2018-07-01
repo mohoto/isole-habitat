@@ -365,10 +365,13 @@
                 })
             });
 
-            FastClick.attach(document.body);
-
-
-
+    </script>
+    <script>
+        if ('addEventListener' in document) {
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        }
     </script>
 
     @yield('javascript')
