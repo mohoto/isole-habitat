@@ -21,7 +21,7 @@
     </nav>
     <div class="container-fluid" id="ribbon-formulaire">
         <div class="row justify-content-md-center align-items-md-center">
-            <h4 class="gras_300" data-color="blanc"><span data-color="orange">Votre intérieur frais et agréable en été :</span> Profitez de votre isolation pour 1€</h4>
+            <h4 class="gras_300" data-color="blanc"><span data-color="orange">Dépensez moins pour vous chauffer  :</span> Profitez de votre isolation pour 1€</h4>
             <a href="#" id="btn-formulaire-ribbon" class="btn btn-rounded btn-vert btn-formulaire ml-20">Testez votre éligibilité</a>
         </div>
     </div>
