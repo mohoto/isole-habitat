@@ -117,17 +117,17 @@
         <div class="row">
             <div class="col-md-4 block-information" data-background-color="vert">
                 <h3><i class="ion-ios7-plus-outline"></i> D'ECOLOGIE</h3>
-                <img src="{{ asset('images/icon-ecologie.svg') }}" alt="img" class="img-fluid rounded">
+                <img src="{{ asset('images/icon-ecologie.svg') }}" alt="illustration isolation à 1 euro ecologique" class="img-fluid rounded">
                 <p class="text-center" data-color="blanc">Réduit les dépenses énergétiques</p>
             </div>
             <div class="col-md-4 block-information" data-background-color="orange">
                 <h3><i class="ion-ios7-plus-outline"></i> DE CONFORT</h3>
-                <img src="{{ asset('images/icon-confort.svg') }}" alt="img" class="img-fluid rounded">
+                <img src="{{ asset('images/icon-confort.svg') }}" alt="illustration isolation à 1 euro confort" class="img-fluid rounded">
                 <p class="text-center" data-color="blanc">Bien-être dans votre maison</p>
             </div>
             <div class="col-md-4 block-information" data-background-color="bleue">
                 <h3><i class="ion-ios7-plus-outline"></i> D'ECONOMIE</h3>
-                <img src="{{ asset('images/icon-economie.svg') }}" alt="illustration économie sur facture de chauffage" class="img-fluid rounded">
+                <img src="{{ asset('images/icon-economie-sol.svg') }}" alt="illustration isolation à 1 euro économie sur facture de chauffage" class="img-fluid rounded">
                 <p class="text-center" data-color="blanc">D'économie sur votre facture de chauffage</p>
             </div>
         </div>
@@ -406,7 +406,7 @@
                         <h2 class="mb-30" data-color="bleue">Le label <span class="gras_700" data-color="vert">RGE Qualibat </span>: Un gage de <span class="gras_500">qualité :</span></h2>
                         <p><span class="gras_500">Le label RGE(Reconnu Garant de l'environnement)</span> est un signe de qualité délivré à une entreprise qui remplit certains critères lors de la réalisation de travaux d'économie d'énergie dans les logements(isolation thermique, installation d'équipement utilisant des énergies renouvelables...).</p>
                         <p class="gras_500">Le label RGE vous donne la garantie que cette entreprise est reconnue par l'état.</p>
-                        <p class="gras_500">Faire appel à une entreprise RGE pour faire des travaux chez vous, vous donne droit à l'attribution de certains aides publiques.</p>
+                        <p class="gras_500">Nous faisons appel à une entreprise RGE pour faire vos travaux d'isolation, ce qui vous vous donne droit à l'attribution de certains aides publiques.</p>
                     </div>
                 </div>
             </div>
