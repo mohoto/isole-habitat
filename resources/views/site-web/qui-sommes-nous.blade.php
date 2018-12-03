@@ -22,7 +22,7 @@
                 <p><span class="gras_500" data-color="vert">Le label RGE</span> vous donne la garantie que cette entreprise est reconnue par l’Etat.</p>
             </div>
         </div>
-        <div class="row justify-content-center mt-30 mb-50">
+        {{--<div class="row justify-content-center mt-30 mb-50">
             <div class="col-sm-12 col-md-10">
                 <h2 class="text-center mb-30" data-color="vert">Une pré-viste technique pour mieux cibler vos besoins</h2>
             </div>
@@ -33,7 +33,7 @@
             <p>Un de nos technicien se déplace chez vous pour déterminer vos besoins en isolation : en effet, chaque maison est différente et nécessite une isolation adaptée. Il vous renseignera sur les types d'isolations auxquels vous avez droit et sur le type d'isolant à poser dans votre maison.</p>
                 <p><span class="gras_500">Aucun frais ne vous sera demandé pour cette pré-viste</span>, ce processus fait partie intégrante de notre programme d'isolation pour 1€ symbolique.</p>
             </div>
-        </div>
+        </div>--}}
         <div class="row justify-content-center mt-50 mb-30">
             <div class="col-sm-12 col-md-10">
                 <h2 class="text-center mb-30" data-color="vert">Des profesionnels reconnus par l'état</h2>

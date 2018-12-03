@@ -27,7 +27,7 @@
         <div class="row justify-content-md-center align-items-md-center">
             <h4 class="gras_300" data-color="blanc"><span data-color="orange">Dépensez moins pour vous chauffer  :</span> Profitez de votre isolation pour 1€</h4>
             {{--<a href="#" id="btn-formulaire-ribbon" class="btn btn-rounded btn-vert btn-formulaire ml-20">Testez votre éligibilité</a>--}}
-            <a href="#" id="btn-formulaire-ribbon" class="btn btn-rounded btn-vert btn-formulaire ml-20">S'inscrire au programme</a>
+            <a href="#" id="btn-formulaire-ribbon" class="btn btn-rounded btn-vert btn-formulaire ml-20">Je veux profiter du programme</a>
         </div>
     </div>
 </header>
@@ -40,22 +40,12 @@
             <div class="col-sm-12 col-md-6">
                 <div class="part2 text-center mb-0">
                     <h1 class="mb-40 gras_600">ISOLEZ VOTRE MAISON POUR 1€</h1>
-                    {{--<h2 class="mb-40 text-habitat"><span data-color="bleue">Frais en été </span><i class="fab fa-superpowers" data-color="vert"></i><span data-color="orange"> Chaud en hiver</span></h2>--}}
-                    <h2></h2>
-                    {{--<img src="{{ asset('images/1euro-isolation.png') }}" alt="illustration 1 euro pour l'isolation." />--}}
-                    {{--<h2 class=" sub-title mt-10" data-color="vert">Un programme pour lutter contre la précarité énergétique</h2>--}}
-                    {{--<h3 class="text-center mt-10">Dispositif CEE mis en place par l'Etat.</h3>--}}
-                    {{--<p class="mb-10">Loi sur la transition énergétique.</p>--}}
                     <h3 data-color="orange"><span class="italic gras_600">Nouveau depuis le 1er septembre 2018</span></h3>
                     <h4>L'isolation des garages et caves pour 1€</h4>
-                    <p data-color="orange">Sans aucune condition d'éligibilité</p>
-                    {{--<p class="">300 000 foyers ont déjà profité de cette aide.</p>--}}
-                    {{--<a href="#" class="btn btn-rounded btn-vert btn-formulaire">Tester votre éligibilité</a>--}}
-                    {{--<a href="#" id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire mt-30">Testez votre éligibilité</a>
-                    <p class="slogan-btn-formulaire text-muted">Réponse immédiate - sans aucun engagement</p>--}}
-                    <a href="#" id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire mt-30">S'inscrire au programme</a>
+                    <p data-color="orange">Sans aucune condition de revenu.</p>
+                    <a href="#" id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire mt-30">Je veux profiter du programme</a>
                     {{--<p class="m-t-20" data-color="vert">1€ symbolique après travaux.</p>--}}
-                    <p class="m-t-20" data-color="vert">Réponse sous 48 heures.</p>
+                    <p class="m-t-20">Votre isolation dans les 7 jours suivant votre demande.</p>
                 </div>
             </div>
         </div>
@@ -80,7 +70,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="features-box">
-                    <i class="icon-fantastic icon-icon-percent"></i>
+                    <i class="icon-fantastic icon-icon-percent-20"></i>
                     <p class="">Economie sur votre facture de chauffage</p>
                 </div>
             </div>
@@ -92,10 +82,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                {{--<h2 class="text-center">Vous êtes propriétaire ou locataire d'une maison individuelle, </span><span class="gras_500" data-color="vert">vous pouvez vous aussi profiter de lisolation à 1 euro</span> : <span class="gras_500">Une aide</span> mise en place pour soutenir <span class="gras_500">les foyers mal isolés</span>*.</h2>
-                <p class="text-center">*Sous conditions d'éligibilité.</p>--}}
                 <h2 class="text-center">Vous êtes propriétaire ou locataire d'une maison individuelle, </span><span class="gras_500" data-color="vert">vous pouvez vous aussi profiter de lisolation de votre garage et de vos caves pour 1€</span> : <span class="gras_500">Une aide</span> mise en place pour soutenir <span class="gras_500">les foyers mal isolés</span>*.</h2>
-                <p class="text-center">*Sans aucune condition d'éligibilité depuis le 1er septembre 2018.</p>
+                <p class="text-center">*Sans aucune condition de revenu depuis le 1er septembre 2018.</p>
             </div>
         </div>
     </div>
@@ -103,20 +91,24 @@
 <section class="section" id="section-presentation-video">
     <div class="container">
         <div class="row justify-content-center align-items-end">
-            <div class="col-md-5">
+            <div class="col-md-5 order-2 order-md-1">
                 <h4 class="">L'isolation à 1 euro : <span class="gras_500">une réalité peu connue</span>.</h4>
                 <p>Peu de ménages savent qu'ils peuvent bénéficier de l'isolation de leur maison pour 1€ symbolique. Et pourtant, ce programme repose sur <span data-color="orange">une obligation de réalisation d’économies d’énergie imposée par l'Etat aux vendeurs d’énergie</span>.</p>
                 <p>Le 1er janvier 2018, le dispositif est entré dans sa 4ème période d’obligation.</p>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 order-1 order-md-2">
                 <img id="mascotte-isolation" class="block-center" src="{{ asset('images/isolation-1-euro.jpg') }}" alt="illustration mascotte isolation à 1 euro" />
             </div>
-            {{--<div class="col-md-5">
-                <div class="block-video">
-                    <img src="{{ asset('images/temoignage-video-isolation-1-euro.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur M6" />
-                    <a id="video-btn-digital4" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/AD2uWiN3LFY" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
-                </div>
-            </div>--}}
+        </div>
+        <div class="row justify-content-center align-items-center mt-40">
+            <div class="col-md-5">
+                <img id="mascotte-isolation" class="rounded-circle" src="{{ asset('images/photo-couple-isolation.jpg') }}" alt="illustration mascotte isolation à 1 euro" />
+            </div>
+            <div class="col-md-5">
+                <h4 class="presentaion-couple">Ils ont isolé le garage et les caves de leur maison <span class="gras_500" data-color="vert">pour 1€</span> au lieu de <span class="gras_500" data-color="orange">4241€</span>.</h4>
+                <p>Frédéric et Laurence ont fait <span class="gras_500" data-color="vert">financé en totalité</span> l'isolation de leur garage et de leurs caves <span class="gras_500">grâce à notre programme et au dispositif CEE mis en place par l'etat.</p>
+                <p><span class="gras_500" data-color="orange">Tous les foyers peuvent en profiter, sans aucune condition de revenu</span>. Nous nous occupons de toutes les formalités.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -154,20 +146,14 @@
         <div class="row justify-content-center">
             <div class="col-sm-6 col-md-6">
                 <div class="features-box">
-                    <img src="{{ asset('images/icon-iso-combles.png') }}" srcset="{{ asset('images/icon-iso-combles.svg') }}" alt="illustration isolation des combles">
-                    <h5 class="m-t-20">Isolation des combles perdus</h5>
+                    <img src="{{ asset('images/icon-iso-plancher-garage.png') }}" srcset="{{ asset('images/icon-iso-plancher-garage.svg') }}" alt="illustration isolation des garages">
+                    <h5 class="m-t-20">Isolation des garages</h5>
                 </div>
             </div>
-            {{--<div class="col-sm-12 col-md-4">
-                <div class="features-box">
-                    <img src="{{ asset('images/icon-iso-mur.png') }}"srcset="{{ asset('images/icon-iso-mur.svg') }}" alt="">
-                    <h5 class="m-t-20">Isolation des murs</h5>
-                </div>
-            </div>--}}
             <div class="col-sm-6 col-md-6">
                 <div class="features-box">
-                    <img src="{{ asset('images/icon-iso-plancher.png') }}" srcset="{{ asset('images/icon-iso-plancher.svg') }}" alt="">
-                    <h5 class="m-t-20">Isolation des caves et garages</h5>
+                    <img src="{{ asset('images/icon-iso-plancher-caves.png') }}" srcset="{{ asset('images/icon-iso-plancher-caves.svg') }}" alt="illustration isolation des caves et vides-sanitaires">
+                    <h5 class="m-t-20">Isolation des caves et vide-sanitaire</h5>
                 </div>
             </div>
         </div> <!-- end row -->
@@ -188,93 +174,9 @@
     </div> <!-- end container -->
 </section>
 <!-- end Features -->
-<section class="section p-t-0" id="section-type-isolation2">
-    <div class="container">
-    {{--<div class="row justify-content-around align-items-end">
-        <div class="col-md-5">
-            <div class="feat-description">
-                <h4 data-color="bleue">L'isolation de vos combles perdus</h4>
-                <p class="gras_500">Vous avez des combles que vous n'utilisez pas:</p>
-                <p class="text-muted">L'isolation des combles <span class="gras_500">empêche les pertes de chaleur en hiver</span> et permet de <span class="gras_500">garder la fraîcheur en été</span>. Deux techniques sont utilisées pour isoler vos combles perdus : la projection de  <span class="gras_500">laine de verre (ou de roche)</span> à souffler ou la pose de <span class="gras_500">rouleaux de laine de verre</span>, sur toute la surface des combles.</p>
-                --}}{{--<a href="{{ route('site-web.isolation-combles') }}" class="btn btn-custom">Isolation des combles</a>--}}{{--
-            </div>
-        </div>
-        <div class="col-md-5 flex-first">
-            <div style="position: relative";>
-                <img src="{{ asset('images/isolation-combles-soufflage.jpg') }}" alt="illustration projection de laine à souffler pour l'isolation des combles" class="img-fluid rounded">
-                <div class="bg-overlay">
-                    <h4>Isolation des combles par soufflage de laine de verre</h4>
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th scope="col">Epaisseur de l'isolant</th>
-                            <th scope="col">Déperdition thermique</th>
-                            <th scope="col">Economie sur votre facture de chauffage</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>28 à 35 cm</td>
-                            <td>
-                                <span>jusqu'à</span> -25%
-                            </td>
-                            <td><span>jusqu'à</span> 20%</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>--}}<!-- end row -->
-    </div> <!-- end container -->
-</section>
 <!-- end features alt -->
 <!-- Features Alt -->
-{{--<section class="section" id="section-type-isolation3">
-    <div class="container">
-        <div class="row justify-content-around align-items-end">
-            <div class="col-md-5">
-                <div style="position: relative";>
-                    <img src="{{ asset('images/technique-isolation-mur.jpg') }}" alt="img" class="img-fluid rounded">
-                    <div class="bg-overlay">
-                        <div style="position: relative";>
-                            <h4>Isolation des murs avec panneaux de laine de verre</h4>
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Epaisseur de l'isolant</th>
-                                    <th scope="col">Déperdition thermique</th>
-                                    <th scope="col">Economie sur votre facture de chauffage</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>12 à 14 cm</td>
-                                    <td>
-                                        <span>jusqu'à</span> -25%
-                                    </td>
-                                    <td><span>jusqu'à</span> 20%</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="feat-description">
-                    <h4 data-color="bleue">L'isolation des murs</h4>
-                    <p class="gras_500">Vous avez un garage ou un atelier mitoyen à votre habitation :</p>
-                    <p class="text-muted">L'isolation thermique des murs permet de <span class="gras_500">réduire les échanges thermiques</span> entre l'intérieur et l'extérieur des pièces à vivre de votre maison. Elle consiste à poser des <span class="gras_500">panneaux ou  rouleaux de laine de verre</span> sur le mur (du garage ou de l'atelier) touchant les pièces à vivre de votre maison.</p>
-                    <a href="{{ route('site-web.isolation-murs') }}" class="btn btn-custom">Isolation des murs</a>
-                </div>
-            </div>
-        </div><!-- end row -->
-    </div> <!-- end container -->
-</section>--}}
-<!-- end features alt -->
-<!-- Features Alt -->
-<section class="section pt-10" id="section-type-isolation4">
+<section class="section pt-30" id="section-type-isolation4">
     <div class="container">
         <div class="row justify-content-around align-items-end">
             <div class="col-md-5 order-2">
@@ -294,9 +196,9 @@
                             <tr>
                                 <td>10 à 12 cm</td>
                                 <td>
-                                    <span>jusqu'à</span> -15%
+                                    <span>jusqu'à</span> -20%
                                 </td>
-                                <td><span>jusqu'à</span> 10%</td>
+                                <td><span>jusqu'à</span> 20%</td>
                             </tr>
                             </tbody>
                         </table>
@@ -308,8 +210,7 @@
                     <h4 data-color="bleue">L'isolation des garages, caves et vide-sanitaire</h4>
                     <p class="gras_500">Vous avez un garage en rez-de-chaussée ou en sous-sol, des caves ou un vide-sanitaire:</p>
                     <p class="text-muted">En isolant le plafond de votre garage, de vos caves ou de votre vide-sanitaire, <span class="gras_500">vous isolez avant tout le sol de vos pièces à vivre</span> et vous évitez les déperditions thermiques à travers le sol.
-                        Cette isolation est réalisée en posant des <span class="gras_500">panneaux de polystyrène ou de laine de verre</span> sur le plafond du garage ou des caves.</p>
-                    {{--<a href="{{ route('site-web.isolation-sols') }}" class="btn btn-custom">Isolation des sols</a>--}}
+                        Cette isolation est réalisée en posant des <span class="gras_500">panneaux de polystyrène</span> sur le plafond du garage ou des caves.</p>
                 </div>
             </div>
         </div><!-- end row -->
@@ -398,98 +299,6 @@
                 <p><i class="fa fa-check mr-10" aria-hidden="true" data-color="vert"></i>Habiter une maison dont la construction date de plus de 2 ans.</p>
             </div>
         </div>
-        {{--<div class="row justify-content-center mt-40 table-desktop">
-            <div class="col-xs-12 col-md-9">
-                <table class="table table-bordered">
-                    <thead class="thead-inverse">
-                    <tr>
-                        <th>Nombre de personnes</br>dans le foyer</th>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                        <th>Par personne</br> suppl.</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">Vous habitez :</th>
-                        <td colspan="6">Plafond de Revenu fiscal de référence <a href="#" class="info-revenu"><i class="ion-ios7-help-outline" data-color="orange"></i></a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">En Ile-de-france</th>
-                        <td>19 803 €</td>
-                        <td>29 066 €</td>
-                        <td>34 906 €</td>
-                        <td>40 758 €</td>
-                        <td>46 630 €</td>
-                        <td>+ 5860 €</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Dans les autres régions</th>
-                        <td>14 308 €</td>
-                        <td>20 925 €</td>
-                        <td>25 166 €</td>
-                        <td>29 400 €</td>
-                        <td>33 642 €</td>
-                        <td>+ 4241 €</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <p class="text-muted text-center">*Agence De l'Environnement et de la Maitrise de l'Energie</p>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-40 table-phone">
-            <div class="col-12 hidden-md-up">
-                <table class="table table-bordered table-responsive">
-                    <thead class="">
-                    <tr>
-                        <th>Nombre de personnes</br>dans le foyer</th>
-                        <th colspan="2">Plafond de Revenu fiscal de référence <a href="#" class="info-revenu"><i class="ion-ios7-help-outline" data-color="orange"></i></a></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row"></th>
-                        <td>En Ile-de-France</td>
-                        <td>Dans les autres régions</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>19 803 €</td>
-                        <td>14 308 €</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>29 066 €</td>
-                        <td>20 925 €</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>34 906 €</td>
-                        <td>25 166 €</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>40 758 €</td>
-                        <td>29 400 €</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>46 630 €</td>
-                        <td>33 642 €</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Par personne suppl.</th>
-                        <td>+ 5860 €</td>
-                        <td>+ 4241 €</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <p class="text-muted text-center">*Agence De l'Environnement et de la Maitrise de l'Energie</p>
-            </div>
-        </div>--}}
     </div>
 </section>
 <section class="section" id="section-zones">
@@ -509,13 +318,9 @@
         </div>
         <div class="row mt-50" id="section-comment">
             <div class="col-md-12">
-                {{--<h3 class="text-center  mb-30"><span class="gras_500" data-color="vert">Testez votre éligibilité</span> et profitez de l'isolation de votre maison pour 1€</h3>
-                <h3 class="text-center  mb-30"><span class="gras_500" data-color="vert">Inscrivez-vous au programme</span> et profitez de l'isolation de votre maison pour 1€</h3>--}}
                 <h3 class="text-center  mb-30"><span class="gras_500" data-color="vert">Inscrivez-vous au programme</span> et profitez de l'isolation des sols de votre maison pour 1€</h3>
                 <div class="d-flex justify-content-center">
                     <ul class="list-benefit-total">
-                        {{--<li><i class="fas fa-arrow-right"></i>Test sans aucun engagement</li>
-                        <li><i class="fas fa-arrow-right"></i>Une réponse immédiate</li>--}}
                         <li><i class="fas fa-arrow-right"></i>Une réponse en 48 heures</li>
                         <li><i class="fas fa-arrow-right"></i>Votre isolation sous 7 jours</li>
                         <li><i class="fas fa-arrow-right"></i>Aucun frais à avancer pour votre isolation</li>
@@ -555,38 +360,6 @@
                 </div><!-- /.steps-timeline -->
             </div>
         </div>
-        {{--<div class="row">
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-center">
-                <h3 data-color="orange">Région Hauts-de-France :</h3>
-                <img src="{{ asset('images/region-haut-de-france.svg') }}" class="image-region-intervention" alt="carte isolation de la région hauts-de-France">
-                <div class="info-bureau block-center">
-                    <i class="ion-ios7-location-outline bureau-name-icon"></i><p class="bureau-name">Agence de LYS-LEZ-LANNOY</p>
-                    <p class="bureau-adress">20 rue de Bapaume</p>
-                    <p class="bureau-adress">59390 Lys-lez-Lanoy</p>
-                    <p class="bureau-phone"><i class="ion-ios7-telephone-outline bureau-phone-icon"></i>03 74 56 00 00</p>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-center">
-                <h3 data-color="orange">Région Ile-de-France :</h3>
-                <img src="{{ asset('images/region-ile-de-france.svg') }}" class="image-region-intervention" alt="carte isolation de la région hauts-de-France">
-                <div class="info-bureau">
-                    <i class="ion-ios7-location-outline bureau-name-icon"></i><p class="bureau-name">Agence de BOBIGNY</p>
-                    <p class="bureau-adress">28 rue de Eugène Varlin</p>
-                    <p class="bureau-adress">93000 Bobigny</p>
-                    <p class="bureau-phone"><i class="ion-ios7-telephone-outline bureau-phone-icon"></i>01 78 56 03 03</p>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-center">
-                <h3 data-color="orange">Département de La Haute-Loire :</h3>
-                <img src="{{ asset('images/departement-haute-loire.svg') }}" class="image-region-intervention" alt="carte isolation de la région hauts-de-France">
-                <div class="info-bureau">
-                    <i class="ion-ios7-location-outline bureau-name-icon"></i><p class="bureau-name"></i>Agence du PUY-EN-VELAY</p>
-                    <p class="bureau-adress">2Zone d'activité du taulhac</p>
-                    <p class="bureau-adress">43000 Le-Puy-en-Velay</p>
-                    <p class="bureau-phone"><i class="ion-ios7-telephone-outline bureau-phone-icon"></i>04 71 71 03 03</p>
-                </div>
-            </div>
-        </div>--}}
     </div>
 </section>
 <section class="section pb-0" id="section-precarite-energetique" data-background-color="bleue-clair">
@@ -672,9 +445,6 @@
 <section class="section" id="section-presentation5" data-background-color="bleue-clair">
     <div class="container">
         <div class="row justify-content-center">
-           {{-- <div class="col col-sm-4 col-md-auto" id="">
-                <img src="{{ asset('images/20_ans_experience.svg') }}" class="logo-experience-iso" alt="illustration 20 ans d'expérience">
-            </div>--}}
             <div class="col col-sm-12 col-md-12">
                 <h3 class="text-left mt-30 mb-30"><span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">HABITAT </span>est un service du groupe PRESTA HABITAT : <span class="gras_500">société experte dans l'isolation des habitats et des énergies renouvelables.</span></h3>
             </div>
@@ -725,119 +495,6 @@
         </div>
     </div>
 </section>
-{{--<section class="section" id="section-videos">
-    <div class="container">
-        <h2 class="text-center mb-40 gras_700">Les reportages sur l'isolation à 1€</h2>
-        <div class="row mt-40">
-            <div class="col-md-12">
-                <div class="card-deck">
-                    <div class="card">
-                        <!-- Card image -->
-                        <div class="view overlay">
-                            <div class="block-video">
-                                <img src="{{ asset('images/reportage-isolation-1euro-TF1.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur M6" />
-                                <div class="block-video-single d-flex justify-content-center align-items-center">
-                                    <a id="video-btn-digital1" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/BDnXLSGpr3A" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card content -->
-                        <div class="card-body white-text rounded-bottom" data-background-color="bleue-clair">
-                            <!-- Title -->
-                            <img class="logo-chaine" src="{{ asset('images/TF1-logo.png') }}" alt="illustration logo M6" />
-                            <hr class="hr-light">
-                            <!-- Text -->
-                            <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
-                            <p class="mb-0">Même pas 24 heures après avoir rempli le document en ligne, <span class="gras_500">j'ai eu la réponse, ça prend 5 minutes</span>... <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
-                        </div>
-                    </div>
-                    <div class="card col-xs-mt-40">
-                        <!-- Card image -->
-                        <div class="view overlay">
-                            <div class="block-video">
-                                <img src="{{ asset('images/reportage-isolation-1euro-m6.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur M6" />
-                                <div class="block-video-single d-flex justify-content-center align-items-center">
-                                    <a id="video-btn-digital2" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/AD2uWiN3LFY" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card content -->
-                        <div class="card-body white-text rounded-bottom" data-background-color="bleue-clair">
-                            <!-- Title -->
-                            <img class="logo-chaine" src="{{ asset('images/M6-logo.png') }}" alt="illustration logo M6" />
-                            <hr class="hr-light">
-                            <!-- Text -->
-                            <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
-                            <p class="mb-0">Des années que Josette et Stanislas en rêvait : <span class="gras_500">isoler leurs combles</span>, 73 m² sans piocher dans leur bas de laine.<span class="gras_500"> Pour 1 euro, c'est désormais chose faite</span>... <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
-                        </div>
-                    </div>
-                    <div class="card col-xs-mt-40">
-                        <!-- Card image -->
-                        <div class="view overlay">
-                            <div class="block-video">
-                                <img src="{{ asset('images/reportage-isolation-1euro-w9.jpg') }}" alt="illustration reportage sur l'isolation à 1€ sur W9" />
-                                <div class="block-video-single d-flex justify-content-center align-items-center">
-                                    <a id="video-btn-digital3" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/paUoYl4RRDw" data-target="#myModal"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card content -->
-                        <div class="card-body white-text rounded-bottom" data-background-color="bleue-clair">
-                            <!-- Title -->
-                            <img class="logo-chaine" src="{{ asset('images/W9-logo.png') }}" alt="illustration logo W9" />
-                            <hr class="hr-light">
-                            <!-- Text -->
-                            <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
-                            <p class="mb-0">Marina est secrétaire et son mari ouvrier, en principe <span class="gras_500">les travaux qui vont être réalisés</span> aujourd’hui, <span class="gras_500">ils n'auraient pas pu se les offrir</span>… <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            --}}{{--<div class="col-sm-12 col-md-4" id="">
-                <div class="youtube-player embed-responsive embed-responsive-16by9" data-id="w8X4JjIJo5U"></div>
-            </div>
-            <div class="col-sm-12 col-md-4" id="">
-                <div class="youtube-player embed-responsive embed-responsive-16by9" data-id="VSaZSj5-yFw"></div>
-            </div>
-            <script>
-                document.addEventListener("DOMContentLoaded",
-                    function() {
-                        var div, n, id, thumb_id,
-                            v = document.getElementsByClassName("youtube-player");
-                        for (n = 0; n < v.length; n++) {
-                            id = v[n].getAttribute('data-id');
-                            thumb_id = id + ".jpg";
-                            div = document.createElement("div");
-                            div.setAttribute("data-id", v[n].dataset.id);
-                            //div.innerHTML = labnolThumb(v[n].dataset.id);
-                            div.innerHTML = labnolThumb(thumb_id);
-                            div.onclick = labnolIframe;
-                            v[n].appendChild(div);
-                        }
-                    });
-
-                function labnolThumb(id) {
-                    var thumb_src = "images/reportage-isolation-" + id;
-                    var thumb = '<img src="' + thumb_src  + '">';
-                        play = '<div class="play"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>';
-//                    return thumb.replace("ID", id) + play;
-                    return thumb + play;
-                }
-
-                function labnolIframe() {
-                    var iframe = document.createElement("iframe");
-                    var embed = "https://www.youtube.com/embed/ID?rel=0&modestbranding=1&autohide=0&showinfo=0&autoplay=1&controls=2";
-                    iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
-                    this.parentNode.replaceChild(iframe, this);
-                    var logo = document.getElementsByClassName("yt-uix-sessionlink");
-//                    for (i = 0; i < logo.length; i++) {
-//                        logo[i].style.display= "none";
-//                    }
-                }
-
-            </script>--}}{{--
-        </div>
-    </div>--}}
     <!-- Modal Youtube Videos-->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog reportage-video" role="document">
@@ -854,64 +511,6 @@
             </div>
         </div>
     </div>
-
-
-
-    {{--<div class="ModalVideo modal fade" id="myModalVideo1" tabindex="-1" role="dialog" aria-labelledby="ModalLabelVideo1" aria-hidden="true">
-        <div class="modal-dialog reportage-video" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <video id="video-reportage1" class="video-reportage" width="320" height="240" controls>
-                            <source src="{{ asset('images/videos/site-web-video1.mp4') }}" type="video/mp4">
-                            <source src="{{ asset('images/videos/site-web-video1.mp4') }}" type="video/webm">
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="ModalVideo modal fade" id="myModalVideo2" tabindex="-1" role="dialog" aria-labelledby="ModalLabelVideo2" aria-hidden="true">
-        <div class="modal-dialog reportage-video" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <video id="video-reportage2" class="video-reportage" width="320" height="240" controls>
-                            <source src="{{ asset('images/videos/site-web-video2.mp4') }}" type="video/mp4">
-                            <source src="{{ asset('images/videos/site-web-video2.mp4') }}" type="video/webm">
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="ModalVideo modal fade" id="myModalVideo3" tabindex="-1" role="dialog" aria-labelledby="ModalLabelVideo3" aria-hidden="true">
-        <div class="modal-dialog reportage-video" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <video id="video-reportage1" class="video-reportage" width="320" height="240" controls>
-                            <source src="{{ asset('images/videos/site-web-video3.mp4') }}" type="video/mp4">
-                            <source src="{{ asset('images/videos/site-web-video3.mp4') }}" type="video/webm">
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>--}}
-</section>
 @endsection
 @section('javascript')
     <script>

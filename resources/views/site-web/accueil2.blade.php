@@ -949,63 +949,6 @@
             </div>
         </div>
     </div>
-
-
-
-    {{--<div class="ModalVideo modal fade" id="myModalVideo1" tabindex="-1" role="dialog" aria-labelledby="ModalLabelVideo1" aria-hidden="true">
-        <div class="modal-dialog reportage-video" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <video id="video-reportage1" class="video-reportage" width="320" height="240" controls>
-                            <source src="{{ asset('images/videos/site-web-video1.mp4') }}" type="video/mp4">
-                            <source src="{{ asset('images/videos/site-web-video1.mp4') }}" type="video/webm">
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="ModalVideo modal fade" id="myModalVideo2" tabindex="-1" role="dialog" aria-labelledby="ModalLabelVideo2" aria-hidden="true">
-        <div class="modal-dialog reportage-video" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <video id="video-reportage2" class="video-reportage" width="320" height="240" controls>
-                            <source src="{{ asset('images/videos/site-web-video2.mp4') }}" type="video/mp4">
-                            <source src="{{ asset('images/videos/site-web-video2.mp4') }}" type="video/webm">
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="ModalVideo modal fade" id="myModalVideo3" tabindex="-1" role="dialog" aria-labelledby="ModalLabelVideo3" aria-hidden="true">
-        <div class="modal-dialog reportage-video" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <video id="video-reportage1" class="video-reportage" width="320" height="240" controls>
-                            <source src="{{ asset('images/videos/site-web-video3.mp4') }}" type="video/mp4">
-                            <source src="{{ asset('images/videos/site-web-video3.mp4') }}" type="video/webm">
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>--}}
 </section>
 @endsection
 @section('javascript')

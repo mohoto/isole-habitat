@@ -33,7 +33,7 @@ Route::get('/message', array(
 ));
 
 Route::get('/', array('as' => 'site-web.accueil', function () {
-    return view('site-web.accueil');
+    return view('site-web.accueil-sol');
 }));
 Route::get('/wizard', array('as' => 'site-web.wizard', function () {
     return view('site-web.wizard');
@@ -67,7 +67,7 @@ Route::post('rappel-web', [
 
 Route::post('formulaire-eligibilite' , [
     'as' => 'site-web.formulaire-eligibilite',
-    'uses' =>'FormController@saveForm'
+    'uses' =>'FormSolController@saveForm'
 ]);
 
 Route::post('formulaire-eligibilite-rappel/{id}' , [

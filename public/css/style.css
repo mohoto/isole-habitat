@@ -147,6 +147,9 @@
 .icon-fantastic.icon-icon-house:before {
   content: "\79";
 }
+.icon-fantastic.icon-icon-percent-20:before {
+  content: "\7a";
+}
 /*======= 1.Reset ======== */
 body {
   font-family: 'Roboto', sans-serif;
@@ -271,6 +274,9 @@ a:hover,a:focus,.a:active {
 
 .p-t-0 {
   padding-top: 0px !important;
+}
+.p-b-0 {
+  padding-bottom: 0px !important;
 }
 
 .w-full {
@@ -1048,7 +1054,13 @@ label.type-heure {
 }
 
 .section#section-presentation-video img {
-  width: 100%
+  width: 100%;
+}
+.section#section-presentation-video img#mascotte-isolation{
+  width: 350px;
+}
+.section#section-presentation-video .presentaion-couple {
+  line-height: 1.3;
 }
 .section#section-presentation-video .block-video {
   position: relative;
@@ -1366,11 +1378,6 @@ label.type-heure {
   font-weight: bold;
 }
 
-
-.section#section-questions-cee{
-
-}
-
 .section#section-societe{
   padding-bottom: 0;
 }
@@ -1423,6 +1430,18 @@ label.type-heure {
     width: 80%;
     display: block;
     margin:0 auto;
+}
+.section#section-zones .list-benefit-total {
+  list-style: none;
+}
+.section#section-zones .list-benefit-total li {
+  font-size: 1.6em;
+  line-height: 2;
+  font-weight: 400;
+}
+.section#section-zones .list-benefit-total li i{
+  color: #8ab326;
+  margin-right: 10px;
 }
 .section#section-zones .info-bureau i.bureau-name-icon {
   font-size: 3em;
@@ -1951,7 +1970,7 @@ label.type-heure {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 4px solid #ffffff;
+  border: 4px solid #496174;
   margin: 0 auto 5px auto;
 }
 #section-fonctionnement svg{
@@ -1959,7 +1978,8 @@ label.type-heure {
 }
 #section-fonctionnement .block-step  {
   position: relative;
-  width: 20%;
+  /*width: 20%;*/
+  width: 25%;
   text-align: center;
   padding: 0;
 }
@@ -1973,7 +1993,7 @@ label.type-heure {
   content: '';
   width: 100%;
   height: 5px;
-  background: #ffffff;
+  background: #496174;
   position: absolute;
 }
 #section-fonctionnement .block-step:before {
@@ -1986,7 +2006,7 @@ label.type-heure {
   margin-top: 30px;
   font-size: 1em;
   line-height: 1.4em;
-  color: #ffffff
+  color: #496174;
 }
 #section-fonctionnement .btn{
   font-size: 1.5em;
@@ -2643,6 +2663,7 @@ label.type-heure {
 header {
     position: relative;
     width: 100%;
+    padding: 0 50px;
 }
 .container-nav{
     align-items: end;
@@ -2669,7 +2690,7 @@ nav {
     line-height: 1;
     display: inline-block;
     position: relative;
-    padding: 15px 0px;
+    padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -2714,11 +2735,11 @@ nav {
 }
 #cssmenu  a {
     font-size: 1.1em;
-    color: #496174 !important;
+    color: #8ab326 !important;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 700;
-    padding: 5px 20px;
+    padding: 0 20px;
 }
 #cssmenu a.btn-navigation{
   font-size: 1.4em;
@@ -3231,8 +3252,8 @@ nav {
   left: 0;
   bottom:0;
   /*background-color: rgba(0, 0, 0, 0.85);*/
-  background-color: rgba(48, 62, 70, 0.75);
-  /*background-color: rgba(8, 99, 181, 0.85);*/
+  /*background-color: rgba(48, 62, 70, 0.75);*/
+  background-color: rgba(8, 99, 181, 0.85);
 }
 .section-overlay #close-overlay {
   position: absolute;
@@ -3327,7 +3348,8 @@ nav {
 }*/
 .wizard-card .choice.type_habitation h6{
   font-size: 1.5rem;
-  color: #999999;
+  /*color: #999999;*/
+  color: #496174;
   line-height: 1.4rem;
 }
 .wizard-card .choice.type_habitation i {
@@ -3338,7 +3360,8 @@ nav {
   height: 8rem;
   width: 8rem;
   border-radius: 50%;
-  color: #999999;
+  /*color: #999999;*/
+  color: #496174;
   margin: 0 auto 10px;
   border: 4px solid #CCCCCC;
   transition: all 0.2s;
@@ -3353,7 +3376,8 @@ nav {
 }*/
 .wizard-card .choice.type-chauffage h6{
   font-size: 1.2rem;
-  color: #999999;
+  /*color: #999999;*/
+  color: #496174;
 }
 .wizard-card .choice.type-chauffage i {
   font-size: 3.2rem;
@@ -3363,7 +3387,8 @@ nav {
   height: 5rem;
   width: 5rem;
   border-radius: 0;
-  color: #999999;
+  /*color: #999999;*/
+  color: #496174;
   margin: 0 auto 5px;
   border: 4px solid #CCCCCC;
   transition: all 0.2s;
@@ -3385,7 +3410,8 @@ nav {
 .wizard-card.card .card-checkboxes {
   background-color: #F3F2EE;
   box-shadow: none;
-  color: rgba(0, 0, 0, 0.3);
+  /*color: rgba(0, 0, 0, 0.3);*/
+  color: #496174;
 }
 .wizard-card.card #isolation .sub-title {
   margin-bottom: 0;
@@ -3419,7 +3445,8 @@ nav {
 
 .wizard-card .choice.nombre-personne h6{
   font-size: 2.2rem;
-  color: #999999;
+  /*color: #999999;*/
+  color: #496174;
   line-height: 2.2rem;
 }
 .wizard-card .choice.nombre-personne i {
@@ -3430,7 +3457,8 @@ nav {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  color: #999999;
+  /*color: #999999;*/
+  color: #496174;
   margin: 0 auto 20px;
   border: 4px solid #CCCCCC;
   transition: all 0.2s;
@@ -3452,7 +3480,8 @@ nav {
 }
 
 .wizard-card .choice.type_isolation i {
-  color: #999999;
+  /*color: #999999;*/
+  color: #496174;
   font-size: 5rem;
   line-height: 5rem;
 }
@@ -3482,7 +3511,8 @@ nav {
 
 .wizard-card .choice.revenus_reference h6{
   font-size: 1.5rem;
-  color: #999999;
+  /*color: #999999;*/
+  color: #496174;
   border: 4px solid #CCCCCC;
   padding: 30px 40px;
 }
@@ -3501,7 +3531,8 @@ nav {
   height: 100%;
   width: 100%;
   border-radius: 0;
-  color: #999999;
+  /*color: #999999;*/
+  color: #496174;
   margin: 0 auto 20px;
   border: 0px solid #CCCCCC;
   transition: all 0.2s;
@@ -3525,10 +3556,14 @@ nav {
 .wizard-card input.form-control{
   font-size: 2rem;
   text-align: center;
-  color: #999999;
+  /*color: #999999;*/
+  color: #496174;
   height: 60px;
   padding: 0px 0;
   line-height: 2rem;
+}
+.wizard-card .form-group.code-postal{
+  margin: 0 0 0 0;
 }
 .wizard-card #code_postal_block input.form-control{
   font-size: 3em;
@@ -3541,6 +3576,9 @@ nav {
   font-size: 20px;
   line-height: 1.42857;
   width: 100%;
+}
+.wizard-card .form-group label.control-label{
+  color: #496174;
 }
 /*************************/
 /*.wizard-card .choice.civilite h6{
@@ -3590,7 +3628,8 @@ nav {
 .wizard-card .choice.civilite .radio label{
   font-size: 22px;
   line-height: 1.42857;
-  color: #999999;
+  /*color: #999999;*/
+  color: #496174;
   font-weight: 400;
 }
 .wizard-card .choice.type_bail .radio label span,
@@ -3837,14 +3876,14 @@ nav {
 .wizard-card .choice.type_heure_rappel i {
   font-size: 90px;
   line-height: 80px;
-  color: #999999;
+  color: #496174;
 }
 .wizard-card .choice.type_heure_rappel .text-heure{
   margin-bottom: 0;
 }
 .wizard-card .choice.type_heure_rappel h6 {
   font-size: 1.3em;
-  color: #999999;
+  color: #496174;
 }
 .wizard-card .choice.type_heure_rappel:hover p {
   color: #8ab326;;

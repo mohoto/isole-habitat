@@ -79,7 +79,7 @@
 
         /*************************************************/
         //open/close lateral navigation
-        var overlay = document.querySelector("#section-overlay");
+        var overlay = document.querySelector("#section-overlay2");
         var btnFormulaire = document.querySelectorAll('.btn-formulaire');
         for(var i=0; i< btnFormulaire.length; i++){
             btnFormulaire[i].addEventListener('click', function(e){
@@ -153,7 +153,7 @@
             var id = $(this).attr("href");
             var speed = 750;
             $('html,body').animate({
-                scrollTop: $(id).offset().top
+                scrollTop: $(id).offset().top -100
             }, speed);
             return false;
         });

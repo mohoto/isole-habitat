@@ -105,7 +105,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-xs-12 col-md-10">
-                <h3 class="text-center mb-30 mt-50" data-color="orange">Le prix de l'isolation des combles <span class="gras_500">sans</span> le programme d'isolaion à 1€.</h3>
+                <h3 class="text-center mb-30 mt-50" data-color="orange">Le prix de l'isolation des combles <span class="gras_500">sans</span> le programme d'isolation à 1€.</h3>
                 <p>Le prix de l’isolation des combles perdus dépends de plusieurs paramètres tels que le type d’isolant choisi ou l'honoraire de l'artisan. Pour la pose d'une isolant avec une résistance thermique R=7 dans vos combles, il faut compter entre 20 et 40€ par mètre carré.</p>
                 <p>Il est tout à fait possible d’isoler vos combles perdus vous-même. Mais réaliser ce type de travaux sans passer par un professionnel ne vous permettra pas de bénéficier des aides disponibles mis en place par l'État. <span class="gras_500">Faites appel à des professionnels labellisé RGE</span> (Reconnu Garant de l’Environnement), agrées par l'État.</p>
                 <p data-color="vert">N'hésitez pas à <span class="gras_500"></span>profiter de l'isolation de vos combles pour 1€ symbolique et économisez jusqu'à 20% sur votre facture de chauffage.</p>

@@ -26,10 +26,10 @@ class CreateClientFormsTable extends Migration
             $table->string('codePostal');
             $table->string('departement');
             $table->string('rue')->nullable();
-            $table->string('revenu_fiscal');
+            $table->string('revenu_fiscal')->nullable();
             $table->string('numero_declarant_avis')->nullable();
             $table->string('reference_avis_fiscal')->nullable();
-            $table->tinyInteger('nombre_personne');
+            $table->tinyInteger('nombre_personne')->nullable();
             $table->string('type_bail')->default('propriétaire');
             $table->string('chauffage');
             $table->string('situation');

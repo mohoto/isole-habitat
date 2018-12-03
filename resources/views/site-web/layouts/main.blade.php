@@ -76,6 +76,16 @@
         <!-- End Google Tag Manager -->
     </head>
     <body  class="@yield('pageClass')">
+    <!-- facebook SDK -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.2&appId=322735138324093&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- End facebook SDK -->
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N97HNP2"
                       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -153,7 +163,7 @@
     <!--Formulaire éligibilité overlay-->
     {{--<div class="image-container set-full-height" style="background-image: url('plugins/wizard/assets/img/wizard-city.jpg')">
         <a href="" class="close-overlay">&times;</a>--}}
-    @include('site-web.layouts.formulaire-overlay')
+    @include('site-web.layouts.formulaire-overlay-sol')
     {{--</div>--}}
     <!--End Formulaire éligibilité overlay-->
     <div class="wrapper-content">
@@ -217,26 +227,29 @@
                     </div>
                     <div class="col-md-4">
                         <ul class="liens-footer">
-                            <li><a href="{{ route('site-web.isolation-combles') }}">L'isolation des combles</a></li>
+                            {{--<li><a href="{{ route('site-web.isolation-combles') }}">L'isolation des combles</a></li>--}}
                             {{--<li><a href="#">L'isolation des murs</a></li>--}}
                             {{--<li><a href="#">L'isolation des caves et garges</a></li>--}}
                             <li><a href="{{ route('site-web.societe') }}">Qui sommes-nous?</a></li>
                             <li><a href="{{ route('site-web.policy') }}">Politique de confidentialité</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
+                    {{--<div class="col-md-4">
                         <div class="d-flex flex-column align-items-center">
                             <div class="">
                                 <i class="ion-ios7-help-outline"></i><p class="besoin-aide">Besoin de conseils?</p>
                             </div>
                             <button class="btn btn-orange btn-rounded"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></button>
                             <p class="mt-10" data-color="bleue-clair" ">Lundi-vendredi   9h-20h</p>
-                            {{--<ul class="social-icons">
+                            --}}{{--<ul class="social-icons">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            </ul>--}}
+                            </ul>--}}{{--
                         </div>
+                    </div>--}}
+                    <div class="col-md-4">
+                        <div class="fb-page" data-href="https://www.facebook.com/isolehabitat/" data-tabs="timeline" data-height="200" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/isolehabitat/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/isolehabitat/">Isole Habitat</a></blockquote></div>
                     </div>
                     <div class="col-md-12">
                         <p class="text-muted copyright">© 2018. Tous droits réservés Presta Habitat.</p>
