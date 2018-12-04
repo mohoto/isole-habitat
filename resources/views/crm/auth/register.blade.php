@@ -28,7 +28,7 @@
                 </div>
                 <div class="btn-group bootstrap-select mb-20">
                     <select class="selectpicker" data-style="btn-success btn-custom" name="fonction">
-                        <option value="admin">Admin</option>
+                        <option value="admin">Administrateur</option>
                         <option value="secretaire">Secretaire</option>
                         <option value="commercial">Commercial</option>
                         <option value="technicien">Technicien</option>

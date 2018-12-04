@@ -34,6 +34,7 @@ class CreateClientFormsTable extends Migration
             $table->string('chauffage');
             $table->string('situation');
             $table->string('surface_maison')->nullable();
+            $table->string('surface_maison_demande')->nullable();
             $table->boolean('isolation_combles')->default(0)->nullable();
             $table->boolean('isolation_garage')->default(0)->nullable();
             $table->boolean('isolation_caves')->default(0)->nullable();

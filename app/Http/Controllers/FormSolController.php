@@ -28,7 +28,7 @@ class FormController extends Controller
 
         $habitation =$request->type_habitation;
         $chauffage =$request->type_chauffage;
-        $nbrFoyer = $request->nombre_personne;
+        $surface = $request->surface;
         $codePostal = $request->code_postal;
         $departement = substr($codePostal, 0, 2);
         $telephone = $request->telephone;
@@ -45,9 +45,6 @@ class FormController extends Controller
             $telephone_fixe = $telephone;
             $telephone_mobile = '';
         }
-        $revenu = $request->revenus_reference;
-        //$revenu = str_replace(" ", "", $revenu);
-        //$revenu = intval($revenu);
 
 
         /*Formulaire Wizard version2*/
@@ -88,25 +85,26 @@ class FormController extends Controller
         $clientForm->type_bail = $request->type_bail;
         $clientForm->isolation_garage = $request->isolation_garage;
         $clientForm->isolation_caves = $request->isolation_caves;
+        $clientForm->surface_maison = $request->surface;
         $clientForm->situation = $situation;
         $clientForm->save();
-        if($situation == 'eligible'){
+        /*if($situation == 'eligible'){
             Nexmo::message()->send([
                 'to'   => '+33762071832',
                 'from' => '+33762071836',
                 'text' => 'Nouvelle demande d\'isolation : ' .
                     ucfirst($situation) . " - " .
                     ucfirst($request->civilite) . ' ' . strtoupper($request->nom) . " - " .
+                    $request->surface . " - " .
                     $request->rue . " - " .
                     $request->code_postal . ' ' . strtoupper($ville)  . " - " .
                     $telephone_fixe . " - " .
                     $telephone_mobile . "."
             ]);
-        }
+        }*/
         return response()->json([
             'id' => $clientForm->id,
             'situation' => $situation,
-            'revenu' => $revenu,
             'habitation' => $habitation,
             'chauffage' => $chauffage,
         ]);

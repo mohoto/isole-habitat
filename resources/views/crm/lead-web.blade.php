@@ -43,11 +43,11 @@
                                         <h6 data-color="orange">Pas de demande de rappel</h6>
                                     @endif
                                     <p class="">{{ $clientform->dateFormatted()}}</p>
-                                    @if($clientform->isolation_combles)
+                                    {{--@if($clientform->isolation_combles)
                                         <h5 class="text-dark"><i class="far fa-check-square m-r-5" data-color="vert"></i>101 : Isolation des combles</h5>
                                     @else
                                         <h5 class="text-dark"><i class="far fa-check-square m-r-5" style="color: transparent"></i>101 : Isolation des combles</h5>
-                                    @endif
+                                    @endif--}}
                                     @if($clientform->isolation_garage)
                                         <h5 class="text-dark"><i class="far fa-check-square m-r-5" data-color="vert"></i>103 : Isolation du garage</h5>
                                     @else

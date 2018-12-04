@@ -90,7 +90,7 @@
 </section>
 <section class="section" id="section-presentation-video">
     <div class="container">
-        <div class="row justify-content-center align-items-end">
+        <div class="row justify-content-center align-items-center">
             <div class="col-md-5 order-2 order-md-1">
                 <h4 class="">L'isolation à 1 euro : <span class="gras_500">une réalité peu connue</span>.</h4>
                 <p>Peu de ménages savent qu'ils peuvent bénéficier de l'isolation de leur maison pour 1€ symbolique. Et pourtant, ce programme repose sur <span data-color="orange">une obligation de réalisation d’économies d’énergie imposée par l'Etat aux vendeurs d’énergie</span>.</p>
@@ -102,7 +102,7 @@
         </div>
         <div class="row justify-content-center align-items-center mt-40">
             <div class="col-md-5">
-                <img id="mascotte-isolation" class="rounded-circle" src="{{ asset('images/photo-couple-isolation.jpg') }}" alt="illustration mascotte isolation à 1 euro" />
+                <img id="mascotte-isolation" class="rounded-circle block-center" src="{{ asset('images/photo-couple-isolation.jpg') }}" alt="illustration mascotte isolation à 1 euro" />
             </div>
             <div class="col-md-5">
                 <h4 class="presentaion-couple">Ils ont isolé le garage et les caves de leur maison <span class="gras_500" data-color="vert">pour 1€</span> au lieu de <span class="gras_500" data-color="orange">4241€</span>.</h4>

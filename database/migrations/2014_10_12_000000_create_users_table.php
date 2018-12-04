@@ -18,10 +18,10 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->boolean('is_admin')->default(0)->nullable();
-            $table->boolean('is_commercial')->default(0)->nullable();
+            $table->string('role')->default(0)->nullable();
+            /*$table->boolean('is_commercial')->default(0)->nullable();
             $table->boolean('is_secretaire')->default(0)->nullable();
-            $table->boolean('is_technicien')->default(0)->nullable();
+            $table->boolean('is_technicien')->default(0)->nullable();*/
             $table->rememberToken();
             $table->timestamps();
         });

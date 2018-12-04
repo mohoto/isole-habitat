@@ -9,7 +9,8 @@
         <meta property="og:url"           content="https://isole-habitat.fr" />
         <meta property="og:type"          content="website" />
         <meta property="og:title"         content="Isoler votre maison pour 1€" />
-        <meta property="og:description"   content="Profitez du programme d'isolation à 1€ : Votre intérieur frais et agréable en été. En hiver, vous dépensez moins d'énergie pour vous chauffer et vous économisez jusqu'à 30% sur votre facture de chauffage. Isolations des combles, garages et caves." />
+        <meta property="og:description"   content="Profitez du programme d'isolation de votre garage et de vos caves pour 1€ et économisez jusqu'à 20% sur votre facture de chauffage.">
+        <meta name="twitter:image" content="{{ asset('images/image-facebook-share.jpg') }}">" />
         <meta property="og:locale"        content="fr_FR" />
         <meta property="og:image"         content="{{ asset('images/image-facebook-share.jpg') }}" />
         <meta property="og:image:width" content="400" />
@@ -18,7 +19,7 @@
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@isolehabitat">
         <meta name="twitter:title" content="Isoler votre maison pour 1€">
-        <meta name="twitter:description" content="Profiter du programme d'isolation à 1€ et économisez jusqu'à 30% sur votre facture de chauffage. Isolations des combles, garages et caves.">
+        <meta name="twitter:description" content="Profiter du programme d'isolation à 1€ et économisez jusqu'à 20% sur votre facture de chauffage.garages et caves.">
         <meta name="twitter:image" content="{{ asset('images/image-facebook-share.jpg') }}">
         <meta name="twitter:image:width" content="640">
         <meta name="twitter:image:height" content="360">
@@ -282,7 +283,7 @@
         <!--  Plugin for the Wizard -->
         <script src="{{ asset('plugins/wizard/assets/js/jquery.bootstrap.js') }}" type="text/javascript"></script>
         <!--  Plugin for the Wizard -->
-        <script src="{{ asset('plugins/wizard/assets/js/material-bootstrap-wizard.js') }}"></script>
+        <script src="{{ asset('plugins/wizard/assets/js/material-bootstrap-wizard-sol.js') }}"></script>
         <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
         <script src="{{ asset('plugins/wizard/assets/js/jquery.validate.min.js') }}"></script>
         <!-- Select -->

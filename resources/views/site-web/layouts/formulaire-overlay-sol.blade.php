@@ -149,16 +149,13 @@
                                         <h4 class="info-text">Préciser la surface totale à isoler.</h4>
                                     </div>
                                     <div class="row row-block-personne justify-content-center mt-30">
-                                        <div class="col-12 col-sm-4">
-                                            <select class="selectpicker" name="nombre_personne">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
+                                        <div class="col-12 col-sm-6">
+                                            <select class="selectpicker" name="surface">
+                                                <option value="1">Moins de 40m2</option>
+                                                <option value="2">Entre 40 et 60m2</option>
+                                                <option value="3">Entre 60 et 80m2</option>
+                                                <option value="4">Entre 80 et 100m2</option>
+                                                <option value="5">Plus de 100m2</option>
                                             </select>
                                         </div>
                                     </div>
@@ -360,7 +357,7 @@
                                     </div>
                                     <div class="">
                                         <input type='button' class='btn btn-next btn-fill btn-vert btn-wd' name='next' value='Suivant' />
-                                        <input type='button' id="btn-finish-test" class='btn btn-finish btn-fill btn-vert btn-wd' name='finish' value='Tester' />
+                                        <input type='button' id="btn-finish-test" class='btn btn-finish btn-fill btn-vert btn-wd' name='finish' value="S'inscrire" />
                                     </div>
                                 </div>
                             </div>
