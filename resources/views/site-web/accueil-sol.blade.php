@@ -109,7 +109,51 @@
                 <p>Frédéric et Laurence ont fait <span class="gras_500" data-color="vert">financé en totalité</span> l'isolation de leur garage et de leurs caves <span class="gras_500">grâce à notre programme et au dispositif CEE mis en place par l'etat.</p>
                 <p><span class="gras_500" data-color="orange">Tous les foyers peuvent en profiter, sans aucune condition de revenu</span>. Nous nous occupons de toutes les formalités.</p>
             </div>
+        </div><div class="row mt-50" id="section-comment">
+            <div class="col-md-12">
+                <h3 class="text-center  mb-30"><span class="gras_500" data-color="vert">Inscrivez-vous au programme</span> et profitez de l'isolation des sols de votre maison pour 1€</h3>
+                <div class="d-flex justify-content-center">
+                    <ul class="list-benefit-total">
+                        <li><i class="fas fa-arrow-right"></i>Une réponse en 48 heures</li>
+                        <li><i class="fas fa-arrow-right"></i>Votre isolation sous 7 jours</li>
+                        <li><i class="fas fa-arrow-right"></i>Aucun frais à avancer pour votre isolation</li>
+                        <li><i class="fas fa-arrow-right"></i>Pour 1€ symbolique</li>
+                        <li><i class="fas fa-arrow-right"></i>Dispositif CEE validé par l'Etat</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <div class="row mt-50" id="section-fonctionnement">
+            <div class="col-md-12">
+                <div class="steps-timeline d-flex">
+                    <div class="block-step" id="block-step1">
+                        <div class="circle-block-step" id="circle1">
+                            <i class="ion-checkmark-round"></i>
+                        </div>
+                        <h3 class="steps-name">Inscrivez-vous</br>à notre programme</h3>
+                    </div>
+                    <div class="block-step" id="block-step2">
+                        <div class="circle-block-step" id="circle2">
+                            <i class="ion-ios7-telephone"></i>
+                        </div>
+                        <h3 class="steps-name">On vous rapelle</br>sous 48 heures</h3>
+                    </div>
+                    <div class="block-step" id="block-step3">
+                        <div class="circle-block-step" id="circle4">
+                            <i class="ion-hammer"></i>
+                        </div>
+                        <h3 class="steps-name">Travaux sous 7 jours</br>En moins de 4 heures</h3>
+                    </div>
+                    <div class="block-step" id="block-step4">
+                        <div class="circle-block-step" id="circle5">
+                            <i class="ion-home"></i>
+                        </div>
+                        <h3 class="steps-name">Votre maison est isolée</br>Commencez à économiser</h3>
+                    </div>
+                </div><!-- /.steps-timeline -->
+            </div>
+        </div>
+
     </div>
 </section>
 <section class="section" id="section-information" data-background-color="bleue-clair">
@@ -138,7 +182,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2 class="title mb-40" data-color="vert">Les types d'isolation auxquels vous avez droit :</h2>
+                <h2 class="mb-40" data-color="vert">Les types d'isolation auxquels vous avez droit :</h2>
                 <h3 class="mt-20" data-color="bleue">Avec l’isolation à 1€, vous pouvez cumuler ces 2 types d’isolation</h3>
                 <h4 class="mt-20" data-color="orange">Surface illimitée!</h4>
             </div>
@@ -263,7 +307,7 @@
                 <p class="">En isolant votre maison, vous <span class="gras_500" data-color="orange">consommez moins d'énergie</span> pour vous chauffer <span class="gras_500" data-color="orange">en hiver</span> et vous évitez la <span class="gras_500" data-color="orange">chaleur inconfortable</span> l'été.</p>
                 <p>En consommant moins d'énergie, vous <span class="gras_500" data-color="orange">économisez sur votre facture</span> de chauffage.</p>
             </div>
-            <div class="col-md-5 col-sm-12 block-question-title">
+            <div class="col-md-5 col-sm-12 mt-xs-30 block-question-title">
                 <h3 class="">Qui paye pour mes travaux d'isolation ?</h3>
                 <p><span class="gras_500" data-color="orange">Ce sont les fourniseurs d'énergie</span> : Total, Elf, EDF, Poweo.., qui financent vos travaux d'isolation.</p>
                 <p><span class="gras_500" data-color="orange">L'État</span>, par le biais de la loi "POPE" (Loi n° 2005-781 du 13 juillet 2005, loi de Programmation fixant les Orientations de la Politique Energétique), <span class="gras_500" data-color="orange">oblige ces fournisseurs d'énergie à financer certains travaux d'isolation, à travers le dispositif des certificats d’économies d’énergie (CEE)</span>, dans les foyers en précarité énergétique, sous peine d'amendes.</p>
@@ -291,9 +335,9 @@
                 <h3 class="">Je suis locataire : est-ce que je peux en bénéficier ?</h3>
                 <p>Bien sûr, ce dispositif permet <span class="gras_500" data-color="orange">aux locataires et aux propriétaires</span> d'isoler leur maison. Même si vous avez déjà profité d'autres subventions de l'État (crédit d'impôt, aides de l'Anah, prime rénovation...), vous pouvez prétendre à l'isolation à 1 euro. <span class="gras_500" data-color="orange">Cette aide est cumulable avec tous les autres travaux d’aménagement</span> pour réduire la consomation énergétique.</p>
             </div>
-            <div class="col-md-5 col-sm-12 block-question-title">
+            <div class="col-md-5 col-sm-12 mt-xs-30 block-question-title">
                 <h3 class="">Comment je peux profiter de cette aide ?</h3>
-                <p class="gras_500" data-color="orange">Seulement 2 conditions sont nécessaires pour être éligible au programme d'isolation à 1 euro :</p>
+                <p class="gras_500" data-color="orange">Seulement 2 conditions sont nécessaires pour être éligible au programme d'isolation des sols pour 1€ :</p>
                 <p><i class="fa fa-check mr-10" aria-hidden="true" data-color="vert"></i>Ne pas se chauffer uniquement à l'éléctricité</p>
                 {{--<p><i class="fa fa-check mr-10" aria-hidden="true" data-color="vert"></i>Ne pas dépasser le plafond de revenus définit par l'ADEME*</p>--}}
                 <p><i class="fa fa-check mr-10" aria-hidden="true" data-color="vert"></i>Habiter une maison dont la construction date de plus de 2 ans.</p>
@@ -314,50 +358,6 @@
                 <p>Vous habitez en  <span class="gras_500" data-color="vert">zone H1</span>, dans la région des <span class="gras_500" data-color="vert">Hauts-de-France</span>, en <span class="gras_500" data-color="vert">Normandie</span>, en <span class="gras_500" data-color="vert">Ile-de-France</span>, dans le <span class="gras_500" data-color="vert">Grand-Est</span>, en <span class="gras_500" data-color="vert">Centre Val-de-Loire</span>, en <span class="gras_500" data-color="vert">Bourgogne-Franche-Comté</span>, en <span class="gras_500" data-color="vert">Auvergne-Rhones-Alpes</span>, vous pouvez bénificier de l'isolation de votre maison pour 1€, sous conditions d'éligibilité.</p>
                 {{--<p class="mt-40"><span class="gras_500" data-color="vert">Ce dispositif va être étendu à d'autres régions</span> de France. Nous vous proposons de vous tenir informé des dispositions qui seront prises pour bénificier de l'isolation à 1€ dans votre région.</p>
                 <a href="" class="btn btn-custom mt-30">Je veux rester informé</a>--}}
-            </div>
-        </div>
-        <div class="row mt-50" id="section-comment">
-            <div class="col-md-12">
-                <h3 class="text-center  mb-30"><span class="gras_500" data-color="vert">Inscrivez-vous au programme</span> et profitez de l'isolation des sols de votre maison pour 1€</h3>
-                <div class="d-flex justify-content-center">
-                    <ul class="list-benefit-total">
-                        <li><i class="fas fa-arrow-right"></i>Une réponse en 48 heures</li>
-                        <li><i class="fas fa-arrow-right"></i>Votre isolation sous 7 jours</li>
-                        <li><i class="fas fa-arrow-right"></i>Aucun frais à avancer pour votre isolation</li>
-                        <li><i class="fas fa-arrow-right"></i>Pour 1€ symbolique</li>
-                        <li><i class="fas fa-arrow-right"></i>Dispositif CEE validé par l'Etat</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-50" id="section-fonctionnement">
-            <div class="col-md-12">
-                <div class="steps-timeline d-flex">
-                    <div class="block-step" id="block-step1">
-                        <div class="circle-block-step" id="circle1">
-                            <i class="ion-checkmark-round"></i>
-                        </div>
-                        <h3 class="steps-name">Inscrivez-vous</br>à notre programme</h3>
-                    </div>
-                    <div class="block-step" id="block-step2">
-                        <div class="circle-block-step" id="circle2">
-                            <i class="ion-ios7-telephone"></i>
-                        </div>
-                        <h3 class="steps-name">On vous rapelle</br>sous 48 heures</h3>
-                    </div>
-                    <div class="block-step" id="block-step3">
-                        <div class="circle-block-step" id="circle4">
-                            <i class="ion-hammer"></i>
-                        </div>
-                        <h3 class="steps-name">Travaux sous 7 jours</br>En moins de 4 heures</h3>
-                    </div>
-                    <div class="block-step" id="block-step4">
-                        <div class="circle-block-step" id="circle5">
-                            <i class="ion-home"></i>
-                        </div>
-                        <h3 class="steps-name">Votre maison est isolée</br>Commencez à économiser</h3>
-                    </div>
-                </div><!-- /.steps-timeline -->
             </div>
         </div>
     </div>
@@ -406,7 +406,7 @@
                         <h2 class="mb-30" data-color="bleue">Le label <span class="gras_700" data-color="vert">RGE Qualibat </span>: Un gage de <span class="gras_500">qualité :</span></h2>
                         <p><span class="gras_500">Le label RGE(Reconnu Garant de l'environnement)</span> est un signe de qualité délivré à une entreprise qui remplit certains critères lors de la réalisation de travaux d'économie d'énergie dans les logements(isolation thermique, installation d'équipement utilisant des énergies renouvelables...).</p>
                         <p class="gras_500">Le label RGE vous donne la garantie que cette entreprise est reconnue par l'état.</p>
-                        <p class="gras_500">Nous faisons appel à une entreprise RGE pour faire vos travaux d'isolation, ce qui vous vous donne droit à l'attribution de certains aides publiques.</p>
+                        <p class="gras_500">Nous faisons appel à une entreprise RGE pour faire vos travaux d'isolation, ce qui vous donne droit à l'attribution de certains aides publiques.</p>
                     </div>
                 </div>
             </div>
@@ -457,11 +457,11 @@
     <div class="container">
         <div class="row align-self-stretch">
             <div class="col-sm-12 text-center">
-                <h2 class="text-white mb-40">Ils ont profité de l'isolation à 1€</h2>
+                <h2 class="text-white mb-40">Ils ont profité de l'isolation des sols pour 1€</h2>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column testimonial-block">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
-                <p class="testimonial-content">J'ai fait le test, un conseiller m'a rappelé le lendemain pour m'expliquer la suite. Un technicien est venu pour prendre les mesures. <span class="gras_500">1 semaine après, ils sont passés pour poser l'isolation</span>. Ils m'ont donné tout de suite ma facture avec juste 1€ symbolique à payer. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                <p class="testimonial-content">J'ai fait la demande, un conseiller m'a rappelé le lendemain pour m'expliquer la suite. <span class="gras_500">Une semaine après, ils sont passés pour poser l'isolation</span>. Ils m'ont donné tout de suite ma facture avec juste 1€ symbolique à payer. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                 <div class="info-testimonial">
                     <img src="{{ asset('images/photo-temoignage1.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
                     <div class="info-testimonial-client">
@@ -472,7 +472,7 @@
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column testimonial-block">
                 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
-                <p class="testimonial-content">Des amis nous ont parlé de l'isolation à 1€. <span class="gras_500"></span> On a isolé nos combles et le garage. Cet hiver, On a diminué le chauffage dans la maison et il faisait toujours aussi bon à l'intérieur. On attend de voir ce que donne l'isolation en été. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
+                <p class="testimonial-content">Des amis nous ont parlé de l'isolation à 1€. On a isolé le garage et les sous-sols de la maison. <span class="gras_500">On a dèjà diminué le chauffage dans la maison et il fait toujours aussi bon à l'intérieur</span>. On attend de voir ce que donne l'isolation en été. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
                 <div class="info-testimonial">
                     <img src="{{ asset('images/photo-temoignage2.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
                     <div class="info-testimonial-client">
