@@ -6,11 +6,11 @@
         <meta name="description" content="">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="fb:app_id" content="322735138324093" />
         <meta property="og:url"           content="https://isole-habitat.fr" />
         <meta property="og:type"          content="website" />
-        <meta property="og:title"         content="Isoler votre maison pour 1€" />
+        <meta property="og:title"         content="Isolez votre maison pour 1€" />
         <meta property="og:description"   content="Profitez du programme d'isolation de votre garage et de vos caves pour 1€ et économisez jusqu'à 20% sur votre facture de chauffage.">
-        <meta name="twitter:image" content="{{ asset('images/image-facebook-share.jpg') }}">" />
         <meta property="og:locale"        content="fr_FR" />
         <meta property="og:image"         content="{{ asset('images/image-facebook-share.jpg') }}" />
         <meta property="og:image:width" content="400" />
