@@ -16,15 +16,23 @@ Route::get('laravel-version', function()
     return "Your Laravel version is ".$laravel::VERSION;
 });
 
-Route::get('ville', function(){
+Route::get('departement', function(){
     $GeoApiFr = new GeoApiFr;
     $datas = $GeoApiFr
         ->communes()
         ->fields(array('departement', 'region', 'nom'))
         ->search('codeDepartement', 77);
-    print_r($datas);
+    //print_r($datas);
     //print_r($datas['datas'][0]);
-    //echo $ville = $datas['datas'][0]['nom'];
+    echo $ville = $datas['datas'][0]['nom'];
+});
+Route::get('ville', function(){
+    $GeoApiFr = new GeoApiFr;
+    $datas = $GeoApiFr
+        ->communes()
+        ->fields(array('departement', 'codeDepartement', 'region', 'nom'))
+        ->search('codePostal', 92220);
+    echo $ville = $datas['datas'][0]['nom'];
 });
 
 Route::get('/message', array(
@@ -67,6 +75,10 @@ Route::post('rappel-web', [
 
 Route::post('formulaire-eligibilite' , [
     'as' => 'site-web.formulaire-eligibilite',
+    'uses' =>'FormController@saveForm'
+]);
+Route::post('formulaire-eligibilite-sol' , [
+    'as' => 'site-web.formulaire-eligibilite-sol',
     'uses' =>'FormSolController@saveForm'
 ]);
 

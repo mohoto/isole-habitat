@@ -983,7 +983,7 @@ h1, h2, h3, h4{
 }
 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
   width: 100%;
-  border: 2px solid #CCCCCC;
+  /*border: 2px solid #CCCCCC;*/
 }
 .bootstrap-select.show > .dropdown-menu > .dropdown-menu li a{
   display: block;
@@ -997,7 +997,7 @@ h1, h2, h3, h4{
 }
 .bootstrap-select .btn {
   font-size: 18px;
-  background-color: #ffffff;
+  background-color: #F3F2EE;
 }
 /***********/
 #phoneModal .assistace_phone_img{
@@ -3332,14 +3332,14 @@ nav {
 }*/
 
 .section-overlay .bg-overlay {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   top: 0;
   left: 0;
   bottom:0;
   /*background-color: rgba(0, 0, 0, 0.85);*/
   /*background-color: rgba(48, 62, 70, 0.75);*/
-  background-color: rgba(8, 99, 181, 0.85);
+  background-color: rgba(8, 99, 181, 0.90);
 }
 .section-overlay #close-overlay {
   position: absolute;
@@ -3369,7 +3369,7 @@ nav {
   height: 1rem;
   line-height: 1rem;
   color: #fff;
-  background-color: #8ab326;
+  background-color: #ee7626;
   transition: width .6s ease;
 }
 .wizard-card .btn.btn-fill.btn-next,
@@ -3378,8 +3378,10 @@ nav {
 }
 .wizard-card .btn.btn-fill.btn-previous{
   margin-left: 20px;
-  background-color: #999999;
-  color: #ffffff;
+  /*background-color: #999999;
+  color: #ffffff;*/
+  background-color: #F3F2EE;
+  color: #496174;
 }
 .wizard-card #eligibForm{
   position: relative;
@@ -3413,11 +3415,12 @@ nav {
   font-size: 3em;
 }
 .wizard-card .sub-title {
-  color: #496174;
+  /*color: #496174;*/
+  color: #ebeef1;
 }
 .wizard-card h6{
   font-size: 1.5em;
-  color: #999999;
+  color: #496174;
 }
 .btn.btn-fill{
   padding: 16px 16px;
@@ -3439,17 +3442,18 @@ nav {
   line-height: 1.4rem;
 }
 .wizard-card .choice.type_habitation i {
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 7rem;
 }
 .wizard-card .choice.type_habitation .icon {
-  height: 8rem;
-  width: 8rem;
+  /*height: 8rem;
+  width: 100%;*/
   border-radius: 50%;
   /*color: #999999;*/
   color: #496174;
   margin: 0 auto 10px;
-  border: 4px solid #CCCCCC;
+  /*border: 4px solid #CCCCCC;*/
+  border: none;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
 }
@@ -3470,13 +3474,13 @@ nav {
   line-height: 5.2rem;
 }
 .wizard-card .choice.type-chauffage .icon {
-  height: 5rem;
-  width: 5rem;
+  /*height: 5rem;
+  width: 5rem;*/
   border-radius: 0;
   /*color: #999999;*/
   color: #496174;
-  margin: 0 auto 5px;
-  border: 4px solid #CCCCCC;
+  margin: 0 5px;
+  /*border: 4px solid #CCCCCC;*/
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
 }
@@ -3581,10 +3585,10 @@ nav {
   color: #8ab326;
 }
 .wizard-card[data-color="vert"] .choice.actived .icon {
-  -webkit-border-color: #8ab326;
+  /*-webkit-border-color: #8ab326;
   -moz-border-color: #8ab326;
   -ms-border-color: #8ab326;
-  border-color: #8ab326;
+  border-color: #8ab326;*/
   color: #8ab326;
 }
 .wizard-card[data-color="vert"] .choice.actived.type_bail .icon {
@@ -3643,7 +3647,8 @@ nav {
   font-size: 2rem;
   text-align: center;
   /*color: #999999;*/
-  color: #496174;
+  /*color: #496174;*/
+  color : #ffffff;
   height: 60px;
   padding: 0px 0;
   line-height: 2rem;
@@ -3664,7 +3669,8 @@ nav {
   width: 100%;
 }
 .wizard-card .form-group label.control-label{
-  color: #496174;
+  /*color: #496174;*/
+  color: #ffffff;
 }
 /*************************/
 /*.wizard-card .choice.civilite h6{
@@ -3694,7 +3700,7 @@ nav {
 }
 .wizard-card .choice.type_bail .radio label .circle,
 .wizard-card .choice.civilite .radio label .circle{
-  border: 1px solid rgba(0,0,0, .54);
+  border: 1px solid rgba(255,255,255, .54);
   height: 30px;
   width: 30px;
   border-radius: 100%;
@@ -3715,7 +3721,8 @@ nav {
   font-size: 22px;
   line-height: 1.42857;
   /*color: #999999;*/
-  color: #496174;
+  /*color: #496174;*/
+  color: #ffffff;
   font-weight: 400;
 }
 .wizard-card .choice.type_bail .radio label span,
@@ -3761,7 +3768,8 @@ nav {
   transform: translatex(-50%);
   width: 100%;
   height: 100%;
-  background-color: #FFFFFF;
+  /*background-color: #FFFFFF;*/
+
   padding: 20px 20px;
 }
 .phoneForm-block{
@@ -3962,14 +3970,16 @@ nav {
 .wizard-card .choice.type_heure_rappel i {
   font-size: 90px;
   line-height: 80px;
-  color: #496174;
+  /*color: #496174;*/
+  color: #ffffff;
 }
 .wizard-card .choice.type_heure_rappel .text-heure{
   margin-bottom: 0;
 }
 .wizard-card .choice.type_heure_rappel h6 {
   font-size: 1.3em;
-  color: #496174;
+  /*color: #496174;*/
+  color: #ebeef1;
 }
 .wizard-card .choice.type_heure_rappel:hover p {
   color: #8ab326;;
@@ -4324,6 +4334,13 @@ nav {
   }
   .wizard-card .choice.type_heure_rappel i{
     font-size: 70px;
+  }
+  .wizard-title{
+    font-size: 1.25em;
+    line-height: 1.5;
+  }
+  .wizard-sub-title{
+    font-size: 1em;
   }
 }
 

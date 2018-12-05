@@ -27,7 +27,7 @@ $(document).ready(function(){
     $('[rel="tooltip"]').tooltip();
 
     // Code for the Validator
-    /*var $validator = $('#eligibForm').validate({
+    /*var $validator = $('#eligibFormSol').validate({
 		  rules: {
 		      code_postal: {
 		      required: true,
@@ -52,7 +52,7 @@ $(document).ready(function(){
     // Wizard Initialization
     function validateRadio(type){
         var valid = false;
-        var z = document.forms['eligibForm'].elements[type];
+        var z = document.forms['eligibFormSol'].elements[type];
         // loop through list of radio buttons
         for (var i=0; i<z.length; i++) {
             if (z[i].checked == true) { // radio checked?
@@ -66,7 +66,7 @@ $(document).ready(function(){
 
     function validateSelect(type){
         var valid = false;
-        var z = document.forms['eligibForm'].elements[type];
+        var z = document.forms['eligibFormSol'].elements[type];
         var option = z.children;
         // loop through list of radio buttons
         for (var i=0; i<option.length; i++) {
@@ -94,7 +94,7 @@ $(document).ready(function(){
 
     function validateInputForm(type){
         var valid = true;
-        var inputs = document.getElementById("eligibForm").elements;
+        var inputs = document.getElementById("eligibFormSol").elements;
         var inputByName = inputs[type];
             if(inputByName.value == "" ){
                 valid = false;
@@ -162,7 +162,7 @@ $(document).ready(function(){
         onNext: function(tab, navigation, index) {
             mobile_device = $(document).width() < 600;
 
-        	/*var $valid = $('#eligibForm').valid();
+        	/*var $valid = $('#eligibFormSol').valid();
         	if(!$valid) {
         		$validator.focusInvalid();
         		return false;
@@ -431,15 +431,16 @@ $(document).ready(function(){
                 }
             }
             else{
-                var data = $('#eligibForm').serializeArray();
-
+                var data = $('#eligibFormSol').serializeArray();
                 $('.wizard-navigation').hide();
-                $('tab-pane.active').hide();
+                $('.tab-pane').removeClass('active');
+                $('.progress').hide();
                 $('#phoneForm').show();
                 $('.btn-finish').hide();
                 $('.btn-previous').hide();
                 $('.spinner-block').show();
                 console.log(data);
+
                 $.ajaxSetup({
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -447,36 +448,39 @@ $(document).ready(function(){
                 });
                 $.ajax({
                     type: 'post',
-                    url: 'formulaire-eligibilite',
+                    url: 'formulaire-eligibilite-sol',
                     data: data,
-                    dataType: 'JSON',
-                    success: function(response) {
-                        if(response.situation == 'elgible'){
-                            btnPhoneSubmit.setAttribute('data-id', response.id);
-                            setTimeout(function () {
-                                $('.spinner-block').hide();
-                                $('#btn-phone-test').show();
-                                $('#info-resultat-ok').show();
-                            }, 1000);
-                        }
-                        else if(response.situation == 'classique'){
-                            if(response.habitation == 'appartement'){
-                                $('#text-cause-none').text("Vous devez habiter dans une maison individuelle pour bénéficier de notre programme.");
-                            }
-                            else if(response.habitation == 'maison') {
-                                if (response.chauffage == 'electrique') {
-                                    $('#text-cause-none').text("Vous vous chauffez uniquement à l'électricité. Vous ne pouvez pas bénéficier de notre programme");
-                                }
-                            }
-                            else{
-                                $('#text-cause-none').text("Vos revenus dépassent le plafond de revenus définit par l'ADEME.");
-                            }
-                            setTimeout(function () {
-                                $('.spinner-block').hide();
-                                $('#info-resultat-none').show();
-                            }, 1000);
-                        }
+                    dataType: 'JSON'
+                })
+                .done(function(response) {
+                    if(response.situation == 'eligible'){
+                        btnPhoneSubmit.setAttribute('data-id', response.id);
+                        setTimeout(function () {
+                            $('.spinner-block').hide();
+                            $('#btn-phone-test').show();
+                            $('#info-resultat-ok').show();
+                        }, 1000);
                     }
+                    else if(response.situation == 'classique'){
+                        if(response.habitation == 'appartement'){
+                            $('#text-cause-none').text("Vous devez habiter dans une maison individuelle pour bénéficier de notre programme.");
+                        }
+                        else if(response.habitation == 'maison') {
+                            if (response.chauffage == 'electrique') {
+                                $('#text-cause-none').text("Vous vous chauffez uniquement à l'électricité. Vous ne pouvez pas bénéficier de notre programme");
+                            }
+                        }
+                        else{
+                            $('#text-cause-none').text("Vos revenus dépassent le plafond de revenus définit par l'ADEME.");
+                        }
+                        setTimeout(function () {
+                            $('.spinner-block').hide();
+                            $('#info-resultat-none').show();
+                        }, 1000);
+                    }
+                })
+                .fail(function(){
+                    alert('pas enregistré');
                 });
             }
 

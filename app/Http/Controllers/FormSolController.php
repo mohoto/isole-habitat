@@ -9,7 +9,7 @@ use Vicopo\Vicopo;
 use Nexmo\Laravel\Facade\Nexmo;
 Use Illuminate\Contracts\Session\Session;
 use Phelium\Component\GeoApiFr;
-class FormController extends Controller
+class FormSolController extends Controller
 {
 
     public function storeRappel()
@@ -72,6 +72,7 @@ class FormController extends Controller
             ->search('codePostal', $codePostal);
         $ville = $datas['datas'][0]['nom'];
 
+
         $clientForm = new ClientForm();
         $clientForm ->type_habitation = $habitation;
         $clientForm->civilite = $request->civilite;
@@ -88,6 +89,24 @@ class FormController extends Controller
         $clientForm->surface_maison = $request->surface;
         $clientForm->situation = $situation;
         $clientForm->save();
+
+        /*$clientForm = ClientForm::create([
+        'type_habitation' => $habitation,
+        'civilite' => $request->civilite,
+        'nom' => $request->nom,
+        '$telephone_fixe' => $telephone_fixe,
+        'telephone_mobile' => $telephone_mobile,
+        'codePostal' => $request->code_postal,
+        'departement' => $departement,
+        'ville'  => 'Bagneux',
+        'chauffage' => $request->type_chauffage,
+        'type_bail' => $request->type_bail,
+        'isolation_garage' => $request->isolation_garage,
+        'isolation_caves' => $request->isolation_caves,
+        'surface_maison' => $request->surface,
+        'situation' => $situation,
+            ]);*/
+
         /*if($situation == 'eligible'){
             Nexmo::message()->send([
                 'to'   => '+33762071832',
@@ -108,6 +127,12 @@ class FormController extends Controller
             'habitation' => $habitation,
             'chauffage' => $chauffage,
         ]);
+        /*if($clientForm){
+            return view('site-web.isolation-combles');
+        }else{
+            return view('site-web.qui-sommes-nous');
+        }*/
+
 
 
     }
@@ -171,7 +196,8 @@ class FormController extends Controller
         }else{
             $situation = 'classique';
         }*/
-        $telephone = $request->telephone;
+
+        /*$telephone = $request->telephone;
         $telephoneSubs = substr($telephone, 0, 2);
         if($telephoneSubs == 06){
             echo 'est un mobile';
@@ -183,7 +209,7 @@ class FormController extends Controller
         else{
             echo 'est un fixe';
 
-        }
+        }*/
         //return view('site-web.test-revenu', ['telephone' => $telephoneSubs, 'telephone_mobile' => $telephone_mobile]);
     }
 
