@@ -3556,6 +3556,20 @@ nav {
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
 }
+.card.card-radio {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: none;
+  border-radius: .25rem;
+  padding: 10px 0;
+}
 .card.card-checkboxes {
   position: relative;
   display: -ms-flexbox;

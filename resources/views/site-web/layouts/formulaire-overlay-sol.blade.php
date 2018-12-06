@@ -30,14 +30,14 @@
                                         <h4 class="info-text">Quelle est votre type d'habitation?</h4>
                                     </div>
                                     <div class="row justify-content-md-center row_type_habitation mt-md-30">
-                                        <div class="col-xs-12 col-md-4">
+                                        <div class="col-6 col-md-4">
                                             <div class="choice type_habitation" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
                                                 <input type="radio" class="type_habitation" name="type_habitation" value="maison">
                                                 {{--<div class="icon">
                                                     <i class="icon-fantastic icon-icon-house"></i>
                                                 </div>
                                                 <h6>Maison</h6>--}}
-                                                <div class="card card-checkboxes card-hover-effect">
+                                                <div class="card card-radio card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-icon-house"></i>
                                                         <h6>Maison</h6>
@@ -45,14 +45,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-md-4">
+                                        <div class="col-6 col-md-4">
                                             <div class="choice type_habitation" id="btn-maison" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
                                                 <input type="radio" class="type_habitation" name="type_habitation" value="appartement">
                                                 {{--<div class="icon">
                                                     <i class="icon-fantastic icon-icon-appartement"></i>
                                                 </div>
                                                 <h6>Appartement</h6>--}}
-                                                <div class="card card-checkboxes card-hover-effect">
+                                                <div class="card card-radio card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-icon-appartement"></i>
                                                         <h6>Appartement</h6>
@@ -77,7 +77,7 @@
                                                     <i class="icon-fantastic icon-icon-chauffage-electricite2"></i>
                                                 </div>
                                                 <h6>Electricité</h6>--}}
-                                                <div class="card card-checkboxes card-hover-effect">
+                                                <div class="card card-radio card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-icon-chauffage-electricite2"></i>
                                                         <h6>Electricité</h6>
@@ -88,7 +88,7 @@
                                         <div class="col-4">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
                                                 <input type="radio" name="type_chauffage" id="type-chauffage-gaz" value="gaz">
-                                                <div class="card card-checkboxes card-hover-effect">
+                                                <div class="card card-radio card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-icon-chauffage-gaz2"></i>
                                                         <h6>Gaz</h6>
@@ -99,7 +99,7 @@
                                         <div class="col-4">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
                                                 <input type="radio" name="type_chauffage" id="type-chauffage-bois" value="bois">
-                                                <div class="card card-checkboxes card-hover-effect">
+                                                <div class="card card-radio card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-icon-chauffage-bois2"></i>
                                                         <h6>Bois</h6>
@@ -110,7 +110,7 @@
                                         <div class="col-4">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
                                                 <input type="radio" name="type_chauffage" id="type-chauffage-fioul" value="fioul">
-                                                <div class="card card-checkboxes card-hover-effect">
+                                                <div class="card card-radio card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-icon-chauffage-fioul"></i>
                                                         <h6>Fioul</h6>
@@ -121,7 +121,7 @@
                                         <div class="col-4">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
                                                 <input type="radio"  name="type_chauffage" id="type-chauffage-pompe" value="pompe à chaleur">
-                                                <div class="card card-checkboxes card-hover-effect">
+                                                <div class="card card-radio card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-icon-chauffage-pompe"></i>
                                                         <h6>Pompe</h6>
@@ -132,7 +132,7 @@
                                         <div class="col-4">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
                                                 <input type="radio"  name="type_chauffage" id="type-chauffage-autre" value="autres">
-                                                <div class="card card-checkboxes card-hover-effect">
+                                                <div class="card card-radio card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-icon-chauffage-electricite2"></i>
                                                         <h6>Autre</h6>
@@ -150,24 +150,24 @@
                                         </div>
                                     </div>
                                     <div class="row justify-content-center col-xs-mt-30">
-                                        <div class="col-12 col-sm-4">
+                                        <div class="col-6 col-md-4">
                                             <div class="choice type_isolation" data-toggle="wizard-checkbox">
                                                 <input type="checkbox" class="checkbox" name="isolation_garage" value="1">
                                                 <div class="card card-checkboxes card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-isolation-garage-form"></i>
-                                                        <h6>Garages en  Rdc/sous-sol</h6>
+                                                        <h6>Garages en Rdc/sous-sol</h6>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-4">
+                                        <div class="col-6 col-md-4">
                                             <div class="choice type_isolation" data-toggle="wizard-checkbox">
                                                 <input type="checkbox" class="checkbox" name="isolation_caves" value="1">
                                                 <div class="card card-checkboxes card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-isolation-cave-form"></i>
-                                                        <h6>Caves / vide-sanitaire</span></h6>
+                                                        <h6>Caves / vide-sanitaire</h6>
                                                     </div>
                                                 </div>
                                             </div>
