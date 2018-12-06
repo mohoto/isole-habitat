@@ -4360,14 +4360,16 @@ nav {
     color: #ffffff;
   }
   .wizard-card .wizard-header {
-    display: none;
+    margin-top: 70px;
+    font-size: 1.5em;
+    /*display: none;*/
   }
   .wizard-card .choice.type_heure_rappel i{
     font-size: 70px;
   }
-  .wizard-card .progress{
+  /*.wizard-card .progress{
     margin-top: 60px;
-  }
+  }*/
   .wizard-title{
     /*font-size: 1.25em;
     line-height: 1.5;*/
