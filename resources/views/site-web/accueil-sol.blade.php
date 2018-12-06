@@ -8,7 +8,7 @@
         <div class="container-nav d-flex justify-content-between align-items-ends">
             <div class="logo"><a href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a></div>
             <div>
-                <p>Dispositif CEE mis en place par l'Etat.</p>
+                <p id="dispositif-texte-nav">Dispositif CEE mis en place par l'Etat.</p>
             </div>
             <div id="head-mobile"></div>
             <div class="button"></div>
@@ -27,7 +27,7 @@
         <div class="row justify-content-md-center align-items-md-center">
             <h4 class="gras_300" data-color="blanc"><span data-color="orange">Dépensez moins pour vous chauffer  :</span> Profitez de votre isolation pour 1€</h4>
             {{--<a href="#" id="btn-formulaire-ribbon" class="btn btn-rounded btn-vert btn-formulaire ml-20">Testez votre éligibilité</a>--}}
-            <a href="#" id="btn-formulaire-ribbon" class="btn btn-rounded btn-vert btn-formulaire ml-20">Je veux profiter du programme</a>
+            <a href="#" id="btn-formulaire-ribbon" class="btn btn-rounded btn-vert btn-formulaire ml-20">Je veux profiter de cette aide</a>
         </div>
     </div>
 </header>
@@ -39,11 +39,11 @@
             </div>
             <div class="col-sm-12 col-md-6">
                 <div class="part2 text-center mb-0">
-                    <h1 class="mb-40 gras_600">ISOLEZ VOTRE MAISON POUR 1€</h1>
+                    <h1 class="mb-40 mt-xs-30 gras_600">ISOLEZ VOTRE MAISON POUR 1€</h1>
                     <h3 data-color="orange"><span class="italic gras_600">Nouveau depuis le 1er septembre 2018</span></h3>
                     <h4>L'isolation des garages et caves pour 1€</h4>
                     <p data-color="orange">Sans aucune condition de revenu.</p>
-                    <a href="#" id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire mt-30">Je veux profiter du programme</a>
+                    <a href="#" id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire mt-20">Je veux profiter de cette aide</a>
                     {{--<p class="m-t-20" data-color="vert">1€ symbolique après travaux.</p>--}}
                     <p class="m-t-20">Votre isolation dans les 7 jours suivant votre demande.</p>
                 </div>
@@ -96,12 +96,12 @@
                 <p>Peu de ménages savent qu'ils peuvent bénéficier de l'isolation de leur maison pour 1€ symbolique. Et pourtant, ce programme repose sur <span data-color="orange">une obligation de réalisation d’économies d’énergie imposée par l'Etat aux vendeurs d’énergie</span>.</p>
                 <p>Le 1er janvier 2018, le dispositif est entré dans sa 4ème période d’obligation.</p>
             </div>
-            <div class="col-md-5 order-1 order-md-2">
+            <div class="col-md-5 order-1 order-md-2 mb-xs-20">
                 <img id="mascotte-isolation" class="block-center" src="{{ asset('images/isolation-1-euro.jpg') }}" alt="illustration mascotte isolation à 1 euro" />
             </div>
         </div>
         <div class="row justify-content-center align-items-center mt-40">
-            <div class="col-md-5">
+            <div class="col-md-5 mb-xs-20">
                 <img id="mascotte-isolation" class="rounded-circle block-center" src="{{ asset('images/photo-couple-isolation.jpg') }}" alt="illustration mascotte isolation à 1 euro" />
             </div>
             <div class="col-md-5">
@@ -188,7 +188,7 @@
             </div>
         </div> <!-- end row -->
         <div class="row justify-content-center">
-            <div class="col-sm-6 col-md-6">
+            <div class="col-sm-6 col-md-6 mb-xs-40">
                 <div class="features-box">
                     <img src="{{ asset('images/icon-iso-plancher-garage.png') }}" srcset="{{ asset('images/icon-iso-plancher-garage.svg') }}" alt="illustration isolation des garages">
                     <h5 class="m-t-20">Isolation des garages</h5>

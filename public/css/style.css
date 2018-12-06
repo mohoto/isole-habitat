@@ -1123,7 +1123,8 @@ label.type-heure {
 }
 .section#section-presentation1 {
   position: relative;
-  padding-bottom: 0px;
+  margin: 40px 0;
+  padding-bottom: 0;
 }
 .section#section-presentation1::after {
   content: '';
@@ -3312,6 +3313,7 @@ nav {
   top: 0;
   left: -3000px;
   overflow-x: hidden;
+  overflow-y: hidden;
   transition: 1s ease;
 }
 .section-overlay .titre {
@@ -3388,7 +3390,7 @@ nav {
 }
 .wizard-card .wizard-header {
   text-align: center;
-  padding: 15px 0 15px;
+  padding: 0px 0 15px;
 }
 .wizard-card .tab-content {
   /*min-height: 320px;*/
@@ -3396,7 +3398,7 @@ nav {
 }
 .wizard-card .wizard-footer{
   position: absolute;
-  bottom: 5px;
+  bottom: 50px;
   width: 100%;
 }
 .wizard-card .wizard-footer .block-button{
@@ -3470,8 +3472,8 @@ nav {
   color: #496174;
 }
 .wizard-card .choice.type-chauffage i {
-  font-size: 3.2rem;
-  line-height: 5.2rem;
+  font-size: 3rem;
+  line-height: .2rem;
 }
 .wizard-card .choice.type-chauffage .icon {
   /*height: 5rem;
@@ -3772,6 +3774,12 @@ nav {
 
   padding: 20px 20px;
 }
+#phoneForm .wizard-card h6{
+  color: #ebeef1;
+
+  padding: 20px 20px;
+}
+
 .phoneForm-block{
   position: relative;
   width: 100%;
@@ -4085,7 +4093,7 @@ nav {
     height: 1rem;
     line-height: 1rem;
     color: #fff;
-    background-color: #8ab326;
+    background-color: #ee7626;
     transition: width .6s ease;
   }
   .wizard-card .choice.type_heure_rappel h6{
@@ -4328,9 +4336,14 @@ nav {
 
 }
 @media (min-width: 375px) and (max-width: 768px) {
-
+  #cssmenu .button{
+    display: none;
+  }
   .hero h2 {
     font-size: 1.8em;
+  }
+  #dispositif-texte-nav{
+    color: #ffffff;
   }
   .wizard-card .choice.type_heure_rappel i{
     font-size: 70px;

@@ -10,7 +10,7 @@
                         <form id="eligibFormSol" role="form">
                             {{ csrf_field() }}
                             <div class="wizard-header">
-                                <h4 class="wizard-sub-title mb-0">On vous rappelle sous 48 heures</h4>
+                                <p class="wizard-sub-title mb-15">On vous rappelle sous 48 heures</p>
                             </div>
                             <div class="wizard-navigation">
                                 <ul>
@@ -123,7 +123,7 @@
                                                 <input type="radio"  name="type_chauffage" id="type-chauffage-pompe" value="pompe à chaleur">
                                                 <div class="card card-checkboxes card-hover-effect">
                                                     <div class="icon">
-                                                        <i class="icon-fantastic icon-icon-chauffage-electricite2"></i>
+                                                        <i class="icon-fantastic icon-icon-chauffage-pompe"></i>
                                                         <h6>Pompe</h6>
                                                     </div>
                                                 </div>
@@ -134,7 +134,7 @@
                                                 <input type="radio"  name="type_chauffage" id="type-chauffage-autre" value="autres">
                                                 <div class="card card-checkboxes card-hover-effect">
                                                     <div class="icon">
-                                                        <i class="fas fa-question"></i>
+                                                        <i class="icon-fantastic icon-icon-chauffage-electricite2"></i>
                                                         <h6>Autre</h6>
                                                     </div>
                                                 </div>
