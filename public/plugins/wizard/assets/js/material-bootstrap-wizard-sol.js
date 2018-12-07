@@ -182,7 +182,7 @@ $(document).ready(function(){
 
                 }
             }*/
-            if(index == 2){
+            /*if(index == 2){
                 var typeRadio = 'type_chauffage';
                 var radioResult = validateRadio(typeRadio);
                  if(radioResult == false){
@@ -194,7 +194,7 @@ $(document).ready(function(){
                          return false;
                      }
                  }
-            }
+            }*/
             if(index == 3){
                 var tab = 'isolation';
                 var checkResult = validateCheckbox(tab);
