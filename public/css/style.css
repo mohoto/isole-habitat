@@ -4360,6 +4360,9 @@ nav {
   .hero h2 {
     font-size: 1.8em;
   }
+  #hero-condition{
+    font-size: 1.3em;
+  }
   #dispositif-texte-nav{
     color: #ffffff;
   }
