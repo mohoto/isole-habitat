@@ -457,6 +457,8 @@ $(document).ready(function(){
                         btnPhoneSubmit.setAttribute('data-id', response.id);
                         setTimeout(function () {
                             $('.spinner-block').hide();
+                            $('.wizard-title').hide();
+                            $('.wizard-header').hide();
                             $('#btn-phone-test').show();
                             $('#info-resultat-ok').show();
                         }, 1000);

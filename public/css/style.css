@@ -3500,7 +3500,7 @@ nav {
 }
 
 .wizard-card.card .card-checkboxes {
-  background-color: #F3F2EE;
+  /*background-color: #F3F2EE;*/
   box-shadow: none;
   /*color: rgba(0, 0, 0, 0.3);*/
   color: #496174;
@@ -3923,7 +3923,11 @@ nav {
   width: 100px;
 }
 #phoneForm h3{
-  color: #3C4858;
+  /*color: #3C4858;*/
+  color: #ebeef1;
+}
+#phoneForm .btn-facebook{
+  background-color: #ee7626 !important;
 }
 .info-resultat svg .path {
   stroke-dasharray: 1000;

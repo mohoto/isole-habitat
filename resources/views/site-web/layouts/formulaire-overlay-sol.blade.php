@@ -32,7 +32,7 @@
                                     <div class="row justify-content-md-center row_type_habitation mt-md-30">
                                         <div class="col-6 col-md-4">
                                             <div class="choice type_habitation" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
-                                                <input type="radio" class="type_habitation" name="type_habitation" value="maison">
+                                                <input type="checkbox" class="type_habitation" name="type_habitation" value="maison" >
                                                 {{--<div class="icon">
                                                     <i class="icon-fantastic icon-icon-house"></i>
                                                 </div>
@@ -47,7 +47,7 @@
                                         </div>
                                         <div class="col-6 col-md-4">
                                             <div class="choice type_habitation" id="btn-maison" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
-                                                <input type="radio" class="type_habitation" name="type_habitation" value="appartement">
+                                                <input type="checkbox" class="type_habitation" name="type_habitation" value="appartement">
                                                 {{--<div class="icon">
                                                     <i class="icon-fantastic icon-icon-appartement"></i>
                                                 </div>
@@ -352,7 +352,7 @@
                                                 <p class=" text-center">Nous vous rappellerons très rapidement.</p>
                                                 <h4 class="text-center mt-20 mb-30" data-color="vert">Participez à l'amélioration des habitats</h4>
                                                 <h5 class="text-center text-partage gras_500" >Faîtes profiter votre famille et vos amis de l'isolation à 1€, ils vous remercieront!</h5>
-                                                <h5 class="text-center mt-20" data-color="vert">Partagez notre programme</h5>
+                                                <h5 class="text-center mt-20" data-color="bleue-clair">Partagez notre programme</h5>
                                                 <button type="button" role="button" target="_blank" id="share_facebook2" class="btn btn-facebook waves-effect waves-light share_facebook">
                                                     <i class="fa fa-facebook m-r-5"></i> Facebook
                                                 </button>

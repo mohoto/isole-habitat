@@ -28,12 +28,19 @@
                                         <a class="text-dark" href="{{ route('crm.lead-web', ['departement' => $clientform->departement]) }}"> {{ $clientform->departement }}</a>
                                     </div>
                                     <h4 class="m-t-20 m-b-20">{{ ucfirst($clientform->civilite) }}<b> {{ strtoupper($clientform->nom) }}</b></h4>
-                                    @if( $clientform->situation == 'grand-précaire')
+                                    {{--@if( $clientform->situation == 'grand-précaire')
                                         <span class="label label-success">{{ $clientform->situation}}</span>
                                     @elseif( $clientform->situation == 'précaire')
                                         <span class="label label-warning">{{ $clientform->situation}}</span>
                                     @elseif( $clientform->situation == 'classique')
                                         <span class="label label-danger">{{ $clientform->situation}}</span>
+                                    @endif--}}
+                                    @if( $clientform->situation == 'eligible')
+                                        <span class="label label-success">Valide</span>
+                                    @elseif( $clientform->situation == 'classique' && $clientform->chauffage == 'electrique')
+                                        <span class="label label-danger">Electrique</span>
+                                    @elseif( $clientform->situation == 'classique' && $clientform->type_habitation == 'appartement')
+                                        <span class="label label-danger">Appartement</span>
                                     @endif
                                     <h5 class="text-dark">{{ strtoupper($clientform->codePostal) }} <a class="text-dark" href="{{ route('crm.lead-web', ['ville' => $clientform->ville]) }}"> {{ strtoupper($clientform->ville) }}</a></h5>
                                     <h5 data-color="orange"><i class="fa fa-phone"></i> {{ $clientform->telephone_fixe }} {{ $clientform->telephone_mobile }}</h5>
@@ -58,6 +65,7 @@
                                     @else
                                         <h5 class="text-dark"><i class="far fa-check-square m-r-5" style="color: transparent"></i>103 : Isolation des caves</h5>
                                     @endif
+                                    <h5>Surface : {{ $clientform->surface_maison }}</h5>
                                     <div class="contact-action">
                                         <a class="btn btn-success btn-sm" data-toggle="collapse" href="#collapse-{{ $clientform->id }}" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="md md-mode-edit"></i></a>
                                         <button class="btn btn-danger btn-sm lead-web-drop" data-toggle="modal" data-target="#confirmCancel-{{ $clientform->id }}"><i class="md md-close"></i></button>
