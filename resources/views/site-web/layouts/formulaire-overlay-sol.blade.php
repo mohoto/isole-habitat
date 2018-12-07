@@ -82,7 +82,7 @@
                                     <div class="row block-chauffage-row justify-content-md-center">
                                         <div class="col-4">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
-                                                <input type="radio" name="type_chauffage" id="type-chauffage-electrique" value="electrique">
+                                                <input type="radio" name="type_chauffage" value="electrique">
                                                 {{--<div class="icon">
                                                     <i class="icon-fantastic icon-icon-chauffage-electricite2"></i>
                                                 </div>
@@ -97,7 +97,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
-                                                <input type="radio" name="type_chauffage" id="type-chauffage-gaz" value="gaz">
+                                                <input type="radio" name="type_chauffage" value="gaz">
                                                 <div class="card card-radio card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-icon-chauffage-gaz2"></i>
@@ -108,7 +108,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
-                                                <input type="radio" name="type_chauffage" id="type-chauffage-bois" value="bois">
+                                                <input type="radio" name="type_chauffage" value="bois">
                                                 <div class="card card-radio card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-icon-chauffage-bois2"></i>
@@ -119,7 +119,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
-                                                <input type="radio" name="type_chauffage" id="type-chauffage-fioul" value="fioul">
+                                                <input type="radio" name="type_chauffage" value="fioul">
                                                 <div class="card card-radio card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-icon-chauffage-fioul"></i>
@@ -130,7 +130,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
-                                                <input type="radio"  name="type_chauffage" id="type-chauffage-pompe" value="pompe à chaleur">
+                                                <input type="radio"  name="type_chauffage" value="pompe à chaleur">
                                                 <div class="card card-radio card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-icon-chauffage-pompe"></i>
@@ -141,7 +141,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="choice type-chauffage" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
-                                                <input type="radio"  name="type_chauffage" id="type-chauffage-autre" value="autres">
+                                                <input type="radio"  name="type_chauffage" value="autres">
                                                 <div class="card card-radio card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-icon-chauffage-electricite2"></i>
