@@ -2417,6 +2417,9 @@ label.type-heure {
 .section#section-formulaire #phoneForm h6 {
   font-size: 1.5em;
 }
+.wizard-card h6#text-disponibilite{
+  color: #ebeef1;
+}
 .section#section-formulaire .btn#phoneBtn{
   display: none;
 }

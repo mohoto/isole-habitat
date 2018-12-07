@@ -308,7 +308,7 @@
                                                 <h5 class="text-center mt-10" data-color="orange"><i class="ion-ios7-telephone" data-color="orange"></i> Nous vous rappelons en moins de 48 heures</h5>
                                                 <form id="eligibRappel"role="form">
                                                     {{ csrf_field() }}
-                                                    <h6 class="text-center mt-0">Selectionnez vos disponibilités:</h6>
+                                                    <h6 id="text-disponibilite" class="text-center mt-0">Selectionnez vos disponibilités:</h6>
                                                     <div class="block-eligibRappel">
                                                         <div class="row justify-content-between">
                                                             <div class="col-3">
