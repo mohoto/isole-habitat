@@ -31,8 +31,8 @@
                                     </div>
                                     <div class="row justify-content-md-center row_type_habitation mt-md-30">
                                         <div class="col-6 col-md-4">
-                                            <div class="choice type_habitation" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
-                                                <input type="checkbox" class="type_habitation" name="type_habitation" value="maison" >
+                                            <div class="choice type_habitation" data-toggle="wizard-radio" rel="tooltip" title="Selectionnez cette option si vous habitez une maison.">
+                                                <input type="radio" class="type_habitation" name="type_habitation" value="maison">
                                                 {{--<div class="icon">
                                                     <i class="icon-fantastic icon-icon-house"></i>
                                                 </div>
@@ -46,8 +46,8 @@
                                             </div>
                                         </div>
                                         <div class="col-6 col-md-4">
-                                            <div class="choice type_habitation" id="btn-maison" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
-                                                <input type="checkbox" class="type_habitation" name="type_habitation" value="appartement">
+                                            <div class="choice type_habitation" data-toggle="wizard-radio" rel="tooltip" title="Selectionnez cette option si vous habitez un appartement">
+                                                <input type="radio" class="type_habitation" name="type_habitation" value="appartement">
                                                 {{--<div class="icon">
                                                     <i class="icon-fantastic icon-icon-appartement"></i>
                                                 </div>
@@ -60,6 +60,16 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        {{--<div>
+                                            <input type="radio" id="huey" name="drone" value="maison"
+                                                   checked>
+                                            <label for="huey">maison</label>
+                                        </div>
+
+                                        <div>
+                                            <input type="radio" id="dewey" name="drone" value="appartement">
+                                            <label for="dewey">Appartement</label>
+                                        </div>--}}
                                     </div>
                                 </div>
                                 <div class="tab-pane" id="energie">
