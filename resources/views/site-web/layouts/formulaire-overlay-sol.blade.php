@@ -29,7 +29,7 @@
                                     <div class="row justify-content-center">
                                         <h4 class="info-text">Quelle est votre type d'habitation?</h4>
                                     </div>
-                                    <div class="row justify-content-md-center row_type_habitation mt-md-30">
+                                    <div class="row justify-content-md-center row_type_habitation mt-30">
                                         <div class="col-6 col-md-4">
                                             <div class="choice type_habitation" data-toggle="wizard-radio" rel="tooltip" title="Selectionnez cette option si vous habitez une maison.">
                                                 <input type="radio" class="type_habitation" name="type_habitation" value="maison">
