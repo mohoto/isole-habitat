@@ -201,7 +201,7 @@
                                 </div>
                                 <div class="tab-pane" id="situation">
                                     <div class="row justify-content-center">
-                                        <h4 class="info-text">Préciser la surface totale à isoler.</h4>
+                                        <h4 class="info-text">Précisez la surface totale à isoler.</h4>
                                     </div>
                                     <div class="row row-block-personne justify-content-center mt-30">
                                         <div class="col-12 col-sm-6">
