@@ -61,7 +61,7 @@
                                             </div>
                                         </div>
                                     </div>--}}
-                                    <div class="row justify-content-center">
+                                    <div class="row justify-content-center mt-30">
                                         <div class="col-6 col-md-4 ">
                                             <div class="choice type_habitation" data-toggle="wizard-radio">
                                                 <div class="card card-radio card-hover-effect">
