@@ -3930,7 +3930,7 @@ nav {
   color: #ebeef1;
 }
 #phoneForm .btn-facebook{
-  background-color: #ee7626 !important;
+  background-color: #8ab326 !important;
 }
 .info-resultat svg .path {
   stroke-dasharray: 1000;
@@ -4368,6 +4368,9 @@ nav {
   }
   #dispositif-texte-nav{
     color: #ffffff;
+  }
+  .section-overlay .bg-overlay {
+    background-color: rgba(8, 99, 181, 1);
   }
   .wizard-card .wizard-header {
     margin-top: 70px;

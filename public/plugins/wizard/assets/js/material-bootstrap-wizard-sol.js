@@ -160,7 +160,7 @@ $(document).ready(function(){
         'previousSelector': '.btn-previous',
 
         onNext: function(tab, navigation, index) {
-            mobile_device = $(document).width() < 600;
+            mobile_device = $(document).width() < 40;
 
         	/*var $valid = $('#eligibFormSol').valid();
         	if(!$valid) {
@@ -182,7 +182,7 @@ $(document).ready(function(){
 
                 }
             }*/
-            /*if(index == 2){
+            if(index == 2){
                 var typeRadio = 'type_chauffage';
                 var radioResult = validateRadio(typeRadio);
                  if(radioResult == false){
@@ -194,7 +194,7 @@ $(document).ready(function(){
                          return false;
                      }
                  }
-            }*/
+            }
             if(index == 3){
                 var tab = 'isolation';
                 var checkResult = validateCheckbox(tab);
@@ -226,20 +226,6 @@ $(document).ready(function(){
                     }
                     else{
                         displayErrorInput('Entrez votre code postal');
-                        return false;
-                    }
-
-                }
-            }
-            if(index == 5){
-                var typeRadio = 'revenus_reference';
-                var radioResult = validateRadio(typeRadio);
-                if(radioResult == false){
-                    if(mobile_device){
-                        return false;
-                    }
-                    else{
-                        displayErrorInput('Préciser votre revenu fiscal');
                         return false;
                     }
 
@@ -389,48 +375,9 @@ $(document).ready(function(){
 
     var btnPhoneSubmit = document.querySelector('#btn-phone-test');
     $('#btn-finish-test').click(function(event) {
-            var typeRadio = 'civilite';
-            var radioResult = validateRadio(typeRadio);
-            var typeRadio2 = 'type_bail';
+
             var tab = 'infos';
-            var radioResult2 = validateRadio(typeRadio2);
-            if(radioResult == false){
-                if(mobile_device){
-                    return false;
-                }
-                else{
-                    displayErrorInput('Selectionnez "Monsieur" ou "Madame"');
-                    event.stopPropagation();
-                }
-            }
-            else if(radioResult2 == false){
-                if(mobile_device){
-                    return false;
-                }
-                else{
-                    displayErrorInput('Précisez si vous êtes "Propriétaire" ou "Locataire"');
-                    event.stopPropagation();
-                }
-            }
-            else if(validateInputForm("nom")  == false){
-                if(mobile_device){
-                    return false;
-                }
-                else{
-                    displayErrorInput('Entrez votre nom');
-                    return false;
-                }
-            }
-            else if(validateInputForm("telephone")  == false){
-                if(mobile_device){
-                    return false;
-                }
-                else{
-                    displayErrorInput('Entrez votre numero de telephone');
-                    return false;
-                }
-            }
-            else{
+
                 var data = $('#eligibFormSol').serializeArray();
                 $('.wizard-navigation').hide();
                 $('.tab-pane').removeClass('active');
@@ -472,11 +419,10 @@ $(document).ready(function(){
                                 $('#text-cause-none').text("Vous vous chauffez uniquement à l'électricité. Vous ne pouvez pas bénéficier de notre programme");
                             }
                         }
-                        else{
-                            $('#text-cause-none').text("Vos revenus dépassent le plafond de revenus définit par l'ADEME.");
-                        }
                         setTimeout(function () {
                             $('.spinner-block').hide();
+                            $('.wizard-title').hide();
+                            $('.wizard-header').hide();
                             $('#info-resultat-none').show();
                         }, 1000);
                     }
@@ -484,7 +430,6 @@ $(document).ready(function(){
                 .fail(function(){
                     alert('pas enregistré');
                 });
-            }
 
     });
     $('#btn-phone-test').click(function() {
