@@ -433,13 +433,7 @@ $(document).ready(function(){
 
     });
     $('#btn-phone-test').click(function() {
-        var typeRadio = 'heure_rappel';
-        var radioResult = validateRadio(typeRadio);
-        if(radioResult == false){
-            displayErrorInput('Selectionnez un créneau horaire pour vous rappeler');
-            event.stopPropagation();
-        }
-        else{
+
             var idUrl = btnPhoneSubmit.getAttribute('data-id');
             var heure_rappel = $( "input[name= 'heure_rappel']:checked").val();
             $.ajaxSetup({
@@ -458,7 +452,6 @@ $(document).ready(function(){
                     $('#info-phone-ok').show();
                 }
             });
-        }
     });
 
     $('#btn-essai-notify').click(function() {

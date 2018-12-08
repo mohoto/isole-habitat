@@ -327,7 +327,7 @@
                                                     <div class="block-eligibRappel">
                                                         <div class="row justify-content-between">
                                                             <div class="col-3">
-                                                                <div class="choice type_heure_rappel" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
+                                                                <div class="choice type_heure_rappel" data-toggle="wizard-radio">
                                                                     <input type="radio" name="heure_rappel" value="9h-12h">
                                                                     <div class="">
                                                                         <i class="icon-fantastic icon-icon-matin"></i>
@@ -337,7 +337,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-3">
-                                                                <div class="choice type_heure_rappel" id="btn-maison" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
+                                                                <div class="choice type_heure_rappel"  data-toggle="wizard-radio">
                                                                     <input type="radio" name="heure_rappel" value="12h-15h">
                                                                     <div class="">
                                                                         <i class="icon-fantastic icon-icon-midi"></i>
@@ -347,7 +347,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-3">
-                                                                <div class="choice type_heure_rappel" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
+                                                                <div class="choice type_heure_rappel" data-toggle="wizard-radio">
                                                                     <input type="radio" name="heure_rappel" value="15h-18h">
                                                                     <div class="">
                                                                         <i class="icon-fantastic icon-icon-apres-midi"></i>
@@ -357,7 +357,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-3">
-                                                                <div class="choice type_heure_rappel" id="btn-maison" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
+                                                                <div class="choice type_heure_rappel" data-toggle="wizard-radio">
                                                                     <input type="radio" name="heure_rappel" value="18h-21h">
                                                                     <div class="">
                                                                         <i class="icon-fantastic icon-icon-soir"></i>
