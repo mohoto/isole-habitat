@@ -13,6 +13,7 @@
         <meta property="og:description"   content="Profitez du programme d'isolation de votre garage et de vos caves pour 1€ et économisez jusqu'à 20% sur votre facture de chauffage.">
         <meta property="og:locale"        content="fr_FR" />
         <meta property="og:image"         content="{{ asset('images/image-facebook-share-nouveau.jpg') }}" />
+        <meta property="og:image:alt"     content="Programme d'isolation de votre garage et de vos caves pour 1€" />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="300" />
 
