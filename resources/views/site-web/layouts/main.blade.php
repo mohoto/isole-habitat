@@ -3,10 +3,10 @@
     <head>
         <meta name="csrf-token" content="{{ csrf_token() }}" />
         <title>Isole habitat : Isolation des logement - @yield('pageTitle')</title>
-        <meta name="description" content="">
+        <meta name="description" content="Programme d'aide pour isoler votre grage, vos caves et vide-sanitaire pour 1 euro.">
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="fb:app_id" content="322735138324093" />
+        <meta name="viewport"             content="width=device-width, initial-scale=1.0">
+        <meta property="fb:app_id"        content="322735138324093" />
         <meta property="og:url"           content="https://isole-habitat.fr" />
         <meta property="og:type"          content="website" />
         <meta property="og:title"         content="Isolez votre maison pour 1€" />
@@ -14,8 +14,8 @@
         <meta property="og:locale"        content="fr_FR" />
         <meta property="og:image"         content="{{ asset('images/image-facebook-share-nouveau.jpg') }}" />
         <meta property="og:image:alt"     content="Programme d'isolation de votre garage et de vos caves pour 1€" />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" />
+        <meta property="og:image:width"   content="400" />
+        <meta property="og:image:height"  content="300" />
 
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@isolehabitat">
