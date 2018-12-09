@@ -20,7 +20,7 @@
         <meta name="twitter:site" content="@isolehabitat">
         <meta name="twitter:title" content="Isoler votre maison pour 1€">
         <meta name="twitter:description" content="Profiter du programme d'isolation à 1€ et économisez jusqu'à 20% sur votre facture de chauffage.garages et caves.">
-        <meta name="twitter:image" content="{{ asset('images/image-facebook-share.jpg') }}">
+        <meta name="twitter:image" content="{{ asset('images/image-facebook-share2.jpg') }}">
         <meta name="twitter:image:width" content="640">
         <meta name="twitter:image:height" content="360">
 
