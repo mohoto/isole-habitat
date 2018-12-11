@@ -1157,8 +1157,12 @@ label.type-heure {
   line-height: 2;
   font-weight: 400;
 }
-.section#section-presentation-video .list-benefit-total li i{
+.section#section-presentation-video .list-benefit-total#list-benefit-total1 li i{
   color: #8ab326;
+  margin-right: 10px;
+}
+.section#section-presentation-video .list-benefit-total#list-benefit-total2 li i{
+  color: #ee7626;
   margin-right: 10px;
 }
 .section#section-presentation-video .block-video {

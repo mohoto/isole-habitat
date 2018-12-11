@@ -112,14 +112,25 @@
         </div><div class="row mt-50" id="section-comment">
             <div class="col-md-12">
                 <h3 class="text-center  mb-30"><span class="gras_500" data-color="vert">Inscrivez-vous au programme</span> et profitez de l'isolation des sols de votre maison pour 1€</h3>
-                <div class="d-flex justify-content-center">
-                    <ul class="list-benefit-total">
-                        <li><i class="fas fa-arrow-right"></i>Une réponse en 48 heures</li>
-                        <li><i class="fas fa-arrow-right"></i>Votre isolation sous 7 jours</li>
-                        <li><i class="fas fa-arrow-right"></i>Aucun frais à avancer pour votre isolation</li>
-                        <li><i class="fas fa-arrow-right"></i>Pour 1€ symbolique</li>
-                        <li><i class="fas fa-arrow-right"></i>Dispositif CEE validé par l'Etat</li>
-                    </ul>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex justify-content-center">
+                            <ul id="list-benefit-total1" class="list-benefit-total">
+                                <li><i class="fas fa-arrow-circle-right"></i>Une réponse en 48 heures</li>
+                                <li><i class="fas fa-arrow-circle-right"></i>Aucune formalité à faire</li>
+                                <li><i class="fas fa-arrow-circle-right"></i>Dispositif CEE d'ade de l'Etat</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex justify-content-center">
+                            <ul id="list-benefit-total2" class="list-benefit-total">
+                                <li><i class="fas fa-arrow-circle-right"></i>Votre isolation sous 7 jours</li>
+                                <li><i class="fas fa-arrow-circle-right"></i>Aucun frais à avancer</li>
+                                <li><i class="fas fa-arrow-circle-right"></i>Pour 1€ symbolique</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
