@@ -127,7 +127,7 @@
                             <ul id="list-benefit-total2" class="list-benefit-total">
                                 <li><i class="fas fa-arrow-circle-right"></i>Votre isolation sous 7 jours</li>
                                 <li><i class="fas fa-arrow-circle-right"></i>Aucun frais à avancer</li>
-                                <li><i class="fas fa-arrow-circle-right"></i>Pour 1€ symbolique</li>
+                                <li><i class="fas fa-arrow-circle-right"></i>1€ symbolique après travaux</li>
                             </ul>
                         </div>
                     </div>
