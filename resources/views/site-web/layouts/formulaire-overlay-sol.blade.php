@@ -181,7 +181,7 @@
                                                 <div class="card card-checkboxes card-hover-effect">
                                                     <div class="icon">
                                                         <i class="icon-fantastic icon-isolation-garage-form"></i>
-                                                        <h6>Garages <br/> en Rdc / sous-sol</h6>
+                                                        <h6>Garages <br/> en Rdc/sous-sol</h6>
                                                     </div>
                                                 </div>
                                             </div>
