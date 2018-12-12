@@ -43,6 +43,9 @@ Route::get('/message', array(
 Route::get('/', array('as' => 'site-web.accueil', function () {
     return view('site-web.accueil-sol');
 }));
+Route::get('/isolation-sol-grand-est', array('as' => 'site-web.isolation-sol-grand-est', function () {
+    return view('site-web.isolation-sol-grand-est');
+}));
 Route::get('/wizard', array('as' => 'site-web.wizard', function () {
     return view('site-web.wizard');
 }));

@@ -696,6 +696,9 @@ input.input-subscribe:-ms-input-placeholder {
 h1, h2, h3, h4{
     font-weight: 400;
 }
+h1{
+  font-size: 2.2rem;
+}
 .gras_700{
   font-weight: 700;
 }
@@ -762,6 +765,9 @@ h1, h2, h3, h4{
 }
 [data-background-color="bleue-clair"]{
   background-color: #ebeef1;
+}
+[data-background-color="bleue-fonce"]{
+  background-color: #2f3e47;
 }
 .btn-primary {
   color: #fff;
@@ -1118,7 +1124,7 @@ label.type-heure {
     font-size: 1.5em;
     padding: 15px 30px;
 }
-.hero  .slogan-btn-formulaire {
+-btn-formulaire {
   font-size: 1em;
 }
 .section#section-presentation1 {
@@ -4455,4 +4461,37 @@ nav {
   .wizard-card .choice.civilite {
     margin-bottom: 6vh;
   }
+}
+
+/*Landing page grand-est*/
+#cssmenu-grand-est {
+  padding-right: 80px;
+}
+#cssmenu-grand-est .logo {
+  padding: 10px 0 20px 0 ;
+}
+#cssmenu-grand-est .btn{
+  font-size: 1.5em;
+  padding: 15px 30px;
+  margin-bottom: 20px;
+}
+.section#section-slogan-grand-est h2{
+  line-height: 1.3;
+}
+
+.section#section-benefit-grand-est .list-benefit-grand-est{
+  list-style: none;
+}
+.section#section-benefit-grand-est .list-benefit-grand-est li {
+  font-size: 1.6em;
+  line-height: 2;
+  font-weight: 400;
+}
+.section#section-benefit-grand-est .list-benefit-grand-est#list-benefit-grand-est1 li i {
+  color: #8ab326;
+  margin-right: 10px;
+}
+.section#section-benefit-grand-est .list-benefit-grand-est#list-benefit-grand-est2 li i {
+  color: #ee7626;
+  margin-right: 10px;
 }

@@ -1,26 +1,15 @@
 @extends('site-web.layouts.main')
-@section('pageTitle', 'isolez votre maison pour 1 euro')
-@section('pageClass', 'page_accueil')
+@section('pageTitle', 'Votre isolation pour 1€ dans le Grand-Est')
+@section('pageClass', 'page_grand_est')
 @section('content')
 <!-- HOME -->
-<header>
-    <nav id='cssmenu'>
+<header data-background-color="bleue-fonce">
+    <nav id='cssmenu-grand-est'>
         <div class="container-nav d-flex justify-content-between align-items-ends">
             <div class="logo"><a href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a></div>
             <div>
-                <p id="dispositif-texte-nav">Dispositif CEE mis en place par l'Etat.</p>
+                <a href="#" id="btn-formulaire-ribbon" class="btn btn-rounded btn-vert btn-formulaire ml-20">Je veux profiter de cette aide</a>
             </div>
-            <div id="head-mobile"></div>
-            <div class="button"></div>
-            <ul>
-                {{--<li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{ route('site-web.accueil') }}">ACCUEIL</a></li>
-                <li class="{{ Request::is('isolation-des-combles') ? 'active' : '' }}"><a href="{{ route('site-web.isolation-combles') }}">L'ISOLATION DES COMBLES</a></li>
-                <li class="{{ Request::is('qui-sommes-nous') ? 'active' : '' }}"><a href="{{ route('site-web.societe') }}">QUI SOMMES-NOUS?</a></li>--}}
-                <li><a class="btn-navigation" href="#section-questions1">Pourquoi seulement 1€?</a></li>
-                <li><a class="btn-navigation" href="#section-comment">Comment en profiter?</a></li>
-                {{--<li><a class="btn-navigation" href="#section-videos">Vu à la TV</a></li>
-                <li id="phone-link"><i class="fa fa-phone mr-10"></i><a href="tel:01 76 50 88 50"><span>01 76 50 88 50</span></a></li>--}}
-            </ul>
         </div>
     </nav>
     <div class="container-fluid" id="ribbon-formulaire">
@@ -31,6 +20,59 @@
         </div>
     </div>
 </header>
+<h1 class="text-center gras_500 mt-40 mb-20" data-color="orange">Votre Isolation Pour 1€ Dans Le Grand-Est:</h1>
+<section class="section pt-20" id="section-slogan-grand-est">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center"><span class="gras_500">Vous habitez dans le Grand-Est</span> et vous êtes propriétaire ou locataire d'une maison individuelle, </span><span class="gras_500" data-color="vert">vous pouvez vous aussi profiter de lisolation de votre garage, de vos caves et vide-sanitaire pour 1€ </span><span class="gras_500">avec les disposifs de l'Éat</span>.</h2>
+                <h3 class="text-center mt-20 mb-20" data-color="orange">Sans aucune condition de revenu depuis le 1er septembre 2018.</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section pt-30" id="section-benefit-grand-est">
+    <div class="container">
+        <div class="row justify-content-around align-items-end">
+            <div class="col-12 col-md-6">
+                <div style="position: relative";>
+                    <img src="{{ asset('images/isolation-garage.jpg') }}" alt="img" class="img-fluid rounded">
+                    <div class="bg-overlay">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <ul id="list-benefit-grand-est1" class="list-benefit-grand-est">
+                    <li><i class="fas fa-arrow-circle-right"></i>Dispositif CEE d'aide de l'Etat</li>
+                    <li><i class="fas fa-arrow-circle-right"></i>Une réponse en 48 heures</li>
+                    <li><i class="fas fa-arrow-circle-right"></i>Aucune formalité à faire</li>
+                    <li><i class="fas fa-arrow-circle-right"></i>Surface illimitée</li>
+                </ul>
+                <ul id="list-benefit-grand-est2" class="list-benefit-grand-est">
+                    <li><i class="fas fa-arrow-circle-right"></i>Votre isolation sous 7 jours</li>
+                    <li><i class="fas fa-arrow-circle-right"></i>Aucun frais à avancer</li>
+                    <li><i class="fas fa-arrow-circle-right"></i>1€ symbolique après travaux</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div> <!-- end container -->
+</section>
+<section class="section" id="section-information" data-background-color="bleue">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 block-information" data-background-color="vert">
+                <h3><i class="ion-ios7-plus-outline"></i> D'ECOLOGIE</h3>
+                <img src="http://localhost:8888/isolation/public/images/icon-ecologie.svg" alt="illustration isolation à 1 euro ecologique" class="img-fluid rounded">
+                <p class="text-center" data-color="blanc">Réduit les dépenses énergétiques</p>
+            </div>
+            <div class="col-md-4 block-information" data-background-color="bleue">
+                <h3><i class="ion-ios7-plus-outline"></i> D'ECONOMIE</h3>
+                <img src="http://localhost:8888/isolation/public/images/icon-economie-sol.svg" alt="illustration isolation à 1 euro économie sur facture de chauffage" class="img-fluid rounded">
+                <p class="text-center" data-color="blanc">D'économie sur votre facture de chauffage</p>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="" id="home">
     <div class="container">
         <div class="row hero mt-50 mb-40 justify-content-center align-items-stretch">
@@ -78,16 +120,6 @@
     </div> <!-- end container -->
 </section>
 <!-- end Features -->
-<section class="section pt-20" id="section-presentation1" data-background-color="bleue-clair">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-center">Vous êtes propriétaire ou locataire d'une maison individuelle, </span><span class="gras_500" data-color="vert">vous pouvez vous aussi profiter de lisolation de votre garage et de vos caves pour 1€</span> : <span class="gras_500">Une aide</span> mise en place pour soutenir <span class="gras_500">les foyers mal isolés</span>*.</h2>
-                <p class="text-center">*Sans aucune condition de revenu depuis le 1er septembre 2018.</p>
-            </div>
-        </div>
-    </div>
-</section>
 <section class="section" id="section-presentation-video">
     <div class="container">
         <div class="row justify-content-center align-items-center">
@@ -118,7 +150,7 @@
                             <ul id="list-benefit-total1" class="list-benefit-total">
                                 <li><i class="fas fa-arrow-circle-right"></i>Une réponse en 48 heures</li>
                                 <li><i class="fas fa-arrow-circle-right"></i>Aucune formalité à faire</li>
-                                <li><i class="fas fa-arrow-circle-right"></i>Dispositif CEE d'aide de l'Etat</li>
+                                <li><i class="fas fa-arrow-circle-right"></i>Dispositif CEE d'ade de l'Etat</li>
                             </ul>
                         </div>
                     </div>
@@ -231,46 +263,6 @@
 <!-- end Features -->
 <!-- end features alt -->
 <!-- Features Alt -->
-<section class="section pt-30" id="section-type-isolation4">
-    <div class="container">
-        <div class="row justify-content-around align-items-end">
-            <div class="col-md-5 order-2">
-                <div style="position: relative";>
-                    <img src="{{ asset('images/isolation-garage.jpg') }}" alt="img" class="img-fluid rounded">
-                    <div class="bg-overlay">
-                        <h4>Isolation du plafond de garage avec panneaux de polystyrène</h4>
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th scope="col">Epaisseur de l'isolant</th>
-                                <th scope="col">Déperdition thermique</th>
-                                <th scope="col">Economie sur votre facture de chauffage</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>10 à 12 cm</td>
-                                <td>
-                                    <span>jusqu'à</span> -20%
-                                </td>
-                                <td><span>jusqu'à</span> 20%</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5 order-1">
-                <div class="feat-description">
-                    <h4 data-color="bleue">L'isolation des garages, caves et vide-sanitaire</h4>
-                    <p class="gras_500">Vous avez un garage en rez-de-chaussée ou en sous-sol, des caves ou un vide-sanitaire:</p>
-                    <p class="text-muted">En isolant le plafond de votre garage, de vos caves ou de votre vide-sanitaire, <span class="gras_500">vous isolez avant tout le sol de vos pièces à vivre</span> et vous évitez les déperditions thermiques à travers le sol.
-                        Cette isolation est réalisée en posant des <span class="gras_500">panneaux de polystyrène</span> sur le plafond du garage ou des caves.</p>
-                </div>
-            </div>
-        </div><!-- end row -->
-    </div> <!-- end container -->
-</section>
 <section class="section" id="section-explication" data-background-color="bleue-clair">
     <div class="container">
         <div class="row">
