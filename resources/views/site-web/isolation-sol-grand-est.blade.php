@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <h5 class="line-height-1-5">Le dispositif des certificats d’économies d’énergie (CEE), créé en 2006 repose sur <span class="gras_500" data-color="vert">une obligation de réalisation d’économies d’énergie imposée par les pouvoirs publics aux vendeurs d’énergie</span>. Cette obligation comprend notamment la prise en charge de vos travaux d'isolation.</h5>
+                <h5 class="line-height-1-5">Le dispositif des certificats d’économies d’énergie (CEE), créé en 2006 repose sur <span class="gras_500" data-color="vert">une obligation de réalisation d’économies d’énergie imposée par l'État aux vendeurs d’énergie</span>. Cette obligation comprend notamment la prise en charge de vos travaux d'isolation.</h5>
             </div>
         </div><!-- end row -->
     </div> <!-- end container -->
@@ -175,8 +175,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2 class="mb-40" data-color="vert">Les types d'isolation auxquels vous avez droit :</h2>
-                <h3 class="mt-20" data-color="bleue">Avec l’isolation des sols à 1€, vous pouvez cumuler ces 2 types d’isolation</h3>
+                <h2 class="mb-40">Les types d'isolation auxquels vous avez droit :</h2>
+                <h3 class="mt-20" data-color="vert">Avec l’isolation des sols à 1€, vous pouvez cumuler ces 2 types d’isolation</h3>
                 <h4 class="mt-20" data-color="orange">Surface illimitée!</h4>
             </div>
         </div> <!-- end row -->
