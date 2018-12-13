@@ -78,11 +78,11 @@
     </div> <!-- end container -->
 </section>
 <!-- end Features -->
-<section class="section pt-20" id="section-presentation1" data-background-color="bleue-clair">
+<section class="section pt-20" id="section-presentation1" data-background-color="bleue-fonce">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-center">Vous êtes propriétaire ou locataire d'une maison individuelle, </span><span class="gras_500" data-color="vert">vous pouvez vous aussi profiter de lisolation de votre garage et de vos caves pour 1€</span> : <span class="gras_500">Une aide</span> mise en place pour soutenir <span class="gras_500">les foyers mal isolés</span>*.</h2>
+                <h2 class="text-center text-white">Vous êtes propriétaire ou locataire d'une maison individuelle, </span><span class="gras_500" data-color="vert">vous pouvez vous aussi profiter de lisolation de votre garage et de vos caves pour 1€</span> : <span class="gras_500">Une aide</span> mise en place pour soutenir <span class="gras_500">les foyers mal isolés</span>*.</h2>
                 <p class="text-center">*Sans aucune condition de revenu depuis le 1er septembre 2018.</p>
             </div>
         </div>

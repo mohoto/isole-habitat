@@ -153,7 +153,8 @@
 /*======= 1.Reset ======== */
 body {
   font-family: 'Roboto', sans-serif;
-  color: #496174;
+  /*color: #496174;*/
+  color: #2f3e47;
   background: #fff;
   font-size: 14px;
   line-height: 22px;
@@ -699,6 +700,21 @@ h1, h2, h3, h4{
 h1{
   font-size: 2.2rem;
 }
+h2{
+  font-size: 1.8rem;
+}
+.line-height-1-2 {
+  line-height: 1.2;
+}
+var.line-height-1-3 {
+  line-height: 1.3;
+}
+.line-height-1-4 {
+  line-height: 1.4;
+}
+.line-height-1-5 {
+  line-height: 1.5;
+}
 .gras_700{
   font-weight: 700;
 }
@@ -885,6 +901,24 @@ h1{
 }
 .pb-20{
   padding-bottom: 20px;
+}
+.pt-30{
+  padding-top: 30px;
+}
+.pb-30{
+  padding-bottom: 30px;
+}
+.pt-40{
+  padding-top: 40px;
+}
+.pb-40{
+  padding-bottom: 40px;
+}
+.pt-50{
+  padding-top: 50px;
+}
+.pb-50{
+  padding-bottom: 50px;
 }
 .middle{
     vertical-align: middle;
@@ -1140,7 +1174,7 @@ label.type-heure {
   margin-left: -80px;
   width:0;
   height:0;
-  border-top: 40px solid #ebeef1;
+  border-top: 40px solid #2f3e47;
   border-right: 80px solid transparent;
   border-left: 80px solid transparent;
   z-index: 1;
@@ -1259,7 +1293,7 @@ label.type-heure {
     color: #ee7626;
 }
 .section#features .features-box p {
-    color: #0863b5;
+    color: #2f3e47;
     font-size: 1.2em;
     margin-top: 10px;
 }
@@ -4475,8 +4509,21 @@ nav {
   padding: 15px 30px;
   margin-bottom: 20px;
 }
-.section#section-slogan-grand-est h2{
-  line-height: 1.3;
+.section#section-presentation .slogan-condition{
+  font-size: 1.5rem;
+}
+.section .section-slogan-grand-est:before{
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -80px;
+  width: 0;
+  height: 0;
+  border-top: 40px solid #2f3e47;
+  border-right: 80px solid transparent;
+  border-left: 80px solid transparent;
+  z-index: 1;
 }
 
 .section#section-benefit-grand-est .list-benefit-grand-est{
@@ -4484,7 +4531,7 @@ nav {
 }
 .section#section-benefit-grand-est .list-benefit-grand-est li {
   font-size: 1.6em;
-  line-height: 2;
+  line-height: 1.8;
   font-weight: 400;
 }
 .section#section-benefit-grand-est .list-benefit-grand-est#list-benefit-grand-est1 li i {
@@ -4494,4 +4541,34 @@ nav {
 .section#section-benefit-grand-est .list-benefit-grand-est#list-benefit-grand-est2 li i {
   color: #ee7626;
   margin-right: 10px;
+}
+.section#section-benefit-grand-est .img-certicats{
+  width: 400px;
+}
+.section#section-information-grand-est {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.section#section-information-grand-est .block-information {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.section#section-information-grand-est .block-information img {
+  width: 16em;
+  display: block;
+  margin: 2em auto;
+}
+.section#section-information-grand-est .block-information img.img-economie {
+  width: 30em;
+  display: block;
+  margin: 0 auto;
+}
+.section#section-information-grand-est .block-information h3 {
+  font-family: "foco", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+.section-benefit-societe i{
+  font-size: 6em;
+  color: #ffffff;
 }

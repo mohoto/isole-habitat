@@ -20,20 +20,22 @@
         </div>
     </div>
 </header>
-<h1 class="text-center gras_500 mt-40 mb-20" data-color="orange">Votre Isolation Pour 1€ Dans Le Grand-Est:</h1>
-<section class="section pt-20" id="section-slogan-grand-est">
-    <div class="container-fluid">
+<h1 class="text-center gras_500 mt-40">Votre Isolation Pour 1€ Dans Le Grand-Est:</h1>
+<section class="section pt-0" id="section-presentation">
+    <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-center"><span class="gras_500">Vous habitez dans le Grand-Est</span> et vous êtes propriétaire ou locataire d'une maison individuelle, </span><span class="gras_500" data-color="vert">vous pouvez vous aussi profiter de lisolation de votre garage, de vos caves et vide-sanitaire pour 1€ </span><span class="gras_500">avec les disposifs de l'Éat</span>.</h2>
-                <h3 class="text-center mt-20 mb-20" data-color="orange">Sans aucune condition de revenu depuis le 1er septembre 2018.</h3>
+                <h2 class="slogan-condition text-center mt-10 mb-40" data-color="orange">Sans aucune condition de revenu depuis le 1er septembre 2018.</h2>
+            </div>
+            <div class="col-md-12 pt-30 pb-30 section-slogan-grand-est" data-background-color="bleue-fonce">
+                <h3 class="text-center text-white line-height-1-5"><span class="gras_500">Vous habitez dans le Grand-Est</span> et vous êtes propriétaire ou locataire d'une maison individuelle, <span class="gras_400" data-color="vert">vous pouvez vous aussi profiter de lisolation de votre garage, de vos caves et vide-sanitaire pour 1€ </span><span class="gras_500">avec les dispositifs d'aide de l'Éat</span>.</h3>
             </div>
         </div>
     </div>
 </section>
-<section class="section pt-30" id="section-benefit-grand-est">
+<section class="section pt-10" id="section-benefit-grand-est">
     <div class="container">
-        <div class="row justify-content-around align-items-end">
+        <div class="row align-items-center">
             <div class="col-12 col-md-6">
                 <div style="position: relative";>
                     <img src="{{ asset('images/isolation-garage.jpg') }}" alt="img" class="img-fluid rounded">
@@ -44,20 +46,31 @@
             <div class="col-12 col-md-6">
                 <ul id="list-benefit-grand-est1" class="list-benefit-grand-est">
                     <li><i class="fas fa-arrow-circle-right"></i>Dispositif CEE d'aide de l'Etat</li>
+                    <li><i class="fas fa-arrow-circle-right"></i>Propriétaire ou locataire</li>
                     <li><i class="fas fa-arrow-circle-right"></i>Une réponse en 48 heures</li>
                     <li><i class="fas fa-arrow-circle-right"></i>Aucune formalité à faire</li>
-                    <li><i class="fas fa-arrow-circle-right"></i>Surface illimitée</li>
                 </ul>
                 <ul id="list-benefit-grand-est2" class="list-benefit-grand-est">
+                    <li><i class="fas fa-arrow-circle-right"></i>Surface illimitée</li>
                     <li><i class="fas fa-arrow-circle-right"></i>Votre isolation sous 7 jours</li>
                     <li><i class="fas fa-arrow-circle-right"></i>Aucun frais à avancer</li>
-                    <li><i class="fas fa-arrow-circle-right"></i>1€ symbolique après travaux</li>
+                    <li><i class="fas fa-arrow-circle-right"></i>1€ après travaux</li>
                 </ul>
+            </div>
+        </div><!-- end row -->
+        <div class="row align-items-center mt-50">
+            <div class="col-12 col-md-6">
+                <div>
+                    <img src="{{ asset('images/cee-certifcats.png') }}" alt="img" class="img-fluid img-certicats block-center">
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h5 class="line-height-1-5">Le dispositif des certificats d’économies d’énergie (CEE), créé en 2006 repose sur <span class="gras_500" data-color="vert">une obligation de réalisation d’économies d’énergie imposée par les pouvoirs publics aux vendeurs d’énergie</span>. Cette obligation comprend notamment la prise en charge de vos travaux d'isolation.</h5>
             </div>
         </div><!-- end row -->
     </div> <!-- end container -->
 </section>
-<section class="section" id="section-information" data-background-color="bleue">
+<section class="section" id="section-information-grand-est" data-background-color="bleue">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 block-information" data-background-color="vert">
@@ -65,109 +78,35 @@
                 <img src="http://localhost:8888/isolation/public/images/icon-ecologie.svg" alt="illustration isolation à 1 euro ecologique" class="img-fluid rounded">
                 <p class="text-center" data-color="blanc">Réduit les dépenses énergétiques</p>
             </div>
-            <div class="col-md-4 block-information" data-background-color="bleue">
+            <div class="col-md-8 block-information" data-background-color="bleue">
                 <h3><i class="ion-ios7-plus-outline"></i> D'ECONOMIE</h3>
-                <img src="http://localhost:8888/isolation/public/images/icon-economie-sol.svg" alt="illustration isolation à 1 euro économie sur facture de chauffage" class="img-fluid rounded">
-                <p class="text-center" data-color="blanc">D'économie sur votre facture de chauffage</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="" id="home">
-    <div class="container">
-        <div class="row hero mt-50 mb-40 justify-content-center align-items-stretch">
-            <div class="col-sm-12 col-md-6">
-                <div class="part1"></div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <div class="part2 text-center mb-0">
-                    <h1 class="mb-40 mt-xs-30 gras_600">ISOLEZ VOTRE MAISON POUR 1€</h1>
-                    <h3 data-color="orange"><span class="italic gras_600">Nouveau depuis le 1er septembre 2018</span></h3>
-                    <h4>L'isolation des garages et caves pour 1€</h4>
-                    <p id="hero-condition" data-color="orange">Sans aucune condition de revenu.</p>
-                    <a href="#" id="btn-section-formulaire" class="btn btn-rounded btn-vert btn-formulaire mt-20">Je veux profiter de cette aide</a>
-                    {{--<p class="m-t-20" data-color="vert">1€ symbolique après travaux.</p>--}}
-                    <p class="m-t-20">Votre isolation dans les 7 jours suivant votre demande.</p>
+                <div class="d-flex justify-content-around align-items-center">
+                    <div class="">
+                        <img src="http://localhost:8888/isolation/public/images/icon-economie-sol.svg" alt="illustration isolation à 1 euro économie sur facture de chauffage" class="img-fluid rounded img-economie">
+                    </div>
+                    <div class="pl-3">
+                        <h2 class="text-left line-height-1-4" data-color="blanc"><span class="gras_400">Economisez jusqu'à -20%</span> sur vos factures de chauffage.</h2>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- END HOME -->
-<!-- Features -->
-<section class="section" id="features">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="features-box">
-                    <i class="icon-fantastic icon-icon-1-euro-1"></i>
-                    <p class="">Aucun frais à avancer, 1€ après travaux</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="features-box">
-                    <i class="icon-fantastic icon-icon-surface4"></i>
-                    <p class="">Surface illimitée pour votre isolation</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="features-box">
-                    <i class="icon-fantastic icon-icon-percent-20"></i>
-                    <p class="">Economie sur votre facture de chauffage</p>
-                </div>
-            </div>
-        </div> <!-- end row -->
-    </div> <!-- end container -->
-</section>
-<!-- end Features -->
 <section class="section" id="section-presentation-video">
     <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-5 order-2 order-md-1">
-                <h4 class="">L'isolation à 1 euro : <span class="gras_500">une réalité peu connue</span>.</h4>
-                <p>Peu de ménages savent qu'ils peuvent bénéficier de l'isolation de leur maison pour 1€ symbolique. Et pourtant, ce programme repose sur <span data-color="orange">une obligation de réalisation d’économies d’énergie imposée par l'Etat aux vendeurs d’énergie</span>.</p>
-                <p>Le 1er janvier 2018, le dispositif est entré dans sa 4ème période d’obligation.</p>
-            </div>
-            <div class="col-md-5 order-1 order-md-2 mb-xs-20">
-                <img id="mascotte-isolation" class="block-center" src="{{ asset('images/isolation-1-euro.jpg') }}" alt="illustration mascotte isolation à 1 euro" />
-            </div>
-        </div>
+        <h2 class="text-center presentaion-couple">Ils ont isolé le garage et les caves de leur maison <span class="gras_500" data-color="vert">pour 1€</span> au lieu de <span class="gras_500" data-color="orange">4241€</span>.</h2>
         <div class="row justify-content-center align-items-center mt-40">
             <div class="col-md-5 mb-xs-20">
                 <img id="mascotte-isolation" class="rounded-circle block-center" src="{{ asset('images/photo-couple-isolation.jpg') }}" alt="illustration mascotte isolation à 1 euro" />
             </div>
             <div class="col-md-5">
-                <h4 class="presentaion-couple">Ils ont isolé le garage et les caves de leur maison <span class="gras_500" data-color="vert">pour 1€</span> au lieu de <span class="gras_500" data-color="orange">4241€</span>.</h4>
                 <p>Frédéric et Laurence ont fait <span class="gras_500" data-color="vert">financé en totalité</span> l'isolation de leur garage et de leurs caves <span class="gras_500">grâce à notre programme et au dispositif CEE mis en place par l'etat.</p>
                 <p><span class="gras_500" data-color="orange">Tous les foyers peuvent en profiter, sans aucune condition de revenu</span>. Nous nous occupons de toutes les formalités.</p>
             </div>
-        </div><div class="row mt-50" id="section-comment">
-            <div class="col-md-12">
-                <h3 class="text-center  mb-30"><span class="gras_500" data-color="vert">Inscrivez-vous au programme</span> et profitez de l'isolation des sols de votre maison pour 1€</h3>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-6">
-                        <div class="d-flex justify-content-center">
-                            <ul id="list-benefit-total1" class="list-benefit-total">
-                                <li><i class="fas fa-arrow-circle-right"></i>Une réponse en 48 heures</li>
-                                <li><i class="fas fa-arrow-circle-right"></i>Aucune formalité à faire</li>
-                                <li><i class="fas fa-arrow-circle-right"></i>Dispositif CEE d'ade de l'Etat</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="d-flex justify-content-center">
-                            <ul id="list-benefit-total2" class="list-benefit-total">
-                                <li><i class="fas fa-arrow-circle-right"></i>Votre isolation sous 7 jours</li>
-                                <li><i class="fas fa-arrow-circle-right"></i>Aucun frais à avancer</li>
-                                <li><i class="fas fa-arrow-circle-right"></i>1€ symbolique après travaux</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="row mt-50" id="section-fonctionnement">
-            <div class="col-md-12">
+            <h3 class="text-center  mb-30"><span class="gras_500" data-color="vert">Inscrivez-vous au programme</span> et profitez de l'isolation des sols de votre maison pour 1€</h3>
+            <div class="col-md-12 mt-30">
                 <div class="steps-timeline d-flex">
                     <div class="block-step" id="block-step1">
                         <div class="circle-block-step" id="circle1">
@@ -196,37 +135,48 @@
                 </div><!-- /.steps-timeline -->
             </div>
         </div>
-
     </div>
 </section>
-<section class="section" id="section-information" data-background-color="bleue-clair">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4 block-information" data-background-color="vert">
-                <h3><i class="ion-ios7-plus-outline"></i> D'ECOLOGIE</h3>
-                <img src="{{ asset('images/icon-ecologie.svg') }}" alt="illustration isolation à 1 euro ecologique" class="img-fluid rounded">
-                <p class="text-center" data-color="blanc">Réduit les dépenses énergétiques</p>
+<section class="section-benefit-societe">
+    <div class="container" data-background-color="bleue-fonce">
+        <div class="row justify-content-center mt-40">
+            <div class="col-sm-12 col-md-4">
+                <div class="features-box">
+                    <i class="icon-fantastic icon-icon-facture"></i>
+                    <div class="ml-20 align-self-center text-left">
+                        <h5 class="text-center text-white mt-10">Vous n'avez aucun démarche à faire</h5>
+                        <p class="text-center" data-color="orange">Nous nous occupons de toutes les formalités.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 block-information" data-background-color="orange">
-                <h3><i class="ion-ios7-plus-outline"></i> DE CONFORT</h3>
-                <img src="{{ asset('images/icon-confort.svg') }}" alt="illustration isolation à 1 euro confort" class="img-fluid rounded">
-                <p class="text-center" data-color="blanc">Bien-être dans votre maison</p>
+            <div class="col-sm-12 col-md-4">
+                <div class="features-box">
+                    <i class="icon-fantastic icon-icon-4-heures2"></i>
+                    <div class="ml-20 align-self-center text-left">
+                        <h5 class="text-center text-white mt-10">Votre isolation en moins de 4 heures</h5>
+                        <p class="text-center" data-color="orange">Des travaux rapides, pas de perte de temps pour vous.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 block-information" data-background-color="bleue">
-                <h3><i class="ion-ios7-plus-outline"></i> D'ECONOMIE</h3>
-                <img src="{{ asset('images/icon-economie-sol.svg') }}" alt="illustration isolation à 1 euro économie sur facture de chauffage" class="img-fluid rounded">
-                <p class="text-center" data-color="blanc">D'économie sur votre facture de chauffage</p>
+            <div class="col-sm-12 col-md-4">
+                <div class="features-box">
+                    <i class="icon-fantastic icon-icon-proprete"></i>
+                    <div class="ml-20 align-self-center text-left">
+                        <h5 class="text-center text-white mt-10">Propreté et nettoyage du chantier</h5>
+                        <p class="text-center" data-color="orange">Nettoyage en fin de chantier et évacuation des déchets.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <!-- Features -->
-<section class="section p-b-0" id="section-type-isolation">
+<section class="section" id="section-type-isolation">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h2 class="mb-40" data-color="vert">Les types d'isolation auxquels vous avez droit :</h2>
-                <h3 class="mt-20" data-color="bleue">Avec l’isolation à 1€, vous pouvez cumuler ces 2 types d’isolation</h3>
+                <h3 class="mt-20" data-color="bleue">Avec l’isolation des sols à 1€, vous pouvez cumuler ces 2 types d’isolation</h3>
                 <h4 class="mt-20" data-color="orange">Surface illimitée!</h4>
             </div>
         </div> <!-- end row -->
@@ -261,199 +211,6 @@
     </div> <!-- end container -->
 </section>
 <!-- end Features -->
-<!-- end features alt -->
-<!-- Features Alt -->
-<section class="section" id="section-explication" data-background-color="bleue-clair">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-center gras_500 mt-40 mb-50"><span data-color="vert">L'isolation de votre maison : </span>Des avantages en toutes saisons.</h2>
-                <div class="d-flex flex-md-row flex-column mt-50">
-                    <div class="block-explication">
-                        <h3 class="text-center">Votre maison <span class="gras_500" data-color="rouge">sans</span> isolation</h3>
-                        <img src="{{ asset('images/maison-sans-isolation.png') }}" class="img-responsive" alt="illustraion d'une maison sans l'isolation thermique">
-                        <ul class="list-non-benefit">
-                            <li><i class="far fa-times-circle"></i><span class="gras_500">En été :</span> La chaleur extérieur rentre dans votre habitation</li>
-                            <li><i class="far fa-times-circle"></i><span class="gras_500">En été :</span> L’air frais s’échappe vers l’extérieur</li>
-                            <li class="mt-20"><i class="far fa-times-circle"></i><span class="gras_500">En hiver :</span> La chaleur s’échappe par la toiture et le sol</li>
-                            <li><i class="far fa-times-circle"></i><span class="gras_500">En hiver :</span> Vous consommez plus d’énergie pour vous chauffer</li>
-                        </ul>
-                    </div>
-                    <div class="block-explication">
-                        <h3 class="text-center">Votre maison <span class="gras_500" data-color="vert">avec</span> isolation</h3>
-                        <img src="{{ asset('images/maison-avec-isolation.png') }}" class="img-responsive" alt="illustraion d'une maison avec l'isolation thermique">
-                        <ul class="list-benefit">
-                            <li><i class="fas fa-check"></i><span class="gras_500">En été :</span> Empêche la chaleur de rentrer à l’intérieur</li>
-                            <li><i class="fas fa-check"></i><span class="gras_500">En été :</span> Garde la fraîcheur à l’intérieur de votre maison</li>
-                            <li class="mt-20"><i class="fas fa-check"></i><span class="gras_500">En hiver :</span> Garde la chaleur à l’intérieur de votre maison</li>
-                            <li><i class="fas fa-check"></i><span class="gras_500">En hiver :</span> Vous économisez sur vos factures de chauffage</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section section-questions mt-40" id="section-questions1">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 mb-40">
-                <img src="{{ asset('images/mascotte.jpg') }}" class="mascotte-isole-habitat block-center mb-10" alt="illustration mascotte isole habitat ">
-                <h2 class="text-center gras_500" data-color="vert">Isoler ma maison pour 1€ : Comment est-ce possible?</h2>
-            </div>
-        </div>
-        <div class="row justify-content-around mb-40 mt-30">
-            <div class="col-md-5 col-sm-12 block-question-title">
-                <h3 class="">Pourquoi est-il nécessaire d'isoler ma maison ?</h3>
-                <p><span class="gras_500" data-color="orange">Plus de 30% des logements français sont en précarité énergétique</span>. Les ménages qui vivent dans ces logements ont des consommations d’énergie importantes.</p>
-                <p>Les parois mal isolées laissent passer <span class="gras_500" data-color="orange">le froid en hiver</span> et <span class="gras_500" data-color="orange">la chaleur en été</span>. 30% de l'air ambiant de votre maison s'échappe par la toiture, 25% par les murs et 10% par le sol.</p>
-                <p class="">En isolant votre maison, vous <span class="gras_500" data-color="orange">consommez moins d'énergie</span> pour vous chauffer <span class="gras_500" data-color="orange">en hiver</span> et vous évitez la <span class="gras_500" data-color="orange">chaleur inconfortable</span> l'été.</p>
-                <p>En consommant moins d'énergie, vous <span class="gras_500" data-color="orange">économisez sur votre facture</span> de chauffage.</p>
-            </div>
-            <div class="col-md-5 col-sm-12 mt-xs-30 block-question-title">
-                <h3 class="">Qui paye pour mes travaux d'isolation ?</h3>
-                <p><span class="gras_500" data-color="orange">Ce sont les fourniseurs d'énergie</span> : Total, Elf, EDF, Poweo.., qui financent vos travaux d'isolation.</p>
-                <p><span class="gras_500" data-color="orange">L'État</span>, par le biais de la loi "POPE" (Loi n° 2005-781 du 13 juillet 2005, loi de Programmation fixant les Orientations de la Politique Energétique), <span class="gras_500" data-color="orange">oblige ces fournisseurs d'énergie à financer certains travaux d'isolation, à travers le dispositif des certificats d’économies d’énergie (CEE)</span>, dans les foyers en précarité énergétique, sous peine d'amendes.</p>
-                <p><span class="gras_500" data-color="orange">Les travaux réalisés</span> avec le programme d'isolation à 1€ rentrent dans ce dispositif et <span class="gras_500" data-color="orange">sont intégralement financés</span> et sans <span class="gras_500" data-color="orange">aucun frais à avancer</span>.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section" id="section-questions-cee">
-    <div class="row justify-content-center" style="position: relative">
-        <div class="col-lg-8 block-cee">
-            <h4 class="text-center mb-20" data-color="vert">Un programme en accord avec le dispositif des certificats d’économie d’énergie (CEE) mis en place par le <span class="gras_500">Ministère de la Transition Écologique et Solidaire</span>.</h4>
-            {{--<p>Le dispositif des certificats d’économies d’énergie (CEE) constitue l'un des principaux instruments de la politique de maîtrise de la demande énergétique.</p>--}}
-            <p>Le dispositif des certificats d’économies d’énergie (CEE), créé en 2006 repose sur <span class="gras_500">une obligation de réalisation d’économies d’énergie imposée par les pouvoirs publics aux vendeurs d’énergie</span>. Ceux-ci doivent ainsi promouvoir activement l’efficacité énergétique auprès des consommateurs d’énergie : ménages, collectivités territoriales ou professionnels. Le 1er janvier 2018, le dispositif est entré dans sa 4ème période d’obligation.</p>
-            <p class="text-muted text-source">source : Ministère de la Transition écologique et solidaire - </p>
-            <a href="https://www.ecologique-solidaire.gouv.fr/dispositif-des-certificats-deconomies-denergie" target="_blank">https://www.ecologique-solidaire.gouv.fr/dispositif-des-certificats-deconomies-denergie</a>
-            <img src="{{ asset('images/mascotte-cee.png') }}" class="mascotte-cee" alt="illustration des certificats d'économie d'énergie">
-        </div>
-    </div>
-</section>
-<section class="section section-questions" id="section-questions2">
-    <div class="container">
-        <div class="row justify-content-around mt-40">
-            <div class="col-md-5 col-sm-12 block-question-title">
-                <h3 class="">Je suis locataire : est-ce que je peux en bénéficier ?</h3>
-                <p>Bien sûr, ce dispositif permet <span class="gras_500" data-color="orange">aux locataires et aux propriétaires</span> d'isoler leur maison. Même si vous avez déjà profité d'autres subventions de l'État (crédit d'impôt, aides de l'Anah, prime rénovation...), vous pouvez prétendre à l'isolation à 1 euro. <span class="gras_500" data-color="orange">Cette aide est cumulable avec tous les autres travaux d’aménagement</span> pour réduire la consomation énergétique.</p>
-            </div>
-            <div class="col-md-5 col-sm-12 mt-xs-30 block-question-title">
-                <h3 class="">Comment je peux profiter de cette aide ?</h3>
-                <p class="gras_500" data-color="orange">Seulement 2 conditions sont nécessaires pour être éligible au programme d'isolation des sols pour 1€ :</p>
-                <p><i class="fa fa-check mr-10" aria-hidden="true" data-color="vert"></i>Ne pas se chauffer uniquement à l'éléctricité</p>
-                {{--<p><i class="fa fa-check mr-10" aria-hidden="true" data-color="vert"></i>Ne pas dépasser le plafond de revenus définit par l'ADEME*</p>--}}
-                <p><i class="fa fa-check mr-10" aria-hidden="true" data-color="vert"></i>Habiter une maison dont la construction date de plus de 2 ans.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section" id="section-zones">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xs-12 col-md-6">
-                <h2 class="gras_700 text-center" data-color="vert">Zone H1</h2>
-                <img src="{{ asset('images/carte-france-isolation.png') }}" class="image-region-intervention" alt="Carte des zones de France éligibles à lisolation pour 1€ ">
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <h3 class="mb-40">Les régions concernées :</h3>
-                <p><span class="gras_500">L'État a définit 3 zones climatiques (H1, H2, H3)</span> pour les opérations d'aides mises en place pour réduire la consommation d'énergie.</p>
-                <p>Vous habitez en  <span class="gras_500" data-color="vert">zone H1</span>, dans la région des <span class="gras_500" data-color="vert">Hauts-de-France</span>, en <span class="gras_500" data-color="vert">Normandie</span>, en <span class="gras_500" data-color="vert">Ile-de-France</span>, dans le <span class="gras_500" data-color="vert">Grand-Est</span>, en <span class="gras_500" data-color="vert">Centre Val-de-Loire</span>, en <span class="gras_500" data-color="vert">Bourgogne-Franche-Comté</span>, en <span class="gras_500" data-color="vert">Auvergne-Rhones-Alpes</span>, vous pouvez bénificier de l'isolation de votre maison pour 1€, sous conditions d'éligibilité.</p>
-                {{--<p class="mt-40"><span class="gras_500" data-color="vert">Ce dispositif va être étendu à d'autres régions</span> de France. Nous vous proposons de vous tenir informé des dispositions qui seront prises pour bénificier de l'isolation à 1€ dans votre région.</p>
-                <a href="" class="btn btn-custom mt-30">Je veux rester informé</a>--}}
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section pb-0" id="section-precarite-energetique" data-background-color="bleue-clair">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <h2 class="gras_700 text-center mb-30" data-color="orange">La précarité énergétique</h2>
-                <h3 class="">Un menage est en <span class="gras_500">«précarité énergétique»</span> lorsque celui-ci consacre <span class="gras_500">plus de 10% de ses revenus aux dépenses d’énergie</span> dans le logement.</h3>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="features-box">
-                    <img src="{{ asset('images/icon-porcentage-precarite1.svg') }}" alt="illustration économie sur facture de chauffage" class="">
-                    <p class="m-t-20">Des ménages sont dans le parc privé.</p>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="features-box">
-                    <img src="{{ asset('images/icon-porcentage-precarite2.svg') }}" alt="illustration économie sur facture de chauffage" class="">
-                    <p class="m-t-20">Sont propriétaires-occupants.</p>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="features-box">
-                    <img src="{{ asset('images/icon-porcentage-precarite3.svg') }}" alt="illustration économie sur facture de chauffage" class="">
-                    <p class="m-t-20">Ont plus de 60 ans.</p>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-12 mb-20">
-                <h4 class="text-center gras_500 mb-30 mt-30" data-color="orange">Une mauvaise isolation est l'un des facteurs les plus importants de la «précarité énergétique».</h4>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end features alt -->
-<section class="section" id="section-societe">
-    <div class="container">
-        <img id="logo" class="block-center"src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat">
-        <p class="text-center sub-title-logo mb-30">Des professionnels qualifiés</p>
-        <div class="row societe-part1 justify-content-center mb-30">
-            <div class="col-xs-12 col-md-10">
-                <div class="d-flex flex-column align-items-center flex-sm-column align-items-sm-center flex-md-row align-items-md-end">
-                    <img src="{{ asset('images/Qualibat-RGE.jpg') }}" id=""alt="illustarion du label RGE, garant de l'environnement">
-                    <div id="text-label" class="ml-40 align-self-end">
-                        <h2 class="mb-30" data-color="bleue">Le label <span class="gras_700" data-color="vert">RGE Qualibat </span>: Un gage de <span class="gras_500">qualité :</span></h2>
-                        <p><span class="gras_500">Le label RGE(Reconnu Garant de l'environnement)</span> est un signe de qualité délivré à une entreprise qui remplit certains critères lors de la réalisation de travaux d'économie d'énergie dans les logements(isolation thermique, installation d'équipement utilisant des énergies renouvelables...).</p>
-                        <p class="gras_500">Le label RGE vous donne la garantie que cette entreprise est reconnue par l'état.</p>
-                        <p class="gras_500">Nous faisons appel à une entreprise RGE pour faire vos travaux d'isolation, ce qui vous donne droit à l'attribution de certains aides publiques.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row societe-part2 justify-content-center">
-            <div class="order-2 col-sm-12 col-md-6 order-sm-2 order-md-1" id="presentation-societe">
-            </div>
-            <div class="col-md-6 order-1 order-sm-1 order-md-2 mb-30">
-                <div id="presentation-societe2">
-                    <div class="features-box d-flex">
-                        <i class="icon-fantastic icon-icon-facture"></i>
-                        <div class="ml-20 align-self-center text-left">
-                            <h3>Aucune démarche à faire</h3>
-                            <p>Nous nous occupons de toutes les formalités.</p>
-                        </div>
-                    </div>
-                    <div class="features-box d-flex">
-                        <i class="icon-fantastic icon-icon-4-heures2"></i>
-                        <div class="ml-20 align-self-center text-left">
-                            <h3>Votre isolation en moins de 4 heures</h3>
-                            <p>Des travaux rapides, pas de perte de temps pour vous.</p>
-                        </div>
-                    </div>
-                    <div class="features-box d-flex">
-                        <i class="icon-fantastic icon-icon-proprete"></i>
-                        <div class="ml-20 align-self-center text-left">
-                            <h3>Propreté et nettoyage du chantier</h3>
-                            <p>Nettoyage en fin de chantier et évacuation des déchets.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section" id="section-presentation5" data-background-color="bleue-clair">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col col-sm-12 col-md-12">
-                <h3 class="text-left mt-30 mb-30"><span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">HABITAT </span>est un service du groupe PRESTA HABITAT : <span class="gras_500">société experte dans l'isolation des habitats et des énergies renouvelables.</span></h3>
-            </div>
-        </div>
-    </div>
-</section>
 <!-- Testimonials section -->
 <section class="section" id="section-testimonials">
     <div class="bg-overlay"></div>
