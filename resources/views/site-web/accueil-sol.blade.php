@@ -78,7 +78,7 @@
     </div> <!-- end container -->
 </section>
 <!-- end Features -->
-<section class="section pt-20" id="section-presentation1" data-background-color="bleue-fonce">
+<section class="section pt-30" id="section-presentation1" data-background-color="bleue-fonce">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -262,8 +262,8 @@
             </div>
             <div class="col-md-5 order-1">
                 <div class="feat-description">
-                    <h4 data-color="bleue">L'isolation des garages, caves et vide-sanitaire</h4>
-                    <p class="gras_500">Vous avez un garage en rez-de-chaussée ou en sous-sol, des caves ou un vide-sanitaire:</p>
+                    <h4>L'isolation des garages, caves et vide-sanitaire</h4>
+                    <p class="gras_500" data-color="orange">Vous avez un garage en rez-de-chaussée ou en sous-sol, des caves ou un vide-sanitaire:</p>
                     <p class="text-muted">En isolant le plafond de votre garage, de vos caves ou de votre vide-sanitaire, <span class="gras_500">vous isolez avant tout le sol de vos pièces à vivre</span> et vous évitez les déperditions thermiques à travers le sol.
                         Cette isolation est réalisée en posant des <span class="gras_500">panneaux de polystyrène</span> sur le plafond du garage ou des caves.</p>
                 </div>
