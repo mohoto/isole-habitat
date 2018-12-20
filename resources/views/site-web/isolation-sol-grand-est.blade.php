@@ -249,7 +249,7 @@
                 <div class="card">
                     <div class="card-body">
                         <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="vert"></i>
-                        <p class="testimonial-content">J'ai fait la demande, un conseiller m'a rappelé le lendemain pour m'expliquer la suite. <span class="gras_500">Une semaine après, ils sont passés pour poser l'isolation</span>. Ils m'ont donné tout de suite ma facture avec juste 1€ symbolique à payer. <i class="fa fa-quote-right" aria-hidden="true" data-color="vert"></i></p>
+                        <p class="testimonial-content">J'ai fait la demande, un conseiller m'a rappelé le lendemain pour m'expliquer la suite. <span class="gras_500">Une semaine après, ils sont passés pour poser l'isolation</span>. Ils m'ont donné tout de suite ma facture avec <span class="gras_500">juste 1€ symbolique à payer</span>. <i class="fa fa-quote-right" aria-hidden="true" data-color="vert"></i></p>
                     </div>
                     <div class="card-footer">
                         <div class="d-flex justify-content-between">
