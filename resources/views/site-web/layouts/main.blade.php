@@ -233,6 +233,7 @@
                             {{--<li><a href="#">L'isolation des caves et garges</a></li>--}}
                             <li><a href="{{ route('site-web.societe') }}">Qui sommes-nous?</a></li>
                             <li><a href="{{ route('site-web.policy') }}">Politique de confidentialité</a></li>
+                            <li><a href="{{ route('site-web.isolation-sol-grand-est') }}">Isolation 1 euro Grand-est</a></li>
                         </ul>
                     </div>
                     {{--<div class="col-md-4">

@@ -102,7 +102,7 @@
         </div>
         <div class="row justify-content-center align-items-center mt-40">
             <div class="col-md-5 mb-xs-20">
-                <img id="mascotte-isolation" class="rounded-circle block-center" src="{{ asset('images/photo-couple-isolation.jpg') }}" alt="illustration mascotte isolation à 1 euro" />
+                <img id="client-isolation" class="rounded-circle block-center" src="{{ asset('images/photo-couple-isolation-nb.jpg') }}" alt="illustration mascotte isolation à 1 euro" />
             </div>
             <div class="col-md-5">
                 <h4 class="presentaion-couple">Ils ont isolé le garage et les caves de leur maison <span class="gras_500" data-color="vert">pour 1€</span> au lieu de <span class="gras_500" data-color="orange">4241€</span>.</h4>
@@ -236,7 +236,7 @@
         <div class="row justify-content-around align-items-end">
             <div class="col-md-5 order-2">
                 <div style="position: relative";>
-                    <img src="{{ asset('images/isolation-garage.jpg') }}" alt="img" class="img-fluid rounded">
+                    <img src="{{ asset('images/isolation-garage-noir.jpg') }}" alt="img" class="img-fluid rounded">
                     <div class="bg-overlay">
                         <h4>Isolation du plafond de garage avec panneaux de polystyrène</h4>
                         <table class="table">
@@ -417,7 +417,7 @@
                         <h2 class="mb-30" data-color="bleue">Le label <span class="gras_700" data-color="vert">RGE Qualibat </span>: Un gage de <span class="gras_500">qualité :</span></h2>
                         <p><span class="gras_500">Le label RGE(Reconnu Garant de l'environnement)</span> est un signe de qualité délivré à une entreprise qui remplit certains critères lors de la réalisation de travaux d'économie d'énergie dans les logements(isolation thermique, installation d'équipement utilisant des énergies renouvelables...).</p>
                         <p class="gras_500">Le label RGE vous donne la garantie que cette entreprise est reconnue par l'état.</p>
-                        <p class="gras_500">Nous faisons appel à une entreprise RGE pour faire vos travaux d'isolation, ce qui vous donne droit à l'attribution de certains aides publiques.</p>
+                        <p class="gras_500">Nous faisons appel à une entreprise RGE pour faire vos travaux d'isolation, ce qui vous donne droit à l'attribution de certaines aides publiques.</p>
                     </div>
                 </div>
             </div>
@@ -453,17 +453,17 @@
         </div>
     </div>
 </section>
-<section class="section" id="section-presentation5" data-background-color="bleue-clair">
+<section class="section" id="section-presentation5" data-background-color="bleue-fonce">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col col-sm-12 col-md-12">
-                <h3 class="text-left mt-30 mb-30"><span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">HABITAT </span>est un service du groupe PRESTA HABITAT : <span class="gras_500">société experte dans l'isolation des habitats et des énergies renouvelables.</span></h3>
+                <h3 class="text-left text-white mt-30 mb-30 line-height-1-4"><span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">HABITAT </span>est un service du groupe PRESTA HABITAT : société experte dans l'isolation des habitats et des énergies renouvelables.</h3>
             </div>
         </div>
     </div>
 </section>
 <!-- Testimonials section -->
-<section class="section" id="section-testimonials">
+{{--<section class="section" id="section-testimonials">
     <div class="bg-overlay"></div>
     <div class="container">
         <div class="row align-self-stretch">
@@ -505,7 +505,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>--}}
     <!-- Modal Youtube Videos-->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog reportage-video" role="document">

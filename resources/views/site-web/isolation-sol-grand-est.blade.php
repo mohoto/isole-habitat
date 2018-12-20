@@ -6,8 +6,12 @@
 <header data-background-color="bleue-fonce">
     <nav id='cssmenu-grand-est'>
         <div class="container-nav d-flex justify-content-between align-items-ends">
-            <div class="logo"><a href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a></div>
+            <div class="logo">
+                <a href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a></div>
             <div>
+                <h5 class="text-white mb-20" id="dispositif-texte-nav">Dispositif CEE d'aide de l'Etat.</h5>
+            </div>
+            <div class="">
                 <a href="#" id="btn-formulaire-ribbon" class="btn btn-rounded btn-vert btn-formulaire ml-20">Je veux profiter de cette aide</a>
             </div>
         </div>
@@ -38,7 +42,7 @@
         <div class="row align-items-center">
             <div class="col-12 col-md-6">
                 <div style="position: relative";>
-                    <img src="{{ asset('images/isolation-garage.jpg') }}" alt="img" class="img-fluid rounded">
+                    <img src="{{ asset('images/isolation-garage-noir.jpg') }}" alt="img" class="img-fluid rounded">
                     <div class="bg-overlay">
                     </div>
                 </div>
@@ -97,7 +101,7 @@
         <h2 class="text-center presentaion-couple">Ils ont isolé le garage et les caves de leur maison <span class="gras_500" data-color="vert">pour 1€</span> au lieu de <span class="gras_500" data-color="orange">4241€</span>.</h2>
         <div class="row justify-content-center align-items-center mt-40">
             <div class="col-md-5 mb-xs-20">
-                <img id="mascotte-isolation" class="rounded-circle block-center" src="{{ asset('images/photo-couple-isolation.jpg') }}" alt="illustration mascotte isolation à 1 euro" />
+                <img id="client-isolation" class="rounded-circle block-center" src="{{ asset('images/photo-couple-isolation-nb.jpg') }}" alt="illustration couple client isolation à 1 euro" />
             </div>
             <div class="col-md-5">
                 <p>Frédéric et Laurence ont fait <span class="gras_500" data-color="vert">financé en totalité</span> l'isolation de leur garage et de leurs caves <span class="gras_500">grâce à notre programme et au dispositif CEE mis en place par l'etat.</p>
@@ -137,40 +141,6 @@
         </div>
     </div>
 </section>
-<section class="section-benefit-societe">
-    <div class="container" data-background-color="bleue-fonce">
-        <div class="row justify-content-center mt-40">
-            <div class="col-sm-12 col-md-4">
-                <div class="features-box">
-                    <i class="icon-fantastic icon-icon-facture"></i>
-                    <div class="ml-20 align-self-center text-left">
-                        <h5 class="text-center text-white mt-10">Vous n'avez aucun démarche à faire</h5>
-                        <p class="text-center" data-color="orange">Nous nous occupons de toutes les formalités.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="features-box">
-                    <i class="icon-fantastic icon-icon-4-heures2"></i>
-                    <div class="ml-20 align-self-center text-left">
-                        <h5 class="text-center text-white mt-10">Votre isolation en moins de 4 heures</h5>
-                        <p class="text-center" data-color="orange">Des travaux rapides, pas de perte de temps pour vous.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="features-box">
-                    <i class="icon-fantastic icon-icon-proprete"></i>
-                    <div class="ml-20 align-self-center text-left">
-                        <h5 class="text-center text-white mt-10">Propreté et nettoyage du chantier</h5>
-                        <p class="text-center" data-color="orange">Nettoyage en fin de chantier et évacuation des déchets.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Features -->
 <section class="section" id="section-type-isolation">
     <div class="container">
         <div class="row">
@@ -208,94 +178,134 @@
                 <p>Surface isolée</p>
             </div>
         </div>
+        <h4 class="slogan-condition text-center mt-30" data-color="orange">Sans aucune condition de revenu depuis le 1er septembre 2018.</h4>
     </div> <!-- end container -->
 </section>
-<!-- end Features -->
-<!-- Testimonials section -->
-<section class="section" id="section-testimonials">
-    <div class="bg-overlay"></div>
+<section class="section pt-0" id="section-deperdition">
+    <div class="container pt-20" data-background-color="bleue-fonce">
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <img id="maison-illustartion" class="block-center" src="{{ asset('images/masion-pourcentage-sol.png') }}" alt="illustration déperdition thermique par le sol d'une maison">
+            </div>
+            <div class="col-12 col-md-7">
+                <h3 class="text-white mb-30">Le saviez-vous:</h3>
+                <h4 class="text-white"><span class="gras_500" data-color="orange">15% de la déperdition thermique</span> et énergétique se font par les planchers-bas de votre maison.</h4>
+                <h4 class="text-white mt-20">Une bonne isolation permet de limiter ces pertes d'énergie et ainsi de <span class="gras_500" data-color="vert">réduire vos factures de chauffage</span>.</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section pt-0" id="section-societe">
     <div class="container">
-        <div class="row align-self-stretch">
-            <div class="col-sm-12 text-center">
-                <h2 class="text-white mb-40">Ils ont profité de l'isolation des sols pour 1€</h2>
+        <img id="logo" class="block-center" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat">
+        <p class="text-center sub-title-logo mb-30">Des professionnels qualifiés</p>
+        <div class="row societe-part1 justify-content-center mb-30">
+            <div class="col-xs-12 col-md-10">
+                    <h2 class="text-center mb-30" data-color="orange">Des Professionnels Reconnus Par l'État</h2>
+                    <h5 class="gras_500 line-height-1-4">Nous faisons appel à une entreprise partenaire RGE(Reconnu Garant de l'environnement) pour faire vos travaux d'isolation, ce qui vous donne droit de bénéficier de certaines aides publiques.</h5>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column testimonial-block">
-                <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
-                <p class="testimonial-content">J'ai fait la demande, un conseiller m'a rappelé le lendemain pour m'expliquer la suite. <span class="gras_500">Une semaine après, ils sont passés pour poser l'isolation</span>. Ils m'ont donné tout de suite ma facture avec juste 1€ symbolique à payer. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
-                <div class="info-testimonial">
-                    <img src="{{ asset('images/photo-temoignage1.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
-                    <div class="info-testimonial-client">
-                        <p class="testimonial-name">Isabelle</p>
-                        <p class="testimonial-dept">Houilles(78)</p>
+        </div>
+        <div class="row societe-part2 justify-content-center">
+            <div class="order-2 col-sm-12 col-md-6 order-sm-2 order-md-1" id="presentation-societe">
+            </div>
+            <div class="col-md-6 order-1 order-sm-1 order-md-2 mb-30">
+                <div id="presentation-societe2">
+                    <div class="features-box d-flex">
+                        <i class="icon-fantastic icon-icon-facture"></i>
+                        <div class="ml-20 align-self-center text-left">
+                            <h3>Aucune démarche à faire</h3>
+                            <p>Nous nous occupons de toutes les formalités.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column testimonial-block">
-                <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
-                <p class="testimonial-content">Des amis nous ont parlé de l'isolation à 1€. On a isolé le garage et les sous-sols de la maison. <span class="gras_500">On a dèjà diminué le chauffage dans la maison et il fait toujours aussi bon à l'intérieur</span>. On attend de voir ce que donne l'isolation en été. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
-                <div class="info-testimonial">
-                    <img src="{{ asset('images/photo-temoignage2.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
-                    <div class="info-testimonial-client">
-                        <p class="testimonial-name">Maëva & Franck</p>
-                        <p class="testimonial-dept">Béthune(62)</p>
+                    <div class="features-box d-flex">
+                        <i class="icon-fantastic icon-icon-4-heures2"></i>
+                        <div class="ml-20 align-self-center text-left">
+                            <h3>Votre isolation en moins de 4 heures</h3>
+                            <p>Des travaux rapides, pas de perte de temps pour vous.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-4 d-flex flex-column testimonial-block">
-                <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="orange"></i>
-                <p class="testimonial-content">Il fait froid dans notre grande maison l'hiver, ça revient vraiment cher pour la chauffer entièrement. Les ouvriers nous ont expliqué ce qu'ils allaient faire. <span class="gras_500">Les travaux ont duré 4 heures et on a rien eu à faire</span>. ils ont pris le temps de tout nettoyer avant de partir. <i class="fa fa-quote-right" aria-hidden="true" data-color="orange"></i></p>
-                <div class="info-testimonial">
-                    <img src="{{ asset('images/photo-temoignage3.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
-                    <div class="info-testimonial-client">
-                        <p class="testimonial-name">Danielle & Alain</p>
-                        <p class="testimonial-dept">Le-Puy-en-Velay(43)</p>
+                    <div class="features-box d-flex">
+                        <i class="icon-fantastic icon-icon-proprete"></i>
+                        <div class="ml-20 align-self-center text-left">
+                            <h3>Propreté et nettoyage du chantier</h3>
+                            <p>Nettoyage en fin de chantier et évacuation des déchets.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-    <!-- Modal Youtube Videos-->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog reportage-video" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="fa fa-times-circle"></i>
-                    </button>
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allowfullscreen>></iframe>
+<!-- Testimonials section -->
+<section class="section" id="section-testimonial-grand-est" data-background-color="bleue-fonce">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2 class="mb-40" data-color="vert">Ils Ont Profité De L'isolation Des sols Pour 1€ Dans Le Grand-est</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="vert"></i>
+                        <p class="testimonial-content">J'ai fait la demande, un conseiller m'a rappelé le lendemain pour m'expliquer la suite. <span class="gras_500">Une semaine après, ils sont passés pour poser l'isolation</span>. Ils m'ont donné tout de suite ma facture avec juste 1€ symbolique à payer. <i class="fa fa-quote-right" aria-hidden="true" data-color="vert"></i></p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="{{ asset('images/photo-temoignage1.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
+                            </div>
+                            <div class="info-testimonial-client">
+                                <h5 class="testimonial-name" data-color="vert">Isabelle</h5>
+                                <p class="testimonial-dept">Châlons-en-Champagne (54)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="vert"></i>
+                        <p class="testimonial-content">Des amis nous ont parlé de l'isolation à 1€. On a isolé le garage et les sous-sols de la maison. <span class="gras_500">On a dèjà diminué le chauffage dans la maison et il fait toujours aussi bon à l'intérieur</span>. On attend de voir ce que donne l'isolation en été. <i class="fa fa-quote-right" aria-hidden="true" data-color="vert"></i></p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="{{ asset('images/photo-temoignage2.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
+                            </div>
+                            <div class="info-testimonial-client">
+                                <h5 class="testimonial-name" data-color="vert">Maëva & Franck</h5>
+                                <p class="testimonial-dept">Bar-Le-Duc (55)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="vert"></i>
+                        <p class="testimonial-content">Il fait froid dans notre grande maison l'hiver, ça revient vraiment cher pour la chauffer entièrement. Les ouvriers nous ont expliqué ce qu'ils allaient faire. <span class="gras_500">Les travaux ont duré 4 heures et on a rien eu à faire</span>. ils ont pris le temps de tout nettoyer avant de partir. <i class="fa fa-quote-right" aria-hidden="true" data-color="vert"></i></p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src="{{ asset('images/photo-temoignage3.jpg') }}" class="rounded-circle" alt="illustration temoignage isolation">
+                            </div>
+                            <div class="info-testimonial-client">
+                                <h5 class="testimonial-name" data-color="vert">Danielle & Alain</h5>
+                                <p class="testimonial-dept">Épinal (80)</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
 @endsection
 @section('javascript')
     <script>
         (function ($) {
-            /*$(document).ready(function() {
-                    var overlay = document.querySelector("#section-overlay");
-                    overlay.style.left = "0px";
-                    var body = document.getElementsByTagName('body');
-                    document.body.classList.add("noScroll");
 
-                var closeOverlay = document.querySelector('#close-overlay');
-                closeOverlay.addEventListener('click', function(e){
-                    e.preventDefault();
-                    overlay.style.left = "-3000px";
-                    document.body.classList.remove("noScroll");
-                    $('#wizard-card-test').show();
-                    $('#wizard-card-test2').hide();
-                });
-
-                $('.selectpicker').selectpicker({
-
-                });
-
-
-            });*/
         })(jQuery);
     </script>
 @endsection
