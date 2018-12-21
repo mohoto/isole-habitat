@@ -84,7 +84,7 @@
             </div>
             <div class="col-md-8 block-information" data-background-color="bleue">
                 <h3><i class="ion-ios7-plus-outline"></i> D'ECONOMIE</h3>
-                <div class="d-flex justify-content-around align-items-center">
+                <div class="d-flex flex-column flex-md-row justify-content-around align-items-center">
                     <div class="">
                         <img src="http://localhost:8888/isolation/public/images/icon-economie-sol.svg" alt="illustration isolation à 1 euro économie sur facture de chauffage" class="img-fluid rounded img-economie">
                     </div>
@@ -246,7 +246,7 @@
         </div>
         <div class="row">
             <div class="card-deck">
-                <div class="card">
+                <div class="card mb-xs-30">
                     <div class="card-body">
                         <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="vert"></i>
                         <p class="testimonial-content">J'ai fait la demande, un conseiller m'a rappelé le lendemain pour m'expliquer la suite. <span class="gras_500">Une semaine après, ils sont passés pour poser l'isolation</span>. Ils m'ont donné tout de suite ma facture avec <span class="gras_500">juste 1€ symbolique à payer</span>. <i class="fa fa-quote-right" aria-hidden="true" data-color="vert"></i></p>
@@ -263,7 +263,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card mb-xs-30">
                     <div class="card-body">
                         <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="vert"></i>
                         <p class="testimonial-content">Des amis nous ont parlé de l'isolation à 1€. On a isolé le garage et les sous-sols de la maison. <span class="gras_500">On a dèjà diminué le chauffage dans la maison et il fait toujours aussi bon à l'intérieur</span>. On attend de voir ce que donne l'isolation en été. <i class="fa fa-quote-right" aria-hidden="true" data-color="vert"></i></p>
