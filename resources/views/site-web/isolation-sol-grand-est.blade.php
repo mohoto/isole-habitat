@@ -5,7 +5,7 @@
 <!-- HOME -->
 <header data-background-color="bleue-fonce">
     <nav id='cssmenu-grand-est'>
-        <div class="container-nav d-flex justify-content-between align-items-ends">
+        <div class="container-nav d-flex align-items-center t-center justify-content-md-between align-items-md-end">
             <div class="logo">
                 <a href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a></div>
             <div>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 mt-xs-20">
                 <ul id="list-benefit-grand-est1" class="list-benefit-grand-est">
                     <li><i class="fas fa-arrow-circle-right"></i>Dispositif CEE d'aide de l'Etat</li>
                     <li><i class="fas fa-arrow-circle-right"></i>Propriétaire ou locataire</li>
@@ -64,7 +64,7 @@
         </div><!-- end row -->
         <div class="row align-items-center mt-50">
             <div class="col-12 col-md-6">
-                <div>
+                <div class="mb-xs-20">
                     <img src="{{ asset('images/cee-certifcats.png') }}" alt="img" class="img-fluid img-certicats block-center">
                 </div>
             </div>
