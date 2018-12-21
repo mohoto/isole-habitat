@@ -202,7 +202,7 @@
         <div class="row societe-part1 justify-content-center mb-30">
             <div class="col-xs-12 col-md-10">
                     <h2 class="text-center mb-30" data-color="orange">Des Professionnels Reconnus Par l'État</h2>
-                    <h5 class="gras_500 line-height-1-4">Nous faisons appel à une entreprise partenaire RGE(Reconnu Garant de l'environnement) pour faire vos travaux d'isolation, ce qui vous donne droit de bénéficier de certaines aides publiques.</h5>
+                    <h5 class="gras_500 line-height-1-4">Nous faisons appel à une entreprise partenaire RGE(Reconnu Garant de l'environnement) pour faire vos travaux d'isolation, ce qui vous donne le droit de bénéficier de certaines aides publiques.</h5>
             </div>
         </div>
         <div class="row societe-part2 justify-content-center">
