@@ -8,9 +8,9 @@
         <div class="container-nav d-flex align-items-center t-center justify-content-md-between align-items-md-end">
             <div class="logo">
                 <a href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a></div>
-            <div>
-                <h5 class="text-white mb-20" id="dispositif-texte-nav">Dispositif CEE d'aide de l'Etat.</h5>
-            </div>
+            {{--<div>
+                <p class="text-white mb-20" id="dispositif-texte-nav">Dispositif CEE d'aide de l'Etat.</p>
+            </div>--}}
             <div class="">
                 <a href="#" id="btn-formulaire-ribbon" class="btn btn-rounded btn-vert btn-formulaire ml-20">Je veux profiter de cette aide</a>
             </div>
