@@ -49,16 +49,16 @@
             </div>
             <div class="col-12 col-md-6 mt-xs-20">
                 <ul id="list-benefit-grand-est1" class="list-benefit-grand-est">
-                    <li><i class="fas fa-arrow-circle-right"></i>Dispositif CEE d'aide de l'Etat</li>
-                    <li><i class="fas fa-arrow-circle-right"></i>Propriétaire ou locataire</li>
-                    <li><i class="fas fa-arrow-circle-right"></i>Une réponse en 48 heures</li>
-                    <li><i class="fas fa-arrow-circle-right"></i>Aucune formalité à faire</li>
+                    <li><i class="fas fa-check-square"></i>Dispositif CEE d'aide de l'Etat</li>
+                    <li><i class="fas fa-check-square"></i>Propriétaire ou locataire</li>
+                    <li><i class="fas fa-check-square"></i>Une réponse en 48 heures</li>
+                    <li><i class="fas fa-check-square"></i>Aucune formalité à faire</li>
                 </ul>
                 <ul id="list-benefit-grand-est2" class="list-benefit-grand-est">
-                    <li><i class="fas fa-arrow-circle-right"></i>Surface illimitée</li>
-                    <li><i class="fas fa-arrow-circle-right"></i>Votre isolation sous 7 jours</li>
-                    <li><i class="fas fa-arrow-circle-right"></i>Aucun frais à avancer</li>
-                    <li><i class="fas fa-arrow-circle-right"></i>1€ après travaux</li>
+                    <li><i class="fas fa-check-square"></i>Surface illimitée</li>
+                    <li><i class="fas fa-check-square"></i>Votre isolation sous 7 jours</li>
+                    <li><i class="fas fa-check-square"></i>Aucun frais à avancer</li>
+                    <li><i class="fas fa-check-square"></i>1€ après travaux</li>
                 </ul>
             </div>
         </div><!-- end row -->
