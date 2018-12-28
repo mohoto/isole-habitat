@@ -1,5 +1,5 @@
 @extends('site-web.layouts.main')
-@section('pageTitle', 'Votre isolation pour 1€ dans le Grand-Est')
+@section('pageTitle', 'L\'isolation de votre maison pour 1€ dans le Grand-Est')
 @section('pageClass', 'page_grand_est')
 @section('content')
 <!-- HOME -->
