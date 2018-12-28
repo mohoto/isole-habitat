@@ -79,14 +79,14 @@
         <div class="row">
             <div class="col-md-4 block-information" data-background-color="vert">
                 <h3><i class="ion-ios7-plus-outline"></i> D'ECOLOGIE</h3>
-                <img src="http://localhost:8888/isolation/public/images/icon-ecologie.svg" alt="illustration isolation à 1 euro ecologique" class="img-fluid rounded">
+                <img src="{{ asset('images/icon-ecologie.svg') }}" alt="illustration isolation à 1 euro ecologique" class="img-fluid">
                 <p class="text-center" data-color="blanc">Réduit les dépenses énergétiques</p>
             </div>
             <div class="col-md-8 block-information" data-background-color="bleue">
                 <h3><i class="ion-ios7-plus-outline"></i> D'ECONOMIE</h3>
                 <div class="d-flex flex-column flex-md-row justify-content-around align-items-center">
                     <div class="">
-                        <img src="http://localhost:8888/isolation/public/images/icon-economie-sol.svg" alt="illustration isolation à 1 euro économie sur facture de chauffage" class="img-fluid rounded img-economie">
+                        <img src="http://localhost:8888/isolation/public/images/icon-economie-sol.svg" alt="illustration isolation à 1 euro économie sur facture de chauffage" class="img-fluid img-economie">
                     </div>
                     <div class="pl-3">
                         <h2 class="text-left line-height-1-4" data-color="blanc"><span class="gras_400">Economisez jusqu'à -20%</span> sur vos factures de chauffage.</h2>
