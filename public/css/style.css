@@ -4509,6 +4509,9 @@ nav {
 }
 
 /*Landing page grand-est*/
+.img-region{
+  width: 160px;
+}
 #cssmenu-grand-est {
   padding-right: 80px;
 }
