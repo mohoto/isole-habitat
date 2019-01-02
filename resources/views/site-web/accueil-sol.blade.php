@@ -92,7 +92,7 @@
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-md-5 order-2 order-md-1">
-                <h4 class="">L'isolation à 1 euro : <span class="gras_500">une réalité peu connue</span>.</h4>
+                <h4 class="gras_500">L'isolation à 1 euro : une réalité peu connue.</h4>
                 <p>Peu de ménages savent qu'ils peuvent bénéficier de l'isolation de leur maison pour 1€ symbolique. Et pourtant, ce programme repose sur <span data-color="orange">une obligation de réalisation d’économies d’énergie imposée par l'Etat aux vendeurs d’énergie</span>.</p>
                 <p>Le 1er janvier 2018, le dispositif est entré dans sa 4ème période d’obligation.</p>
             </div>
