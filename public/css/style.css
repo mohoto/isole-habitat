@@ -512,7 +512,7 @@ iframe {
 }
 
 .feat-description h4 {
-  font-weight: 300;
+  font-weight: 500;
   line-height: 36px;
 }
 
@@ -737,6 +737,9 @@ var.line-height-1-3 {
 .italic {
   font-style: italic;
 }
+.underline {
+  text-decoration: underline;
+}
 .text-habitat{
   font-family: "foco",sans-serif;
   font-weight:bold;
@@ -814,6 +817,11 @@ var.line-height-1-3 {
     border-radius: 50px;
 }
 .btn-formulaire:hover {
+  color: #ffffff;
+  background-color: #ee7626;
+  border-color: #ee7626;
+}
+.btn-lien:hover {
   color: #ffffff;
   background-color: #ee7626;
   border-color: #ee7626;
@@ -1155,8 +1163,8 @@ label.type-heure {
   font-size: 1.2em;
 }
 .hero .btn {
-    font-size: 1.5em;
-    padding: 15px 30px;
+    font-size: 1.7em;
+    padding: 15px 80px;
 }
 -btn-formulaire {
   font-size: 1em;
@@ -1192,6 +1200,16 @@ label.type-heure {
 }
 .section#section-presentation-video .presentaion-couple {
   line-height: 1.3;
+}
+.section#section-presentation-video .offre-grand-est {
+  padding: 30px;
+}
+.section#section-presentation-video .offre-grand-est .img-region{
+  width: 350px;
+}
+.section#section-presentation-video .offre-grand-est .btn{
+  padding: 15px;
+  font-size: 1.5em;
 }
 .section#section-presentation-video .list-benefit-total {
   list-style: none;
@@ -1229,7 +1247,7 @@ label.type-heure {
   color: #ee7626;
 }
 .section#section-presentation-video p{
-  font-size: 1.5em;
+  font-size: 1.4em;
   line-height: 1.4em;
 }
 .section#section-explication .block-explication {
@@ -1255,7 +1273,7 @@ label.type-heure {
 }
 .section#section-explication .block-explication .list-non-benefit li i {
   margin-right: 10px;
-  color: #f21b1c;
+  color: #ee7626;
 }
 .section#section-explication .block-explication .list-benefit li i{
   margin-right: 10px;
@@ -1308,7 +1326,7 @@ label.type-heure {
     line-height: 1.5em;
 }
 .section#section-type-isolation .features-box img{
-  width: 60%;
+  width: 80%;
 }
 .section#section-type-isolation .features-box {
     margin-top: 0px;
@@ -1467,7 +1485,6 @@ label.type-heure {
   width: 100px;
 }
 .section.section-questions .block-question-title h3 {
-  color:#8ab326;
   margin-bottom: 20px;
 }
 .section.section-questions .block-question-title p {
@@ -1613,7 +1630,7 @@ label.type-heure {
 .section#section-precarite-energetique .features-box p{
   font-size: 1.2em;
 }
-.section#section-testimonials {
+/*.section#section-testimonials {
   background: url(../images/background-image-testimonials2.jpg) no-repeat;
   background-size: cover;
   position: relative;
@@ -1653,6 +1670,45 @@ label.type-heure {
 }
 .section#section-testimonials .info-testimonial img{
   width: 5em;
+}*/
+.section#section-testimonial-accueil .card {
+  border: none;
+}
+.section#section-testimonial-accueil .card-body {
+  background-color: #2f3e47 !important;
+  position: relative;
+  border-radius: 8px;
+  color: #ffffff;
+  border: none;
+}
+.section#section-testimonial-accueil .card-body p.testimonial-content {
+  font-size: 1.3em;
+  line-height: 1.3;
+}
+.section#section-testimonial-accueil .card-body::after {
+  content: '';
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #2f3e47;
+  margin: 0;
+  position: absolute;
+}
+.section#section-testimonial-accueil .card-footer{
+  background-color: transparent !important;
+}
+.section#section-testimonial-accueil .card-footer img{
+  width: 90px;
+  border: 2px solid #8ab326;
+}
+.section#section-testimonial-accueil .card-footer .info-testimonial-client{
+
+}
+.section#section-testimonial-accueil .card-footer p{
+  font-size: 1.2em;
+  margin-bottom: 0.2rem
 }
 .section#section-videos h2{
   margin-bottom: 70px;
@@ -2688,6 +2744,10 @@ label.type-heure {
   .hero p#slogan-dispositif-hero {
     font-size: 1.2em;
     margin-top: 20px;
+  }
+  .section#section-presentation-video .offre-grand-est .btn{
+    padding: 15px;
+    font-size: 1em;
   }
   .section#section-explication .block-explication {
      width: 100%;
@@ -4582,6 +4642,9 @@ nav {
   color: #ffffff;
   text-align: center;
 }
+.page_grand_est .section#section-type-isolation .features-box img {
+  width: 60%;
+}
 
 .section-benefit-societe i{
   font-size: 6em;
@@ -4634,5 +4697,25 @@ nav {
 @media(max-width: 576px){
   #cssmenu-grand-est {
     padding-right: 0;
+  }
+}
+
+/* add custom cursor */
+.typewriter::after {
+  content: "|";
+  display: inline;
+  animation: blink 1s infinite;
+}
+
+/* custom cursor animation */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -26,6 +26,7 @@
 </header>
 <img src="{{ asset('images/carte-france-grand-est-isolation2.svg') }}" class="img-fluid img-region block-center mt-20" alt="illustration carte de france avec région du grand-est">
 <h1 class="text-center gras_500 mt-20">L'isolation De Votre Maison Pour <span class="gras_600" data-color="vert">1€</span> Dans Le Grand-Est:</h1>
+<h1 id="typed"></h1>
 <section class="section pt-0" id="section-presentation">
     <div class="container">
         <div class="row">
