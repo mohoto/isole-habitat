@@ -31,7 +31,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="slogan-condition text-center mt-10 mb-40" data-color="orange">Sans aucune condition de revenu depuis le 1er septembre 2018.</h2>
+                <h2 class="slogan-condition text-center mt-10 mb-40 underline" data-color="orange">Sans aucune condition de revenu depuis le 1er septembre 2018.</h2>
             </div>
             <div class="col-md-12 pt-30 pb-30 section-slogan-grand-est" data-background-color="bleue-fonce">
                 <h3 class="text-center text-white line-height-1-5"><span class="gras_500">Vous habitez dans le Grand-Est</span> et vous êtes propriétaire ou locataire d'une maison individuelle, <span class="gras_400" data-color="vert">vous pouvez vous aussi profiter de lisolation de votre garage, de vos caves et vide-sanitaire pour 1€ </span><span class="gras_500">avec les dispositifs d'aide de l'Éat</span>.</h3>
@@ -103,10 +103,10 @@
         <h2 class="text-center presentaion-couple">Ils ont isolé le garage et les caves de leur maison <span class="gras_500" data-color="vert">pour 1€</span> au lieu de <span class="gras_500" data-color="orange">4241€</span>.</h2>
         <div class="row justify-content-center align-items-center mt-40">
             <div class="col-md-5 mb-xs-20">
-                <img id="client-isolation" class="rounded-circle block-center" src="{{ asset('images/photo-couple-isolation-nb.jpg') }}" alt="illustration couple client isolation à 1 euro" />
+                <img id="client-isolation" class="rounded-circle block-center" src="{{ asset('images/photo-couple-accueil.jpg') }}" alt="illustration couple client isolation à 1 euro" />
             </div>
             <div class="col-md-5">
-                <p>Frédéric et Laurence ont fait <span class="gras_500" data-color="vert">financé en totalité</span> l'isolation de leur garage et de leurs caves <span class="gras_500">grâce à notre programme et au dispositif CEE mis en place par l'etat.</p>
+                <p>Laurence et Frédéric ont fait <span class="gras_500" data-color="vert">financé en totalité</span> l'isolation de leur garage et de leurs caves <span class="gras_500">grâce à notre programme et au dispositif CEE mis en place par l'etat.</p>
                 <p><span class="gras_500" data-color="orange">Tous les foyers peuvent en profiter, sans aucune condition de revenu</span>. Nous nous occupons de toutes les formalités.</p>
             </div>
         </div>

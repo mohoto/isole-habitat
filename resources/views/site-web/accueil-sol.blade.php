@@ -101,12 +101,12 @@
         </div>
         <div class="row justify-content-center align-items-center mt-40">
             <div class="col-md-5 mb-xs-20">
-                <img id="client-isolation" class="rounded-circle block-center" src="{{ asset('images/photo-couple-isolation-nb.jpg') }}" alt="illustration mascotte isolation à 1 euro" />
+                <img id="client-isolation" class="rounded-circle block-center" src="{{ asset('images/photo-couple-acceuil3.jpg') }}" alt="illustration mascotte isolation à 1 euro" />
             </div>
             <div class="col-md-5">
-                <h4 class="presentaion-couple">Ils ont isolé le garage et les caves de leur maison <span class="gras_500" data-color="vert">pour 1€</span> au lieu de <span class="gras_500" data-color="orange">4241€</span>.</h4>
-                <p>Frédéric et Laurence ont fait <span class="gras_500" data-color="vert">financé en totalité</span> l'isolation de leur garage et de leurs caves <span class="gras_500">grâce à notre programme et au dispositif CEE mis en place par l'etat.</p>
-                <p><span class="gras_500" data-color="orange">Tous les foyers peuvent en profiter, sans aucune condition de revenu</span>. Nous nous occupons de toutes les formalités.</p>
+                <h4 class="presentaion-couple gras_500">Ils ont isolé les combles et le garage de leur maison <span class="gras_600" data-color="vert">pour 1€</span> au lieu de <span class="gras_600" data-color="orange">4160€</span>.</h4>
+                <p>Lisa et Stephane ont fait <span class="gras_500" data-color="vert">financé en totalité</span> l'isolation de leurs combles perdus et de leur garage <span class="gras_500">grâce à cette aide et  au dispositif CEE mis en place par l'etat.</p>
+                <p><span class="gras_500" data-color="orange">Tous les foyers peuvent demander cette aide, sous condition de revenu</span>. Nous nous occupons de toutes les formalités.</p>
             </div>
         </div>
         <div class="row justify-content-center mt-30">
@@ -117,7 +117,7 @@
                 <div class="">
                     <h3 class="text-center italic mb-30" data-color="orange">Nouveau depuis le 1er septembre 2018</h3>
                     <h4 class="text-white line-height-3">Vous habitez dans <span data-color="vert">la région Grand-est</span>, vous pouvez bénéficier de l'isolation de votre garage, de vos caves et de de votre vide-sanitaire pour 1€.</h4>
-                    <h4 class="gras_500" data-color="orange">Sans aucune condition de revenu.</h4>
+                    <h4 class="gras_500 underline" data-color="orange">Sans aucune condition de revenu.</h4>
                     <a href="{{ route('site-web.isolation-sol-grand-est') }}" class="btn btn-vert btn-lien mt-30">Votre isolation pour 1€ dans le Grand-est</a>
                 </div>
             </div>
