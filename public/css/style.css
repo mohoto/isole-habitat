@@ -3459,7 +3459,8 @@ nav {
   bottom:0;
   /*background-color: rgba(0, 0, 0, 0.85);*/
   /*background-color: rgba(48, 62, 70, 0.75);*/
-  background-color: rgba(8, 99, 181, 0.90);
+  /*background-color: rgba(8, 99, 181, 0.90);*/
+  background-color: rgba(47, 62, 71, 0.95);
 }
 .section-overlay #close-overlay {
   position: absolute;
