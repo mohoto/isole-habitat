@@ -268,7 +268,7 @@
                 <div class="card mb-xs-30">
                     <div class="card-body">
                         <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true" data-color="vert"></i>
-                        <p class="testimonial-content">Des amis nous ont parlé de l'isolation à 1€. On a isolé le garage et les sous-sols de la maison. <span class="gras_500">On a dèjà diminué le chauffage dans la maison et il fait toujours aussi bon à l'intérieur</span>. On attend de voir ce que donne l'isolation en été. <i class="fa fa-quote-right" aria-hidden="true" data-color="vert"></i></p>
+                        <p class="testimonial-content">Des amis nous ont parlé de l'isolation à 1€. On a isolé le garage et les sous-sols de la maison. <span class="gras_500">On a baissé le chauffage dans la maison et il fait toujours aussi bon à l'intérieur</span>. On attend de voir ce que donne l'isolation en été. <i class="fa fa-quote-right" aria-hidden="true" data-color="vert"></i></p>
                     </div>
                     <div class="card-footer">
                         <div class="d-flex justify-content-between">
