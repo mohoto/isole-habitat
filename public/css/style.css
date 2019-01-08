@@ -4485,7 +4485,8 @@ nav {
     color: #ffffff;
   }
   .section-overlay {
-    background: rgba(8, 99, 181, 1);
+    /*background: rgba(8, 99, 181, 1);*/
+    background: rgba(47, 62, 71, 1);
   }
   .section-overlay .bg-overlay {
     background-color: rgba(8, 99, 181, 1);
