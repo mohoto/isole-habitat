@@ -6,7 +6,7 @@
 <header>
     <nav id='cssmenu'>
         <div class="container-nav d-flex justify-content-between align-items-ends">
-            <div class="logo"><a href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a></div>
+            <div class="logo"><a href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/logo-presta-habitat.svg') }}" alt="logo isole habitat"></a></div>
             <div>
                 <p>Dispositif CEE mis en place par l'Etat.</p>
             </div>
@@ -555,7 +555,7 @@
                 </div><!-- /.steps-timeline -->
             </div>
         </div>
-        {{--<div class="row">
+        <div class="row">
             <div class="col-sm-12 col-md-4 d-flex flex-column align-items-center">
                 <h3 data-color="orange">Région Hauts-de-France :</h3>
                 <img src="{{ asset('images/region-haut-de-france.svg') }}" class="image-region-intervention" alt="carte isolation de la région hauts-de-France">
@@ -586,7 +586,7 @@
                     <p class="bureau-phone"><i class="ion-ios7-telephone-outline bureau-phone-icon"></i>04 71 71 03 03</p>
                 </div>
             </div>
-        </div>--}}
+        </div>
     </div>
 </section>
 <section class="section pb-0" id="section-precarite-energetique" data-background-color="bleue-clair">

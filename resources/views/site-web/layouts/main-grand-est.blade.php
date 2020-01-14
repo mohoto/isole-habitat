@@ -196,7 +196,7 @@
             <div class="container">
                 <div class="row align-items-end justify-content-center mb-40">
                     <div class="">
-                        <h2 class="text-center ml-10"><span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">HABITAT </span>utilise des matériaux d'isolation <span class="gras_500" data-color="vert">écocologiques et certifiés.</span></h2>
+                        <h2 class="text-center ml-10"><span data-color="vert">Presta </span><span class="text-habitat" data-color="orange">HABITAT </span>utilise des matériaux d'isolation <span class="gras_500" data-color="vert">écocologiques et certifiés.</span></h2>
                     </div>
                 </div>
                 <div class="row">

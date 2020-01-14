@@ -6,7 +6,7 @@
 <header>
     <nav id='cssmenu'>
         <div class="container-nav d-flex justify-content-between align-items-ends">
-            <div class="logo"><a href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat"></a></div>
+            <div class="logo"><a href="{{ route('site-web.accueil') }}"><img id="logo" src="{{ asset('images/logo-presta-habitat.svg') }}" alt="logo isole habitat"></a></div>
             <div>
                 <p id="dispositif-texte-nav">Dispositif CEE mis en place par l'Etat.</p>
             </div>
@@ -603,7 +603,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col col-sm-12 col-md-12">
-                <h3 class="text-left text-white mt-30 mb-30 line-height-1-4"><span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">HABITAT </span>est un service du groupe PRESTA HABITAT : société experte dans l'isolation des habitats et des énergies renouvelables.</h3>
+                {{--<h3 class="text-left text-white mt-30 mb-30 line-height-1-4"><span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">HABITAT </span>est un service du groupe PRESTA HABITAT : société experte dans l'isolation des habitats et des énergies renouvelables.</h3>--}}
+                <h3 class="text-left text-white mt-30 mb-30 line-height-1-4"><span data-color="vert">Presta </span><span class="text-habitat" data-color="orange">HABITAT </span> : société experte dans l'isolation des habitats et des énergies renouvelables.</h3>
             </div>
         </div>
     </div>

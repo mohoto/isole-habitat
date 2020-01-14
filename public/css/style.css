@@ -1617,6 +1617,10 @@ label.type-heure {
   color: #ee7626;
   margin-right: 0.5em;
 }
+.section#section-zones #map{
+  height: 500px;
+  width: 100%;
+}
 .section#section-precarite-energetique h3{
   font-size: 1.5em;
   line-height: 1.4em;

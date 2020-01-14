@@ -196,7 +196,7 @@
             <div class="container">
                 <div class="row align-items-end justify-content-center mb-40">
                     <div class="">
-                        <h2 class="text-center ml-10"><span data-color="vert">Isole </span><span class="text-habitat" data-color="orange">HABITAT </span>utilise des matériaux d'isolation <span class="gras_500" data-color="vert">écocologiques et certifiés.</span></h2>
+                        <h2 class="text-center ml-10"><span data-color="vert">Presta </span><span class="text-habitat" data-color="orange">HABITAT </span>utilise des matériaux d'isolation <span class="gras_500" data-color="vert">écocologiques et certifiés.</span></h2>
                     </div>
                 </div>
                 <div class="row">
@@ -218,13 +218,30 @@
                 </div>
             </div>
         </section>
+        <section class="section" id="section-zones" data-background-color="bleue-clair">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-5 d-flex flex-column align-items-center">
+                        <h4 data-color="orange">Département ILE-DE-FRANCE:</h4>
+                        <div class="info-bureau">
+                            <i class="ion-ios7-location-outline bureau-name-icon"></i><p class="bureau-name"></i>Agence de Bagneux</p>
+                            <p class="bureau-adress">17 square Victor Schoelcher</p>
+                            <p class="bureau-adress">92220 Bagneux</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.5649110305494!2d2.312596950895523!3d48.79019607917923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e670d8ea12769b%3A0xf704676aaa28f42c!2s17%20Square%20Victor%20Schoelcher%2C%2092220%20Bagneux!5e0!3m2!1sfr!2sfr!4v1579000902869!5m2!1sfr!2sfr" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- FOOTER -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <img id="logo-footer" src="{{ asset('images/Isole-Habitat-logo.svg') }}" alt="logo isole habitat">
-                        <p data-color="bleue-clair">Isole Habitat est un service du groupe PRESTA HABITAT, société experte dans l'isolation des habitats et la transition énergétique.</p>
+                        <img id="logo-footer" src="{{ asset('images/logo-presta-habitat.svg') }}" alt="logo isole habitat">
+                        {{--<p data-color="bleue-clair">PRESTA HABITAT, société experte dans les travaux d'aménagement, d'isolation des habitats et de la transition énergétique.</p>--}}
                     </div>
                     <div class="col-md-4">
                         <ul class="liens-footer">
@@ -251,7 +268,8 @@
                         </div>
                     </div>--}}
                     <div class="col-md-4">
-                        <div class="fb-page" data-href="https://www.facebook.com/isolehabitat/" data-tabs="timeline" data-height="200" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/isolehabitat/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/isolehabitat/">Isole Habitat</a></blockquote></div>
+                        {{--<div class="fb-page" data-href="https://www.facebook.com/isolehabitat/" data-tabs="timeline" data-height="200" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/isolehabitat/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/isolehabitat/">Isole Habitat</a></blockquote></div>--}}
+                        <p data-color="bleue-clair">PRESTA HABITAT, société experte dans les travaux d'aménagement, d'isolation des habitats et de la transition énergétique.</p>
                     </div>
                     <div class="col-md-12">
                         <p class="text-muted copyright">© 2018. Tous droits réservés Presta Habitat.</p>
@@ -387,6 +405,21 @@
                 FastClick.attach(document.body);
             }, false);
         }
+    </script>
+
+    <script>
+        function initMap() {
+            // The location of Uluru
+            var uluru = {lat: -25.344, lng: 131.036};
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 4, center: uluru});
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgSDB2fSb-L0_atMi-Dfju4sIvbPclNYM&callback=initMap">
     </script>
 
     @yield('javascript')
